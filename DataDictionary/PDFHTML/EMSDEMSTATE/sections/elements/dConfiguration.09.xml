@@ -1,0 +1,56 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dConfiguration.09"  minOccurs="1"  maxOccurs="M"  dataTypeName="Medication"  isNillable="No">
+<name>EMS Agency Medications</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>A list of all medications the agency has implemented and have available for use.</definition>
+<v2Number>D04_06</v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>This is associated with the EMS Agency Number (dAgency.02) since each EMS Agency Number may have different capabilities. 
+
+<br/><br/>List of medications based on RxNorm (RXCUI) code and SNOMED-CT codes for blood products. 
+<br/><br/>Reference the NEMSIS Suggested Lists at: <a href="https://nemsis.org/technical-resources/version-3/version-3-resources/">https://nemsis.org/technical-resources/version-3/version-3-resources/</a>
+<br/><br/>RxNorm 
+<br/>Website - <a href="http://www.nlm.nih.gov/research/umls/rxnorm/docs/rxnormfiles.html">http://www.nlm.nih.gov/research/umls/rxnorm/docs/rxnormfiles.html</a>
+<br/>Product - RxNorm Full Monthly Release
+<br/><br/>SNOMED-CT 
+<br/>Website: <a href="http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html">http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html</a>
+<br/>Product: Product - UMLS Metathesaurus.
+
+<br/><br/>Allowable SNOMED-CT codes are:
+<br/>116762002 Administration of blood product
+<br/>116795008 Transfusion of cryoprecipitate
+<br/>116861002 Transfusion of fresh frozen plasma
+<br/>116865006 Administration of albumin
+<br/>180208003 Intravenous blood transfusion of platelets
+<br/>33389009 Transfusion of whole blood
+<br/>71493000 Transfusion of packed red blood cells</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <Medication baseType="string">
+    <facet name="minLength" value="2"/>
+    <facet name="maxLength" value="9"/>
+  </Medication>
+</restrictions>
+<attributes>
+  <CodeType>
+    <CodeType.RxNorm><facet name="enumeration" value="9924003" annotation="RxNorm"/></CodeType.RxNorm>
+    <CodeType.SNOMED><facet name="enumeration" value="9924005" annotation="SNOMED-CT"/></CodeType.SNOMED>
+  </CodeType>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_d014" role="Error">
+      <elementRef elementNumber="dConfiguration.09">EMS Agency Medications</elementRef> should be a code of between 2 and 7 digits when Code Type is &quot;RxNorm&quot;.
+      </assert>
+  <assert id="nemSch_d015" role="Error">
+      <elementRef elementNumber="dConfiguration.09">EMS Agency Medications</elementRef> should be a SNOMED code specifically allowed in the data dictionary when Code Type is &quot;SNOMED&quot;.
+      </assert>
+  <assert id="nemSch_d016" role="Error">
+      <elementRef elementNumber="dConfiguration.09">EMS Agency Medications</elementRef> should be an RxNorm code of between 2 and 7 digits or a SNOMED code specifically allowed in the data dictionary.
+      </assert>
+</asserts>
+</element>

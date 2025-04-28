@@ -1,0 +1,46 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDevice.03"  minOccurs="0"  maxOccurs="M"  dataTypeName="MedicalDeviceEventType"  isNillable="No">
+<name>Medical Device Event Type</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The type of event documented by the medical device.</definition>
+<v2Number>E21_02</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>STEMI</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Can be displayed in the Vital Signs or Procedure Sections.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <MedicalDeviceEventType baseType="string">
+    <facet name="enumeration" value="4103001" annotation="12-Lead ECG"/>
+    <facet name="enumeration" value="4103003" annotation="Analysis (Button Pressed)"/>
+    <facet name="enumeration" value="4103005" annotation="CO2"/>
+    <facet name="enumeration" value="4103007" annotation="Data Transmitted"/>
+    <facet name="enumeration" value="4103009" annotation="Defibrillation"/>
+    <facet name="enumeration" value="4103011" annotation="ECG-Monitor"/>
+    <facet name="enumeration" value="4103013" annotation="Heart Rate"/>
+    <facet name="enumeration" value="4103015" annotation="Invasive Pressure 1"/>
+    <facet name="enumeration" value="4103017" annotation="Invasive Pressure 2"/>
+    <facet name="enumeration" value="4103019" annotation="No Shock Advised"/>
+    <facet name="enumeration" value="4103021" annotation="Non-Invasive BP"/>
+    <facet name="enumeration" value="4103023" annotation="Other"/>
+    <facet name="enumeration" value="4103025" annotation="Pacing Electrical Capture"/>
+    <facet name="enumeration" value="4103027" annotation="Pacing Started"/>
+    <facet name="enumeration" value="4103029" annotation="Pacing Stopped"/>
+    <facet name="enumeration" value="4103031" annotation="Patient Connected"/>
+    <facet name="enumeration" value="4103033" annotation="Power On"/>
+    <facet name="enumeration" value="4103035" annotation="Pulse Oximetry"/>
+    <facet name="enumeration" value="4103037" annotation="Pulse Rate"/>
+    <facet name="enumeration" value="4103039" annotation="Respiratory Rate"/>
+    <facet name="enumeration" value="4103041" annotation="Shock Advised"/>
+    <facet name="enumeration" value="4103043" annotation="Sync Off"/>
+    <facet name="enumeration" value="4103045" annotation="Sync On"/>
+    <facet name="enumeration" value="4103047" annotation="Temperature 1"/>
+    <facet name="enumeration" value="4103049" annotation="Temperature 2"/>
+  </MedicalDeviceEventType>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

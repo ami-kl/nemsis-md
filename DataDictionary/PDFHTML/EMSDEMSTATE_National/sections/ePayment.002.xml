@@ -1,0 +1,5 @@
+<?xml-stylesheet type="text/xsl" href="../xslt/grouping.xslt"?>
+<section name="ePayment">
+  <element number="ePayment.01" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="Yes" dataType="PrimaryMethodOfPayment"><name>Primary Method of Payment</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Required</usage><notValue>Yes</notValue><pertinentNegative></pertinentNegative></element>
+  <element number="ePayment.50" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="Yes" dataType="CMSServiceLevel"><name>CMS Service Level</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Required</usage><notValue>Yes</notValue><pertinentNegative></pertinentNegative></element>
+</section>

@@ -1,0 +1,35 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eScene.16"  minOccurs="0"  maxOccurs="1"  dataTypeName="SceneApartment"  isNillable="Yes">
+<name>Incident Apartment, Suite, or Room</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The number of the specific apartment, suite, or room where the incident occurred.</definition>
+<v2Number></v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <SceneApartment baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="15"/>
+  </SceneApartment>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When Incident Apartment, Suite, or Room has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Incident Apartment, Suite, or Room is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

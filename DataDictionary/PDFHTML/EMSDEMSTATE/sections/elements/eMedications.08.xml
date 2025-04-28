@@ -1,0 +1,61 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eMedications.08"  minOccurs="1"  maxOccurs="M"  dataTypeName="MedicationComplication"  isNillable="Yes">
+<name>Medication Complication</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Any complication (abnormal effect on the patient) associated with the administration of the medication to the patient by EMS.</definition>
+<v2Number>E18_08</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <MedicationComplication baseType="string">
+    <facet name="enumeration" value="3708001" annotation="Altered Mental Status"/>
+    <facet name="enumeration" value="3708003" annotation="Apnea"/>
+    <facet name="enumeration" value="3708005" annotation="Bleeding"/>
+    <facet name="enumeration" value="3708007" annotation="Bradycardia"/>
+    <facet name="enumeration" value="3708009" annotation="Bradypnea"/>
+    <facet name="enumeration" value="3708011" annotation="Diarrhea"/>
+    <facet name="enumeration" value="3708013" annotation="Extravasation"/>
+    <facet name="enumeration" value="3708015" annotation="Hypertension"/>
+    <facet name="enumeration" value="3708017" annotation="Hyperthermia"/>
+    <facet name="enumeration" value="3708019" annotation="Hypotension"/>
+    <facet name="enumeration" value="3708021" annotation="Hypothermia"/>
+    <facet name="enumeration" value="3708023" annotation="Hypoxia"/>
+    <facet name="enumeration" value="3708025" annotation="Injury"/>
+    <facet name="enumeration" value="3708029" annotation="Nausea"/>
+    <facet name="enumeration" value="3708031" annotation="None"/>
+    <facet name="enumeration" value="3708033" annotation="Other"/>
+    <facet name="enumeration" value="3708035" annotation="Respiratory Distress"/>
+    <facet name="enumeration" value="3708037" annotation="Tachycardia"/>
+    <facet name="enumeration" value="3708039" annotation="Tachypnea"/>
+    <facet name="enumeration" value="3708041" annotation="Vomiting"/>
+    <facet name="enumeration" value="3708043" annotation="Itching"/>
+    <facet name="enumeration" value="3708045" annotation="Urticaria"/>
+  </MedicationComplication>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_e149" role="Warning">
+      When <elementRef elementNumber="eMedications.08">Medication Complication</elementRef> is &quot;None&quot;, no other value should be recorded.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Medication Complication has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Medication Complication is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Medication Complication has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

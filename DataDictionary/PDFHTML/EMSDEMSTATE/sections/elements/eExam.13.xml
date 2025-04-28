@@ -1,0 +1,33 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eExam.13"  minOccurs="0"  maxOccurs="1"  dataTypeName="BackAndSpineAssessmentLocation"  isNillable="No">
+<name>Back and Spine Assessment Finding Location</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The location of the patient's back and spine assessment findings.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Element eExam.14 - Back and Spine Assessment represents Version 2.2.1 NHTSA Injury Matrix elements E15_07 Spine and E15_05 Thorax AND E16_14 Back Cervical Assessment, E16_15 Back Thoracic Assessment, and E16_16 Back Lumbar/Sacral Assessment. The element value choices have been combined and expanded.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <BackAndSpineAssessmentLocation baseType="string">
+    <facet name="enumeration" value="3513001" annotation="Back-General"/>
+    <facet name="enumeration" value="3513003" annotation="Cervical-Left"/>
+    <facet name="enumeration" value="3513005" annotation="Cervical-Midline"/>
+    <facet name="enumeration" value="3513007" annotation="Cervical-Right"/>
+    <facet name="enumeration" value="3513009" annotation="Lumbar-Left"/>
+    <facet name="enumeration" value="3513011" annotation="Lumbar-Midline"/>
+    <facet name="enumeration" value="3513013" annotation="Lumbar-Right"/>
+    <facet name="enumeration" value="3513015" annotation="Thoracic-Left"/>
+    <facet name="enumeration" value="3513017" annotation="Thoracic-Midline"/>
+    <facet name="enumeration" value="3513019" annotation="Thoracic-Right"/>
+    <facet name="enumeration" value="3513021" annotation="Sacral-Left"/>
+    <facet name="enumeration" value="3513023" annotation="Sacral-Midline"/>
+    <facet name="enumeration" value="3513025" annotation="Sacral-Right"/>
+    <facet name="enumeration" value="3513029" annotation="Flank-Left"/>
+    <facet name="enumeration" value="3513031" annotation="Flank-Right"/>
+  </BackAndSpineAssessmentLocation>
+</restrictions>
+</element>

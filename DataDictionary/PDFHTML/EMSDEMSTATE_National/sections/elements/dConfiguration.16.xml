@@ -1,0 +1,25 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dConfiguration.16"  minOccurs="1"  maxOccurs="M"  dataTypeName="AgencyCallSign"  isNillable="No">
+<name>Crew Call Sign</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The EMS crew call sign used to dispatch and communicate with the unit.  This may be the same as the EMS Unit/Vehicle Number in many agencies.</definition>
+<v2Number>D04_02</v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <AgencyCallSign baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="50"/>
+  </AgencyCallSign>
+</restrictions>
+<asserts>
+  <assert id="nemSch_d017" role="Warning">
+      <elementRef elementNumber="dConfiguration.16">Crew Call Sign</elementRef> should be unique (the same call sign should not be listed more than once).
+      </assert>
+</asserts>
+</element>

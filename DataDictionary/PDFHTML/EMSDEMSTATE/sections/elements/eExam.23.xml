@@ -1,0 +1,40 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eExam.23"  minOccurs="0"  maxOccurs="M"  dataTypeName="LungAssessment"  isNillable="No">
+<name>Lung Assessment</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The assessment findings associated with the patient's lungs.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <LungAssessment baseType="string">
+    <facet name="enumeration" value="3523001" annotation="Breath Sounds-Absent"/>
+    <facet name="enumeration" value="3523003" annotation="Breath Sounds-Decreased"/>
+    <facet name="enumeration" value="3523005" annotation="Breath Sounds-Equal"/>
+    <facet name="enumeration" value="3523007" annotation="Breath Sounds-Normal"/>
+    <facet name="enumeration" value="3523009" annotation="Foreign Body"/>
+    <facet name="enumeration" value="3523011" annotation="Increased Respiratory Effort"/>
+    <facet name="enumeration" value="3523013" annotation="Normal"/>
+    <facet name="enumeration" value="3523015" annotation="Not Done"/>
+    <facet name="enumeration" value="3523017" annotation="Pain"/>
+    <facet name="enumeration" value="3523019" annotation="Pain with Inspiration/Expiration"/>
+    <facet name="enumeration" value="3523021" annotation="Rales"/>
+    <facet name="enumeration" value="3523023" annotation="Rhonchi"/>
+    <facet name="enumeration" value="3523025" annotation="Rhonchi/Wheezing"/>
+    <facet name="enumeration" value="3523027" annotation="Stridor"/>
+    <facet name="enumeration" value="3523029" annotation="Wheezing-Expiratory"/>
+    <facet name="enumeration" value="3523031" annotation="Wheezing-Inspiratory"/>
+  </LungAssessment>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+  <PN>
+    <PN.ExamFindingNotPresent><facet name="enumeration" value="8801005" annotation="Exam Finding Not Present"/></PN.ExamFindingNotPresent>
+  </PN>
+</attributes>
+</element>

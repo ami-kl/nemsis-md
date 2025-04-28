@@ -1,0 +1,30 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDisposition.31"  minOccurs="0"  maxOccurs="M"  dataTypeName="ReasonForRefusalRelease"  isNillable="No">
+<name>Reason for Refusal/Release</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>Describes reason(s) for the patient's refusal of care/transport OR the EMS clinician's decision to release the patient.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>This works in combination with the dispositions and signatures to provide general categories for the patient refusal. Specific legal refusal language should be developed by the agency's legal counsel and provided to the patient or guardian upon refusal per local policies.</v3Comment>
+<v3Changes>Element added with the release of v3.5.0</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ReasonForRefusalRelease baseType="string">
+    <facet name="enumeration" value="4231001" annotation="Against Medical Advice"/>
+    <facet name="enumeration" value="4231003" annotation="Patient/Guardian Indicates Ambulance Transport is Not Necessary"/>
+    <facet name="enumeration" value="4231005" annotation="Released Following Protocol Guidelines"/>
+    <facet name="enumeration" value="4231007" annotation="Released to Law Enforcement"/>
+    <facet name="enumeration" value="4231009" annotation="Patient/Guardian States Intent to Transport by Other Means"/>
+    <facet name="enumeration" value="4231011" annotation="DNR"/>
+    <facet name="enumeration" value="4231013" annotation="Medical/Physician Orders for Life Sustaining Treatment"/>
+    <facet name="enumeration" value="4231015" annotation="Other, Not Listed"/>
+    <facet name="enumeration" value="4231017" annotation="Patient Elopement"/>
+  </ReasonForRefusalRelease>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

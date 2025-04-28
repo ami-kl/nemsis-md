@@ -1,0 +1,2190 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Schema documentation for eCrew_v3.xsd</title>
+      <link rel="stylesheet" href="docHtml.css" type="text/css" /><script type="text/javascript"><!--
+        var propertiesBoxes= new Array('properties_eCrew_v3.xsd', 
+				'properties_eCrews_eCrew.CrewGroup', 
+				'properties_eCrews_eCrews_eCrew.CrewGroup_eCrew.01', 
+				'properties_eCrews_eCrews_eCrew.CrewGroup_eCrew.02', 
+				'properties_eCrews_eCrews_eCrew.CrewGroup_eCrew.03', 
+				'properties_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.01_NV', 
+				'properties_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.02_NV', 
+				'properties_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_NV', 
+				'properties_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_CorrelationID', 
+				'properties_eCrews_eCrews_eCrew.CrewGroup_CorrelationID');
+var facetsBoxes= new Array('facets_CrewMemberRoles', 
+				'facets_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_CorrelationID', 
+				'facets_eCrews_eCrews_eCrew.CrewGroup_CorrelationID');
+var usedByBoxes= new Array('usedBy_eCrews', 
+				'usedBy_CrewMemberRoles', 
+				'usedBy_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.01_NV', 
+				'usedBy_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.02_NV', 
+				'usedBy_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_NV', 
+				'usedBy_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_CorrelationID', 
+				'usedBy_eCrews_eCrews_eCrew.CrewGroup_CorrelationID');
+var sourceBoxes= new Array('source_eCrews_eCrew.CrewGroup', 
+				'source_eCrews_eCrews_eCrew.CrewGroup_eCrew.01', 
+				'source_eCrews_eCrews_eCrew.CrewGroup_eCrew.02', 
+				'source_eCrews_eCrews_eCrew.CrewGroup_eCrew.03', 
+				'source_eCrews', 
+				'source_CrewMemberRoles', 
+				'source_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.01_NV', 
+				'source_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.02_NV', 
+				'source_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_NV', 
+				'source_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_CorrelationID', 
+				'source_eCrews_eCrews_eCrew.CrewGroup_CorrelationID');
+var instanceBoxes= new Array('instance_eCrews_eCrew.CrewGroup');
+var diagramBoxes= new Array('diagram_eCrews_eCrew.CrewGroup', 
+				'diagram_eCrews_eCrews_eCrew.CrewGroup_eCrew.01', 
+				'diagram_eCrews_eCrews_eCrew.CrewGroup_eCrew.02', 
+				'diagram_eCrews_eCrews_eCrew.CrewGroup_eCrew.03', 
+				'diagram_eCrews', 
+				'diagram_CrewMemberRoles');
+var annotationBoxes= new Array('annotations_eCrews_eCrew.CrewGroup', 
+				'annotations_eCrews_eCrews_eCrew.CrewGroup_eCrew.01', 
+				'annotations_eCrews_eCrews_eCrew.CrewGroup_eCrew.02', 
+				'annotations_eCrews_eCrews_eCrew.CrewGroup_eCrew.03', 
+				'annotations_CrewMemberRoles');
+var attributesBoxes= new Array('attributes_eCrews_eCrew.CrewGroup', 
+				'attributes_eCrews_eCrews_eCrew.CrewGroup_eCrew.01', 
+				'attributes_eCrews_eCrews_eCrew.CrewGroup_eCrew.02', 
+				'attributes_eCrews_eCrews_eCrew.CrewGroup_eCrew.03');
+var modelBoxes= new Array('model_eCrews_eCrew.CrewGroup', 
+				'model_eCrews');
+
+      
+        var button_prefix = 'button_';
+        
+        /**
+        * Returns an element in the current HTML document.
+        *
+        * @param elementID Identifier of HTML element
+        * @return               HTML element object
+        */
+        function getElementObject(elementID) {
+            var elemObj = null;
+            if (document.getElementById) {
+                elemObj = document.getElementById(elementID);
+            }
+            return elemObj;
+        }
+        
+        /**
+        * Switches the state of a collapseable box, e.g.
+        * if it's opened, it'll be closed, and vice versa.
+        *
+        * @param boxID Identifier of box
+        */
+        function switchState(boxID) {
+            var boxObj = getElementObject(boxID);
+            var buttonObj = getElementObject(button_prefix + boxID);
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else if (boxObj.style.display == "none") {
+                // Box is closed, so open it
+                openBox(boxObj, buttonObj);
+            } else if (boxObj.style.display == "block") {
+                // Box is opened, so close it
+                closeBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+        * Opens a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function openBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "block";
+                
+                // Change text of button
+                if (boxObj.style.display == "block") {
+                    buttonObj.src = "img/btM.gif";
+                }
+            }
+        }
+        
+        /**
+        * Closes a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function closeBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "none";
+                
+                // Change text of button
+                if (boxObj.style.display == "none") {
+                    buttonObj.src = "img/btP.gif";
+                }
+            }
+        }
+    
+       function switchStateForAll(buttonObj, boxList) {
+            if (buttonObj == null) {
+                // button not found
+            } else if (buttonObj.value == "+") {
+                // Expand all
+                expandAll(boxList);
+                buttonObj.value = "-";
+            } else if (buttonObj.value == "-") {
+                // Collapse all
+                collapseAll(boxList);
+                buttonObj.value = "+";
+            }
+        }
+        
+        /**
+        * Closes all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function collapseAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                closeBox(boxObj, buttonObj);
+            }
+        }
+            
+        /**
+        * Open all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function expandAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                openBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+         * Update the message presented in the title of the html page.
+         * - If the documentation was splited by namespace we present something like: "Documentation for namespace 'ns'"
+         * - If the documentation was splited by location we present somehing like: "Documentation for 'Schema.xsd'"
+         * - If no split we always present: "Documentation for 'MainSchema.xsd'"
+         */
+        function updatePageTitle(message) {
+            top.document.title = message;
+        }
+        
+          
+                    
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function findAndFloat(id, x_displacement, y_displacement){
+
+            var element = getElementObject(id);            
+            
+            window[id + "_obj"] = element;
+            
+            if(document.layers) {
+               element.style = element;
+            }
+            
+            element.current_y = y_displacement;      
+            element.first_time = true;
+         
+            element.floatElement = function(){
+               // It may be closed by an user action.
+                
+               // Target X and Y coordinates.
+               var x, y;
+               
+               var myWidth = 0, myHeight = 0;
+               if( typeof( window.innerWidth ) == 'number' ) {
+                  //Non-IE
+                  myWidth = window.innerWidth;
+                  myHeight = window.innerHeight;
+               } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+                  //IE 6+ in 'standards compliant mode'
+                  myWidth = document.documentElement.clientWidth;
+                  myHeight = document.documentElement.clientHeight;
+               } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+                  //IE 4 compatible
+                  myWidth = document.body.clientWidth;
+                  myHeight = document.body.clientHeight;
+               }
+               
+               
+               x = myWidth - x_displacement;
+               
+               var ns = (navigator.appName.indexOf("Netscape") != -1);               
+               y = ns ? pageYOffset : document.documentElement && document.documentElement.scrollTop ? 
+                  document.documentElement.scrollTop : document.body.scrollTop;               
+               y = y + y_displacement;               
+               
+               // The current y is the current coordinate of the floating element.
+               // This should be at the limit the y target coordinate.
+               this.current_y += (y - this.current_y)/1.25;
+               
+               // Add the pixels constant after the values
+               // and move the element.
+               var px = document.layers ? "" : "px";
+               this.style.left =  x + px;
+               this.style.top =  this.current_y + px;
+                              
+               setTimeout(this.id + "_obj.floatElement()", 100);
+            }
+            
+            element.floatElement();
+            return element;
+          }
+
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function selectTOCGroupBy(id, isChunked, indexFileLocation, indexFileNamespace, indexFileComponent){
+
+            if (!isChunked) {
+             var selectIds = new Array('toc_group_by_namespace', 'toc_group_by_location', 'toc_group_by_component_type');
+             // Make all the tabs invisible.
+               for (i = 0; i < 3; i++){
+                  var tab = getElementObject(selectIds[i]);
+                  tab.style.display = 'none';
+               }
+               var selTab = getElementObject(id);
+               selTab.style.display = 'block';
+            } else {
+             if (id == 'toc_group_by_namespace') {
+               parent.indexFrame.location = indexFileNamespace;
+             } else  if (id == 'toc_group_by_location') {
+               parent.indexFrame.location = indexFileLocation;
+             } else  if (id == 'toc_group_by_component_type') {
+              parent.indexFrame.location = indexFileComponent;
+             }
+            }
+         }
+          
+
+    
+                    //--></script></head>
+   <body>
+      <div id="global_controls" class="globalControls" style="position:absolute;right:0;">
+         <table class="rt">
+            <tr>
+               <td class="rt_cornerTopLeft"></td>
+               <td class="rt_lineTop"></td>
+               <td class="rt_cornerTopRight"></td>
+            </tr>
+            <tr>
+               <td class="rt_lineLeft"></td>
+               <td class="rt_content">
+                  <h3>Showing:</h3>
+                  <table>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, annotationBoxes);" class="control" /></span><span class="globalControlName">Annotations</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, attributesBoxes);" class="control" /></span><span class="globalControlName">Attributes </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, diagramBoxes);" class="control" /></span><span class="globalControlName">Diagrams</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, facetsBoxes);" class="control" /></span><span class="globalControlName">Facets </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, instanceBoxes);" class="control" /></span><span class="globalControlName">Instances</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, modelBoxes);" class="control" /></span><span class="globalControlName">Model </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, propertiesBoxes);" class="control" /></span><span class="globalControlName">Properties </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, sourceBoxes);" class="control" /></span><span class="globalControlName">Source</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, usedByBoxes);" class="control" /></span><span class="globalControlName">Used by </span></td>
+                     </tr>
+                  </table>
+                  <div style="text-align:center"><span><input type="button" onclick="getElementObject('global_controls').style.display = 'none';" value="Close" /></span></div>
+               </td>
+               <td class="rt_lineRight"></td>
+            </tr>
+            <tr>
+               <td class="rt_cornerBottomLeft"></td>
+               <td class="rt_lineBottom"></td>
+               <td class="rt_cornerBottomRight"></td>
+            </tr>
+         </table>
+      </div><a id="eCrew_v3.xsd"></a><div class="componentTitle">Included schema <span class="qname">eCrew_v3.xsd</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://www.nemsis.org</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_eCrew_v3.xsd" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('properties_eCrew_v3.xsd');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_eCrew_v3.xsd" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">attribute form default</td>
+                                    <td><b>unqualified</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">element form default</td>
+                                    <td><b>qualified</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="eCrews_eCrew.CrewGroup"></a><div class="componentTitle">Element <span class="qname"><b><a href="eCrew_v3_xsd.html#eCrews" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrews</a></b> / eCrew.CrewGroup</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://www.nemsis.org</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Annotations</b></div>
+                           <div class="floatRight"><input id="button_annotations_eCrews_eCrew.CrewGroup" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('annotations_eCrews_eCrew.CrewGroup');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="annotations_eCrews_eCrew.CrewGroup" style="display:block">
+                              <div class="annotation">
+                                 <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                    <tr>
+                                       <td style="width:100%">
+                                          <pre><span class="tT">Group Tag to hold crew information</span></pre>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_eCrews_eCrew.CrewGroup" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('diagram_eCrews_eCrew.CrewGroup');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_eCrews_eCrew.CrewGroup" style="display:block"><img alt="Diagram" style="border:0" src="img/eCrew_v3_xsd_Element_eCrew_CrewGroup.jpeg" usemap="#eCrew_v3_xsd_Element_eCrew_CrewGroup" /><map name="eCrew_v3_xsd_Element_eCrew_CrewGroup" id="eCrew_v3_xsd_Element_eCrew_CrewGroup"><area alt="eCrew_v3_xsd.tmp#eCrews_eCrews_eCrew.CrewGroup_CorrelationID" href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_CorrelationID" coords="186,41,297,66" /><area alt="eCrew_v3_xsd.tmp#eCrews_eCrews_eCrew.CrewGroup_eCrew.01" href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrew.01" coords="264,83,343,108" /><area alt="eCrew_v3_xsd.tmp#eCrews_eCrews_eCrew.CrewGroup_eCrew.02" href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrew.02" coords="264,177,343,202" /><area alt="eCrew_v3_xsd.tmp#eCrews_eCrews_eCrew.CrewGroup_eCrew.03" href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrew.03" coords="264,271,343,296" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_eCrews_eCrew.CrewGroup" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('properties_eCrews_eCrew.CrewGroup');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_eCrews_eCrew.CrewGroup" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">minOccurs</td>
+                                    <td><b>0</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">maxOccurs</td>
+                                    <td><b>unbounded</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_eCrews_eCrew.CrewGroup" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('model_eCrews_eCrew.CrewGroup');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_eCrews_eCrew.CrewGroup" style="display:block"><b><a href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrew.01" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrew.01{0,1}</a></b> , <b><a href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrew.02" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrew.02{0,1}</a></b> , <b><a href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrew.03" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrew.03*</a></b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b><a href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrew.01" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrew.01</a></b>, <b><a href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrew.02" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrew.02</a></b>, <b><a href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrew.03" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrew.03</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_eCrews_eCrew.CrewGroup" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('instance_eCrews_eCrew.CrewGroup');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_eCrews_eCrew.CrewGroup" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td style="width:100%">
+                                       <pre><span class="tEl">&lt;eCrew.CrewGroup</span><span class="tT"> </span><span class="tAN">CorrelationID=</span><span class="tAV">""</span><span class="tT"> </span><span class="tAN">xmlns=</span><span class="tAV">"http://www.nemsis.org"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;eCrew.01</span><span class="tT"> </span><span class="tAN">NV=</span><span class="tAV">""</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/eCrew.01&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;eCrew.02</span><span class="tT"> </span><span class="tAN">NV=</span><span class="tAV">""</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,1}</span><span class="tEl">&lt;/eCrew.02&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;eCrew.03</span><span class="tT"> </span><span class="tAN">CorrelationID=</span><span class="tAV">""</span><span class="tT"> </span><span class="tAN">NV=</span><span class="tAV">""</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,unbounded}</span><span class="tEl">&lt;/eCrew.03&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/eCrew.CrewGroup&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Attributes</b></div>
+                           <div class="floatRight"><input id="button_attributes_eCrews_eCrew.CrewGroup" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('attributes_eCrews_eCrew.CrewGroup');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="attributes_eCrews_eCrew.CrewGroup" style="display:block">
+                              <table class="attributesTable">
+                                 <thead>
+                                    <tr>
+                                       <th>QName</th>
+                                       <th style="width:10%">Type</th>
+                                       <th style="width:10%">Use</th>
+                                       <th></th>
+                                    </tr>
+                                 </thead>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_CorrelationID" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">CorrelationID</a></b></td>
+                                    <td><b><a href="commonTypes_v3_xsd.html#CorrelationID" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">CorrelationID</a></b></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_eCrews_eCrew.CrewGroup" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('source_eCrews_eCrew.CrewGroup');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_eCrews_eCrew.CrewGroup" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td style="width:100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"eCrew.CrewGroup"</span><span class="tAN"> id=</span><span class="tAV">"eCrew.CrewGroup"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Group Tag to hold crew information</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:complexType</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"eCrew.01"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> id=</span><span class="tAV">"eCrew.CrewMemberID"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;nemsisTacDoc</span><span class="tEl">&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">eCrew.01</span><span class="tEl">&lt;/number&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;name</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Crew Member ID</span><span class="tEl">&lt;/name&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;national</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">No</span><span class="tEl">&lt;/national&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;state</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Yes</span><span class="tEl">&lt;/state&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;definition</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">The state certification/licensure ID number assigned to the crew member.</span><span class="tEl">&lt;/definition&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;v2Number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">E04_01</span><span class="tEl">&lt;/v2Number&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;usage</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Recommended</span><span class="tEl">&lt;/usage&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;performanceMeasuresGroup</span><span class="tEl">&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Airway</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Cardiac Arrest</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Pediatric</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Response</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">STEMI</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Stroke</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Trauma</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;/performanceMeasuresGroup&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;comment</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Document the state certification/licensure ID for the state where the event occurred.</span><span class="tEl">&lt;/comment&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;/nemsisTacDoc&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:complexType</span><span class="tEl">&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;xs:simpleContent</span><span class="tEl">&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"CrewMemberID"</span><span class="tEl">&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;xs:attribute</span><span class="tAN"> name=</span><span class="tAV">"NV"</span><span class="tAN"> use=</span><span class="tAV">"optional"</span><span class="tEl">&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;xs:simpleType</span><span class="tEl">&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;xs:union</span><span class="tAN"> memberTypes=</span><span class="tAV">"NV.NotApplicable NV.NotRecorded NV.NotReporting"</span><span class="tEl">/&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;/xs:simpleType&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;/xs:attribute&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;/xs:simpleContent&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;/xs:complexType&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:element&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"eCrew.02"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> id=</span><span class="tAV">"eCrew.CrewMemberLevel"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;nemsisTacDoc</span><span class="tEl">&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">eCrew.02</span><span class="tEl">&lt;/number&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;name</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Crew Member Level</span><span class="tEl">&lt;/name&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;national</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">No</span><span class="tEl">&lt;/national&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;state</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Yes</span><span class="tEl">&lt;/state&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;definition</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">The functioning level of the crew member ID during this EMS patient encounter.</span><span class="tEl">&lt;/definition&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;v2Number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">E04_03</span><span class="tEl">&lt;/v2Number&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;usage</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Recommended</span><span class="tEl">&lt;/usage&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;performanceMeasuresGroup</span><span class="tEl">&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Airway</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Cardiac Arrest</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Pediatric</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Response</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">STEMI</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Stroke</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Trauma</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;/performanceMeasuresGroup&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;comment</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">The category EMT-Intermediate includes EMS professionals with an "85" or "99" certification level.</span><span class="tEl">&lt;/comment&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;/nemsisTacDoc&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:complexType</span><span class="tEl">&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;xs:simpleContent</span><span class="tEl">&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"MemberLevel"</span><span class="tEl">&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;xs:attribute</span><span class="tAN"> name=</span><span class="tAV">"NV"</span><span class="tAN"> use=</span><span class="tAV">"optional"</span><span class="tEl">&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;xs:simpleType</span><span class="tEl">&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;xs:union</span><span class="tAN"> memberTypes=</span><span class="tAV">"NV.NotApplicable NV.NotRecorded NV.NotReporting"</span><span class="tEl">/&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;/xs:simpleType&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;/xs:attribute&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;/xs:simpleContent&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;/xs:complexType&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:element&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"eCrew.03"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> id=</span><span class="tAV">"eCrew.CrewMemberResponseRole"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;nemsisTacDoc</span><span class="tEl">&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">eCrew.03</span><span class="tEl">&lt;/number&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;name</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Crew Member Response Role</span><span class="tEl">&lt;/name&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;national</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">No</span><span class="tEl">&lt;/national&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;state</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Yes</span><span class="tEl">&lt;/state&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;definition</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">The role(s) of the crew member during response, at scene treatment, and/or transport.</span><span class="tEl">&lt;/definition&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;v2Number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">E04_02</span><span class="tEl">&lt;/v2Number&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;usage</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Recommended</span><span class="tEl">&lt;/usage&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;performanceMeasuresGroup</span><span class="tEl">&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Airway</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Cardiac Arrest</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Pediatric</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Response</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">STEMI</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Stroke</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Trauma</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;/performanceMeasuresGroup&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;comment</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">This element has been changed to allow for multiple selections. There must be a driver for response and transport. There must be a primary patient caregiver for scene and transport.</span><span class="tEl">&lt;/comment&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;/nemsisTacDoc&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:complexType</span><span class="tEl">&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;xs:simpleContent</span><span class="tEl">&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"CrewMemberRoles"</span><span class="tEl">&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;xs:attribute</span><span class="tAN"> name=</span><span class="tAV">"NV"</span><span class="tAN"> use=</span><span class="tAV">"optional"</span><span class="tEl">&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;xs:simpleType</span><span class="tEl">&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;xs:union</span><span class="tAN"> memberTypes=</span><span class="tAV">"NV.NotApplicable NV.NotRecorded NV.NotReporting"</span><span class="tEl">/&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;/xs:simpleType&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;/xs:attribute&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;xs:attribute</span><span class="tAN"> name=</span><span class="tAV">"CorrelationID"</span><span class="tAN"> type=</span><span class="tAV">"CorrelationID"</span><span class="tAN"> use=</span><span class="tAV">"optional"</span><span class="tEl">/&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;/xs:simpleContent&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;/xs:complexType&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:element&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:attribute</span><span class="tAN"> name=</span><span class="tAV">"CorrelationID"</span><span class="tAN"> type=</span><span class="tAV">"CorrelationID"</span><span class="tAN"> use=</span><span class="tAV">"optional"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:complexType&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:element&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="eCrews_eCrews_eCrew.CrewGroup_eCrew.01"></a><div class="componentTitle">Element <span class="qname"><b><a href="eCrew_v3_xsd.html#eCrews" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrews</a></b> / <b><a href="eCrew_v3_xsd.html#eCrews_eCrew.CrewGroup" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrew.CrewGroup</a></b> / eCrew.01</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://www.nemsis.org</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Annotations</b></div>
+                           <div class="floatRight"><input id="button_annotations_eCrews_eCrews_eCrew.CrewGroup_eCrew.01" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('annotations_eCrews_eCrews_eCrew.CrewGroup_eCrew.01');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="annotations_eCrews_eCrews_eCrew.CrewGroup_eCrew.01" style="display:block">
+                              <div class="annotation">
+                                 <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                    <tr>
+                                       <td style="width:100%">
+                                          <pre><span class="tEl">&lt;nemsisTacDoc</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">eCrew.01</span><span class="tEl">&lt;/number&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;name</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Crew Member ID</span><span class="tEl">&lt;/name&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;national</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">No</span><span class="tEl">&lt;/national&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;state</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Yes</span><span class="tEl">&lt;/state&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;definition</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">The state certification/licensure ID number assigned to the crew member.</span><span class="tEl">&lt;/definition&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;v2Number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">E04_01</span><span class="tEl">&lt;/v2Number&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;usage</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Recommended</span><span class="tEl">&lt;/usage&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;performanceMeasuresGroup</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Airway</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Cardiac Arrest</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Pediatric</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Response</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">STEMI</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Stroke</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Trauma</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/performanceMeasuresGroup&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;comment</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Document the state certification/licensure ID for the state where the event occurred.</span><span class="tEl">&lt;/comment&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/nemsisTacDoc&gt;</span><span class="tI">
+</span></pre>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_eCrews_eCrews_eCrew.CrewGroup_eCrew.01" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('diagram_eCrews_eCrews_eCrew.CrewGroup_eCrew.01');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_eCrews_eCrews_eCrew.CrewGroup_eCrew.01" style="display:block"><img alt="Diagram" style="border:0" src="img/eCrew_v3_xsd_Element_eCrew_01.jpeg" usemap="#eCrew_v3_xsd_Element_eCrew_01" /><map name="eCrew_v3_xsd_Element_eCrew_01" id="eCrew_v3_xsd_Element_eCrew_01"><area alt="commonTypes_v3_xsd.tmp#CrewMemberID" href="commonTypes_v3_xsd.html#CrewMemberID" coords="127,2,256,28" /><area alt="eCrew_v3_xsd.tmp#eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.01_NV" href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.01_NV" coords="141,122,211,147" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>extension of <b><a href="commonTypes_v3_xsd.html#CrewMemberID" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">CrewMemberID</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b>xs:string</b><ul class="internal">
+                                    <li class="internal"><b><a href="commonTypes_v3_xsd.html#CrewMemberID" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">CrewMemberID</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_eCrews_eCrews_eCrew.CrewGroup_eCrew.01" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('properties_eCrews_eCrews_eCrew.CrewGroup_eCrew.01');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_eCrews_eCrews_eCrew.CrewGroup_eCrew.01" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">minOccurs</td>
+                                    <td><b>0</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">nillable</td>
+                                    <td><b>true</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Attributes</b></div>
+                           <div class="floatRight"><input id="button_attributes_eCrews_eCrews_eCrew.CrewGroup_eCrew.01" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('attributes_eCrews_eCrews_eCrew.CrewGroup_eCrew.01');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="attributes_eCrews_eCrews_eCrew.CrewGroup_eCrew.01" style="display:block">
+                              <table class="attributesTable">
+                                 <thead>
+                                    <tr>
+                                       <th>QName</th>
+                                       <th style="width:10%">Type</th>
+                                       <th style="width:10%">Use</th>
+                                       <th></th>
+                                    </tr>
+                                 </thead>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.01_NV" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">NV</a></b></td>
+                                    <td>union of(<b><a href="commonTypes_v3_xsd.html#NV.NotApplicable" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">NV.NotApplicable</a></b>, <b><a href="commonTypes_v3_xsd.html#NV.NotRecorded" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">NV.NotRecorded</a></b>, <b><a href="commonTypes_v3_xsd.html#NV.NotReporting" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">NV.NotReporting</a></b>)</td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_eCrews_eCrews_eCrew.CrewGroup_eCrew.01" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('source_eCrews_eCrews_eCrew.CrewGroup_eCrew.01');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_eCrews_eCrews_eCrew.CrewGroup_eCrew.01" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td style="width:100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"eCrew.01"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> id=</span><span class="tAV">"eCrew.CrewMemberID"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;nemsisTacDoc</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">eCrew.01</span><span class="tEl">&lt;/number&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;name</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Crew Member ID</span><span class="tEl">&lt;/name&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;national</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">No</span><span class="tEl">&lt;/national&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;state</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Yes</span><span class="tEl">&lt;/state&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;definition</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">The state certification/licensure ID number assigned to the crew member.</span><span class="tEl">&lt;/definition&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;v2Number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">E04_01</span><span class="tEl">&lt;/v2Number&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;usage</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Recommended</span><span class="tEl">&lt;/usage&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;performanceMeasuresGroup</span><span class="tEl">&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Airway</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Cardiac Arrest</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Pediatric</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Response</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">STEMI</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Stroke</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Trauma</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;/performanceMeasuresGroup&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;comment</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Document the state certification/licensure ID for the state where the event occurred.</span><span class="tEl">&lt;/comment&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/nemsisTacDoc&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:complexType</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:simpleContent</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"CrewMemberID"</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:attribute</span><span class="tAN"> name=</span><span class="tAV">"NV"</span><span class="tAN"> use=</span><span class="tAV">"optional"</span><span class="tEl">&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;xs:simpleType</span><span class="tEl">&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;xs:union</span><span class="tAN"> memberTypes=</span><span class="tAV">"NV.NotApplicable NV.NotRecorded NV.NotReporting"</span><span class="tEl">/&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;/xs:simpleType&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;/xs:attribute&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:simpleContent&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:complexType&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:element&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="eCrews_eCrews_eCrew.CrewGroup_eCrew.02"></a><div class="componentTitle">Element <span class="qname"><b><a href="eCrew_v3_xsd.html#eCrews" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrews</a></b> / <b><a href="eCrew_v3_xsd.html#eCrews_eCrew.CrewGroup" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrew.CrewGroup</a></b> / eCrew.02</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://www.nemsis.org</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Annotations</b></div>
+                           <div class="floatRight"><input id="button_annotations_eCrews_eCrews_eCrew.CrewGroup_eCrew.02" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('annotations_eCrews_eCrews_eCrew.CrewGroup_eCrew.02');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="annotations_eCrews_eCrews_eCrew.CrewGroup_eCrew.02" style="display:block">
+                              <div class="annotation">
+                                 <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                    <tr>
+                                       <td style="width:100%">
+                                          <pre><span class="tEl">&lt;nemsisTacDoc</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">eCrew.02</span><span class="tEl">&lt;/number&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;name</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Crew Member Level</span><span class="tEl">&lt;/name&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;national</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">No</span><span class="tEl">&lt;/national&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;state</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Yes</span><span class="tEl">&lt;/state&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;definition</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">The functioning level of the crew member ID during this EMS patient encounter.</span><span class="tEl">&lt;/definition&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;v2Number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">E04_03</span><span class="tEl">&lt;/v2Number&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;usage</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Recommended</span><span class="tEl">&lt;/usage&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;performanceMeasuresGroup</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Airway</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Cardiac Arrest</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Pediatric</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Response</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">STEMI</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Stroke</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Trauma</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/performanceMeasuresGroup&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;comment</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">The category EMT-Intermediate includes EMS professionals with an "85" or "99" certification level.</span><span class="tEl">&lt;/comment&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/nemsisTacDoc&gt;</span><span class="tI">
+</span></pre>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_eCrews_eCrews_eCrew.CrewGroup_eCrew.02" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('diagram_eCrews_eCrews_eCrew.CrewGroup_eCrew.02');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_eCrews_eCrews_eCrew.CrewGroup_eCrew.02" style="display:block"><img alt="Diagram" style="border:0" src="img/eCrew_v3_xsd_Element_eCrew_02.jpeg" usemap="#eCrew_v3_xsd_Element_eCrew_02" /><map name="eCrew_v3_xsd_Element_eCrew_02" id="eCrew_v3_xsd_Element_eCrew_02"><area alt="commonTypes_v3_xsd.tmp#MemberLevel" href="commonTypes_v3_xsd.html#MemberLevel" coords="127,2,246,28" /><area alt="eCrew_v3_xsd.tmp#eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.02_NV" href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.02_NV" coords="141,122,211,147" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>extension of <b><a href="commonTypes_v3_xsd.html#MemberLevel" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">MemberLevel</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b>xs:string</b><ul class="internal">
+                                    <li class="internal"><b><a href="commonTypes_v3_xsd.html#MemberLevel" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">MemberLevel</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_eCrews_eCrews_eCrew.CrewGroup_eCrew.02" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('properties_eCrews_eCrews_eCrew.CrewGroup_eCrew.02');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_eCrews_eCrews_eCrew.CrewGroup_eCrew.02" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">minOccurs</td>
+                                    <td><b>0</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">nillable</td>
+                                    <td><b>true</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Attributes</b></div>
+                           <div class="floatRight"><input id="button_attributes_eCrews_eCrews_eCrew.CrewGroup_eCrew.02" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('attributes_eCrews_eCrews_eCrew.CrewGroup_eCrew.02');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="attributes_eCrews_eCrews_eCrew.CrewGroup_eCrew.02" style="display:block">
+                              <table class="attributesTable">
+                                 <thead>
+                                    <tr>
+                                       <th>QName</th>
+                                       <th style="width:10%">Type</th>
+                                       <th style="width:10%">Use</th>
+                                       <th></th>
+                                    </tr>
+                                 </thead>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.02_NV" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">NV</a></b></td>
+                                    <td>union of(<b><a href="commonTypes_v3_xsd.html#NV.NotApplicable" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">NV.NotApplicable</a></b>, <b><a href="commonTypes_v3_xsd.html#NV.NotRecorded" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">NV.NotRecorded</a></b>, <b><a href="commonTypes_v3_xsd.html#NV.NotReporting" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">NV.NotReporting</a></b>)</td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_eCrews_eCrews_eCrew.CrewGroup_eCrew.02" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('source_eCrews_eCrews_eCrew.CrewGroup_eCrew.02');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_eCrews_eCrews_eCrew.CrewGroup_eCrew.02" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td style="width:100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"eCrew.02"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> id=</span><span class="tAV">"eCrew.CrewMemberLevel"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;nemsisTacDoc</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">eCrew.02</span><span class="tEl">&lt;/number&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;name</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Crew Member Level</span><span class="tEl">&lt;/name&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;national</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">No</span><span class="tEl">&lt;/national&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;state</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Yes</span><span class="tEl">&lt;/state&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;definition</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">The functioning level of the crew member ID during this EMS patient encounter.</span><span class="tEl">&lt;/definition&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;v2Number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">E04_03</span><span class="tEl">&lt;/v2Number&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;usage</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Recommended</span><span class="tEl">&lt;/usage&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;performanceMeasuresGroup</span><span class="tEl">&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Airway</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Cardiac Arrest</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Pediatric</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Response</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">STEMI</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Stroke</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Trauma</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;/performanceMeasuresGroup&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;comment</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">The category EMT-Intermediate includes EMS professionals with an "85" or "99" certification level.</span><span class="tEl">&lt;/comment&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/nemsisTacDoc&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:complexType</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:simpleContent</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"MemberLevel"</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:attribute</span><span class="tAN"> name=</span><span class="tAV">"NV"</span><span class="tAN"> use=</span><span class="tAV">"optional"</span><span class="tEl">&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;xs:simpleType</span><span class="tEl">&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;xs:union</span><span class="tAN"> memberTypes=</span><span class="tAV">"NV.NotApplicable NV.NotRecorded NV.NotReporting"</span><span class="tEl">/&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;/xs:simpleType&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;/xs:attribute&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:simpleContent&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:complexType&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:element&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="eCrews_eCrews_eCrew.CrewGroup_eCrew.03"></a><div class="componentTitle">Element <span class="qname"><b><a href="eCrew_v3_xsd.html#eCrews" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrews</a></b> / <b><a href="eCrew_v3_xsd.html#eCrews_eCrew.CrewGroup" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrew.CrewGroup</a></b> / eCrew.03</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://www.nemsis.org</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Annotations</b></div>
+                           <div class="floatRight"><input id="button_annotations_eCrews_eCrews_eCrew.CrewGroup_eCrew.03" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('annotations_eCrews_eCrews_eCrew.CrewGroup_eCrew.03');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="annotations_eCrews_eCrews_eCrew.CrewGroup_eCrew.03" style="display:block">
+                              <div class="annotation">
+                                 <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                    <tr>
+                                       <td style="width:100%">
+                                          <pre><span class="tEl">&lt;nemsisTacDoc</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">eCrew.03</span><span class="tEl">&lt;/number&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;name</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Crew Member Response Role</span><span class="tEl">&lt;/name&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;national</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">No</span><span class="tEl">&lt;/national&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;state</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Yes</span><span class="tEl">&lt;/state&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;definition</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">The role(s) of the crew member during response, at scene treatment, and/or transport.</span><span class="tEl">&lt;/definition&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;v2Number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">E04_02</span><span class="tEl">&lt;/v2Number&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;usage</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Recommended</span><span class="tEl">&lt;/usage&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;performanceMeasuresGroup</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Airway</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Cardiac Arrest</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Pediatric</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Response</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">STEMI</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Stroke</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Trauma</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/performanceMeasuresGroup&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;comment</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">This element has been changed to allow for multiple selections. There must be a driver for response and transport. There must be a primary patient caregiver for scene and transport.</span><span class="tEl">&lt;/comment&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/nemsisTacDoc&gt;</span><span class="tI">
+</span></pre>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_eCrews_eCrews_eCrew.CrewGroup_eCrew.03" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('diagram_eCrews_eCrews_eCrew.CrewGroup_eCrew.03');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_eCrews_eCrews_eCrew.CrewGroup_eCrew.03" style="display:block"><img alt="Diagram" style="border:0" src="img/eCrew_v3_xsd_Element_eCrew_03.jpeg" usemap="#eCrew_v3_xsd_Element_eCrew_03" /><map name="eCrew_v3_xsd_Element_eCrew_03" id="eCrew_v3_xsd_Element_eCrew_03"><area alt="eCrew_v3_xsd.tmp#CrewMemberRoles" href="eCrew_v3_xsd.html#CrewMemberRoles" coords="127,2,274,28" /><area alt="eCrew_v3_xsd.tmp#eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_NV" href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_NV" coords="141,108,211,133" /><area alt="eCrew_v3_xsd.tmp#eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_CorrelationID" href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_CorrelationID" coords="141,143,252,168" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>extension of <b><a href="eCrew_v3_xsd.html#CrewMemberRoles" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">CrewMemberRoles</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b>xs:string</b><ul class="internal">
+                                    <li class="internal"><b><a href="eCrew_v3_xsd.html#CrewMemberRoles" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">CrewMemberRoles</a></b></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_eCrews_eCrews_eCrew.CrewGroup_eCrew.03" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('properties_eCrews_eCrews_eCrew.CrewGroup_eCrew.03');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_eCrews_eCrews_eCrew.CrewGroup_eCrew.03" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">minOccurs</td>
+                                    <td><b>0</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">maxOccurs</td>
+                                    <td><b>unbounded</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">nillable</td>
+                                    <td><b>true</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Attributes</b></div>
+                           <div class="floatRight"><input id="button_attributes_eCrews_eCrews_eCrew.CrewGroup_eCrew.03" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('attributes_eCrews_eCrews_eCrew.CrewGroup_eCrew.03');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="attributes_eCrews_eCrews_eCrew.CrewGroup_eCrew.03" style="display:block">
+                              <table class="attributesTable">
+                                 <thead>
+                                    <tr>
+                                       <th>QName</th>
+                                       <th style="width:10%">Type</th>
+                                       <th style="width:10%">Use</th>
+                                       <th></th>
+                                    </tr>
+                                 </thead>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_CorrelationID" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">CorrelationID</a></b></td>
+                                    <td><b><a href="commonTypes_v3_xsd.html#CorrelationID" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">CorrelationID</a></b></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_NV" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">NV</a></b></td>
+                                    <td>union of(<b><a href="commonTypes_v3_xsd.html#NV.NotApplicable" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">NV.NotApplicable</a></b>, <b><a href="commonTypes_v3_xsd.html#NV.NotRecorded" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">NV.NotRecorded</a></b>, <b><a href="commonTypes_v3_xsd.html#NV.NotReporting" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">NV.NotReporting</a></b>)</td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_eCrews_eCrews_eCrew.CrewGroup_eCrew.03" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('source_eCrews_eCrews_eCrew.CrewGroup_eCrew.03');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_eCrews_eCrews_eCrew.CrewGroup_eCrew.03" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td style="width:100%">
+                                       <pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"eCrew.03"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> id=</span><span class="tAV">"eCrew.CrewMemberResponseRole"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;nemsisTacDoc</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">eCrew.03</span><span class="tEl">&lt;/number&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;name</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Crew Member Response Role</span><span class="tEl">&lt;/name&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;national</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">No</span><span class="tEl">&lt;/national&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;state</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Yes</span><span class="tEl">&lt;/state&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;definition</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">The role(s) of the crew member during response, at scene treatment, and/or transport.</span><span class="tEl">&lt;/definition&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;v2Number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">E04_02</span><span class="tEl">&lt;/v2Number&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;usage</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Recommended</span><span class="tEl">&lt;/usage&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;performanceMeasuresGroup</span><span class="tEl">&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Airway</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Cardiac Arrest</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Pediatric</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Response</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">STEMI</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Stroke</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Trauma</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;/performanceMeasuresGroup&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;comment</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">This element has been changed to allow for multiple selections. There must be a driver for response and transport. There must be a primary patient caregiver for scene and transport.</span><span class="tEl">&lt;/comment&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/nemsisTacDoc&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:complexType</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:simpleContent</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"CrewMemberRoles"</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:attribute</span><span class="tAN"> name=</span><span class="tAV">"NV"</span><span class="tAN"> use=</span><span class="tAV">"optional"</span><span class="tEl">&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;xs:simpleType</span><span class="tEl">&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;xs:union</span><span class="tAN"> memberTypes=</span><span class="tAV">"NV.NotApplicable NV.NotRecorded NV.NotReporting"</span><span class="tEl">/&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;/xs:simpleType&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;/xs:attribute&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:attribute</span><span class="tAN"> name=</span><span class="tAV">"CorrelationID"</span><span class="tAN"> type=</span><span class="tAV">"CorrelationID"</span><span class="tAN"> use=</span><span class="tAV">"optional"</span><span class="tEl">/&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:simpleContent&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:complexType&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:element&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="eCrews"></a><div class="componentTitle">Complex Type <span class="qname">eCrews</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://www.nemsis.org</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_eCrews" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('diagram_eCrews');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_eCrews" style="display:block"><img alt="Diagram" style="border:0" src="img/eCrew_v3_xsd_Complex_Type_eCrews.jpeg" usemap="#eCrew_v3_xsd_Complex_Type_eCrews" /><map name="eCrew_v3_xsd_Complex_Type_eCrews" id="eCrew_v3_xsd_Complex_Type_eCrews"><area alt="eCrew_v3_xsd.tmp#eCrews_eCrew.CrewGroup" href="eCrew_v3_xsd.html#eCrews_eCrew.CrewGroup" coords="214,4,338,29" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_eCrews" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('usedBy_eCrews');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_eCrews" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="EMSDataSet_v3_xsd.html#EMSDataSet_EMSDataSet_Header_EMSDataSet_EMSDataSet_Header_PatientCareReport_eCrew" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for EMSDataSet_v3.xsd')">EMSDataSet/Header/PatientCareReport/eCrew</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_eCrews" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('model_eCrews');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_eCrews" style="display:block"><b><a href="eCrew_v3_xsd.html#eCrews_eCrew.CrewGroup" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrew.CrewGroup*</a></b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b><a href="eCrew_v3_xsd.html#eCrews_eCrew.CrewGroup" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrew.CrewGroup</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_eCrews" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('source_eCrews');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_eCrews" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td style="width:100%">
+                                       <pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"eCrews"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"eCrew.CrewGroup"</span><span class="tAN"> id=</span><span class="tAV">"eCrew.CrewGroup"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Group Tag to hold crew information</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:complexType</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"eCrew.01"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> id=</span><span class="tAV">"eCrew.CrewMemberID"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tEl">&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;nemsisTacDoc</span><span class="tEl">&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">eCrew.01</span><span class="tEl">&lt;/number&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;name</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Crew Member ID</span><span class="tEl">&lt;/name&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;national</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">No</span><span class="tEl">&lt;/national&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;state</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Yes</span><span class="tEl">&lt;/state&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;definition</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">The state certification/licensure ID number assigned to the crew member.</span><span class="tEl">&lt;/definition&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;v2Number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">E04_01</span><span class="tEl">&lt;/v2Number&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;usage</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Recommended</span><span class="tEl">&lt;/usage&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;performanceMeasuresGroup</span><span class="tEl">&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Airway</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Cardiac Arrest</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Pediatric</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Response</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">STEMI</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Stroke</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Trauma</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;/performanceMeasuresGroup&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;comment</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Document the state certification/licensure ID for the state where the event occurred.</span><span class="tEl">&lt;/comment&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;/nemsisTacDoc&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;xs:complexType</span><span class="tEl">&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;xs:simpleContent</span><span class="tEl">&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"CrewMemberID"</span><span class="tEl">&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;xs:attribute</span><span class="tAN"> name=</span><span class="tAV">"NV"</span><span class="tAN"> use=</span><span class="tAV">"optional"</span><span class="tEl">&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;xs:simpleType</span><span class="tEl">&gt;</span><span class="tI">
+                      </span><span class="tEl">&lt;xs:union</span><span class="tAN"> memberTypes=</span><span class="tAV">"NV.NotApplicable NV.NotRecorded NV.NotReporting"</span><span class="tEl">/&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;/xs:simpleType&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;/xs:attribute&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;/xs:simpleContent&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;/xs:complexType&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;/xs:element&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"eCrew.02"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> id=</span><span class="tAV">"eCrew.CrewMemberLevel"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tEl">&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;nemsisTacDoc</span><span class="tEl">&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">eCrew.02</span><span class="tEl">&lt;/number&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;name</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Crew Member Level</span><span class="tEl">&lt;/name&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;national</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">No</span><span class="tEl">&lt;/national&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;state</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Yes</span><span class="tEl">&lt;/state&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;definition</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">The functioning level of the crew member ID during this EMS patient encounter.</span><span class="tEl">&lt;/definition&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;v2Number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">E04_03</span><span class="tEl">&lt;/v2Number&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;usage</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Recommended</span><span class="tEl">&lt;/usage&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;performanceMeasuresGroup</span><span class="tEl">&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Airway</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Cardiac Arrest</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Pediatric</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Response</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">STEMI</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Stroke</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Trauma</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;/performanceMeasuresGroup&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;comment</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">The category EMT-Intermediate includes EMS professionals with an "85" or "99" certification level.</span><span class="tEl">&lt;/comment&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;/nemsisTacDoc&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;xs:complexType</span><span class="tEl">&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;xs:simpleContent</span><span class="tEl">&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"MemberLevel"</span><span class="tEl">&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;xs:attribute</span><span class="tAN"> name=</span><span class="tAV">"NV"</span><span class="tAN"> use=</span><span class="tAV">"optional"</span><span class="tEl">&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;xs:simpleType</span><span class="tEl">&gt;</span><span class="tI">
+                      </span><span class="tEl">&lt;xs:union</span><span class="tAN"> memberTypes=</span><span class="tAV">"NV.NotApplicable NV.NotRecorded NV.NotReporting"</span><span class="tEl">/&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;/xs:simpleType&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;/xs:attribute&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;/xs:simpleContent&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;/xs:complexType&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;/xs:element&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"eCrew.03"</span><span class="tAN"> nillable=</span><span class="tAV">"true"</span><span class="tAN"> id=</span><span class="tAV">"eCrew.CrewMemberResponseRole"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tEl">&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;nemsisTacDoc</span><span class="tEl">&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">eCrew.03</span><span class="tEl">&lt;/number&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;name</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Crew Member Response Role</span><span class="tEl">&lt;/name&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;national</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">No</span><span class="tEl">&lt;/national&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;state</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Yes</span><span class="tEl">&lt;/state&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;definition</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">The role(s) of the crew member during response, at scene treatment, and/or transport.</span><span class="tEl">&lt;/definition&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;v2Number</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">E04_02</span><span class="tEl">&lt;/v2Number&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;usage</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Recommended</span><span class="tEl">&lt;/usage&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;performanceMeasuresGroup</span><span class="tEl">&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Airway</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Cardiac Arrest</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Pediatric</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Response</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">STEMI</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Stroke</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;performanceMeasure</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Trauma</span><span class="tEl">&lt;/performanceMeasure&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;/performanceMeasuresGroup&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;comment</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">This element has been changed to allow for multiple selections. There must be a driver for response and transport. There must be a primary patient caregiver for scene and transport.</span><span class="tEl">&lt;/comment&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;/nemsisTacDoc&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;xs:complexType</span><span class="tEl">&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;xs:simpleContent</span><span class="tEl">&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"CrewMemberRoles"</span><span class="tEl">&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;xs:attribute</span><span class="tAN"> name=</span><span class="tAV">"NV"</span><span class="tAN"> use=</span><span class="tAV">"optional"</span><span class="tEl">&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;xs:simpleType</span><span class="tEl">&gt;</span><span class="tI">
+                      </span><span class="tEl">&lt;xs:union</span><span class="tAN"> memberTypes=</span><span class="tAV">"NV.NotApplicable NV.NotRecorded NV.NotReporting"</span><span class="tEl">/&gt;</span><span class="tI">
+                    </span><span class="tEl">&lt;/xs:simpleType&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;/xs:attribute&gt;</span><span class="tI">
+                  </span><span class="tEl">&lt;xs:attribute</span><span class="tAN"> name=</span><span class="tAV">"CorrelationID"</span><span class="tAN"> type=</span><span class="tAV">"CorrelationID"</span><span class="tAN"> use=</span><span class="tAV">"optional"</span><span class="tEl">/&gt;</span><span class="tI">
+                </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+              </span><span class="tEl">&lt;/xs:simpleContent&gt;</span><span class="tI">
+            </span><span class="tEl">&lt;/xs:complexType&gt;</span><span class="tI">
+          </span><span class="tEl">&lt;/xs:element&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:attribute</span><span class="tAN"> name=</span><span class="tAV">"CorrelationID"</span><span class="tAN"> type=</span><span class="tAV">"CorrelationID"</span><span class="tAN"> use=</span><span class="tAV">"optional"</span><span class="tEl">/&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:complexType&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:element&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="CrewMemberRoles"></a><div class="componentTitle">Simple Type <span class="qname">CrewMemberRoles</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://www.nemsis.org</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Annotations</b></div>
+                           <div class="floatRight"><input id="button_annotations_CrewMemberRoles" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('annotations_CrewMemberRoles');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="annotations_CrewMemberRoles" style="display:block">
+                              <div class="annotation">
+                                 <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                    <tr>
+                                       <td style="width:100%">
+                                          <pre><span class="tT">The role(s) of the crew member during this EMS call response.</span></pre>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_CrewMemberRoles" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('diagram_CrewMemberRoles');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_CrewMemberRoles" style="display:block"><img alt="Diagram" style="border:0" src="img/eCrew_v3_xsd_Simple_Type_CrewMemberRoles.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>restriction of <b>xs:string</b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_CrewMemberRoles" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('facets_CrewMemberRoles');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_CrewMemberRoles" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td style="width:30%"><b>2403001</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td style="width:100%">
+                                                   <pre><span class="tT">Driver/Pilot-Response</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td style="width:30%"><b>2403003</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td style="width:100%">
+                                                   <pre><span class="tT">Driver/Pilot-Transport</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td style="width:30%"><b>2403005</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td style="width:100%">
+                                                   <pre><span class="tT">Other</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td style="width:30%"><b>2403007</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td style="width:100%">
+                                                   <pre><span class="tT">Other Patient Caregiver-At Scene</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td style="width:30%"><b>2403009</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td style="width:100%">
+                                                   <pre><span class="tT">Other Patient Caregiver-Transport</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td style="width:30%"><b>2403011</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td style="width:100%">
+                                                   <pre><span class="tT">Primary Patient Caregiver-At Scene</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">enumeration</td>
+                                    <td style="width:30%"><b>2403013</b></td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td style="width:100%">
+                                                   <pre><span class="tT">Primary Patient Caregiver-Transport</span></pre>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_CrewMemberRoles" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('usedBy_CrewMemberRoles');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_CrewMemberRoles" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrew.03" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrews/eCrew.CrewGroup/eCrew.03</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_CrewMemberRoles" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('source_CrewMemberRoles');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_CrewMemberRoles" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td style="width:100%">
+                                       <pre><span class="tEl">&lt;xs:simpleType</span><span class="tAN"> name=</span><span class="tAV">"CrewMemberRoles"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">The role(s) of the crew member during this EMS call response.</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:restriction</span><span class="tAN"> base=</span><span class="tAV">"xs:string"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"2403001"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Driver/Pilot-Response</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:enumeration&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"2403003"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Driver/Pilot-Transport</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:enumeration&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"2403005"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Other</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:enumeration&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"2403007"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Other Patient Caregiver-At Scene</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:enumeration&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"2403009"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Other Patient Caregiver-Transport</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:enumeration&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"2403011"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Primary Patient Caregiver-At Scene</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:enumeration&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:enumeration</span><span class="tAN"> value=</span><span class="tAV">"2403013"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Primary Patient Caregiver-Transport</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:enumeration&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:restriction&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:simpleType&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.01_NV"></a><div class="componentTitle">Attribute <span class="qname"><b><a href="eCrew_v3_xsd.html#eCrews" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrews</a></b> / <b><a href="eCrew_v3_xsd.html#eCrews_eCrew.CrewGroup" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrew.CrewGroup</a></b> / <b><a href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrew.01" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrew.01</a></b> / @NV</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>No namespace</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>union of(<b><a href="commonTypes_v3_xsd.html#NV.NotApplicable" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">NV.NotApplicable</a></b>, <b><a href="commonTypes_v3_xsd.html#NV.NotRecorded" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">NV.NotRecorded</a></b>, <b><a href="commonTypes_v3_xsd.html#NV.NotReporting" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">NV.NotReporting</a></b>)</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.01_NV" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('properties_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.01_NV');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.01_NV" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">use</td>
+                                    <td><b>optional</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.01_NV" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('usedBy_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.01_NV');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.01_NV" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrew.01" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrews/eCrew.CrewGroup/eCrew.01</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.01_NV" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('source_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.01_NV');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.01_NV" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td style="width:100%">
+                                       <pre><span class="tEl">&lt;xs:attribute</span><span class="tAN"> name=</span><span class="tAV">"NV"</span><span class="tAN"> use=</span><span class="tAV">"optional"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:simpleType</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:union</span><span class="tAN"> memberTypes=</span><span class="tAV">"NV.NotApplicable NV.NotRecorded NV.NotReporting"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:simpleType&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:attribute&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.02_NV"></a><div class="componentTitle">Attribute <span class="qname"><b><a href="eCrew_v3_xsd.html#eCrews" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrews</a></b> / <b><a href="eCrew_v3_xsd.html#eCrews_eCrew.CrewGroup" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrew.CrewGroup</a></b> / <b><a href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrew.02" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrew.02</a></b> / @NV</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>No namespace</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>union of(<b><a href="commonTypes_v3_xsd.html#NV.NotApplicable" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">NV.NotApplicable</a></b>, <b><a href="commonTypes_v3_xsd.html#NV.NotRecorded" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">NV.NotRecorded</a></b>, <b><a href="commonTypes_v3_xsd.html#NV.NotReporting" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">NV.NotReporting</a></b>)</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.02_NV" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('properties_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.02_NV');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.02_NV" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">use</td>
+                                    <td><b>optional</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.02_NV" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('usedBy_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.02_NV');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.02_NV" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrew.02" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrews/eCrew.CrewGroup/eCrew.02</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.02_NV" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('source_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.02_NV');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.02_NV" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td style="width:100%">
+                                       <pre><span class="tEl">&lt;xs:attribute</span><span class="tAN"> name=</span><span class="tAV">"NV"</span><span class="tAN"> use=</span><span class="tAV">"optional"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:simpleType</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:union</span><span class="tAN"> memberTypes=</span><span class="tAV">"NV.NotApplicable NV.NotRecorded NV.NotReporting"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:simpleType&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:attribute&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_NV"></a><div class="componentTitle">Attribute <span class="qname"><b><a href="eCrew_v3_xsd.html#eCrews" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrews</a></b> / <b><a href="eCrew_v3_xsd.html#eCrews_eCrew.CrewGroup" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrew.CrewGroup</a></b> / <b><a href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrew.03" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrew.03</a></b> / @NV</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>No namespace</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>union of(<b><a href="commonTypes_v3_xsd.html#NV.NotApplicable" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">NV.NotApplicable</a></b>, <b><a href="commonTypes_v3_xsd.html#NV.NotRecorded" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">NV.NotRecorded</a></b>, <b><a href="commonTypes_v3_xsd.html#NV.NotReporting" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">NV.NotReporting</a></b>)</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_NV" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('properties_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_NV');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_NV" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">use</td>
+                                    <td><b>optional</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_NV" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('usedBy_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_NV');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_NV" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrew.03" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrews/eCrew.CrewGroup/eCrew.03</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_NV" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('source_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_NV');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_NV" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td style="width:100%">
+                                       <pre><span class="tEl">&lt;xs:attribute</span><span class="tAN"> name=</span><span class="tAV">"NV"</span><span class="tAN"> use=</span><span class="tAV">"optional"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:simpleType</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:union</span><span class="tAN"> memberTypes=</span><span class="tAV">"NV.NotApplicable NV.NotRecorded NV.NotReporting"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:simpleType&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:attribute&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_CorrelationID"></a><div class="componentTitle">Attribute <span class="qname"><b><a href="eCrew_v3_xsd.html#eCrews" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrews</a></b> / <b><a href="eCrew_v3_xsd.html#eCrews_eCrew.CrewGroup" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrew.CrewGroup</a></b> / <b><a href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrew.03" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrew.03</a></b> / @CorrelationID</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>No namespace</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="commonTypes_v3_xsd.html#CorrelationID" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">CorrelationID</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_CorrelationID" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('properties_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_CorrelationID');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_CorrelationID" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">use</td>
+                                    <td><b>optional</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_CorrelationID" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('facets_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_CorrelationID');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_CorrelationID" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">minLength</td>
+                                    <td style="width:30%"><b>2</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">maxLength</td>
+                                    <td style="width:30%"><b>255</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_CorrelationID" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('usedBy_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_CorrelationID');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_CorrelationID" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="eCrew_v3_xsd.html#eCrews_eCrews_eCrew.CrewGroup_eCrew.03" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrews/eCrew.CrewGroup/eCrew.03</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_CorrelationID" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('source_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_CorrelationID');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_eCrews_eCrews_eCrew.CrewGroup_eCrews_eCrews_eCrew.CrewGroup_eCrew.03_CorrelationID" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td style="width:100%">
+                                       <pre><span class="tEl">&lt;xs:attribute</span><span class="tAN"> name=</span><span class="tAV">"CorrelationID"</span><span class="tAN"> type=</span><span class="tAV">"CorrelationID"</span><span class="tAN"> use=</span><span class="tAV">"optional"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="eCrews_eCrews_eCrew.CrewGroup_CorrelationID"></a><div class="componentTitle">Attribute <span class="qname"><b><a href="eCrew_v3_xsd.html#eCrews" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrews</a></b> / <b><a href="eCrew_v3_xsd.html#eCrews_eCrew.CrewGroup" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrew.CrewGroup</a></b> / @CorrelationID</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>No namespace</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="commonTypes_v3_xsd.html#CorrelationID" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">CorrelationID</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_eCrews_eCrews_eCrew.CrewGroup_CorrelationID" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('properties_eCrews_eCrews_eCrew.CrewGroup_CorrelationID');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_eCrews_eCrews_eCrew.CrewGroup_CorrelationID" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">use</td>
+                                    <td><b>optional</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Facets</b></div>
+                           <div class="floatRight"><input id="button_facets_eCrews_eCrews_eCrew.CrewGroup_CorrelationID" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('facets_eCrews_eCrews_eCrew.CrewGroup_CorrelationID');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="facets_eCrews_eCrews_eCrew.CrewGroup_CorrelationID" style="display:block">
+                              <table class="facetsTable">
+                                 <tr>
+                                    <td class="firstColumn">minLength</td>
+                                    <td style="width:30%"><b>2</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn">maxLength</td>
+                                    <td style="width:30%"><b>255</b></td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Used by</b></div>
+                           <div class="floatRight"><input id="button_usedBy_eCrews_eCrews_eCrew.CrewGroup_CorrelationID" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('usedBy_eCrews_eCrews_eCrew.CrewGroup_CorrelationID');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="usedBy_eCrews_eCrews_eCrew.CrewGroup_CorrelationID" style="display:block">
+                              <table class="usedByTable">
+                                 <tr>
+                                    <td class="firstColumn">Element </td>
+                                    <td><b><a href="eCrew_v3_xsd.html#eCrews_eCrew.CrewGroup" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for eCrew_v3.xsd')">eCrews/eCrew.CrewGroup</a></b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_eCrews_eCrews_eCrew.CrewGroup_CorrelationID" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('source_eCrews_eCrews_eCrew.CrewGroup_CorrelationID');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_eCrews_eCrews_eCrew.CrewGroup_CorrelationID" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td style="width:100%">
+                                       <pre><span class="tEl">&lt;xs:attribute</span><span class="tAN"> name=</span><span class="tAV">"CorrelationID"</span><span class="tAN"> type=</span><span class="tAV">"CorrelationID"</span><span class="tAN"> use=</span><span class="tAV">"optional"</span><span class="tEl">/&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table>
+      <div class="footer">
+         <hr />
+         <div style="text-align:center">XML Schema documentation generated by <a href="http://www.oxygenxml.com" target="_parent"><span class="oXygenLogo"><span class="redX">&lt;</span>o<span class="redX">X</span>ygen<span class="redX">/&gt;</span></span></a><sup>®</sup> XML Editor.</div>
+      </div><script type="text/javascript"><!--
+                     // The namespace is the selected option in the TOC combo.
+                    
+                     // Floats the toolbar.
+                     var globalControls = getElementObject("global_controls"); 
+                     
+                     if(globalControls != null){
+	                     var browser=navigator.appName;
+						 var version = parseFloat(navigator.appVersion.split('MSIE')[1]);
+						 
+						 var IE6 = false;
+						 if ((browser=="Microsoft Internet Explorer") && (version < 7)){
+						 	IE6 = true;
+						 }
+	
+	                     //alert (IE6 + " |V| " + version);
+	                     
+	                     if(IE6){
+	                     	// On IE 6 the 'fixed' property is not supported. We must use javascript. 
+	                         globalControls.style.position='absolute';                         
+	                         // The global controls will do not exist in the TOC frame, when chunking.
+	                         findAndFloat("global_controls", 225, 30);    
+	                     } else {
+	                      	  globalControls.style.position='fixed';                     	
+	                     }
+	                     
+	                     globalControls.style.right='0';                       
+                     }
+                //--></script></body>
+</html>

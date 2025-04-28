@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eInjury.19"  minOccurs="0"  maxOccurs="1"  dataTypeName="Model"  isNillable="No">
+<name>ACN Incident Vehicle Model</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The Automated Collision Notification Vehicle Model (e.g., Escalade, Taurus, X6M, etc.).</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Based on Vehicular Emergency Data Set:  Model. Vehicular Emergency Data Set (VEDS) Recommendations. Version 3.0 Prepared: (February 2011) by the Advanced Automatic Crash Notification (AACN)Joint APCO/NENA Data Standardization Working Group.</v3Comment>
+<v3Changes>Added to better incorporate advanced automated collision notification information.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <Model baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="100"/>
+  </Model>
+</restrictions>
+</element>

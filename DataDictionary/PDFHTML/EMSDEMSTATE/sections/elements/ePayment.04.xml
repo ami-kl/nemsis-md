@@ -1,0 +1,40 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.04"  minOccurs="0"  maxOccurs="M"  dataTypeName="Reason"  isNillable="No">
+<name>Reason for Physician Certification Statement</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The reason for EMS transport noted on the Physician Certification Statement.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Added to assist in billing documentation.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <Reason baseType="string">
+    <facet name="enumeration" value="2604001" annotation="Bed Confined"/>
+    <facet name="enumeration" value="2604003" annotation="Cardiac/Hemodynamic monitoring required during transport"/>
+    <facet name="enumeration" value="2604005" annotation="Confused, combative, lethargic, comatose"/>
+    <facet name="enumeration" value="2604007" annotation="Contractures"/>
+    <facet name="enumeration" value="2604009" annotation="Danger to self or others-monitoring"/>
+    <facet name="enumeration" value="2604011" annotation="Danger to self or others-seclusion (flight risk)"/>
+    <facet name="enumeration" value="2604013" annotation="DVT requires elevation of lower extremity"/>
+    <facet name="enumeration" value="2604015" annotation="IV medications/fluids required during transport"/>
+    <facet name="enumeration" value="2604017" annotation="Moderate to severe pain on movement"/>
+    <facet name="enumeration" value="2604019" annotation="Morbid Obesity requires additional personnel/equipment to handle"/>
+    <facet name="enumeration" value="2604021" annotation="Non-healing fractures"/>
+    <facet name="enumeration" value="2604023" annotation="Orthopedic device (backboard, halo, use of pins in traction, etc.) requiring special handling in transit"/>
+    <facet name="enumeration" value="2604025" annotation="Restraints (Physical or Chemical) anticipated or used during transport"/>
+    <facet name="enumeration" value="2604027" annotation="Risk of falling off wheelchair or stretcher while in motion (not related to obesity)"/>
+    <facet name="enumeration" value="2604029" annotation="Severe Muscular weakness and de-conditioned state precludes any significant physical activity"/>
+    <facet name="enumeration" value="2604031" annotation="Special handling en route-Isolation"/>
+    <facet name="enumeration" value="2604033" annotation="Third Party assistance/attendant required to apply, administer, or regulate or adjust oxygen en route"/>
+    <facet name="enumeration" value="2604035" annotation="Unable to maintain erect sitting position in a chair for time needed to transport, due to moderate muscular weakness and de-conditioning."/>
+    <facet name="enumeration" value="2604037" annotation="Unable to sit in chair or wheelchair due to Grade II or greater decubitus ulcers on buttocks."/>
+  </Reason>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

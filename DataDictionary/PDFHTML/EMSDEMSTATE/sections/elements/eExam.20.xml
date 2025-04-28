@@ -1,0 +1,50 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eExam.20"  minOccurs="0"  maxOccurs="M"  dataTypeName="NeurologicalAssessment"  isNillable="No">
+<name>Neurological Assessment</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The assessment findings of the patient's neurological examination.</definition>
+<v2Number>E16_24</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Stroke</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Element eExam.20 - Neurological Assessment represents Version 2.2.1 element E16_24 Neurological Assessment. The element value choices have been expanded.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <NeurologicalAssessment baseType="string">
+    <facet name="enumeration" value="3520001" annotation="Aphagia"/>
+    <facet name="enumeration" value="3520003" annotation="Aphasia"/>
+    <facet name="enumeration" value="3520005" annotation="Cerebellar Function-Abnormal"/>
+    <facet name="enumeration" value="3520007" annotation="Cerebellar Function-Normal"/>
+    <facet name="enumeration" value="3520009" annotation="Decerebrate Posturing"/>
+    <facet name="enumeration" value="3520011" annotation="Decorticate Posturing"/>
+    <facet name="enumeration" value="3520013" annotation="Gait-Abnormal"/>
+    <facet name="enumeration" value="3520015" annotation="Gait-Normal"/>
+    <facet name="enumeration" value="3520017" annotation="Hemiplegia-Left"/>
+    <facet name="enumeration" value="3520019" annotation="Hemiplegia-Right"/>
+    <facet name="enumeration" value="3520021" annotation="Normal Baseline for Patient"/>
+    <facet name="enumeration" value="3520023" annotation="Not Done"/>
+    <facet name="enumeration" value="3520026" annotation="Status Seizure"/>
+    <facet name="enumeration" value="3520055" annotation="Other Seizures"/>
+    <facet name="enumeration" value="3520027" annotation="Speech Normal"/>
+    <facet name="enumeration" value="3520029" annotation="Speech Slurring"/>
+    <facet name="enumeration" value="3520031" annotation="Strength-Asymmetric"/>
+    <facet name="enumeration" value="3520033" annotation="Strength-Normal"/>
+    <facet name="enumeration" value="3520035" annotation="Strength-Symmetric"/>
+    <facet name="enumeration" value="3520037" annotation="Tremors"/>
+    <facet name="enumeration" value="3520039" annotation="Weakness-Facial Droop-Left"/>
+    <facet name="enumeration" value="3520041" annotation="Weakness-Facial Droop-Right"/>
+    <facet name="enumeration" value="3520043" annotation="Weakness-Left Sided"/>
+    <facet name="enumeration" value="3520045" annotation="Weakness-Right Sided"/>
+    <facet name="enumeration" value="3520051" annotation="Arm Drift-Left"/>
+    <facet name="enumeration" value="3520053" annotation="Arm Drift-Right"/>
+  </NeurologicalAssessment>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+  <PN>
+    <PN.ExamFindingNotPresent><facet name="enumeration" value="8801005" annotation="Exam Finding Not Present"/></PN.ExamFindingNotPresent>
+  </PN>
+</attributes>
+</element>

@@ -1,0 +1,33 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eCustomConfiguration.08"  minOccurs="0"  maxOccurs="M"  dataTypeName="PN"  isNillable="No">
+<name>Custom Data Element Potential Pertinent Negative Values (PN)</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>Pertinent Negative Values (PN) associated with the custom element.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <PN baseType="string">
+    <facet name="enumeration" value="8801001" annotation="Contraindication Noted"/>
+    <facet name="enumeration" value="8801003" annotation="Denied By Order"/>
+    <facet name="enumeration" value="8801005" annotation="Exam Finding Not Present"/>
+    <facet name="enumeration" value="8801007" annotation="Medication Allergy"/>
+    <facet name="enumeration" value="8801009" annotation="Medication Already Taken"/>
+    <facet name="enumeration" value="8801013" annotation="No Known Drug Allergy"/>
+    <facet name="enumeration" value="8801015" annotation="None Reported"/>
+    <facet name="enumeration" value="8801017" annotation="Not Performed by EMS"/>
+    <facet name="enumeration" value="8801019" annotation="Refused"/>
+    <facet name="enumeration" value="8801021" annotation="Unresponsive"/>
+    <facet name="enumeration" value="8801023" annotation="Unable to Complete"/>
+    <facet name="enumeration" value="8801025" annotation="Not Immunized"/>
+    <facet name="enumeration" value="8801027" annotation="Order Criteria Not Met"/>
+    <facet name="enumeration" value="8801029" annotation="Approximate"/>
+    <facet name="enumeration" value="8801031" annotation="Symptom Not Present"/>
+  </PN>
+</restrictions>
+</element>

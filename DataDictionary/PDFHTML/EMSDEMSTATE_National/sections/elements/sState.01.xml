@@ -1,0 +1,22 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="sState.01"  minOccurs="1"  maxOccurs="1"  dataTypeName="ANSIStateCode"  isNillable="No">
+<name>State</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The state associated with the state data set.</definition>
+<v2Number></v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>GNIS Codes Website: <a href="http://geonames.usgs.gov/domestic/download_data.htm">http://geonames.usgs.gov/domestic/download_data.htm</a>
+                                <br/><br/>Used to populate the following data elements:
+                                <br/>dAgency.04 EMS Agency State
+                                <br/>dConfiguration.01 State Associated with this Configuration.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ANSIStateCode baseType="string">
+    <facet name="pattern" value="[0-9]{2}"/>
+  </ANSIStateCode>
+</restrictions>
+</element>

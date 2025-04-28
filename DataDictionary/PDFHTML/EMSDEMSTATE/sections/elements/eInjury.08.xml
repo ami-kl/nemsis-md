@@ -1,0 +1,26 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eInjury.08"  minOccurs="0"  maxOccurs="M"  dataTypeName="AirbagDeployment"  isNillable="No">
+<name>Airbag Deployment</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Indication of Airbag Deployment.</definition>
+<v2Number>E10_09</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>MMUCC P8 data element baseline was used for this element.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <AirbagDeployment baseType="string">
+    <facet name="enumeration" value="2908001" annotation="Airbag Deployed Front"/>
+    <facet name="enumeration" value="2908003" annotation="Airbag Deployed Side"/>
+    <facet name="enumeration" value="2908005" annotation="Airbag Deployed Other (knee, air belt, etc.)"/>
+    <facet name="enumeration" value="2908007" annotation="No Airbag Deployed"/>
+    <facet name="enumeration" value="2908009" annotation="No Airbag Present"/>
+  </AirbagDeployment>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

@@ -1,0 +1,28 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eResponse.07"  minOccurs="1"  maxOccurs="1"  dataTypeName="UnitTransportEquipmentCapability"  isNillable="No">
+<name>Unit Transport and Equipment Capability</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The transport and equipment capabilities of the EMS Unit which responded to this specific EMS event.</definition>
+<v2Number>E02_05</v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Element relabeled from "Primary Role of Unit" to "Unit Transport and Equipment Capability" to better reflect its new defined purpose and allow the deprecation of eResponse.15 "Level of Care of This Unit". V3.4.0 Non-Transport values deprecated as these are types of service and were moved to eResponse.05 "Type of Service Requested". Values have been added to better capture transport capability and available equipment. These values should be tied to the capabilities and role of the unit and not reflect the level of providers responding to an event.
+								<br/> <br/>Supervisor clarified to Administrative Only. If the Supervisor is responding to assist, that would be considered Non-Transport. Transport separated into Air and Ground.  In Version 2 there was no way to identify Air Transport.</v3Comment>
+<v3Changes>With the release of V3.5.0 values were deprecated, added, and relabeled to meet the needs of EMS.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <UnitTransportEquipmentCapability baseType="string">
+    <facet name="enumeration" value="2207011" annotation="Air Transport-Helicopter"/>
+    <facet name="enumeration" value="2207013" annotation="Air Transport-Fixed Wing"/>
+    <facet name="enumeration" value="2207015" annotation="Ground Transport (ALS Equipped)"/>
+    <facet name="enumeration" value="2207017" annotation="Ground Transport (BLS Equipped)"/>
+    <facet name="enumeration" value="2207019" annotation="Ground Transport (Critical Care Equipped)"/>
+    <facet name="enumeration" value="2207021" annotation="Non-Transport-Medical Treatment (ALS Equipped)"/>
+    <facet name="enumeration" value="2207023" annotation="Non-Transport-Medical Treatment (BLS Equipped)"/>
+    <facet name="enumeration" value="2207025" annotation="Wheel Chair Van/Ambulette"/>
+    <facet name="enumeration" value="2207027" annotation="Non-Transport-No Medical Equipment"/>
+  </UnitTransportEquipmentCapability>
+</restrictions>
+</element>

@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDisposition.04"  minOccurs="0"  maxOccurs="1"  dataTypeName="CityGnisCode"  isNillable="No">
+<name>Destination City</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The city of the destination the patient was delivered or transferred to (physical address).</definition>
+<v2Number>E20_04</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>City codes are based on GNIS Feature Class. The primary Feature Class to use is "Civil" with "Populated Place" and "Military" code as additional options. 
+  	<br/><br/>Definitions for each GNIS City Feature Class can be found on the GNIS Codes website. 
+  	<br/><br/>GNIS Codes Website: <a href="http://geonames.usgs.gov/domestic/download_data.htm" target="_blank">http://geonames.usgs.gov/domestic/download_data.htm</a></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <CityGnisCode baseType="positiveInteger">
+  </CityGnisCode>
+</restrictions>
+</element>

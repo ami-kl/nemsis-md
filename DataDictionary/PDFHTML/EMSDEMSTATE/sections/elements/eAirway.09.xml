@@ -1,0 +1,31 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eAirway.09"  minOccurs="0"  maxOccurs="M"  dataTypeName="ReasonsForFailure"  isNillable="No">
+<name>Suspected Reasons for Failed Airway Management</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The reason(s) the airway was unable to be successfully managed.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes>Added to better document airway management.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ReasonsForFailure baseType="string">
+    <facet name="enumeration" value="4009001" annotation="Difficult Patient Airway Anatomy"/>
+    <facet name="enumeration" value="4009003" annotation="ETI Attempted, but Arrived At Destination Facility Before Accomplished"/>
+    <facet name="enumeration" value="4009005" annotation="Facial or Oral Trauma"/>
+    <facet name="enumeration" value="4009007" annotation="Inability to Expose Vocal Cords"/>
+    <facet name="enumeration" value="4009009" annotation="Inadequate Patient Relaxation/Presence of Protective Airway Reflexes"/>
+    <facet name="enumeration" value="4009011" annotation="Jaw Clenched (Trismus)"/>
+    <facet name="enumeration" value="4009013" annotation="Other"/>
+    <facet name="enumeration" value="4009015" annotation="Poor Patient Access"/>
+    <facet name="enumeration" value="4009017" annotation="Secretions/Blood/Vomit"/>
+    <facet name="enumeration" value="4009019" annotation="Unable to Position or Access Patient"/>
+  </ReasonsForFailure>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

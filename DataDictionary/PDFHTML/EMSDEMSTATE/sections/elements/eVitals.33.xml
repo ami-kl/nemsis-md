@@ -1,0 +1,34 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eVitals.33"  minOccurs="0"  maxOccurs="1"  dataTypeName="RTS"  isNillable="Yes">
+<name>Revised Trauma Score</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The patient's Revised Trauma Score.</definition>
+<v2Number>E14_27</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>The Unweighted Revised Trauma Score is a physiological scoring system that is based on the first set of vital signs obtained from the patient, and consists of Glasgow Coma Scale, Systolic Blood Pressure and Respiratory Rate.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <RTS baseType="integer">
+    <facet name="minInclusive" value="0"/>
+    <facet name="maxInclusive" value="12"/>
+  </RTS>
+</restrictions>
+<attributes>
+  <PN>
+    <PN.Refused><facet name="enumeration" value="8801019" annotation="Refused"/></PN.Refused>
+    <PN.UnableToComplete><facet name="enumeration" value="8801023" annotation="Unable to Complete"/></PN.UnableToComplete>
+  </PN>
+</attributes>
+<asserts>
+  <assert id="nemSch_e008" role="Error">
+      When Revised Trauma Score has a Pertinent Negative, it should be empty and it should not have a Not Value (Not Applicable, Not Recorded, or Not Reporting).
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Revised Trauma Score is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

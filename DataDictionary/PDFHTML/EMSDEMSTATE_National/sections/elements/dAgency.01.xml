@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dAgency.01"  minOccurs="1"  maxOccurs="1"  dataTypeName="EMSAgencyStateID"  isNillable="No">
+<name>EMS Agency Unique State ID</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The unique ID assigned to the EMS Agency which is associated with all state licensure numbers and information.</definition>
+<v2Number></v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>This may be the EMS Agency Name or a unique number assigned by the state EMS office. This is required to document multiple license types and numbers associated with the same EMS Agency.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EMSAgencyStateID baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="50"/>
+  </EMSAgencyStateID>
+</restrictions>
+</element>

@@ -1,0 +1,72 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDispatch.01"  minOccurs="1"  maxOccurs="1"  dataTypeName="DispatchReason"  isNillable="No">
+<name>Dispatch Reason</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The dispatch reason reported to the responding unit.</definition>
+<v2Number>E03_01</v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Added Pandemic/Epidemic/Outbreak. 
+<br/>Added Automated Crash Notification 
+<br/>Added Healthcare Professional Admission 
+<br/>Added Transfer/Interfacility/Palliative Care 
+<br/>- Other entries expanded based on current national EMD Dispatch List</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <DispatchReason baseType="string">
+    <facet name="enumeration" value="2301001" annotation="Abdominal Pain/Problems"/>
+    <facet name="enumeration" value="2301003" annotation="Allergic Reaction/Stings"/>
+    <facet name="enumeration" value="2301005" annotation="Animal Bite"/>
+    <facet name="enumeration" value="2301007" annotation="Assault"/>
+    <facet name="enumeration" value="2301009" annotation="Automated Crash Notification"/>
+    <facet name="enumeration" value="2301011" annotation="Back Pain (Non-Traumatic)"/>
+    <facet name="enumeration" value="2301013" annotation="Breathing Problem"/>
+    <facet name="enumeration" value="2301015" annotation="Burns/Explosion"/>
+    <facet name="enumeration" value="2301017" annotation="Carbon Monoxide/Hazmat/Inhalation/CBRN"/>
+    <facet name="enumeration" value="2301019" annotation="Cardiac Arrest/Death"/>
+    <facet name="enumeration" value="2301021" annotation="Chest Pain (Non-Traumatic)"/>
+    <facet name="enumeration" value="2301023" annotation="Choking"/>
+    <facet name="enumeration" value="2301025" annotation="Convulsions/Seizure"/>
+    <facet name="enumeration" value="2301027" annotation="Diabetic Problem"/>
+    <facet name="enumeration" value="2301029" annotation="Electrocution/Lightning"/>
+    <facet name="enumeration" value="2301031" annotation="Eye Problem/Injury"/>
+    <facet name="enumeration" value="2301033" annotation="Falls"/>
+    <facet name="enumeration" value="2301035" annotation="Fire"/>
+    <facet name="enumeration" value="2301037" annotation="Headache"/>
+    <facet name="enumeration" value="2301039" annotation="Healthcare Professional/Admission"/>
+    <facet name="enumeration" value="2301041" annotation="Heart Problems/AICD"/>
+    <facet name="enumeration" value="2301043" annotation="Heat/Cold Exposure"/>
+    <facet name="enumeration" value="2301045" annotation="Hemorrhage/Laceration"/>
+    <facet name="enumeration" value="2301047" annotation="Industrial Accident/Inaccessible Incident/Other Entrapments (Non-Vehicle)"/>
+    <facet name="enumeration" value="2301049" annotation="Medical Alarm"/>
+    <facet name="enumeration" value="2301051" annotation="No Other Appropriate Choice"/>
+    <facet name="enumeration" value="2301053" annotation="Overdose/Poisoning/Ingestion"/>
+    <facet name="enumeration" value="2301055" annotation="Pandemic/Epidemic/Outbreak"/>
+    <facet name="enumeration" value="2301057" annotation="Pregnancy/Childbirth/Miscarriage"/>
+    <facet name="enumeration" value="2301059" annotation="Psychiatric Problem/Abnormal Behavior/Suicide Attempt"/>
+    <facet name="enumeration" value="2301061" annotation="Sick Person"/>
+    <facet name="enumeration" value="2301063" annotation="Stab/Gunshot Wound/Penetrating Trauma"/>
+    <facet name="enumeration" value="2301065" annotation="Standby"/>
+    <facet name="enumeration" value="2301067" annotation="Stroke/CVA"/>
+    <facet name="enumeration" value="2301069" annotation="Traffic/Transportation Incident"/>
+    <facet name="enumeration" value="2301071" annotation="Transfer/Interfacility/Palliative Care"/>
+    <facet name="enumeration" value="2301073" annotation="Traumatic Injury"/>
+    <facet name="enumeration" value="2301075" annotation="Well Person Check"/>
+    <facet name="enumeration" value="2301077" annotation="Unconscious/Fainting/Near-Fainting"/>
+    <facet name="enumeration" value="2301079" annotation="Unknown Problem/Person Down"/>
+    <facet name="enumeration" value="2301081" annotation="Drowning/Diving/SCUBA Accident"/>
+    <facet name="enumeration" value="2301083" annotation="Airmedical Transport"/>
+    <facet name="enumeration" value="2301085" annotation="Altered Mental Status"/>
+    <facet name="enumeration" value="2301087" annotation="Intercept"/>
+    <facet name="enumeration" value="2301089" annotation="Nausea"/>
+    <facet name="enumeration" value="2301091" annotation="Vomiting"/>
+    <facet name="enumeration" value="2301093" annotation="Hanging/Strangulation/Asphyxiation"/>
+    <facet name="enumeration" value="2301095" annotation="Intoxicated Subject"/>
+    <facet name="enumeration" value="2301097" annotation="EMS Requested by Law Enforcement"/>
+    <facet name="enumeration" value="2301099" annotation="Active Shooter"/>
+  </DispatchReason>
+</restrictions>
+</element>

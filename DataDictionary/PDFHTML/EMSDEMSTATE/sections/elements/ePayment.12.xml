@@ -1,0 +1,23 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.12"  minOccurs="0"  maxOccurs="1"  dataTypeName="StreetAddress"  isNillable="No">
+<name>Insurance Company Address</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The mailing address of the Insurance Company.</definition>
+<v2Number>E07_05</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <StreetAddress baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="255"/>
+  </StreetAddress>
+</restrictions>
+<attributes>
+  <StreetAddress2 baseType="string"><facet name="minLength" value="1"/><facet name="maxLength" value="255"/></StreetAddress2>
+</attributes>
+</element>

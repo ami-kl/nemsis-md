@@ -1,0 +1,66 @@
+<?xml-stylesheet type="text/xsl" href="https://nemsis.org/media/nemsis_v3/release-3.5.1/DefinedLists/DefinedListHtml.xsl"?><DefinedList xmlns="http://www.nemsis.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" date="2025-01-14" xsi:schemaLocation="http://www.nemsis.org https://nemsis.org/media/nemsis_v3/release-3.5.1/DefinedLists/DefinedLists.xsd">
+  <Header>
+    <SourceVocabularies>
+      <SourceVocabulary url="https://www.cdc.gov/nchs/icd/icd-10-cm/">ICD-10</SourceVocabulary>
+      <SourceVocabulary url="https://www.nlm.nih.gov/research/umls/rxnorm/index.html">RxNorm</SourceVocabulary>
+    </SourceVocabularies>
+    <NemsisTypes>
+      <NemsisType>MedicationAllergies</NemsisType>
+    </NemsisTypes>
+    <NemsisElements>
+      <NemsisElement>eHistory.06</NemsisElement>
+    </NemsisElements>
+  </Header>
+  <Codes>
+    <Code date="2021-05-06">
+      <Value CodeType="9924001">Z88.6</Value>
+      <SourceLabel>Allergy status to analgesic agent status</SourceLabel>
+      <SuggestedLabel>Analgesic</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924001">Z88.4</Value>
+      <SourceLabel>Allergy status to anesthetic agent status</SourceLabel>
+      <SuggestedLabel>Anesthetic</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924001">Z88.1</Value>
+      <SourceLabel>Allergy status to other antibiotic agents status</SourceLabel>
+      <SuggestedLabel>Antibiotic</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924001">Z88.3</Value>
+      <SourceLabel>Allergy status to other anti-infective agents status</SourceLabel>
+      <SuggestedLabel>Anti-Infective</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924001">Z88.9</Value>
+      <SourceLabel>Allergy status to unspecified drugs, medicaments and biological substances status</SourceLabel>
+      <SuggestedLabel>Medication, unspecified</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924001">Z88.5</Value>
+      <SourceLabel>Allergy status to narcotic agent status</SourceLabel>
+      <SuggestedLabel>Narcotic</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924001">Z88.8</Value>
+      <SourceLabel>Allergy status to other drugs, medicaments and biological substances status</SourceLabel>
+      <SuggestedLabel>Other medication or biological substance</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924001">Z88.0</Value>
+      <SourceLabel>Allergy status to penicillin</SourceLabel>
+      <SuggestedLabel>Penicillin</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924001">Z88.7</Value>
+      <SourceLabel>Allergy status to serum and vaccine status</SourceLabel>
+      <SuggestedLabel>Serum or Vaccine</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924001">Z88.2</Value>
+      <SourceLabel>Allergy status to sulfonamides status</SourceLabel>
+      <SuggestedLabel>Sulfa Drugs</SuggestedLabel>
+    </Code>
+  </Codes>
+</DefinedList>

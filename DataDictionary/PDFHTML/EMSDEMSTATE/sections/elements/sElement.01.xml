@@ -1,0 +1,40 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="sElement.01"  minOccurs="1"  maxOccurs="M"  dataTypeName="StateRequiredElement"  isNillable="Yes">
+<name>State Collected Element</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The data elements that the state collects or requires.</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Used to configure the agency demographic and patient care report data elements that are to be collected and reported to the state by EMS agencies within the state.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <StateRequiredElement baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="100"/>
+  </StateRequiredElement>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_s015" role="Warning">
+      <elementRef elementNumber="sElement.01">State Collected Element</elementRef> should be unique (the same element should not be listed more than once).
+      </assert>
+  <assert id="nemSch_s002" role="Error">
+      When State Collected Element has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_s001" role="Error">
+      When State Collected Element is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_s003" role="Warning">
+      When State Collected Element has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

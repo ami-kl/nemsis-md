@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eLabs.04"  minOccurs="0"  maxOccurs="1"  dataTypeName="LaboratoryResult"  isNillable="No">
+<name>Laboratory Result</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The value or result of the laboratory test (Units may vary).</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes>Added to better document EMS care.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <LaboratoryResult baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="50"/>
+  </LaboratoryResult>
+</restrictions>
+</element>

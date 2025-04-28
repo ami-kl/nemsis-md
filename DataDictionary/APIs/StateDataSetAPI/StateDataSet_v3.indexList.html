@@ -1,0 +1,1218 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Schema documentation for </title>
+      <link rel="stylesheet" href="docHtml.css" type="text/css" /><script type="text/javascript"><!--
+        
+      
+        var button_prefix = 'button_';
+        
+        /**
+        * Returns an element in the current HTML document.
+        *
+        * @param elementID Identifier of HTML element
+        * @return               HTML element object
+        */
+        function getElementObject(elementID) {
+            var elemObj = null;
+            if (document.getElementById) {
+                elemObj = document.getElementById(elementID);
+            }
+            return elemObj;
+        }
+        
+        /**
+        * Switches the state of a collapseable box, e.g.
+        * if it's opened, it'll be closed, and vice versa.
+        *
+        * @param boxID Identifier of box
+        */
+        function switchState(boxID) {
+            var boxObj = getElementObject(boxID);
+            var buttonObj = getElementObject(button_prefix + boxID);
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else if (boxObj.style.display == "none") {
+                // Box is closed, so open it
+                openBox(boxObj, buttonObj);
+            } else if (boxObj.style.display == "block") {
+                // Box is opened, so close it
+                closeBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+        * Opens a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function openBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "block";
+                
+                // Change text of button
+                if (boxObj.style.display == "block") {
+                    buttonObj.src = "img/btM.gif";
+                }
+            }
+        }
+        
+        /**
+        * Closes a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function closeBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "none";
+                
+                // Change text of button
+                if (boxObj.style.display == "none") {
+                    buttonObj.src = "img/btP.gif";
+                }
+            }
+        }
+    
+       function switchStateForAll(buttonObj, boxList) {
+            if (buttonObj == null) {
+                // button not found
+            } else if (buttonObj.value == "+") {
+                // Expand all
+                expandAll(boxList);
+                buttonObj.value = "-";
+            } else if (buttonObj.value == "-") {
+                // Collapse all
+                collapseAll(boxList);
+                buttonObj.value = "+";
+            }
+        }
+        
+        /**
+        * Closes all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function collapseAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                closeBox(boxObj, buttonObj);
+            }
+        }
+            
+        /**
+        * Open all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function expandAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                openBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+         * Update the message presented in the title of the html page.
+         * - If the documentation was splited by namespace we present something like: "Documentation for namespace 'ns'"
+         * - If the documentation was splited by location we present somehing like: "Documentation for 'Schema.xsd'"
+         * - If no split we always present: "Documentation for 'MainSchema.xsd'"
+         */
+        function updatePageTitle(message) {
+            top.document.title = message;
+        }
+        
+          
+                    
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function findAndFloat(id, x_displacement, y_displacement){
+
+            var element = getElementObject(id);            
+            
+            window[id + "_obj"] = element;
+            
+            if(document.layers) {
+               element.style = element;
+            }
+            
+            element.current_y = y_displacement;      
+            element.first_time = true;
+         
+            element.floatElement = function(){
+               // It may be closed by an user action.
+                
+               // Target X and Y coordinates.
+               var x, y;
+               
+               var myWidth = 0, myHeight = 0;
+               if( typeof( window.innerWidth ) == 'number' ) {
+                  //Non-IE
+                  myWidth = window.innerWidth;
+                  myHeight = window.innerHeight;
+               } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+                  //IE 6+ in 'standards compliant mode'
+                  myWidth = document.documentElement.clientWidth;
+                  myHeight = document.documentElement.clientHeight;
+               } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+                  //IE 4 compatible
+                  myWidth = document.body.clientWidth;
+                  myHeight = document.body.clientHeight;
+               }
+               
+               
+               x = myWidth - x_displacement;
+               
+               var ns = (navigator.appName.indexOf("Netscape") != -1);               
+               y = ns ? pageYOffset : document.documentElement && document.documentElement.scrollTop ? 
+                  document.documentElement.scrollTop : document.body.scrollTop;               
+               y = y + y_displacement;               
+               
+               // The current y is the current coordinate of the floating element.
+               // This should be at the limit the y target coordinate.
+               this.current_y += (y - this.current_y)/1.25;
+               
+               // Add the pixels constant after the values
+               // and move the element.
+               var px = document.layers ? "" : "px";
+               this.style.left =  x + px;
+               this.style.top =  this.current_y + px;
+                              
+               setTimeout(this.id + "_obj.floatElement()", 100);
+            }
+            
+            element.floatElement();
+            return element;
+          }
+
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function selectTOCGroupBy(id, isChunked, indexFileLocation, indexFileNamespace, indexFileComponent){
+
+            if (!isChunked) {
+             var selectIds = new Array('toc_group_by_namespace', 'toc_group_by_location', 'toc_group_by_component_type');
+             // Make all the tabs invisible.
+               for (i = 0; i < 3; i++){
+                  var tab = getElementObject(selectIds[i]);
+                  tab.style.display = 'none';
+               }
+               var selTab = getElementObject(id);
+               selTab.style.display = 'block';
+            } else {
+             if (id == 'toc_group_by_namespace') {
+               parent.indexFrame.location = indexFileNamespace;
+             } else  if (id == 'toc_group_by_location') {
+               parent.indexFrame.location = indexFileLocation;
+             } else  if (id == 'toc_group_by_component_type') {
+              parent.indexFrame.location = indexFileComponent;
+             }
+            }
+         }
+          
+
+    
+                    //--></script></head>
+   <body>
+      <h2><a id="INDEX">Table of Contents</a></h2>
+      <p><a href="StateDataSet_v3.indexList.html">Components</a><span> | </span><a href="schHierarchy.html">Resource Hierarchy</a></p>
+      <hr />
+      <div class="toc">
+         <form action="none">
+            <div><span> Group by: <select id="selectTOC" onchange="selectTOCGroupBy(this.options[this.selectedIndex].value, true, 'StateDataSet_v3.indexList.html', 'StateDataSet_v3.indexListns.html', 'StateDataSet_v3.indexListcomp.html');">
+                     <option value="toc_group_by_namespace">Namespace</option>
+                     <option value="toc_group_by_location" selected="selected">Location</option>
+                     <option value="toc_group_by_component_type">Component Type</option></select></span></div>
+         </form>
+         <div class="level1" id="toc_group_by_location" style="display:block">
+            <div>
+               <div class="level2">
+                  <p><input id="button_gr_StateDataSet_v3.xsd" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_StateDataSet_v3.xsd');" class="control" /><span class="indexGroupTitle">StateDataSet_v3.xsd</span></p>
+                  <div id="gr_StateDataSet_v3.xsd" style="display:block">
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_StateDataSet_v3.xsdMain_schema" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_StateDataSet_v3.xsdMain_schema');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Main Schema</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_StateDataSet_v3.xsdMain_schema" class="componentGroup" style="display:block">
+                                                <div><b><a href="StateDataSet_v3_xsd.html#StateDataSet_v3.xsd" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for StateDataSet_v3.xsd')">StateDataSet_v3.xsd</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_StateDataSet_v3.xsdElement" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_StateDataSet_v3.xsdElement');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Elements</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_StateDataSet_v3.xsdElement" class="componentGroup" style="display:block">
+                                                <div><b><a href="StateDataSet_v3_xsd.html#StateDataSet" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for StateDataSet_v3.xsd')">StateDataSet</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div style="clear:left"></div>
+                  </div>
+               </div>
+               <div class="level2">
+                  <p><input id="button_gr_commonTypes_v3.xsd" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_commonTypes_v3.xsd');" class="control" /><span class="indexGroupTitle">commonTypes_v3.xsd</span></p>
+                  <div id="gr_commonTypes_v3.xsd" style="display:block">
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_commonTypes_v3.xsdIncluded_schema" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_commonTypes_v3.xsdIncluded_schema');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Included Schemas</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_commonTypes_v3.xsdIncluded_schema" class="componentGroup" style="display:block">
+                                                <div><b><a href="commonTypes_v3_xsd.html#commonTypes_v3.xsd" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">commonTypes_v3.xsd</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_commonTypes_v3.xsdSimple_Type" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_commonTypes_v3.xsdSimple_Type');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Simple Types</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_commonTypes_v3.xsdSimple_Type" class="componentGroup" style="display:block">
+                                                <div><b><a href="commonTypes_v3_xsd.html#ANSICountryCode" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">ANSICountryCode</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#ANSICountryCodesCAMXUS" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">ANSICountryCodesCAMXUS</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#ANSICountyCode" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">ANSICountyCode</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#ANSIStateCode" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">ANSIStateCode</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#CardiacRhythm" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">CardiacRhythm</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#CensusTracts" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">CensusTracts</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#CityGnisCode" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">CityGnisCode</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#CityGnisCodePayment" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">CityGnisCodePayment</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#CodeType" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">CodeType</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#CodeType.ICD10" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">CodeType.ICD10</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#CodeType.RxNorm" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">CodeType.RxNorm</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#CodeType.SNOMED" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">CodeType.SNOMED</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#CorrelationID" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">CorrelationID</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#CrewMemberID" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">CrewMemberID</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#CurrentMedicationAdministrationRoute" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">CurrentMedicationAdministrationRoute</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#CustomDataType" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">CustomDataType</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#CustomDefinition" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">CustomDefinition</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#CustomResults" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">CustomResults</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#CustomTitle" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">CustomTitle</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#CustomValue" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">CustomValue</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#DBP" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">DBP</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#DateOfBirth" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">DateOfBirth</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#DateTimeType" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">DateTimeType</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#DateType" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">DateType</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#DeviceSerialNumber" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">DeviceSerialNumber</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#DistanceUnits" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">DistanceUnits</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#EMSAgencyName" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">EMSAgencyName</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#EMSAgencyNumber" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">EMSAgencyNumber</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#EMSAgencyStateID" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">EMSAgencyStateID</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#EMSCaregiverLevel" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">EMSCaregiverLevel</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#EMSUnitCallSign" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">EMSUnitCallSign</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#ElementUsage" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">ElementUsage</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#EmailAddress" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">EmailAddress</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#EmailAddressType" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">EmailAddressType</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#FacilityCode" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">FacilityCode</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#FacilityDepartment" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">FacilityDepartment</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#FacilityName" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">FacilityName</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#FacilityRoom" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">FacilityRoom</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#GPSLocation" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">GPSLocation</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#Gender" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">Gender</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#Graphic" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">Graphic</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#GraphicType" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">GraphicType</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#HospitalDesignation" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">HospitalDesignation</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#HowPatientWasMovedToFromAmbulance" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">HowPatientWasMovedToFromAmbulance</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#ImmunizationType" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">ImmunizationType</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#Latitude" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">Latitude</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#Longitude" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">Longitude</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#Medication" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">Medication</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#MemberLevel" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">MemberLevel</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#Mileage" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">Mileage</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#NV" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">NV</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#NV.NotApplicable" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">NV.NotApplicable</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#NV.NotRecorded" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">NV.NotRecorded</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#NV.NotReporting" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">NV.NotReporting</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#NationalProviderIdentifier" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">NationalProviderIdentifier</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#OrganizationalType" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">OrganizationalType</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#PN" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">PN</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#PN.Approximate" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">PN.Approximate</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#PN.ContraindicationNoted" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">PN.ContraindicationNoted</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#PN.DeniedByOrder" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">PN.DeniedByOrder</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#PN.ExamFindingNotPresent" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">PN.ExamFindingNotPresent</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#PN.MedicationAllergy" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">PN.MedicationAllergy</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#PN.MedicationAlreadyTaken" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">PN.MedicationAlreadyTaken</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#PN.NoKnownDrugAllergy" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">PN.NoKnownDrugAllergy</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#PN.NoneReported" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">PN.NoneReported</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#PN.NotImmunized" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">PN.NotImmunized</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#PN.NotPerformedByEMS" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">PN.NotPerformedByEMS</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#PN.OrderCriteriaNotMet" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">PN.OrderCriteriaNotMet</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#PN.Refused" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">PN.Refused</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#PN.SymptomNotPresent" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">PN.SymptomNotPresent</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#PN.UnableToComplete" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">PN.UnableToComplete</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#PN.Unresponsive" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">PN.Unresponsive</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#PersonFirstName" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">PersonFirstName</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#PersonLastName" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">PersonLastName</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#PersonMiddleName" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">PersonMiddleName</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#PersonName" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">PersonName</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#PersonNameSuffix" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">PersonNameSuffix</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#PhoneNumber" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">PhoneNumber</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#PhoneNumberType" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">PhoneNumberType</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#ProtocolsUsed" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">ProtocolsUsed</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#RecordStatus" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">RecordStatus</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#Response" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">Response</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#SBP" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">SBP</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#Sex" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">Sex</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#SocialSecurityNumber" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">SocialSecurityNumber</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#SoftwareCreator" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">SoftwareCreator</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#SoftwareName" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">SoftwareName</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#SoftwareVersion" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">SoftwareVersion</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#StateCertificationLicensureLevels" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">StateCertificationLicensureLevels</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#StateRequiredElement" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">StateRequiredElement</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#Status" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">Status</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#StreetAddress" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">StreetAddress</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#StreetName" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">StreetName</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#TimeStampType" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">TimeStampType</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#TrueFalseType" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">TrueFalseType</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#TxAuthorization" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">TxAuthorization</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#TypeOfFacility" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">TypeOfFacility</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#TypeOfService" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">TypeOfService</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#USNG" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">USNG</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#UUID" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">UUID</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#VelocityUnits" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">VelocityUnits</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#WaveformGraphic" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">WaveformGraphic</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#Year" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">Year</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#YesNoUnkValues" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">YesNoUnkValues</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#YesNoValues" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">YesNoValues</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#ZIP" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">ZIP</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#icd10Code" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">icd10Code</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#icd10CodeInjury" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">icd10CodeInjury</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#icd10CodeOutcomeProcedures" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">icd10CodeOutcomeProcedures</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#icd10MedSurge" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">icd10MedSurge</a></b></div>
+                                                <div><b><a href="commonTypes_v3_xsd.html#snomed" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for commonTypes_v3.xsd')">snomed</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div style="clear:left"></div>
+                  </div>
+               </div>
+               <div class="level2">
+                  <p><input id="button_gr_sState_v3.xsd" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_sState_v3.xsd');" class="control" /><span class="indexGroupTitle">sState_v3.xsd</span></p>
+                  <div id="gr_sState_v3.xsd" style="display:block">
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_sState_v3.xsdIncluded_schema" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_sState_v3.xsdIncluded_schema');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Included Schemas</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_sState_v3.xsdIncluded_schema" class="componentGroup" style="display:block">
+                                                <div><b><a href="sState_v3_xsd.html#sState_v3.xsd" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for sState_v3.xsd')">sState_v3.xsd</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_sState_v3.xsdComplex_Type" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_sState_v3.xsdComplex_Type');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Complex Types</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_sState_v3.xsdComplex_Type" class="componentGroup" style="display:block">
+                                                <div><b><a href="sState_v3_xsd.html#sState" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for sState_v3.xsd')">sState</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div style="clear:left"></div>
+                  </div>
+               </div>
+               <div class="level2">
+                  <p><input id="button_gr_sdCustom_v3.xsd" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_sdCustom_v3.xsd');" class="control" /><span class="indexGroupTitle">sdCustom_v3.xsd</span></p>
+                  <div id="gr_sdCustom_v3.xsd" style="display:block">
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_sdCustom_v3.xsdIncluded_schema" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_sdCustom_v3.xsdIncluded_schema');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Included Schemas</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_sdCustom_v3.xsdIncluded_schema" class="componentGroup" style="display:block">
+                                                <div><b><a href="sdCustom_v3_xsd.html#sdCustom_v3.xsd" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for sdCustom_v3.xsd')">sdCustom_v3.xsd</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_sdCustom_v3.xsdComplex_Type" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_sdCustom_v3.xsdComplex_Type');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Complex Types</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_sdCustom_v3.xsdComplex_Type" class="componentGroup" style="display:block">
+                                                <div><b><a href="sdCustom_v3_xsd.html#sdCustomConfiguration" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for sdCustom_v3.xsd')">sdCustomConfiguration</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div style="clear:left"></div>
+                  </div>
+               </div>
+               <div class="level2">
+                  <p><input id="button_gr_sSoftware_v3.xsd" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_sSoftware_v3.xsd');" class="control" /><span class="indexGroupTitle">sSoftware_v3.xsd</span></p>
+                  <div id="gr_sSoftware_v3.xsd" style="display:block">
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_sSoftware_v3.xsdIncluded_schema" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_sSoftware_v3.xsdIncluded_schema');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Included Schemas</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_sSoftware_v3.xsdIncluded_schema" class="componentGroup" style="display:block">
+                                                <div><b><a href="sSoftware_v3_xsd.html#sSoftware_v3.xsd" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for sSoftware_v3.xsd')">sSoftware_v3.xsd</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_sSoftware_v3.xsdComplex_Type" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_sSoftware_v3.xsdComplex_Type');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Complex Types</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_sSoftware_v3.xsdComplex_Type" class="componentGroup" style="display:block">
+                                                <div><b><a href="sSoftware_v3_xsd.html#sSoftware" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for sSoftware_v3.xsd')">sSoftware</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div style="clear:left"></div>
+                  </div>
+               </div>
+               <div class="level2">
+                  <p><input id="button_gr_seCustom_v3.xsd" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_seCustom_v3.xsd');" class="control" /><span class="indexGroupTitle">seCustom_v3.xsd</span></p>
+                  <div id="gr_seCustom_v3.xsd" style="display:block">
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_seCustom_v3.xsdIncluded_schema" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_seCustom_v3.xsdIncluded_schema');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Included Schemas</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_seCustom_v3.xsdIncluded_schema" class="componentGroup" style="display:block">
+                                                <div><b><a href="seCustom_v3_xsd.html#seCustom_v3.xsd" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for seCustom_v3.xsd')">seCustom_v3.xsd</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_seCustom_v3.xsdComplex_Type" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_seCustom_v3.xsdComplex_Type');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Complex Types</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_seCustom_v3.xsdComplex_Type" class="componentGroup" style="display:block">
+                                                <div><b><a href="seCustom_v3_xsd.html#seCustomConfiguration" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for seCustom_v3.xsd')">seCustomConfiguration</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div style="clear:left"></div>
+                  </div>
+               </div>
+               <div class="level2">
+                  <p><input id="button_gr_sFacility_v3.xsd" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_sFacility_v3.xsd');" class="control" /><span class="indexGroupTitle">sFacility_v3.xsd</span></p>
+                  <div id="gr_sFacility_v3.xsd" style="display:block">
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_sFacility_v3.xsdIncluded_schema" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_sFacility_v3.xsdIncluded_schema');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Included Schemas</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_sFacility_v3.xsdIncluded_schema" class="componentGroup" style="display:block">
+                                                <div><b><a href="sFacility_v3_xsd.html#sFacility_v3.xsd" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for sFacility_v3.xsd')">sFacility_v3.xsd</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_sFacility_v3.xsdComplex_Type" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_sFacility_v3.xsdComplex_Type');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Complex Types</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_sFacility_v3.xsdComplex_Type" class="componentGroup" style="display:block">
+                                                <div><b><a href="sFacility_v3_xsd.html#sFacility" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for sFacility_v3.xsd')">sFacility</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div style="clear:left"></div>
+                  </div>
+               </div>
+               <div class="level2">
+                  <p><input id="button_gr_sElement_v3.xsd" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_sElement_v3.xsd');" class="control" /><span class="indexGroupTitle">sElement_v3.xsd</span></p>
+                  <div id="gr_sElement_v3.xsd" style="display:block">
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_sElement_v3.xsdIncluded_schema" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_sElement_v3.xsdIncluded_schema');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Included Schemas</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_sElement_v3.xsdIncluded_schema" class="componentGroup" style="display:block">
+                                                <div><b><a href="sElement_v3_xsd.html#sElement_v3.xsd" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for sElement_v3.xsd')">sElement_v3.xsd</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_sElement_v3.xsdComplex_Type" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_sElement_v3.xsdComplex_Type');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Complex Types</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_sElement_v3.xsdComplex_Type" class="componentGroup" style="display:block">
+                                                <div><b><a href="sElement_v3_xsd.html#sElement" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for sElement_v3.xsd')">sElement</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div style="clear:left"></div>
+                  </div>
+               </div>
+               <div class="level2">
+                  <p><input id="button_gr_sAgency_v3.xsd" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_sAgency_v3.xsd');" class="control" /><span class="indexGroupTitle">sAgency_v3.xsd</span></p>
+                  <div id="gr_sAgency_v3.xsd" style="display:block">
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_sAgency_v3.xsdIncluded_schema" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_sAgency_v3.xsdIncluded_schema');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Included Schemas</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_sAgency_v3.xsdIncluded_schema" class="componentGroup" style="display:block">
+                                                <div><b><a href="sAgency_v3_xsd.html#sAgency_v3.xsd" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for sAgency_v3.xsd')">sAgency_v3.xsd</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_sAgency_v3.xsdComplex_Type" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_sAgency_v3.xsdComplex_Type');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Complex Types</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_sAgency_v3.xsdComplex_Type" class="componentGroup" style="display:block">
+                                                <div><b><a href="sAgency_v3_xsd.html#sAgency" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for sAgency_v3.xsd')">sAgency</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div style="clear:left"></div>
+                  </div>
+               </div>
+               <div class="level2">
+                  <p><input id="button_gr_sConfiguration_v3.xsd" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_sConfiguration_v3.xsd');" class="control" /><span class="indexGroupTitle">sConfiguration_v3.xsd</span></p>
+                  <div id="gr_sConfiguration_v3.xsd" style="display:block">
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_sConfiguration_v3.xsdIncluded_schema" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_sConfiguration_v3.xsdIncluded_schema');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Included Schemas</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_sConfiguration_v3.xsdIncluded_schema" class="componentGroup" style="display:block">
+                                                <div><b><a href="sConfiguration_v3_xsd.html#sConfiguration_v3.xsd" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for sConfiguration_v3.xsd')">sConfiguration_v3.xsd</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_sConfiguration_v3.xsdComplex_Type" type="image" alt="expand/collapse" src="img/btM.gif" onclick="switchState('gr_sConfiguration_v3.xsdComplex_Type');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Complex Types</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_sConfiguration_v3.xsdComplex_Type" class="componentGroup" style="display:block">
+                                                <div><b><a href="sConfiguration_v3_xsd.html#sConfiguration" target="mainFrame" title="http://www.nemsis.org" onclick="updatePageTitle('Schema documentation for sConfiguration_v3.xsd')">sConfiguration</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div style="clear:left"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer">
+         <hr />
+         <div style="text-align:center">XML Schema documentation generated by <a href="http://www.oxygenxml.com" target="_parent"><span class="oXygenLogo"><span class="redX">&lt;</span>o<span class="redX">X</span>ygen<span class="redX">/&gt;</span></span></a><sup>®</sup> XML Editor.</div>
+      </div><script type="text/javascript"><!--
+                     // The namespace is the selected option in the TOC combo.
+                    
+                     // Floats the toolbar.
+                     var globalControls = getElementObject("global_controls"); 
+                     
+                     if(globalControls != null){
+	                     var browser=navigator.appName;
+						 var version = parseFloat(navigator.appVersion.split('MSIE')[1]);
+						 
+						 var IE6 = false;
+						 if ((browser=="Microsoft Internet Explorer") && (version < 7)){
+						 	IE6 = true;
+						 }
+	
+	                     //alert (IE6 + " |V| " + version);
+	                     
+	                     if(IE6){
+	                     	// On IE 6 the 'fixed' property is not supported. We must use javascript. 
+	                         globalControls.style.position='absolute';                         
+	                         // The global controls will do not exist in the TOC frame, when chunking.
+	                         findAndFloat("global_controls", 225, 30);    
+	                     } else {
+	                      	  globalControls.style.position='fixed';                     	
+	                     }
+	                     
+	                     globalControls.style.right='0';                       
+                     }
+                //--></script></body>
+</html>

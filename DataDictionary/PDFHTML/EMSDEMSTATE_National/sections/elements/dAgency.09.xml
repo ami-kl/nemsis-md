@@ -1,0 +1,27 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dAgency.09"  minOccurs="1"  maxOccurs="1"  dataTypeName="TypeOfService"  isNillable="No">
+<name>Primary Type of Service</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The primary service type provided by the agency.</definition>
+<v2Number>D01_05</v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>The Primary Type of Service is associated with each of the EMS Agency Numbers.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <TypeOfService baseType="string">
+    <facet name="enumeration" value="9920001" annotation="911 Response (Scene) with Transport Capability"/>
+    <facet name="enumeration" value="9920003" annotation="911 Response (Scene) without Transport Capability"/>
+    <facet name="enumeration" value="9920005" annotation="Air Medical"/>
+    <facet name="enumeration" value="9920007" annotation="ALS Intercept"/>
+    <facet name="enumeration" value="9920011" annotation="Hazmat"/>
+    <facet name="enumeration" value="9920013" annotation="Medical Transport (Convalescent, Interfacility Transfer Hospital and Nursing Home)"/>
+    <facet name="enumeration" value="9920015" annotation="Rescue"/>
+    <facet name="enumeration" value="9920017" annotation="Community Paramedicine"/>
+    <facet name="enumeration" value="9920019" annotation="Critical Care (Ground)"/>
+  </TypeOfService>
+</restrictions>
+</element>

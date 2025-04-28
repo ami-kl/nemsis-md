@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.56"  minOccurs="0"  maxOccurs="1"  dataTypeName="SupplyCount"  isNillable="No">
+<name>Number of Supply Item(s) Used</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The number of the specific supply item used on the patient by the EMS Crew during the EMS event.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Associated with ePayment.55 (Supply Item Used Name). Used to better track supply items for billing.</v3Comment>
+<v3Changes>Added to track EMS supplies for billing.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <SupplyCount baseType="positiveInteger">
+    <facet name="minInclusive" value="1"/>
+    <facet name="maxInclusive" value="100000000"/>
+  </SupplyCount>
+</restrictions>
+</element>

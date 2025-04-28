@@ -1,0 +1,7 @@
+<?xml-stylesheet type="text/xsl" href="../xslt/grouping.xslt"?>
+<section name="eProtocols">
+  <group number="eProtocols.ProtocolGroup" minOccurs="1" maxOccurs="M" CorrelationID="Yes" UUID="" ProcedureGroupCorrelationID="" CustomElementID="" timeStamp="" isNillable="No">
+    <element number="eProtocols.01" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="Yes" dataType="ProtocolsUsed"><name>Protocols Used</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Required</usage><notValue>Yes</notValue><pertinentNegative></pertinentNegative></element>
+    <element number="eProtocols.02" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="Yes" dataType="ProtocolAgeCategory"><name>Protocol Age Category</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>Yes</state><usage>Recommended</usage><notValue>Yes</notValue><pertinentNegative></pertinentNegative></element>
+  </group>
+</section>

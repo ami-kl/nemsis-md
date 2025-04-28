@@ -1,0 +1,25 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eLabs.05"  minOccurs="0"  maxOccurs="1"  dataTypeName="ImagingStudyType"  isNillable="No">
+<name>Imaging Study Type</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The type of x-ray or imaging study.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes>Added to better describe the EMS patient care.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ImagingStudyType baseType="string">
+    <facet name="enumeration" value="3405001" annotation="Computed Tomography (CT) Scan"/>
+    <facet name="enumeration" value="3405003" annotation="Magnetic Resonance Imaging (MRI)"/>
+    <facet name="enumeration" value="3405005" annotation="Other"/>
+    <facet name="enumeration" value="3405007" annotation="Positron Emission Tomography (PET) Scan"/>
+    <facet name="enumeration" value="3405009" annotation="Ultrasound"/>
+    <facet name="enumeration" value="3405011" annotation="X-ray"/>
+    <facet name="enumeration" value="3405013" annotation="Angiography"/>
+  </ImagingStudyType>
+</restrictions>
+</element>

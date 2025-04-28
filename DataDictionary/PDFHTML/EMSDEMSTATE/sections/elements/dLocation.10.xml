@@ -1,0 +1,21 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dLocation.10"  minOccurs="0"  maxOccurs="1"  dataTypeName="ANSICountyCode"  isNillable="No">
+<name>EMS Location County</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The county of the EMS Location.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Based on the ANSI Code Single Choice based on the County Name but stored as the ANSI code (combined 5 digit State and County codes). 
+										<br/>
+										<br/>GNIS Codes Website: <a href="http://geonames.usgs.gov/domestic/download_data.htm">http://geonames.usgs.gov/domestic/download_data.htm</a></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ANSICountyCode baseType="string">
+    <facet name="pattern" value="[0-9]{5}"/>
+  </ANSICountyCode>
+</restrictions>
+</element>

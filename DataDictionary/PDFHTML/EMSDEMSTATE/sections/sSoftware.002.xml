@@ -1,0 +1,8 @@
+<?xml-stylesheet type="text/xsl" href="../xslt/grouping.xslt"?>
+<section name="sSoftware">
+  <group number="sSoftware.SoftwareGroup" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" ProcedureGroupCorrelationID="" CustomElementID="" timeStamp="" isNillable="No">
+    <element number="sSoftware.01" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="Yes" dataType="SoftwareCreator"><name>Software Creator</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Required</usage><notValue>Yes</notValue><pertinentNegative></pertinentNegative></element>
+    <element number="sSoftware.02" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="Yes" dataType="SoftwareName"><name>Software Name</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Required</usage><notValue>Yes</notValue><pertinentNegative></pertinentNegative></element>
+    <element number="sSoftware.03" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="Yes" dataType="SoftwareVersion"><name>Software Version</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Required</usage><notValue>Yes</notValue><pertinentNegative></pertinentNegative></element>
+  </group>
+</section>

@@ -1,0 +1,37 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="sFacility.10"  minOccurs="0"  maxOccurs="1"  dataTypeName="ZIP"  isNillable="Yes">
+<name>Facility ZIP Code</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The zip code where the facility is located.</definition>
+<v2Number></v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>ZIP Codes Product Website: <a href="https://www.zipcodedownload.com/Products/Product/Z5Commercial/Standard/Overview/">https://www.zipcodedownload.com/Products/Product/Z5Commercial/Standard/Overview/</a>
+																		Product: USA - 5-digit ZIP Code Database, Commercial Edition
+																		<br/><br/>
+																		Used to populate dFacility.10 Facility ZIP Code.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ZIP baseType="string">
+    <facet name="pattern" value="[0-9]{5}|[0-9]{5}-[0-9]{4}|[0-9]{5}-[0-9]{5}|[A-Z][0-9][A-Z] [0-9][A-Z][0-9]"/>
+  </ZIP>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_s002" role="Error">
+      When Facility ZIP Code has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_s001" role="Error">
+      When Facility ZIP Code is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

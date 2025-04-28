@@ -1,0 +1,19 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eOther.16"  minOccurs="0"  maxOccurs="1"  dataTypeName="FileName"  isNillable="No">
+<name>Signature File Name</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The name of the graphic file for the signature.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <FileName baseType="string">
+    <facet name="maxLength" value="255"/>
+  </FileName>
+</restrictions>
+</element>

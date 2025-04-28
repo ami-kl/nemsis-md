@@ -1,0 +1,29 @@
+<?xml-stylesheet type="text/xsl" href="../xslt/grouping.xslt"?>
+<section name="EMSDataSet">
+  <group number="Header" minOccurs="1" maxOccurs="M" CorrelationID="" UUID="" ProcedureGroupCorrelationID="" CustomElementID="" timeStamp="" isNillable="No">
+    <group number="DemographicGroup" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" ProcedureGroupCorrelationID="" CustomElementID="" timeStamp="" isNillable="No">
+      <element number="dAgency.01" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="EMSAgencyStateID"><name>EMS Agency Unique State ID</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Mandatory</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+      <element number="dAgency.02" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="EMSAgencyNumber"><name>EMS Agency Number</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Mandatory</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+      <element number="dAgency.04" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="ANSIStateCode"><name>EMS Agency State</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Mandatory</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    </group>
+    <group number="PatientCareReport" minOccurs="1" maxOccurs="M" CorrelationID="" UUID="Yes" ProcedureGroupCorrelationID="" CustomElementID="" timeStamp="" isNillable="No">
+      <group number="eRecord" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+      <group number="eResponse" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+      <group number="eDispatch" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+      <group number="eTimes" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+      <group number="ePatient" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+      <group number="ePayment" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+      <group number="eScene" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+      <group number="eSituation" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+      <group number="eInjury" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+      <group number="eArrest" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+      <group number="eHistory" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+      <group number="eVitals" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+      <group number="eProtocols" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+      <group number="eMedications" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+      <group number="eProcedures" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+      <group number="eDisposition" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+      <group number="eOutcome" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+    </group>
+  </group>
+</section>

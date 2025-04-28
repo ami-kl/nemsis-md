@@ -1,0 +1,27 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.05"  minOccurs="0"  maxOccurs="1"  dataTypeName="HealthcareProviderType"  isNillable="No">
+<name>Healthcare Provider Type Signing Physician Certification Statement</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The type of healthcare provider who signed the Physician Certification Statement.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>CMS defines the individual signing the PCS as a person who has personal knowledge of the beneficiary's condition at the time the ambulance transport is ordered or the service is furnished.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <HealthcareProviderType baseType="string">
+    <facet name="enumeration" value="2605001" annotation="Clinical Nurse Specialist"/>
+    <facet name="enumeration" value="2605003" annotation="Discharge Planner"/>
+    <facet name="enumeration" value="2605005" annotation="Physician (MD or DO)"/>
+    <facet name="enumeration" value="2605007" annotation="Physician Assistant"/>
+    <facet name="enumeration" value="2605009" annotation="Registered Nurse"/>
+    <facet name="enumeration" value="2605011" annotation="Registered Nurse Practitioner"/>
+    <facet name="enumeration" value="2605013" annotation="Licensed Practical Nurse (LPN)"/>
+    <facet name="enumeration" value="2605015" annotation="Case Manager"/>
+    <facet name="enumeration" value="2605017" annotation="Social Worker"/>
+  </HealthcareProviderType>
+</restrictions>
+</element>

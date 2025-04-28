@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dVehicle.08"  minOccurs="0"  maxOccurs="1"  dataTypeName="NumberofPersonnel"  isNillable="No">
+<name>Number of Each EMS Personnel Level on Normal Medical (Non-911) Transport Ambulance</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The number of each personnel level for your EMS Agency's Medical (Non-911) Transport Ambulance.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Indicate the number of each of the following EMS Personnel levels on the crew. Associated with each Certification/Licensure Level in dVehicle.05(Crew State Certification/Licensure Levels).</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <NumberofPersonnel baseType="positiveInteger">
+    <facet name="minInclusive" value="1"/>
+    <facet name="maxInclusive" value="12"/>
+  </NumberofPersonnel>
+</restrictions>
+</element>

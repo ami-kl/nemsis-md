@@ -1,0 +1,25 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eExam.10"  minOccurs="0"  maxOccurs="1"  dataTypeName="AbdominalExamFindingLocation"  isNillable="No">
+<name>Abdominal Assessment Finding Location</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The location of the patient's abdomen assessment findings.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>"Element eExam.10 - Abdominal Assessment Finding Location represents Version 2.2.1 elements E15_06 NHTSA Injury Matrix Abdomen AND E16_09 Abdomen Left Upper Assessment, E16_10 Abdomen Left Lower Assessment,E16_11 Abdomen Right Upper Assessment, and E16_12 Abdomen Right Lower Assessment. The element value choices have been combined and expanded."</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <AbdominalExamFindingLocation baseType="string">
+    <facet name="enumeration" value="3510001" annotation="Generalized"/>
+    <facet name="enumeration" value="3510003" annotation="Left Lower Quadrant"/>
+    <facet name="enumeration" value="3510005" annotation="Left Upper Quadrant"/>
+    <facet name="enumeration" value="3510007" annotation="Periumbilical"/>
+    <facet name="enumeration" value="3510009" annotation="Right Lower Quadrant"/>
+    <facet name="enumeration" value="3510011" annotation="Right Upper Quadrant"/>
+    <facet name="enumeration" value="3510013" annotation="Epigastric"/>
+  </AbdominalExamFindingLocation>
+</restrictions>
+</element>

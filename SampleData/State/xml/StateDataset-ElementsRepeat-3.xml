@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StateDataSet xmlns="http://www.nemsis.org"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.nemsis.org http://nemsis.org/media/nemsis_v3/release-3.5.0/XSDs/NEMSIS_XSDs/StateDataSet_v3.xsd" timestamp="2019-06-07T13:10:37+07:00">
+    <sState>
+        <sState.01>98</sState.01>
+    </sState>
+    <seCustomConfiguration>
+        <seCustomConfiguration.CustomGroup CustomElementID="zEh">
+            <seCustomConfiguration.01 nemsisElement="e72sKTKG">cuyAFU4MC7qHEK9L5tpCLOz3QN4caxhbXZXbnjjEDEpxN9Zm._poiwBoQ3</seCustomConfiguration.01>
+            <seCustomConfiguration.02>RQvuD7390kS8DfJA5amURDzH6vxQ0gDnc2u310s3</seCustomConfiguration.02>
+            <seCustomConfiguration.03>9902001</seCustomConfiguration.03>
+            <seCustomConfiguration.04>9923003</seCustomConfiguration.04>
+            <seCustomConfiguration.05>9903005</seCustomConfiguration.05>
+            <seCustomConfiguration.06 nemsisCode="I9" customValueDescription="tCN">vkHTAo-M0nMifra7.6MdG-cin69Z8eOXK_BisydosDUwVwtxpoUvwAEnNhK</seCustomConfiguration.06>
+            <seCustomConfiguration.06 nemsisCode="B" customValueDescription="V6LxA-d">R3q-CH4fSjML6JvTy49q2bXmN</seCustomConfiguration.06>
+            <seCustomConfiguration.07>7701001</seCustomConfiguration.07>
+            <seCustomConfiguration.07>7701003</seCustomConfiguration.07>
+            <seCustomConfiguration.08>8801003</seCustomConfiguration.08>
+            <seCustomConfiguration.08>8801009</seCustomConfiguration.08>
+            <seCustomConfiguration.09>tZb6TL</seCustomConfiguration.09>
+        </seCustomConfiguration.CustomGroup>
+        <seCustomConfiguration.CustomGroup CustomElementID="qjbRnMZGI9Z-sW7biiYdLFjo0KqfmPT71X2JNWc-hPgbSDOguVmUcTjbUPA03soHU.-dXKNSrpj2y2UI_KZcVMhzLVebFMnG89i020.TbxI.uf_knDr9wx">
+            <seCustomConfiguration.01 nemsisElement="zOf">dY</seCustomConfiguration.01>
+            <seCustomConfiguration.02>pU64Xt_PuJaOr3RvvaTS2izqhQmDNkZgJvjB5FgWEaYsLiCA5tZzZ7uQl1</seCustomConfiguration.02>
+            <seCustomConfiguration.03>9902003</seCustomConfiguration.03>
+            <seCustomConfiguration.04>9923001</seCustomConfiguration.04>
+            <seCustomConfiguration.05>9903005</seCustomConfiguration.05>
+            <seCustomConfiguration.06 nemsisCode="Y5jo" customValueDescription="ZR5iVNGi">oEfukhg8GU8Y6xkhkoAngKBCnAsYn340RQ149DW1KfNLjZ.viCwJMCpxg6ReAs_KT3akag9N7IV</seCustomConfiguration.06>
+            <seCustomConfiguration.06 nemsisCode="VZKSOFySO" customValueDescription="zAX">dxy66rHX8TZVE8FbdkNqlw</seCustomConfiguration.06>
+            <seCustomConfiguration.07>7701005</seCustomConfiguration.07>
+            <seCustomConfiguration.07>7701003</seCustomConfiguration.07>
+            <seCustomConfiguration.08>8801025</seCustomConfiguration.08>
+            <seCustomConfiguration.08>8801005</seCustomConfiguration.08>
+            <seCustomConfiguration.09>sjLYEPX_ASVr0mmT6XDXgvN</seCustomConfiguration.09>
+        </seCustomConfiguration.CustomGroup>
+    </seCustomConfiguration>
+    <sdCustomConfiguration>
+        <sdCustomConfiguration.CustomGroup CustomElementID="ax6qGpKph65LmHZlBGe7D1c2nfaRmTMcYnrjU2Nf6CyHk51ewM9g_OwlYNvxCtM">
+            <sdCustomConfiguration.01 nemsisElement="V">AN</sdCustomConfiguration.01>
+            <sdCustomConfiguration.02>WprXD8OS5xi6_f6j3ijVWmIJ5nnB7rPmJkFTS2qc8q35</sdCustomConfiguration.02>
+            <sdCustomConfiguration.03>9902009</sdCustomConfiguration.03>
+            <sdCustomConfiguration.04>9923001</sdCustomConfiguration.04>
+            <sdCustomConfiguration.05>9903005</sdCustomConfiguration.05>
+            <sdCustomConfiguration.06 nemsisCode="W" customValueDescription="Eb">k.Bsj5AL9DSSj4_vauPK</sdCustomConfiguration.06>
+            <sdCustomConfiguration.06 nemsisCode="G" customValueDescription="exnip9mgY">ixsg1</sdCustomConfiguration.06>
+            <sdCustomConfiguration.07>7701003</sdCustomConfiguration.07>
+            <sdCustomConfiguration.07>7701001</sdCustomConfiguration.07>
+            <sdCustomConfiguration.08>8801005</sdCustomConfiguration.08>
+            <sdCustomConfiguration.08>8801027</sdCustomConfiguration.08>
+            <sdCustomConfiguration.09>Q42l90zpsOPSSe04h7eUWV3GmQfV0odhjTST-FhDuQL8hry.KejtJ-LCXiw_BsLaLMdzJAFD6n-uAM5rL8SgS2uHsGvKjw9_uzdTlk9dYrVdKMrzvsx0H1kq3PA6TdyHGnwqMRUW</sdCustomConfiguration.09>
+        </sdCustomConfiguration.CustomGroup>
+        <sdCustomConfiguration.CustomGroup CustomElementID="p_ptnJN">
+            <sdCustomConfiguration.01 nemsisElement="TOeg2">mgCAdZ0tCKSbjr6Q4ydmW2-S</sdCustomConfiguration.01>
+            <sdCustomConfiguration.02>tAP1xP6QPXuhcVhmGKyMEES6wyswBCp5diwCz5S94Q4zG</sdCustomConfiguration.02>
+            <sdCustomConfiguration.03>9902011</sdCustomConfiguration.03>
+            <sdCustomConfiguration.04>9923003</sdCustomConfiguration.04>
+            <sdCustomConfiguration.05>9903001</sdCustomConfiguration.05>
+            <sdCustomConfiguration.06 nemsisCode="crM3tQ" customValueDescription="Dcx">uxzdD55GS4Ps1sTwRGROGOz0xKrVJ8U-7y0lQbgLlf1OF7jb7qYaWKgVbH1YRpbVH2N3y30NPAFe5u60KWnv-WnBr</sdCustomConfiguration.06>
+            <sdCustomConfiguration.06 nemsisCode="B" customValueDescription="Zg">CJKd7</sdCustomConfiguration.06>
+            <sdCustomConfiguration.07>7701001</sdCustomConfiguration.07>
+            <sdCustomConfiguration.07>7701003</sdCustomConfiguration.07>
+            <sdCustomConfiguration.08>8801021</sdCustomConfiguration.08>
+            <sdCustomConfiguration.08>8801007</sdCustomConfiguration.08>
+            <sdCustomConfiguration.09>D4pa7UZmmVwbeOCVS5Kb7Wa.slQhlYc9UJe3rxSF2PcUx8C</sdCustomConfiguration.09>
+        </sdCustomConfiguration.CustomGroup>
+    </sdCustomConfiguration>
+    <sSoftware>
+        <sSoftware.SoftwareGroup>
+            <sSoftware.01>fXlXI.EUFBBUbAarLu3Y0TCV53GI2v7k_kc1r.8r-h</sSoftware.01>
+            <sSoftware.02>EyP44d25ozov6x9.3.UAb1Wqj7YN8B.1i3</sSoftware.02>
+            <sSoftware.03>MTfBMKEqfUFmI9Ym-ek</sSoftware.03>
+        </sSoftware.SoftwareGroup>
+    </sSoftware>
+    <sElement>
+        <sElement.01>EO2uauKYMAmom.quy8j7Sof6JSUj12j_FzscfEext_GxcbvmowVv42oVCeRYcThQa.xYfZrNLF-e1-.xmx</sElement.01>
+        <sElement.01>GQVn4m1fqNMLe6p04qovk7BZom.u2LUO3oEIsXDpBJBwzBIMZw8QeAC8ARrNnlB5Yk5iNWr-DBUmUlh80xNgVmV1bjrg</sElement.01>
+    </sElement>
+    <sConfiguration>
+        <sConfiguration.01>9917023</sConfiguration.01>
+        <sConfiguration.01>9917019</sConfiguration.01>
+        <sConfiguration.ProcedureGroup>
+            <sConfiguration.02>9917031</sConfiguration.02>
+            <sConfiguration.03>2033549117</sConfiguration.03>
+            <sConfiguration.03>754142222</sConfiguration.03>
+        </sConfiguration.ProcedureGroup>
+        <sConfiguration.ProcedureGroup>
+            <sConfiguration.02>9917019</sConfiguration.02>
+            <sConfiguration.03>2013104408</sConfiguration.03>
+            <sConfiguration.03>1419541618</sConfiguration.03>
+        </sConfiguration.ProcedureGroup>
+        <sConfiguration.MedicationGroup>
+            <sConfiguration.04>9917003</sConfiguration.04>
+            <sConfiguration.05 CodeType="9924003">5456821</sConfiguration.05>
+            <sConfiguration.05 CodeType="9924003">54687</sConfiguration.05>
+        </sConfiguration.MedicationGroup>
+        <sConfiguration.MedicationGroup>
+            <sConfiguration.04>9917029</sConfiguration.04>
+            <sConfiguration.05 CodeType="9924003">3521</sConfiguration.05>
+            <sConfiguration.05 CodeType="9924003">689</sConfiguration.05>
+        </sConfiguration.MedicationGroup>
+        <sConfiguration.06>9914143</sConfiguration.06>
+        <sConfiguration.06>9914061</sConfiguration.06>
+    </sConfiguration>
+    <sAgency>
+        <sAgencyGroup>
+            <sAgency.01>CyxooILivvijjr</sAgency.01>
+            <sAgency.02>Q68l50whu</sAgency.02>
+            <sAgency.03>lbR.5zfxFjfzLLDMQfXlHcVOrRp0MqP1u3P-wvE0.uwyyIzGOUaH0J1fXTSDVX2</sAgency.03>
+        </sAgencyGroup>
+        <sAgencyGroup>
+            <sAgency.01>BozycBjeX</sAgency.01>
+            <sAgency.02>gCtJDjCB-Wh</sAgency.02>
+            <sAgency.03>swhd2ODezac-IZ1cCU57h</sAgency.03>
+        </sAgencyGroup>
+    </sAgency>
+    <sFacility>
+        <sFacilityGroup>
+            <sFacility.01>1701003</sFacility.01>
+            <sFacility.FacilityGroup>
+                <sFacility.02>ftDuxo3dhvLkK4bOC8fRY5zzX-1LyD_j4MUn0-UgEg2</sFacility.02>
+                <sFacility.03>jYDW0WKZDmkiU</sFacility.03>
+                <sFacility.04>9908033</sFacility.04>
+                <sFacility.04>9908037</sFacility.04>
+                <sFacility.05>Ohqo_lAfco</sFacility.05>
+                <sFacility.05>GndyKOZhus</sFacility.05>
+                <sFacility.06>eSnu.SUdCABnqd4</sFacility.06>
+                <sFacility.07 StreetAddress2="nRQvby_BTW0u3YkRjN7Ws.">l5oCkc8p47cWLDy6tB6b8oKe9OHl_ttXrNQiwVz1nXJUs2Vk4yLmB2A_NneUV-bnSj3km8GrOa9gvtexq20FDSLHs7DD27C5_nW__4KIV2jpLd</sFacility.07>
+                <sFacility.08>1127434592</sFacility.08>
+                <sFacility.09>95</sFacility.09>
+                <sFacility.10>05341</sFacility.10>
+                <sFacility.11>89943</sFacility.11>
+                <sFacility.12>MX</sFacility.12>
+                <sFacility.13>89,4.470</sFacility.13>
+                <sFacility.14>10FYK60945442</sFacility.14>
+                <sFacility.15 PhoneNumberType="9913005">354-219-2229</sFacility.15>
+                <sFacility.15 PhoneNumberType="9913001">379-263-1044</sFacility.15>
+            </sFacility.FacilityGroup>
+            <sFacility.FacilityGroup>
+                <sFacility.02>Gtf5gjc</sFacility.02>
+                <sFacility.03>S4</sFacility.03>
+                <sFacility.04>9908041</sFacility.04>
+                <sFacility.04>9908043</sFacility.04>
+                <sFacility.05>qSJYoogQQK</sFacility.05>
+                <sFacility.05>pTu5IDh6h-</sFacility.05>
+                <sFacility.06>vb.V0</sFacility.06>
+                <sFacility.07 StreetAddress2="wMDumCGyEv2A9iYehhfcgk_.">bk_7C_7QrKCBFaKYvG6Ny0aJzHhMEpgPvfl0uglJOLOQ5vLz-6H8NNrtFx2TJ_gftDggK2p9WkNUqmTVFXW6</sFacility.07>
+                <sFacility.08>251700554</sFacility.08>
+                <sFacility.09>50</sFacility.09>
+                <sFacility.10>J5R 8K8</sFacility.10>
+                <sFacility.11>13667</sFacility.11>
+                <sFacility.12>US</sFacility.12>
+                <sFacility.13>3.3,180.0</sFacility.13>
+                <sFacility.14>21JNH85272453</sFacility.14>
+                <sFacility.15 PhoneNumberType="9913001">831-531-0121</sFacility.15>
+                <sFacility.15 PhoneNumberType="9913003">851-362-5225</sFacility.15>
+            </sFacility.FacilityGroup>
+        </sFacilityGroup>
+        <sFacilityGroup>
+            <sFacility.01>1701003</sFacility.01>
+            <sFacility.FacilityGroup>
+                <sFacility.02>ODaAHZFZZgFDQbw2rLHdOCbUgrcKJ49OkTtDlDJB7Ptm6YMEXOH2S9CG8MfjmYSc6s9</sFacility.02>
+                <sFacility.03>MeAq0zy2oE97G.MsfQ7hAiD9RLbuNj-do9LkjFQCUvS4NGxPV</sFacility.03>
+                <sFacility.04>9908035</sFacility.04>
+                <sFacility.04>9908011</sFacility.04>
+                <sFacility.05>G4q3.Ir_jE</sFacility.05>
+                <sFacility.05>YBp_hwNm30</sFacility.05>
+                <sFacility.06>h1eHY</sFacility.06>
+                <sFacility.07 StreetAddress2="69e.hLNp.zc8PjXi:legZcIK9ujnAGdDWgkEuj6SXaRboTcKIKq9mChCSbjp6YHPngU.KfIO9-vq4JBheK8SHWwXpnfYVFOiGpgW.DOW2Dge5R5:n.yiCubtTzogzoQsuriILLWh6JEeKAoYaO6lD5gLfja:Wk">F.sEGEe4No1-CYQ5coWgmjYlq3EEGo3vMXiVGrJaESeZYgY49L-5.Hrm-9__6cTvIKTPuYt1b1nWEDB7UY-L_66HDkoyQ</sFacility.07>
+                <sFacility.08>1720073181</sFacility.08>
+                <sFacility.09>44</sFacility.09>
+                <sFacility.10>22375-26962</sFacility.10>
+                <sFacility.11>49891</sFacility.11>
+                <sFacility.12>CA</sFacility.12>
+                <sFacility.13>11,154</sFacility.13>
+                <sFacility.14>60JGF70710856</sFacility.14>
+                <sFacility.15 PhoneNumberType="9913009">233-408-7114</sFacility.15>
+                <sFacility.15 PhoneNumberType="9913005">350-513-3129</sFacility.15>
+            </sFacility.FacilityGroup>
+            <sFacility.FacilityGroup>
+                <sFacility.02>I4F3YrQ.K_6m_C7AH7hhOuHMZGTtrcsa4XUPapVYKu3AMmd-MpoZRz4l</sFacility.02>
+                <sFacility.03>UK2Z</sFacility.03>
+                <sFacility.04>9908021</sFacility.04>
+                <sFacility.04>9908003</sFacility.04>
+                <sFacility.05>nc9vxomT-o</sFacility.05>
+                <sFacility.05>PerZgPAb5K</sFacility.05>
+                <sFacility.06>HFh3Yy3ic</sFacility.06>
+                <sFacility.07 StreetAddress2="i7y.j97LZHm4fyxL4fGKwLQPcS92AAi0ioWpvyqPGtGqT.2VuNeRWchv7.4riyINnPio">eFgQ6OVnxq9_-Tr4ErzaHo-8PfNcY3jO86l4W0MrdTbZGgLML3FMx8-99dpUkJYOljGoX169F-D8sF7eO29xMFBA62u7Js8ZGJK0G32ekUy</sFacility.07>
+                <sFacility.08>1062268599</sFacility.08>
+                <sFacility.09>43</sFacility.09>
+                <sFacility.10>70323-91195</sFacility.10>
+                <sFacility.11>71481</sFacility.11>
+                <sFacility.12>CA</sFacility.12>
+                <sFacility.13>90.0000,+6</sFacility.13>
+                <sFacility.14>2SKG75859888</sFacility.14>
+                <sFacility.15 PhoneNumberType="9913001">470-381-2371</sFacility.15>
+                <sFacility.15 PhoneNumberType="9913007">909-943-8308</sFacility.15>
+            </sFacility.FacilityGroup>
+        </sFacilityGroup>
+    </sFacility>
+</StateDataSet>

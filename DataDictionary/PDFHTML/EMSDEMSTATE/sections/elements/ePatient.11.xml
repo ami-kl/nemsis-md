@@ -1,0 +1,24 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePatient.11"  minOccurs="0"  maxOccurs="1"  dataTypeName="CensusTracts"  isNillable="No">
+<name>Patient Home Census Tract</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The census tract in which the patient lives.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>This data element was added to better document the service area of the EMS Agency. Each state listed is associated with the counties, census tracts, and ZIP codes within the EMS Agency Service Area for each state. 
+										<br/><br/>The format of the census tract number must be an 11-digit number, based upon the 2010 census, using the pattern: 
+										<br/>2-digit State Code 3-digit County Code 6-digit Census Tract Number (no decimal) 
+										<br/><br/>Example: NEMSIS TAC office (UT, Salt Lake County, Census Tract - located at 295 Chipeta Way, Salt Lake City, UT) 
+										49035101400
+										<br/><br/>Census Tract Data Website (files and descriptions): <a href="https://www.census.gov/geographies/reference-files/2010/geo/relationship-files.html" target="_blank">https://www.census.gov/geographies/reference-files/2010/geo/relationship-files.html</a></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <CensusTracts baseType="string">
+    <facet name="pattern" value="[0-9]{11}"/>
+  </CensusTracts>
+</restrictions>
+</element>

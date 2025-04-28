@@ -1,0 +1,59 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dContact.14"  minOccurs="0"  maxOccurs="M"  dataTypeName="AgencyMedicalDirectorBoardCertificationType"  isNillable="Yes">
+<name>Agency Medical Director Board Certification Type</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Documentation of the type of board certification of the EMS Agency Medical Director.</definition>
+<v2Number></v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This is based on the American Board of Medical Specialties List of Certifications. The Medical Director Information from Section D02 of NEMSIS Version 2.2.1 has been merged into Version 3 Section dContact.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <AgencyMedicalDirectorBoardCertificationType baseType="string">
+    <facet name="enumeration" value="1114001" annotation="Allergy and Immunology"/>
+    <facet name="enumeration" value="1114003" annotation="Anesthesiology"/>
+    <facet name="enumeration" value="1114005" annotation="Colon and Rectal Surgery"/>
+    <facet name="enumeration" value="1114007" annotation="Dermatology"/>
+    <facet name="enumeration" value="1114009" annotation="Emergency Medicine"/>
+    <facet name="enumeration" value="1114011" annotation="Family Medicine"/>
+    <facet name="enumeration" value="1114013" annotation="Internal Medicine"/>
+    <facet name="enumeration" value="1114015" annotation="Neurological Surgery"/>
+    <facet name="enumeration" value="1114017" annotation="Neurology"/>
+    <facet name="enumeration" value="1114019" annotation="None (Not Board Certified)"/>
+    <facet name="enumeration" value="1114021" annotation="Obstetrics and Gynecology"/>
+    <facet name="enumeration" value="1114023" annotation="Ophthalmology"/>
+    <facet name="enumeration" value="1114025" annotation="Orthopedic Surgery"/>
+    <facet name="enumeration" value="1114027" annotation="Otolaryngology"/>
+    <facet name="enumeration" value="1114029" annotation="Pediatrics"/>
+    <facet name="enumeration" value="1114031" annotation="Physical Medicine and Rehabilitation"/>
+    <facet name="enumeration" value="1114033" annotation="Plastic Surgery"/>
+    <facet name="enumeration" value="1114035" annotation="Psychiatry"/>
+    <facet name="enumeration" value="1114037" annotation="Surgery"/>
+    <facet name="enumeration" value="1114039" annotation="Thoracic Surgery"/>
+    <facet name="enumeration" value="1114041" annotation="Urology"/>
+    <facet name="enumeration" value="1114043" annotation="Vascular Surgery"/>
+  </AgencyMedicalDirectorBoardCertificationType>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_d002" role="Error">
+      When Agency Medical Director Board Certification Type has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_d001" role="Error">
+      When Agency Medical Director Board Certification Type is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_d003" role="Warning">
+      When Agency Medical Director Board Certification Type has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

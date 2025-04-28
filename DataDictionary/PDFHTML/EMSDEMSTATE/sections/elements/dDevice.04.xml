@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dDevice.04"  minOccurs="0"  maxOccurs="1"  dataTypeName="DeviceManufacturer"  isNillable="No">
+<name>Medical Device Manufacturer</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The manufacturer of the medical device.</definition>
+<v2Number>D09_03</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <DeviceManufacturer baseType="string">
+    <facet name="minLength" value="2"/>
+    <facet name="maxLength" value="50"/>
+  </DeviceManufacturer>
+</restrictions>
+</element>

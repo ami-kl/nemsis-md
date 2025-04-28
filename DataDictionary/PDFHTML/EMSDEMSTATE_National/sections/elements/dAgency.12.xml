@@ -1,0 +1,21 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dAgency.12"  minOccurs="1"  maxOccurs="1"  dataTypeName="OrganizationStatus"  isNillable="No">
+<name>Organization Status</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The primary organizational status of the agency. The definition of Volunteer or Non-Volunteer is based on state or local definitions.</definition>
+<v2Number>D01_09</v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>The Organizational Status is associated with the EMS Agency and the specific EMS Agency Number (dAgency.02).</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <OrganizationStatus baseType="string">
+    <facet name="enumeration" value="1016001" annotation="Mixed"/>
+    <facet name="enumeration" value="1016003" annotation="Non-Volunteer"/>
+    <facet name="enumeration" value="1016005" annotation="Volunteer"/>
+  </OrganizationStatus>
+</restrictions>
+</element>

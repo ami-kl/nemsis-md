@@ -1,0 +1,46 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePatient.15"  minOccurs="1"  maxOccurs="1"  dataTypeName="Age"  isNillable="Yes">
+<name>Age</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The patient's age (either calculated from date of birth or best approximation) at the time of the incident.</definition>
+<v2Number>E06_14</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <Age baseType="integer">
+    <facet name="minInclusive" value="1"/>
+    <facet name="maxInclusive" value="120"/>
+  </Age>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+  <PN>
+    <PN.Approximate><facet name="enumeration" value="8801029" annotation="Approximate"/></PN.Approximate>
+  </PN>
+</attributes>
+<asserts>
+  <assert id="nemSch_e190" role="Error">
+      When <elementRef elementNumber="ePatient.15">Age</elementRef> has a Pertinent Negative of &quot;Approximate&quot;, it should have a value and it should not have a Not Value (Not Applicable, Not Recorded, or Not Reporting).
+      </assert>
+  <assert id="nemSch_e063" role="Warning">
+      <elementRef elementNumber="ePatient.15">Age</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e065" role="Warning">
+      <elementRef elementNumber="ePatient.16">Age Units</elementRef> should be recorded when <elementRef elementNumber="ePatient.15">Age</elementRef> is recorded.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Age has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Age is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

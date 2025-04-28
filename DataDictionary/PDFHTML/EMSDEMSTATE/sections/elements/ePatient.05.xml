@@ -1,0 +1,35 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePatient.05"  minOccurs="0"  maxOccurs="1"  dataTypeName="StreetAddress"  isNillable="Yes">
+<name>Patient's Home Address</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Patient's address of residence.</definition>
+<v2Number>E06_04</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This is a CMS standard.  According to the Medicare Claims Processing Manual, Chapter 15 - Ambulance, Ambulance suppliers bill using CMS-1500 form or CMS-1450 form for institution-based ambulance providers.  This standard adheres to CMS-1500 and 1450.
+								<br/><br/>This element allows for a two line documentation of the address.  For out of country addresses the second line should be used to document, city, country, postal code and any other pertinent information.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <StreetAddress baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="255"/>
+  </StreetAddress>
+</restrictions>
+<attributes>
+  <StreetAddress2 baseType="string"><facet name="minLength" value="1"/><facet name="maxLength" value="255"/></StreetAddress2>
+  <PN>
+    <PN.UnableToComplete><facet name="enumeration" value="8801023" annotation="Unable to Complete"/></PN.UnableToComplete>
+  </PN>
+</attributes>
+<asserts>
+  <assert id="nemSch_e008" role="Error">
+      When Patient's Home Address has a Pertinent Negative, it should be empty and it should not have a Not Value (Not Applicable, Not Recorded, or Not Reporting).
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Patient's Home Address is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

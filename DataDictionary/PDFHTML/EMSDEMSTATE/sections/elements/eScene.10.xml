@@ -1,0 +1,35 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eScene.10"  minOccurs="0"  maxOccurs="1"  dataTypeName="IncidentFacilityCode"  isNillable="Yes">
+<name>Incident Facility Code</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The state, regulatory, or other unique number (code) associated with the facility if the Incident is a Healthcare Facility.</definition>
+<v2Number>E08_08</v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This may be populated from a list created within dFacility.03 (Facility Location Code) or dFacility.05 (Facility National Provider Identifier).</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <IncidentFacilityCode baseType="string">
+    <facet name="minLength" value="2"/>
+    <facet name="maxLength" value="50"/>
+  </IncidentFacilityCode>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When Incident Facility Code has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Incident Facility Code is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

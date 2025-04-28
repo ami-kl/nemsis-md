@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dDevice.06"  minOccurs="0"  maxOccurs="1"  dataTypeName="DateType"  isNillable="No">
+<name>Medical Device Purchase Date</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The date the device was purchased or placed in service by the EMS agency.</definition>
+<v2Number>D09_05</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <DateType baseType="date">
+    <facet name="minInclusive" value="1900-01-01"/>
+    <facet name="maxInclusive" value="2050-01-01"/>
+  </DateType>
+</restrictions>
+</element>

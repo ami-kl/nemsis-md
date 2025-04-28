@@ -1,0 +1,28 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dConfiguration.07"  minOccurs="1"  maxOccurs="M"  dataTypeName="snomed"  isNillable="No">
+<name>EMS Agency Procedures</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>A list of all procedures that the agency has implemented and available for use by any/all EMS certification levels.</definition>
+<v2Number>D04_04</v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>This is associated with the EMS Agency Number (dAgency.02) since each EMS Agency Number may have different capabilities. Each procedure is associated with the EMS professional certification levels permitted to perform the procedure. 
+
+<br/><br/>EMS Agencies may identify additional SNOMEDCT procedure codes based on medical direction and their own need. If an agency resides in a state with statewide approved procedures, they should be listed/implemented here. 
+
+<br/><br/>Code list is represented in SNOMEDCT: Reference the NEMSIS Suggested Lists at: <a href="https://nemsis.org/technical-resources/version-3/version-3-resource-repository/" target="_blank">https://nemsis.org/technical-resources/version-3/version-3-resource-repository/</a>
+
+<br/><br/>SNOMEDCT 
+<br/>Website: <a href="http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html" target="_blank">http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html</a> 
+<br/>Product: Product - UMLS Metathesaurus</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <snomed baseType="integer">
+    <facet name="maxInclusive" value="999999999999999999"/>
+    <facet name="minInclusive" value="100000"/>
+  </snomed>
+</restrictions>
+</element>

@@ -1,0 +1,96 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eLabs.03"  minOccurs="0"  maxOccurs="1"  dataTypeName="LaboratoryResultType"  isNillable="No">
+<name>Laboratory Result Type</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The type of the laboratory value.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes>Added to provide for the documentation of laboratory results obtained prior to or during and EMS patient encounter.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <LaboratoryResultType baseType="string">
+    <facet name="enumeration" value="3403001" annotation="Alanine Transaminase"/>
+    <facet name="enumeration" value="3403003" annotation="Alcohol-Blood"/>
+    <facet name="enumeration" value="3403005" annotation="Alcohol-Breath"/>
+    <facet name="enumeration" value="3403007" annotation="Alkaline Phosphatase"/>
+    <facet name="enumeration" value="3403009" annotation="Amylase"/>
+    <facet name="enumeration" value="3403013" annotation="Aspartate Transaminase"/>
+    <facet name="enumeration" value="3403015" annotation="B-Type Natriuretic Peptide (BNP)"/>
+    <facet name="enumeration" value="3403017" annotation="Base Excess"/>
+    <facet name="enumeration" value="3403019" annotation="Bilirubin-Direct"/>
+    <facet name="enumeration" value="3403021" annotation="Bilirubin-Total"/>
+    <facet name="enumeration" value="3403023" annotation="BUN"/>
+    <facet name="enumeration" value="3403025" annotation="Calcium-Ionized"/>
+    <facet name="enumeration" value="3403027" annotation="Calcium-Serum"/>
+    <facet name="enumeration" value="3403029" annotation="Carbon Dioxide-Partial Pressure"/>
+    <facet name="enumeration" value="3403033" annotation="Chloride"/>
+    <facet name="enumeration" value="3403035" annotation="Creatine Kinase"/>
+    <facet name="enumeration" value="3403037" annotation="Creatine Kinase-MB"/>
+    <facet name="enumeration" value="3403039" annotation="Creatinine"/>
+    <facet name="enumeration" value="3403041" annotation="Gamma Glutamyl Transpeptidase"/>
+    <facet name="enumeration" value="3403043" annotation="Glucose"/>
+    <facet name="enumeration" value="3403045" annotation="Hematocrit"/>
+    <facet name="enumeration" value="3403047" annotation="Hemoglobin"/>
+    <facet name="enumeration" value="3403049" annotation="Human Chorionic Gonadotropin-Serum"/>
+    <facet name="enumeration" value="3403051" annotation="Human Chorionic Gonadotropin-Urine"/>
+    <facet name="enumeration" value="3403053" annotation="International Normalized Ratio (INR)"/>
+    <facet name="enumeration" value="3403055" annotation="Lactate Dehydrogenase"/>
+    <facet name="enumeration" value="3403057" annotation="Lactate-Arterial"/>
+    <facet name="enumeration" value="3403059" annotation="Lactate-Venous"/>
+    <facet name="enumeration" value="3403061" annotation="Lipase"/>
+    <facet name="enumeration" value="3403063" annotation="Magnesium"/>
+    <facet name="enumeration" value="3403065" annotation="Oxygen-Partial Pressure"/>
+    <facet name="enumeration" value="3403067" annotation="Partial Thromboplastin Time"/>
+    <facet name="enumeration" value="3403071" annotation="pH-ABG"/>
+    <facet name="enumeration" value="3403073" annotation="pH-Venous"/>
+    <facet name="enumeration" value="3403075" annotation="Platelets"/>
+    <facet name="enumeration" value="3403077" annotation="Potassium"/>
+    <facet name="enumeration" value="3403079" annotation="Prothrombin Time"/>
+    <facet name="enumeration" value="3403081" annotation="Red Blood Cells"/>
+    <facet name="enumeration" value="3403083" annotation="Sodium"/>
+    <facet name="enumeration" value="3403085" annotation="Troponin"/>
+    <facet name="enumeration" value="3403087" annotation="White Blood Cells"/>
+    <facet name="enumeration" value="3403089" annotation="Ammonia"/>
+    <facet name="enumeration" value="3403091" annotation="Bicarbonate (HCO3)"/>
+    <facet name="enumeration" value="3403093" annotation="Carboxyhemoglobin"/>
+    <facet name="enumeration" value="3403095" annotation="CO2, Total (Bicarbonate)"/>
+    <facet name="enumeration" value="3403097" annotation="CRP (C-Reactive Protein)"/>
+    <facet name="enumeration" value="3403099" annotation="Dilantin"/>
+    <facet name="enumeration" value="3403101" annotation="Leukocytes"/>
+    <facet name="enumeration" value="3403103" annotation="Nitrates"/>
+    <facet name="enumeration" value="3403105" annotation="Phenobarbital"/>
+    <facet name="enumeration" value="3403107" annotation="Protein"/>
+    <facet name="enumeration" value="3403109" annotation="Salicylate"/>
+    <facet name="enumeration" value="3403111" annotation="Specific Gravity"/>
+    <facet name="enumeration" value="3403113" annotation="Tylenol"/>
+    <facet name="enumeration" value="3403115" annotation="ACT Celite (ACTc)"/>
+    <facet name="enumeration" value="3403117" annotation="ACT Kaolin (ACTk)"/>
+    <facet name="enumeration" value="3403119" annotation="Bands"/>
+    <facet name="enumeration" value="3403121" annotation="Basophils"/>
+    <facet name="enumeration" value="3403123" annotation="Creatine Phosphokinase (CK) (DEPRECATED)"/>
+    <facet name="enumeration" value="3403125" annotation="Eosinophils"/>
+    <facet name="enumeration" value="3403127" annotation="Erythrocyte Count"/>
+    <facet name="enumeration" value="3403129" annotation="Erythrocyte Morphology"/>
+    <facet name="enumeration" value="3403131" annotation="Erythrocyte Sedimentation Rate"/>
+    <facet name="enumeration" value="3403133" annotation="High-Sensitivity C-reactive Protein (hs-CRP)"/>
+    <facet name="enumeration" value="3403135" annotation="Lymphocytes"/>
+    <facet name="enumeration" value="3403137" annotation="Mean Corpuscular Hemoglobin (MCH)"/>
+    <facet name="enumeration" value="3403139" annotation="Mean Corpuscular Hemoglobin Concentration (MCHC)"/>
+    <facet name="enumeration" value="3403141" annotation="Mean Corpuscular Volume (MCV)"/>
+    <facet name="enumeration" value="3403143" annotation="Monocytes"/>
+    <facet name="enumeration" value="3403145" annotation="Myoglobin"/>
+    <facet name="enumeration" value="3403147" annotation="Neutrophils"/>
+    <facet name="enumeration" value="3403149" annotation="Oxygen Saturation (SaO2)"/>
+    <facet name="enumeration" value="3403151" annotation="Oxygen Volume/Content (SVO2)"/>
+    <facet name="enumeration" value="3403153" annotation="Phosphorus (PO4)"/>
+    <facet name="enumeration" value="3403155" annotation="Prothromblin test time (PT/INR)"/>
+    <facet name="enumeration" value="3403157" annotation="Red Cell Distribution Width (RDW)"/>
+    <facet name="enumeration" value="3403159" annotation="Reticulocyte Count"/>
+    <facet name="enumeration" value="3403161" annotation="Troponin T (cTnT)"/>
+  </LaboratoryResultType>
+</restrictions>
+</element>

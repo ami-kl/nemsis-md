@@ -1,0 +1,48 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eAirway.04"  minOccurs="0"  maxOccurs="M"  dataTypeName="DeviceConfirmedMethods"  isNillable="Yes">
+<name>Airway Device Placement Confirmed Method</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The method used to confirm the airway device placement.</definition>
+<v2Number></v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>If the invasive airway is confirmed via multiple methods each method should be documented individually by time, method, and type of individual.</v3Comment>
+<v3Changes>Added to better document airway management.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <DeviceConfirmedMethods baseType="string">
+    <facet name="enumeration" value="4004001" annotation="Auscultation"/>
+    <facet name="enumeration" value="4004003" annotation="Bulb/Syringe Aspiration"/>
+    <facet name="enumeration" value="4004005" annotation="Colorimetric ETCO2"/>
+    <facet name="enumeration" value="4004007" annotation="Condensation in Tube"/>
+    <facet name="enumeration" value="4004009" annotation="Digital (Numeric) ETCO2"/>
+    <facet name="enumeration" value="4004011" annotation="Direct Re-Visualization of Tube in Place"/>
+    <facet name="enumeration" value="4004013" annotation="Endotracheal Tube Whistle (BAAM, etc.)"/>
+    <facet name="enumeration" value="4004015" annotation="Other"/>
+    <facet name="enumeration" value="4004017" annotation="Visualization of Vocal Cords"/>
+    <facet name="enumeration" value="4004019" annotation="Waveform ETCO2"/>
+    <facet name="enumeration" value="4004021" annotation="Chest Rise"/>
+  </DeviceConfirmedMethods>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When Airway Device Placement Confirmed Method has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Airway Device Placement Confirmed Method is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Airway Device Placement Confirmed Method has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

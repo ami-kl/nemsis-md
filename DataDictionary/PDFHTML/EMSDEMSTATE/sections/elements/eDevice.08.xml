@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDevice.08"  minOccurs="0"  maxOccurs="1"  dataTypeName="ECGInterpretation"  isNillable="No">
+<name>Medical Device ECG Interpretation</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The interpretation of the rhythm by the device (if appropriate for the event).</definition>
+<v2Number>E21_07</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>STEMI</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>The rhythm interpretation text imported from the device.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ECGInterpretation baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="2000"/>
+  </ECGInterpretation>
+</restrictions>
+</element>

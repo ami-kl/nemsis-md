@@ -1,0 +1,46 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dVehicle.04"  minOccurs="0"  maxOccurs="1"  dataTypeName="VehicleType"  isNillable="Yes">
+<name>Vehicle Type</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The vehicle type of the unit (ambulance, fire, truck, etc.).</definition>
+<v2Number>D06_03</v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <VehicleType baseType="string">
+    <facet name="enumeration" value="1404001" annotation="Ambulance"/>
+    <facet name="enumeration" value="1404003" annotation="ATV"/>
+    <facet name="enumeration" value="1404005" annotation="Bicycle"/>
+    <facet name="enumeration" value="1404007" annotation="Fire Apparatus"/>
+    <facet name="enumeration" value="1404009" annotation="Fixed Wing"/>
+    <facet name="enumeration" value="1404011" annotation="Motorcycle"/>
+    <facet name="enumeration" value="1404013" annotation="Other"/>
+    <facet name="enumeration" value="1404015" annotation="Personal Vehicle"/>
+    <facet name="enumeration" value="1404017" annotation="Quick Response Vehicle (Non-Transport Vehicle other than Fire Apparatus)"/>
+    <facet name="enumeration" value="1404019" annotation="Rescue"/>
+    <facet name="enumeration" value="1404021" annotation="Rotor Craft"/>
+    <facet name="enumeration" value="1404023" annotation="Snow Vehicle"/>
+    <facet name="enumeration" value="1404025" annotation="Watercraft"/>
+  </VehicleType>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_d002" role="Error">
+      When Vehicle Type has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_d001" role="Error">
+      When Vehicle Type is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

@@ -1,0 +1,37 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dPersonnel.31"  minOccurs="0"  maxOccurs="1"  dataTypeName="EmploymentStatus"  isNillable="Yes">
+<name>EMS Personnel's Employment Status</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The personnel's primary employment status for this agency.</definition>
+<v2Number>D07_03</v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EmploymentStatus baseType="string">
+    <facet name="enumeration" value="1531001" annotation="Full Time Paid Employee"/>
+    <facet name="enumeration" value="1531003" annotation="Part Time Paid Employee"/>
+    <facet name="enumeration" value="1531005" annotation="Volunteer"/>
+    <facet name="enumeration" value="1531007" annotation="Neither an Employee Nor a Volunteer"/>
+  </EmploymentStatus>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_d002" role="Error">
+      When EMS Personnel's Employment Status has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_d001" role="Error">
+      When EMS Personnel's Employment Status is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

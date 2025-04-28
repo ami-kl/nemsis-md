@@ -1,0 +1,16 @@
+<?xml-stylesheet type="text/xsl" href="../xslt/grouping.xslt"?>
+<section name="dDevice">
+  <group number="dDevice.DeviceGroup" minOccurs="0" maxOccurs="M" CorrelationID="Yes" UUID="Yes" ProcedureGroupCorrelationID="" CustomElementID="" timeStamp="" isNillable="No">
+    <element number="dDevice.01" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="DeviceSerialNumber"><name>Medical Device Serial Number</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <element number="dDevice.02" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="DeviceNameorID"><name>Medical Device Name or ID</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <element number="dDevice.03" minOccurs="0" maxOccurs="M" CorrelationID="Yes" UUID="" isNillable="No" dataType="MedicalDeviceType"><name>Medical Device Type</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <element number="dDevice.04" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="DeviceManufacturer"><name>Medical Device Manufacturer</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <element number="dDevice.05" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="ModelNumber"><name>Medical Device Model Number</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <element number="dDevice.06" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="DateType"><name>Medical Device Purchase Date</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+  </group>
+<asserts>
+  <assert id="nemSch_d005" role="Error">
+      UUID must be universally unique.
+      </assert>
+</asserts>
+</section>

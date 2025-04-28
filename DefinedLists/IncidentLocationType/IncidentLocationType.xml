@@ -1,0 +1,232 @@
+<?xml-stylesheet type="text/xsl" href="https://nemsis.org/media/nemsis_v3/release-3.5.1/DefinedLists/DefinedListHtml.xsl"?><DefinedList xmlns="http://www.nemsis.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" date="2025-01-14" xsi:schemaLocation="http://www.nemsis.org https://nemsis.org/media/nemsis_v3/release-3.5.1/DefinedLists/DefinedLists.xsd">
+  <Header>
+    <SourceVocabularies>
+      <SourceVocabulary url="https://www.cdc.gov/nchs/icd/icd-10-cm/">ICD-10</SourceVocabulary>
+    </SourceVocabularies>
+    <NemsisTypes>
+      <NemsisType>IncidentLocationType</NemsisType>
+    </NemsisTypes>
+    <NemsisElements>
+      <NemsisElement>eScene.09</NemsisElement>
+    </NemsisElements>
+  </Header>
+  <Codes>
+    <Code date="2021-05-06">
+      <Value>Y92.520</Value>
+      <Category>Commercial</Category>
+      <SourceLabel>Airport as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Airport</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.39</Value>
+      <Category>Commercial</Category>
+      <SourceLabel>Other specified sports and athletic area as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Gym</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.6</Value>
+      <Category>Commercial</Category>
+      <SourceLabel>Industrial and construction area as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Industrial/construction area</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.5</Value>
+      <Category>Commercial</Category>
+      <SourceLabel>Trade and service area as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Place of business, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.511</Value>
+      <Category>Commercial</Category>
+      <SourceLabel>Restaurant or café as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Restaurant/café</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.51</Value>
+      <Category>Commercial</Category>
+      <SourceLabel>Private commercial establishments as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Store</SuggestedLabel>
+      <Note>Includes Y92.512 Grocery store</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.59</Value>
+      <Category>Commercial</Category>
+      <SourceLabel>Other trade areas as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Warehouse</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.531</Value>
+      <Category>Healthcare</Category>
+      <SourceLabel>Health care provider office as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Doctor's office</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.23</Value>
+      <Category>Healthcare</Category>
+      <SourceLabel>Hospital as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Hospital</SuggestedLabel>
+      <Note>Includes Y92.230 Patient room in hospital</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.12</Value>
+      <Category>Healthcare</Category>
+      <SourceLabel>Nursing home as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Nursing home</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.538</Value>
+      <Category>Healthcare</Category>
+      <SourceLabel>Other ambulatory health services establishments as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Other ambulatory care</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.532</Value>
+      <Category>Healthcare</Category>
+      <SourceLabel>Urgent care center as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Urgent care</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.1</Value>
+      <Category>Institutional Residence</Category>
+      <SourceLabel>Institutional (nonprivate) residence as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Institutional residence</SuggestedLabel>
+      <Note>Includes Y92.10 and Y92.19</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.14</Value>
+      <Category>Institutional Residence</Category>
+      <SourceLabel>Prison as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Prison/jail</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.89</Value>
+      <Category>Other</Category>
+      <SourceLabel>Other specified places as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Abandoned house</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.13</Value>
+      <Category>Other</Category>
+      <SourceLabel>Military base as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Military installation</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.8</Value>
+      <Category>Other</Category>
+      <SourceLabel>Other places as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Other, NOS</SuggestedLabel>
+      <Note>Includes Y92.9 Unspecified place</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.22</Value>
+      <Category>Other</Category>
+      <SourceLabel>Religious institution as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Religious institution</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.03</Value>
+      <Category>Private Residence</Category>
+      <SourceLabel>Apartment as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Apartment/condo</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.02</Value>
+      <Category>Private Residence</Category>
+      <SourceLabel>Mobile home as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Mobile home</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.09</Value>
+      <Category>Private Residence</Category>
+      <SourceLabel>Other non-institutional residence as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Other private residence</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.0</Value>
+      <Category>Private Residence</Category>
+      <SourceLabel>Non-institutional (private) residence as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Private residence</SuggestedLabel>
+      <Note>Icludes Y92.00, Y92.008, Y92.01</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.24</Value>
+      <Category>Public Area</Category>
+      <SourceLabel>Public administrative building as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Public building</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.2</Value>
+      <Category>Public Area</Category>
+      <SourceLabel>School, other institution and public administrative area as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Public area, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.29</Value>
+      <Category>Recreational</Category>
+      <SourceLabel>Other specified public building as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Clubhouse</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.830</Value>
+      <Category>Recreational</Category>
+      <SourceLabel>Public park as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Park</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.34</Value>
+      <Category>Recreational</Category>
+      <SourceLabel>Swimming pool (public) as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Pool</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.838</Value>
+      <Category>Recreational</Category>
+      <SourceLabel>Other recreation area as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Recreational area, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.3</Value>
+      <Category>Recreational</Category>
+      <SourceLabel>Sports and athletics area as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Sports area</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.210</Value>
+      <Category>School</Category>
+      <SourceLabel>Daycare center as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Daycare</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.21</Value>
+      <Category>School</Category>
+      <SourceLabel>School (private) (public) (state) as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>School</SuggestedLabel>
+      <Note>Includes Y92.219 Unspecified school</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.16</Value>
+      <Category>School</Category>
+      <SourceLabel>School dormitory as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>School dorm</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.481</Value>
+      <Category>Street/Road</Category>
+      <SourceLabel>Parking lot as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Parking lot</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.480</Value>
+      <Category>Street/Road</Category>
+      <SourceLabel>Sidewalk as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Sidewalk</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y92.4</Value>
+      <Category>Street/Road</Category>
+      <SourceLabel>Street, highway and other paved roadways as the place of occurrence of the external cause</SourceLabel>
+      <SuggestedLabel>Street/road/highway</SuggestedLabel>
+      <Note>Includes Y92.41 Street and highway, Includes Y92.414 Local residential or business street, Y92.48</Note>
+    </Code>
+  </Codes>
+</DefinedList>

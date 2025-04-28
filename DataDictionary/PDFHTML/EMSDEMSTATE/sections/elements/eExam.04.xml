@@ -1,0 +1,44 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eExam.04"  minOccurs="0"  maxOccurs="M"  dataTypeName="SkinAssessment"  isNillable="No">
+<name>Skin Assessment</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The assessment findings associated with the patient's skin.</definition>
+<v2Number>E16_04</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Element eExam.04 - Skin Assessment represents Version 2.2.1 elements E15_01 NHTSA Injury Matrix External/Skin and E16_04 Skin Assessment. The element value choices have been combined and expanded.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <SkinAssessment baseType="string">
+    <facet name="enumeration" value="3504001" annotation="Clammy"/>
+    <facet name="enumeration" value="3504003" annotation="Cold"/>
+    <facet name="enumeration" value="3504005" annotation="Cyanotic"/>
+    <facet name="enumeration" value="3504007" annotation="Diaphoretic"/>
+    <facet name="enumeration" value="3504009" annotation="Dry"/>
+    <facet name="enumeration" value="3504011" annotation="Flushed"/>
+    <facet name="enumeration" value="3504013" annotation="Hot"/>
+    <facet name="enumeration" value="3504015" annotation="Jaundiced"/>
+    <facet name="enumeration" value="3504017" annotation="Lividity"/>
+    <facet name="enumeration" value="3504019" annotation="Mottled"/>
+    <facet name="enumeration" value="3504021" annotation="Normal"/>
+    <facet name="enumeration" value="3504023" annotation="Not Done"/>
+    <facet name="enumeration" value="3504025" annotation="Pale"/>
+    <facet name="enumeration" value="3504027" annotation="Poor Turgor"/>
+    <facet name="enumeration" value="3504029" annotation="Red (Erythematous)"/>
+    <facet name="enumeration" value="3504031" annotation="Tenting"/>
+    <facet name="enumeration" value="3504033" annotation="Warm"/>
+    <facet name="enumeration" value="3504035" annotation="Capillary Nail Bed Refill less than 2 seconds"/>
+    <facet name="enumeration" value="3504037" annotation="Capillary Nail Bed Refill 2-4 seconds"/>
+    <facet name="enumeration" value="3504039" annotation="Capillary Nail Bed Refill more than 4 seconds"/>
+  </SkinAssessment>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+  <PN>
+    <PN.ExamFindingNotPresent><facet name="enumeration" value="8801005" annotation="Exam Finding Not Present"/></PN.ExamFindingNotPresent>
+  </PN>
+</attributes>
+</element>

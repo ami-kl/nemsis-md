@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.40"  minOccurs="0"  maxOccurs="1"  dataTypeName="ResponseUrgency"  isNillable="No">
+<name>Response Urgency</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The urgency in which the EMS agency began to mobilize resources for this EMS encounter.</definition>
+<v2Number>E07_33</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This is for billing documentation.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ResponseUrgency baseType="string">
+    <facet name="enumeration" value="2640001" annotation="Immediate"/>
+    <facet name="enumeration" value="2640003" annotation="Non-Immediate"/>
+  </ResponseUrgency>
+</restrictions>
+</element>

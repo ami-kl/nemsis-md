@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eProcedures.04"  minOccurs="0"  maxOccurs="1"  dataTypeName="SizeOfProcedureEquipment"  isNillable="No">
+<name>Size of Procedure Equipment</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The size of the equipment used in the procedure on the patient.</definition>
+<v2Number>E19_04</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Need business logic to require detail of size appropriate for the procedure.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <SizeOfProcedureEquipment baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="20"/>
+  </SizeOfProcedureEquipment>
+</restrictions>
+</element>

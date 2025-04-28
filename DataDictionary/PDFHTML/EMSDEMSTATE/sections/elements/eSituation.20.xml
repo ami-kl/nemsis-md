@@ -1,0 +1,51 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eSituation.20"  minOccurs="1"  maxOccurs="1"  dataTypeName="ReasonforInterfacilityTransfer"  isNillable="Yes">
+<name>Reason for Interfacility Transfer/Medical Transport</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The general categories of the reason for an interfacility transfer/medical transport.</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This supports and works in combination with eSituation.19 Justification for Transfer or Encounter to provide defined categories for an interfacility transfer or other medical transport. This documentation provides support for reimbursement and a means for regions and states to evaluate transfer patterns and types.</v3Comment>
+<v3Changes>Element added with the release of v3.5.0</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ReasonforInterfacilityTransfer baseType="string">
+    <facet name="enumeration" value="2820001" annotation="Cardiac Specialty"/>
+    <facet name="enumeration" value="2820003" annotation="Convenience Transfer (Patient Request)"/>
+    <facet name="enumeration" value="2820005" annotation="Diagnostic Testing"/>
+    <facet name="enumeration" value="2820007" annotation="Dialysis"/>
+    <facet name="enumeration" value="2820009" annotation="Drug and/or Alcohol Rehabilitation Care"/>
+    <facet name="enumeration" value="2820011" annotation="Extended Care"/>
+    <facet name="enumeration" value="2820013" annotation="Maternal/Neonatal"/>
+    <facet name="enumeration" value="2820015" annotation="Medical Specialty Care (Other, Not Listed)"/>
+    <facet name="enumeration" value="2820017" annotation="Neurological Specialty Care"/>
+    <facet name="enumeration" value="2820019" annotation="Palliative/Hospice Care (Home or Facility)"/>
+    <facet name="enumeration" value="2820021" annotation="Pediatric Specialty Care"/>
+    <facet name="enumeration" value="2820023" annotation="Psychiatric/Behavioral Care"/>
+    <facet name="enumeration" value="2820025" annotation="Physical Rehabilitation Care"/>
+    <facet name="enumeration" value="2820027" annotation="Return to Home/Residence"/>
+    <facet name="enumeration" value="2820029" annotation="Surgical Specialty Care (Other, Not Listed)"/>
+    <facet name="enumeration" value="2820031" annotation="Trauma/Orthopedic Specialty Care"/>
+  </ReasonforInterfacilityTransfer>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e088" role="Warning">
+      <elementRef elementNumber="eSituation.20">Reason for Interfacility Transfer/Medical Transport</elementRef> should only be recorded when <elementRef elementNumber="eResponse.05">Type of Service Requested</elementRef> is &quot;... Transfer&quot; or &quot;Other Routine Medical Transport&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Reason for Interfacility Transfer/Medical Transport has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Reason for Interfacility Transfer/Medical Transport is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

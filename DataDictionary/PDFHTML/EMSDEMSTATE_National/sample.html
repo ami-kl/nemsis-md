@@ -1,0 +1,360 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head><title>NEMSIS Data Dictionary Section Grouping</title>
+	<style type="text/css">body{  background-color: #ffffff;  font-family: 'Open Sans', sans-serif;}
+	a{  color: #00456b;  text-decoration: none;}
+	td { font-size: 12; }    
+	.header         {font-size:22px; color:#004080; font-weight:bold; text-align:center;}                                         
+.subHeader      {font-size:18px; color:#004080; text-align:center;}                                                           
+.section        {font-size:18px; color:#004080;}                                                                              
+.subSection     {font-size:16px;}                                                                                             
+.note           {font-size:12px;}                                                                                             
+.listItem       {font-size:16px;}                                                                                             
+.paragraph      {font-size:16px;}                                                                                             
+.reference      {font-size:x-small;  font-weight:bold; vertical-align:top; color:green;}                                        
+.listItemOrgBg2  {font-size:16px; font-weight:bold; list-style-image:url('images/orange-8.gif');}                             
+.listItemOrgBg  {font-size:16px; font-weight:bold;list-style:none; }                                                          
+.listItemOrgSm  {font-size:14px; list-style-image:url('images/orange-5.gif');}                                                
+.listItemBlu    {font-size:14px; font-weight:normal;list-style-image:url('images/orange-5.gif');}                               
+.f1   { font-size: 12px; }                                                                                                    
+.f2   { font-size: 12px; }                                                                                                    
+.f3   { font-size: 14px; }                                                                                                    
+.p1   { font-size: 12px; white-space:nowrap; }                                                                                
+.p2   { font-size: 12px; white-space:nowrap; }                                                                                
+.p3   { font-size: 14px; white-space:nowrap; } 
+</style>
+</head>
+<body>
+<div class="section">NEMSIS Version 3.5.1 Data Dictionary Content</div>
+<div class="note">**Note: The numbers to the right of the content listed below represent the location for each element on the Sample Page of the Data Dictionary (page vi).</div>
+<ul>
+  <li class="listItemOrgBg">Data Element Number <span class="reference">(1)</span>
+    <ul>
+      <li class="listItemBlu">The NEMSIS Version 3 element numbering system has been revised to improve the information that can be derived from just the data element number. An example of a data element number is dAgency.01.
+        <ul>
+          <li class="listItemOrgSm">The data element number begins with either a "d" representing the demographic (agency) section or an "e" representing the EMS PCR section.</li>
+          <li class="listItemOrgSm">A one word descriptor for each section is now included in the data element number.</li>
+          <li class="listItemOrgSm">A period separates the section (e.g. dAgency) from the data element number (e.g. 01).</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<ul>
+  <li class="listItemOrgBg">National and State Element Indicator <span class="reference">(2)</span> <span class="reference">(5)</span> <span class="reference">(6)</span>
+    <ul>
+      <li class="listItemBlu">National = Yes, is an indication that the data element is required to be collected at the local EMS agency level and submitted to the state</li>
+      <li class="listItemBlu">State = Yes, is an indication that the data element is recommended to be collected at the State level. </li>
+    </ul>
+  </li>
+</ul>
+<ul>
+  <li class="listItemOrgBg">Data Element Name <span class="reference">(3)</span>
+    <ul>
+      <li class="listItemBlu">The name for the data element.</li>
+    </ul>
+  </li>
+</ul>
+<ul>
+  <li class="listItemOrgBg">Data Element Definition <span class="reference">(4)</span>
+    <ul>
+      <li class="listItemBlu">The definition for the data element.</li>
+    </ul>
+  </li>
+</ul>
+<ul>
+  <li class="listItemOrgBg">Version 2 Number <span class="reference">(7)</span>
+    <ul>
+      <li class="listItemBlu">The NEMSIS Version 2.2.1 Data Element Number.</li>
+      <li class="listItemBlu">If the Data Element is new to Version 3.5.1, the Version 2 Number will be blank.</li>
+    </ul>
+  </li>
+</ul>
+<ul>
+  <li class="listItemOrgBg">Data Structure Information
+    <ul>
+      <li class="listItemBlu">Recurrence <span class="reference">(12)</span>
+        <ul>
+          <li class="listItemOrgSm">Indication that the data element can have more than one value.
+            <ul>
+              <li class="listItemBlu">Represented by two characters separated by a colon.  The configuration includes:
+               <ul>
+                 <li><b>0:1</b> = element is not required and can occur only once </li>
+                 <li><b>0:M</b> = element is not required and can repeat multiple times</li>
+                 <li><b>1:1</b> = element is required and can occur only once</li>
+                 <li><b>1:M</b> = element is required and can repeat multiple times </li>
+               </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="listItemBlu">Usage <span class="reference">(8)</span>
+        <ul>
+          <li class="listItemOrgSm">Indication of when the data element is expected to be collected.
+            <ul>
+              <li class="listItemBlu"><b>Mandatory</b> = Must be completed and does not allow for NOT values</li>
+              <li class="listItemBlu"><b>Required</b> = Must be completed and allows NOT values</li>
+              <li class="listItemBlu"><b>Recommended</b> = Does not need to be completed and allows NOT values</li>
+              <li class="listItemBlu"><b>Optional</b> = Does not need to be completed and does not allow for NOT values</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="listItemBlu">NOT Value Characteristics <span class="reference">(10)</span>
+        <ul>
+          <li class="listItemOrgSm">Indication that the data element can have NOT values.</li>
+          <li class="listItemOrgSm">NOT Values are used (where permitted) to document that a data element was not applicable, not completed, or not collected by the state.</li>
+          <li class="listItemOrgSm">NOT Values are documented as an attribute of an element.  It allows the documentation of NOT value when a real value is not documented. </li>
+          <li class="listItemOrgSm"><i>Please reference the NEMSIS White Paper describing the use of NOT Values, Pertinent Negatives, and Nill:</i>
+          <a href="https://nemsis.org/media/nemsis_v3/master/UsageGuides/NEMSISv3_AttributeUsage.pdf">https://nemsis.org/media/nemsis_v3/master/UsageGuides/NEMSISv3_AttributeUsage.pdf</a></li>
+        </ul>
+      </li>
+      <li class="listItemBlu">NOT Values Accepted <span class="reference">(14)</span>
+        <ul>
+          <li class="listItemOrgSm">Indication of which of the following three NOT values is acceptable.</li>
+          <li class="listItemOrgSm">Not all data elements accept NOT values.</li>
+          <li class="listItemOrgSm">NOT Values have been condensed in Version 3.
+            <ul>
+              <li class="listItemBlu"><b>Not Applicable</b> = The data element is not applicable or pertinent.</li>
+              <li class="listItemBlu"><b>Not Recorded</b> = The data element is considered applicable, but was left blank. The software should auto-populate it with "Not Recorded".</li>
+              <li class="listItemBlu"><b>Not Reporting</b> = The data element is not collected by the EMS agency or state.  This NOT value does not apply to National elements where Usage is specified as "Required".</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="listItemBlu">Pertinent Negative Values (PN) <span class="reference">(9)</span> <span class="reference">(14)</span>
+        <ul>
+          <li class="listItemOrgSm">A list of Pertinent Negative Values which can be associated with a data element.</li>
+          <li class="listItemOrgSm"><span style="text-decoration:underline">Not all data elements accept Pertinent Negative Values.</span></li>
+          <li class="listItemOrgSm">Pertinent Negative Values are documented as "an attribute" of an element.  It allows the documentation of pertinent negative value in addition to the documentation of a "real" value.</li>
+          <li class="listItemOrgSm"><i>Please reference the NEMSIS White Paper describing the use of NOT Values, Pertinent Negatives, and Nill:</i>
+          <a href="https://nemsis.org/media/nemsis_v3/master/UsageGuides/NEMSISv3_AttributeUsage.pdf">https://nemsis.org/media/nemsis_v3/master/UsageGuides/NEMSISv3_AttributeUsage.pdf</a></li>
+          <li class="listItemOrgSm">Example of use:
+            <ul>
+              <li class="listItemBlu">Example #1 - Aspirin Administration:
+                   <ul>
+                       <li class="listItemBlu">If the medication Aspirin is part of the agency protocol for Chest Pain but was not administered by the responding crew, the reason why should be documented.  This is done through the use of Pertinent Negative Values.  If the patient took the Aspirin prior to the EMS arrival on scene, the value "Medication Already Taken" should be documented in addition to "Aspirin".</li>
+                   </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="listItemBlu">Is Nillable <span class="reference">(11)</span>
+        <ul>
+          <li class="listItemOrgSm">Indication that the element can accept a "blank" value.</li>
+          <li class="listItemOrgSm">If the element is left "blank" the software must submit an appropriate value of one of the two attributes: Pertinent Negative or NOT Values.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<ul>
+  <li class="listItemOrgBg">Associated Performance Measure Initiatives <span class="reference">(13)</span>
+    <ul>
+      <li class="listItemBlu">Indication that the data element has value in describing, defining, or measuring EMS from a performance perspective. Performance Measures can be associated with EMS service delivery, patient care, or both. The following service delivery or time dependent illness/injury performance measure topics have been included in NEMSIS Version 3:
+        <ul>
+          <li class="listItemOrgSm">Airway - Airway Management</li>
+          <li class="listItemOrgSm">Cardiac Arrest - Out of Hospital Cardiac Arrest</li>
+          <li class="listItemOrgSm">Pediatric - Acute Pediatric Care</li>
+          <li class="listItemOrgSm">Response - EMS Response Time</li>
+          <li class="listItemOrgSm">STEMI - ST Elevation Myocardial Infarction (STEMI)</li>
+          <li class="listItemOrgSm">Stroke - Acute Stroke Care</li>
+          <li class="listItemOrgSm">Trauma - Acute Injury/Trauma Care</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<ul>
+  <li class="listItemOrgBg">Attributes <span class="reference">(14)</span>
+    <ul>
+      <li class="listItemBlu">An attribute provides extra information within an element.<br/>For information related to the first three attributes please see the NEMSIS document 
+      'How to Utilize NEMSIS V3 "NOT values/pertinent negatives/nillable':<br/>
+      <a href="https://nemsis.org/media/nemsis_v3/master/UsageGuides/NEMSISv3_AttributeUsage.pdf">https://nemsis.org/media/nemsis_v3/master/UsageGuides/NEMSISv3_AttributeUsage.pdf</a>
+      <br/>The following are possible attributes:
+        <ul>
+          <br/>
+          <li class="listItemOrgSm">PN (Pertinent Negative)
+            <ul>
+              <li class="listItemBlu">8801001 - Contraindication Noted  </li>
+              <li class="listItemBlu">8801003 - Denied By Order         </li>
+              <li class="listItemBlu">8801005 - Exam Finding Not Present</li>
+              <li class="listItemBlu">8801007 - Medication Allergy      </li>
+              <li class="listItemBlu">8801009 - Medication Already Taken</li>
+              <li class="listItemBlu">8801013 - No Known Drug Allergy</li>
+              <li class="listItemBlu">8801015 - None Reported           </li>
+              <li class="listItemBlu">8801017 - Not Performed by EMS    </li>
+              <li class="listItemBlu">8801019 - Refused                 </li>
+              <li class="listItemBlu">8801021 - Unresponsive            </li>
+              <li class="listItemBlu">8801023 - Unable to Complete      </li>
+			  <li class="listItemBlu">8801025 - Not Immunized      </li>
+              <li class="listItemBlu">8801027 - Order Criteria Not Met      </li>
+			  <li class="listItemBlu">8801029 - Approximate      </li>
+			  <li class="listItemBlu">8801031 - Symptom Not Present      </li>
+            </ul>
+          </li>
+          <br/>
+          <li class="listItemOrgSm">NV (Not Value)
+            <ul>
+              <li class="listItemBlu">7701001 - Not Applicable                 </li>
+              <li class="listItemBlu">7701003 - Not Recorded            </li>
+              <li class="listItemBlu">7701005 - Not Reporting      </li>
+            </ul>
+          </li>
+          <br/>
+          <li class="listItemOrgSm">Nillable xsi:nil="true"</li>
+          <br/>
+          <li class="listItemOrgSm">Code Type            
+            <ul>
+              <li class="listItemBlu">9924001 = ICD-10</li>
+              <li class="listItemBlu">9924003 = RxNorm</li>
+              <li class="listItemBlu">9924005 = SNOMED-CT</li>
+            </ul>
+          </li>
+          <br/>
+          <li class="listItemOrgSm">CorrelationID
+            <ul>
+              <li class="listItemBlu">Data Type = String</li>
+              <li class="listItemBlu">minLength = 0</li>
+              <li class="listItemBlu">maxLength = 255</li>
+            </ul>
+          </li>
+          <br/>
+          <li class="listItemOrgSm">DistanceUnit
+            <ul>
+              <li class="listItemBlu">9921001  - Kilometers</li>
+              <li class="listItemBlu">9921003  - Miles</li>
+            </ul>
+          </li>
+          <br/>
+          <li class="listItemOrgSm">EmailAddressType
+            <ul>
+              <li class="listItemBlu">9904001 - Personal</li>
+              <li class="listItemBlu">9904003 - Work</li>
+            </ul>
+          </li>
+          <br/>
+          <li class="listItemOrgSm">nemsisCode
+            <ul>
+              <li class="listItemBlu">Data Type = String</li>
+            </ul>
+          </li>
+          <br/>
+          <li class="listItemOrgSm">nemsisElement
+            <ul>
+              <li class="listItemBlu">Data Type = String</li>
+            </ul>
+          </li>
+          <br/>
+          <li class="listItemOrgSm">nemsisValueDescription
+            <ul>
+              <li class="listItemBlu">Data Type = String</li>
+            </ul>
+          </li>
+          <br/>
+          <li class="listItemOrgSm">PhoneNumberType
+            <ul>
+              <li class="listItemBlu">9913001 - Fax   </li>
+              <li class="listItemBlu">9913003 - Home  </li>
+              <li class="listItemBlu">9913005 - Mobile</li>
+              <li class="listItemBlu">9913007 - Pager </li>
+              <li class="listItemBlu">9913009 - Work  </li>
+            </ul>
+          </li>
+          <br/>
+          <li class="listItemOrgSm">ProcedureGroupCorrelationID
+            <ul>
+              <li class="listItemBlu">Date Type = CorrelationID</li>
+            </ul>
+          </li>
+          <br/>
+          <li class="listItemOrgSm">StreetAddress2
+            <ul>
+              <li class="listItemBlu">Data Type = String</li>
+              <li class="listItemBlu">minLength = 1</li>
+              <li class="listItemBlu">maxLength = 255</li>
+            </ul>
+          </li>
+          <br/>
+          <li class="listItemOrgSm">TimeStamp
+            <ul>
+              <li class="listItemBlu">Data Type = DateTime</li>
+              <li class="listItemBlu">minValue = 1950-01-01T00:00:00-00:00</li>
+              <li class="listItemBlu">maxValue = 2050-01-01T00:00:00-00:00</li>
+            </ul>
+          </li>
+          <br/>
+          <li class="listItemOrgSm">UUID
+            <ul>
+              <li class="listItemBlu">UUIDs must be generated using the IETF RFC 4122 standard.</li>
+			  <li class="listItemBlu">RFC 4122 defines 4 algorithms for UUID generation, any of these four can be used.</li>
+              <li class="listItemBlu">UUIDs must be represented in canonical form, matching the following regular expression: [a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[1-5][a-fA-F0-9]{3}-[89abAB][a-fA-F0-9]{3}-[a-fA-F0-9]{12}</li>
+            </ul>
+          </li>
+		  <br/>
+          <li class="listItemOrgSm">VelocityUnit
+            <ul>
+              <li class="listItemBlu">9921001  - Kilometers per Hour</li>
+              <li class="listItemBlu">9921003  - Miles per Hour</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<ul>
+  <li class="listItemOrgBg">Code List <span class="reference">(16)</span>
+    <ul>
+
+      <li class="listItemBlu">A list of values associated with the data element. Not all data elements have predefined value sets.</li>
+      <li class="listItemBlu">Codes for each value:
+        <ul>
+          <li class="listItemOrgSm">The codes are based on a 7-digit number, in a 2-2-3 pattern (without dashes).
+            <ul>
+              <li class="listItemBlu">The first set of two numbers represent the data section</li>
+              <li class="listItemBlu">The second set of two numbers represent the element number</li>
+              <li class="listItemBlu">The last set is a 3-digit number for each value beginning at 001; The codes increase in increments of two (2).</li>
+            </ul>
+          </li>
+          <li class="listItemOrgSm">Codes are typically sequential (by two) and alphabetical.  Some ordering is provided in an effort to present information based on workflow.</li>
+          <li class="listItemOrgSm">Several values and codes reference external standards such as ICD-10, RxNorm, SNOMED, etc. NEMSIS will assist in providing a recommended list of EMS specific values and codes from these larger standards for most elements using these external standards.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<ul>
+  <li class="listItemOrgBg">Data Element Editorial Comments <span class="reference">(17)</span>
+    <ul>
+      <li class="listItemBlu">Comments are provided to describe additions, changes, clarifications, or provide additional insight into the data element.</li>
+    </ul>
+  </li>
+</ul>
+<ul>
+  <li class="listItemOrgBg">Version 3 Changes Implemented <span class="reference">(18)</span>
+    <ul>
+      <li class="listItemBlu">Comments providing insight into specific Version 3 changes such as new or revised data elements.</li>
+    </ul>
+  </li>
+</ul>
+<ul>
+  <li class="listItemOrgBg">Element Deprecated<span class="reference">(19)</span>
+    <ul>
+      <li class="listItemBlu">Elements that are signified as "deprecated" will be removed from a future version of the NEMSIS standard. Their use should now be avoided, but will be supported until they are removed from the standard.</li>
+    </ul>
+  </li>
+</ul>
+<ul>
+  <li class="listItemOrgBg">Associated Validation Rules <span class="reference">(20)</span>
+    <ul>
+      <li class="listItemBlu">A list of national Schematron validation rules associated with the element. Additional validation rules may be implemented at the state or local level.</li>
+    </ul>
+  </li>
+</ul>
+<div><img src="images/SamplePage2.gif" /></div>
+</body>
+</html>

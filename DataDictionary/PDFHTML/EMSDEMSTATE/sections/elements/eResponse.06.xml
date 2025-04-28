@@ -1,0 +1,29 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eResponse.06"  minOccurs="0"  maxOccurs="1"  dataTypeName="EMSStandByReason"  isNillable="No">
+<name>Standby Purpose</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The main reason the EMS Unit is on Standby as the Primary Type of Service for the EMS event.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Added to document the reason for "Standby" when populated in eResponse.05 (Type of Service Requested). This information will assist in administrative analysis of EMS service delivery, special event coverage, etc.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EMSStandByReason baseType="string">
+    <facet name="enumeration" value="2206001" annotation="Disaster Event-Drill/Exercise"/>
+    <facet name="enumeration" value="2206003" annotation="Disaster Event-Live Staging"/>
+    <facet name="enumeration" value="2206005" annotation="Education"/>
+    <facet name="enumeration" value="2206007" annotation="EMS Staging-Improve Coverage"/>
+    <facet name="enumeration" value="2206009" annotation="Fire Support-Rehab"/>
+    <facet name="enumeration" value="2206011" annotation="Fire Support-Standby"/>
+    <facet name="enumeration" value="2206013" annotation="Mass Gathering-Concert/Entertainment Event"/>
+    <facet name="enumeration" value="2206015" annotation="Mass Gathering-Fair/Community Event"/>
+    <facet name="enumeration" value="2206017" annotation="Mass Gathering-Sporting Event"/>
+    <facet name="enumeration" value="2206019" annotation="Other"/>
+    <facet name="enumeration" value="2206021" annotation="Public Safety Support"/>
+  </EMSStandByReason>
+</restrictions>
+</element>

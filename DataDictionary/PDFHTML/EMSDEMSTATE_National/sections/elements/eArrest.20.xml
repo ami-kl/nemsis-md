@@ -1,0 +1,54 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eArrest.20"  minOccurs="1"  maxOccurs="1"  dataTypeName="WhoFirstInitiatedCPR"  isNillable="Yes">
+<name>Who First Initiated CPR</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Who first initiated CPR for this EMS event.</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Cardiac Arrest</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Bystanders are defined as persons who are not responding as part of an organized emergency response system to a cardiac arrest. Physicians, nurses, and paramedics may be described as performing bystander CPR if they are not part of the emergency response system involved in the victim's resuscitation. Friends and acquaintances are considered bystanders.
+							<br/><br/>Family members are defined as the patient's relatives.
+							<br/><br/>Healthcare Provider (non-911 Responder) includes physicians, nurses, paramedics, and other types of healthcare professionals who are not part of the organized emergency response system.
+							<br/><br/>First Responders are defined as personnel who are dispatched through the 911 system, respond as part of an organized emergency response system, and have the capability and/or training to provide emergency medical care, but are not the designated transporters of the patient.
+							<br/><br/>First Responder (EMS) is defined as EMS personnel who are part of an EMS response agency, respond as part of an organized emergency response system, but are not the designated transporter of the patient. For example, First Responder (EMS) includes EMS personnel who arrive by quick response EMS units, fire apparatus that is part of an EMS response agency, and supervisor/administrative vehicles operated by the transport EMS agency.
+							<br/><br/>First Responder (Law Enforcement) is defined as public safety officers who are not part of an EMS response agency and act in an organized, official capacity to enforce the law.
+							<br/><br/>First Responder (non-EMS Fire) is defined as fire department personnel who are not part of an EMS response agency and are not the designated transporter of the patient.
+							<br/><br/>EMS Responder (transport) is defined as EMS personnel who are the designated transporter of the patient.
+							<br/><br/>For states and local agencies that participate in the Cardiac Arrest Registry for Enhanced Survival (CARES), eArrest.20 is the equivalent of CARES data element #23
+							Who Initiated CPR as defined by CARES in the CARES Data Dictionary: <a href="https://vendors.mycares.net/" target="_blank">https://vendors.mycares.net/</a>.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <WhoFirstInitiatedCPR baseType="string">
+    <facet name="enumeration" value="3020001" annotation="Bystander"/>
+    <facet name="enumeration" value="3020003" annotation="Family Member"/>
+    <facet name="enumeration" value="3020005" annotation="Healthcare Provider (non-911 Responder)"/>
+    <facet name="enumeration" value="3020007" annotation="First Responder (EMS)"/>
+    <facet name="enumeration" value="3020009" annotation="First Responder (Law Enforcement)"/>
+    <facet name="enumeration" value="3020011" annotation="First Responder (non-EMS Fire)"/>
+    <facet name="enumeration" value="3020013" annotation="EMS Responder (transport EMS)"/>
+  </WhoFirstInitiatedCPR>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e117" role="Warning">
+      <elementRef elementNumber="eArrest.20">Who First Initiated CPR</elementRef> should be recorded when <elementRef elementNumber="eArrest.03">Resuscitation Attempted By EMS</elementRef> is &quot;Attempted...&quot; or &quot;Initiated...&quot;.
+      </assert>
+  <assert id="nemSch_e118" role="Warning">
+      <elementRef elementNumber="eArrest.20">Who First Initiated CPR</elementRef> should only be recorded when <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Who First Initiated CPR has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Who First Initiated CPR is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

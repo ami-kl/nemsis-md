@@ -1,0 +1,56 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eResponse.05"  minOccurs="1"  maxOccurs="1"  dataTypeName="EMSServiceCat"  isNillable="No">
+<name>Type of Service Requested</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The type of service or category of service requested of the EMS Agency responding for this specific EMS event.</definition>
+<v2Number>E02_04</v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Values for "911 Response (Scene)", "Intercept", and "Mutual Aid" have been relabeled to start with "Emergency Response" to more easily identify these options. "Interfacility Transport" was relabeled to "Hospital-to-Hospital Transfer" to be more accurate; "Medical Transport" was relabeled to "Other Routine Medical Transport" to cover any other medical transports such as transports to and from dialysis, doctor appointments, return home, or nursing homes. Values added to consolidate types of service previously captured in "Primary Role of Unit" and eDisposition.12 as found in V3.4.0. Additional values added to reflect emerging service types.</v3Comment>
+<v3Changes>With the release of v3.5.0 values were added to meet the needs of EMS</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EMSServiceCat baseType="string">
+    <facet name="enumeration" value="2205001" annotation="Emergency Response (Primary Response Area)"/>
+    <facet name="enumeration" value="2205003" annotation="Emergency Response (Intercept)"/>
+    <facet name="enumeration" value="2205009" annotation="Emergency Response (Mutual Aid)"/>
+    <facet name="enumeration" value="2205005" annotation="Hospital-to-Hospital Transfer"/>
+    <facet name="enumeration" value="2205015" annotation="Hospital to Non-Hospital Facility Transfer"/>
+    <facet name="enumeration" value="2205017" annotation="Non-Hospital Facility to Non-Hospital Facility Transfer"/>
+    <facet name="enumeration" value="2205019" annotation="Non-Hospital Facility to Hospital Transfer"/>
+    <facet name="enumeration" value="2205007" annotation="Other Routine Medical Transport"/>
+    <facet name="enumeration" value="2205011" annotation="Public Assistance"/>
+    <facet name="enumeration" value="2205013" annotation="Standby"/>
+    <facet name="enumeration" value="2205021" annotation="Support Services"/>
+    <facet name="enumeration" value="2205023" annotation="Non-Patient Care Rescue/Extrication"/>
+    <facet name="enumeration" value="2205025" annotation="Crew Transport Only"/>
+    <facet name="enumeration" value="2205027" annotation="Transport of Organs or Body Parts"/>
+    <facet name="enumeration" value="2205029" annotation="Mortuary Services"/>
+    <facet name="enumeration" value="2205031" annotation="Mobile Integrated Health Care Encounter"/>
+    <facet name="enumeration" value="2205033" annotation="Evaluation for Special Referral/Intake Programs"/>
+    <facet name="enumeration" value="2205035" annotation="Administrative Operations"/>
+  </EMSServiceCat>
+</restrictions>
+<asserts>
+  <assert id="nemSch_e075" role="Warning">
+      <elementRef elementNumber="eSituation.01">Date/Time of Symptom Onset</elementRef> should be recorded when <elementRef elementNumber="eResponse.05">Type of Service Requested</elementRef> is &quot;Emergency Response (Primary Response Area)&quot; and <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e076" role="Warning">
+      <elementRef elementNumber="eSituation.02">Possible Injury</elementRef> should be recorded when <elementRef elementNumber="eResponse.05">Type of Service Requested</elementRef> is &quot;Emergency Response (Primary Response Area)&quot; and <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e080" role="Warning">
+      <elementRef elementNumber="eSituation.09">Primary Symptom</elementRef> should be recorded when <elementRef elementNumber="eResponse.05">Type of Service Requested</elementRef> is &quot;Emergency Response (Primary Response Area)&quot; and <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e082" role="Warning">
+      <elementRef elementNumber="eSituation.11">Provider's Primary Impression</elementRef> should be recorded when <elementRef elementNumber="eResponse.05">Type of Service Requested</elementRef> is &quot;Emergency Response (Primary Response Area)&quot; and <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e084" role="Warning">
+      <elementRef elementNumber="eSituation.13">Initial Patient Acuity</elementRef> should be recorded when <elementRef elementNumber="eResponse.05">Type of Service Requested</elementRef> is &quot;Emergency Response (Primary Response Area)&quot; and <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e088" role="Warning">
+      <elementRef elementNumber="eSituation.20">Reason for Interfacility Transfer/Medical Transport</elementRef> should only be recorded when <elementRef elementNumber="eResponse.05">Type of Service Requested</elementRef> is &quot;... Transfer&quot; or &quot;Other Routine Medical Transport&quot;.
+      </assert>
+</asserts>
+</element>

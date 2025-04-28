@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dPersonnel.33"  minOccurs="0"  maxOccurs="1"  dataTypeName="DateType"  isNillable="No">
+<name>EMS Personnel's Hire Date</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The date the employee was hired by the EMS agency for this current job.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This is intended to collect information based on the current employment/job.  If the EMS personnel has a come and go status, this should reflect the most recent employment/job.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <DateType baseType="date">
+    <facet name="minInclusive" value="1900-01-01"/>
+    <facet name="maxInclusive" value="2050-01-01"/>
+  </DateType>
+</restrictions>
+</element>

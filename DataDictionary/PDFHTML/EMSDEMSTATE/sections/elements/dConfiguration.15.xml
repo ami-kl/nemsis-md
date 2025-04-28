@@ -1,0 +1,47 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dConfiguration.15"  minOccurs="0"  maxOccurs="M"  dataTypeName="PatientMonitoringCapability"  isNillable="Yes">
+<name>Patient Monitoring Capability(ies)</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The EMS Agency's patient monitoring capability which can be provided to any/all patients presenting to EMS.</definition>
+<v2Number></v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Added to identify the patient monitoring capability of the EMS Agency. Associated with each EMS Agency Number (dAgency.02) since each EMS Agency Number may have a different capability within each EMS Agency. Other patient monitoring capability may exist but NEMSIS Version 3 only includes these specific capabilities.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <PatientMonitoringCapability baseType="string">
+    <facet name="enumeration" value="1215001" annotation="Capnography-Numeric"/>
+    <facet name="enumeration" value="1215003" annotation="Capnography-Waveform"/>
+    <facet name="enumeration" value="1215005" annotation="ECG-12 Lead or Greater"/>
+    <facet name="enumeration" value="1215007" annotation="ECG-Less than 12 Lead (Cardiac Monitor)"/>
+    <facet name="enumeration" value="1215009" annotation="Oximetry-Carbon Monoxide"/>
+    <facet name="enumeration" value="1215011" annotation="Oximetry-Oxygen"/>
+    <facet name="enumeration" value="1215013" annotation="Pressure Measurement-Invasive (Arterial, CVP, Swan, etc.)"/>
+    <facet name="enumeration" value="1215015" annotation="Pressure Measurement-Non-Invasive (Blood Pressure, etc.)"/>
+    <facet name="enumeration" value="1215017" annotation="Ventilator-Transport"/>
+    <facet name="enumeration" value="1215019" annotation="Vital Sign Monitoring"/>
+  </PatientMonitoringCapability>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_d002" role="Error">
+      When Patient Monitoring Capability(ies) has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_d001" role="Error">
+      When Patient Monitoring Capability(ies) is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_d003" role="Warning">
+      When Patient Monitoring Capability(ies) has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

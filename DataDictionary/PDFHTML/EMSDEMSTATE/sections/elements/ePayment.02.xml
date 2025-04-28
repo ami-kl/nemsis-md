@@ -1,0 +1,25 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.02"  minOccurs="0"  maxOccurs="1"  dataTypeName="YesNoUnkValues"  isNillable="No">
+<name>Physician Certification Statement</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>Indication of whether a physician certification statement (PCS) is available documenting the medical necessity or the EMS encounter.</definition>
+<v2Number>E07_02</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Data Element Name changed from Certificate of Medical Necessity to Physician Certification Statement. The PCS statement and documentation of medical necessity is a requirement of the Centers for Medicare &amp; Medicaid Services. The circumstances are defined in 42 CFR 410.40 (d)(2) and (d)(3). http://www.cms.gov/
+										<br/><br/>A PCS is required for the following non-emergency transport:
+										<br/>1) Non-Emergency Repetitive Scheduled
+										<br/>2) Non Emergency Non-Repetitive-Scheduled
+										<br/>3) Non Emergency Services - Non Scheduled - Under direct care of a physician</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <YesNoUnkValues baseType="string">
+    <facet name="enumeration" value="9922001" annotation="No"/>
+    <facet name="enumeration" value="9922003" annotation="Unknown"/>
+    <facet name="enumeration" value="9922005" annotation="Yes"/>
+  </YesNoUnkValues>
+</restrictions>
+</element>

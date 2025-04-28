@@ -1,0 +1,28 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="sFacility.07"  minOccurs="0"  maxOccurs="1"  dataTypeName="StreetAddress"  isNillable="No">
+<name>Facility Street Address</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The street address where the facility is located.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Used to populate dFacility.07 Facility Street Address.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <StreetAddress baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="255"/>
+  </StreetAddress>
+</restrictions>
+<attributes>
+  <StreetAddress2 baseType="string"><facet name="minLength" value="1"/><facet name="maxLength" value="255"/></StreetAddress2>
+</attributes>
+<asserts>
+  <assert id="nemSch_s028" role="Warning">
+      <elementRef elementNumber="sFacility.01">Type of Facility</elementRef>, <elementRef elementNumber="sFacility.03">Facility Location Code</elementRef>, <elementRef elementNumber="sFacility.07">Facility Street Address</elementRef>, <elementRef elementNumber="sFacility.08">Facility City</elementRef>, and <elementRef elementNumber="sFacility.09">Facility State</elementRef> should be a unique combination for each facility.
+      </assert>
+</asserts>
+</element>

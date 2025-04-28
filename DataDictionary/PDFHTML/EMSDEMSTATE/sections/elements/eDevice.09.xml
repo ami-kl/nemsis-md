@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDevice.09"  minOccurs="0"  maxOccurs="1"  dataTypeName="TypeOfShock"  isNillable="No">
+<name>Type of Shock</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The type of shock used by the device for the defibrillation (if appropriate for the event).</definition>
+<v2Number>E21_08</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup><performanceMeasure>Cardiac Arrest</performanceMeasure></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <TypeOfShock baseType="string">
+    <facet name="enumeration" value="4109001" annotation="Biphasic"/>
+    <facet name="enumeration" value="4109003" annotation="Monophasic"/>
+  </TypeOfShock>
+</restrictions>
+</element>

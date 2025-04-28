@@ -1,0 +1,44 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dAgency.26"  minOccurs="1"  maxOccurs="M"  dataTypeName="FireDepartmentIDNumber"  isNillable="Yes">
+<name>Fire Department ID Number</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The state assigned Fire Department ID Number for EMS Agency(ies) operating within a Fire Department.</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Fire Department ID was added to better integrate Fire Department EMS Agencies and linkage to other EMS related data systems such as NFIRS.</v3Comment>
+<v3Changes>Added to better associate Fire and EMS licensure and operational identifiers.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <FireDepartmentIDNumber baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="20"/>
+  </FireDepartmentIDNumber>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_d008" role="Warning">
+      <elementRef elementNumber="dAgency.26">Fire Department ID Number</elementRef> should be recorded when <elementRef elementNumber="dAgency.13">Organizational Type</elementRef> is &quot;Fire Department&quot;.
+      </assert>
+  <assert id="nemSch_d009" role="Warning">
+      <elementRef elementNumber="dAgency.26">Fire Department ID Number</elementRef> should only be recorded when <elementRef elementNumber="dAgency.13">Organizational Type</elementRef> is &quot;Fire Department&quot;.
+      </assert>
+  <assert id="nemSch_d002" role="Error">
+      When Fire Department ID Number has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_d001" role="Error">
+      When Fire Department ID Number is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_d003" role="Warning">
+      When Fire Department ID Number has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

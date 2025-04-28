@@ -1,0 +1,21 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eExam.17"  minOccurs="0"  maxOccurs="1"  dataTypeName="EyesAssessmentLocation"  isNillable="No">
+<name>Eye Assessment Finding Location</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The location of the patient's eye assessment findings.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Element eExam.17 - Eye Assessment Finding Location represents Version 2.2.1 elements E16_21 Eyes-Left Assessment and E16_22 Eyes-Right Assessment. The eye location value choices have been expanded.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EyesAssessmentLocation baseType="string">
+    <facet name="enumeration" value="3517001" annotation="Bilateral"/>
+    <facet name="enumeration" value="3517003" annotation="Left"/>
+    <facet name="enumeration" value="3517005" annotation="Right"/>
+  </EyesAssessmentLocation>
+</restrictions>
+</element>

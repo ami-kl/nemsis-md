@@ -1,0 +1,48 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDisposition.29"  minOccurs="1"  maxOccurs="1"  dataTypeName="CrewDisposition"  isNillable="Yes">
+<name>Crew Disposition</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The crew disposition for this EMS event identifying which crew provided primary patient care or whether support services were required.</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Grouped with Patient and Transport Dispositions. Depending on context of the Value, "Unit" could be Vehicle or Service/Agency.</v3Comment>
+<v3Changes>Element added with the release of v3.5.0</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <CrewDisposition baseType="string">
+    <facet name="enumeration" value="4229001" annotation="Initiated and Continued Primary Care"/>
+    <facet name="enumeration" value="4229003" annotation="Initiated Primary Care and Transferred to Another EMS Crew"/>
+    <facet name="enumeration" value="4229005" annotation="Provided Care Supporting Primary EMS Crew"/>
+    <facet name="enumeration" value="4229007" annotation="Assumed Primary Care from Another EMS Crew"/>
+    <facet name="enumeration" value="4229009" annotation="Incident Support Services Provided (Including Standby)"/>
+    <facet name="enumeration" value="4229011" annotation="Back in Service, No Care/Support Services Required"/>
+    <facet name="enumeration" value="4229013" annotation="Back in Service, Care/Support Services Refused"/>
+  </CrewDisposition>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e181" role="Warning">
+      <elementRef elementNumber="eDisposition.27">Unit Disposition</elementRef> should be &quot;Patient Contact Made&quot; when <elementRef elementNumber="eDisposition.29">Crew Disposition</elementRef> contains &quot;... Primary Care...&quot; or &quot;Provided Care Supporting Primary EMS Crew&quot;.
+      </assert>
+  <assert id="nemSch_e184" role="Warning">
+      <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> should be &quot;Patient Evaluated and Care Provided&quot; when <elementRef elementNumber="eDisposition.29">Crew Disposition</elementRef> contains &quot;... Primary Care...&quot; or &quot;Provided Care Supporting Primary EMS Crew&quot;.
+      </assert>
+  <assert id="nemSch_e185" role="Warning">
+      <elementRef elementNumber="eDisposition.29">Crew Disposition</elementRef> should be recorded when <elementRef elementNumber="eDisposition.27">Unit Disposition</elementRef> is &quot;Patient Contact Made&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Crew Disposition has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Crew Disposition is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

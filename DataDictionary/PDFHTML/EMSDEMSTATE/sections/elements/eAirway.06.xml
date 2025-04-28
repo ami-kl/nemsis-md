@@ -1,0 +1,38 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eAirway.06"  minOccurs="0"  maxOccurs="1"  dataTypeName="IndividualDetails"  isNillable="Yes">
+<name>Type of Individual Confirming Airway Device Placement</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The type of individual who confirmed the airway device placement.</definition>
+<v2Number></v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes>Added to better document airway management.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <IndividualDetails baseType="string">
+    <facet name="enumeration" value="4006001" annotation="Another Person on the Same Crew"/>
+    <facet name="enumeration" value="4006003" annotation="Other"/>
+    <facet name="enumeration" value="4006005" annotation="Person Performing Intubation"/>
+    <facet name="enumeration" value="4006007" annotation="Receiving Air Medical/EMS Crew"/>
+    <facet name="enumeration" value="4006009" annotation="Receiving Hospital Team"/>
+  </IndividualDetails>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When Type of Individual Confirming Airway Device Placement has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Type of Individual Confirming Airway Device Placement is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

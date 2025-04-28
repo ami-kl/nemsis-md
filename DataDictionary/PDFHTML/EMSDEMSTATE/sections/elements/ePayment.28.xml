@@ -1,0 +1,19 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.28"  minOccurs="0"  maxOccurs="1"  dataTypeName="ANSIStateCode"  isNillable="No">
+<name>Closest Relative/ Guardian State</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The state of residence of the patient's closest relative or guardian.</definition>
+<v2Number>E07_23</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Based on ANSI State Code.<br/><br/>GNIS Codes Website: <a>http://geonames.usgs.gov/domestic/download_data.htm</a></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ANSIStateCode baseType="string">
+    <facet name="pattern" value="[0-9]{2}"/>
+  </ANSIStateCode>
+</restrictions>
+</element>

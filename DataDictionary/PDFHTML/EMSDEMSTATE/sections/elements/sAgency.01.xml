@@ -1,0 +1,38 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="sAgency.01"  minOccurs="0"  maxOccurs="1"  dataTypeName="EMSAgencyStateID"  isNillable="Yes">
+<name>EMS Agency Unique State ID</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The unique ID assigned to the EMS Agency which is associated with all state licensure numbers and information.</definition>
+<v2Number></v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Used to populate dAgency.01 EMS Agency Unique State ID.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EMSAgencyStateID baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="50"/>
+  </EMSAgencyStateID>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_s027" role="Warning">
+      <elementRef elementNumber="sAgency.01">EMS Agency Unique State ID</elementRef> and <elementRef elementNumber="sAgency.02">EMS Agency Number</elementRef> should be a unique combination for each EMS agency.
+      </assert>
+  <assert id="nemSch_s002" role="Error">
+      When EMS Agency Unique State ID has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_s001" role="Error">
+      When EMS Agency Unique State ID is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

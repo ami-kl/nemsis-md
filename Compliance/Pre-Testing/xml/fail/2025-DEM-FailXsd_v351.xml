@@ -1,0 +1,1168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+NEMSIS V3 Test Case for Pre-testing
+ID:               2025-DEM-FailXsd_v351
+Description:      Test case for DEMDataSet that fails XSD validation.
+Expected Result:  [ERROR]
+Expected Message: Element name 'dConfiguration.02' is invalid. One of the following is expected: dConfiguration.ProcedureGroup
+
+-->
+<DEMDataSet xmlns="http://www.nemsis.org"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://www.nemsis.org https://nemsis.org/media/nemsis_v3/3.5.1.250403CP1/XSDs/NEMSIS_XSDs/DEMDataSet_v3.xsd">
+   <dCustomConfiguration>
+      <dCustomConfiguration.CustomGroup CustomElementID="dPersonnel.18">
+         <dCustomConfiguration.01 nemsisElement="dPersonnel.18">EMS Personnel's Immunization Status</dCustomConfiguration.01>
+         <dCustomConfiguration.02>The type of immunization status.</dCustomConfiguration.02>
+         <dCustomConfiguration.03>9902009</dCustomConfiguration.03>
+         <dCustomConfiguration.04>9923001</dCustomConfiguration.04>
+         <dCustomConfiguration.05>9903007</dCustomConfiguration.05>
+         <dCustomConfiguration.06 nemsisCode="9910027" customValueDescription="COVID-19">9910055</dCustomConfiguration.06>
+      </dCustomConfiguration.CustomGroup>
+   </dCustomConfiguration>
+   <DemographicReport timeStamp="2024-10-12T10:58:32-04:00">
+      <dRecord>
+         <dRecord.SoftwareApplicationGroup>
+            <dRecord.01>NEMSIS Technical Assistance Center</dRecord.01>
+            <dRecord.02>Compliance Testing</dRecord.02>
+            <dRecord.03>3.5.1.250403CP1_250227</dRecord.03>
+         </dRecord.SoftwareApplicationGroup>
+      </dRecord>
+      <dAgency>
+         <dAgency.01>C034</dAgency.01>
+         <dAgency.02>351-C034P2</dAgency.02>
+         <dAgency.03>Danbury EMS Division of Danbury Fire Department</dAgency.03>
+         <dAgency.04>09</dAgency.04>
+         <dAgency.AgencyServiceGroup UUID="41a2ca33-7ceb-4d34-9158-0464ba2c164c">
+            <dAgency.05>09</dAgency.05>
+            <dAgency.06>09001</dAgency.06>
+            <dAgency.07>09001210702</dAgency.07>
+            <dAgency.07>09001210100</dAgency.07>
+            <dAgency.07>09001211200</dAgency.07>
+            <dAgency.07>09001210800</dAgency.07>
+            <dAgency.07>09001210600</dAgency.07>
+            <dAgency.07>09001210500</dAgency.07>
+            <dAgency.07>09001211000</dAgency.07>
+            <dAgency.07>09001210200</dAgency.07>
+            <dAgency.07>09001210701</dAgency.07>
+            <dAgency.07>09001210400</dAgency.07>
+            <dAgency.07>09001211400</dAgency.07>
+            <dAgency.07>09001211100</dAgency.07>
+            <dAgency.07>09001211300</dAgency.07>
+            <dAgency.07>09001210900</dAgency.07>
+            <dAgency.07>09001210300</dAgency.07>
+            <dAgency.07>09001200200</dAgency.07>
+            <dAgency.07>09001200100</dAgency.07>
+            <dAgency.07>09001200302</dAgency.07>
+            <dAgency.07>09001245600</dAgency.07>
+            <dAgency.07>09001220100</dAgency.07>
+            <dAgency.07>09001220200</dAgency.07>
+            <dAgency.07>09001220300</dAgency.07>
+            <dAgency.07>09001245200</dAgency.07>
+            <dAgency.07>09001245100</dAgency.07>
+            <dAgency.08>06810</dAgency.08>
+            <dAgency.08>06811</dAgency.08>
+            <dAgency.08>06801</dAgency.08>
+            <dAgency.08>06877</dAgency.08>
+            <dAgency.08>06812</dAgency.08>
+         </dAgency.AgencyServiceGroup>
+         <dAgency.AgencyServiceGroup UUID="72d9d83d-f898-4e3d-9e31-f27f559bb919">
+            <dAgency.05>36</dAgency.05>
+            <dAgency.06>36119</dAgency.06>
+            <dAgency.06>36079</dAgency.06>
+            <dAgency.07>36119015000</dAgency.07>
+            <dAgency.07>36079011700</dAgency.07>
+            <dAgency.07>36079011900</dAgency.07>
+            <dAgency.07>36079011800</dAgency.07>
+            <dAgency.07>36079010100</dAgency.07>
+            <dAgency.07>36079010200</dAgency.07>
+            <dAgency.08>10560</dAgency.08>
+            <dAgency.08>10519</dAgency.08>
+            <dAgency.08>10509</dAgency.08>
+            <dAgency.08>12563</dAgency.08>
+            <dAgency.08>12531</dAgency.08>
+            <dAgency.08>10512</dAgency.08>
+         </dAgency.AgencyServiceGroup>
+         <dAgency.09>9920001</dAgency.09>
+         <dAgency.10>9920007</dAgency.10>
+         <dAgency.10>9920017</dAgency.10>
+         <dAgency.11>9917007</dAgency.11>
+         <dAgency.12>1016003</dAgency.12>
+         <dAgency.13>9912001</dAgency.13>
+         <dAgency.14>1018003</dAgency.14>
+         <dAgency.AgencyYearGroup UUID="b01915ad-3bfd-42af-b164-bb5afaac5423">
+            <dAgency.15>2022</dAgency.15>
+            <dAgency.16>182</dAgency.16>
+            <dAgency.17>157291</dAgency.17>
+            <dAgency.18>10347</dAgency.18>
+            <dAgency.19>9671</dAgency.19>
+            <dAgency.20>7644</dAgency.20>
+            <dAgency.21>8961</dAgency.21>
+            <dAgency.22>7690</dAgency.22>
+         </dAgency.AgencyYearGroup>
+         <dAgency.AgencyYearGroup UUID="1174d37e-da92-4d04-893b-929fb9e75040">
+            <dAgency.15>2023</dAgency.15>
+            <dAgency.16>182</dAgency.16>
+            <dAgency.17>158964</dAgency.17>
+            <dAgency.18>11654</dAgency.18>
+            <dAgency.19>10002</dAgency.19>
+            <dAgency.20>8025</dAgency.20>
+            <dAgency.21>9084</dAgency.21>
+            <dAgency.22>7941</dAgency.22>
+         </dAgency.AgencyYearGroup>
+         <dAgency.23>1027005</dAgency.23>
+         <dAgency.24>9923003</dAgency.24>
+         <dAgency.25>1447261359</dAgency.25>
+         <dAgency.26>05040</dAgency.26>
+         <dAgency.27>9923003</dAgency.27>
+      </dAgency>
+      <dContact>
+         <dContact.ContactInfoGroup UUID="68d9b8bc-a742-44f2-9d44-d7e8f9d22a07">
+            <dContact.01>1101003</dContact.01>
+            <dContact.02>Lehner</dContact.02>
+            <dContact.03>Cathrine</dContact.03>
+            <dContact.05 StreetAddress2="PO Box 285">19 New Street</dContact.05>
+            <dContact.06>213415</dContact.06>
+            <dContact.07>09</dContact.07>
+            <dContact.08>06810</dContact.08>
+            <dContact.09>US</dContact.09>
+            <dContact.10 PhoneNumberType="9913005">475-896-5123</dContact.10>
+            <dContact.10 PhoneNumberType="9913009">203-796-1559</dContact.10>
+            <dContact.11 EmailAddressType="9904003">clehner@df.example.org</dContact.11>
+            <dContact.12>https://example.org/df</dContact.12>
+         </dContact.ContactInfoGroup>
+         <dContact.ContactInfoGroup UUID="07d56e41-fd51-4276-a39e-4112e5469618">
+            <dContact.01>1101011</dContact.01>
+            <dContact.02>Leffler</dContact.02>
+            <dContact.03>Jean</dContact.03>
+            <dContact.04>Damaris</dContact.04>
+            <dContact.05>74 Dingle Ridge Road</dContact.05>
+            <dContact.06>979507</dContact.06>
+            <dContact.07>36</dContact.07>
+            <dContact.08>10509</dContact.08>
+            <dContact.09>US</dContact.09>
+            <dContact.10 PhoneNumberType="9913005">845-671-5455</dContact.10>
+            <dContact.11 EmailAddressType="9904003">jleffler@df.example.org</dContact.11>
+            <dContact.EMSMedicalDirectorGroup>
+               <dContact.13>1113001</dContact.13>
+               <dContact.14>1114021</dContact.14>
+               <dContact.14>1114029</dContact.14>
+               <dContact.15>1115001</dContact.15>
+               <dContact.16>9923001</dContact.16>
+            </dContact.EMSMedicalDirectorGroup>
+         </dContact.ContactInfoGroup>
+      </dContact>
+      <dConfiguration>
+         <dConfiguration.ConfigurationGroup UUID="5d02c3fc-e59a-456d-89f9-ed63c3825af8">
+            <dConfiguration.01>09</dConfiguration.01>
+            <!-- + -->
+            <dConfiguration.02>9911007</dConfiguration.02>
+            <!-- -->
+            <dConfiguration.ProcedureGroup UUID="0c65fe08-5b3d-4c61-8bf9-616ad5e8d3c7">
+               <dConfiguration.06>9917005</dConfiguration.06>
+               <dConfiguration.07>133901003</dConfiguration.07>
+               <dConfiguration.07>171397002</dConfiguration.07>
+               <dConfiguration.07>182531007</dConfiguration.07>
+               <dConfiguration.07>182555002</dConfiguration.07>
+               <dConfiguration.07>182556001</dConfiguration.07>
+               <dConfiguration.07>182692007</dConfiguration.07>
+               <dConfiguration.07>182777000</dConfiguration.07>
+               <dConfiguration.07>20655006</dConfiguration.07>
+               <dConfiguration.07>22206003</dConfiguration.07>
+               <dConfiguration.07>225116006</dConfiguration.07>
+               <dConfiguration.07>225287004</dConfiguration.07>
+               <dConfiguration.07>225358003</dConfiguration.07>
+               <dConfiguration.07>225398001</dConfiguration.07>
+               <dConfiguration.07>225399009</dConfiguration.07>
+               <dConfiguration.07>22633006</dConfiguration.07>
+               <dConfiguration.07>230040009</dConfiguration.07>
+               <dConfiguration.07>232664002</dConfiguration.07>
+               <dConfiguration.07>23690002</dConfiguration.07>
+               <dConfiguration.07>23852006</dConfiguration.07>
+               <dConfiguration.07>243140006</dConfiguration.07>
+               <dConfiguration.07>248753002</dConfiguration.07>
+               <dConfiguration.07>252465000</dConfiguration.07>
+               <dConfiguration.07>26906007</dConfiguration.07>
+               <dConfiguration.07>270352002</dConfiguration.07>
+               <dConfiguration.07>278414003</dConfiguration.07>
+               <dConfiguration.07>284029005</dConfiguration.07>
+               <dConfiguration.07>284394000</dConfiguration.07>
+               <dConfiguration.07>284405008</dConfiguration.07>
+               <dConfiguration.07>302488007</dConfiguration.07>
+               <dConfiguration.07>304562007</dConfiguration.07>
+               <dConfiguration.07>308292007</dConfiguration.07>
+               <dConfiguration.07>315639002</dConfiguration.07>
+               <dConfiguration.07>33747003</dConfiguration.07>
+               <dConfiguration.07>371907003</dConfiguration.07>
+               <dConfiguration.07>371908008</dConfiguration.07>
+               <dConfiguration.07>372045002</dConfiguration.07>
+               <dConfiguration.07>373675000</dConfiguration.07>
+               <dConfiguration.07>385857005</dConfiguration.07>
+               <dConfiguration.07>386053000</dConfiguration.07>
+               <dConfiguration.07>386328006</dConfiguration.07>
+               <dConfiguration.07>386423001</dConfiguration.07>
+               <dConfiguration.07>396540005</dConfiguration.07>
+               <dConfiguration.07>398041008</dConfiguration.07>
+               <dConfiguration.07>408867002</dConfiguration.07>
+               <dConfiguration.07>408994004</dConfiguration.07>
+               <dConfiguration.07>409582008</dConfiguration.07>
+               <dConfiguration.07>422618004</dConfiguration.07>
+               <dConfiguration.07>423184003</dConfiguration.07>
+               <dConfiguration.07>423401003</dConfiguration.07>
+               <dConfiguration.07>423850004</dConfiguration.07>
+               <dConfiguration.07>424979004</dConfiguration.07>
+               <dConfiguration.07>425058005</dConfiguration.07>
+               <dConfiguration.07>425447009</dConfiguration.07>
+               <dConfiguration.07>425543005</dConfiguration.07>
+               <dConfiguration.07>426498007</dConfiguration.07>
+               <dConfiguration.07>427753009</dConfiguration.07>
+               <dConfiguration.07>429202003</dConfiguration.07>
+               <dConfiguration.07>431774007</dConfiguration.07>
+               <dConfiguration.07>431949004</dConfiguration.07>
+               <dConfiguration.07>445828009</dConfiguration.07>
+               <dConfiguration.07>447686008</dConfiguration.07>
+               <dConfiguration.07>449199004</dConfiguration.07>
+               <dConfiguration.07>450591000124106</dConfiguration.07>
+               <dConfiguration.07>450611000124100</dConfiguration.07>
+               <dConfiguration.07>450661000124102</dConfiguration.07>
+               <dConfiguration.07>46973005</dConfiguration.07>
+               <dConfiguration.07>47545007</dConfiguration.07>
+               <dConfiguration.07>49689007</dConfiguration.07>
+               <dConfiguration.07>56342008</dConfiguration.07>
+               <dConfiguration.07>56469005</dConfiguration.07>
+               <dConfiguration.07>57485005</dConfiguration.07>
+               <dConfiguration.07>58715004</dConfiguration.07>
+               <dConfiguration.07>61746007</dConfiguration.07>
+               <dConfiguration.07>65653002</dConfiguration.07>
+               <dConfiguration.07>68664003</dConfiguration.07>
+               <dConfiguration.07>707794004</dConfiguration.07>
+               <dConfiguration.07>7443007</dConfiguration.07>
+               <dConfiguration.07>78086002</dConfiguration.07>
+               <dConfiguration.07>79321009</dConfiguration.07>
+               <dConfiguration.07>89666000</dConfiguration.07>
+            </dConfiguration.ProcedureGroup>
+            <dConfiguration.ProcedureGroup UUID="7d19f610-bd79-4040-bf1e-b3d6db9d1b26">
+               <dConfiguration.06>9917007</dConfiguration.06>
+               <dConfiguration.07>57485005</dConfiguration.07>
+               <dConfiguration.07>103744005</dConfiguration.07>
+               <dConfiguration.07>128968000</dConfiguration.07>
+               <dConfiguration.07>133901003</dConfiguration.07>
+               <dConfiguration.07>171397002</dConfiguration.07>
+               <dConfiguration.07>182531007</dConfiguration.07>
+               <dConfiguration.07>182555002</dConfiguration.07>
+               <dConfiguration.07>182556001</dConfiguration.07>
+               <dConfiguration.07>182692007</dConfiguration.07>
+               <dConfiguration.07>182705007</dConfiguration.07>
+               <dConfiguration.07>182777000</dConfiguration.07>
+               <dConfiguration.07>18590009</dConfiguration.07>
+               <dConfiguration.07>18629005</dConfiguration.07>
+               <dConfiguration.07>20655006</dConfiguration.07>
+               <dConfiguration.07>22206003</dConfiguration.07>
+               <dConfiguration.07>225116006</dConfiguration.07>
+               <dConfiguration.07>225287004</dConfiguration.07>
+               <dConfiguration.07>225358003</dConfiguration.07>
+               <dConfiguration.07>225398001</dConfiguration.07>
+               <dConfiguration.07>225399009</dConfiguration.07>
+               <dConfiguration.07>225718003</dConfiguration.07>
+               <dConfiguration.07>226005007</dConfiguration.07>
+               <dConfiguration.07>22633006</dConfiguration.07>
+               <dConfiguration.07>228621007</dConfiguration.07>
+               <dConfiguration.07>230040009</dConfiguration.07>
+               <dConfiguration.07>232664002</dConfiguration.07>
+               <dConfiguration.07>232674004</dConfiguration.07>
+               <dConfiguration.07>235425002</dConfiguration.07>
+               <dConfiguration.07>23690002</dConfiguration.07>
+               <dConfiguration.07>23852006</dConfiguration.07>
+               <dConfiguration.07>241689008</dConfiguration.07>
+               <dConfiguration.07>243140006</dConfiguration.07>
+               <dConfiguration.07>243142003</dConfiguration.07>
+               <dConfiguration.07>248753002</dConfiguration.07>
+               <dConfiguration.07>250980009</dConfiguration.07>
+               <dConfiguration.07>252465000</dConfiguration.07>
+               <dConfiguration.07>268400002</dConfiguration.07>
+               <dConfiguration.07>26906007</dConfiguration.07>
+               <dConfiguration.07>270352002</dConfiguration.07>
+               <dConfiguration.07>278414003</dConfiguration.07>
+               <dConfiguration.07>284029005</dConfiguration.07>
+               <dConfiguration.07>284394000</dConfiguration.07>
+               <dConfiguration.07>284405008</dConfiguration.07>
+               <dConfiguration.07>29303009</dConfiguration.07>
+               <dConfiguration.07>302488007</dConfiguration.07>
+               <dConfiguration.07>304562007</dConfiguration.07>
+               <dConfiguration.07>308292007</dConfiguration.07>
+               <dConfiguration.07>315639002</dConfiguration.07>
+               <dConfiguration.07>33747003</dConfiguration.07>
+               <dConfiguration.07>353008</dConfiguration.07>
+               <dConfiguration.07>371907003</dConfiguration.07>
+               <dConfiguration.07>371908008</dConfiguration.07>
+               <dConfiguration.07>372045002</dConfiguration.07>
+               <dConfiguration.07>373675000</dConfiguration.07>
+               <dConfiguration.07>385857005</dConfiguration.07>
+               <dConfiguration.07>386053000</dConfiguration.07>
+               <dConfiguration.07>386237008</dConfiguration.07>
+               <dConfiguration.07>386328006</dConfiguration.07>
+               <dConfiguration.07>386358000</dConfiguration.07>
+               <dConfiguration.07>386423001</dConfiguration.07>
+               <dConfiguration.07>392230005</dConfiguration.07>
+               <dConfiguration.07>392247006</dConfiguration.07>
+               <dConfiguration.07>396540005</dConfiguration.07>
+               <dConfiguration.07>398041008</dConfiguration.07>
+               <dConfiguration.07>405427009</dConfiguration.07>
+               <dConfiguration.07>408867002</dConfiguration.07>
+               <dConfiguration.07>408994004</dConfiguration.07>
+               <dConfiguration.07>409582008</dConfiguration.07>
+               <dConfiguration.07>422618004</dConfiguration.07>
+               <dConfiguration.07>423184003</dConfiguration.07>
+               <dConfiguration.07>423401003</dConfiguration.07>
+               <dConfiguration.07>423850004</dConfiguration.07>
+               <dConfiguration.07>424287005</dConfiguration.07>
+               <dConfiguration.07>424979004</dConfiguration.07>
+               <dConfiguration.07>425058005</dConfiguration.07>
+               <dConfiguration.07>425074000</dConfiguration.07>
+               <dConfiguration.07>425447009</dConfiguration.07>
+               <dConfiguration.07>425543005</dConfiguration.07>
+               <dConfiguration.07>426220008</dConfiguration.07>
+               <dConfiguration.07>426498007</dConfiguration.07>
+               <dConfiguration.07>427753009</dConfiguration.07>
+               <dConfiguration.07>428803005</dConfiguration.07>
+               <dConfiguration.07>429202003</dConfiguration.07>
+               <dConfiguration.07>429283006</dConfiguration.07>
+               <dConfiguration.07>429705000</dConfiguration.07>
+               <dConfiguration.07>430824005</dConfiguration.07>
+               <dConfiguration.07>431393006</dConfiguration.07>
+               <dConfiguration.07>431774007</dConfiguration.07>
+               <dConfiguration.07>431949004</dConfiguration.07>
+               <dConfiguration.07>445828009</dConfiguration.07>
+               <dConfiguration.07>447686008</dConfiguration.07>
+               <dConfiguration.07>449199004</dConfiguration.07>
+               <dConfiguration.07>450591000124106</dConfiguration.07>
+               <dConfiguration.07>450601000124103</dConfiguration.07>
+               <dConfiguration.07>450611000124100</dConfiguration.07>
+               <dConfiguration.07>450661000124102</dConfiguration.07>
+               <dConfiguration.07>45851008</dConfiguration.07>
+               <dConfiguration.07>46825001</dConfiguration.07>
+               <dConfiguration.07>46973005</dConfiguration.07>
+               <dConfiguration.07>47545007</dConfiguration.07>
+               <dConfiguration.07>49689007</dConfiguration.07>
+               <dConfiguration.07>56251003</dConfiguration.07>
+               <dConfiguration.07>56342008</dConfiguration.07>
+               <dConfiguration.07>56469005</dConfiguration.07>
+               <dConfiguration.07>58715004</dConfiguration.07>
+               <dConfiguration.07>61746007</dConfiguration.07>
+               <dConfiguration.07>65653002</dConfiguration.07>
+               <dConfiguration.07>68664003</dConfiguration.07>
+               <dConfiguration.07>707794004</dConfiguration.07>
+               <dConfiguration.07>7443007</dConfiguration.07>
+               <dConfiguration.07>78086002</dConfiguration.07>
+               <dConfiguration.07>79321009</dConfiguration.07>
+               <dConfiguration.07>87750000</dConfiguration.07>
+               <dConfiguration.07>89666000</dConfiguration.07>
+            </dConfiguration.ProcedureGroup>
+            <dConfiguration.ProcedureGroup UUID="ce531f14-1432-4e2d-83f9-01d8c25ec492">
+               <dConfiguration.06>9917023</dConfiguration.06>
+               <dConfiguration.07>56251003</dConfiguration.07>
+               <dConfiguration.07>385857005</dConfiguration.07>
+               <dConfiguration.07>61746007</dConfiguration.07>
+               <dConfiguration.07>425058005</dConfiguration.07>
+               <dConfiguration.07>268400002</dConfiguration.07>
+               <dConfiguration.07>428803005</dConfiguration.07>
+               <dConfiguration.07>304562007</dConfiguration.07>
+               <dConfiguration.07>87750000</dConfiguration.07>
+               <dConfiguration.07>235425002</dConfiguration.07>
+               <dConfiguration.07>79321009</dConfiguration.07>
+               <dConfiguration.07>226005007</dConfiguration.07>
+               <dConfiguration.07>424287005</dConfiguration.07>
+               <dConfiguration.07>392230005</dConfiguration.07>
+               <dConfiguration.07>225358003</dConfiguration.07>
+               <dConfiguration.07>306226009</dConfiguration.07>
+               <dConfiguration.07>306102000</dConfiguration.07>
+               <dConfiguration.07>396150002</dConfiguration.07>
+            </dConfiguration.ProcedureGroup>
+            <dConfiguration.MedicationGroup UUID="4719687a-4a5c-4f8f-8c41-fb144606114f">
+               <dConfiguration.08>9917005</dConfiguration.08>
+               <dConfiguration.09 CodeType="9924003">1191</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">161</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">1908</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">435</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">7242</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">7806</dConfiguration.09>
+            </dConfiguration.MedicationGroup>
+            <dConfiguration.MedicationGroup UUID="a862c2eb-0dad-4b41-8bee-053054c6948c">
+               <dConfiguration.08>9917007</dConfiguration.08>
+               <dConfiguration.09 CodeType="9924003">1008377</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">10154</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">10368</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">10454</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">10691</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">11124</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">11149</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">1191</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">1223</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">1605101</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">161</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">1795477</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">1901</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">1908</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">214199</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">2193</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">237159</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">237653</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">260258</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">26225</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">296</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">317361</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">3264</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">328316</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">3322</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">3423</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">3443</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">3498</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">35827</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">3628</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">36676</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">4177</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">4337</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">435</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">4603</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">4832</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">4850</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">4917</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">5093</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">5224</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">6130</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">6185</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">6387</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">6470</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">6585</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">68139</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">6902</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">6918</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">6960</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">703</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">7052</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">71535</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">7213</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">7242</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">7396</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">7512</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">7806</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">8163</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">8591</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">8745</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">8782</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924005">71493000</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924005">33389009</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924005">116861002</dConfiguration.09>
+            </dConfiguration.MedicationGroup>
+            <dConfiguration.MedicationGroup UUID="d63d43b3-4824-416a-bb3a-171afef29853">
+               <dConfiguration.08>9917023</dConfiguration.08>
+               <dConfiguration.09 CodeType="9924003">161</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">435</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">214199</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">1191</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">2193</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">3498</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">4603</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">4850</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">5224</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">1605101</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">8591</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">35827</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">6902</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">4917</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">26225</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">7806</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">8745</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">723</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">1596450</dConfiguration.09>
+            </dConfiguration.MedicationGroup>
+            <dConfiguration.10>9914001</dConfiguration.10>
+            <dConfiguration.10>9914003</dConfiguration.10>
+            <dConfiguration.10>9914005</dConfiguration.10>
+            <dConfiguration.10>9914007</dConfiguration.10>
+            <dConfiguration.10>9914009</dConfiguration.10>
+            <dConfiguration.10>9914011</dConfiguration.10>
+            <dConfiguration.10>9914013</dConfiguration.10>
+            <dConfiguration.10>9914015</dConfiguration.10>
+            <dConfiguration.10>9914017</dConfiguration.10>
+            <dConfiguration.10>9914019</dConfiguration.10>
+            <dConfiguration.10>9914023</dConfiguration.10>
+            <dConfiguration.10>9914025</dConfiguration.10>
+            <dConfiguration.10>9914027</dConfiguration.10>
+            <dConfiguration.10>9914029</dConfiguration.10>
+            <dConfiguration.10>9914031</dConfiguration.10>
+            <dConfiguration.10>9914033</dConfiguration.10>
+            <dConfiguration.10>9914035</dConfiguration.10>
+            <dConfiguration.10>9914037</dConfiguration.10>
+            <dConfiguration.10>9914041</dConfiguration.10>
+            <dConfiguration.10>9914043</dConfiguration.10>
+            <dConfiguration.10>9914045</dConfiguration.10>
+            <dConfiguration.10>9914047</dConfiguration.10>
+            <dConfiguration.10>9914049</dConfiguration.10>
+            <dConfiguration.10>9914051</dConfiguration.10>
+            <dConfiguration.10>9914053</dConfiguration.10>
+            <dConfiguration.10>9914055</dConfiguration.10>
+            <dConfiguration.10>9914057</dConfiguration.10>
+            <dConfiguration.10>9914059</dConfiguration.10>
+            <dConfiguration.10>9914061</dConfiguration.10>
+            <dConfiguration.10>9914063</dConfiguration.10>
+            <dConfiguration.10>9914065</dConfiguration.10>
+            <dConfiguration.10>9914067</dConfiguration.10>
+            <dConfiguration.10>9914069</dConfiguration.10>
+            <dConfiguration.10>9914071</dConfiguration.10>
+            <dConfiguration.10>9914073</dConfiguration.10>
+            <dConfiguration.10>9914075</dConfiguration.10>
+            <dConfiguration.10>9914077</dConfiguration.10>
+            <dConfiguration.10>9914079</dConfiguration.10>
+            <dConfiguration.10>9914081</dConfiguration.10>
+            <dConfiguration.10>9914083</dConfiguration.10>
+            <dConfiguration.10>9914085</dConfiguration.10>
+            <dConfiguration.10>9914087</dConfiguration.10>
+            <dConfiguration.10>9914089</dConfiguration.10>
+            <dConfiguration.10>9914091</dConfiguration.10>
+            <dConfiguration.10>9914093</dConfiguration.10>
+            <dConfiguration.10>9914095</dConfiguration.10>
+            <dConfiguration.10>9914097</dConfiguration.10>
+            <dConfiguration.10>9914099</dConfiguration.10>
+            <dConfiguration.10>9914101</dConfiguration.10>
+            <dConfiguration.10>9914103</dConfiguration.10>
+            <dConfiguration.10>9914105</dConfiguration.10>
+            <dConfiguration.10>9914107</dConfiguration.10>
+            <dConfiguration.10>9914109</dConfiguration.10>
+            <dConfiguration.10>9914111</dConfiguration.10>
+            <dConfiguration.10>9914113</dConfiguration.10>
+            <dConfiguration.10>9914115</dConfiguration.10>
+            <dConfiguration.10>9914117</dConfiguration.10>
+            <dConfiguration.10>9914119</dConfiguration.10>
+            <dConfiguration.10>9914121</dConfiguration.10>
+            <dConfiguration.10>9914123</dConfiguration.10>
+            <dConfiguration.10>9914125</dConfiguration.10>
+            <dConfiguration.10>9914127</dConfiguration.10>
+            <dConfiguration.10>9914129</dConfiguration.10>
+            <dConfiguration.10>9914131</dConfiguration.10>
+            <dConfiguration.10>9914133</dConfiguration.10>
+            <dConfiguration.10>9914135</dConfiguration.10>
+            <dConfiguration.10>9914137</dConfiguration.10>
+            <dConfiguration.10>9914139</dConfiguration.10>
+            <dConfiguration.10>9914141</dConfiguration.10>
+            <dConfiguration.10>9914143</dConfiguration.10>
+            <dConfiguration.10>9914145</dConfiguration.10>
+            <dConfiguration.10>9914147</dConfiguration.10>
+            <dConfiguration.10>9914149</dConfiguration.10>
+            <dConfiguration.10>9914151</dConfiguration.10>
+            <dConfiguration.10>9914153</dConfiguration.10>
+            <dConfiguration.10>9914155</dConfiguration.10>
+            <dConfiguration.10>9914157</dConfiguration.10>
+            <dConfiguration.10>9914159</dConfiguration.10>
+            <dConfiguration.10>9914161</dConfiguration.10>
+            <dConfiguration.10>9914163</dConfiguration.10>
+            <dConfiguration.10>9914165</dConfiguration.10>
+            <dConfiguration.10>9914167</dConfiguration.10>
+            <dConfiguration.10>9914169</dConfiguration.10>
+            <dConfiguration.10>9914171</dConfiguration.10>
+            <dConfiguration.10>9914173</dConfiguration.10>
+            <dConfiguration.10>9914175</dConfiguration.10>
+            <dConfiguration.10>9914177</dConfiguration.10>
+            <dConfiguration.10>9914179</dConfiguration.10>
+            <dConfiguration.10>9914181</dConfiguration.10>
+            <dConfiguration.10>9914183</dConfiguration.10>
+            <dConfiguration.10>9914185</dConfiguration.10>
+            <dConfiguration.10>9914187</dConfiguration.10>
+            <dConfiguration.10>9914189</dConfiguration.10>
+            <dConfiguration.10>9914191</dConfiguration.10>
+            <dConfiguration.10>9914193</dConfiguration.10>
+            <dConfiguration.10>9914195</dConfiguration.10>
+            <dConfiguration.10>9914197</dConfiguration.10>
+            <dConfiguration.10>9914199</dConfiguration.10>
+            <dConfiguration.10>9914201</dConfiguration.10>
+            <dConfiguration.10>9914203</dConfiguration.10>
+            <dConfiguration.10>9914205</dConfiguration.10>
+            <dConfiguration.10>9914207</dConfiguration.10>
+            <dConfiguration.10>9914209</dConfiguration.10>
+            <dConfiguration.10>9914211</dConfiguration.10>
+            <dConfiguration.10>9914213</dConfiguration.10>
+            <dConfiguration.10>9914215</dConfiguration.10>
+            <dConfiguration.10>9914217</dConfiguration.10>
+            <dConfiguration.10>9914219</dConfiguration.10>
+            <dConfiguration.10>9914221</dConfiguration.10>
+            <dConfiguration.10>9914223</dConfiguration.10>
+            <dConfiguration.10>9914225</dConfiguration.10>
+            <dConfiguration.11>1211005</dConfiguration.11>
+            <dConfiguration.11>1211013</dConfiguration.11>
+            <dConfiguration.11>1211029</dConfiguration.11>
+            <dConfiguration.12>9923003</dConfiguration.12>
+            <dConfiguration.13>1213003</dConfiguration.13>
+            <dConfiguration.14>Practical Dispatch</dConfiguration.14>
+            <dConfiguration.15>1215003</dConfiguration.15>
+            <dConfiguration.15>1215005</dConfiguration.15>
+            <dConfiguration.15>1215009</dConfiguration.15>
+            <dConfiguration.15>1215011</dConfiguration.15>
+            <dConfiguration.15>1215019</dConfiguration.15>
+            <dConfiguration.16>DF A1</dConfiguration.16>
+            <dConfiguration.16>DF R2</dConfiguration.16>
+            <dConfiguration.16>DF CP</dConfiguration.16>
+            <dConfiguration.17>Danbury Police Department</dConfiguration.17>
+            <dConfiguration.17>New Fairfield Police Department</dConfiguration.17>
+         </dConfiguration.ConfigurationGroup>
+         <dConfiguration.ConfigurationGroup UUID="ecaf7a7f-c141-4e7f-b999-d092e5a00ddb">
+            <dConfiguration.01>36</dConfiguration.01>
+            <dConfiguration.ProcedureGroup UUID="eaf89ca8-b674-478c-9cee-bc6a54311425">
+               <dConfiguration.06>9917023</dConfiguration.06>
+               <dConfiguration.07>56251003</dConfiguration.07>
+               <dConfiguration.07>385857005</dConfiguration.07>
+               <dConfiguration.07>61746007</dConfiguration.07>
+               <dConfiguration.07>425058005</dConfiguration.07>
+               <dConfiguration.07>268400002</dConfiguration.07>
+               <dConfiguration.07>428803005</dConfiguration.07>
+               <dConfiguration.07>304562007</dConfiguration.07>
+               <dConfiguration.07>87750000</dConfiguration.07>
+               <dConfiguration.07>235425002</dConfiguration.07>
+               <dConfiguration.07>79321009</dConfiguration.07>
+               <dConfiguration.07>226005007</dConfiguration.07>
+               <dConfiguration.07>424287005</dConfiguration.07>
+               <dConfiguration.07>392230005</dConfiguration.07>
+               <dConfiguration.07>225358003</dConfiguration.07>
+               <dConfiguration.07>306226009</dConfiguration.07>
+               <dConfiguration.07>306102000</dConfiguration.07>
+               <dConfiguration.07>396150002</dConfiguration.07>
+            </dConfiguration.ProcedureGroup>
+            <dConfiguration.MedicationGroup UUID="a22d3ae0-bddf-472a-ba7a-3ea48b945d89">
+               <dConfiguration.08>9917023</dConfiguration.08>
+               <dConfiguration.09 CodeType="9924003">161</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">435</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">214199</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">1191</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">2193</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">3498</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">4603</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">4850</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">5224</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">1605101</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">8591</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">35827</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">6902</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">4917</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">26225</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">7806</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">8745</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">723</dConfiguration.09>
+               <dConfiguration.09 CodeType="9924003">1596450</dConfiguration.09>
+            </dConfiguration.MedicationGroup>
+            <dConfiguration.10>9914051</dConfiguration.10>
+            <dConfiguration.10>9914057</dConfiguration.10>
+            <dConfiguration.10>9914063</dConfiguration.10>
+            <dConfiguration.10>9914065</dConfiguration.10>
+            <dConfiguration.10>9914069</dConfiguration.10>
+            <dConfiguration.10>9914071</dConfiguration.10>
+            <dConfiguration.10>9914075</dConfiguration.10>
+            <dConfiguration.10>9914121</dConfiguration.10>
+            <dConfiguration.10>9914123</dConfiguration.10>
+            <dConfiguration.10>9914125</dConfiguration.10>
+            <dConfiguration.10>9914165</dConfiguration.10>
+            <dConfiguration.10>9914175</dConfiguration.10>
+            <dConfiguration.10>9914179</dConfiguration.10>
+            <dConfiguration.10>9914187</dConfiguration.10>
+            <dConfiguration.11>1211005</dConfiguration.11>
+            <dConfiguration.12>9923003</dConfiguration.12>
+            <dConfiguration.13>1213001</dConfiguration.13>
+            <dConfiguration.14 xsi:nil="true" NV="7701001"/>
+            <dConfiguration.15>1215003</dConfiguration.15>
+            <dConfiguration.15>1215007</dConfiguration.15>
+            <dConfiguration.15>1215011</dConfiguration.15>
+            <dConfiguration.15>1215015</dConfiguration.15>
+            <dConfiguration.15>1215019</dConfiguration.15>
+            <dConfiguration.16>DF CP</dConfiguration.16>
+            <dConfiguration.17>Danbury Community Health Dispatch</dConfiguration.17>
+         </dConfiguration.ConfigurationGroup>
+      </dConfiguration>
+      <dLocation>
+         <dLocation.LocationGroup UUID="deb62022-23d7-412d-adec-06f0f5a07fa0">
+            <dLocation.01>1301001</dLocation.01>
+            <dLocation.02>Danbury Main Station</dLocation.02>
+            <dLocation.03>DF1</dLocation.03>
+            <dLocation.04>41.393,-73.455</dLocation.04>
+            <dLocation.05>18TXL29168353</dLocation.05>
+            <dLocation.06>19 New Street</dLocation.06>
+            <dLocation.07>213415</dLocation.07>
+            <dLocation.08>09</dLocation.08>
+            <dLocation.09>06810</dLocation.09>
+            <dLocation.10>09001</dLocation.10>
+            <dLocation.11>US</dLocation.11>
+            <dLocation.12 PhoneNumberType="9913001">203-796-1560</dLocation.12>
+            <dLocation.12 PhoneNumberType="9913009">203-796-1559</dLocation.12>
+         </dLocation.LocationGroup>
+         <dLocation.LocationGroup UUID="eb4f3d24-edcd-4fb6-af44-41fa8d441589">
+            <dLocation.01>1301007</dLocation.01>
+            <dLocation.02>Danbury Mobile Health Operations Center</dLocation.02>
+            <dLocation.03>DFCP</dLocation.03>
+            <dLocation.04>41.387,-73.479</dLocation.04>
+            <dLocation.05>18TXL27168283</dLocation.05>
+            <dLocation.06>121 Mill Ridge Road</dLocation.06>
+            <dLocation.07>213415</dLocation.07>
+            <dLocation.08>09</dLocation.08>
+            <dLocation.09>06811</dLocation.09>
+            <dLocation.10>09001</dLocation.10>
+            <dLocation.11>US</dLocation.11>
+            <dLocation.12>870-216-7000</dLocation.12>
+         </dLocation.LocationGroup>
+      </dLocation>
+      <dVehicle>
+         <dVehicle.VehicleGroup UUID="7b71f8e8-2a14-4c2c-9b6a-a9423f5c232b">
+            <dVehicle.01>84DR8411</dVehicle.01>
+            <dVehicle.02>1FVACWCS96HV81220</dVehicle.02>
+            <dVehicle.03>DF A1</dVehicle.03>
+            <dVehicle.04>1404001</dVehicle.04>
+            <dVehicle.VehicleCertificationLevelsGroup UUID="113b5659-47e0-439a-9523-9718235cd5d7">
+               <dVehicle.05>9917005</dVehicle.05>
+               <dVehicle.06>1</dVehicle.06>
+               <dVehicle.07>1</dVehicle.07>
+               <dVehicle.08>1</dVehicle.08>
+            </dVehicle.VehicleCertificationLevelsGroup>
+            <dVehicle.VehicleCertificationLevelsGroup UUID="1ee049b6-f815-4ff4-933d-0a567434e10f">
+               <dVehicle.05>9917007</dVehicle.05>
+               <dVehicle.06>1</dVehicle.06>
+               <dVehicle.07>1</dVehicle.07>
+               <dVehicle.08>1</dVehicle.08>
+            </dVehicle.VehicleCertificationLevelsGroup>
+            <dVehicle.09>129600</dVehicle.09>
+            <dVehicle.10>2008</dVehicle.10>
+            <dVehicle.YearGroup UUID="944348db-dcac-4097-b808-c156b53e4f3a">
+               <dVehicle.11>2022</dVehicle.11>
+               <dVehicle.12>2010</dVehicle.12>
+               <dVehicle.13 DistanceUnit="9929003">24065</dVehicle.13>
+            </dVehicle.YearGroup>
+            <dVehicle.YearGroup UUID="d9b8d2b4-405d-4d9e-a4e7-abe28dc8079b">
+               <dVehicle.11>2023</dVehicle.11>
+               <dVehicle.12>2140</dVehicle.12>
+               <dVehicle.13 DistanceUnit="9929003">26400</dVehicle.13>
+            </dVehicle.YearGroup>
+         </dVehicle.VehicleGroup>
+         <dVehicle.VehicleGroup UUID="274c2208-6b52-44df-b987-feb9443ab221">
+            <dVehicle.01>57KS6845</dVehicle.01>
+            <dVehicle.02>1M2AX32C5EM010429</dVehicle.02>
+            <dVehicle.03>DF R2</dVehicle.03>
+            <dVehicle.04>1404007</dVehicle.04>
+            <dVehicle.09>1034900</dVehicle.09>
+            <dVehicle.10>2016</dVehicle.10>
+            <dVehicle.YearGroup UUID="4d6bd040-5f95-4ff6-85c7-a2e0d2ee412a">
+               <dVehicle.11>2023</dVehicle.11>
+               <dVehicle.12>1504</dVehicle.12>
+               <dVehicle.13 DistanceUnit="9929003">14678</dVehicle.13>
+            </dVehicle.YearGroup>
+         </dVehicle.VehicleGroup>
+         <dVehicle.VehicleGroup UUID="fa2d3701-b458-4524-a343-05ce6ab70903">
+            <dVehicle.01>54RG8451</dVehicle.01>
+            <dVehicle.02>1C4RJFAG8DC537142</dVehicle.02>
+            <dVehicle.03>DF CP</dVehicle.03>
+            <dVehicle.04>1404013</dVehicle.04>
+            <dVehicle.09>31640</dVehicle.09>
+            <dVehicle.10>2015</dVehicle.10>
+            <dVehicle.YearGroup UUID="48ef870c-f014-4792-a3e5-8d86ac1c3ac5">
+               <dVehicle.11>2023</dVehicle.11>
+               <dVehicle.12>967</dVehicle.12>
+               <dVehicle.13 DistanceUnit="9929003">10345</dVehicle.13>
+            </dVehicle.YearGroup>
+         </dVehicle.VehicleGroup>
+      </dVehicle>
+      <dPersonnel>
+         <dPersonnel.PersonnelGroup UUID="5aa5d8b7-0f5f-46b4-881e-733fa540e0f2">
+            <dPersonnel.NameGroup>
+               <dPersonnel.01>Percy</dPersonnel.01>
+               <dPersonnel.02>Rogahn</dPersonnel.02>
+               <dPersonnel.03>Heath</dPersonnel.03>
+            </dPersonnel.NameGroup>
+            <dPersonnel.AddressGroup>
+               <dPersonnel.04>50 Wooster Street</dPersonnel.04>
+               <dPersonnel.05>213390</dPersonnel.05>
+               <dPersonnel.06>09</dPersonnel.06>
+               <dPersonnel.07>06801</dPersonnel.07>
+               <dPersonnel.08>US</dPersonnel.08>
+            </dPersonnel.AddressGroup>
+            <dPersonnel.09 PhoneNumberType="9913005">475-467-2674</dPersonnel.09>
+            <dPersonnel.09 PhoneNumberType="9913009">203-796-9784</dPersonnel.09>
+            <dPersonnel.10 EmailAddressType="9904001">heath_percy@example.com</dPersonnel.10>
+            <dPersonnel.10 EmailAddressType="9904003">rpercy@df.example.org</dPersonnel.10>
+            <dPersonnel.11>1986-09-05</dPersonnel.11>
+            <dPersonnel.12 xsi:nil="true" NV="7701003"/>
+            <dPersonnel.13>1513005</dPersonnel.13>
+            <dPersonnel.14>US</dPersonnel.14>
+            <dPersonnel.15>1515019</dPersonnel.15>
+            <dPersonnel.17>1517013</dPersonnel.17>
+            <dPersonnel.ImmunizationsGroup CorrelationID="c1" UUID="fa6e168a-4c8d-4c5b-8f29-8719afa03864">
+               <dPersonnel.18>9910027</dPersonnel.18>
+               <dPersonnel.19>2023</dPersonnel.19>
+            </dPersonnel.ImmunizationsGroup>
+            <dPersonnel.ImmunizationsGroup CorrelationID="c2" UUID="cf58843b-ea3e-45f0-8210-dddd478f3f52">
+               <dPersonnel.18>9910027</dPersonnel.18>
+               <dPersonnel.19>2024</dPersonnel.19>
+            </dPersonnel.ImmunizationsGroup>
+            <dPersonnel.20>sgn</dPersonnel.20>
+            <dPersonnel.21>DF19350</dPersonnel.21>
+            <dPersonnel.LicensureGroup UUID="48bee177-0ed1-47e6-8cd7-b003edcd1b3d">
+               <dPersonnel.22>09</dPersonnel.22>
+               <dPersonnel.23>67981</dPersonnel.23>
+               <dPersonnel.24>9925005</dPersonnel.24>
+               <dPersonnel.25>2024-05-09</dPersonnel.25>
+               <dPersonnel.26>2016-04-21</dPersonnel.26>
+               <dPersonnel.27>2028-06-30</dPersonnel.27>
+            </dPersonnel.LicensureGroup>
+            <dPersonnel.28>E4568892</dPersonnel.28>
+            <dPersonnel.29>1529005</dPersonnel.29>
+            <dPersonnel.30>2026-06-30</dPersonnel.30>
+            <dPersonnel.31>1531003</dPersonnel.31>
+            <dPersonnel.32>2017-05-01</dPersonnel.32>
+            <dPersonnel.33>2016-05-20</dPersonnel.33>
+            <dPersonnel.34>1534015</dPersonnel.34>
+            <dPersonnel.35>1534003</dPersonnel.35>
+            <dPersonnel.35>1534007</dPersonnel.35>
+            <dPersonnel.36>8</dPersonnel.36>
+            <dPersonnel.37>2024-06-30</dPersonnel.37>
+            <dPersonnel.CertificationLevelGroup UUID="d4515900-0d56-403f-9307-deffda6df128">
+               <dPersonnel.38>9925005</dPersonnel.38>
+               <dPersonnel.39>2024-04-29</dPersonnel.39>
+            </dPersonnel.CertificationLevelGroup>
+            <dPersonnel.40>9919003</dPersonnel.40>
+         </dPersonnel.PersonnelGroup>
+         <dPersonnel.PersonnelGroup UUID="04f7b01d-735a-400d-9936-73a59cbc32f2">
+            <dPersonnel.NameGroup>
+               <dPersonnel.01>Frami</dPersonnel.01>
+               <dPersonnel.02>Mariah</dPersonnel.02>
+               <dPersonnel.03>Kerluke</dPersonnel.03>
+            </dPersonnel.NameGroup>
+            <dPersonnel.AddressGroup>
+               <dPersonnel.04>15 Barnum Road</dPersonnel.04>
+               <dPersonnel.05>213469</dPersonnel.05>
+               <dPersonnel.06>09</dPersonnel.06>
+               <dPersonnel.07>06812</dPersonnel.07>
+               <dPersonnel.08>US</dPersonnel.08>
+            </dPersonnel.AddressGroup>
+            <dPersonnel.09 PhoneNumberType="9913009">203-796-9784</dPersonnel.09>
+            <dPersonnel.10 EmailAddressType="9904003">mframi@df.example.org</dPersonnel.10>
+            <dPersonnel.11>2002-05-19</dPersonnel.11>
+            <dPersonnel.12 xsi:nil="true" NV="7701003"/>
+            <dPersonnel.13>1513009</dPersonnel.13>
+            <dPersonnel.13>1513013</dPersonnel.13>
+            <dPersonnel.14>US</dPersonnel.14>
+            <dPersonnel.15>1515021</dPersonnel.15>
+            <dPersonnel.17>1517003</dPersonnel.17>
+            <dPersonnel.17>1517013</dPersonnel.17>
+            <dPersonnel.ImmunizationsGroup CorrelationID="c3" UUID="601f1bf4-70fb-47ec-a888-409942526dcf">
+               <dPersonnel.18>9910027</dPersonnel.18>
+               <dPersonnel.19>2023</dPersonnel.19>
+            </dPersonnel.ImmunizationsGroup>
+            <dPersonnel.20>tgl</dPersonnel.20>
+            <dPersonnel.21>DF20645</dPersonnel.21>
+            <dPersonnel.LicensureGroup UUID="4200e8d8-8523-4d6d-b536-389a935c542a">
+               <dPersonnel.22>09</dPersonnel.22>
+               <dPersonnel.23>84568</dPersonnel.23>
+               <dPersonnel.24>9925005</dPersonnel.24>
+               <dPersonnel.25>2024-08-24</dPersonnel.25>
+               <dPersonnel.26>2020-07-15</dPersonnel.26>
+               <dPersonnel.27>2028-09-30</dPersonnel.27>
+            </dPersonnel.LicensureGroup>
+            <dPersonnel.28>E7658933</dPersonnel.28>
+            <dPersonnel.29>1529005</dPersonnel.29>
+            <dPersonnel.30>2028-09-30</dPersonnel.30>
+            <dPersonnel.31>1531003</dPersonnel.31>
+            <dPersonnel.32>2020-09-08</dPersonnel.32>
+            <dPersonnel.33>2020-09-08</dPersonnel.33>
+            <dPersonnel.34>1534015</dPersonnel.34>
+            <dPersonnel.35>1534013</dPersonnel.35>
+            <dPersonnel.36>4</dPersonnel.36>
+            <dPersonnel.37>2024-09-30</dPersonnel.37>
+            <dPersonnel.CertificationLevelGroup UUID="6474b3fb-8b1f-4d5d-96a6-88b148b1ad39">
+               <dPersonnel.38>9925005</dPersonnel.38>
+               <dPersonnel.39>2020-09-10</dPersonnel.39>
+            </dPersonnel.CertificationLevelGroup>
+            <dPersonnel.40>9919003</dPersonnel.40>
+         </dPersonnel.PersonnelGroup>
+         <dPersonnel.PersonnelGroup UUID="a6caf754-6e95-4e0f-91f3-70a24cfcc19a">
+            <dPersonnel.NameGroup>
+               <dPersonnel.01>Spencer</dPersonnel.01>
+               <dPersonnel.02>Malinda</dPersonnel.02>
+               <dPersonnel.03>Kaylie</dPersonnel.03>
+            </dPersonnel.NameGroup>
+            <dPersonnel.AddressGroup>
+               <dPersonnel.04>162 Warrington Round</dPersonnel.04>
+               <dPersonnel.05>2378271</dPersonnel.05>
+               <dPersonnel.06>09</dPersonnel.06>
+               <dPersonnel.07>06810</dPersonnel.07>
+               <dPersonnel.08>US</dPersonnel.08>
+            </dPersonnel.AddressGroup>
+            <dPersonnel.09 PhoneNumberType="9913005">475-650-0094</dPersonnel.09>
+            <dPersonnel.09 PhoneNumberType="9913009">203-796-9788</dPersonnel.09>
+            <dPersonnel.10 EmailAddressType="9904003">mspencer@df.example.org</dPersonnel.10>
+            <dPersonnel.11>1994-02-28</dPersonnel.11>
+            <dPersonnel.12 xsi:nil="true" NV="7701003"/>
+            <dPersonnel.13>1513011</dPersonnel.13>
+            <dPersonnel.14>GB</dPersonnel.14>
+            <dPersonnel.15>1515023</dPersonnel.15>
+            <dPersonnel.16>1516027</dPersonnel.16>
+            <dPersonnel.17>1517013</dPersonnel.17>
+            <dPersonnel.ImmunizationsGroup CorrelationID="c4" UUID="8640379b-391b-43e5-b69b-d3654f245d8f">
+               <dPersonnel.18>9910027</dPersonnel.18>
+               <dPersonnel.19>2023</dPersonnel.19>
+            </dPersonnel.ImmunizationsGroup>
+            <dPersonnel.ImmunizationsGroup CorrelationID="c5" UUID="5b499b0e-b4cc-4f8e-b4ed-bb04fff97559">
+               <dPersonnel.18>9910027</dPersonnel.18>
+               <dPersonnel.19>2024</dPersonnel.19>
+            </dPersonnel.ImmunizationsGroup>
+            <dPersonnel.21>DF17422</dPersonnel.21>
+            <dPersonnel.LicensureGroup UUID="e4834dc6-817d-438e-bd19-69c8b331c3ac">
+               <dPersonnel.22>09</dPersonnel.22>
+               <dPersonnel.23>54266</dPersonnel.23>
+               <dPersonnel.24>9925007</dPersonnel.24>
+               <dPersonnel.25>2023-12-04</dPersonnel.25>
+               <dPersonnel.26>2015-11-08</dPersonnel.26>
+               <dPersonnel.27>2027-12-31</dPersonnel.27>
+            </dPersonnel.LicensureGroup>
+            <dPersonnel.LicensureGroup UUID="88bd8d85-28e5-4b23-acad-724586730b88">
+               <dPersonnel.22>09</dPersonnel.22>
+               <dPersonnel.23>54266</dPersonnel.23>
+               <dPersonnel.24>9925035</dPersonnel.24>
+               <dPersonnel.25>2021-10-28</dPersonnel.25>
+               <dPersonnel.26>2021-10-28</dPersonnel.26>
+               <dPersonnel.27>2025-12-31</dPersonnel.27>
+            </dPersonnel.LicensureGroup>
+            <dPersonnel.LicensureGroup UUID="230d65b4-0b5d-4f64-b75f-faa0281c3467">
+               <dPersonnel.22>36</dPersonnel.22>
+               <dPersonnel.23>r436852</dPersonnel.23>
+               <dPersonnel.24>9925035</dPersonnel.24>
+            </dPersonnel.LicensureGroup>
+            <dPersonnel.28>P2346404</dPersonnel.28>
+            <dPersonnel.29>1529007</dPersonnel.29>
+            <dPersonnel.30>2025-12-31</dPersonnel.30>
+            <dPersonnel.31>1531001</dPersonnel.31>
+            <dPersonnel.32>2020-08-30</dPersonnel.32>
+            <dPersonnel.33>2019-06-13</dPersonnel.33>
+            <dPersonnel.34>1534015</dPersonnel.34>
+            <dPersonnel.35>1534003</dPersonnel.35>
+            <dPersonnel.35>1534005</dPersonnel.35>
+            <dPersonnel.35>1534017</dPersonnel.35>
+            <dPersonnel.36>5</dPersonnel.36>
+            <dPersonnel.37>2024-12-30</dPersonnel.37>
+            <dPersonnel.CertificationLevelGroup UUID="7d3c106a-a076-4305-960b-755b8a977d75">
+               <dPersonnel.38>9925007</dPersonnel.38>
+               <dPersonnel.39>2019-08-19</dPersonnel.39>
+            </dPersonnel.CertificationLevelGroup>
+            <dPersonnel.CertificationLevelGroup UUID="6fe98b2d-02a2-4a30-afca-fe43eafd0c99">
+               <dPersonnel.38>9925035</dPersonnel.38>
+               <dPersonnel.39>2021-11-15</dPersonnel.39>
+            </dPersonnel.CertificationLevelGroup>
+            <dPersonnel.40>9919001</dPersonnel.40>
+         </dPersonnel.PersonnelGroup>
+         <dPersonnel.PersonnelGroup UUID="26f9894a-6490-4610-bc1c-b84a43b7a7fa">
+            <dPersonnel.NameGroup>
+               <dPersonnel.01>Stokes</dPersonnel.01>
+               <dPersonnel.02>Tanner</dPersonnel.02>
+            </dPersonnel.NameGroup>
+            <dPersonnel.AddressGroup>
+               <dPersonnel.04>15 Tea House Lane</dPersonnel.04>
+               <dPersonnel.05>944699</dPersonnel.05>
+               <dPersonnel.06>36</dPersonnel.06>
+               <dPersonnel.07>10509</dPersonnel.07>
+               <dPersonnel.08>US</dPersonnel.08>
+            </dPersonnel.AddressGroup>
+            <dPersonnel.09 PhoneNumberType="9913003">845-465-7132</dPersonnel.09>
+            <dPersonnel.09 PhoneNumberType="9913009">203-796-9705</dPersonnel.09>
+            <dPersonnel.10 EmailAddressType="9904003">tstokes@df.example.org</dPersonnel.10>
+            <dPersonnel.11>1981-08-25</dPersonnel.11>
+            <dPersonnel.12 xsi:nil="true" NV="7701003"/>
+            <dPersonnel.13>1513011</dPersonnel.13>
+            <dPersonnel.14>US</dPersonnel.14>
+            <dPersonnel.15>1515025</dPersonnel.15>
+            <dPersonnel.16>1516033</dPersonnel.16>
+            <dPersonnel.16>1516059</dPersonnel.16>
+            <dPersonnel.17>1517003</dPersonnel.17>
+            <dPersonnel.17>1517009</dPersonnel.17>
+            <dPersonnel.17>1517013</dPersonnel.17>
+            <dPersonnel.21>DF04742</dPersonnel.21>
+            <dPersonnel.LicensureGroup UUID="6054b2d0-0c6a-4a98-a2c9-8387564e7161">
+               <dPersonnel.22>09</dPersonnel.22>
+               <dPersonnel.23>42257</dPersonnel.23>
+               <dPersonnel.24>9925007</dPersonnel.24>
+               <dPersonnel.25>2024-05-04</dPersonnel.25>
+               <dPersonnel.26>2000-03-18</dPersonnel.26>
+               <dPersonnel.27>2028-03-31</dPersonnel.27>
+            </dPersonnel.LicensureGroup>
+            <dPersonnel.LicensureGroup UUID="b882eb05-7c42-44aa-ad0e-80b88aa5492d">
+               <dPersonnel.22>09</dPersonnel.22>
+               <dPersonnel.23>42257</dPersonnel.23>
+               <dPersonnel.24>9925035</dPersonnel.24>
+               <dPersonnel.25>2021-09-28</dPersonnel.25>
+               <dPersonnel.26>2021-09-28</dPersonnel.26>
+               <dPersonnel.27>2025-12-31</dPersonnel.27>
+            </dPersonnel.LicensureGroup>
+            <dPersonnel.LicensureGroup UUID="aa637dac-b3d8-4839-9120-41ae53394a14">
+               <dPersonnel.22>36</dPersonnel.22>
+               <dPersonnel.23>n748103</dPersonnel.23>
+               <dPersonnel.24>9925035</dPersonnel.24>
+            </dPersonnel.LicensureGroup>
+            <dPersonnel.28>P5433493</dPersonnel.28>
+            <dPersonnel.29>1529007</dPersonnel.29>
+            <dPersonnel.30>2028-03-31</dPersonnel.30>
+            <dPersonnel.31>1531001</dPersonnel.31>
+            <dPersonnel.32>2014-08-11</dPersonnel.32>
+            <dPersonnel.33>2009-07-20</dPersonnel.33>
+            <dPersonnel.34>1534015</dPersonnel.34>
+            <dPersonnel.35>1534003</dPersonnel.35>
+            <dPersonnel.35>1534017</dPersonnel.35>
+            <dPersonnel.36>15</dPersonnel.36>
+            <dPersonnel.37>2024-09-30</dPersonnel.37>
+            <dPersonnel.CertificationLevelGroup UUID="c28e8ba5-4d36-486e-9a74-8555d247e964">
+               <dPersonnel.38>9925007</dPersonnel.38>
+               <dPersonnel.39>2009-08-25</dPersonnel.39>
+            </dPersonnel.CertificationLevelGroup>
+            <dPersonnel.CertificationLevelGroup UUID="e025e7d8-2cdc-4afd-a0b3-24d07f020a28">
+               <dPersonnel.38>9925007</dPersonnel.38>
+               <dPersonnel.39>2021-10-18</dPersonnel.39>
+            </dPersonnel.CertificationLevelGroup>
+            <dPersonnel.40>9919003</dPersonnel.40>
+         </dPersonnel.PersonnelGroup>
+      </dPersonnel>
+      <dDevice>
+         <dDevice.DeviceGroup UUID="e7723c49-9f21-4bf7-a47d-d978ee05a288">
+            <dDevice.01>SDT7874</dDevice.01>
+            <dDevice.02>ECG 13</dDevice.02>
+            <dDevice.03>1603015</dDevice.03>
+            <dDevice.03>1603017</dDevice.03>
+            <dDevice.04>Slim Devices</dDevice.04>
+            <dDevice.05>SlimDef 2.0</dDevice.05>
+            <dDevice.06>2021-09-27</dDevice.06>
+         </dDevice.DeviceGroup>
+         <dDevice.DeviceGroup UUID="de60f116-aee6-4c88-b115-7ec78d3c3ba1">
+            <dDevice.01>57JF1121</dDevice.01>
+            <dDevice.02>GLU 2</dDevice.02>
+            <dDevice.03>1603007</dDevice.03>
+            <dDevice.04>Incredible Medical</dDevice.04>
+            <dDevice.05>Diastat</dDevice.05>
+            <dDevice.06>2018-04-12</dDevice.06>
+         </dDevice.DeviceGroup>
+      </dDevice>
+      <dFacility>
+         <dFacilityGroup UUID="bb3999d4-0705-4e06-a07b-120a6fe47114">
+            <dFacility.01>1701001</dFacility.01>
+            <dFacility.FacilityGroup UUID="30d99bad-dfd4-41fd-89c4-95caac71bcfe">
+               <dFacility.02>Brookside Residential Care Home</dFacility.02>
+               <dFacility.03>1025</dFacility.03>
+               <dFacility.07 StreetAddress2="PO Box 1009">134 Franklin Street Extension</dFacility.07>
+               <dFacility.08>213415</dFacility.08>
+               <dFacility.09>09</dFacility.09>
+               <dFacility.10>06811</dFacility.10>
+               <dFacility.11>09001</dFacility.11>
+               <dFacility.12>US</dFacility.12>
+               <dFacility.13>41.401,-73.474</dFacility.13>
+               <dFacility.14>18TXL27558439</dFacility.14>
+               <dFacility.15>203-743-9130</dFacility.15>
+            </dFacility.FacilityGroup>
+         </dFacilityGroup>
+         <dFacilityGroup UUID="cbb44830-e4f7-49a1-92a1-df0032617f19">
+            <dFacility.01>1701005</dFacility.01>
+            <dFacility.FacilityGroup UUID="eda07e25-6ba4-4fa9-a2e8-3bce921db998">
+               <dFacility.02>Connecticut Children's Medical Center</dFacility.02>
+               <dFacility.03>073300</dFacility.03>
+               <dFacility.04>9908007</dFacility.04>
+               <dFacility.04>9908011</dFacility.04>
+               <dFacility.04>9908021</dFacility.04>
+               <dFacility.05>1578106951</dFacility.05>
+               <dFacility.05>1134271661</dFacility.05>
+               <dFacility.05>1215947387</dFacility.05>
+               <dFacility.05>1467541805</dFacility.05>
+               <dFacility.07>282 Washington Street</dFacility.07>
+               <dFacility.08>213442</dFacility.08>
+               <dFacility.09>09</dFacility.09>
+               <dFacility.10>06106</dFacility.10>
+               <dFacility.11>09003</dFacility.11>
+               <dFacility.12>US</dFacility.12>
+               <dFacility.13>41.753,-72.681</dFacility.13>
+               <dFacility.14>18TXM92802495</dFacility.14>
+               <dFacility.15 PhoneNumberType="9913009">860-545-9000</dFacility.15>
+               <dFacility.15 PhoneNumberType="9913001">860-545-9001</dFacility.15>
+            </dFacility.FacilityGroup>
+            <dFacility.FacilityGroup UUID="94e952f2-679f-4448-8d3b-ef3b6a0a2cfa">
+               <dFacility.02>Danbury Hospital</dFacility.02>
+               <dFacility.03>070033</dFacility.03>
+               <dFacility.04>9908007</dFacility.04>
+               <dFacility.04>9908023</dFacility.04>
+               <dFacility.05>1801064274</dFacility.05>
+               <dFacility.07>24 Hospital Avenue</dFacility.07>
+               <dFacility.08>213415</dFacility.08>
+               <dFacility.09>09</dFacility.09>
+               <dFacility.10>06810</dFacility.10>
+               <dFacility.11>09001</dFacility.11>
+               <dFacility.12>US</dFacility.12>
+               <dFacility.13>41.405,-73.444</dFacility.13>
+               <dFacility.14>18TXL30058488</dFacility.14>
+               <dFacility.15 PhoneNumberType="9913009">203-739-7000</dFacility.15>
+            </dFacility.FacilityGroup>
+            <dFacility.FacilityGroup UUID="e68d2c1b-0bb6-4c20-b2b2-fa73e4385325">
+               <dFacility.02>Yale New Haven Hospital</dFacility.02>
+               <dFacility.03>070022</dFacility.03>
+               <dFacility.04>9908001</dFacility.04>
+               <dFacility.04>9908003</dFacility.04>
+               <dFacility.04>9908007</dFacility.04>
+               <dFacility.04>9908011</dFacility.04>
+               <dFacility.04>9908021</dFacility.04>
+               <dFacility.04>9908033</dFacility.04>
+               <dFacility.04>9908043</dFacility.04>
+               <dFacility.05>1578778726</dFacility.05>
+               <dFacility.05>1427100957</dFacility.05>
+               <dFacility.07>20 York Street</dFacility.07>
+               <dFacility.08>2378285</dFacility.08>
+               <dFacility.09>09</dFacility.09>
+               <dFacility.10>06510</dFacility.10>
+               <dFacility.11>09009</dFacility.11>
+               <dFacility.12>US</dFacility.12>
+               <dFacility.13>41.303,-72.935</dFacility.13>
+               <dFacility.14>18TXL72877445</dFacility.14>
+               <dFacility.15 PhoneNumberType="9913009">203-688-4242</dFacility.15>
+            </dFacility.FacilityGroup>
+         </dFacilityGroup>
+         <dFacilityGroup UUID="f7e8cb4f-7189-443d-9914-d4f003612237">
+            <dFacility.01>1701033</dFacility.01>
+            <dFacility.FacilityGroup UUID="aec05cc9-5d3b-4320-922f-09536bc0252e">
+               <dFacility.02>Garrett Recovery</dFacility.02>
+               <dFacility.03>330125</dFacility.03>
+               <dFacility.06>Suite A</dFacility.06>
+               <dFacility.07 StreetAddress2="PO Box 825">13 Main Street</dFacility.07>
+               <dFacility.08>2391557</dFacility.08>
+               <dFacility.09>36</dFacility.09>
+               <dFacility.10>10509</dFacility.10>
+               <dFacility.11>36079</dFacility.11>
+               <dFacility.12>US</dFacility.12>
+               <dFacility.13>41.394,-73.619</dFacility.13>
+               <dFacility.14>18TXL15458341</dFacility.14>
+               <dFacility.15 PhoneNumberType="9913009">914-370-4231</dFacility.15>
+            </dFacility.FacilityGroup>
+         </dFacilityGroup>
+      </dFacility>
+      <dCustomResults>
+         <dCustomResults.ResultsGroup>
+            <dCustomResults.01>9910055</dCustomResults.01>
+            <dCustomResults.02>dPersonnel.18</dCustomResults.02>
+            <dCustomResults.03>c1</dCustomResults.03>
+         </dCustomResults.ResultsGroup>
+         <dCustomResults.ResultsGroup>
+            <dCustomResults.01>9910055</dCustomResults.01>
+            <dCustomResults.02>dPersonnel.18</dCustomResults.02>
+            <dCustomResults.03>c2</dCustomResults.03>
+         </dCustomResults.ResultsGroup>
+         <dCustomResults.ResultsGroup>
+            <dCustomResults.01>9910055</dCustomResults.01>
+            <dCustomResults.02>dPersonnel.18</dCustomResults.02>
+            <dCustomResults.03>c3</dCustomResults.03>
+         </dCustomResults.ResultsGroup>
+         <dCustomResults.ResultsGroup>
+            <dCustomResults.01>9910055</dCustomResults.01>
+            <dCustomResults.02>dPersonnel.18</dCustomResults.02>
+            <dCustomResults.03>c4</dCustomResults.03>
+         </dCustomResults.ResultsGroup>
+         <dCustomResults.ResultsGroup>
+            <dCustomResults.01>9910055</dCustomResults.01>
+            <dCustomResults.02>dPersonnel.18</dCustomResults.02>
+            <dCustomResults.03>c5</dCustomResults.03>
+         </dCustomResults.ResultsGroup>
+      </dCustomResults>
+   </DemographicReport>
+</DEMDataSet>

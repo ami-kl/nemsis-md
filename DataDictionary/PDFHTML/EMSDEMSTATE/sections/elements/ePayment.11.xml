@@ -1,0 +1,31 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.11"  minOccurs="0"  maxOccurs="1"  dataTypeName="InsuranceCompanyBillingPriority"  isNillable="No">
+<name>Insurance Company Billing Priority</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The billing priority or order for the insurance company.</definition>
+<v2Number>E07_04</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <InsuranceCompanyBillingPriority baseType="string">
+    <facet name="enumeration" value="2611001" annotation="Other"/>
+    <facet name="enumeration" value="2611003" annotation="Primary"/>
+    <facet name="enumeration" value="2611005" annotation="Secondary"/>
+    <facet name="enumeration" value="2611007" annotation="Tertiary"/>
+    <facet name="enumeration" value="2611009" annotation="Payer Responsibility Four"/>
+    <facet name="enumeration" value="2611011" annotation="Payer Responsibility Five"/>
+    <facet name="enumeration" value="2611013" annotation="Payer Responsibility Six"/>
+    <facet name="enumeration" value="2611015" annotation="Payer Responsibility Seven"/>
+    <facet name="enumeration" value="2611017" annotation="Payer Responsibility Eight"/>
+    <facet name="enumeration" value="2611019" annotation="Payer Responsibility Nine"/>
+    <facet name="enumeration" value="2611021" annotation="Payer Responsibility Ten"/>
+    <facet name="enumeration" value="2611023" annotation="Payer Responsibility Eleven"/>
+    <facet name="enumeration" value="2611025" annotation="Unknown"/>
+  </InsuranceCompanyBillingPriority>
+</restrictions>
+</element>

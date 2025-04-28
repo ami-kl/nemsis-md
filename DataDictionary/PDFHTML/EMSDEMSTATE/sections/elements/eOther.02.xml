@@ -1,0 +1,31 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eOther.02"  minOccurs="0"  maxOccurs="M"  dataTypeName="PotentialRegistryCandidate"  isNillable="No">
+<name>Potential System of Care/Specialty/Registry Patient</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>An indication if the patient may meet the entry criteria for an injury or illness specific registry.</definition>
+<v2Number>E23_02</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <PotentialRegistryCandidate baseType="string">
+    <facet name="enumeration" value="4502001" annotation="Airway"/>
+    <facet name="enumeration" value="4502003" annotation="Burn"/>
+    <facet name="enumeration" value="4502005" annotation="Cardiac/MI"/>
+    <facet name="enumeration" value="4502007" annotation="CVA/Stroke"/>
+    <facet name="enumeration" value="4502009" annotation="Drowning"/>
+    <facet name="enumeration" value="4502011" annotation="Other"/>
+    <facet name="enumeration" value="4502013" annotation="Spinal Cord Injury"/>
+    <facet name="enumeration" value="4502015" annotation="STEMI/Acute Cardiac"/>
+    <facet name="enumeration" value="4502017" annotation="Trauma"/>
+    <facet name="enumeration" value="4502019" annotation="Traumatic Brain Injury"/>
+  </PotentialRegistryCandidate>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

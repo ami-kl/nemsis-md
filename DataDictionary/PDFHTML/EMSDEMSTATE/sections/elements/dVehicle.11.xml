@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dVehicle.11"  minOccurs="0"  maxOccurs="1"  dataTypeName="Year"  isNillable="No">
+<name>Year Miles/Kilometers Hours Accrued</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The year the hours and miles/kilometers were accumulated.</definition>
+<v2Number>D06_08</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>The grouping dVehicle.YearGroup, allows multiple year information to be stored for each EMS vehicle. This includes elements dVehicle.11 - Year Miles/Kilometers Hours Accrued, dVehicle.12 - Annual Vehicle Hours, and dVehicle.13 - Annual Vehicle Miles/Kilometers.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <Year baseType="integer">
+    <facet name="minInclusive" value="1900"/>
+    <facet name="maxInclusive" value="2050"/>
+  </Year>
+</restrictions>
+</element>

@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eInjury.20"  minOccurs="0"  maxOccurs="1"  dataTypeName="Year"  isNillable="No">
+<name>ACN Incident Vehicle Model Year</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The Automated Collision Notification Vehicle Model Year (e.g., 2010).</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Based on Vehicular Emergency Data Set:  Year. Vehicular Emergency Data Set (VEDS) Recommendations. Version 3.0 Prepared: (February 2011) by the Advanced Automatic Crash Notification (AACN)Joint APCO/NENA Data Standardization Working Group.</v3Comment>
+<v3Changes>Added to better incorporate advanced automated collision notification information.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <Year baseType="integer">
+    <facet name="minInclusive" value="1900"/>
+    <facet name="maxInclusive" value="2050"/>
+  </Year>
+</restrictions>
+</element>

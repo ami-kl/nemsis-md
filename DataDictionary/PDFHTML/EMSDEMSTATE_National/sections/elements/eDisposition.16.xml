@@ -1,0 +1,47 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDisposition.16"  minOccurs="1"  maxOccurs="1"  dataTypeName="EMSTransportMethod"  isNillable="Yes">
+<name>EMS Transport Method</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The method of transport by this EMS Unit.</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Required if the patient is transported by EMS.</v3Comment>
+<v3Changes>Added to better describe Air and Ground Transport methods.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EMSTransportMethod baseType="string">
+    <facet name="enumeration" value="4216001" annotation="Air Medical-Fixed Wing"/>
+    <facet name="enumeration" value="4216003" annotation="Air Medical-Rotor Craft"/>
+    <facet name="enumeration" value="4216005" annotation="Ground-Ambulance"/>
+    <facet name="enumeration" value="4216007" annotation="Ground-ATV or Rescue Vehicle"/>
+    <facet name="enumeration" value="4216009" annotation="Ground-Bariatric"/>
+    <facet name="enumeration" value="4216011" annotation="Ground-Other Not Listed"/>
+    <facet name="enumeration" value="4216013" annotation="Ground-Mass Casualty Bus/Vehicle"/>
+    <facet name="enumeration" value="4216015" annotation="Ground-Wheelchair Van"/>
+    <facet name="enumeration" value="4216017" annotation="Water-Boat"/>
+  </EMSTransportMethod>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e164" role="Warning">
+      <elementRef elementNumber="eDisposition.16">EMS Transport Method</elementRef> should be recorded when <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> is &quot;Transport by This EMS Unit...&quot;.
+      </assert>
+  <assert id="nemSch_e165" role="Warning">
+      <elementRef elementNumber="eDisposition.16">EMS Transport Method</elementRef> should not be recorded when <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> is &quot;Patient Refused Transport&quot; or &quot;No Transport&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When EMS Transport Method has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When EMS Transport Method is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

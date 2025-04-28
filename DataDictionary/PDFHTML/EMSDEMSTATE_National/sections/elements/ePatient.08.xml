@@ -1,0 +1,39 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePatient.08"  minOccurs="1"  maxOccurs="1"  dataTypeName="ANSIStateCode"  isNillable="Yes">
+<name>Patient's Home State</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The state, territory, or province where the patient resides.</definition>
+<v2Number>E06_07</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>The ANSI Code Selection by text but stored as ANSI code.<br/><br/>GNIS Codes Website: <a>http://geonames.usgs.gov/domestic/download_data.htm</a></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ANSIStateCode baseType="string">
+    <facet name="pattern" value="[0-9]{2}"/>
+  </ANSIStateCode>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e058" role="Warning">
+      <elementRef elementNumber="ePatient.07">Patient's Home County</elementRef> should belong within the <elementRef elementNumber="ePatient.08">Patient's Home State</elementRef>.
+      </assert>
+  <assert id="nemSch_e059" role="Warning">
+      <elementRef elementNumber="ePatient.08">Patient's Home State</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Patient's Home State has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Patient's Home State is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

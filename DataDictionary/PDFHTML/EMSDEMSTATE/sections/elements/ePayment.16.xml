@@ -1,0 +1,19 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.16"  minOccurs="0"  maxOccurs="1"  dataTypeName="ANSICountryCode"  isNillable="No">
+<name>Insurance Company Country</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The insurance company's country.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Based on the ISO Country Code.<br/><br/>ANSI Country Codes (ISO 3166) Website: <a href="https://www.iso.org/iso-3166-country-codes.html" target="_blank">https://www.iso.org/iso-3166-country-codes.html</a></v3Comment>
+<v3Changes>Added to better document international addresses.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ANSICountryCode baseType="string">
+    <facet name="length" value="2"/>
+  </ANSICountryCode>
+</restrictions>
+</element>

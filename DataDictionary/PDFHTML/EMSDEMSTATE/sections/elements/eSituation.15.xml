@@ -1,0 +1,38 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eSituation.15"  minOccurs="0"  maxOccurs="1"  dataTypeName="OccupationIndustry"  isNillable="No">
+<name>Patient's Occupational Industry</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The occupational industry of the patient's work.</definition>
+<v2Number>E07_16</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>From the North American Industry Classification System (NAICS) from US Bureau of Labor Statistics <br/>(https://www.census.gov/naics/?58967?yearbck=2022).</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <OccupationIndustry baseType="string">
+    <facet name="enumeration" value="2815001" annotation="Accommodation and Food Services"/>
+    <facet name="enumeration" value="2815003" annotation="Administrative and Support and Waste Management and Remediation Services"/>
+    <facet name="enumeration" value="2815005" annotation="Agriculture, Forestry, Fishing and Hunting"/>
+    <facet name="enumeration" value="2815007" annotation="Arts, Entertainment, and Recreation"/>
+    <facet name="enumeration" value="2815009" annotation="Construction"/>
+    <facet name="enumeration" value="2815011" annotation="Educational Services"/>
+    <facet name="enumeration" value="2815013" annotation="Finance and Insurance"/>
+    <facet name="enumeration" value="2815015" annotation="Health Care and Social Assistance"/>
+    <facet name="enumeration" value="2815017" annotation="Information"/>
+    <facet name="enumeration" value="2815019" annotation="Management of Companies and Enterprises"/>
+    <facet name="enumeration" value="2815021" annotation="Manufacturing"/>
+    <facet name="enumeration" value="2815023" annotation="Mining, Quarrying, and Oil and Gas Extraction"/>
+    <facet name="enumeration" value="2815025" annotation="Other Services (except Public Administration)"/>
+    <facet name="enumeration" value="2815027" annotation="Professional, Scientific, and Technical Services"/>
+    <facet name="enumeration" value="2815029" annotation="Public Administration"/>
+    <facet name="enumeration" value="2815031" annotation="Real Estate and Rental and Leasing"/>
+    <facet name="enumeration" value="2815033" annotation="Retail Trade"/>
+    <facet name="enumeration" value="2815035" annotation="Transportation and Warehousing"/>
+    <facet name="enumeration" value="2815037" annotation="Utilities"/>
+    <facet name="enumeration" value="2815039" annotation="Wholesale Trade"/>
+  </OccupationIndustry>
+</restrictions>
+</element>

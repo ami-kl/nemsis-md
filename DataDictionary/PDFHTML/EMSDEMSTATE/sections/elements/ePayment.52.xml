@@ -1,0 +1,32 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.52"  minOccurs="0"  maxOccurs="M"  dataTypeName="CMSTransportationIndicator"  isNillable="No">
+<name>CMS Transportation Indicator</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The CMS Ambulance Fee Schedule Transportation and Air Medical Transportation Indicators are used to better describe why it was necessary for the patient to be transported in a particular way or circumstance.</definition>
+<v2Number>E07_37</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Name changed from Condition Code Modifier to CMS Transportation Indicator</v3Comment>
+<v3Changes>Name changed from Condition Code Modifier to CMS Transportation Indicator</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <CMSTransportationIndicator baseType="string">
+    <facet name="enumeration" value="C1" annotation="Interfacility Transport (Requires Higher level of care)"/>
+    <facet name="enumeration" value="C2" annotation="Interfacility Transport (service not available)"/>
+    <facet name="enumeration" value="C3" annotation="Emergency Trauma Dispatch Condition Code (Major Incident or Mechanism of Injury)"/>
+    <facet name="enumeration" value="C4" annotation="Medically Necessary Transport (Facility on Divert or Services Unavailable)"/>
+    <facet name="enumeration" value="C5" annotation="BLS Transport of ALS Patient (ALS not available)"/>
+    <facet name="enumeration" value="C6" annotation="ALS Response (Based on Dispatch Info) to BLS Patient (Condition)"/>
+    <facet name="enumeration" value="C7" annotation="IV Medications required en route (ALS)"/>
+    <facet name="enumeration" value="D1" annotation="Long Distance-patient's condition requires rapid transportation over a long distance"/>
+    <facet name="enumeration" value="D2" annotation="Rare Circumstances, Traffic Patterns Precludes Ground Transport"/>
+    <facet name="enumeration" value="D3" annotation="Time to the closest appropriate hospital due to the patient's condition precludes ground transport; maximize clinical benefits"/>
+    <facet name="enumeration" value="D4" annotation="Pick up Point not Accessible by Ground Transport"/>
+  </CMSTransportationIndicator>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

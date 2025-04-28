@@ -1,0 +1,43 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eVitals.22"  minOccurs="1"  maxOccurs="M"  dataTypeName="GCSScoreQualifier"  isNillable="Yes">
+<name>Glasgow Coma Score-Qualifier</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Documentation of factors which make the GCS score more meaningful.</definition>
+<v2Number>E14_18</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Definitions now based on the National Trauma Data Standard (NTDS).</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <GCSScoreQualifier baseType="string">
+    <facet name="enumeration" value="3322001" annotation="Eye Obstruction Prevents Eye Assessment"/>
+    <facet name="enumeration" value="3322003" annotation="Initial GCS has legitimate values without interventions such as intubation and sedation"/>
+    <facet name="enumeration" value="3322005" annotation="Patient Chemically Paralyzed"/>
+    <facet name="enumeration" value="3322007" annotation="Patient Chemically Sedated"/>
+    <facet name="enumeration" value="3322009" annotation="Patient Intubated"/>
+  </GCSScoreQualifier>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e135" role="Warning">
+      When <elementRef elementNumber="eVitals.22">Glasgow Coma Score-Qualifier</elementRef> is &quot;Initial GCS has legitimate values without interventions such as intubation and sedation&quot;, no other value should be recorded.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Glasgow Coma Score-Qualifier has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Glasgow Coma Score-Qualifier is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Glasgow Coma Score-Qualifier has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

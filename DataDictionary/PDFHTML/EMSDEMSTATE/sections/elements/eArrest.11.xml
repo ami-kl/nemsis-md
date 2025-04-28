@@ -1,0 +1,40 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eArrest.11"  minOccurs="1"  maxOccurs="1"  dataTypeName="FirstMonitoredRhythm"  isNillable="Yes">
+<name>First Monitored Arrest Rhythm of the Patient</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Documentation of what the first monitored arrest rhythm which was noted.</definition>
+<v2Number>E11_05</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Cardiac Arrest</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Added term "Arrest" to title to clarify this is the arrest rhythm.
+								<br/>Values "Other" and "Normal Sinus Rhythm" removed since they are not Cardiac Arrest Rhythms.
+								<br/>Value "Ventricular Tachycardia" has been changed to "Ventricular Tachycardia-Pulseless".</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <FirstMonitoredRhythm baseType="string">
+    <facet name="enumeration" value="3011001" annotation="Asystole"/>
+    <facet name="enumeration" value="3011005" annotation="PEA"/>
+    <facet name="enumeration" value="3011007" annotation="Unknown AED Non-Shockable Rhythm"/>
+    <facet name="enumeration" value="3011009" annotation="Unknown AED Shockable Rhythm"/>
+    <facet name="enumeration" value="3011011" annotation="Ventricular Fibrillation"/>
+    <facet name="enumeration" value="3011013" annotation="Ventricular Tachycardia-Pulseless"/>
+  </FirstMonitoredRhythm>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When First Monitored Arrest Rhythm of the Patient has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When First Monitored Arrest Rhythm of the Patient is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

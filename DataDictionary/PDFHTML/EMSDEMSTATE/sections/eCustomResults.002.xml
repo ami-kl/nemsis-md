@@ -1,0 +1,8 @@
+<?xml-stylesheet type="text/xsl" href="../xslt/grouping.xslt"?>
+<section name="eCustomResults">
+  <group number="eCustomResults.ResultsGroup" minOccurs="0" maxOccurs="M" CorrelationID="Yes" UUID="" ProcedureGroupCorrelationID="" CustomElementID="" timeStamp="" isNillable="No">
+    <element number="eCustomResults.01" minOccurs="1" maxOccurs="M" CorrelationID="" UUID="" isNillable="Yes" dataType="CustomResults"><name>Custom Data Element Result</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Mandatory</usage><notValue>Yes</notValue><pertinentNegative>Yes</pertinentNegative></element>
+    <element number="eCustomResults.02" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="CorrelationID"><name>Custom Element ID Referenced</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Mandatory</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <element number="eCustomResults.03" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="CorrelationID"><name>CorrelationID of PatientCareReport Element or Group</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+  </group>
+</section>

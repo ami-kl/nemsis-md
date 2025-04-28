@@ -1,0 +1,39 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eScene.09"  minOccurs="1"  maxOccurs="1"  dataTypeName="IncidentLocationType"  isNillable="Yes">
+<name>Incident Location Type</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The kind of location where the incident happened.</definition>
+<v2Number>E08_07</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Code list is represented in ICD-10-CM. Reference the NEMSIS Suggested Lists at: https://nemsis.org/technical-resources/version-3/version-3-resource-repository/					
+							<br/><br/>ICD-10-CM
+							<br/>Website - <a href="http://uts.nlm.nih.gov" target="_blank">http://uts.nlm.nih.gov</a>
+							<br/>Product - UMLS Metathesaurus</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <IncidentLocationType baseType="string">
+    <facet name="pattern" value="Y92\.[0-9]{1,3}"/>
+  </IncidentLocationType>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e070" role="Warning">
+      <elementRef elementNumber="eScene.09">Incident Location Type</elementRef> should be recorded unless <elementRef elementNumber="eDisposition.27">Unit Disposition</elementRef> is &quot;Cancelled Prior to Arrival at Scene&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Incident Location Type has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Incident Location Type is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

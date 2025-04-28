@@ -1,0 +1,28 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eScene.04"  minOccurs="0"  maxOccurs="1"  dataTypeName="OtherServicesAtScene"  isNillable="No">
+<name>Type of Other Service at Scene</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The type of public safety or EMS service associated with Other Agencies on Scene.</definition>
+<v2Number>E08_02</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Associated with each Other Service in eScene.02</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <OtherServicesAtScene baseType="string">
+    <facet name="enumeration" value="2704001" annotation="EMS Mutual Aid"/>
+    <facet name="enumeration" value="2704003" annotation="Fire"/>
+    <facet name="enumeration" value="2704005" annotation="First Responder"/>
+    <facet name="enumeration" value="2704007" annotation="Hazmat"/>
+    <facet name="enumeration" value="2704009" annotation="Law Enforcement"/>
+    <facet name="enumeration" value="2704011" annotation="Other"/>
+    <facet name="enumeration" value="2704013" annotation="Other EMS Agency"/>
+    <facet name="enumeration" value="2704015" annotation="Other Health Care Provider"/>
+    <facet name="enumeration" value="2704017" annotation="Rescue"/>
+    <facet name="enumeration" value="2704019" annotation="Utilities"/>
+  </OtherServicesAtScene>
+</restrictions>
+</element>

@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eResponse.13"  minOccurs="1"  maxOccurs="1"  dataTypeName="EMSVehicleNumber"  isNillable="No">
+<name>EMS Vehicle (Unit) Number</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The unique physical vehicle number of the responding unit.</definition>
+<v2Number>E02_11</v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This is recommended to be the State Vehicle Permit Number if unique to the vehicle.  If the vehicle is not licensed by the state, this should be a unique number only associated with a specific vehicle. This element should be populated from dVehicle.01 -  Unit/Vehicle Number.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EMSVehicleNumber baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="25"/>
+  </EMSVehicleNumber>
+</restrictions>
+</element>

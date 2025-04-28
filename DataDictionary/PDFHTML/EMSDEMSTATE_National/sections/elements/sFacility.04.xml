@@ -1,0 +1,60 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="sFacility.04"  minOccurs="0"  maxOccurs="M"  dataTypeName="HospitalDesignation"  isNillable="Yes">
+<name>Hospital Designations</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The designation(s) associated with the hospital (e.g. Trauma, STEMI, Peds, etc).</definition>
+<v2Number></v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Used to populate dFacility.04 Hospital Designations.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <HospitalDesignation baseType="string">
+    <facet name="enumeration" value="9908001" annotation="Behavioral Health"/>
+    <facet name="enumeration" value="9908003" annotation="Burn Center"/>
+    <facet name="enumeration" value="9908005" annotation="Critical Access Hospital"/>
+    <facet name="enumeration" value="9908007" annotation="Hospital (General)"/>
+    <facet name="enumeration" value="9908009" annotation="Neonatal Center"/>
+    <facet name="enumeration" value="9908011" annotation="Pediatric Center"/>
+    <facet name="enumeration" value="9908019" annotation="Rehab Center"/>
+    <facet name="enumeration" value="9908021" annotation="Trauma Center Level 1"/>
+    <facet name="enumeration" value="9908023" annotation="Trauma Center Level 2"/>
+    <facet name="enumeration" value="9908025" annotation="Trauma Center Level 3"/>
+    <facet name="enumeration" value="9908027" annotation="Trauma Center Level 4"/>
+    <facet name="enumeration" value="9908029" annotation="Trauma Center Level 5"/>
+    <facet name="enumeration" value="9908031" annotation="Cardiac-STEMI/PCI Capable"/>
+    <facet name="enumeration" value="9908033" annotation="Cardiac-STEMI/PCI Capable (24/7)"/>
+    <facet name="enumeration" value="9908035" annotation="Cardiac-STEMI/Non-PCI Capable"/>
+    <facet name="enumeration" value="9908037" annotation="Stroke-Acute Stroke Ready Hospital (ASRH)"/>
+    <facet name="enumeration" value="9908039" annotation="Stroke-Primary Stroke Center (PSC)"/>
+    <facet name="enumeration" value="9908041" annotation="Stroke-Thrombectomy-Capable Stroke Center (TSC)"/>
+    <facet name="enumeration" value="9908043" annotation="Stroke-Comprehensive Stroke Center (CSC)"/>
+    <facet name="enumeration" value="9908045" annotation="Cancer Center"/>
+    <facet name="enumeration" value="9908047" annotation="Labor and Delivery"/>
+  </HospitalDesignation>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_s029" role="Warning">
+      <elementRef elementNumber="sFacility.04">Hospital Designations</elementRef> should be unique (the same designation should not be listed more than once).
+      </assert>
+  <assert id="nemSch_s002" role="Error">
+      When Hospital Designations has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_s001" role="Error">
+      When Hospital Designations is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_s003" role="Warning">
+      When Hospital Designations has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

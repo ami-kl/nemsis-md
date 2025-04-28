@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.19"  minOccurs="0"  maxOccurs="1"  dataTypeName="PersonLastName"  isNillable="No">
+<name>Last Name of the Insured</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The last (family) name of the person insured by the insurance company.</definition>
+<v2Number>E07_11</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <PersonLastName baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="60"/>
+  </PersonLastName>
+</restrictions>
+</element>

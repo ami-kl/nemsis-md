@@ -1,0 +1,769 @@
+<?xml-stylesheet type="text/xsl" href="https://nemsis.org/media/nemsis_v3/release-3.5.1/DefinedLists/DefinedListHtml.xsl"?><DefinedList xmlns="http://www.nemsis.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" date="2025-01-14" xsi:schemaLocation="http://www.nemsis.org https://nemsis.org/media/nemsis_v3/release-3.5.1/DefinedLists/DefinedLists.xsd">
+  <Header>
+    <SourceVocabularies>
+      <SourceVocabulary url="https://www.cdc.gov/nchs/icd/icd-10-cm/">ICD-10</SourceVocabulary>
+    </SourceVocabularies>
+    <NemsisTypes>
+      <NemsisType>ProvidersImpression</NemsisType>
+    </NemsisTypes>
+    <NemsisElements>
+      <NemsisElement>eSituation.11</NemsisElement>
+      <NemsisElement>eSituation.12</NemsisElement>
+    </NemsisElements>
+  </Header>
+  <Codes>
+    <Code date="2021-05-06">
+      <Value>R10.0</Value>
+      <Category>Abdominal</Category>
+      <SourceLabel>Acute abdomen</SourceLabel>
+      <SuggestedLabel>Acute pain</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R10.84</Value>
+      <Category>Abdominal</Category>
+      <SourceLabel>Generalized abdominal pain</SourceLabel>
+      <SuggestedLabel>Generalized pain</SuggestedLabel>
+      <Note>Includes R:10.9 Unspecified abdominal pain</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>T50.90</Value>
+      <Category>Alcohol/Drug Exposure</Category>
+      <SourceLabel>Poisoning by, adverse effect of and underdosing of unspecified drugs, medicaments and biological substances</SourceLabel>
+      <SuggestedLabel>Adverse effect of unspecified substance</SuggestedLabel>
+      <Note>Includes T50.904, T50.904A</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F10.92</Value>
+      <Category>Alcohol/Drug Exposure</Category>
+      <SourceLabel>Alcohol use, unspecified with intoxication</SourceLabel>
+      <SuggestedLabel>Alcohol intoxication</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F10.9</Value>
+      <Category>Alcohol/Drug Exposure</Category>
+      <SourceLabel>Alcohol use, unspecified</SourceLabel>
+      <SuggestedLabel>Alcohol use</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F10.23</Value>
+      <Category>Alcohol/Drug Exposure</Category>
+      <SourceLabel>Alcohol dependence with withdrawal</SourceLabel>
+      <SuggestedLabel>Alcohol withdrawal</SuggestedLabel>
+      <Note>Includes F10.239 Alcohol dependence with withdrawal, unspecified</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F11</Value>
+      <Category>Alcohol/Drug Exposure</Category>
+      <SourceLabel>Opioid related disorders</SourceLabel>
+      <SuggestedLabel>Suspected Opioid related</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F19</Value>
+      <Category>Alcohol/Drug Exposure</Category>
+      <SourceLabel>Other psychoactive substance related disorders</SourceLabel>
+      <SuggestedLabel>Other psychoactive substance</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F13</Value>
+      <Category>Alcohol/Drug Exposure</Category>
+      <SourceLabel>Sedative, hypnotic, or anxiolytic related disorders</SourceLabel>
+      <SuggestedLabel>Sedative, anti-anxiety related</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I20.9</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Angina pectoris, unspecified</SourceLabel>
+      <SuggestedLabel>Angina (pain related to heart)</SuggestedLabel>
+      <Note>Includes I20.0 Unstable angina</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I49.9</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Cardiac arrhythmia, unspecified</SourceLabel>
+      <SuggestedLabel>Arrhythmia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I46.9</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Cardiac arrest, cause unspecified</SourceLabel>
+      <SuggestedLabel>Cardiac arrest</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R07.9</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Chest pain, unspecified</SourceLabel>
+      <SuggestedLabel>Chest pain, NOS</SuggestedLabel>
+      <Note>Includes R07.89 Other chest pain</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I21</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Acute myocardial infarction</SourceLabel>
+      <SuggestedLabel>Myocardial Infarction, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I50.9</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Heart failure, unspecified</SourceLabel>
+      <SuggestedLabel>Heart failure</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I10</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Essential (primary) hypertension</SourceLabel>
+      <SuggestedLabel>Hypertension</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I95.9</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Hypotension, unspecified</SourceLabel>
+      <SuggestedLabel>Hypotension</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I21.4</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Non-ST elevation (NSTEMI) myocardial infarction</SourceLabel>
+      <SuggestedLabel>Non-STEMI</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I99.9</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Unspecified disorder of circulatory system</SourceLabel>
+      <SuggestedLabel>Other, unspecified CV disorder</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I21.3</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>ST elevation (STEMI) myocardial infarction of unspecified site</SourceLabel>
+      <SuggestedLabel>STEMI</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K92.2</Value>
+      <Category>Digestive</Category>
+      <SourceLabel>Gastrointestinal hemorrhage, unspecified</SourceLabel>
+      <SuggestedLabel>Blood in vomit or stool (GI bleed)</SuggestedLabel>
+      <Note>Includes K92.0 Hematemesis</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K59.00</Value>
+      <Category>Digestive</Category>
+      <SourceLabel>Constipation, unspecified</SourceLabel>
+      <SuggestedLabel>Constipation</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K59.1</Value>
+      <Category>Digestive</Category>
+      <SourceLabel>Functional diarrhea</SourceLabel>
+      <SuggestedLabel>Diarrhea</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R11.0</Value>
+      <Category>Digestive</Category>
+      <SourceLabel>Nausea</SourceLabel>
+      <SuggestedLabel>Nausea</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R11.1</Value>
+      <Category>Digestive</Category>
+      <SourceLabel>Vomiting</SourceLabel>
+      <SuggestedLabel>Vomiting</SuggestedLabel>
+      <Note>Includes R11.10 Vomiting, unspecified</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F41.9</Value>
+      <Category>Emotional State/Behavior</Category>
+      <SourceLabel>Anxiety disorder, unspecified</SourceLabel>
+      <SuggestedLabel>Anxiety</SuggestedLabel>
+      <Note>Includes F41.1 Generalized anxiety disorder</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F32</Value>
+      <Category>Emotional State/Behavior</Category>
+      <SourceLabel>Major depressive disorder, single episode</SourceLabel>
+      <SuggestedLabel>Depression</SuggestedLabel>
+      <Note>Includes F32.9 Major depressive disorder, single episode, unspecified</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R45.85</Value>
+      <Category>Emotional State/Behavior</Category>
+      <SourceLabel>Homicidal and suicidal ideations</SourceLabel>
+      <SuggestedLabel>Homicidal ideation</SuggestedLabel>
+      <Note>8/29 removed "and suicidal" from EMS Description, already covered in R45.851</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F99</Value>
+      <Category>Emotional State/Behavior</Category>
+      <SourceLabel>Mental disorder, not otherwise specified</SourceLabel>
+      <SuggestedLabel>Mental illness, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R45.89</Value>
+      <Category>Emotional State/Behavior</Category>
+      <SourceLabel>Other symptoms and signs involving emotional state</SourceLabel>
+      <SuggestedLabel>Other emotional symptoms</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F60.8</Value>
+      <Category>Emotional State/Behavior</Category>
+      <SourceLabel>Other specific personality disorders</SourceLabel>
+      <SuggestedLabel>Other personality disorder</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R45.851</Value>
+      <Category>Emotional State/Behavior</Category>
+      <SourceLabel>Suicidal ideations</SourceLabel>
+      <SuggestedLabel>Suicidal ideation</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>T14.91</Value>
+      <Category>Emotional State/Behavior</Category>
+      <SourceLabel>Suicide attempt</SourceLabel>
+      <SuggestedLabel>Suicide attempt</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R73.9</Value>
+      <Category>Endocrine/Urinary</Category>
+      <SourceLabel>Hyperglycemia, unspecified</SourceLabel>
+      <SuggestedLabel>Hyperglycemia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>E13.65</Value>
+      <Category>Endocrine/Urinary</Category>
+      <SourceLabel>Other specified diabetes mellitus with hyperglycemia</SourceLabel>
+      <SuggestedLabel>Hyperglycemia, known diabetic</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>E16.2</Value>
+      <Category>Endocrine/Urinary</Category>
+      <SourceLabel>Hypoglycemia, unspecified</SourceLabel>
+      <SuggestedLabel>Hypoglycemia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>E13.64</Value>
+      <Category>Endocrine/Urinary</Category>
+      <SourceLabel>Other specified diabetes mellitus with hypoglycemia</SourceLabel>
+      <SuggestedLabel>Hypoglycemia, known diabetic</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>N17.8</Value>
+      <Category>Endocrine/Urinary</Category>
+      <SourceLabel>Other acute kidney failure</SourceLabel>
+      <SuggestedLabel>Kidney failure, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>N18.6</Value>
+      <Category>Endocrine/Urinary</Category>
+      <SourceLabel>End stage renal disease</SourceLabel>
+      <SuggestedLabel>Kidney/renal disease requiring dialysis</SuggestedLabel>
+      <Note>Includes Z99.2 Dependence on renal dialysis</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>N39.0</Value>
+      <Category>Endocrine/Urinary</Category>
+      <SourceLabel>Urinary tract infection, site not specified</SourceLabel>
+      <SuggestedLabel>Urinary tract infection (UTI)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R50.9</Value>
+      <Category>Illness</Category>
+      <SourceLabel>Fever, unspecified</SourceLabel>
+      <SuggestedLabel>Fever</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R68.89</Value>
+      <Category>Illness</Category>
+      <SourceLabel>Other general symptoms and signs</SourceLabel>
+      <SuggestedLabel>General symptoms</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R69</Value>
+      <Category>Illness</Category>
+      <SourceLabel>Illness, unspecified</SourceLabel>
+      <SuggestedLabel>Illness, NOS</SuggestedLabel>
+      <Note>8/21/20 "NOS" added to EMS description</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A41.9</Value>
+      <Category>Illness</Category>
+      <SourceLabel>Sepsis, unspecified organism</SourceLabel>
+      <SuggestedLabel>Sepsis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B99.9</Value>
+      <Category>Illness</Category>
+      <SourceLabel>Unspecified infectious disease</SourceLabel>
+      <SuggestedLabel>Unspecified infectious disease</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>S99.91</Value>
+      <Category>Injury</Category>
+      <SourceLabel>Unspecified injury of ankle</SourceLabel>
+      <SuggestedLabel>Ankle injury</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>T30.0</Value>
+      <Category>Injury</Category>
+      <SourceLabel>Burn of unspecified body region, unspecified degree</SourceLabel>
+      <SuggestedLabel>Burn, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>S06.0X9</Value>
+      <Category>Injury</Category>
+      <SourceLabel>Concussion with loss of consciousness of unspecified duration</SourceLabel>
+      <SuggestedLabel>Concussion, with LOC</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>S06.0</Value>
+      <Category>Injury</Category>
+      <SourceLabel>Concussion</SourceLabel>
+      <SuggestedLabel>Concussion, without LOC</SuggestedLabel>
+      <Note>Includes S06.0X0A Concussion without loss of consciousness, initial encounter and S06.0X9A</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>T79.9</Value>
+      <Category>Injury</Category>
+      <SourceLabel>Unspecified early complication of trauma</SourceLabel>
+      <SuggestedLabel>Early complication of trauma</SuggestedLabel>
+      <Note>Includes T79.9XXA Unspecified early complication of trauma, initial encounter</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>S09.93</Value>
+      <Category>Injury</Category>
+      <SourceLabel>Unspecified injury of face</SourceLabel>
+      <SuggestedLabel>Facial injury</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>S99.92</Value>
+      <Category>Injury</Category>
+      <SourceLabel>Unspecified injury of foot</SourceLabel>
+      <SuggestedLabel>Foot injury</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>S59.91</Value>
+      <Category>Injury</Category>
+      <SourceLabel>Unspecified injury of forearm</SourceLabel>
+      <SuggestedLabel>Forearm injury</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>S09.90</Value>
+      <Category>Injury</Category>
+      <SourceLabel>Unspecified injury of head</SourceLabel>
+      <SuggestedLabel>Head injury</SuggestedLabel>
+      <Note>Includes S09.90XA Unspecified injury of head, initial encounter</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R58</Value>
+      <Category>Injury</Category>
+      <SourceLabel>Hemorrhage, not elsewhere classified</SourceLabel>
+      <SuggestedLabel>Hemorrhage</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>S79.91</Value>
+      <Category>Injury</Category>
+      <SourceLabel>Unspecified injury of hip</SourceLabel>
+      <SuggestedLabel>Hip injury</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>T14.90</Value>
+      <Category>Injury</Category>
+      <SourceLabel>Injury, unspecified</SourceLabel>
+      <SuggestedLabel>Injury, unspecified</SuggestedLabel>
+      <Note>Includes T14.8 Other injury of unspecified body region</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>S39.92</Value>
+      <Category>Injury</Category>
+      <SourceLabel>Unspecified injury of lower back</SourceLabel>
+      <SuggestedLabel>Lower back injury</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>S89.9</Value>
+      <Category>Injury</Category>
+      <SourceLabel>Unspecified injury of lower leg</SourceLabel>
+      <SuggestedLabel>Lower leg injury</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>T07</Value>
+      <Category>Injury</Category>
+      <SourceLabel>Unspecified multiple injuries</SourceLabel>
+      <SuggestedLabel>Multiple injuries</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>S19.9</Value>
+      <Category>Injury</Category>
+      <SourceLabel>Unspecified injury of neck</SourceLabel>
+      <SuggestedLabel>Neck injury</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>S39.93</Value>
+      <Category>Injury</Category>
+      <SourceLabel>Unspecified injury of pelvis</SourceLabel>
+      <SuggestedLabel>Pelvis injury</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>S49.9</Value>
+      <Category>Injury</Category>
+      <SourceLabel>Unspecified injury of shoulder and upper arm</SourceLabel>
+      <SuggestedLabel>Shoulder/upper arm injury</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>S79.92</Value>
+      <Category>Injury</Category>
+      <SourceLabel>Unspecified injury of thigh</SourceLabel>
+      <SuggestedLabel>Thigh injury</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>S29.9</Value>
+      <Category>Injury</Category>
+      <SourceLabel>Unspecified injury of thorax</SourceLabel>
+      <SuggestedLabel>Thorax injury</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>S69.9</Value>
+      <Category>Injury</Category>
+      <SourceLabel>Unspecified injury of wrist, hand and finger(s)</SourceLabel>
+      <SuggestedLabel>Wrist/hand/finger injury</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R41.82</Value>
+      <Category>Level of Consciousness</Category>
+      <SourceLabel>Altered mental status, unspecified</SourceLabel>
+      <SuggestedLabel>Altered mental status</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R40.4</Value>
+      <Category>Level of Consciousness</Category>
+      <SourceLabel>Transient alteration of awareness</SourceLabel>
+      <SuggestedLabel>Altered mental status, transient</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R41.0</Value>
+      <Category>Level of Consciousness</Category>
+      <SourceLabel>Disorientation, unspecified</SourceLabel>
+      <SuggestedLabel>Disoriented</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R55</Value>
+      <Category>Level of Consciousness</Category>
+      <SourceLabel>Syncope and collapse</SourceLabel>
+      <SuggestedLabel>Fainting/collapse</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R53.83</Value>
+      <Category>Malaise</Category>
+      <SourceLabel>Other fatigue</SourceLabel>
+      <SuggestedLabel>Fatigue</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R53.81</Value>
+      <Category>Malaise</Category>
+      <SourceLabel>Other malaise</SourceLabel>
+      <SuggestedLabel>Malaise (feeling unwell)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>M62.81</Value>
+      <Category>Malaise</Category>
+      <SourceLabel>Muscle weakness (generalized)</SourceLabel>
+      <SuggestedLabel>Muscle weakness</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R53.1</Value>
+      <Category>Malaise</Category>
+      <SourceLabel>Weakness</SourceLabel>
+      <SuggestedLabel>Weakness</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Z74.01</Value>
+      <Category>Mobility</Category>
+      <SourceLabel>Bed confinement status</SourceLabel>
+      <SuggestedLabel>Bedridden</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Z74.09</Value>
+      <Category>Mobility</Category>
+      <SourceLabel>Other reduced mobility</SourceLabel>
+      <SuggestedLabel>Reduced mobility</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R56.9</Value>
+      <Category>Neurological</Category>
+      <SourceLabel>Unspecified convulsions</SourceLabel>
+      <SuggestedLabel>Convulsions, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R42</Value>
+      <Category>Neurological</Category>
+      <SourceLabel>Dizziness and giddiness</SourceLabel>
+      <SuggestedLabel>Lightheaded/vertigo</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G40.909</Value>
+      <Category>Neurological</Category>
+      <SourceLabel>Epilepsy, unspecified, not intractable, without status epilepticus</SourceLabel>
+      <SuggestedLabel>Seizure, epileptic</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G40.89</Value>
+      <Category>Neurological</Category>
+      <SourceLabel>Other seizures</SourceLabel>
+      <SuggestedLabel>Seizure, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G40.901</Value>
+      <Category>Neurological</Category>
+      <SourceLabel>Epilepsy, unspecified, not intractable, with status epilepticus</SourceLabel>
+      <SuggestedLabel>Seizure, status epilepticus</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I63.9</Value>
+      <Category>Neurological</Category>
+      <SourceLabel>Cerebral infarction, unspecified</SourceLabel>
+      <SuggestedLabel>Stroke</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G45.9</Value>
+      <Category>Neurological</Category>
+      <SourceLabel>Transient cerebral ischemic attack, unspecified</SourceLabel>
+      <SuggestedLabel>TIA</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Z00.00</Value>
+      <Category>No Patient Complaint</Category>
+      <SourceLabel>Encounter for general adult medical examination without abnormal findings</SourceLabel>
+      <SuggestedLabel>Adult general exam, no finding</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Z00.129</Value>
+      <Category>No Patient Complaint</Category>
+      <SourceLabel>Encounter for routine child health examination without abnormal findings</SourceLabel>
+      <SuggestedLabel>Child general exam, no finding</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Z51.89</Value>
+      <Category>No Patient Complaint</Category>
+      <SourceLabel>Encounter for other specified aftercare</SourceLabel>
+      <SuggestedLabel>Encounter for aftercare</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Z71.1</Value>
+      <Category>No Patient Complaint</Category>
+      <SourceLabel>Person with feared health complaint in whom no diagnosis is made</SourceLabel>
+      <SuggestedLabel>Encounter, feared condition not observed</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Z00</Value>
+      <Category>No Patient Complaint</Category>
+      <SourceLabel>Encounter for general examination without complaint, suspected or reported diagnosis</SourceLabel>
+      <SuggestedLabel>General exam, no complaint</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Z04.9</Value>
+      <Category>No Patient Complaint</Category>
+      <SourceLabel>Encounter for examination and observation for unspecified reason</SourceLabel>
+      <SuggestedLabel>General exam, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Z03.89</Value>
+      <Category>No Patient Complaint</Category>
+      <SourceLabel>Encounter for observation for other suspected diseases and conditions ruled out</SourceLabel>
+      <SuggestedLabel>Observation only</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Z04.6</Value>
+      <Category>No Patient Complaint</Category>
+      <SourceLabel>Encounter for general psychiatric examination, requested by authority</SourceLabel>
+      <SuggestedLabel>Psych exam, requested by authority</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>T76</Value>
+      <Category>Other</Category>
+      <SourceLabel>Adult and child abuse, neglect and other maltreatment, suspected</SourceLabel>
+      <SuggestedLabel>Abuse/Neglect NOS, suspected</SuggestedLabel>
+      <Note>Added by request Jira NEMPUB-284</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>T78.40</Value>
+      <Category>Other</Category>
+      <SourceLabel>Allergy, unspecified</SourceLabel>
+      <SuggestedLabel>Allergic reaction, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>E86.0</Value>
+      <Category>Other</Category>
+      <SourceLabel>Dehydration</SourceLabel>
+      <SuggestedLabel>Dehydration</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>T67</Value>
+      <Category>Other</Category>
+      <SourceLabel>Effects of heat and light</SourceLabel>
+      <SuggestedLabel>Heat related (heat stroke/exhaustion)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>D49</Value>
+      <Category>Other</Category>
+      <SourceLabel>Neoplasms of unspecified behavior</SourceLabel>
+      <SuggestedLabel>New growth, tumor</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R99</Value>
+      <Category>Other</Category>
+      <SourceLabel>Ill-defined and unknown cause of mortality</SourceLabel>
+      <SuggestedLabel>Obvious death</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>M54.9</Value>
+      <Category>Pain</Category>
+      <SourceLabel>Dorsalgia, unspecified</SourceLabel>
+      <SuggestedLabel>Back pain, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R51</Value>
+      <Category>Pain</Category>
+      <SourceLabel>Headache</SourceLabel>
+      <SuggestedLabel>Headache</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>M79.6</Value>
+      <Category>Pain</Category>
+      <SourceLabel>Pain in limb, hand, foot, fingers and toes</SourceLabel>
+      <SuggestedLabel>Limb/hand/foot/fingers/toes pain</SuggestedLabel>
+      <Note>Includes M79.609 Pain in unspecified limb</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>M54.5</Value>
+      <Category>Pain</Category>
+      <SourceLabel>Low back pain</SourceLabel>
+      <SuggestedLabel>Lower back pain</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G89.1</Value>
+      <Category>Pain</Category>
+      <SourceLabel>Acute pain, not elsewhere classified</SourceLabel>
+      <SuggestedLabel>Pain, acute</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G89.11</Value>
+      <Category>Pain</Category>
+      <SourceLabel>Acute pain due to trauma</SourceLabel>
+      <SuggestedLabel>Pain, acute due to trauma</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G89.2</Value>
+      <Category>Pain</Category>
+      <SourceLabel>Chronic pain, not elsewhere classified</SourceLabel>
+      <SuggestedLabel>Pain, chronic</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R52</Value>
+      <Category>Pain</Category>
+      <SourceLabel>Pain, unspecified</SourceLabel>
+      <SuggestedLabel>Pain, NOS</SuggestedLabel>
+      <Note>Includes G89: Pain, not elsewhere classified (related to nervous system)</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R10.2</Value>
+      <Category>Pain</Category>
+      <SourceLabel>Pelvic and perineal pain</SourceLabel>
+      <SuggestedLabel>Pelvic/perineal pain</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O80</Value>
+      <Category>Reproductive System</Category>
+      <SourceLabel>Encounter for full-term uncomplicated delivery</SourceLabel>
+      <SuggestedLabel>Normal delivery</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O26.90</Value>
+      <Category>Reproductive System</Category>
+      <SourceLabel>Pregnancy related conditions, unspecified, unspecified trimester</SourceLabel>
+      <SuggestedLabel>Pregnancy related</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>N93.9</Value>
+      <Category>Reproductive System</Category>
+      <SourceLabel>Abnormal uterine and vaginal bleeding, unspecified</SourceLabel>
+      <SuggestedLabel>Vaginal bleeding, abnormal</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J45</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Asthma</SourceLabel>
+      <SuggestedLabel>Asthma</SuggestedLabel>
+      <Note>Includes J45.901 Unspecified asthma with (acute) exacerbation</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J98.01</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Acute bronchospasm</SourceLabel>
+      <SuggestedLabel>Bronchospasm, acute</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J00</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Acute nasopharyngitis [common cold]</SourceLabel>
+      <SuggestedLabel>Common cold</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J44.1</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Chronic obstructive pulmonary disease with (acute) exacerbation</SourceLabel>
+      <SuggestedLabel>COPD</SuggestedLabel>
+      <Note>Includes J44.9 Chronic obstructive pulmonary disease, unspecified</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R06.00</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Dyspnea, unspecified</SourceLabel>
+      <SuggestedLabel>Difficulty breathing</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J11</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Influenza due to unidentified influenza virus</SourceLabel>
+      <SuggestedLabel>Flu</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J81.0</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Acute pulmonary edema</SourceLabel>
+      <SuggestedLabel>Fluid in lungs</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R04.0</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Epistaxis</SourceLabel>
+      <SuggestedLabel>Nosebleed</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J18.9</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Pneumonia, unspecified organism</SourceLabel>
+      <SuggestedLabel>Pneumonia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J80</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Acute respiratory distress syndrome</SourceLabel>
+      <SuggestedLabel>Respiratory distress</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J96.9</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Respiratory failure, unspecified</SourceLabel>
+      <SuggestedLabel>Respiratory failure</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J98.9</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Respiratory disorder, unspecified</SourceLabel>
+      <SuggestedLabel>Respiratory, other disorder</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>R06.02</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Shortness of breath</SourceLabel>
+      <SuggestedLabel>Shortness of breath</SuggestedLabel>
+    </Code>
+  </Codes>
+</DefinedList>

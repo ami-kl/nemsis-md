@@ -1,0 +1,48 @@
+'Dataset'|'DatasetType'|'ElementNumber'|'ElementName'|'National'|'State'|'Airway'|'CardiacArrest'|'Pediatric'|'Response'|'STEMI'|'Stroke'|'Trauma'|
+'StateDataSet'|'element'|'sState.01'|'State'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'seCustomConfiguration.01'|'Patient Care Report Custom Data Element Title'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'seCustomConfiguration.02'|'Patient Care Report Custom Definition'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'seCustomConfiguration.03'|'Patient Care Report Custom Data Type'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'seCustomConfiguration.04'|'Patient Care Report Custom Data Element Recurrence'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'seCustomConfiguration.05'|'Patient Care Report Custom Data Element Usage'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'seCustomConfiguration.06'|'Patient Care Report Custom Data Element Potential Values'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'seCustomConfiguration.07'|'Patient Care Report Custom Data Element Potential NOT Values (NV)'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'seCustomConfiguration.08'|'Patient Care Report Custom Data Element Potential Pertinent Negative Values (PN)'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'seCustomConfiguration.09'|'Patient Care Report Custom Data Element Grouping ID'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sdCustomConfiguration.01'|'Agency Demographic Custom Data Element Title'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sdCustomConfiguration.02'|'Agency Demographic Custom Definition'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sdCustomConfiguration.03'|'Agency Demographic Custom Data Type'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sdCustomConfiguration.04'|'Agency Demographic Custom Data Element Recurrence'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sdCustomConfiguration.05'|'Agency Demographic Custom Data Element Usage'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sdCustomConfiguration.06'|'Agency Demographic Custom Data Element Potential Values'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sdCustomConfiguration.07'|'Agency Demographic Custom Data Element Potential NOT Values (NV)'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sdCustomConfiguration.08'|'Agency Demographic Custom Data Element Potential Pertinent Negative Values (PN)'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sdCustomConfiguration.09'|'Agency Demographic Custom Data Element Grouping ID'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sSoftware.01'|'Software Creator'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sSoftware.02'|'Software Name'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sSoftware.03'|'Software Version'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sElement.01'|'State Collected Element'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sConfiguration.01'|'State Certification/Licensure Levels'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sConfiguration.02'|'EMS Certification Levels Permitted to Perform Each Procedure'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'StateDataSet'|'element'|'sConfiguration.03'|'Procedures Permitted by the State'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'StateDataSet'|'element'|'sConfiguration.04'|'EMS Certification Levels Permitted to Administer Each Medication'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'StateDataSet'|'element'|'sConfiguration.05'|'Medications Permitted by the State'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'StateDataSet'|'element'|'sConfiguration.06'|'Protocols Permitted by the State'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'StateDataSet'|'element'|'sAgency.01'|'EMS Agency Unique State ID'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'StateDataSet'|'element'|'sAgency.02'|'EMS Agency Number'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'StateDataSet'|'element'|'sAgency.03'|'EMS Agency Name'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'StateDataSet'|'element'|'sFacility.01'|'Type of Facility'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sFacility.02'|'Facility Name'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sFacility.03'|'Facility Location Code'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sFacility.04'|'Hospital Designations'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sFacility.05'|'Facility National Provider Identifier'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sFacility.06'|'Facility Room, Suite, or Apartment'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sFacility.07'|'Facility Street Address'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sFacility.08'|'Facility City'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sFacility.09'|'Facility State'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sFacility.10'|'Facility ZIP Code'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sFacility.11'|'Facility County'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sFacility.12'|'Facility Country'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sFacility.13'|'Facility GPS Location'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sFacility.14'|'Facility US National Grid Coordinates'|'National'|'State'|''|''|''|''|''|''|''|
+'StateDataSet'|'element'|'sFacility.15'|'Facility Phone Number'|'National'|'State'|''|''|''|''|''|''|''|

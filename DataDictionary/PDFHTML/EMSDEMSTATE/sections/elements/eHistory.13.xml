@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eHistory.13"  minOccurs="0"  maxOccurs="1"  dataTypeName="CurrentMedicationDose"  isNillable="No">
+<name>Current Medication Dose</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The numeric dose or amount of the patient's current medication.</definition>
+<v2Number>E12_15</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Associated with eHistory.12 (Current Medications)</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <CurrentMedicationDose baseType="decimal">
+    <facet name="totalDigits" value="9"/>
+    <facet name="fractionDigits" value="3"/>
+  </CurrentMedicationDose>
+</restrictions>
+</element>

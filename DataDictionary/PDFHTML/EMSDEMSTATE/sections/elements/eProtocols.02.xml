@@ -1,0 +1,36 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eProtocols.02"  minOccurs="0"  maxOccurs="1"  dataTypeName="ProtocolAgeCategory"  isNillable="Yes">
+<name>Protocol Age Category</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The age group the protocol is written to address.</definition>
+<v2Number></v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Protocols are grouped into Airway, Environmental, Exposure, General, Injury, Medical, and OB/GYN.  -There is a new data element to indicate whether the protocol is Adult, Pediatric, or General (both).</v3Comment>
+<v3Changes>Added to better document protocol use.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ProtocolAgeCategory baseType="string">
+    <facet name="enumeration" value="3602001" annotation="Adult Only"/>
+    <facet name="enumeration" value="3602003" annotation="General"/>
+    <facet name="enumeration" value="3602005" annotation="Pediatric Only"/>
+  </ProtocolAgeCategory>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When Protocol Age Category has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Protocol Age Category is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

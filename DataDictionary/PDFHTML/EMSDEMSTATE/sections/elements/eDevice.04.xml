@@ -1,0 +1,40 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDevice.04"  minOccurs="0"  maxOccurs="1"  dataTypeName="GraphicType"  isNillable="No">
+<name>Medical Device Waveform Graphic Type</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The description of the waveform file stored in Waveform Graphic (eDevice.05).</definition>
+<v2Number>E21_03</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>STEMI</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>The description is defined as the extension of the file type.  
+																	Examples of file name extensions include "doc", "jpeg", "tiff", etc.  For a list of additional extensions reference the following website(s):
+<br/>
+<table><tr><td width="10px"></td><td>
+<table>
+<tr><td>3D Image formats: <span style="color:blue">http://www.fileinfo.com/filetypes/3d_image</span></td></tr> 
+<tr><td>Raster Image formats: <span style="color:blue">http://www.fileinfo.com/filetypes/raster_image</span></td></tr> 
+<tr><td>Vector Image formats: <span style="color:blue">http://www.fileinfo.com/filetypes/vector_image</span></td></tr> 
+<tr><td><br/></td></tr>
+<tr><td>Video formats: <span style="color:blue">http://www.fileinfo.com/filetypes/video</span></td></tr> 
+<tr><td>Audio formats: <span style="color:blue">http://www.fileinfo.com/filetypes/audio</span></td></tr> 
+<tr><td><br/></td></tr>
+<tr><td>Comparison of formats:</td></tr> 
+<tr><td>Image: <span style="color:blue">http://en.wikipedia.org/wiki/Comparison_of_image_file_formats</span></td></tr> 
+<tr><td>Audio: <span style="color:blue">http://en.wikipedia.org/wiki/Audio_file_format</span></td></tr> 
+<tr><td>Container: <span style="color:blue">http://en.wikipedia.org/wiki/Comparison_of_container_formats</span></td></tr> 
+<tr><td><br/></td></tr>
+<tr><td>A general list of image formats: <span style="color:blue">http://en.wikipedia.org/wiki/Image_file_formats</span></td></tr> 
+<tr><td>Mime Types: <span style="color:blue">http://en.wikipedia.org/wiki/Internet_media_type</span></td></tr>
+</table>
+</td></tr></table></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <GraphicType baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="255"/>
+  </GraphicType>
+</restrictions>
+</element>

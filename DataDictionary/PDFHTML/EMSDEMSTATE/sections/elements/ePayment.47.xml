@@ -1,0 +1,29 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.47"  minOccurs="0"  maxOccurs="M"  dataTypeName="AmbulanceConditionsIndicator"  isNillable="No">
+<name>Ambulance Conditions Indicator</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>Documentation of the CRC03 through CRC07 requirements for CMS billing using X12 transactions.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Added to improve billing documentation and justification.</v3Comment>
+<v3Changes>Added to improve billing with electronic claims using X12. The Codes and Descriptors updated Sept 2013 to meet the X12 5010 standard.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <AmbulanceConditionsIndicator baseType="string">
+    <facet name="enumeration" value="01" annotation="Patient was admitted to a hospital"/>
+    <facet name="enumeration" value="04" annotation="Patient was moved by stretcher"/>
+    <facet name="enumeration" value="05" annotation="Patient was unconscious or in shock"/>
+    <facet name="enumeration" value="06" annotation="Patient was transported in an emergency situation"/>
+    <facet name="enumeration" value="07" annotation="Patient had to be physically restrained"/>
+    <facet name="enumeration" value="08" annotation="Patient had visible hemorrhaging"/>
+    <facet name="enumeration" value="09" annotation="Ambulance service was medically necessary"/>
+    <facet name="enumeration" value="12" annotation="Patient is confined to a bed or chair (Use code 12 to indicate patient was bedridden during transport.)"/>
+  </AmbulanceConditionsIndicator>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

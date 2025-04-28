@@ -1,0 +1,42 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eExam.21"  minOccurs="0"  maxOccurs="1"  dataTypeName="StrokeCVASymptomsResolved"  isNillable="Yes">
+<name>Stroke/CVA Symptoms Resolved</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Indication if the Stroke/CVA Symptoms resolved and when.</definition>
+<v2Number></v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup><performanceMeasure>Stroke</performanceMeasure></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <StrokeCVASymptomsResolved baseType="string">
+    <facet name="enumeration" value="3521001" annotation="No"/>
+    <facet name="enumeration" value="3521003" annotation="Yes-Resolved Prior to EMS Arrival"/>
+    <facet name="enumeration" value="3521005" annotation="Yes-Resolved in EMS Presence"/>
+  </StrokeCVASymptomsResolved>
+</restrictions>
+<attributes>
+  <PN>
+    <PN.UnableToComplete><facet name="enumeration" value="8801023" annotation="Unable to Complete"/></PN.UnableToComplete>
+  </PN>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e008" role="Error">
+      When Stroke/CVA Symptoms Resolved has a Pertinent Negative, it should be empty and it should not have a Not Value (Not Applicable, Not Recorded, or Not Reporting).
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Stroke/CVA Symptoms Resolved has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Stroke/CVA Symptoms Resolved is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

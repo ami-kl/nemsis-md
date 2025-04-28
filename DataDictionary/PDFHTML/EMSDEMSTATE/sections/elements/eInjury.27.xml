@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eInjury.27"  minOccurs="0"  maxOccurs="1"  dataTypeName="ACNYesNoType"  isNillable="No">
+<name>Seat Occupied</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>Indication if seat is occupied based on seat sensor data.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Based on Vehicular Emergency Data Set:  Occupied - Associated with each seat. Vehicular Emergency Data Set (VEDS) Recommendations. Version 3.0 Prepared: (February 2011) by the Advanced Automatic Crash Notification (AACN)Joint APCO/NENA Data Standardization Working Group.</v3Comment>
+<v3Changes>Added to better incorporate advanced automated collision notification information.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ACNYesNoType baseType="string">
+    <facet name="enumeration" value="Y" annotation="Yes"/>
+    <facet name="enumeration" value="N" annotation="No"/>
+  </ACNYesNoType>
+</restrictions>
+</element>

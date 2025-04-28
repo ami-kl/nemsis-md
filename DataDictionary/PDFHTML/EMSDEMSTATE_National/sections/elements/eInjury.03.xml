@@ -1,0 +1,68 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eInjury.03"  minOccurs="1"  maxOccurs="M"  dataTypeName="TraumaTriageCriteriaSteps1and2"  isNillable="Yes">
+<name>Trauma Triage Criteria (High Risk for Serious Injury)</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Trauma triage criteria for the red boxes (Injury Patterns and Mental Status and Vital Signs) in the 2021 ACS National Guideline for the Field Triage of Injured Patients.</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>2021 National Guidelines for the Field Triage of Injured Patients - Red Criteria (i.e., Injury Patterns, Mental Status &amp; Vital Signs)</v3Comment>
+<v3Changes>Revised to represent the 2021 National Guidelines for the Field Triage of Injured Patients - Red Criteria.  Website: <a href="https://www.facs.org/quality-programs/trauma/systems/field-triage-guidelines/" target="_blank">https://www.facs.org/quality-programs/trauma/systems/field-triage-guidelines/</a></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <TraumaTriageCriteriaSteps1and2 baseType="string">
+    <facet name="enumeration" value="2903001" annotation="Amputation proximal to wrist or ankle"/>
+    <facet name="enumeration" value="2903003" annotation="Crushed, degloved, mangled, or pulseless extremity"/>
+    <facet name="enumeration" value="2903005" annotation="Chest wall instability, deformity, or suspected flail chest"/>
+    <facet name="enumeration" value="2903007" annotation="Glasgow Coma Score &lt;= 13 (DEPRECATED)"/>
+    <facet name="enumeration" value="2903009" annotation="Skull deformity, suspected skull fracture"/>
+    <facet name="enumeration" value="2903011" annotation="Paralysis (DEPRECATED)"/>
+    <facet name="enumeration" value="2903013" annotation="Suspected pelvic fracture"/>
+    <facet name="enumeration" value="2903015" annotation="Penetrating injuries to head, neck, torso, and proximal extremities"/>
+    <facet name="enumeration" value="2903017" annotation="Respiratory Rate  &lt;10 or &gt;29 breaths per minute (&lt;20 in infants aged &lt;1 year) or need for ventilatory support (DEPRECATED)"/>
+    <facet name="enumeration" value="2903019" annotation="Systolic Blood Pressure &lt;90 mmHg (DEPRECATED)"/>
+    <facet name="enumeration" value="2903021" annotation="Suspected fracture of two or more proximal long bones"/>
+    <facet name="enumeration" value="2903023" annotation="Active bleeding requiring a tourniquet or wound packing with continuous pressure"/>
+    <facet name="enumeration" value="2903025" annotation="Age &gt;= 10 years: HR &gt; SBP"/>
+    <facet name="enumeration" value="2903027" annotation="Age &gt;= 65 years: SBP &lt; 110 mmHg"/>
+    <facet name="enumeration" value="2903029" annotation="Age 0-9 years: SBP &lt; 70mm Hg + (2 x age in years)"/>
+    <facet name="enumeration" value="2903031" annotation="Age 10-64 years: SBP &lt; 90 mmHg"/>
+    <facet name="enumeration" value="2903033" annotation="Respiratory distress or need for respiratory support"/>
+    <facet name="enumeration" value="2903035" annotation="Room-air pulse oximetry &lt; 90%"/>
+    <facet name="enumeration" value="2903037" annotation="RR &lt; 10 or &gt; 29 breaths/min"/>
+    <facet name="enumeration" value="2903039" annotation="Suspected spinal injury with new motor or sensory loss"/>
+    <facet name="enumeration" value="2903041" annotation="Unable to follow commands (motor GCS &lt; 6)"/>
+  </TraumaTriageCriteriaSteps1and2>
+</restrictions>
+<attributes>
+  <PN>
+    <PN.NoneReported><facet name="enumeration" value="8801015" annotation="None Reported"/></PN.NoneReported>
+  </PN>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e091" role="Warning">
+      <elementRef elementNumber="eInjury.03">Trauma Triage Criteria (High Risk for Serious Injury)</elementRef> should only be recorded when <elementRef elementNumber="eSituation.02">Possible Injury</elementRef> is &quot;Yes&quot;.
+      </assert>
+  <assert id="nemSch_e008" role="Error">
+      When Trauma Triage Criteria (High Risk for Serious Injury) has a Pertinent Negative, it should be empty and it should not have a Not Value (Not Applicable, Not Recorded, or Not Reporting).
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Trauma Triage Criteria (High Risk for Serious Injury) has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Trauma Triage Criteria (High Risk for Serious Injury) is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Trauma Triage Criteria (High Risk for Serious Injury) has a Not Value, no other value should be recorded.
+      </assert>
+  <assert id="nemSch_e010" role="Warning">
+      When Trauma Triage Criteria (High Risk for Serious Injury) has a Pertinent Negative, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

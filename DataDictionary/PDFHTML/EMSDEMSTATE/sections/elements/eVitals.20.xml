@@ -1,0 +1,44 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eVitals.20"  minOccurs="1"  maxOccurs="1"  dataTypeName="GlasgowComaScoreVerbal"  isNillable="Yes">
+<name>Glasgow Coma Score-Verbal</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The patient's Glasgow Coma Score Verbal response.</definition>
+<v2Number>E14_16</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Definitions now based on the National Trauma Data Standard (NTDS).</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <GlasgowComaScoreVerbal baseType="string">
+    <facet name="enumeration" value="1" annotation="No verbal/vocal response (All Age Groups)"/>
+    <facet name="enumeration" value="2" annotation="Incomprehensible sounds (&gt;2 Years); Inconsolable, agitated"/>
+    <facet name="enumeration" value="3" annotation="Inappropriate words (&gt;2 Years); Inconsistently consolable, moaning"/>
+    <facet name="enumeration" value="4" annotation="Confused (&gt;2 Years); Cries but is consolable, inappropriate interactions"/>
+    <facet name="enumeration" value="5" annotation="Oriented (&gt;2 Years); Smiles, oriented to sounds, follows objects, interacts"/>
+  </GlasgowComaScoreVerbal>
+</restrictions>
+<attributes>
+  <PN>
+    <PN.Refused><facet name="enumeration" value="8801019" annotation="Refused"/></PN.Refused>
+    <PN.UnableToComplete><facet name="enumeration" value="8801023" annotation="Unable to Complete"/></PN.UnableToComplete>
+  </PN>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e008" role="Error">
+      When Glasgow Coma Score-Verbal has a Pertinent Negative, it should be empty and it should not have a Not Value (Not Applicable, Not Recorded, or Not Reporting).
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Glasgow Coma Score-Verbal has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Glasgow Coma Score-Verbal is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

@@ -1,0 +1,41 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eVitals.04"  minOccurs="1"  maxOccurs="1"  dataTypeName="ECGType"  isNillable="Yes">
+<name>ECG Type</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The type of ECG associated with the cardiac rhythm.</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>STEMI</performanceMeasure></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes>Added to better document ECG results.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ECGType baseType="string">
+    <facet name="enumeration" value="3304000" annotation="2 Lead ECG (pads or paddles)"/>
+    <facet name="enumeration" value="3304001" annotation="3 Lead"/>
+    <facet name="enumeration" value="3304003" annotation="4 Lead"/>
+    <facet name="enumeration" value="3304005" annotation="5 Lead"/>
+    <facet name="enumeration" value="3304007" annotation="12 Lead-Left Sided (Normal)"/>
+    <facet name="enumeration" value="3304009" annotation="12 Lead-Right Sided"/>
+    <facet name="enumeration" value="3304011" annotation="15 Lead"/>
+    <facet name="enumeration" value="3304013" annotation="18 Lead"/>
+    <facet name="enumeration" value="3304015" annotation="Other"/>
+  </ECGType>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When ECG Type has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When ECG Type is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

@@ -1,0 +1,19 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dPersonnel.28"  minOccurs="0"  maxOccurs="1"  dataTypeName="NationalRegistryNumber"  isNillable="No">
+<name>EMS Personnel's National Registry Number</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The National Registry number associated with the level of certification/licensure obtained through NREMT.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <NationalRegistryNumber baseType="string">
+    <facet name="pattern" value="[A-Z][A-Z0-9][0-9]{6}"/>
+  </NationalRegistryNumber>
+</restrictions>
+</element>

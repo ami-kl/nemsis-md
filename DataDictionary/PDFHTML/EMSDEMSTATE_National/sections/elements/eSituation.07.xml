@@ -1,0 +1,41 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eSituation.07"  minOccurs="1"  maxOccurs="1"  dataTypeName="ComplaintAnatomicLocation"  isNillable="Yes">
+<name>Chief Complaint Anatomic Location</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The primary anatomic location of the chief complaint as identified by EMS personnel.</definition>
+<v2Number>E09_11</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>eSituation.02 (Possible Injury), eSituation.09 (Primary Symptom), eSituation.07 (Chief Complaint Anatomic Location), and eSituation.08 (Chief Complaint Organ System) are grouped together to form the EMS Reason for Encounter.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ComplaintAnatomicLocation baseType="string">
+    <facet name="enumeration" value="2807001" annotation="Abdomen"/>
+    <facet name="enumeration" value="2807003" annotation="Back"/>
+    <facet name="enumeration" value="2807005" annotation="Chest"/>
+    <facet name="enumeration" value="2807007" annotation="Extremity-Lower"/>
+    <facet name="enumeration" value="2807009" annotation="Extremity-Upper"/>
+    <facet name="enumeration" value="2807011" annotation="General/Global"/>
+    <facet name="enumeration" value="2807013" annotation="Genitalia"/>
+    <facet name="enumeration" value="2807015" annotation="Head"/>
+    <facet name="enumeration" value="2807017" annotation="Neck"/>
+  </ComplaintAnatomicLocation>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When Chief Complaint Anatomic Location has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Chief Complaint Anatomic Location is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

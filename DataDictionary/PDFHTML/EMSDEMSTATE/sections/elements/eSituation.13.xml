@@ -1,0 +1,43 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eSituation.13"  minOccurs="1"  maxOccurs="1"  dataTypeName="InitialPatientAcuity"  isNillable="Yes">
+<name>Initial Patient Acuity</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The acuity of the patient's condition upon this EMS unit's arrival at scene.</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Definitions related to "Critical, Emergent, and Lower Acuity" can be found in the National EMS Core Content document from NHTSA EMS (DOT HS 809-898 July 2005) at 
+								<br/><a href="https://www.ems.gov/assets/National_EMS_Core_Content.pdf">https://www.ems.gov/assets/National_EMS_Core_Content.pdf</a> 
+							<br/><br/>Dead without Resuscitation Efforts would be appropriate if resuscitation was initiated by non-EMS personnel but discontinued immediately upon evaluation by first arriving EMS personnel.
+							<br/><br/>"Non-Acute/Routine" added for use with patients with no clinical issues-such as refusal for a lift assist-or for routine transfers.</v3Comment>
+<v3Changes>With the release of V3.5.0 additional values were added to meet the needs of EMS.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <InitialPatientAcuity baseType="string">
+    <facet name="enumeration" value="2813001" annotation="Critical (Red)"/>
+    <facet name="enumeration" value="2813003" annotation="Emergent (Yellow)"/>
+    <facet name="enumeration" value="2813005" annotation="Lower Acuity (Green)"/>
+    <facet name="enumeration" value="2813007" annotation="Dead without Resuscitation Efforts (Black)"/>
+    <facet name="enumeration" value="2813009" annotation="Non-Acute/Routine"/>
+  </InitialPatientAcuity>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e084" role="Warning">
+      <elementRef elementNumber="eSituation.13">Initial Patient Acuity</elementRef> should be recorded when <elementRef elementNumber="eResponse.05">Type of Service Requested</elementRef> is &quot;Emergency Response (Primary Response Area)&quot; and <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Initial Patient Acuity has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Initial Patient Acuity is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

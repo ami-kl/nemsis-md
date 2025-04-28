@@ -1,0 +1,370 @@
+<?xml-stylesheet type="text/xsl" href="https://nemsis.org/media/nemsis_v3/release-3.5.1/DefinedLists/DefinedListHtml.xsl"?><DefinedList xmlns="http://www.nemsis.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" date="2025-01-14" xsi:schemaLocation="http://www.nemsis.org https://nemsis.org/media/nemsis_v3/release-3.5.1/DefinedLists/DefinedLists.xsd">
+  <Header>
+    <SourceVocabularies>
+      <SourceVocabulary url="https://www.nlm.nih.gov/research/umls/rxnorm/index.html">RxNorm</SourceVocabulary>
+      <SourceVocabulary url="https://www.nlm.nih.gov/healthit/snomedct/index.html">SNOMED-CT</SourceVocabulary>
+    </SourceVocabularies>
+    <NemsisTypes>
+      <NemsisType>Medication</NemsisType>
+    </NemsisTypes>
+    <NemsisElements>
+      <NemsisElement>eMedications.03</NemsisElement>
+      <NemsisElement>dConfiguration.09</NemsisElement>
+      <NemsisElement>sConfiguration.05</NemsisElement>
+    </NemsisElements>
+  </Header>
+  <Codes>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">161</Value>
+      <SourceLabel>acetaminophen</SourceLabel>
+      <SuggestedLabel>Acetaminophen (Tylenol)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">296</Value>
+      <SourceLabel>adenosine</SourceLabel>
+      <SuggestedLabel>Adenosine (Adenocard)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">435</Value>
+      <SourceLabel>albuterol</SourceLabel>
+      <SuggestedLabel>Albuterol (Proventil, Ventolin, AccuNeb)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">214199</Value>
+      <SourceLabel>albuterol / ipratropium</SourceLabel>
+      <SuggestedLabel>Albuterol / Ipratropium (Combivent, Duoneb)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">703</Value>
+      <SourceLabel>amiodarone</SourceLabel>
+      <SuggestedLabel>Amiodarone (Cordarone)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">1191</Value>
+      <SourceLabel>aspirin</SourceLabel>
+      <SuggestedLabel>Aspirin</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">1223</Value>
+      <SourceLabel>atropine</SourceLabel>
+      <SuggestedLabel>Atropine</SuggestedLabel>
+    </Code>
+    <Code date="2024-07-08">
+      <Value CodeType="9924003">1819</Value>
+      <SourceLabel>buprenorphine</SourceLabel>
+      <SuggestedLabel>Buprenorphine</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">1901</Value>
+      <SourceLabel>calcium chloride</SourceLabel>
+      <SuggestedLabel>Calcium chloride</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">1908</Value>
+      <SourceLabel>calcium gluconate</SourceLabel>
+      <SuggestedLabel>Calcium gluconate (Calgonate)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">2193</Value>
+      <SourceLabel>ceftriaxone</SourceLabel>
+      <SuggestedLabel>Ceftriaxone (Rocephin)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">3264</Value>
+      <SourceLabel>dexamethasone</SourceLabel>
+      <SuggestedLabel>Dexamethasone (Decadron)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">1795477</Value>
+      <SourceLabel>500 ML glucose 100 MG/ML Injection</SourceLabel>
+      <SuggestedLabel>Dextrose 10% (D10)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">260258</Value>
+      <SourceLabel>glucose 250 MG/ML Injectable Solution</SourceLabel>
+      <SuggestedLabel>Dextrose 25% (D25)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">237653</Value>
+      <SourceLabel>glucose 500 MG/ML Injectable Solution</SourceLabel>
+      <SuggestedLabel>Dextrose 50% (D50)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">3322</Value>
+      <SourceLabel>diazepam</SourceLabel>
+      <SuggestedLabel>Diazepam (Valium)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">3443</Value>
+      <SourceLabel>diltiazem</SourceLabel>
+      <SuggestedLabel>Diltiazem (Cardizem)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">3498</Value>
+      <SourceLabel>diphenhydramine</SourceLabel>
+      <SuggestedLabel>Diphenhydramine (Bendadryl)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">3628</Value>
+      <SourceLabel>dopamine</SourceLabel>
+      <SuggestedLabel>Dopamine</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">328316</Value>
+      <SourceLabel>epinephrine 1 MG/ML</SourceLabel>
+      <SuggestedLabel>Epinephrine 1 mg/ml (Epi 1:1,000)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">317361</Value>
+      <SourceLabel>epinephrine 0.1 MG/ML</SourceLabel>
+      <SuggestedLabel>Epinephrine 0.1 mg/ml (Epi 1:10,000)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">4177</Value>
+      <SourceLabel>etomidate</SourceLabel>
+      <SuggestedLabel>Etomidate (Amidate)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">4337</Value>
+      <SourceLabel>fentanyl</SourceLabel>
+      <SuggestedLabel>Fentanyl</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">4603</Value>
+      <SourceLabel>furosemide</SourceLabel>
+      <SuggestedLabel>Furosemide (Lasix)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">4832</Value>
+      <SourceLabel>glucagon</SourceLabel>
+      <SuggestedLabel>Glucagon (GlucaGen)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">4850</Value>
+      <SourceLabel>glucose</SourceLabel>
+      <SuggestedLabel>Glucose</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">5093</Value>
+      <SourceLabel>haloperidol</SourceLabel>
+      <SuggestedLabel>Haloperidol (Haldol)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">5224</Value>
+      <SourceLabel>heparin</SourceLabel>
+      <SuggestedLabel>Heparin</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">3423</Value>
+      <SourceLabel>hydromorphone</SourceLabel>
+      <SuggestedLabel>Hydromorphone (Dilaudid)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">1605101</Value>
+      <SourceLabel>insulin isophane</SourceLabel>
+      <SuggestedLabel>Insulin (Humulin)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">7213</Value>
+      <SourceLabel>ipratropium</SourceLabel>
+      <SuggestedLabel>Ipratropium (Atrovent)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">6130</Value>
+      <SourceLabel>ketamine</SourceLabel>
+      <SuggestedLabel>Ketamine (Ketalar)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">35827</Value>
+      <SourceLabel>ketorolac</SourceLabel>
+      <SuggestedLabel>Ketorolac (Toradol)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">6185</Value>
+      <SourceLabel>labetalol</SourceLabel>
+      <SuggestedLabel>Labetalol (Normodyne)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">1008377</Value>
+      <SourceLabel>calcium chloride / lactate / potassium chloride / sodium chloride</SourceLabel>
+      <SuggestedLabel>Lactated ringers (LR, RL)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">237159</Value>
+      <SourceLabel>levalbuterol</SourceLabel>
+      <SuggestedLabel>Levalbuterol (Xopenex)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">6387</Value>
+      <SourceLabel>lidocaine</SourceLabel>
+      <SuggestedLabel>Lidocaine</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">6470</Value>
+      <SourceLabel>lorazepam</SourceLabel>
+      <SuggestedLabel>Lorazepam (Ativan)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">6585</Value>
+      <SourceLabel>magnesium sulfate</SourceLabel>
+      <SuggestedLabel>Magnesium sulfate</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">6902</Value>
+      <SourceLabel>methylprednisolone</SourceLabel>
+      <SuggestedLabel>Methylprednisolone (Solu-Medrol)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">6918</Value>
+      <SourceLabel>metoprolol</SourceLabel>
+      <SuggestedLabel>Metoprolol (Lopressor)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">6960</Value>
+      <SourceLabel>midazolam</SourceLabel>
+      <SuggestedLabel>Midazolam</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">7052</Value>
+      <SourceLabel>morphine</SourceLabel>
+      <SuggestedLabel>Morphine</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">7242</Value>
+      <SourceLabel>naloxone</SourceLabel>
+      <SuggestedLabel>Naloxone (Narcan)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">7396</Value>
+      <SourceLabel>nicardipine</SourceLabel>
+      <SuggestedLabel>Nicardipine (Cardene)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">4917</Value>
+      <SourceLabel>nitroglycerin</SourceLabel>
+      <SuggestedLabel>Nitroglycerin</SuggestedLabel>
+      <Note>Includes spray, tab, paste</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">7512</Value>
+      <SourceLabel>norepinephrine</SourceLabel>
+      <SuggestedLabel>Norepinephrine (Levophed)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">26225</Value>
+      <SourceLabel>ondansetron</SourceLabel>
+      <SuggestedLabel>Ondansetron (Zofran)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">7806</Value>
+      <SourceLabel>oxygen</SourceLabel>
+      <SuggestedLabel>Oxygen</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">8163</Value>
+      <SourceLabel>phenylephrine</SourceLabel>
+      <SuggestedLabel>Phenylephrine (Sudafed)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">8591</Value>
+      <SourceLabel>potassium chloride</SourceLabel>
+      <SuggestedLabel>Potassium chloride</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">8745</Value>
+      <SourceLabel>promethazine</SourceLabel>
+      <SuggestedLabel>Promethazine (Phenergan)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">8782</Value>
+      <SourceLabel>propofol</SourceLabel>
+      <SuggestedLabel>Propofol (Diprivan)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">68139</Value>
+      <SourceLabel>rocuronium</SourceLabel>
+      <SuggestedLabel>Rocuronium (Zemuron)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">36676</Value>
+      <SourceLabel>sodium bicarbonate</SourceLabel>
+      <SuggestedLabel>Sodium bicarbonate</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">313002</Value>
+      <SourceLabel>sodium chloride 9 MG/ML Injectable Solution</SourceLabel>
+      <SuggestedLabel>Sodium chloride (Normal Saline)</SuggestedLabel>
+      <Note>Includes Sodium Chloride Irrigation, Sodium Chloride 0.154 Injectable; 11/20/20 Updated the RXNorm code from 1807639 to 313002 to reflect accurate EMS application. Updated RXNorm description to match the updated code.</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">10154</Value>
+      <SourceLabel>succinylcholine</SourceLabel>
+      <SuggestedLabel>Succinylcholine (Anectine)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">10368</Value>
+      <SourceLabel>terbutaline</SourceLabel>
+      <SuggestedLabel>Terbutaline (Brethine)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">10454</Value>
+      <SourceLabel>thiamine</SourceLabel>
+      <SuggestedLabel>Thiamine</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">10691</Value>
+      <SourceLabel>tranexamic acid</SourceLabel>
+      <SuggestedLabel>Tranexamic acid (TXA)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">11124</Value>
+      <SourceLabel>vancomycin</SourceLabel>
+      <SuggestedLabel>Vancomycin</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">11149</Value>
+      <SourceLabel>vasopressin (USP)</SourceLabel>
+      <SuggestedLabel>Vasopressin</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924003">71535</Value>
+      <SourceLabel>vecuronium</SourceLabel>
+      <SuggestedLabel>Vecuronium (Norcuron)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924005">116762002</Value>
+      <SourceLabel>Administration of blood product</SourceLabel>
+      <SuggestedLabel>Blood product</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924005">116795008</Value>
+      <SourceLabel>Transfusion of cryoprecipitate</SourceLabel>
+      <SuggestedLabel>Cryoprecipitate</SuggestedLabel>
+    </Code>
+    <Code date="2025-01-14">
+      <Value CodeType="9924005">116861002</Value>
+      <SourceLabel>Transfusion of fresh frozen plasma</SourceLabel>
+      <SuggestedLabel>Plasma</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924005">116865006</Value>
+      <SourceLabel>Administration of albumin</SourceLabel>
+      <SuggestedLabel>Albumin</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924005">180208003</Value>
+      <SourceLabel>Intravenous blood transfusion of platelets</SourceLabel>
+      <SuggestedLabel>Platelets</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924005">33389009</Value>
+      <SourceLabel>Transfusion of whole blood</SourceLabel>
+      <SuggestedLabel>Whole blood</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value CodeType="9924005">71493000</Value>
+      <SourceLabel>Transfusion of packed red blood cells</SourceLabel>
+      <SuggestedLabel>Packed red blood cells (RBC)</SuggestedLabel>
+    </Code>
+  </Codes>
+</DefinedList>

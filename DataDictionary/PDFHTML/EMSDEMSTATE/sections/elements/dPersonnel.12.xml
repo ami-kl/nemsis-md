@@ -1,0 +1,39 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dPersonnel.12"  minOccurs="0"  maxOccurs="1"  dataTypeName="Gender"  isNillable="Yes">
+<name>EMS Personnel's Gender (DEPRECATED)</name>
+<national>No</national>
+<deprecated>Yes</deprecated>
+<state>Yes</state>
+<definition>The personnel's gender. (DEPRECATED)</definition>
+<v2Number>DEPRECATED</v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment>The NEMSIS Program is funded by the National Highway Traffic Safety Administration and this element was modified to comply with President Trump’s Executive Orders.</deprecatedComment>
+<restrictions>
+  <Gender baseType="string">
+    <facet name="enumeration" value="9906001" annotation="Female (DEPRECATED)"/>
+    <facet name="enumeration" value="9906003" annotation="Male (DEPRECATED)"/>
+    <facet name="enumeration" value="9906007" annotation="Female-to-Male, Transgender Male (DEPRECATED)"/>
+    <facet name="enumeration" value="9906009" annotation="Male-to-Female, Transgender Female (DEPRECATED)"/>
+    <facet name="enumeration" value="9906011" annotation="Other, neither exclusively male or female (DEPRECATED)"/>
+    <facet name="enumeration" value="9906005" annotation="Unknown (Unable to Determine) (DEPRECATED)"/>
+  </Gender>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_d002" role="Error">
+      When EMS Personnel's Gender (DEPRECATED) has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_d001" role="Error">
+      When EMS Personnel's Gender (DEPRECATED) is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

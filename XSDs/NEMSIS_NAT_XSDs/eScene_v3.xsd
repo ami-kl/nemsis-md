@@ -1,0 +1,505 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.nemsis.org" targetNamespace="http://www.nemsis.org" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="commonTypes_v3.xsd"></xs:include>
+	<xs:complexType name="eScene" id="eScene.Scene">
+		<xs:sequence>
+			<xs:element name="eScene.01" nillable="true" id="eScene.FirstEMSUnitonScene">
+				<xs:annotation>
+					<xs:documentation>
+						<nemsisTacDoc>
+							<number>eScene.01</number>
+							<name>First EMS Unit on Scene</name>
+							<national>Yes</national>
+							<state>Yes</state>
+							<definition>Documentation that this EMS Unit was the first EMS Unit among all EMS Agencies on the Scene.</definition>
+							<usage>Required</usage>
+							<comment>Added to improve the evaluation of Response Times when multiple EMS units are responding to the same scene.</comment>
+						</nemsisTacDoc>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="YesNoValues">
+							<xs:attribute name="NV" use="optional">
+								<xs:simpleType>
+									<xs:union memberTypes="NV.NotApplicable NV.NotRecorded"></xs:union>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			
+			
+			<xs:element name="eScene.06" nillable="true" id="eScene.NumberofPatientsatScene">
+				<xs:annotation>
+					<xs:documentation>
+						<nemsisTacDoc>
+							<number>eScene.06</number>
+							<name>Number of Patients at Scene</name>
+							<national>Yes</national>
+							<state>Yes</state>
+							<definition>Indicator of how many total patients were at the scene.</definition>
+							<v2Number>E08_05</v2Number>
+							<usage>Required</usage>
+						</nemsisTacDoc>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="NumberOfPatientsAtScene">
+							<xs:attribute name="NV" use="optional">
+								<xs:simpleType>
+									<xs:union memberTypes="NV.NotApplicable NV.NotRecorded"></xs:union>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="eScene.07" nillable="true" id="eScene.MassCasualtyIncident">
+				<xs:annotation>
+					<xs:documentation>
+						<nemsisTacDoc>
+							<number>eScene.07</number>
+							<name>Mass Casualty Incident</name>
+							<national>Yes</national>
+							<state>Yes</state>
+							<definition>Indicator if this event would be considered a mass casualty incident (overwhelmed existing EMS resources).</definition>
+							<v2Number>E08_06</v2Number>
+							<usage>Required</usage>
+							<performanceMeasuresGroup>
+								<performanceMeasure>Trauma</performanceMeasure>
+							</performanceMeasuresGroup>
+						</nemsisTacDoc>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="YesNoValues">
+							<xs:attribute name="NV" use="optional">
+								<xs:simpleType>
+									<xs:union memberTypes="NV.NotApplicable NV.NotRecorded"></xs:union>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="eScene.08" nillable="true" id="eScene.TriageClassificationforMCIPatient">
+				<xs:annotation>
+					<xs:documentation>
+						<nemsisTacDoc>
+							<number>eScene.08</number>
+							<name>Triage Classification for MCI Patient</name>
+							<national>Yes</national>
+							<state>Yes</state>
+							<definition>The color associated with the initial triage assessment/classification of the MCI patient.</definition>
+							<v2Number></v2Number>
+							<usage>Required</usage>
+							<performanceMeasuresGroup>
+								<performanceMeasure>Airway</performanceMeasure>
+								<performanceMeasure>Cardiac Arrest</performanceMeasure>
+								<performanceMeasure>Pediatric</performanceMeasure>
+								<performanceMeasure>Response</performanceMeasure>
+								<performanceMeasure>STEMI</performanceMeasure>
+								<performanceMeasure>Stroke</performanceMeasure>
+								<performanceMeasure>Trauma</performanceMeasure>
+							</performanceMeasuresGroup>
+							<comment>
+This element is documented when eScene.07 (Mass Casualty Incident) = Yes.
+&lt;br/>&lt;br/>
+Examples of triage systems include START and SALT.  
+&lt;br/>&lt;br/>
+&lt;div style="font-size:11px">Adapted from: SALT mass casualty triage: concept endorsed by the American College of Emergency Physicians, American College of Surgeons Committee on Trauma, American Trauma Society, National Association of EMS Physicians, National Disaster Life Support Education Consortium, and State and Territorial Injury Prevention Directors Association. Disaster Med Public Health Prep. 2008 Dec;2(4):245-6.
+&lt;/div>
+&lt;br/>&lt;br/>
+&lt;div style="font-size:11px">
+START reference:  Benson M, Koenig KL, Schultz CH. Disaster triage: START, then SAVE-a new method of dynamic triage for victims of a catastrophic earthquake. Prehospital Disaster Med. 1996; Apr-Jun; 11(2): 117-24							
+&lt;/div>
+							</comment>
+						</nemsisTacDoc>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="TriageClassification">
+							<xs:attribute name="NV" use="optional">
+								<xs:simpleType>
+									<xs:union memberTypes="NV.NotApplicable NV.NotRecorded"></xs:union>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="eScene.09" nillable="true" id="eScene.IncidentLocationType">
+				<xs:annotation>
+					<xs:documentation>
+						<nemsisTacDoc>
+							<number>eScene.09</number>
+							<name>Incident Location Type</name>
+							<national>Yes</national>
+							<state>Yes</state>
+							<definition>The kind of location where the incident happened.</definition>
+							<v2Number>E08_07</v2Number>
+							<usage>Required</usage>
+							<performanceMeasuresGroup>
+								<performanceMeasure>Airway</performanceMeasure>
+								<performanceMeasure>Cardiac Arrest</performanceMeasure>
+								<performanceMeasure>Pediatric</performanceMeasure>
+								<performanceMeasure>Response</performanceMeasure>
+								<performanceMeasure>STEMI</performanceMeasure>
+								<performanceMeasure>Stroke</performanceMeasure>
+								<performanceMeasure>Trauma</performanceMeasure>
+							</performanceMeasuresGroup>
+							<comment>Code list is represented in ICD-10-CM. Reference the NEMSIS Suggested Lists at: https://nemsis.org/technical-resources/version-3/version-3-resource-repository/					
+							&lt;br/>&lt;br/>ICD-10-CM
+							&lt;br/>Website - &lt;a href="http://uts.nlm.nih.gov" target="_blank">http://uts.nlm.nih.gov&lt;/a>
+							&lt;br/>Product - UMLS Metathesaurus
+							</comment>
+						</nemsisTacDoc>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="IncidentLocationType">
+							<xs:attribute name="NV" use="optional">
+								<xs:simpleType>
+									<xs:union memberTypes="NV.NotApplicable NV.NotRecorded"></xs:union>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			
+			
+			
+			
+			
+			
+			
+			
+			<xs:element name="eScene.18" nillable="true" id="eScene.IncidentState">
+				<xs:annotation>
+					<xs:documentation>
+						<nemsisTacDoc>
+							<number>eScene.18</number>
+							<name>Incident State</name>
+							<national>Yes</national>
+							<state>Yes</state>
+							<definition>The state, territory, or province where the patient was found or to which the unit responded (or best approximation).</definition>
+							<v2Number>E08_14</v2Number>
+							<usage>Required</usage>
+							<performanceMeasuresGroup>
+								<performanceMeasure>Airway</performanceMeasure>
+								<performanceMeasure>Cardiac Arrest</performanceMeasure>
+								<performanceMeasure>Pediatric</performanceMeasure>
+								<performanceMeasure>Response</performanceMeasure>
+								<performanceMeasure>STEMI</performanceMeasure>
+								<performanceMeasure>Stroke</performanceMeasure>
+								<performanceMeasure>Trauma</performanceMeasure>
+							</performanceMeasuresGroup>
+							<comment>Based on the ANSI State Code.&lt;br/>&lt;br/>GNIS Codes Website: &lt;a href="http://geonames.usgs.gov/domestic/download_data.htm" target="_blank">http://geonames.usgs.gov/domestic/download_data.htm&lt;/a>
+</comment>
+						</nemsisTacDoc>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="ANSIStateCode">
+							<xs:attribute name="NV" use="optional">
+								<xs:simpleType>
+									<xs:union memberTypes="NV.NotApplicable NV.NotRecorded"></xs:union>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="eScene.19" nillable="true" id="eScene.IncidentZIPCode">
+				<xs:annotation>
+					<xs:documentation>
+						<nemsisTacDoc>
+							<number>eScene.19</number>
+							<name>Incident ZIP Code</name>
+							<national>Yes</national>
+							<state>Yes</state>
+							<definition>The ZIP code of the incident location.</definition>
+							<v2Number>E08_15</v2Number>
+							<usage>Required</usage>
+							<performanceMeasuresGroup>
+								<performanceMeasure>Airway</performanceMeasure>
+								<performanceMeasure>Cardiac Arrest</performanceMeasure>
+								<performanceMeasure>Pediatric</performanceMeasure>
+								<performanceMeasure>Response</performanceMeasure>
+								<performanceMeasure>STEMI</performanceMeasure>
+								<performanceMeasure>Stroke</performanceMeasure>
+								<performanceMeasure>Trauma</performanceMeasure>
+							</performanceMeasuresGroup>
+							<comment>ZIP Codes Product Website: &lt;a href="https://www.zipcodedownload.com/Products/Product/Z5Commercial/Standard/Overview/" target="_blank">https://www.zipcodedownload.com/Products/Product/Z5Commercial/Standard/Overview/&lt;/a>
+&lt;br/>Product: USA - 5-digit ZIP Code Database, Commercial Edition
+</comment>
+						</nemsisTacDoc>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="ZIP">
+							<xs:attribute name="NV" use="optional">
+								<xs:simpleType>
+									<xs:union memberTypes="NV.NotApplicable NV.NotRecorded"></xs:union>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			
+			<xs:element name="eScene.21" nillable="true" id="eScene.IncidentCounty">
+				<xs:annotation>
+					<xs:documentation>
+						<nemsisTacDoc>
+							<number>eScene.21</number>
+							<name>Incident County</name>
+							<national>Yes</national>
+							<state>Yes</state>
+							<definition>The county or parish where the patient was found or to which the unit responded (or best approximation).</definition>
+							<v2Number>E08_13</v2Number>
+							<usage>Required</usage>
+							<performanceMeasuresGroup>
+								<performanceMeasure>Airway</performanceMeasure>
+								<performanceMeasure>Cardiac Arrest</performanceMeasure>
+								<performanceMeasure>Pediatric</performanceMeasure>
+								<performanceMeasure>Response</performanceMeasure>
+								<performanceMeasure>STEMI</performanceMeasure>
+								<performanceMeasure>Stroke</performanceMeasure>
+								<performanceMeasure>Trauma</performanceMeasure>
+							</performanceMeasuresGroup>
+							<comment>Based on the ANSI Code Single Choice based on the County Name but stored as the ANSI code (combined 5 digit State and County codes) Should be required if there is a patient associated with the event.
+								&lt;br/>&lt;br/>GNIS Codes Website: &lt;a href="http://geonames.usgs.gov/domestic/download_data.htm" target="_blank">http://geonames.usgs.gov/domestic/download_data.htm&lt;/a>
+</comment>
+						</nemsisTacDoc>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="ANSICountyCode">
+							<xs:attribute name="NV" use="optional">
+								<xs:simpleType>
+									<xs:union memberTypes="NV.NotApplicable NV.NotRecorded"></xs:union>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			
+			
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="MilePostOrMajorRoadway">
+		<xs:annotation>
+			<xs:documentation>The address number or mile post associated with the incident location.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="35"></xs:maxLength>
+			<xs:minLength value="1"></xs:minLength>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="EMSAgencyID">
+		<xs:annotation>
+			<xs:documentation>The ID number for the Other Public Safety or EMS Agency listed in E08_01.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"></xs:minLength>
+			<xs:maxLength value="25"></xs:maxLength>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="IncidentFacilityCode">
+		<xs:annotation>
+			<xs:documentation>The state or regulatory number (code) associated with the facility if the Incident is a Healthcare Facility.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="2"></xs:minLength>
+			<xs:maxLength value="50"></xs:maxLength>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="IncidentFacilityName">
+		<xs:annotation>
+			<xs:documentation>The destination the patient was delivered or transferred to</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="2"></xs:minLength>
+			<xs:maxLength value="100"></xs:maxLength>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="IncidentLocationType">
+		<xs:annotation>
+			<xs:documentation>The kind of location where the incident happened</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="Y92\.[0-9]{1,3}"></xs:pattern>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="NumberOfPatientsAtScene">
+		<xs:annotation>
+			<xs:documentation>Indicator of how many total patients were at the scene</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="2707001">
+				<xs:annotation>
+					<xs:documentation>Multiple</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2707003">
+				<xs:annotation>
+					<xs:documentation>None</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2707005">
+				<xs:annotation>
+					<xs:documentation>Single</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="OtherEMSAgenciesAtScene">
+		<xs:annotation>
+			<xs:documentation>The name(s) of other EMS or Public Safety Agencies at the scene.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="2"></xs:minLength>
+			<xs:maxLength value="100"></xs:maxLength>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="OtherServicesAtScene">
+		<xs:annotation>
+			<xs:documentation>Other services that were at the scene, if any</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="2704001">
+				<xs:annotation>
+					<xs:documentation>EMS Mutual Aid</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2704003">
+				<xs:annotation>
+					<xs:documentation>Fire</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2704005">
+				<xs:annotation>
+					<xs:documentation>First Responder</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2704007">
+				<xs:annotation>
+					<xs:documentation>Hazmat</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2704009">
+				<xs:annotation>
+					<xs:documentation>Law Enforcement</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2704011">
+				<xs:annotation>
+					<xs:documentation>Other</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2704013">
+				<xs:annotation>
+					<xs:documentation>Other EMS Agency</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2704015">
+				<xs:annotation>
+					<xs:documentation>Other Health Care Provider</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2704017">
+				<xs:annotation>
+					<xs:documentation>Rescue</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2704019">
+				<xs:annotation>
+					<xs:documentation>Utilities</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SceneApartment">
+		<xs:annotation>
+			<xs:documentation>The number of the specific apartment, suite, or room where the incident occurred.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"></xs:minLength>
+			<xs:maxLength value="15"></xs:maxLength>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SceneCrossStreet">
+		<xs:annotation>
+			<xs:documentation>The nearest cross street to the incident address, or directions from a recognized landmark or the second street name of an intersection.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="2"></xs:minLength>
+			<xs:maxLength value="255"></xs:maxLength>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TriageClassification">
+		<xs:annotation>
+			<xs:documentation>Other services that were at the scene, if any</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="2708001">
+				<xs:annotation>
+					<xs:documentation>Red - Immediate</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2708003">
+				<xs:annotation>
+					<xs:documentation>Yellow - Delayed</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2708005">
+				<xs:annotation>
+					<xs:documentation>Green - Minimal (Minor)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2708007">
+				<xs:annotation>
+					<xs:documentation>Gray - Expectant</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2708009">
+				<xs:annotation>
+					<xs:documentation>Black - Deceased</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TransferOfPatientCare">
+		<xs:annotation>
+			<xs:documentation>This element documents the transfer of a patient for care/transport in the field to or from the EMS agency listed in eScene.02.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="2725001">
+				<xs:annotation>
+					<xs:documentation>Transferred Patient to Agency</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2725003">
+				<xs:annotation>
+					<xs:documentation>Received Patient from Agency</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2725005">
+				<xs:annotation>
+					<xs:documentation>No Transfer of Patient/Care To/From Agency</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

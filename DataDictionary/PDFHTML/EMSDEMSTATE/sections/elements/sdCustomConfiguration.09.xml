@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="sdCustomConfiguration.09"  minOccurs="0"  maxOccurs="1"  dataTypeName="CorrelationID"  isNillable="No">
+<name>Agency Demographic Custom Data Element Grouping ID</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>ID for agency demographic custom element grouping.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Used to populate dCustomConfiguration.09 Custom Data Element Grouping ID.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <CorrelationID baseType="string">
+    <facet name="minLength" value="2"/>
+    <facet name="maxLength" value="255"/>
+  </CorrelationID>
+</restrictions>
+</element>

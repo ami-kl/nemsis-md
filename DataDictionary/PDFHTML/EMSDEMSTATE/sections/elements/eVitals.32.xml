@@ -1,0 +1,33 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eVitals.32"  minOccurs="0"  maxOccurs="1"  dataTypeName="APGAR"  isNillable="Yes">
+<name>APGAR</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The patient's total APGAR score (0-10).</definition>
+<v2Number>E14_26</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Recommended to be taken at 1 and 5 minutes after the infants birth</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <APGAR baseType="integer">
+    <facet name="minInclusive" value="0"/>
+    <facet name="maxInclusive" value="10"/>
+  </APGAR>
+</restrictions>
+<attributes>
+  <PN>
+    <PN.UnableToComplete><facet name="enumeration" value="8801023" annotation="Unable to Complete"/></PN.UnableToComplete>
+  </PN>
+</attributes>
+<asserts>
+  <assert id="nemSch_e008" role="Error">
+      When APGAR has a Pertinent Negative, it should be empty and it should not have a Not Value (Not Applicable, Not Recorded, or Not Reporting).
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When APGAR is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

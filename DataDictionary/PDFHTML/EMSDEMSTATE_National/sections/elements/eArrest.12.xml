@@ -1,0 +1,49 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eArrest.12"  minOccurs="1"  maxOccurs="M"  dataTypeName="ReturnOfSpontaneousCirculation"  isNillable="Yes">
+<name>Any Return of Spontaneous Circulation</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Indication whether or not there was any return of spontaneous circulation.</definition>
+<v2Number>E11_06</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Cardiac Arrest</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>This element needs to be documented when the patient has been in cardiac arrest and transported to a healthcare facility to show the change in patient condition, if any. 
+								<br/><br/>Any ROSC is defined as any brief (approximately >30 seconds) restoration of spontaneous circulation that provides evidence of more than an occasional gasp, occasional fleeting palpable pulse, or arterial waveform.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ReturnOfSpontaneousCirculation baseType="string">
+    <facet name="enumeration" value="3012001" annotation="No"/>
+    <facet name="enumeration" value="3012003" annotation="Yes, At Arrival at the ED"/>
+    <facet name="enumeration" value="3012005" annotation="Yes, Prior to Arrival at the ED"/>
+    <facet name="enumeration" value="3012007" annotation="Yes, Sustained for 20 consecutive minutes"/>
+  </ReturnOfSpontaneousCirculation>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e108" role="Warning">
+      <elementRef elementNumber="eArrest.12">Any Return of Spontaneous Circulation</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e109" role="Warning">
+      <elementRef elementNumber="eArrest.12">Any Return of Spontaneous Circulation</elementRef> should only be recorded when <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e110" role="Warning">
+      When <elementRef elementNumber="eArrest.12">Any Return of Spontaneous Circulation</elementRef> is &quot;No&quot;, no other value should be recorded.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Any Return of Spontaneous Circulation has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Any Return of Spontaneous Circulation is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Any Return of Spontaneous Circulation has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

@@ -1,0 +1,16 @@
+<?xml-stylesheet type="text/xsl" href="../xslt/grouping.xslt"?>
+<section name="StateDataSet">
+  <group number="sState" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+  <group number="seCustomConfiguration" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+  <group number="sdCustomConfiguration" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+  <group number="sSoftware" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+  <group number="sElement" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+  <group number="sConfiguration" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+  <group number="sAgency" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+  <group number="sFacility" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+<asserts>
+  <assert id="nemSch_s004" role="Error">
+      The timestamp of the StateDataSet should not be in the future (the current time according to this system is (value)).
+      </assert>
+</asserts>
+</section>

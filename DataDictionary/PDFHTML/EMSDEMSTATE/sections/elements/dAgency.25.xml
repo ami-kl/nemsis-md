@@ -1,0 +1,39 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dAgency.25"  minOccurs="1"  maxOccurs="M"  dataTypeName="NationalProviderIdentifier"  isNillable="Yes">
+<name>National Provider Identifier</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The National Provider Identifier issued by CMS.</definition>
+<v2Number>D01_21</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Only EMS Agencies billing for service will have an NPI number. 
+                <br/><br/>CMS (Centers for Medicare and Medicaid Services) NPI Registry lookup: 
+                <br/>https://npiregistry.cms.hhs.gov/</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <NationalProviderIdentifier baseType="string">
+    <facet name="length" value="10"/>
+  </NationalProviderIdentifier>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_d002" role="Error">
+      When National Provider Identifier has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_d001" role="Error">
+      When National Provider Identifier is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_d003" role="Warning">
+      When National Provider Identifier has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

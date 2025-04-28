@@ -1,0 +1,23 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eCustomConfiguration.01"  minOccurs="1"  maxOccurs="1"  dataTypeName="CustomTitle"  isNillable="No">
+<name>Custom Data Element Title</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>This is the title of the custom data element created to collect information that is not defined formally in NEMSIS Version 3.</definition>
+<v2Number></v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This is grouped with all data elements in this section and can have multiple instances.</v3Comment>
+<v3Changes>Added to allow customized data elements to be inserted and collected from within the NEMSIS Version 3 standard.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <CustomTitle baseType="string">
+    <facet name="minLength" value="2"/>
+    <facet name="maxLength" value="100"/>
+  </CustomTitle>
+</restrictions>
+<attributes>
+  <nemsisElement baseType="anySimpleType"><facet name="whiteSpace" value="preserve"/></nemsisElement>
+</attributes>
+</element>

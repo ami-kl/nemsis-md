@@ -1,0 +1,33 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eOther.13"  minOccurs="0"  maxOccurs="M"  dataTypeName="SignatureReason"  isNillable="No">
+<name>Signature Reason</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The reason for the individuals signature.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <SignatureReason baseType="string">
+    <facet name="enumeration" value="4513001" annotation="HIPAA acknowledgement/Release"/>
+    <facet name="enumeration" value="4513003" annotation="Permission to Treat"/>
+    <facet name="enumeration" value="4513005" annotation="Release for Billing"/>
+    <facet name="enumeration" value="4513007" annotation="Transfer of Patient Care"/>
+    <facet name="enumeration" value="4513009" annotation="Refusal of Care"/>
+    <facet name="enumeration" value="4513011" annotation="Controlled Substance, Administration"/>
+    <facet name="enumeration" value="4513013" annotation="Controlled Substance, Waste"/>
+    <facet name="enumeration" value="4513015" annotation="Airway Verification"/>
+    <facet name="enumeration" value="4513017" annotation="Patient Belongings (Receipt)"/>
+    <facet name="enumeration" value="4513019" annotation="Permission to Transport"/>
+    <facet name="enumeration" value="4513021" annotation="Refusal of Transport"/>
+    <facet name="enumeration" value="4513023" annotation="Other"/>
+  </SignatureReason>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

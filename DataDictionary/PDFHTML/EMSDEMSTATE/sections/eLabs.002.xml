@@ -1,0 +1,19 @@
+<?xml-stylesheet type="text/xsl" href="../xslt/grouping.xslt"?>
+<section name="eLabs">
+  <group number="eLabs.LabGroup" minOccurs="0" maxOccurs="M" CorrelationID="Yes" UUID="" ProcedureGroupCorrelationID="" CustomElementID="" timeStamp="" isNillable="No">
+    <element number="eLabs.01" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="DateTimeType"><name>Date/Time of Laboratory or Imaging Result</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <element number="eLabs.02" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="YesNoValues"><name>Study/Result Prior to this Unit's EMS Care</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <group number="eLabs.LabResultGroup" minOccurs="0" maxOccurs="M" CorrelationID="Yes" UUID="" ProcedureGroupCorrelationID="" CustomElementID="" timeStamp="" isNillable="No">
+      <element number="eLabs.03" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="LaboratoryResultType"><name>Laboratory Result Type</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+      <element number="eLabs.04" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="LaboratoryResult"><name>Laboratory Result</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    </group>
+    <group number="eLabs.LabImageGroup" minOccurs="0" maxOccurs="M" CorrelationID="Yes" UUID="" ProcedureGroupCorrelationID="" CustomElementID="" timeStamp="" isNillable="No">
+      <element number="eLabs.05" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="ImagingStudyType"><name>Imaging Study Type</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+      <element number="eLabs.06" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="ImagingStudyResults"><name>Imaging Study Results</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+      <group number="eLabs.WaveformGraphicGroup" minOccurs="0" maxOccurs="M" CorrelationID="Yes" UUID="" ProcedureGroupCorrelationID="" CustomElementID="" timeStamp="" isNillable="No">
+        <element number="eLabs.07" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="GraphicType"><name>Imaging Study File or Waveform Graphic Type</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+        <element number="eLabs.08" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="WaveformGraphic"><name>Imaging Study File or Waveform Graphic</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+      </group>
+    </group>
+  </group>
+</section>

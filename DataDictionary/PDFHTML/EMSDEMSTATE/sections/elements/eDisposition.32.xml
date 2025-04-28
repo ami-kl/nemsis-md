@@ -1,0 +1,42 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDisposition.32"  minOccurs="1"  maxOccurs="1"  dataTypeName="LevelofCareProvidedperProtocol"  isNillable="Yes">
+<name>Level of Care Provided per Protocol</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The general level of care provided to this patient as defined per provider level in local EMS protocols or clinical guidelines.</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>The level of care should be defined by the situation, medications, and procedures provided to the patient based on what is allowed in the local EMS protocols. This definition can vary between regions; what may be allowed for BLS providers in one region may be considered ALS care in another. This is not a reflection of the provider levels providing care, but the actual care given-for example, BLS care provided by a paramedic would be entered as "BLS". This element benefits reviews of performance, resource demand and utilization, and reimbursement coding.</v3Comment>
+<v3Changes>Element added wit the release of v3.5.0</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <LevelofCareProvidedperProtocol baseType="string">
+    <facet name="enumeration" value="4232001" annotation="BLS - All Levels"/>
+    <facet name="enumeration" value="4232003" annotation="ALS - AEMT/Intermediate"/>
+    <facet name="enumeration" value="4232005" annotation="ALS - Paramedic"/>
+    <facet name="enumeration" value="4232007" annotation="EMS and Other Health-Care Staff"/>
+    <facet name="enumeration" value="4232009" annotation="Critical Care"/>
+    <facet name="enumeration" value="4232011" annotation="Integrated Health Care"/>
+    <facet name="enumeration" value="4232013" annotation="No Care Provided"/>
+  </LevelofCareProvidedperProtocol>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e187" role="Warning">
+      <elementRef elementNumber="eDisposition.32">Level of Care Provided per Protocol</elementRef> should be recorded (with a value other than &quot;No Care Provided&quot;) when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Level of Care Provided per Protocol has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Level of Care Provided per Protocol is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

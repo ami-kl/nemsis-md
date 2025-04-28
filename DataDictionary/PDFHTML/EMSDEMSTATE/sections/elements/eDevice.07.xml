@@ -1,0 +1,42 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDevice.07"  minOccurs="0"  maxOccurs="M"  dataTypeName="ECGLead"  isNillable="No">
+<name>Medical Device ECG Lead</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The lead or source which the medical device used to obtain the rhythm (if appropriate for the event).</definition>
+<v2Number>E21_06</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>STEMI</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Can be displayed in the Vital Signs or Procedure Sections.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ECGLead baseType="string">
+    <facet name="enumeration" value="4107001" annotation="I"/>
+    <facet name="enumeration" value="4107003" annotation="II"/>
+    <facet name="enumeration" value="4107005" annotation="III"/>
+    <facet name="enumeration" value="4107007" annotation="AVR"/>
+    <facet name="enumeration" value="4107009" annotation="AVL"/>
+    <facet name="enumeration" value="4107011" annotation="AVF"/>
+    <facet name="enumeration" value="4107013" annotation="Paddle"/>
+    <facet name="enumeration" value="4107015" annotation="Pads"/>
+    <facet name="enumeration" value="4107017" annotation="V1"/>
+    <facet name="enumeration" value="4107019" annotation="V2"/>
+    <facet name="enumeration" value="4107021" annotation="V3"/>
+    <facet name="enumeration" value="4107023" annotation="V3r"/>
+    <facet name="enumeration" value="4107025" annotation="V4"/>
+    <facet name="enumeration" value="4107027" annotation="V4r"/>
+    <facet name="enumeration" value="4107029" annotation="V5"/>
+    <facet name="enumeration" value="4107031" annotation="V5r"/>
+    <facet name="enumeration" value="4107033" annotation="V6"/>
+    <facet name="enumeration" value="4107035" annotation="V6r"/>
+    <facet name="enumeration" value="4107037" annotation="V7"/>
+    <facet name="enumeration" value="4107039" annotation="V8"/>
+    <facet name="enumeration" value="4107041" annotation="V9"/>
+  </ECGLead>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

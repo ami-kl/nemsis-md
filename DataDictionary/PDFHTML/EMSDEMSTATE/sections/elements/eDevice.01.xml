@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDevice.01"  minOccurs="0"  maxOccurs="1"  dataTypeName="DeviceSerialNumber"  isNillable="No">
+<name>Medical Device Serial Number</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The unique manufacturer's serial number associated with a medical device.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <DeviceSerialNumber baseType="string">
+    <facet name="minLength" value="2"/>
+    <facet name="maxLength" value="50"/>
+  </DeviceSerialNumber>
+</restrictions>
+</element>

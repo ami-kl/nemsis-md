@@ -1,0 +1,543 @@
+<?xml-stylesheet type="text/xsl" href="https://nemsis.org/media/nemsis_v3/release-3.5.1/DefinedLists/DefinedListHtml.xsl"?><DefinedList xmlns="http://www.nemsis.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" date="2025-01-14" xsi:schemaLocation="http://www.nemsis.org https://nemsis.org/media/nemsis_v3/release-3.5.1/DefinedLists/DefinedLists.xsd">
+  <Header>
+    <SourceVocabularies>
+      <SourceVocabulary url="https://www.nlm.nih.gov/healthit/snomedct/index.html">SNOMED-CT</SourceVocabulary>
+    </SourceVocabularies>
+    <NemsisTypes>
+      <NemsisType>snomed</NemsisType>
+    </NemsisTypes>
+    <NemsisElements>
+      <NemsisElement>eHistory.07</NemsisElement>
+    </NemsisElements>
+  </Header>
+  <Codes>
+    <Code date="2021-05-06">
+      <Value>403141006</Value>
+      <Category>Animals</Category>
+      <SourceLabel>Ant sting</SourceLabel>
+      <SuggestedLabel>Ant sting</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>424213003</Value>
+      <Category>Animals</Category>
+      <SourceLabel>Allergy to bee venom</SourceLabel>
+      <SuggestedLabel>Bee venom</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>232346004</Value>
+      <Category>Animals</Category>
+      <SourceLabel>Allergy to cat dander</SourceLabel>
+      <SuggestedLabel>Cat dander</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>15911003</Value>
+      <Category>Animals</Category>
+      <SourceLabel>Cow's milk protein sensitivity</SourceLabel>
+      <SuggestedLabel>Cow's milk protein sensitivity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>232347008</Value>
+      <Category>Animals</Category>
+      <SourceLabel>Allergy to animal dander</SourceLabel>
+      <SuggestedLabel>Dander Unspecified</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>419271008</Value>
+      <Category>Animals</Category>
+      <SourceLabel>Allergy to dog dander</SourceLabel>
+      <SuggestedLabel>Dog dander</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>232348003</Value>
+      <Category>Animals</Category>
+      <SourceLabel>Allergy to feather</SourceLabel>
+      <SuggestedLabel>Feather</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>307427009</Value>
+      <Category>Animals</Category>
+      <SourceLabel>Hornet sting</SourceLabel>
+      <SuggestedLabel>Hornet sting</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>419063004</Value>
+      <Category>Animals</Category>
+      <SourceLabel>Allergy to horse dander</SourceLabel>
+      <SuggestedLabel>Horse dander</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>422921000</Value>
+      <Category>Animals</Category>
+      <SourceLabel>Allergy to scorpion venom</SourceLabel>
+      <SuggestedLabel>Scorpion venom</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>427487000</Value>
+      <Category>Animals</Category>
+      <SourceLabel>Allergy to spider venom</SourceLabel>
+      <SuggestedLabel>Spider venom</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>423058007</Value>
+      <Category>Animals</Category>
+      <SourceLabel>Allergy to wasp venom</SourceLabel>
+      <SuggestedLabel>Wasp venom</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>106190000</Value>
+      <Category>General</Category>
+      <SourceLabel>Allergic state</SourceLabel>
+      <SuggestedLabel>Allergy, Unspecified</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>160244002</Value>
+      <Category>General</Category>
+      <SourceLabel>No known allergies</SourceLabel>
+      <SuggestedLabel>No known allergies</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>444316004</Value>
+      <Category>General</Category>
+      <SourceLabel>Seasonal allergy</SourceLabel>
+      <SuggestedLabel>Seasonal, Hay fever</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>390952000</Value>
+      <Category>Environment</Category>
+      <SourceLabel>Allergy to dust</SourceLabel>
+      <SuggestedLabel>Dust</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>426232007</Value>
+      <Category>Environment</Category>
+      <SourceLabel>Environmental allergy</SourceLabel>
+      <SuggestedLabel>Environmental, Unspecified</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>418689008</Value>
+      <Category>Environment</Category>
+      <SourceLabel>Allergy to grass pollen</SourceLabel>
+      <SuggestedLabel>Grass pollen</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>419474003</Value>
+      <Category>Environment</Category>
+      <SourceLabel>Allergy to mold</SourceLabel>
+      <SuggestedLabel>Mold</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>294619002</Value>
+      <Category>Environment</Category>
+      <SourceLabel>Pesticide allergy</SourceLabel>
+      <SuggestedLabel>Pesticide</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>402594000</Value>
+      <Category>Environment</Category>
+      <SourceLabel>Allergy to plant</SourceLabel>
+      <SuggestedLabel>Plants</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>300910009</Value>
+      <Category>Environment</Category>
+      <SourceLabel>Allergy to pollen</SourceLabel>
+      <SuggestedLabel>Pollen</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>419101002</Value>
+      <Category>Environment</Category>
+      <SourceLabel>Allergy to seed</SourceLabel>
+      <SuggestedLabel>Seeds</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>258155009</Value>
+      <Category>Environment</Category>
+      <SourceLabel>Photosensitization caused by sun</SourceLabel>
+      <SuggestedLabel>Sunlight (skin sensitivity to sun)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>402595004</Value>
+      <Category>Environment</Category>
+      <SourceLabel>Allergy to wood</SourceLabel>
+      <SuggestedLabel>Wood</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>425605001</Value>
+      <Category>Environment</Category>
+      <SourceLabel>Allergy to wool</SourceLabel>
+      <SuggestedLabel>Wool</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>409136006</Value>
+      <Category>Grain</Category>
+      <SourceLabel>Allergy to pulse vegetable</SourceLabel>
+      <SuggestedLabel>Legumes</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>419342009</Value>
+      <Category>Grain</Category>
+      <SourceLabel>Allergy to oat</SourceLabel>
+      <SuggestedLabel>Oats</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>420174000</Value>
+      <Category>Grain</Category>
+      <SourceLabel>Allergy to wheat</SourceLabel>
+      <SuggestedLabel>Wheat</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>420080006</Value>
+      <Category>Fruits/Vegetables</Category>
+      <SourceLabel>Allergy to carrot</SourceLabel>
+      <SuggestedLabel>Carrot</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>419573007</Value>
+      <Category>Fruits/Vegetables</Category>
+      <SourceLabel>Allergy to corn</SourceLabel>
+      <SuggestedLabel>Corn</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>91932007</Value>
+      <Category>Fruits/Vegetables</Category>
+      <SourceLabel>Allergy to fruit</SourceLabel>
+      <SuggestedLabel>Fruit</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>294316000</Value>
+      <Category>Fruits/Vegetables</Category>
+      <SourceLabel>Allergy to olive oil</SourceLabel>
+      <SuggestedLabel>Olive oil</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>91938006</Value>
+      <Category>Fruits/Vegetables</Category>
+      <SourceLabel>Allergy to strawberry</SourceLabel>
+      <SuggestedLabel>Strawberries</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>418779002</Value>
+      <Category>Fruits/Vegetables</Category>
+      <SourceLabel>Allergy to tomato</SourceLabel>
+      <SuggestedLabel>Tomato</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>712839001</Value>
+      <Category>Nuts</Category>
+      <SourceLabel>Allergy to almond</SourceLabel>
+      <SuggestedLabel>Almond</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>712838009</Value>
+      <Category>Nuts</Category>
+      <SourceLabel>Allergy to cashew nut</SourceLabel>
+      <SuggestedLabel>Cashew</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>419814004</Value>
+      <Category>Nuts</Category>
+      <SourceLabel>Allergy to coconut oil</SourceLabel>
+      <SuggestedLabel>Coconut oil</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>712840004</Value>
+      <Category>Nuts</Category>
+      <SourceLabel>Allergy to hazelnut</SourceLabel>
+      <SuggestedLabel>Hazelnut</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>91934008</Value>
+      <Category>Nuts</Category>
+      <SourceLabel>Allergy to nut</SourceLabel>
+      <SuggestedLabel>Nuts, unspecified</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>91935009</Value>
+      <Category>Nuts</Category>
+      <SourceLabel>Allergy to peanut</SourceLabel>
+      <SuggestedLabel>Peanut</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>91940001</Value>
+      <Category>Nuts</Category>
+      <SourceLabel>Allergy to walnut</SourceLabel>
+      <SuggestedLabel>Walnut</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>417532002</Value>
+      <Category>Seafood</Category>
+      <SourceLabel>Allergy to fish</SourceLabel>
+      <SuggestedLabel>Fish</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>300913006</Value>
+      <Category>Seafood</Category>
+      <SourceLabel>Allergy to shellfish</SourceLabel>
+      <SuggestedLabel>Shellfish</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>419972009</Value>
+      <Category>Seafood</Category>
+      <SourceLabel>Allergy to shrimp</SourceLabel>
+      <SuggestedLabel>Shrimp</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>300914000</Value>
+      <Category>Food, Other</Category>
+      <SourceLabel>Allergy to cheese</SourceLabel>
+      <SuggestedLabel>Cheese</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>300912001</Value>
+      <Category>Food, Other</Category>
+      <SourceLabel>Allergy to chocolate</SourceLabel>
+      <SuggestedLabel>Chocolate</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>418397007</Value>
+      <Category>Food, Other</Category>
+      <SourceLabel>Allergy to cinnamon</SourceLabel>
+      <SuggestedLabel>Cinnamon</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>425525006</Value>
+      <Category>Food, Other</Category>
+      <SourceLabel>Allergy to dairy food</SourceLabel>
+      <SuggestedLabel>Dairy product</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>91930004</Value>
+      <Category>Food, Other</Category>
+      <SourceLabel>Allergy to edible egg</SourceLabel>
+      <SuggestedLabel>Eggs</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>414285001</Value>
+      <Category>Food, Other</Category>
+      <SourceLabel>Allergy to food</SourceLabel>
+      <SuggestedLabel>Food, Unspecified</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>294847001</Value>
+      <Category>Food, Other</Category>
+      <SourceLabel>Allergy to gelatin</SourceLabel>
+      <SuggestedLabel>Gelatin</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>441831003</Value>
+      <Category>Food, Other</Category>
+      <SourceLabel>Gluten sensitivity</SourceLabel>
+      <SuggestedLabel>Gluten sensitivity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>447961002</Value>
+      <Category>Food, Other</Category>
+      <SourceLabel>Allergy to dietary mushroom</SourceLabel>
+      <SuggestedLabel>Mushroom</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>419619007</Value>
+      <Category>Food, Other</Category>
+      <SourceLabel>Allergy to potato</SourceLabel>
+      <SuggestedLabel>Potato</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>25868003</Value>
+      <Category>Food, Other</Category>
+      <SourceLabel>Soy protein sensitivity</SourceLabel>
+      <SuggestedLabel>Soy protein sensitivity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>419421008</Value>
+      <Category>Food, Other</Category>
+      <SourceLabel>Allergy to sulfite based food preservative</SourceLabel>
+      <SuggestedLabel>Sulfite based food preservative</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>417918006</Value>
+      <Category>Meat</Category>
+      <SourceLabel>Allergy to pork</SourceLabel>
+      <SuggestedLabel>Pork</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>418815008</Value>
+      <Category>Meat</Category>
+      <SourceLabel>Allergy to red meat</SourceLabel>
+      <SuggestedLabel>Red meat</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>294420000</Value>
+      <Category>Chemical</Category>
+      <SourceLabel>Alcohol products allergy</SourceLabel>
+      <SuggestedLabel>Alcohol products</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>419180003</Value>
+      <Category>Chemical</Category>
+      <SourceLabel>Allergy to aspartame</SourceLabel>
+      <SuggestedLabel>Aspartame</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>294434000</Value>
+      <Category>Chemical</Category>
+      <SourceLabel>Allergy to boric acid</SourceLabel>
+      <SuggestedLabel>Boric acid</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>418344001</Value>
+      <Category>Chemical</Category>
+      <SourceLabel>Allergy to caffeine</SourceLabel>
+      <SuggestedLabel>Caffeine</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>294318004</Value>
+      <Category>Chemical</Category>
+      <SourceLabel>Allergy to castor oil</SourceLabel>
+      <SuggestedLabel>Castor oil</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>418545001</Value>
+      <Category>Chemical</Category>
+      <SourceLabel>Allergy to dye</SourceLabel>
+      <SuggestedLabel>Dye</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>294298002</Value>
+      <Category>Chemical</Category>
+      <SourceLabel>Allergy to glycine</SourceLabel>
+      <SuggestedLabel>Glycine</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>293817009</Value>
+      <Category>Chemical</Category>
+      <SourceLabel>Lithium allergy</SourceLabel>
+      <SuggestedLabel>Lithium</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>294321002</Value>
+      <Category>Chemical</Category>
+      <SourceLabel>Lubricant allergy</SourceLabel>
+      <SuggestedLabel>Lubricant, Unspecified</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>300908007</Value>
+      <Category>Chemical</Category>
+      <SourceLabel>Allergy to perfume</SourceLabel>
+      <SuggestedLabel>Perfume</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>293842000</Value>
+      <Category>Chemical</Category>
+      <SourceLabel>Allergy to tryptophan</SourceLabel>
+      <SuggestedLabel>Tryptophan</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>294923007</Value>
+      <Category>Chemical</Category>
+      <SourceLabel>Allergy to retinol</SourceLabel>
+      <SuggestedLabel>Vitamin A</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>294924001</Value>
+      <Category>Chemical</Category>
+      <SourceLabel>Allergy to vitamin D and vitamin D derivative</SourceLabel>
+      <SuggestedLabel>Vitamin D</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>294925000</Value>
+      <Category>Chemical</Category>
+      <SourceLabel>Allergy to vitamin K and vitamin K derivative</SourceLabel>
+      <SuggestedLabel>Vitamin K</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>294169006</Value>
+      <Category>Substance</Category>
+      <SourceLabel>Allergy to coal tar</SourceLabel>
+      <SuggestedLabel>Coal tar</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>417982003</Value>
+      <Category>Substance</Category>
+      <SourceLabel>Allergy to cosmetic material</SourceLabel>
+      <SuggestedLabel>Cosmetic</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>418968001</Value>
+      <Category>Substance</Category>
+      <SourceLabel>Allergy to gauze</SourceLabel>
+      <SuggestedLabel>Gauze</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>300916003</Value>
+      <Category>Substance</Category>
+      <SourceLabel>Allergy to latex</SourceLabel>
+      <SuggestedLabel>Latex</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>294324005</Value>
+      <Category>Substance</Category>
+      <SourceLabel>Allergy to paraffin</SourceLabel>
+      <SuggestedLabel>Paraffin</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>419412007</Value>
+      <Category>Substance</Category>
+      <SourceLabel>Allergy to rubber</SourceLabel>
+      <SuggestedLabel>Rubber</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>294328008</Value>
+      <Category>Substance</Category>
+      <SourceLabel>Allergy to silicone</SourceLabel>
+      <SuggestedLabel>Silicone</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>419199007</Value>
+      <Category>Substance</Category>
+      <SourceLabel>Allergy to substance</SourceLabel>
+      <SuggestedLabel>Substance, Unspecified</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>294179008</Value>
+      <Category>Substance</Category>
+      <SourceLabel>Sulfur allergy</SourceLabel>
+      <SuggestedLabel>Sulfur</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>405649006</Value>
+      <Category>Substance</Category>
+      <SourceLabel>Tape allergy</SourceLabel>
+      <SuggestedLabel>Tape</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>402306009</Value>
+      <Category>Metal</Category>
+      <SourceLabel>Allergy to aluminium</SourceLabel>
+      <SuggestedLabel>Aluminum</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>294238000</Value>
+      <Category>Metal</Category>
+      <SourceLabel>Allergy to gold</SourceLabel>
+      <SuggestedLabel>Gold</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>300915004</Value>
+      <Category>Metal</Category>
+      <SourceLabel>Allergy to metal</SourceLabel>
+      <SuggestedLabel>Metal, Unspecified</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>419788000</Value>
+      <Category>Metal</Category>
+      <SourceLabel>Allergy to nickel</SourceLabel>
+      <SuggestedLabel>Nickel</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>294950002</Value>
+      <Category>Metal</Category>
+      <SourceLabel>Allergy to zinc</SourceLabel>
+      <SuggestedLabel>Zinc</SuggestedLabel>
+    </Code>
+  </Codes>
+</DefinedList>

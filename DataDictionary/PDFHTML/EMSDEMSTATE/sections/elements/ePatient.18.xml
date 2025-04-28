@@ -1,0 +1,37 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePatient.18"  minOccurs="0"  maxOccurs="M"  dataTypeName="PhoneNumber"  isNillable="Yes">
+<name>Patient's Phone Number</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The patient's phone number.</definition>
+<v2Number>E06_17</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This element contains an attribute to define what type of phone number is being documented (e.g., Fax, Home, Mobile, Pager, and Work).</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <PhoneNumber baseType="string">
+    <facet name="pattern" value="([2-9][0-9][0-9]-[2-9][0-9][0-9]-[0-9][0-9][0-9][0-9])|(\+([0-9] ?){6,14}[0-9])"/>
+  </PhoneNumber>
+</restrictions>
+<attributes>
+  <PhoneNumberType baseType="string"><facet name="enumeration" value="9913001" annotation="Fax"/><facet name="enumeration" value="9913003" annotation="Home"/><facet name="enumeration" value="9913005" annotation="Mobile"/><facet name="enumeration" value="9913007" annotation="Pager"/><facet name="enumeration" value="9913009" annotation="Work"/></PhoneNumberType>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+  <PN>
+    <PN.UnableToComplete><facet name="enumeration" value="8801023" annotation="Unable to Complete"/></PN.UnableToComplete>
+  </PN>
+</attributes>
+<asserts>
+  <assert id="nemSch_e008" role="Error">
+      When Patient's Phone Number has a Pertinent Negative, it should be empty and it should not have a Not Value (Not Applicable, Not Recorded, or Not Reporting).
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Patient's Phone Number is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e010" role="Warning">
+      When Patient's Phone Number has a Pertinent Negative, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

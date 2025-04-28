@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.18"  minOccurs="0"  maxOccurs="1"  dataTypeName="InsurancePolicyIDNumber"  isNillable="No">
+<name>Insurance Policy ID Number</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The ID number of the patient's insurance policy.</definition>
+<v2Number>E07_10</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <InsurancePolicyIDNumber baseType="string">
+    <facet name="minLength" value="2"/>
+    <facet name="maxLength" value="30"/>
+  </InsurancePolicyIDNumber>
+</restrictions>
+</element>

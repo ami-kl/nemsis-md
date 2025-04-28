@@ -1,0 +1,25 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDevice.06"  minOccurs="0"  maxOccurs="1"  dataTypeName="AEDPacingOrCO2Mode"  isNillable="No">
+<name>Medical Device Mode (Manual, AED, Pacing, CO2, O2, etc)</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The mode of operation the device is operating in during the defibrillation, pacing, or rhythm analysis by the device (if appropriate for the event).</definition>
+<v2Number>E21_05</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <AEDPacingOrCO2Mode baseType="string">
+    <facet name="enumeration" value="4106001" annotation="Advisory"/>
+    <facet name="enumeration" value="4106003" annotation="Automated"/>
+    <facet name="enumeration" value="4106005" annotation="Demand"/>
+    <facet name="enumeration" value="4106007" annotation="Manual"/>
+    <facet name="enumeration" value="4106009" annotation="Mid-Stream"/>
+    <facet name="enumeration" value="4106011" annotation="Sensing"/>
+    <facet name="enumeration" value="4106013" annotation="Side-Stream"/>
+  </AEDPacingOrCO2Mode>
+</restrictions>
+</element>

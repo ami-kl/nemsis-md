@@ -1,0 +1,44 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eOther.14"  minOccurs="0"  maxOccurs="1"  dataTypeName="RelationshipSignature"  isNillable="No">
+<name>Type Of Patient Representative</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>If Patient Representative is chosen as the owner of the signature, this documents the relationship of the individual signing to the patient.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Required for Billing.</v3Comment>
+<v3Changes>Added to improve documentation on disposition and billing.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <RelationshipSignature baseType="string">
+    <facet name="enumeration" value="4514001" annotation="Aunt"/>
+    <facet name="enumeration" value="4514003" annotation="Brother"/>
+    <facet name="enumeration" value="4514005" annotation="Daughter"/>
+    <facet name="enumeration" value="4514007" annotation="Discharge Planner"/>
+    <facet name="enumeration" value="4514009" annotation="Domestic Partner"/>
+    <facet name="enumeration" value="4514011" annotation="Father"/>
+    <facet name="enumeration" value="4514013" annotation="Friend"/>
+    <facet name="enumeration" value="4514015" annotation="Grandfather"/>
+    <facet name="enumeration" value="4514017" annotation="Grandmother"/>
+    <facet name="enumeration" value="4514019" annotation="Guardian"/>
+    <facet name="enumeration" value="4514021" annotation="Husband"/>
+    <facet name="enumeration" value="4514023" annotation="Law Enforcement"/>
+    <facet name="enumeration" value="4514025" annotation="MD/DO"/>
+    <facet name="enumeration" value="4514027" annotation="Mother"/>
+    <facet name="enumeration" value="4514029" annotation="Nurse (RN)"/>
+    <facet name="enumeration" value="4514031" annotation="Nurse Practitioner (NP)"/>
+    <facet name="enumeration" value="4514033" annotation="Other Care Provider (Home health, hospice, etc.)"/>
+    <facet name="enumeration" value="4514035" annotation="Other"/>
+    <facet name="enumeration" value="4514037" annotation="Physician's Assistant (PA)"/>
+    <facet name="enumeration" value="4514039" annotation="Power of Attorney"/>
+    <facet name="enumeration" value="4514041" annotation="Other Relative"/>
+    <facet name="enumeration" value="4514043" annotation="Self"/>
+    <facet name="enumeration" value="4514045" annotation="Sister"/>
+    <facet name="enumeration" value="4514047" annotation="Son"/>
+    <facet name="enumeration" value="4514049" annotation="Uncle"/>
+    <facet name="enumeration" value="4514051" annotation="Wife"/>
+  </RelationshipSignature>
+</restrictions>
+</element>

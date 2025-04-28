@@ -1,0 +1,22 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDevice.10"  minOccurs="0"  maxOccurs="1"  dataTypeName="ShockOrPacingEnergy"  isNillable="No">
+<name>Shock or Pacing Energy</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The energy (in joules) used for the shock or pacing (if appropriate for the event).</definition>
+<v2Number>E21_09</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup><performanceMeasure>Cardiac Arrest</performanceMeasure></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ShockOrPacingEnergy baseType="decimal">
+    <facet name="totalDigits" value="5"/>
+    <facet name="fractionDigits" value="1"/>
+    <facet name="minInclusive" value="1"/>
+    <facet name="maxInclusive" value="9000"/>
+  </ShockOrPacingEnergy>
+</restrictions>
+</element>

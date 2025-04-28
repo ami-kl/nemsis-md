@@ -1,0 +1,161 @@
+NEMSIS V3 Schematron Test Cases for StateDataSet
+
+File:             StateDataSet--Base.xml
+ID:               StateDataSet--Base
+Description:      This test case should pass validation while firing as many rules as possible.
+Expected Result:  [PASS]
+      
+File:             StateDataSet-nemSch_s001_A.xml
+ID:               nemSch_s001_A
+Description:      When Software Name is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element), or it should be omitted (if the element is optional).
+Expected Result:  [ERROR]
+
+File:             StateDataSet-nemSch_s002_A.xml
+ID:               nemSch_s002_A
+Description:      When Software Version has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+Expected Result:  [ERROR]
+
+File:             StateDataSet-nemSch_s003_A.xml
+ID:               nemSch_s003_A
+Description:      When State Collected Element has a Not Value, no other value should be recorded.
+Expected Result:  [WARNING]
+
+File:             StateDataSet-nemSch_s004_A.xml
+ID:               nemSch_s004_A
+Description:      The timestamp of the StateDataSet should not be in the future (the current time according to this system is (current dateTime)). * This test should generate an error until January 1, 2050.
+Expected Result:  [ERROR]
+
+File:             StateDataSet-nemSch_s005_A.xml
+ID:               nemSch_s005_A
+Description:      The Custom Element ID for each Agency Demographic Custom Data Element should be unique (the same ID should not be used more than once).
+Expected Result:  [ERROR]
+
+File:             StateDataSet-nemSch_s006_A.xml
+ID:               nemSch_s006_A
+Description:      Agency Demographic Custom Data Element Potential Values should be unique (the same value should not be listed more than once).
+Expected Result:  [ERROR]
+
+File:             StateDataSet-nemSch_s007_A.xml
+ID:               nemSch_s007_A
+Description:      The Custom Value Description for Agency Demographic Custom Data Element Potential Values should be unique (the same description should not be listed more than once).
+Expected Result:  [ERROR]
+
+File:             StateDataSet-nemSch_s008_A.xml
+ID:               nemSch_s008_A
+Description:      Agency Demographic Custom Data Element Potential NOT Values (NV) should be unique (the same value should not be listed more than once).
+Expected Result:  [ERROR]
+
+File:             StateDataSet-nemSch_s009_A.xml
+ID:               nemSch_s009_A
+Description:      Agency Demographic Custom Data Element Potential Pertinent Negative Values (PN) should be unique (the same value should not be listed more than once).
+Expected Result:  [ERROR]
+
+File:             StateDataSet-nemSch_s010_A.xml
+ID:               nemSch_s010_A
+Description:      The Custom Element ID for each Patient Care Report Custom Data Element should be unique (the same ID should not be used more than once).
+Expected Result:  [ERROR]
+
+File:             StateDataSet-nemSch_s011_A.xml
+ID:               nemSch_s011_A
+Description:      Patient Care Report Custom Data Element Potential Values should be unique (the same value should not be listed more than once).
+Expected Result:  [ERROR]
+
+File:             StateDataSet-nemSch_s012_A.xml
+ID:               nemSch_s012_A
+Description:      The Custom Value Description for Patient Care Report Custom Data Element Potential Values should be unique (the same description should not be listed more than once).
+Expected Result:  [ERROR]
+
+File:             StateDataSet-nemSch_s013_A.xml
+ID:               nemSch_s013_A
+Description:      Patient Care Report Custom Data Element Potential NOT Values (NV) should be unique (the same value should not be listed more than once).
+Expected Result:  [ERROR]
+
+File:             StateDataSet-nemSch_s014_A.xml
+ID:               nemSch_s014_A
+Description:      Patient Care Report Custom Data Element Potential Pertinent Negative Values (PN) should be unique (the same value should not be listed more than once).
+Expected Result:  [ERROR]
+
+File:             StateDataSet-nemSch_s015_A.xml
+ID:               nemSch_s015_A
+Description:      State Collected Element should be unique (the same element should not be listed more than once).
+Expected Result:  [WARNING]
+
+File:             StateDataSet-nemSch_s016_A.xml
+ID:               nemSch_s016_A
+Description:      State Certification/Licensure Levels should be unique (the same level should not be listed more than once).
+Expected Result:  [WARNING]
+
+File:             StateDataSet-nemSch_s017_A.xml
+ID:               nemSch_s017_A
+Description:      EMS Certification Levels Permitted to Perform Each Procedure should be on the list of State Certification/Licensure Levels.
+Expected Result:  [WARNING]
+
+File:             StateDataSet-nemSch_s018_A.xml
+ID:               nemSch_s018_A
+Description:      EMS Certification Levels Permitted to Perform Each Procedure should be unique (the same level should not be listed more than once).
+Expected Result:  [WARNING]
+
+File:             StateDataSet-nemSch_s019_A.xml
+ID:               nemSch_s019_A
+Description:      Procedures Permitted by the State should be unique (the same procedure should not be listed more than once for a particular level).
+Expected Result:  [WARNING]
+
+File:             StateDataSet-nemSch_s020_A.xml
+ID:               nemSch_s020_A
+Description:      EMS Certification Levels Permitted to Administer Each Medication should be on the list of State Certification/Licensure Levels.
+Expected Result:  [WARNING]
+
+File:             StateDataSet-nemSch_s021_A.xml
+ID:               nemSch_s021_A
+Description:      EMS Certification Levels Permitted to Administer Each Medication should be unique (the same level should not be listed more than once).
+Expected Result:  [WARNING]
+
+File:             StateDataSet-nemSch_s022_A.xml
+ID:               nemSch_s022_A
+Description:      Medications Permitted by the State should be unique (the same medication should not be listed more than once for a particular level).
+Expected Result:  [WARNING]
+
+File:             StateDataSet-nemSch_s023_A.xml
+ID:               nemSch_s023_A
+Description:      Medications Permitted by the State should be a code of between 2 and 7 digits when Code Type is "RxNorm".
+Expected Result:  [ERROR]
+
+File:             StateDataSet-nemSch_s024_A.xml
+ID:               nemSch_s024_A
+Description:      Medications Permitted by the State should be a SNOMED code specifically allowed in the data dictionary when Code Type is "SNOMED".
+Expected Result:  [ERROR]
+
+File:             StateDataSet-nemSch_s025_A.xml
+ID:               nemSch_s025_A
+Description:      Medications Permitted by the State should be an RxNorm code of between 2 and 7 digits or a SNOMED code specifically allowed in the data dictionary.
+Expected Result:  [ERROR]
+
+File:             StateDataSet-nemSch_s026_A.xml
+ID:               nemSch_s026_A
+Description:      Protocols Permitted by the State should be unique (the same protocol should not be listed more than once).
+Expected Result:  [WARNING]
+
+File:             StateDataSet-nemSch_s027_A.xml
+ID:               nemSch_s027_A
+Description:      EMS Agency Unique State ID and EMS Agency Number should be a unique combination for each EMS agency.
+Expected Result:  [WARNING]
+
+File:             StateDataSet-nemSch_s028_A.xml
+ID:               nemSch_s028_A
+Description:      Type of Facility, Facility Location Code, Facility Street Address, Facility City, and Facility State should be a unique combination for each facility.
+Expected Result:  [WARNING]
+
+File:             StateDataSet-nemSch_s029_A.xml
+ID:               nemSch_s029_A
+Description:      Hospital Designations should be unique (the same designation should not be listed more than once).
+Expected Result:  [WARNING]
+
+File:             StateDataSet-nemSch_s030_A.xml
+ID:               nemSch_s030_A
+Description:      Facility National Provider Identifier should be unique (the same identifier should not be listed more than once).
+Expected Result:  [WARNING]
+
+File:             StateDataSet-nemSch_s031_A.xml
+ID:               nemSch_s031_A
+Description:      Facility County should belong within the Facility State.
+Expected Result:  [WARNING]

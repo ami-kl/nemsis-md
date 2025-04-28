@@ -1,0 +1,47 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eVitals.30"  minOccurs="1"  maxOccurs="1"  dataTypeName="TypeOfStrokeScale"  isNillable="Yes">
+<name>Stroke Scale Type</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The type of stroke scale used.</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Stroke</performanceMeasure></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes>Added to include additional detail on the stroke scale used.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <TypeOfStrokeScale baseType="string">
+    <facet name="enumeration" value="3330001" annotation="Cincinnati Prehospital Stroke Scale (CPSS)"/>
+    <facet name="enumeration" value="3330004" annotation="Los Angeles Prehospital Stroke Screen (LAPSS)"/>
+    <facet name="enumeration" value="3330005" annotation="Massachusetts Stroke Scale (MSS)"/>
+    <facet name="enumeration" value="3330007" annotation="Miami Emergency Neurologic Deficit Exam (MEND)"/>
+    <facet name="enumeration" value="3330009" annotation="NIH Stroke Scale (NIHSS)"/>
+    <facet name="enumeration" value="3330011" annotation="Other Stroke Scale Type"/>
+    <facet name="enumeration" value="3330013" annotation="FAST"/>
+    <facet name="enumeration" value="3330015" annotation="Boston Stroke Scale (BOSS)"/>
+    <facet name="enumeration" value="3330017" annotation="Ontario Prehospital Stroke Scale (OPSS)"/>
+    <facet name="enumeration" value="3330019" annotation="Melbourne Ambulance Stroke Screen (MASS)"/>
+    <facet name="enumeration" value="3330021" annotation="Rapid Arterial oCclusion Evaluation (RACE)"/>
+    <facet name="enumeration" value="3330023" annotation="Los Angeles Motor Score (LAMS)"/>
+    <facet name="enumeration" value="3330025" annotation="Vision, Aphasia, Neglect (VAN)"/>
+    <facet name="enumeration" value="3330027" annotation="FAST-ED"/>
+    <facet name="enumeration" value="3330029" annotation="BEFAST"/>
+  </TypeOfStrokeScale>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When Stroke Scale Type has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Stroke Scale Type is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

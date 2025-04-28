@@ -1,0 +1,24 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.51"  minOccurs="0"  maxOccurs="M"  dataTypeName="icd10Code"  isNillable="No">
+<name>EMS Condition Code</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The condition code associated with the CMS EMS negotiated rule-making process.</definition>
+<v2Number>E07_35</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Code list is represented in ICD-10-CM Codes: 
+							<br/>Website - <a href="http://uts.nlm.nih.gov" target="_blank">http://uts.nlm.nih.gov</a>
+							<br/>Product - UMLS Metathesaurus</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <icd10Code baseType="string">
+    <facet name="pattern" value="[A-Z][0-9][0-9A-Z]((\.[0-9A-Z]{1,4})?)"/>
+  </icd10Code>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

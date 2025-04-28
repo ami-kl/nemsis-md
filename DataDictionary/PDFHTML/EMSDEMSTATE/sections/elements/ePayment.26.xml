@@ -1,0 +1,23 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.26"  minOccurs="0"  maxOccurs="1"  dataTypeName="StreetAddress"  isNillable="No">
+<name>Closest Relative/ Guardian Street Address</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The street address of the residence of the patient's closest relative or guardian.</definition>
+<v2Number>E07_21</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This element allows for a two line documentation of the address.  For out of country addresses the second line should be used to document, city, country, postal code and any other pertinent information.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <StreetAddress baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="255"/>
+  </StreetAddress>
+</restrictions>
+<attributes>
+  <StreetAddress2 baseType="string"><facet name="minLength" value="1"/><facet name="maxLength" value="255"/></StreetAddress2>
+</attributes>
+</element>

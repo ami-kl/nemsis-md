@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eInjury.09"  minOccurs="0"  maxOccurs="1"  dataTypeName="HeightOfFall"  isNillable="No">
+<name>Height of Fall (feet)</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The distance in feet the patient fell, measured from the lowest point of the patient to the ground.</definition>
+<v2Number>E10_10</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Classify same level falls as 0 feet</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <HeightOfFall baseType="integer">
+    <facet name="minInclusive" value="0"/>
+    <facet name="maxInclusive" value="10000"/>
+  </HeightOfFall>
+</restrictions>
+</element>

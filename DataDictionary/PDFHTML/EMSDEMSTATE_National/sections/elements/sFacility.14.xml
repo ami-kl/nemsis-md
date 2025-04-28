@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="sFacility.14"  minOccurs="0"  maxOccurs="1"  dataTypeName="USNG"  isNillable="No">
+<name>Facility US National Grid Coordinates</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The facility US National Grid Coordinates.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Standard found at <a href="http://www.fgdc.gov/usng">http://www.fgdc.gov/usng</a>.
+																		<br/><br/>Used to populate dFacility.14 Facility US National Grid Coordinates.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <USNG baseType="string">
+    <facet name="pattern" value="([1-9]|[1-5][0-9]|60)[C-HJ-NP-X][A-HJ-NP-Z][A-HJ-NP-V]([0-9][0-9]){4,5}"/>
+  </USNG>
+</restrictions>
+</element>

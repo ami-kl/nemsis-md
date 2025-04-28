@@ -1,0 +1,38 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eOutcome.09"  minOccurs="1"  maxOccurs="1"  dataTypeName="icd10CodeOutcomeProcedures"  isNillable="Yes">
+<name>Emergency Department Procedures</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The procedures performed on the patient during the emergency department visit.</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>ICD-10-PCS has a seven character alphanumeric code structure. Each character contains up to 34 possible values. 
+										Each value represents a specific option for the general character definition (e.g., stomach is one of the values for the body part character). 
+										The ten digits 0-9 and the 24 letters A-H,J-N and P-Z may be used in each character. 
+										The letters O and I are not used in order to avoid confusion with the digits 0 and 1.
+										<br/>Website - <a href="http://uts.nlm.nih.gov">http://uts.nlm.nih.gov</a>
+										<br/>Product - UMLS Metathesaurus</v3Comment>
+<v3Changes>Added to better evaluate EMS care.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <icd10CodeOutcomeProcedures baseType="string">
+    <facet name="pattern" value="[0-9A-HJ-NP-Z]{3,7}"/>
+  </icd10CodeOutcomeProcedures>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When Emergency Department Procedures has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Emergency Department Procedures is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

@@ -1,0 +1,25 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eHistory.09"  minOccurs="0"  maxOccurs="M"  dataTypeName="MedicalHistoryObtainedFrom"  isNillable="No">
+<name>Medical History Obtained From</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>Type of person medical history obtained from.</definition>
+<v2Number>E12_11</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <MedicalHistoryObtainedFrom baseType="string">
+    <facet name="enumeration" value="3109001" annotation="Bystander/Other"/>
+    <facet name="enumeration" value="3109003" annotation="Family"/>
+    <facet name="enumeration" value="3109005" annotation="Health Care Personnel"/>
+    <facet name="enumeration" value="3109007" annotation="Patient"/>
+  </MedicalHistoryObtainedFrom>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

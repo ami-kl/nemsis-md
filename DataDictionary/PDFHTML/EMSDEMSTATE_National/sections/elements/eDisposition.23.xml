@@ -1,0 +1,66 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDisposition.23"  minOccurs="1"  maxOccurs="M"  dataTypeName="HospitalDesignation"  isNillable="Yes">
+<name>Hospital Capability</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The primary hospital capability associated with the patient's condition for this transport (e.g., Trauma, STEMI, Peds, etc.).</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>To be documented when eDisposition.21 (Type of Destination) is 1) Hospital-Emergency Department, 2) Hospital-Non-Emergency Department Bed, or 3) Freestanding Emergency Department.
+								<br/><br/>Stroke Center classifications based on Join Commission stroke certification: <a href="https://www.jointcommission.org/facts_about_joint_commission_stroke_certification/" target="_blank">https://www.jointcommission.org/facts_about_joint_commission_stroke_certification/</a></v3Comment>
+<v3Changes>Added to aid in determining if patients are transported to the appropriate hospital based on provider impression, assessment, and treatment.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <HospitalDesignation baseType="string">
+    <facet name="enumeration" value="9908001" annotation="Behavioral Health"/>
+    <facet name="enumeration" value="9908003" annotation="Burn Center"/>
+    <facet name="enumeration" value="9908005" annotation="Critical Access Hospital"/>
+    <facet name="enumeration" value="9908007" annotation="Hospital (General)"/>
+    <facet name="enumeration" value="9908009" annotation="Neonatal Center"/>
+    <facet name="enumeration" value="9908011" annotation="Pediatric Center"/>
+    <facet name="enumeration" value="9908019" annotation="Rehab Center"/>
+    <facet name="enumeration" value="9908021" annotation="Trauma Center Level 1"/>
+    <facet name="enumeration" value="9908023" annotation="Trauma Center Level 2"/>
+    <facet name="enumeration" value="9908025" annotation="Trauma Center Level 3"/>
+    <facet name="enumeration" value="9908027" annotation="Trauma Center Level 4"/>
+    <facet name="enumeration" value="9908029" annotation="Trauma Center Level 5"/>
+    <facet name="enumeration" value="9908031" annotation="Cardiac-STEMI/PCI Capable"/>
+    <facet name="enumeration" value="9908033" annotation="Cardiac-STEMI/PCI Capable (24/7)"/>
+    <facet name="enumeration" value="9908035" annotation="Cardiac-STEMI/Non-PCI Capable"/>
+    <facet name="enumeration" value="9908037" annotation="Stroke-Acute Stroke Ready Hospital (ASRH)"/>
+    <facet name="enumeration" value="9908039" annotation="Stroke-Primary Stroke Center (PSC)"/>
+    <facet name="enumeration" value="9908041" annotation="Stroke-Thrombectomy-Capable Stroke Center (TSC)"/>
+    <facet name="enumeration" value="9908043" annotation="Stroke-Comprehensive Stroke Center (CSC)"/>
+    <facet name="enumeration" value="9908045" annotation="Cancer Center"/>
+    <facet name="enumeration" value="9908047" annotation="Labor and Delivery"/>
+  </HospitalDesignation>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e171" role="Warning">
+      <elementRef elementNumber="eDisposition.23">Hospital Capability</elementRef> should be recorded when <elementRef elementNumber="eDisposition.21">Type of Destination</elementRef> is &quot;Hospital...&quot; or &quot;Freestanding Emergency Department&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e172" role="Warning">
+      <elementRef elementNumber="eDisposition.23">Hospital Capability</elementRef> should be recorded when <elementRef elementNumber="eDisposition.21">Type of Destination</elementRef> is &quot;Hospital...&quot; or &quot;Freestanding Emergency Department&quot; and <elementRef elementNumber="eVitals.29">Stroke Scale Result</elementRef> is &quot;Positive&quot;.
+      </assert>
+  <assert id="nemSch_e173" role="Warning">
+      <elementRef elementNumber="eDisposition.23">Hospital Capability</elementRef> should be recorded when <elementRef elementNumber="eDisposition.21">Type of Destination</elementRef> is &quot;Hospital...&quot; or &quot;Freestanding Emergency Department&quot; and <elementRef elementNumber="eVitals.03">Cardiac Rhythm / Electrocardiography (ECG)</elementRef> is &quot;STEMI...&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Hospital Capability has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Hospital Capability is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Hospital Capability has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

@@ -1,0 +1,22 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDispatch.06"  minOccurs="0"  maxOccurs="1"  dataTypeName="UnitDispatchedCADRecordID"  isNillable="No">
+<name>Unit Dispatched CAD Record ID</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The unique ID assigned by the CAD system for the specific unit response.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>The Unit Dispatched CAD Record ID is populated from a CAD system. This information will not be known to the EMS professional. 
+  <br/><br/>
+Use Case: Some CAD systems may use the Unit Dispatched CAD Record ID as the Patient Care Report Number (eRecord.01). This may also be a GUID from a CAD system. A GUID for the CAD push to remain unique as updates are sent from CAD. This could be a stream and unique to the record or patient depending on the capabilities of the CAD system. How the Unit Dispatched CAD Record ID is created could vary as it could be a concatenation of multiple elements or a true GUID.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <UnitDispatchedCADRecordID baseType="string">
+    <facet name="minLength" value="3"/>
+    <facet name="maxLength" value="50"/>
+  </UnitDispatchedCADRecordID>
+</restrictions>
+</element>

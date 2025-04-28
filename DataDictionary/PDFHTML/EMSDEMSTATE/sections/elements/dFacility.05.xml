@@ -1,0 +1,22 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dFacility.05"  minOccurs="0"  maxOccurs="M"  dataTypeName="NationalProviderIdentifier"  isNillable="No">
+<name>Facility National Provider Identifier</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The facility National Provider Identifier associated with National Provider System (NPS).</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <NationalProviderIdentifier baseType="string">
+    <facet name="length" value="10"/>
+  </NationalProviderIdentifier>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

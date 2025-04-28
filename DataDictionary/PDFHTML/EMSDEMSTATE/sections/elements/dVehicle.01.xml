@@ -1,0 +1,35 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dVehicle.01"  minOccurs="0"  maxOccurs="1"  dataTypeName="VehicleNumber"  isNillable="Yes">
+<name>Unit/Vehicle Number</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The unique ID number for the unit which is specific for each vehicle. This ID number may be the state's vehicle's permit number.</definition>
+<v2Number>D06_01</v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This element can be used in EMS PCR documentation to document the vehicle. This element should be used to populate eResponse.13 (EMS Vehicle (Unit) Number).</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <VehicleNumber baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="25"/>
+  </VehicleNumber>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_d002" role="Error">
+      When Unit/Vehicle Number has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_d001" role="Error">
+      When Unit/Vehicle Number is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

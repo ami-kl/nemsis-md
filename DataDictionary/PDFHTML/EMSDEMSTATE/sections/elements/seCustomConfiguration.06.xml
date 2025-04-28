@@ -1,0 +1,32 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="seCustomConfiguration.06"  minOccurs="0"  maxOccurs="M"  dataTypeName="CustomValue"  isNillable="No">
+<name>Patient Care Report Custom Data Element Potential Values</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The values which are associated with the patient care report custom data element. Values would be the choices provided to the user when they document the custom data element.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Used to populate eCustomConfiguration.06 Custom Data Element Potential Values.</v3Comment>
+<v3Changes>Added to allow customized data elements to be inserted and collected from within the NEMSIS Version 3 standard.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <CustomValue baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="100"/>
+  </CustomValue>
+</restrictions>
+<attributes>
+  <nemsisCode baseType="anySimpleType"><facet name="whiteSpace" value="preserve"/></nemsisCode>
+  <customValueDescription baseType="anySimpleType"><facet name="whiteSpace" value="preserve"/></customValueDescription>
+</attributes>
+<asserts>
+  <assert id="nemSch_s011" role="Error">
+      <elementRef elementNumber="seCustomConfiguration.06">Patient Care Report Custom Data Element Potential Values</elementRef> should be unique (the same value should not be listed more than once).
+      </assert>
+  <assert id="nemSch_s012" role="Error">
+      The Custom Value Description for <elementRef elementNumber="seCustomConfiguration.06">Patient Care Report Custom Data Element Potential Values</elementRef> should be unique (the same description should not be listed more than once).
+      </assert>
+</asserts>
+</element>

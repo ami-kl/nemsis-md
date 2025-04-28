@@ -1,0 +1,1092 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.nemsis.org" targetNamespace="http://www.nemsis.org" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="commonTypes_v3.xsd"></xs:include>
+	<xs:complexType name="ePayment">
+		<xs:sequence>
+			<xs:element name="ePayment.01" nillable="true" id="ePayment.PrimaryMethodofPayment">
+				<xs:annotation>
+					<xs:documentation>
+						<nemsisTacDoc>
+							<number>ePayment.01</number>
+							<name>Primary Method of Payment</name>
+							<national>Yes</national>
+							<state>Yes</state>
+							<definition>The primary method of payment or type of insurance associated with this EMS encounter.</definition>
+							<v2Number>E07_01</v2Number>
+							<usage>Required</usage>
+							<performanceMeasuresGroup>
+								<performanceMeasure>Airway</performanceMeasure>
+								<performanceMeasure>Cardiac Arrest</performanceMeasure>
+								<performanceMeasure>Pediatric</performanceMeasure>
+								<performanceMeasure>Response</performanceMeasure>
+								<performanceMeasure>STEMI</performanceMeasure>
+								<performanceMeasure>Stroke</performanceMeasure>
+								<performanceMeasure>Trauma</performanceMeasure>
+							</performanceMeasuresGroup>
+						</nemsisTacDoc>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="PrimaryMethodOfPayment">
+							<xs:attribute name="NV" use="optional">
+								<xs:simpleType>
+									<xs:union memberTypes="NV.NotApplicable NV.NotRecorded"></xs:union>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<xs:element name="ePayment.50" nillable="true" id="ePayment.CMSServiceLevel">
+				<xs:annotation>
+					<xs:documentation>
+						<nemsisTacDoc>
+							<number>ePayment.50</number>
+							<name>CMS Service Level</name>
+							<national>Yes</national>
+							<state>Yes</state>
+							<definition>The CMS service level for this EMS encounter.</definition>
+							<v2Number>E07_34</v2Number>
+							<usage>Required</usage>
+							<performanceMeasuresGroup>
+								<performanceMeasure>Airway</performanceMeasure>
+								<performanceMeasure>Pediatric</performanceMeasure>
+								<performanceMeasure>STEMI</performanceMeasure>
+								<performanceMeasure>Stroke</performanceMeasure>
+								<performanceMeasure>Trauma</performanceMeasure>
+							</performanceMeasuresGroup>
+						</nemsisTacDoc>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="CMSServiceLevel">
+							<xs:attribute name="NV" use="optional">
+								<xs:simpleType>
+									<xs:union memberTypes="NV.NotApplicable NV.NotRecorded"></xs:union>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			
+			
+			
+			
+			
+			
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="InsuranceGroupName">
+		<xs:annotation>
+			<xs:documentation>The name of the patient's insurance group.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="2"></xs:minLength>
+			<xs:maxLength value="30"></xs:maxLength>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="PayerType">
+		<xs:annotation>
+			<xs:documentation>Payer type according to X12 standard.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="11">
+				<xs:annotation>
+					<xs:documentation>Other Non-Federal Programs</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="12">
+				<xs:annotation>
+					<xs:documentation>Preferred Provider Organization (PPO)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="13">
+				<xs:annotation>
+					<xs:documentation>Point of Service (POS)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="14">
+				<xs:annotation>
+					<xs:documentation>Exclusive Provider Organization (EPO)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="15">
+				<xs:annotation>
+					<xs:documentation>Indemnity Insurance</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="16">
+				<xs:annotation>
+					<xs:documentation>Health Maintenance Organization (HMO) Medicare Risk</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="17">
+				<xs:annotation>
+					<xs:documentation>Dental Maintenance Organization</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AM">
+				<xs:annotation>
+					<xs:documentation>Automobile Medical</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BL">
+				<xs:annotation>
+					<xs:documentation>Blue Cross/Blue Shield</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CH">
+				<xs:annotation>
+					<xs:documentation>Champus</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CI">
+				<xs:annotation>
+					<xs:documentation>Commercial Insurance Co.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DS">
+				<xs:annotation>
+					<xs:documentation>Disability</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FI">
+				<xs:annotation>
+					<xs:documentation>Federal Employees Program</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HM">
+				<xs:annotation>
+					<xs:documentation>Health Maintenance Organization</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LM">
+				<xs:annotation>
+					<xs:documentation>Liability Medical</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MA">
+				<xs:annotation>
+					<xs:documentation>Medicare Part A</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MB">
+				<xs:annotation>
+					<xs:documentation>Medicare Part B</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MC">
+				<xs:annotation>
+					<xs:documentation>Medicaid</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OF">
+				<xs:annotation>
+					<xs:documentation>Other Federal Program</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TV">
+				<xs:annotation>
+					<xs:documentation>Title V</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VA">
+				<xs:annotation>
+					<xs:documentation>Veteran Affairs Plan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WC">
+				<xs:annotation>
+					<xs:documentation>Workers' Compensation Health Claim</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ZZ">
+				<xs:annotation>
+					<xs:documentation>Mutually Defined</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="AmbulanceConditionsIndicator">
+		<xs:annotation>
+			<xs:documentation>Documentation of the CRC03 through CRC07 requirements for CMS billing using X12 transactions.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="01">
+				<xs:annotation>
+					<xs:documentation>Patient was admitted to a hospital</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="04">
+				<xs:annotation>
+					<xs:documentation>Patient was moved by stretcher</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="05">
+				<xs:annotation>
+					<xs:documentation>Patient was unconscious or in shock</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="06">
+				<xs:annotation>
+					<xs:documentation>Patient was transported in an emergency situation</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="07">
+				<xs:annotation>
+					<xs:documentation>Patient had to be physically restrained</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="08">
+				<xs:annotation>
+					<xs:documentation>Patient had visible hemorrhaging</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="09">
+				<xs:annotation>
+					<xs:documentation>Ambulance service was medically necessary</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="12">
+				<xs:annotation>
+					<xs:documentation>Patient is confined to a bed or chair (Use code 12 to indicate patient was bedridden during transport.)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="AmbulanceReasonCode">
+		<xs:annotation>
+			<xs:documentation>The CMS Ambulance Transport Reason Code used in CMS X12 transmissions and CR104.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="A">
+				<xs:annotation>
+					<xs:documentation>Patient was transported to the nearest facility for care of symptoms, complaints, or both</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="B">
+				<xs:annotation>
+					<xs:documentation>Patient was transported for the benefit of a preferred physician</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="C">
+				<xs:annotation>
+					<xs:documentation>Patient was transported for the nearness of family members</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="D">
+				<xs:annotation>
+					<xs:documentation>Patient was transported for the care of a specialist or for availability of equipment</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="E">
+				<xs:annotation>
+					<xs:documentation>Patient was transferred to a Rehabilitation Facility</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="AmbulanceTransportCode">
+		<xs:annotation>
+			<xs:documentation>Information about the EMS Transport related to the CMS Ambulance Transport Code and CR103.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="I">
+				<xs:annotation>
+					<xs:documentation>Initial Trip</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="R">
+				<xs:annotation>
+					<xs:documentation>Return Trip</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="X">
+				<xs:annotation>
+					<xs:documentation>Round Trip</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="T">
+				<xs:annotation>
+					<xs:documentation>Transfer Trip</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="AuthorizationCode">
+		<xs:annotation>
+			<xs:documentation>Prior authorization code provided by the insurance carrier/payer.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="2"></xs:minLength>
+			<xs:maxLength value="50"></xs:maxLength>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ClosestRelativeGuardianRelationship">
+		<xs:annotation>
+			<xs:documentation>The relationship of the patient's closest relative or guardian</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="2632001">
+				<xs:annotation>
+					<xs:documentation>Appointed Guardian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2632003">
+				<xs:annotation>
+					<xs:documentation>Child/Dependent</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2632005">
+				<xs:annotation>
+					<xs:documentation>Father</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2632007">
+				<xs:annotation>
+					<xs:documentation>Mother</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2632009">
+				<xs:annotation>
+					<xs:documentation>Other (Non-Relative)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2632011">
+				<xs:annotation>
+					<xs:documentation>Other (Relative)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2632013">
+				<xs:annotation>
+					<xs:documentation>Sibling</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2632015">
+				<xs:annotation>
+					<xs:documentation>Spouse</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2632017">
+				<xs:annotation>
+					<xs:documentation>Employee</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2632019">
+				<xs:annotation>
+					<xs:documentation>Life/Domestic Partner</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2632021">
+				<xs:annotation>
+					<xs:documentation>Unknown</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CMSServiceLevel">
+		<xs:annotation>
+			<xs:documentation>The CMS service level for this EMS encounter.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="2650001">
+				<xs:annotation>
+					<xs:documentation>ALS, Level 1</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2650003">
+				<xs:annotation>
+					<xs:documentation>ALS, Level 1 Emergency</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2650005">
+				<xs:annotation>
+					<xs:documentation>ALS, Level 2</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2650007">
+				<xs:annotation>
+					<xs:documentation>BLS</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2650009">
+				<xs:annotation>
+					<xs:documentation>BLS, Emergency</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2650011">
+				<xs:annotation>
+					<xs:documentation>Fixed Wing (Airplane)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2650013">
+				<xs:annotation>
+					<xs:documentation>Paramedic Intercept</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2650015">
+				<xs:annotation>
+					<xs:documentation>Specialty Care Transport</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2650017">
+				<xs:annotation>
+					<xs:documentation>Rotary Wing (Helicopter)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CMSTransportationIndicator">
+		<xs:annotation>
+			<xs:documentation>The CMS Condition Code Air Ambulance Modifier indicating why it was medically necessary to respond with air medical services as opposed to ground medical
+services.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="C1">
+				<xs:annotation>
+					<xs:documentation>Interfacility Transport (Requires Higher level of care)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="C2">
+				<xs:annotation>
+					<xs:documentation>Interfacility Transport (service not available)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="C3">
+				<xs:annotation>
+					<xs:documentation>Emergency Trauma Dispatch Condition Code (Major Incident or Mechanism of Injury)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="C4">
+				<xs:annotation>
+					<xs:documentation>Medically Necessary Transport (Facility on Divert or Services Unavailable)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="C5">
+				<xs:annotation>
+					<xs:documentation>BLS Transport of ALS Patient (ALS not available)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="C6">
+				<xs:annotation>
+					<xs:documentation>ALS Response (Based on Dispatch Info) to BLS Patient (Condition)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="C7">
+				<xs:annotation>
+					<xs:documentation>IV Medications required en route (ALS)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="D1">
+				<xs:annotation>
+					<xs:documentation>Long Distance-patient's condition requires rapid transportation over a long distance</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="D2">
+				<xs:annotation>
+					<xs:documentation>Rare Circumstances, Traffic Patterns Precludes Ground Transport</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="D3">
+				<xs:annotation>
+					<xs:documentation>Time to the closest appropriate hospital due to the patient's condition precludes ground transport; maximize clinical benefits</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="D4">
+				<xs:annotation>
+					<xs:documentation>Pick up Point not Accessible by Ground Transport</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="EmployerName">
+		<xs:annotation>
+			<xs:documentation>The patient's employers Name.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="2"></xs:minLength>
+			<xs:maxLength value="60"></xs:maxLength>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="HealthcareProviderType">
+		<xs:annotation>
+			<xs:documentation>The type of healthcare provider who signed the Physician Certification Statement</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="2605001">
+				<xs:annotation>
+					<xs:documentation>Clinical Nurse Specialist</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2605003">
+				<xs:annotation>
+					<xs:documentation>Discharge Planner</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2605005">
+				<xs:annotation>
+					<xs:documentation>Physician (MD or DO)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2605007">
+				<xs:annotation>
+					<xs:documentation>Physician Assistant</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2605009">
+				<xs:annotation>
+					<xs:documentation>Registered Nurse</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2605011">
+				<xs:annotation>
+					<xs:documentation>Registered Nurse Practitioner</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2605013">
+				<xs:annotation>
+					<xs:documentation>Licensed Practical Nurse (LPN)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2605015">
+				<xs:annotation>
+					<xs:documentation>Case Manager</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2605017">
+				<xs:annotation>
+					<xs:documentation>Social Worker</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="InsuranceCompanyBillingPriority">
+		<xs:annotation>
+			<xs:documentation>The billing priority or order for the insurance company.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="2611001">
+				<xs:annotation>
+					<xs:documentation>Other</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2611003">
+				<xs:annotation>
+					<xs:documentation>Primary</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2611005">
+				<xs:annotation>
+					<xs:documentation>Secondary</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2611007">
+				<xs:annotation>
+					<xs:documentation>Tertiary</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2611009">
+				<xs:annotation>
+					<xs:documentation>Payer Responsibility Four</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2611011">
+				<xs:annotation>
+					<xs:documentation>Payer Responsibility Five</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2611013">
+				<xs:annotation>
+					<xs:documentation>Payer Responsibility Six</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2611015">
+				<xs:annotation>
+					<xs:documentation>Payer Responsibility Seven</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2611017">
+				<xs:annotation>
+					<xs:documentation>Payer Responsibility Eight</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2611019">
+				<xs:annotation>
+					<xs:documentation>Payer Responsibility Nine</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2611021">
+				<xs:annotation>
+					<xs:documentation>Payer Responsibility Ten</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2611023">
+				<xs:annotation>
+					<xs:documentation>Payer Responsibility Eleven</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2611025">
+				<xs:annotation>
+					<xs:documentation>Unknown</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="InsuranceCompanyID">
+		<xs:annotation>
+			<xs:documentation>The ID number of the patient's insurance company</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="2"></xs:minLength>
+			<xs:maxLength value="60"></xs:maxLength>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="InsuranceCompanyName">
+		<xs:annotation>
+			<xs:documentation>The name of the patient's insurance company</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="2"></xs:minLength>
+			<xs:maxLength value="60"></xs:maxLength>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="InsuranceGroupID">
+		<xs:annotation>
+			<xs:documentation>The ID number of the patient's insurance group.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="2"></xs:minLength>
+			<xs:maxLength value="30"></xs:maxLength>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="InsurancePolicyIDNumber">
+		<xs:annotation>
+			<xs:documentation>The ID number of the patient's insurance policy</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="2"></xs:minLength>
+			<xs:maxLength value="30"></xs:maxLength>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="PrimaryMethodOfPayment">
+		<xs:annotation>
+			<xs:documentation>The primary method of payment or type of insurance associated with this EMS encounter</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="2601001">
+				<xs:annotation>
+					<xs:documentation>Insurance</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2601003">
+				<xs:annotation>
+					<xs:documentation>Medicaid</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2601005">
+				<xs:annotation>
+					<xs:documentation>Medicare</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2601007">
+				<xs:annotation>
+					<xs:documentation>Not Billed (for any reason)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2601009">
+				<xs:annotation>
+					<xs:documentation>Other Government</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2601011">
+				<xs:annotation>
+					<xs:documentation>Self Pay</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2601013">
+				<xs:annotation>
+					<xs:documentation>Workers Compensation</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2601015">
+				<xs:annotation>
+					<xs:documentation>Payment by Facility</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2601017">
+				<xs:annotation>
+					<xs:documentation>Contracted Payment</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2601019">
+				<xs:annotation>
+					<xs:documentation>Community Network</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2601021">
+				<xs:annotation>
+					<xs:documentation>No Insurance Identified</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2601023">
+				<xs:annotation>
+					<xs:documentation>Other Payment Option</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Reason">
+		<xs:annotation>
+			<xs:documentation>The reason for EMS transport noted on the Physician Certification Statement</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="2604001">
+				<xs:annotation>
+					<xs:documentation>Bed Confined</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2604003">
+				<xs:annotation>
+					<xs:documentation>Cardiac/Hemodynamic monitoring required during transport</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2604005">
+				<xs:annotation>
+					<xs:documentation>Confused, combative, lethargic, comatose</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2604007">
+				<xs:annotation>
+					<xs:documentation>Contractures</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2604009">
+				<xs:annotation>
+					<xs:documentation>Danger to self or others-monitoring</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2604011">
+				<xs:annotation>
+					<xs:documentation>Danger to self or others-seclusion (flight risk)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2604013">
+				<xs:annotation>
+					<xs:documentation>DVT requires elevation of lower extremity</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2604015">
+				<xs:annotation>
+					<xs:documentation>IV medications/fluids required during transport</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2604017">
+				<xs:annotation>
+					<xs:documentation>Moderate to severe pain on movement</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2604019">
+				<xs:annotation>
+					<xs:documentation>Morbid Obesity requires additional personnel/equipment to handle</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2604021">
+				<xs:annotation>
+					<xs:documentation>Non-healing fractures</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2604023">
+				<xs:annotation>
+					<xs:documentation>Orthopedic device (backboard, halo, use of pins in traction, etc.) requiring special handling in transit</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2604025">
+				<xs:annotation>
+					<xs:documentation>Restraints (Physical or Chemical) anticipated or used during transport</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2604027">
+				<xs:annotation>
+					<xs:documentation>Risk of falling off wheelchair or stretcher while in motion (not related to obesity)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2604029">
+				<xs:annotation>
+					<xs:documentation>Severe Muscular weakness and de-conditioned state precludes any significant physical activity</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2604031">
+				<xs:annotation>
+					<xs:documentation>Special handling en route-Isolation</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2604033">
+				<xs:annotation>
+					<xs:documentation>Third Party assistance/attendant required to apply, administer, or regulate or adjust oxygen en route</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2604035">
+				<xs:annotation>
+					<xs:documentation>Unable to maintain erect sitting position in a chair for time needed to transport, due to moderate muscular weakness and de-conditioning.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2604037">
+				<xs:annotation>
+					<xs:documentation>Unable to sit in chair or wheelchair due to Grade II or greater decubitus ulcers on buttocks.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="RelationshipToInsured">
+		<xs:annotation>
+			<xs:documentation>The relationship of the patient to the primary insured person</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="2622001">
+				<xs:annotation>
+					<xs:documentation>Self</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2622003">
+				<xs:annotation>
+					<xs:documentation>Spouse</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2622005">
+				<xs:annotation>
+					<xs:documentation>Child/Dependent</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2622009">
+				<xs:annotation>
+					<xs:documentation>Cadaver Donor</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2622011">
+				<xs:annotation>
+					<xs:documentation>Employee</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2622013">
+				<xs:annotation>
+					<xs:documentation>Life/Domestic Partner</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2622015">
+				<xs:annotation>
+					<xs:documentation>Organ Donor</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2622017">
+				<xs:annotation>
+					<xs:documentation>Unknown</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2622019">
+				<xs:annotation>
+					<xs:documentation>Other Relationship</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ResidencyStatusOfThePatient">
+		<xs:annotation>
+			<xs:documentation>The status of the patient's residency (where they physically reside) within EMS Agencies municipality.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="2608001">
+				<xs:annotation>
+					<xs:documentation>Resident Within EMS Service Area</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2608003">
+				<xs:annotation>
+					<xs:documentation>Not a Resident Within EMS Service Area</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ResponseUrgency">
+		<xs:annotation>
+			<xs:documentation>The urgency in which the EMS agency began to mobilize resources.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="2640001">
+				<xs:annotation>
+					<xs:documentation>Immediate</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2640003">
+				<xs:annotation>
+					<xs:documentation>Non-Immediate</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="StretcherPurposeDesciption">
+		<xs:annotation>
+			<xs:documentation>Free Text Documentation providing the reason for use of a stretcher in the EMS patient transport.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="2"></xs:minLength>
+			<xs:maxLength value="80"></xs:maxLength>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SupplyCount">
+		<xs:annotation>
+			<xs:documentation>The number of the specific supply item used on the patient by the EMS Crew during the EMS event.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:positiveInteger">
+			<xs:minInclusive value="1"></xs:minInclusive>
+			<xs:maxInclusive value="100000000"></xs:maxInclusive>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SupplyUsed">
+		<xs:annotation>
+			<xs:documentation>The name of the supply used on the patient by the EMS Crew during the EMS event.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="2"></xs:minLength>
+			<xs:maxLength value="80"></xs:maxLength>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TransportAssessment">
+		<xs:annotation>
+			<xs:documentation>Documentation of the patient's transport need based on mobility and/or physical capability.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="2641001">
+				<xs:annotation>
+					<xs:documentation>Unable to sit without assistance</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2641003">
+				<xs:annotation>
+					<xs:documentation>Unable to stand without assistance</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2641005">
+				<xs:annotation>
+					<xs:documentation>Unable to walk without assistance</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TransportCareProvider">
+		<xs:annotation>
+			<xs:documentation>Documentation to show the patient care event met the Specialty Care Transport Base Rate requirements.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="2642001">
+				<xs:annotation>
+					<xs:documentation>Advanced EMT-Paramedic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2642003">
+				<xs:annotation>
+					<xs:documentation>Nurse</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2642005">
+				<xs:annotation>
+					<xs:documentation>Nurse Practitioner</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2642007">
+				<xs:annotation>
+					<xs:documentation>Physician (MD, DO)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2642009">
+				<xs:annotation>
+					<xs:documentation>Physician Assistant</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2642011">
+				<xs:annotation>
+					<xs:documentation>Emergency Medical Responder (EMR)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2642013">
+				<xs:annotation>
+					<xs:documentation>Emergency Medical Technician (EMT)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2643014">
+				<xs:annotation>
+					<xs:documentation>Emergency Medical Technician - Intermediate</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2642015">
+				<xs:annotation>
+					<xs:documentation>Advanced Emergency Medical Technician (AEMT)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2642017">
+				<xs:annotation>
+					<xs:documentation>Paramedic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2642027">
+				<xs:annotation>
+					<xs:documentation>Other Healthcare Professional</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2642029">
+				<xs:annotation>
+					<xs:documentation>Other Non-Healthcare Professional</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2642031">
+				<xs:annotation>
+					<xs:documentation>Respiratory Therapist</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2642033">
+				<xs:annotation>
+					<xs:documentation>Student</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2642035">
+				<xs:annotation>
+					<xs:documentation>Critical Care Paramedic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2642037">
+				<xs:annotation>
+					<xs:documentation>Community Paramedicine</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2642039">
+				<xs:annotation>
+					<xs:documentation>Registered Nurse</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TripPurposeDesciption">
+		<xs:annotation>
+			<xs:documentation>The description of the purpose of the round trip EMS transport based on CR109.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="2"></xs:minLength>
+			<xs:maxLength value="80"></xs:maxLength>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

@@ -1,0 +1,513 @@
+<?xml-stylesheet type="text/xsl" href="https://nemsis.org/media/nemsis_v3/release-3.5.1/DefinedLists/DefinedListHtml.xsl"?><DefinedList xmlns="http://www.nemsis.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" date="2025-01-14" xsi:schemaLocation="http://www.nemsis.org https://nemsis.org/media/nemsis_v3/release-3.5.1/DefinedLists/DefinedLists.xsd">
+  <Header>
+    <SourceVocabularies>
+      <SourceVocabulary url="https://www.cdc.gov/nchs/icd/icd-10-cm/">ICD-10</SourceVocabulary>
+    </SourceVocabularies>
+    <NemsisTypes>
+      <NemsisType>icd10CodeInjury</NemsisType>
+    </NemsisTypes>
+    <NemsisElements>
+      <NemsisElement>eInjury.01</NemsisElement>
+    </NemsisElements>
+  </Header>
+  <Codes>
+    <Code date="2023-02-14">
+      <Value>W54</Value>
+      <Category>Animal</Category>
+      <SourceLabel>Contact with dog</SourceLabel>
+      <SuggestedLabel>Contact with dog</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W64</Value>
+      <Category>Animal</Category>
+      <SourceLabel>Exposure to other animate mechanical forces</SourceLabel>
+      <SuggestedLabel>Contact with nonvenomous animal, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>T71</Value>
+      <Category>Asphyxiation</Category>
+      <SourceLabel>Asphyxiation</SourceLabel>
+      <SuggestedLabel>Asphyxiation</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>T71.16</Value>
+      <Category>Asphyxiation</Category>
+      <SourceLabel>Asphyxiation due to hanging</SourceLabel>
+      <SuggestedLabel>Hanging</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>T71.13</Value>
+      <Category>Asphyxiation</Category>
+      <SourceLabel>Asphyxiation due to being trapped in bed linens</SourceLabel>
+      <SuggestedLabel>Trapped in bed linens</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W51</Value>
+      <Category>Bodily Force</Category>
+      <SourceLabel>Accidental striking against or bumped into by another person</SourceLabel>
+      <SuggestedLabel>Hit against or bumped into by another person (accidental)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W50</Value>
+      <Category>Bodily Force</Category>
+      <SourceLabel>Accidental hit, strike, kick, twist, bite or scratch by another person</SourceLabel>
+      <SuggestedLabel>Hit/kick/bite/scratch by another person (accidental)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W65</Value>
+      <Category>Drowning</Category>
+      <SourceLabel>Accidental drowning and submersion while in bath-tub</SourceLabel>
+      <SuggestedLabel>Bath-tub</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W69</Value>
+      <Category>Drowning</Category>
+      <SourceLabel>Accidental drowning and submersion while in natural water</SourceLabel>
+      <SuggestedLabel>Natural water</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W74</Value>
+      <Category>Drowning</Category>
+      <SourceLabel>Unspecified cause of accidental drowning and submersion</SourceLabel>
+      <SuggestedLabel>Other</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W67</Value>
+      <Category>Drowning</Category>
+      <SourceLabel>Accidental drowning and submersion while in swimming-pool</SourceLabel>
+      <SuggestedLabel>Swimming pool</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>X31</Value>
+      <Category>Environmental</Category>
+      <SourceLabel>Exposure to excessive natural cold</SourceLabel>
+      <SuggestedLabel>Exposure to excessive natural cold</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>X30</Value>
+      <Category>Environmental</Category>
+      <SourceLabel>Exposure to excessive natural heat</SourceLabel>
+      <SuggestedLabel>Exposure to excessive natural heat</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>X00</Value>
+      <Category>Environmental</Category>
+      <SourceLabel>Exposure to uncontrolled fire in building or structure</SourceLabel>
+      <SuggestedLabel>Exposure to uncontrolled fire in building or structure</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W06</Value>
+      <Category>Fall</Category>
+      <SourceLabel>Fall from bed</SourceLabel>
+      <SuggestedLabel>Bed</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W07</Value>
+      <Category>Fall</Category>
+      <SourceLabel>Fall from chair</SourceLabel>
+      <SuggestedLabel>Chair</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y30</Value>
+      <Category>Fall</Category>
+      <SourceLabel>Falling, jumping or pushed from a high place, undetermined intent</SourceLabel>
+      <SuggestedLabel>Fall/jump/push from high place, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W08</Value>
+      <Category>Fall</Category>
+      <SourceLabel>Fall from other furniture</SourceLabel>
+      <SuggestedLabel>Furniture, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W00.9</Value>
+      <Category>Fall</Category>
+      <SourceLabel>Unspecified fall due to ice and snow</SourceLabel>
+      <SuggestedLabel>Ice, snow</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W11</Value>
+      <Category>Fall</Category>
+      <SourceLabel>Fall on and from ladder</SourceLabel>
+      <SuggestedLabel>Ladder</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W17</Value>
+      <Category>Fall</Category>
+      <SourceLabel>Other fall from one level to another</SourceLabel>
+      <SuggestedLabel>One level to another</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W18</Value>
+      <Category>Fall</Category>
+      <SourceLabel>Other slipping, tripping and stumbling and falls</SourceLabel>
+      <SuggestedLabel>Other slipping, tripping and stumbling and falls</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W09</Value>
+      <Category>Fall</Category>
+      <SourceLabel>Fall on and from playground equipment</SourceLabel>
+      <SuggestedLabel>Playground equipment</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W01</Value>
+      <Category>Fall</Category>
+      <SourceLabel>Fall on same level from slipping, tripping and stumbling</SourceLabel>
+      <SuggestedLabel>Same level slip, trip, stumble</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W18.30</Value>
+      <Category>Fall</Category>
+      <SourceLabel>Fall on same level, unspecified</SourceLabel>
+      <SuggestedLabel>Same level, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W18.2</Value>
+      <Category>Fall</Category>
+      <SourceLabel>Fall in (into) shower or empty bathtub</SourceLabel>
+      <SuggestedLabel>Shower/empty bath-tub</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W18.4</Value>
+      <Category>Fall</Category>
+      <SourceLabel>Slipping, tripping and stumbling without falling</SourceLabel>
+      <SuggestedLabel>Slip, trip, stumble without fall</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W10.9</Value>
+      <Category>Fall</Category>
+      <SourceLabel>Fall (on) (from) unspecified stairs and steps</SourceLabel>
+      <SuggestedLabel>Stairs/steps</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W18.1</Value>
+      <Category>Fall</Category>
+      <SourceLabel>Fall from or off toilet</SourceLabel>
+      <SuggestedLabel>Toilet</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W19</Value>
+      <Category>Fall</Category>
+      <SourceLabel>Unspecified fall</SourceLabel>
+      <SuggestedLabel>Unspecified fall, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W05</Value>
+      <Category>Fall</Category>
+      <SourceLabel>Fall from non-moving wheelchair, nonmotorized scooter and motorized mobility scooter</SourceLabel>
+      <SuggestedLabel>Wheelchair/nonmotorized scooter/motorized mobility scooter</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>T76</Value>
+      <Category>Intent</Category>
+      <SourceLabel>Adult and child abuse, neglect and other maltreatment, suspected</SourceLabel>
+      <SuggestedLabel>Abuse/Neglect NOS, suspected</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y00</Value>
+      <Category>Intent</Category>
+      <SourceLabel>Assault by blunt object</SourceLabel>
+      <SuggestedLabel>Assault by blunt object</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y04</Value>
+      <Category>Intent</Category>
+      <SourceLabel>Assault by bodily force</SourceLabel>
+      <SuggestedLabel>Assault by bodily force</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>X95.9</Value>
+      <Category>Intent</Category>
+      <SourceLabel>Assault by unspecified firearm discharge</SourceLabel>
+      <SuggestedLabel>Assault by firearm discharge</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>X99.9</Value>
+      <Category>Intent</Category>
+      <SourceLabel>Assault by unspecified sharp object</SourceLabel>
+      <SuggestedLabel>Assault by stabbing, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y08</Value>
+      <Category>Intent</Category>
+      <SourceLabel>Assault by other specified means</SourceLabel>
+      <SuggestedLabel>Assault, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y09</Value>
+      <Category>Intent</Category>
+      <SourceLabel>Assault by unspecified means</SourceLabel>
+      <SuggestedLabel>Homicide (attempted), NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>X74.9</Value>
+      <Category>Intent</Category>
+      <SourceLabel>Intentional self-harm by unspecified firearm discharge</SourceLabel>
+      <SuggestedLabel>Intentional self-harm by firearm</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>X83</Value>
+      <Category>Intent</Category>
+      <SourceLabel>Intentional self-harm by other specified means</SourceLabel>
+      <SuggestedLabel>Intentional self-harm, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>X78.9</Value>
+      <Category>Intent</Category>
+      <SourceLabel>Intentional self-harm by unspecified sharp object</SourceLabel>
+      <SuggestedLabel>Intentional self-harm, sharp object</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y33</Value>
+      <Category>Intent</Category>
+      <SourceLabel>Other specified events, undetermined intent</SourceLabel>
+      <SuggestedLabel>Other specified events, undetermined intent</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>T14.91</Value>
+      <Category>Intent</Category>
+      <SourceLabel>Suicide attempt</SourceLabel>
+      <SuggestedLabel>Suicide attempt</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y35</Value>
+      <Category>Law Enforcement</Category>
+      <SourceLabel>Legal intervention</SourceLabel>
+      <SuggestedLabel>Legal intervention</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W20</Value>
+      <Category>Mechanical Force</Category>
+      <SourceLabel>Struck by thrown, projected or falling object</SourceLabel>
+      <SuggestedLabel>Struck by thrown/projected/falling object</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W23</Value>
+      <Category>Mechanical Force</Category>
+      <SourceLabel>Caught, crushed, jammed or pinched in or between objects</SourceLabel>
+      <SuggestedLabel>Caught/crushed/jammed/pinched in or between objects</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y29</Value>
+      <Category>Mechanical Force</Category>
+      <SourceLabel>Contact with blunt object, undetermined intent</SourceLabel>
+      <SuggestedLabel>Contact with blunt object, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W22.8</Value>
+      <Category>Mechanical Force</Category>
+      <SourceLabel>Striking against or struck by other objects</SourceLabel>
+      <SuggestedLabel>Struck by other objects</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>V86.99</Value>
+      <Category>MVC, Non-Traffic Related</Category>
+      <SourceLabel>Unspecified occupant of other special all-terrain or other off-road motor vehicle injured in nontraffic accident</SourceLabel>
+      <SuggestedLabel>All-terrain/off-road accident, nontraffic</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>V49.3</Value>
+      <Category>MVC, Non-Traffic Related</Category>
+      <SourceLabel>Car occupant (driver) (passenger) injured in unspecified nontraffic accident</SourceLabel>
+      <SuggestedLabel>Car accident NOS, nontraffic</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>V29.3</Value>
+      <Category>MVC, Non-Traffic Related</Category>
+      <SourceLabel>Motorcycle rider (driver) (passenger) injured in unspecified nontraffic accident</SourceLabel>
+      <SuggestedLabel>Motorcycle accident NOS, nontraffic</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>V89.0</Value>
+      <Category>MVC, Non-Traffic Related</Category>
+      <SourceLabel>Person injured in unspecified motor-vehicle accident, nontraffic</SourceLabel>
+      <SuggestedLabel>Other motor-vehicle accident, nontraffic</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>V86.31</Value>
+      <Category>MVC, Traffic Related</Category>
+      <SourceLabel>Unspecified occupant of ambulance or fire engine injured in traffic accident</SourceLabel>
+      <SuggestedLabel>Ambulance/fire engine accident</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>V79.9</Value>
+      <Category>MVC, Traffic Related</Category>
+      <SourceLabel>Bus occupant (driver) (passenger) injured in unspecified traffic accident</SourceLabel>
+      <SuggestedLabel>Bus accident</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>V49.9</Value>
+      <Category>MVC, Traffic Related</Category>
+      <SourceLabel>Car occupant (driver) (passenger) injured in unspecified traffic accident</SourceLabel>
+      <SuggestedLabel>Car accident, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>V49</Value>
+      <Category>MVC, Traffic Related</Category>
+      <SourceLabel>Car occupant injured in other and unspecified transport accidents</SourceLabel>
+      <SuggestedLabel>Car occupant injured in transport accident, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>V43</Value>
+      <Category>MVC, Traffic Related</Category>
+      <SourceLabel>Car occupant injured in collision with car, pick-up truck or van</SourceLabel>
+      <SuggestedLabel>Collision with car/truck/van, car occupant injury</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>V40.9</Value>
+      <Category>MVC, Traffic Related</Category>
+      <SourceLabel>Unspecified car occupant injured in collision with pedestrian or animal in traffic accident</SourceLabel>
+      <SuggestedLabel>Collision with pedestrian/animal, car occupant injury</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>V49.6</Value>
+      <Category>MVC, Traffic Related</Category>
+      <SourceLabel>Unspecified car occupant injured in collision with other and unspecified motor vehicles in traffic accident</SourceLabel>
+      <SuggestedLabel>Collision with unspecified motor vehicles, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y32</Value>
+      <Category>MVC, Traffic Related</Category>
+      <SourceLabel>Crashing of motor vehicle, undetermined intent</SourceLabel>
+      <SuggestedLabel>Crashing of motor vehicle, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>V69.9</Value>
+      <Category>MVC, Traffic Related</Category>
+      <SourceLabel>Occupant (driver) (passenger) of heavy transport vehicle injured in unspecified traffic accident</SourceLabel>
+      <SuggestedLabel>Heavy transport vehicle accident</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>V29.9</Value>
+      <Category>MVC, Traffic Related</Category>
+      <SourceLabel>Motorcycle rider (driver) (passenger) injured in unspecified traffic accident</SourceLabel>
+      <SuggestedLabel>Motorcycle accident, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>V99</Value>
+      <Category>MVC, Traffic Related</Category>
+      <SourceLabel>Unspecified transport accident</SourceLabel>
+      <SuggestedLabel>Transport accident, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>V59.9</Value>
+      <Category>MVC, Traffic Related</Category>
+      <SourceLabel>Occupant (driver) (passenger) of pick-up truck or van injured in unspecified traffic accident</SourceLabel>
+      <SuggestedLabel>Truck/van accident</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>V87</Value>
+      <Category>MVC, Traffic Related</Category>
+      <SourceLabel>Traffic accident of specified type but victim's mode of transport unknown</SourceLabel>
+      <SuggestedLabel>Unknown mode of transport</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>V89.9</Value>
+      <Category>MVC, Traffic Related</Category>
+      <SourceLabel>Person injured in unspecified vehicle accident</SourceLabel>
+      <SuggestedLabel>Vehicle accident, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W45</Value>
+      <Category>Other</Category>
+      <SourceLabel>Foreign body or object entering through skin</SourceLabel>
+      <SuggestedLabel>Foreign body or object entering through skin</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>T14.90</Value>
+      <Category>Other</Category>
+      <SourceLabel>Injury, unspecified</SourceLabel>
+      <SuggestedLabel>Injury, unspecified</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>T14.8</Value>
+      <Category>Other</Category>
+      <SourceLabel>Other injury of unspecified body region</SourceLabel>
+      <SuggestedLabel>Other injury of unspecified body region</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>T75.89</Value>
+      <Category>Other</Category>
+      <SourceLabel>Other specified effects of external causes</SourceLabel>
+      <SuggestedLabel>Other specified effects of external causes</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>V19.3</Value>
+      <Category>Pedal Cyclist</Category>
+      <SourceLabel>Pedal cyclist (driver) (passenger) injured in unspecified nontraffic accident</SourceLabel>
+      <SuggestedLabel>Nontraffic accident</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>V19.9</Value>
+      <Category>Pedal Cyclist</Category>
+      <SourceLabel>Pedal cyclist (driver) (passenger) injured in unspecified traffic accident</SourceLabel>
+      <SuggestedLabel>Traffic accident</SuggestedLabel>
+    </Code>
+    <Code date="2024-07-08">
+      <Value>V29.91</Value>
+      <Category>Pedal Cyclist</Category>
+      <SourceLabel>Electric (assisted) bicycle rider (driver) (passenger) injured in unspecified traffic accident</SourceLabel>
+      <SuggestedLabel>Electric Bike</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>V03.9</Value>
+      <Category>Pedestrian</Category>
+      <SourceLabel>Pedestrian injured in collision with car, pick-up truck or van, unspecified whether traffic or nontraffic accident</SourceLabel>
+      <SuggestedLabel>Car/truck/van, nontraffic accident</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>V03.1</Value>
+      <Category>Pedestrian</Category>
+      <SourceLabel>Pedestrian injured in collision with car, pick-up truck or van in traffic accident</SourceLabel>
+      <SuggestedLabel>Car/truck/van, traffic accident</SuggestedLabel>
+    </Code>
+    <Code date="2024-07-08">
+      <Value>V00.84</Value>
+      <Category>Pedestrian</Category>
+      <SourceLabel>Accident with standing micro-mobility pedestrian conveyance</SourceLabel>
+      <SuggestedLabel>Electric scooters/boards/skates</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>T50.90</Value>
+      <Category>Poisoning</Category>
+      <SourceLabel>Poisoning by, adverse effect of and underdosing of unspecified drugs, medicaments and biological substances</SourceLabel>
+      <SuggestedLabel>Poisoning by unspecified substance</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>T51.9</Value>
+      <Category>Poisoning</Category>
+      <SourceLabel>Toxic effect of unspecified alcohol</SourceLabel>
+      <SuggestedLabel>Toxic effect of alcohol</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>T65.9</Value>
+      <Category>Poisoning</Category>
+      <SourceLabel>Toxic effect of unspecified substance</SourceLabel>
+      <SuggestedLabel>Toxic effect of unknown substance</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W26</Value>
+      <Category>Sharp Objects</Category>
+      <SourceLabel>Contact with other sharp objects</SourceLabel>
+      <SuggestedLabel>Knife/sword/dagger</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W25</Value>
+      <Category>Sharp Objects</Category>
+      <SourceLabel>Contact with sharp glass</SourceLabel>
+      <SuggestedLabel>Sharp glass</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y28.9</Value>
+      <Category>Sharp Objects</Category>
+      <SourceLabel>Contact with unspecified sharp object, undetermined intent</SourceLabel>
+      <SuggestedLabel>Sharp object, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>W31.9</Value>
+      <Category>Tools/Devices</Category>
+      <SourceLabel>Contact with unspecified machinery</SourceLabel>
+      <SuggestedLabel>Contact with machinery NOS</SuggestedLabel>
+    </Code>
+  </Codes>
+</DefinedList>

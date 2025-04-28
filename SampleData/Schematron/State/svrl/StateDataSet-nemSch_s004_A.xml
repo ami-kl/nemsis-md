@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svrl:schematron-output xmlns:iso="http://purl.oclc.org/dsdl/schematron"
+                        xmlns:nem="http://www.nemsis.org"
+                        xmlns:saxon="http://saxon.sf.net/"
+                        xmlns:schold="http://www.ascc.net/xml/schematron"
+                        xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        title="NEMSIS National ISO Schematron file for StateDataSet"
+                        schemaVersion="3.5.1.250403CP1"><!--   
+		   
+		   
+		 -->
+   <svrl:ns-prefix-in-attribute-values uri="http://www.nemsis.org" prefix="nem"/>
+   <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/State/xml/StateDataSet-nemSch_s004_A.xml"
+                        id="nemSch_sNilNvPn"
+                        name="StateDataSet / Nil/Not Value Attributes"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/State/xml/StateDataSet-nemSch_s004_A.xml"
+                        id="nemSch_sNvPn"
+                        name="DEMDataSet / Not Value/Pertinent Negative Uniqueness"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/State/xml/StateDataSet-nemSch_s004_A.xml"
+                        id="nemSch_StateDataSet"
+                        name="StateDataSet"/>
+   <svrl:fired-rule context="nem:StateDataSet" id="nemSch_StateDataSet_rule_1"/>
+   <svrl:failed-assert test="xs:dateTime(@timestamp) &lt; current-dateTime() + xs:dayTimeDuration('PT1H')"
+                       id="nemSch_s004"
+                       role="[ERROR]"
+                       location="/*:StateDataSet[namespace-uri()='http://www.nemsis.org'][1]">
+      <svrl:text>
+      The timestamp of the StateDataSet should not be in the future (the current time according to this system is February 25, 2025, 10:29 PST).
+    </svrl:text>
+      <svrl:diagnostic-reference diagnostic="nemsisDiagnostic">
+         <nemsisDiagnostic xmlns="http://www.nemsis.org" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+            <record>
+               <sState.01>49</sState.01>
+            </record>
+            <elements>
+               <element location="/*:StateDataSet[namespace-uri()='http://www.nemsis.org'][1]"
+                        xsi:schemaLocation="http://www.nemsis.org http://nemsis.org/media/nemsis_v3/3.5.1.250403CP1/XSDs/NEMSIS_XSDs/StateDataSet_v3.xsd"
+                        timestamp="2050-01-01T00:00:00-00:00"/>
+            </elements>
+            <elementsMissing/>
+         </nemsisDiagnostic>
+      </svrl:diagnostic-reference>
+   </svrl:failed-assert>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/State/xml/StateDataSet-nemSch_s004_A.xml"
+                        id="nemSch_sdCustomConfiguration"
+                        name="StateDataSet / Demographic Custom Elements"/>
+   <svrl:fired-rule context="nem:sdCustomConfiguration.CustomGroup"
+                    id="nemSch_sdCustomConfiguration_rule_1"/>
+   <svrl:fired-rule context="nem:sdCustomConfiguration.06"
+                    id="nemSch_sdCustomConfiguration_rule_2"/>
+   <svrl:fired-rule context="nem:sdCustomConfiguration.07"
+                    id="nemSch_sdCustomConfiguration_rule_3"/>
+   <svrl:fired-rule context="nem:sdCustomConfiguration.08"
+                    id="nemSch_sdCustomConfiguration_rule_4"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/State/xml/StateDataSet-nemSch_s004_A.xml"
+                        id="nemSch_seCustomConfiguration"
+                        name="StateDataSet / Patient Care Report Custom Elements"/>
+   <svrl:fired-rule context="nem:seCustomConfiguration.CustomGroup"
+                    id="nemSch_seCustomConfiguration_rule_1"/>
+   <svrl:fired-rule context="nem:seCustomConfiguration.06"
+                    id="nemSch_seCustomConfiguration_rule_2"/>
+   <svrl:fired-rule context="nem:seCustomConfiguration.06"
+                    id="nemSch_seCustomConfiguration_rule_2"/>
+   <svrl:fired-rule context="nem:seCustomConfiguration.07"
+                    id="nemSch_seCustomConfiguration_rule_3"/>
+   <svrl:fired-rule context="nem:seCustomConfiguration.08"
+                    id="nemSch_seCustomConfiguration_rule_4"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/State/xml/StateDataSet-nemSch_s004_A.xml"
+                        id="nemSch_sElement"
+                        name="StateDataSet / State Collected Elements"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:fired-rule context="nem:sElement.01" id="nemSch_sElement_rule_1"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/State/xml/StateDataSet-nemSch_s004_A.xml"
+                        id="nemSch_sConfiguration"
+                        name="StateDataSet / Configuration Information"/>
+   <svrl:fired-rule context="nem:sConfiguration.01" id="nemSch_sConfiguration_rule_1"/>
+   <svrl:fired-rule context="nem:sConfiguration.01" id="nemSch_sConfiguration_rule_1"/>
+   <svrl:fired-rule context="nem:sConfiguration.01" id="nemSch_sConfiguration_rule_1"/>
+   <svrl:fired-rule context="nem:sConfiguration.01" id="nemSch_sConfiguration_rule_1"/>
+   <svrl:fired-rule context="nem:sConfiguration.01" id="nemSch_sConfiguration_rule_1"/>
+   <svrl:fired-rule context="nem:sConfiguration.02" id="nemSch_sConfiguration_rule_2"/>
+   <svrl:fired-rule context="nem:sConfiguration.03" id="nemSch_sConfiguration_rule_3"/>
+   <svrl:fired-rule context="nem:sConfiguration.03" id="nemSch_sConfiguration_rule_3"/>
+   <svrl:fired-rule context="nem:sConfiguration.02" id="nemSch_sConfiguration_rule_2"/>
+   <svrl:fired-rule context="nem:sConfiguration.03" id="nemSch_sConfiguration_rule_3"/>
+   <svrl:fired-rule context="nem:sConfiguration.03" id="nemSch_sConfiguration_rule_3"/>
+   <svrl:fired-rule context="nem:sConfiguration.02" id="nemSch_sConfiguration_rule_2"/>
+   <svrl:fired-rule context="nem:sConfiguration.03" id="nemSch_sConfiguration_rule_3"/>
+   <svrl:fired-rule context="nem:sConfiguration.03" id="nemSch_sConfiguration_rule_3"/>
+   <svrl:fired-rule context="nem:sConfiguration.02" id="nemSch_sConfiguration_rule_2"/>
+   <svrl:fired-rule context="nem:sConfiguration.03" id="nemSch_sConfiguration_rule_3"/>
+   <svrl:fired-rule context="nem:sConfiguration.03" id="nemSch_sConfiguration_rule_3"/>
+   <svrl:fired-rule context="nem:sConfiguration.02" id="nemSch_sConfiguration_rule_2"/>
+   <svrl:fired-rule context="nem:sConfiguration.03" id="nemSch_sConfiguration_rule_3"/>
+   <svrl:fired-rule context="nem:sConfiguration.03" id="nemSch_sConfiguration_rule_3"/>
+   <svrl:fired-rule context="nem:sConfiguration.04" id="nemSch_sConfiguration_rule_4"/>
+   <svrl:fired-rule context="nem:sConfiguration.05" id="nemSch_sConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:sConfiguration.05" id="nemSch_sConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:sConfiguration.04" id="nemSch_sConfiguration_rule_4"/>
+   <svrl:fired-rule context="nem:sConfiguration.05" id="nemSch_sConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:sConfiguration.05" id="nemSch_sConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:sConfiguration.04" id="nemSch_sConfiguration_rule_4"/>
+   <svrl:fired-rule context="nem:sConfiguration.05" id="nemSch_sConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:sConfiguration.05" id="nemSch_sConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:sConfiguration.04" id="nemSch_sConfiguration_rule_4"/>
+   <svrl:fired-rule context="nem:sConfiguration.05" id="nemSch_sConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:sConfiguration.05" id="nemSch_sConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:sConfiguration.05" id="nemSch_sConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:sConfiguration.05" id="nemSch_sConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:sConfiguration.04" id="nemSch_sConfiguration_rule_4"/>
+   <svrl:fired-rule context="nem:sConfiguration.05" id="nemSch_sConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:sConfiguration.05" id="nemSch_sConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:sConfiguration.05" id="nemSch_sConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:sConfiguration.05" id="nemSch_sConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:sConfiguration.06" id="nemSch_sConfiguration_rule_6"/>
+   <svrl:fired-rule context="nem:sConfiguration.06" id="nemSch_sConfiguration_rule_6"/>
+   <svrl:fired-rule context="nem:sConfiguration.06" id="nemSch_sConfiguration_rule_6"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/State/xml/StateDataSet-nemSch_s004_A.xml"
+                        id="nemSch_sAgency"
+                        name="StateDataSet / Agency Information"/>
+   <svrl:fired-rule context="nem:sAgencyGroup" id="nemSch_sAgency_rule_1"/>
+   <svrl:fired-rule context="nem:sAgencyGroup" id="nemSch_sAgency_rule_1"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/State/xml/StateDataSet-nemSch_s004_A.xml"
+                        id="nemSch_sFacility"
+                        name="StateDataSet / Facility Information"/>
+   <svrl:fired-rule context="nem:sFacility.FacilityGroup" id="nemSch_sFacility_rule_1"/>
+   <svrl:fired-rule context="nem:sFacility.04" id="nemSch_sFacility_rule_2"/>
+   <svrl:fired-rule context="nem:sFacility.04" id="nemSch_sFacility_rule_2"/>
+   <svrl:fired-rule context="nem:sFacility.05" id="nemSch_sFacility_rule_3"/>
+   <svrl:fired-rule context="nem:sFacility.05" id="nemSch_sFacility_rule_3"/>
+   <svrl:fired-rule context="nem:sFacility.11" id="nemSch_sFacility_rule_4"/>
+   <svrl:fired-rule context="nem:sFacility.FacilityGroup" id="nemSch_sFacility_rule_1"/>
+   <svrl:fired-rule context="nem:sFacility.04" id="nemSch_sFacility_rule_2"/>
+   <svrl:fired-rule context="nem:sFacility.04" id="nemSch_sFacility_rule_2"/>
+   <svrl:fired-rule context="nem:sFacility.04" id="nemSch_sFacility_rule_2"/>
+   <svrl:fired-rule context="nem:sFacility.05" id="nemSch_sFacility_rule_3"/>
+   <svrl:fired-rule context="nem:sFacility.05" id="nemSch_sFacility_rule_3"/>
+   <svrl:fired-rule context="nem:sFacility.11" id="nemSch_sFacility_rule_4"/>
+   <svrl:fired-rule context="nem:sFacility.FacilityGroup" id="nemSch_sFacility_rule_1"/>
+   <svrl:fired-rule context="nem:sFacility.04" id="nemSch_sFacility_rule_2"/>
+   <svrl:fired-rule context="nem:sFacility.04" id="nemSch_sFacility_rule_2"/>
+   <svrl:fired-rule context="nem:sFacility.04" id="nemSch_sFacility_rule_2"/>
+   <svrl:fired-rule context="nem:sFacility.05" id="nemSch_sFacility_rule_3"/>
+   <svrl:fired-rule context="nem:sFacility.05" id="nemSch_sFacility_rule_3"/>
+   <svrl:fired-rule context="nem:sFacility.11" id="nemSch_sFacility_rule_4"/>
+   <svrl:fired-rule context="nem:sFacility.FacilityGroup" id="nemSch_sFacility_rule_1"/>
+   <svrl:fired-rule context="nem:sFacility.04" id="nemSch_sFacility_rule_2"/>
+   <svrl:fired-rule context="nem:sFacility.04" id="nemSch_sFacility_rule_2"/>
+   <svrl:fired-rule context="nem:sFacility.05" id="nemSch_sFacility_rule_3"/>
+   <svrl:fired-rule context="nem:sFacility.05" id="nemSch_sFacility_rule_3"/>
+   <svrl:fired-rule context="nem:sFacility.11" id="nemSch_sFacility_rule_4"/>
+   <svrl:fired-rule context="nem:sFacility.FacilityGroup" id="nemSch_sFacility_rule_1"/>
+   <svrl:fired-rule context="nem:sFacility.04" id="nemSch_sFacility_rule_2"/>
+   <svrl:fired-rule context="nem:sFacility.04" id="nemSch_sFacility_rule_2"/>
+   <svrl:fired-rule context="nem:sFacility.05" id="nemSch_sFacility_rule_3"/>
+   <svrl:fired-rule context="nem:sFacility.05" id="nemSch_sFacility_rule_3"/>
+   <svrl:fired-rule context="nem:sFacility.11" id="nemSch_sFacility_rule_4"/>
+   <svrl:fired-rule context="nem:sFacility.FacilityGroup" id="nemSch_sFacility_rule_1"/>
+   <svrl:fired-rule context="nem:sFacility.04" id="nemSch_sFacility_rule_2"/>
+   <svrl:fired-rule context="nem:sFacility.04" id="nemSch_sFacility_rule_2"/>
+   <svrl:fired-rule context="nem:sFacility.04" id="nemSch_sFacility_rule_2"/>
+   <svrl:fired-rule context="nem:sFacility.05" id="nemSch_sFacility_rule_3"/>
+   <svrl:fired-rule context="nem:sFacility.05" id="nemSch_sFacility_rule_3"/>
+   <svrl:fired-rule context="nem:sFacility.05" id="nemSch_sFacility_rule_3"/>
+   <svrl:fired-rule context="nem:sFacility.11" id="nemSch_sFacility_rule_4"/>
+   <svrl:fired-rule context="nem:sFacility.FacilityGroup" id="nemSch_sFacility_rule_1"/>
+   <svrl:fired-rule context="nem:sFacility.04" id="nemSch_sFacility_rule_2"/>
+   <svrl:fired-rule context="nem:sFacility.04" id="nemSch_sFacility_rule_2"/>
+   <svrl:fired-rule context="nem:sFacility.04" id="nemSch_sFacility_rule_2"/>
+   <svrl:fired-rule context="nem:sFacility.05" id="nemSch_sFacility_rule_3"/>
+   <svrl:fired-rule context="nem:sFacility.05" id="nemSch_sFacility_rule_3"/>
+   <svrl:fired-rule context="nem:sFacility.05" id="nemSch_sFacility_rule_3"/>
+   <svrl:fired-rule context="nem:sFacility.11" id="nemSch_sFacility_rule_4"/>
+</svrl:schematron-output>

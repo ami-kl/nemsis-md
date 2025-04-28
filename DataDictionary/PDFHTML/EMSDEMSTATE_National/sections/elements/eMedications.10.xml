@@ -1,0 +1,57 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eMedications.10"  minOccurs="1"  maxOccurs="1"  dataTypeName="EMSCaregiverLevel"  isNillable="Yes">
+<name>Role/Type of Person Administering Medication</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The type (level) of EMS or Healthcare Professional Administering the Medication. For medications administered prior to EMS arrival, this may be a non-EMS healthcare professional.</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Added to document the type of healthcare professional administering the medication.  This could be auto-completed from the crew ID but is necessary to document medication administration prior to EMS arrival. State may maintain an enumerated list but must collapse to the National Standard.
+										<br/><br/>The category EMT-Intermediate includes EMS professionals with an "85" or "99" certification level.</v3Comment>
+<v3Changes>Added to better document the type of healthcare professional who administered the medication.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EMSCaregiverLevel baseType="string">
+    <facet name="enumeration" value="9905001" annotation="Advanced Emergency Medical Technician (AEMT)"/>
+    <facet name="enumeration" value="9905002" annotation="Emergency Medical Technician - Intermediate"/>
+    <facet name="enumeration" value="9905003" annotation="Emergency Medical Responder (EMR)"/>
+    <facet name="enumeration" value="9905005" annotation="Emergency Medical Technician (EMT)"/>
+    <facet name="enumeration" value="9905007" annotation="Paramedic"/>
+    <facet name="enumeration" value="9905019" annotation="Other Healthcare Professional"/>
+    <facet name="enumeration" value="9905021" annotation="Other Non-Healthcare Professional"/>
+    <facet name="enumeration" value="9905025" annotation="Physician"/>
+    <facet name="enumeration" value="9905027" annotation="Respiratory Therapist"/>
+    <facet name="enumeration" value="9905029" annotation="Student"/>
+    <facet name="enumeration" value="9905031" annotation="Critical Care Paramedic"/>
+    <facet name="enumeration" value="9905033" annotation="Community Paramedicine"/>
+    <facet name="enumeration" value="9905035" annotation="Nurse Practitioner"/>
+    <facet name="enumeration" value="9905037" annotation="Physician Assistant"/>
+    <facet name="enumeration" value="9905039" annotation="Licensed Practical Nurse (LPN)"/>
+    <facet name="enumeration" value="9905041" annotation="Registered Nurse"/>
+    <facet name="enumeration" value="9905043" annotation="Patient"/>
+    <facet name="enumeration" value="9905045" annotation="Lay Person"/>
+    <facet name="enumeration" value="9905047" annotation="Law Enforcement"/>
+    <facet name="enumeration" value="9905049" annotation="Family Member"/>
+    <facet name="enumeration" value="9905051" annotation="Fire Personnel (non EMS)"/>
+  </EMSCaregiverLevel>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e150" role="Warning">
+      <elementRef elementNumber="eMedications.10">Role/Type of Person Administering Medication</elementRef> should be recorded, unless <elementRef elementNumber="eMedications.02">Medication Administered Prior to this Unit's EMS Care</elementRef> is &quot;Yes&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Role/Type of Person Administering Medication has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Role/Type of Person Administering Medication is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

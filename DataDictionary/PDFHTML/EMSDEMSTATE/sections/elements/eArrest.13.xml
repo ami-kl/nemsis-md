@@ -1,0 +1,29 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eArrest.13"  minOccurs="0"  maxOccurs="1"  dataTypeName="NeurologicalOutcomeAtDischarge"  isNillable="No">
+<name>Neurological Outcome at Hospital Discharge</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The level of cerebral performance of the patient at the time of discharge from the Hospital.</definition>
+<v2Number>E11_07</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup><performanceMeasure>Cardiac Arrest</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>1 = Good Cerebral Performance:  Conscious, Alert, able to work and lead a normal life.<br/><br/>
+							2 = Moderate Cerebral Disability:  Conscious and able to function independently (dress, travel, prepare food) may have hemiplegia,
+							seizures, or permanent memory or mental changes.<br/><br/>
+							3 = Severe Cerebral Disability:  Conscious, dependent on others for daily support, functions only in an institution or at home with
+							exceptional family effort.<br/><br/>
+							4 = Coma or vegetative state: any degree of coma without the presence of all brain death criteria. Unawareness, even if appears awake
+							(vegetative state) without interaction with environment; may have spontaneous eye opening and sleep/awake cycles. Cerebral
+							unresponsiveness.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <NeurologicalOutcomeAtDischarge baseType="string">
+    <facet name="enumeration" value="3013001" annotation="CPC 1 Good Cerebral Performance"/>
+    <facet name="enumeration" value="3013003" annotation="CPC 2 Moderate Cerebral Disability"/>
+    <facet name="enumeration" value="3013005" annotation="CPC 3 Severe Cerebral Disability"/>
+    <facet name="enumeration" value="3013007" annotation="CPC 4 Coma or Vegetative State"/>
+  </NeurologicalOutcomeAtDischarge>
+</restrictions>
+</element>

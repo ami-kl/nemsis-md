@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eOutcome.05"  minOccurs="0"  maxOccurs="1"  dataTypeName="OtherReportRegistryType"  isNillable="No">
+<name>Other Report Registry Type</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The type of external report/registry that was documented as "other" in eOutcome.03</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This element should be used only when other-report or other-registry is used eOutcome.03.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <OtherReportRegistryType baseType="string">
+    <facet name="minLength" value="2"/>
+    <facet name="maxLength" value="50"/>
+  </OtherReportRegistryType>
+</restrictions>
+</element>

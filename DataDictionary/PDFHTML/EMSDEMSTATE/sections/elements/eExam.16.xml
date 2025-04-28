@@ -1,0 +1,69 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eExam.16"  minOccurs="0"  maxOccurs="M"  dataTypeName="ExtremitiesAssessment"  isNillable="No">
+<name>Extremities Assessment</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The assessment findings associated with the patient's extremities.</definition>
+<v2Number>E16_17</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Element eExam.16 - Extremities Assessment represents Version 2.2.1 NHTSA Injury Matrix elements E15_08 Upper Extremities and E15_10 Lower Extremities AND E16_17 Extremities-Right Upper Assessment, E16_18 Extremities-Right Lower Assessment, E16_19 Extremities-Left Upper Assessment, and E16_20 Extremities-Left Lower Assessment. The element value choices have been combined and expanded.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ExtremitiesAssessment baseType="string">
+    <facet name="enumeration" value="3516001" annotation="Abrasion"/>
+    <facet name="enumeration" value="3516003" annotation="Amputation-Acute"/>
+    <facet name="enumeration" value="3516005" annotation="Amputation-Previous"/>
+    <facet name="enumeration" value="3516007" annotation="Avulsion"/>
+    <facet name="enumeration" value="3516009" annotation="Bleeding Controlled"/>
+    <facet name="enumeration" value="3516011" annotation="Bleeding Uncontrolled"/>
+    <facet name="enumeration" value="3516013" annotation="Burn-Blistering"/>
+    <facet name="enumeration" value="3516015" annotation="Burn-Charring"/>
+    <facet name="enumeration" value="3516017" annotation="Burn-Redness"/>
+    <facet name="enumeration" value="3516019" annotation="Burn-White/Waxy"/>
+    <facet name="enumeration" value="3516021" annotation="Clubbing (of fingers)"/>
+    <facet name="enumeration" value="3516023" annotation="Crush Injury"/>
+    <facet name="enumeration" value="3516025" annotation="Deformity"/>
+    <facet name="enumeration" value="3516027" annotation="Dislocation"/>
+    <facet name="enumeration" value="3516029" annotation="Edema"/>
+    <facet name="enumeration" value="3516031" annotation="Foreign Body"/>
+    <facet name="enumeration" value="3516033" annotation="Fracture-Closed"/>
+    <facet name="enumeration" value="3516035" annotation="Fracture-Open"/>
+    <facet name="enumeration" value="3516041" annotation="Laceration"/>
+    <facet name="enumeration" value="3516043" annotation="Motor Function-Abnormal/Weakness"/>
+    <facet name="enumeration" value="3516045" annotation="Motor Function-Absent"/>
+    <facet name="enumeration" value="3516047" annotation="Motor Function-Normal"/>
+    <facet name="enumeration" value="3516049" annotation="Normal"/>
+    <facet name="enumeration" value="3516051" annotation="Not Done"/>
+    <facet name="enumeration" value="3516053" annotation="Pain"/>
+    <facet name="enumeration" value="3516055" annotation="Paralysis"/>
+    <facet name="enumeration" value="3516057" annotation="Pulse-Abnormal"/>
+    <facet name="enumeration" value="3516059" annotation="Pulse-Absent"/>
+    <facet name="enumeration" value="3516061" annotation="Pulse-Normal"/>
+    <facet name="enumeration" value="3516063" annotation="Puncture/Stab Wound"/>
+    <facet name="enumeration" value="3516065" annotation="Sensation-Abnormal"/>
+    <facet name="enumeration" value="3516067" annotation="Sensation-Absent"/>
+    <facet name="enumeration" value="3516069" annotation="Sensation-Normal"/>
+    <facet name="enumeration" value="3516075" annotation="Tenderness"/>
+    <facet name="enumeration" value="3516077" annotation="Gunshot Wound"/>
+    <facet name="enumeration" value="3516079" annotation="Swelling"/>
+    <facet name="enumeration" value="3516081" annotation="Contusion"/>
+    <facet name="enumeration" value="3516083" annotation="Arm Drift"/>
+    <facet name="enumeration" value="3516085" annotation="Cool/Cold to Touch"/>
+    <facet name="enumeration" value="3516087" annotation="Cyanosis"/>
+    <facet name="enumeration" value="3516089" annotation="Erythema/Flushing"/>
+    <facet name="enumeration" value="3516091" annotation="Hot/Warm to Touch"/>
+    <facet name="enumeration" value="3516093" annotation="Lividity"/>
+    <facet name="enumeration" value="3516095" annotation="Mottled"/>
+    <facet name="enumeration" value="3516097" annotation="Pale"/>
+  </ExtremitiesAssessment>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+  <PN>
+    <PN.ExamFindingNotPresent><facet name="enumeration" value="8801005" annotation="Exam Finding Not Present"/></PN.ExamFindingNotPresent>
+  </PN>
+</attributes>
+</element>

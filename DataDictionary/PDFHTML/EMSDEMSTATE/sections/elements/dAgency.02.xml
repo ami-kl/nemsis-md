@@ -1,0 +1,21 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dAgency.02"  minOccurs="1"  maxOccurs="1"  dataTypeName="EMSAgencyNumber"  isNillable="No">
+<name>EMS Agency Number</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The state-assigned provider number of the responding agency</definition>
+<v2Number>D01_01</v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>This is the primary identifier for the entire Demographic Section.  Each of the Demographic sections must be associated with an EMS Agency Number. An EMS Agency can have more than one Agency Number within a state. This reflects the ability for an EMS Agency to have a different number for each service type or location (based on state implementation).
+							The EMS Agency Number in dAgency.02 can be used to auto-populate eResponse.01 EMS Agency Number in the EMS Event section.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EMSAgencyNumber baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="15"/>
+  </EMSAgencyNumber>
+</restrictions>
+</element>

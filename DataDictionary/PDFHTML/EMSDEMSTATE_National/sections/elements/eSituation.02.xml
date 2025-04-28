@@ -1,0 +1,53 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eSituation.02"  minOccurs="1"  maxOccurs="1"  dataTypeName="YesNoUnkValues"  isNillable="Yes">
+<name>Possible Injury</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Indication whether or not there was an injury.</definition>
+<v2Number>E09_04</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>This data element provides documentation to classify the EMS Reason for Encounter as either injury or non-injury related based on mechanism and not on actual injury. eSituation.02 (Possible Injury), eSituation.09 (Primary Symptom), eSituation.07 (Chief Complaint Anatomic Location), and eSituation.08 (Chief Complaint Organ System) are grouped together to form the EMS Reason for Encounter.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <YesNoUnkValues baseType="string">
+    <facet name="enumeration" value="9922001" annotation="No"/>
+    <facet name="enumeration" value="9922003" annotation="Unknown"/>
+    <facet name="enumeration" value="9922005" annotation="Yes"/>
+  </YesNoUnkValues>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e076" role="Warning">
+      <elementRef elementNumber="eSituation.02">Possible Injury</elementRef> should be recorded when <elementRef elementNumber="eResponse.05">Type of Service Requested</elementRef> is &quot;Emergency Response (Primary Response Area)&quot; and <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e077" role="Warning">
+      <elementRef elementNumber="eSituation.02">Possible Injury</elementRef> should be &quot;Yes&quot; when a symptom or impression is injury-related.
+      </assert>
+  <assert id="nemSch_e089" role="Warning">
+      <elementRef elementNumber="eInjury.01">Cause of Injury</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eSituation.02">Possible Injury</elementRef> is &quot;Yes&quot;.
+      </assert>
+  <assert id="nemSch_e090" role="Warning">
+      <elementRef elementNumber="eInjury.01">Cause of Injury</elementRef> should only be recorded when <elementRef elementNumber="eSituation.02">Possible Injury</elementRef> is &quot;Yes&quot;.
+      </assert>
+  <assert id="nemSch_e091" role="Warning">
+      <elementRef elementNumber="eInjury.03">Trauma Triage Criteria (High Risk for Serious Injury)</elementRef> should only be recorded when <elementRef elementNumber="eSituation.02">Possible Injury</elementRef> is &quot;Yes&quot;.
+      </assert>
+  <assert id="nemSch_e092" role="Warning">
+      <elementRef elementNumber="eInjury.04">Trauma Triage Criteria (Moderate Risk for Serious Injury)</elementRef> should only be recorded when <elementRef elementNumber="eSituation.02">Possible Injury</elementRef> is &quot;Yes&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Possible Injury has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Possible Injury is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

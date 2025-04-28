@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eInjury.11"  minOccurs="0"  maxOccurs="1"  dataTypeName="Company"  isNillable="No">
+<name>ACN System/Company Providing ACN Data</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The agency providing the Automated Collision Notification (ACN) Data.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Based on Vehicular Emergency Data Set:  Provider Name. Vehicular Emergency Data Set (VEDS) Recommendations. Version 3.0 Prepared: (February 2011) by the Advanced Automatic Crash Notification (AACN) Joint APCO/NENA Data Standardization Working Group.</v3Comment>
+<v3Changes>Added to better incorporate advanced automated collision notification information.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <Company baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="30"/>
+  </Company>
+</restrictions>
+</element>

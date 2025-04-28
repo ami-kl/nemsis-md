@@ -1,0 +1,51 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eProcedures.03"  minOccurs="1"  maxOccurs="1"  dataTypeName="snomed"  isNillable="Yes">
+<name>Procedure</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The procedure performed on the patient.</definition>
+<v2Number>E19_03</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Procedures which are recorded as a Vital Sign do not have to be documented in the Procedure Section.
+											<br/>Code list is represented in SNOMEDCT. Reference the NEMSIS Suggested Lists at: https://nemsis.org/technical-resources/version-3/version-3-resource-repository/	
+										<br/><br/>SNOMEDCT
+										<br/>Website: http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html
+										<br/>Product: Product - UMLS Metathesaurus</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <snomed baseType="integer">
+    <facet name="maxInclusive" value="999999999999999999"/>
+    <facet name="minInclusive" value="100000"/>
+  </snomed>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+  <PN>
+    <PN.ContraindicationNoted><facet name="enumeration" value="8801001" annotation="Contraindication Noted"/></PN.ContraindicationNoted>
+    <PN.DeniedByOrder><facet name="enumeration" value="8801003" annotation="Denied By Order"/></PN.DeniedByOrder>
+    <PN.Refused><facet name="enumeration" value="8801019" annotation="Refused"/></PN.Refused>
+    <PN.UnableToComplete><facet name="enumeration" value="8801023" annotation="Unable to Complete"/></PN.UnableToComplete>
+    <PN.OrderCriteriaNotMet><facet name="enumeration" value="8801027" annotation="Order Criteria Not Met"/></PN.OrderCriteriaNotMet>
+  </PN>
+</attributes>
+<asserts>
+  <assert id="nemSch_e007" role="Error">
+      When <elementRef elementNumber="eProcedures.03">Procedure</elementRef> has a Pertinent Negative, it should have a value and it should not have a Not Value (Not Applicable, Not Recorded, or Not Reporting).
+      </assert>
+  <assert id="nemSch_e157" role="Warning">
+      <elementRef elementNumber="eProcedures.03">Procedure</elementRef> should be recorded when a procedure is performed.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Procedure has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Procedure is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

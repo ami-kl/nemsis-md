@@ -1,0 +1,53 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eExam.12"  minOccurs="0"  maxOccurs="M"  dataTypeName="GUAssessment"  isNillable="No">
+<name>Pelvis/Genitourinary Assessment</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The assessment findings associated with the patient's pelvis/genitourinary.</definition>
+<v2Number>E16_13</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Element eExam.12 - Pelvis/Genitourinary Assessment represents Version 2.2.1 elements E15_09 NHTSA Injury Matrix Pelvis and E16_13 GU Assessment. The element value choices have been combined and expanded.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <GUAssessment baseType="string">
+    <facet name="enumeration" value="3512001" annotation="Abrasion"/>
+    <facet name="enumeration" value="3512003" annotation="Avulsion"/>
+    <facet name="enumeration" value="3512005" annotation="Bleeding Controlled"/>
+    <facet name="enumeration" value="3512007" annotation="Bleeding Uncontrolled"/>
+    <facet name="enumeration" value="3512009" annotation="Bleeding-Rectal"/>
+    <facet name="enumeration" value="3512011" annotation="Bleeding-Urethral"/>
+    <facet name="enumeration" value="3512013" annotation="Bleeding-Vaginal"/>
+    <facet name="enumeration" value="3512015" annotation="Burn-Blistering"/>
+    <facet name="enumeration" value="3512017" annotation="Burn-Charring"/>
+    <facet name="enumeration" value="3512019" annotation="Burn-Redness"/>
+    <facet name="enumeration" value="3512021" annotation="Burn-White/Waxy"/>
+    <facet name="enumeration" value="3512023" annotation="Deformity"/>
+    <facet name="enumeration" value="3512025" annotation="Foreign Body"/>
+    <facet name="enumeration" value="3512027" annotation="Genital Injury"/>
+    <facet name="enumeration" value="3512033" annotation="Laceration"/>
+    <facet name="enumeration" value="3512035" annotation="Mass/Lesion"/>
+    <facet name="enumeration" value="3512037" annotation="Normal"/>
+    <facet name="enumeration" value="3512039" annotation="Not Done"/>
+    <facet name="enumeration" value="3512041" annotation="Pain"/>
+    <facet name="enumeration" value="3512043" annotation="Pelvic Fracture"/>
+    <facet name="enumeration" value="3512045" annotation="Pelvic Instability"/>
+    <facet name="enumeration" value="3512047" annotation="Penile Priapism/Erection"/>
+    <facet name="enumeration" value="3512049" annotation="Pregnant-Crowning"/>
+    <facet name="enumeration" value="3512051" annotation="Puncture/Stab Wound"/>
+    <facet name="enumeration" value="3512057" annotation="Tenderness"/>
+    <facet name="enumeration" value="3512059" annotation="Gunshot Wound"/>
+    <facet name="enumeration" value="3512061" annotation="Crush Injury"/>
+    <facet name="enumeration" value="3512063" annotation="Swelling"/>
+    <facet name="enumeration" value="3512065" annotation="Contusion"/>
+  </GUAssessment>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+  <PN>
+    <PN.ExamFindingNotPresent><facet name="enumeration" value="8801005" annotation="Exam Finding Not Present"/></PN.ExamFindingNotPresent>
+  </PN>
+</attributes>
+</element>

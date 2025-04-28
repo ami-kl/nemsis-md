@@ -1,0 +1,25 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eVitals.15"  minOccurs="0"  maxOccurs="1"  dataTypeName="RespiratoryEffort"  isNillable="No">
+<name>Respiratory Effort</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The patient's respiratory effort.</definition>
+<v2Number>E14_12</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <RespiratoryEffort baseType="string">
+    <facet name="enumeration" value="3315001" annotation="Apneic"/>
+    <facet name="enumeration" value="3315003" annotation="Labored"/>
+    <facet name="enumeration" value="3315005" annotation="Mechanically Assisted (BVM, CPAP, etc.)"/>
+    <facet name="enumeration" value="3315007" annotation="Normal"/>
+    <facet name="enumeration" value="3315009" annotation="Rapid"/>
+    <facet name="enumeration" value="3315011" annotation="Shallow"/>
+    <facet name="enumeration" value="3315013" annotation="Weak/Agonal"/>
+  </RespiratoryEffort>
+</restrictions>
+</element>

@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.55"  minOccurs="0"  maxOccurs="1"  dataTypeName="SupplyUsed"  isNillable="No">
+<name>Supply Item Used Name</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The name of the supply used on the patient by the EMS Crew during the EMS event.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Added to track EMS supplies for billing.  The list of supplies would be created by the EMS Agency.  There is no master list of supply items defined.</v3Comment>
+<v3Changes>Added to track EMS supplies for billing.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <SupplyUsed baseType="string">
+    <facet name="minLength" value="2"/>
+    <facet name="maxLength" value="80"/>
+  </SupplyUsed>
+</restrictions>
+</element>

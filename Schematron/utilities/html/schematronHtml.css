@@ -1,0 +1,323 @@
+/*
+  
+Cascading Style Sheet (CSS) to style NEMSIS v3 Schematron that has been transformed into HTML for 
+documentation purposes
+
+Version: 3.5.1.250403CP1_250225
+Revision Date: February 25, 2025
+
+This product is provided by the NEMSIS TAC, without charge, to facilitate browsing NEMSIS 3 
+Schematron files via a user-friendly web-based interface.
+
+*/
+
+
+/* Body */
+
+body {
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Menu */
+
+div#menu {
+  border-right: 1ex solid #ddd;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  bottom: 0;
+  font-size: 75%;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  width: 25%;
+}
+
+div#menu h1 
+{
+  background-color: #00456b;
+  color: #ffffff;
+  font-size: medium;
+  margin: 0;
+  padding: 1ex;
+}
+
+div#menu h2 
+{
+  font-size: medium;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 3ex;
+}
+
+
+/* Menu Item */
+
+div#menu div.contents a 
+{
+  display: block;
+  padding-top: 3ex;
+}
+
+div#menu div.contents h2 a 
+{
+  display: block;
+  padding-bottom: 1ex;
+  padding-top: 0;
+}
+
+div.contents {
+  padding: 2ex;
+}
+
+div#menu div.contents div 
+{
+  color: #555555;
+  font-size:smaller;
+  padding-left: 3ex;
+}
+
+
+/* Overview page */
+
+.overviewTable
+{
+  margin-top: 2em;
+}
+
+.overviewTable td
+{
+  vertical-align: top;
+}
+
+.overviewTable .id
+{
+  font-size: 75%;
+  padding-top: 4pt;
+  max-width: 20ex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.overviewTable .role 
+{
+  border: 1px solid #00456b;
+  float: none;
+}
+
+.overviewTable div.fullWidthValue
+{
+  border: none;
+  padding-bottom: 1em;
+}
+
+/* Page */
+
+div.page 
+{
+  background-color: #ffffff;
+  bottom: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  overflow: auto;
+  padding: 1ex;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 75%;
+}
+
+div.header
+{
+  background-color: #00456b;
+  border: 1px solid #00456b;
+  border-radius: 0.4ex;
+  color: #ffffff;
+  margin-bottom: 0.2ex;
+  padding: 0.2ex;
+}
+
+div.name 
+{
+  color: #00456b;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+div.section 
+{
+  margin: 2ex;
+}
+
+.abstract
+{
+  font-style: italic;
+  margin-left: 1ex;
+}
+
+.fullWidthTitle   
+{
+  background-color: #f0f0f0;
+  border: 1px solid #00456b;
+  border-radius: 0.4ex;
+  color: #00456b;
+  margin-bottom: 0.2ex;
+  padding: 0.2ex;
+  text-transform: capitalize;
+}
+
+.fullWidthValue
+{
+  border: 1px solid #00456b;
+  border-radius: 0.4ex;
+  margin-bottom: 0.2ex;
+  padding: 0.2ex;
+}
+
+.headerText
+{
+  font-weight: bold;
+  padding-right: 1ex;
+  text-transform: capitalize;
+}
+
+.role
+{
+  color: #000000;
+  float: right;
+  font-size: smaller;
+  padding: 0.2ex;
+  border-radius: 0.4ex;
+  text-align: center;
+  width: 8ex;
+}
+
+.fatal
+{
+  background-color: #e10000;
+}
+
+.error
+{
+  background-color: #fbc723;
+}
+
+.warning
+{
+  background-color: #ffffbb;
+}
+
+.summaryTitle   
+{
+  background-color: #f0f0f0;
+  border: 1px solid #00456b;
+  border-radius: 0.4ex;
+  color: #00456b;
+  display: inline-block;
+  margin-bottom: 0.2ex;
+  padding: 0.2ex;
+  padding-right: 0.4ex;
+  text-transform: capitalize;
+  vertical-align:top;
+  width: 20%;
+}
+
+.summaryValue
+{
+  border: 1px solid #00456b;
+  border-radius: 0.4ex;
+  display: inline-block;
+  margin-bottom: 0.2ex;
+  padding: 0.2ex;
+  width: 75%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.value-of 
+{
+  font-style: italic;
+}
+
+.value-of a
+{
+  font-style: normal;
+}
+
+/* Page visibility */
+
+div.page, div.page:target ~ div#root {
+  display: none;
+}
+
+div#root, div.page:target {
+  display: block;
+}
+
+
+/* Anchor */
+a {
+  color: #00456b;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #BB7A2A;
+}
+
+
+/* Print layout */
+
+@media print
+{
+
+  #menu
+  {
+    display: none;
+  }
+ 
+  .page
+  {
+    display: block !important;
+    padding: 0;
+    page-break-after: always !important;
+    position: static !important;
+    width: 100% !important;
+  }
+  
+}
+
+
+/* Code */
+
+.code {white-space: pre-wrap;}
+.xmlAttribute {color: #ff0000;}
+.xmlAttributeValue, .xmlDelimiter, .xmlEntity {color: #0000ff;}
+.xmlComment {color: #008000;}
+.xmlName {color: #A31515;}
+
+
+/* Title page elements */
+
+.blueRect       {background:#00456b; height:15px;}                                                                            
+.titleMain      {font-size:80px; color:#00456b; text-align:center; font-weight:bold;}                                         
+.titleSub       {font-size:50px; color:#00456b; text-align:center; font-weight:bold;}                                         
+.nhtsa          {font-size:65px; color:#c1272d; text-align:center; font-weight:bold;}                                               
+.nhtsa2         {font-size:40px; color:#c1272d; text-align:center; font-weight:bold;}                                   
+.standard       {font-size:60px; color:#00456b; text-align:center; font-weight:bold;}                                         
+.version        {font-size:25px; color:#00456b; text-align:center; font-weight:bold;}                                         
+.funded         {font-size:20px; color:#00456b; text-align:center; }                                                          
+.fundedby       {font-size:20px; color:#00456b; text-align:center; font-weight:bold;}                                         
+.url            {font-size:20px; color:#00456b; text-align:center; font-weight:bold;}                                         
+.blueRectBtm    {background:#00456b; height:15px;}                                                                            
+.spacer         {height:20px;}                                                                                                
+.spacer50       {height:50px;}                                                                                                
+.spacer40       {height:40px;}                                                                                                
+.spacer30       {height:30px;}                                                                                                
+.spacer20       {height:20px;}                                                                                                
+.spacer15       {height:15px;}                                                                                                
+.spacer10       {height:10px;}                                                                                                
+.spacer5        {height:5px;}                                                                                                 

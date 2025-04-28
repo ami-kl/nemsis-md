@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dConfiguration.12"  minOccurs="0"  maxOccurs="1"  dataTypeName="YesNoValues"  isNillable="No">
+<name>Billing Status</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>Indication of whether the EMS agency routinely bills for any segment of the patient population.</definition>
+<v2Number>D04_10</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Billing status is associated with each EMS Agency for the specific EMS Agency Number (dAgency.02).</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <YesNoValues baseType="string">
+    <facet name="enumeration" value="9923001" annotation="No"/>
+    <facet name="enumeration" value="9923003" annotation="Yes"/>
+  </YesNoValues>
+</restrictions>
+</element>

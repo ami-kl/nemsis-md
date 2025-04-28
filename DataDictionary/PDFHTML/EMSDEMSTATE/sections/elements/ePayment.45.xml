@@ -1,0 +1,22 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.45"  minOccurs="0"  maxOccurs="1"  dataTypeName="TripPurposeDesciption"  isNillable="No">
+<name>Round Trip Purpose Description</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>Free text description providing the purpose of the round trip EMS transport based on CR109 field for CMS.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Added to improve billing documentation for CMS X12 based transactions. 
+<br/>
+<br/>Ambulance providers can use this field to provide additional information regarding the circumstances of a round trip transport or for other medical necessity documentation.</v3Comment>
+<v3Changes>Added to improve billing with electronic claims using X12</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <TripPurposeDesciption baseType="string">
+    <facet name="minLength" value="2"/>
+    <facet name="maxLength" value="80"/>
+  </TripPurposeDesciption>
+</restrictions>
+</element>

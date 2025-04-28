@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eInjury.23"  minOccurs="0"  maxOccurs="1"  dataTypeName="YesNoValues"  isNillable="No">
+<name>ACN High Probability of Injury</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The Automated Collision Notification of the High Probability of Injury.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes>Added to better incorporate advanced automated collision notification information.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <YesNoValues baseType="string">
+    <facet name="enumeration" value="9923001" annotation="No"/>
+    <facet name="enumeration" value="9923003" annotation="Yes"/>
+  </YesNoValues>
+</restrictions>
+</element>

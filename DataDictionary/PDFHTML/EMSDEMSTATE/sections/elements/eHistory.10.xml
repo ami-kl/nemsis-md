@@ -1,0 +1,50 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eHistory.10"  minOccurs="0"  maxOccurs="1"  dataTypeName="ImmunizationType"  isNillable="No">
+<name>The Patient's Type of Immunization</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The immunization type of the patient.</definition>
+<v2Number>E12_12</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ImmunizationType baseType="string">
+    <facet name="enumeration" value="9910001" annotation="Anthrax"/>
+    <facet name="enumeration" value="9910003" annotation="Cholera"/>
+    <facet name="enumeration" value="9910005" annotation="DPT / TDaP (Diphtheria, Pertussis, Tetanus)"/>
+    <facet name="enumeration" value="9910007" annotation="Hemophilus Influenza B"/>
+    <facet name="enumeration" value="9910009" annotation="Hepatitis A"/>
+    <facet name="enumeration" value="9910011" annotation="Hepatitis B"/>
+    <facet name="enumeration" value="9910013" annotation="Human Papilloma Virus (HPV)"/>
+    <facet name="enumeration" value="9910015" annotation="Influenza-H1N1"/>
+    <facet name="enumeration" value="9910017" annotation="Influenza-Other"/>
+    <facet name="enumeration" value="9910019" annotation="Influenza-Seasonal (In past 12 months)"/>
+    <facet name="enumeration" value="9910021" annotation="Lyme Disease"/>
+    <facet name="enumeration" value="9910023" annotation="Meningococcus"/>
+    <facet name="enumeration" value="9910025" annotation="MMR (Measles, Mumps, Rubella)"/>
+    <facet name="enumeration" value="9910027" annotation="Other-Not Listed"/>
+    <facet name="enumeration" value="9910029" annotation="Plague"/>
+    <facet name="enumeration" value="9910031" annotation="Pneumococcal (Pneumonia)"/>
+    <facet name="enumeration" value="9910033" annotation="Polio"/>
+    <facet name="enumeration" value="9910035" annotation="Rabies"/>
+    <facet name="enumeration" value="9910037" annotation="Rotavirus"/>
+    <facet name="enumeration" value="9910039" annotation="Shingles"/>
+    <facet name="enumeration" value="9910041" annotation="Small Pox"/>
+    <facet name="enumeration" value="9910043" annotation="Tetanus"/>
+    <facet name="enumeration" value="9910045" annotation="Tuberculosis"/>
+    <facet name="enumeration" value="9910047" annotation="Typhoid"/>
+    <facet name="enumeration" value="9910049" annotation="Varicella (Chickenpox)"/>
+    <facet name="enumeration" value="9910051" annotation="Yellow Fever"/>
+    <facet name="enumeration" value="9910053" annotation="None"/>
+  </ImmunizationType>
+</restrictions>
+<attributes>
+  <PN>
+    <PN.NotImmunized><facet name="enumeration" value="8801025" annotation="Not Immunized"/></PN.NotImmunized>
+  </PN>
+</attributes>
+</element>

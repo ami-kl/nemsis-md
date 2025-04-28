@@ -1,0 +1,33 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eHistory.20"  minOccurs="0"  maxOccurs="1"  dataTypeName="CurrentMedicationFrequency"  isNillable="No">
+<name>Current Medication Frequency</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The frequency of administration of the patient's current medication.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <CurrentMedicationFrequency baseType="string">
+    <facet name="enumeration" value="3120001" annotation="q1h (every hour)"/>
+    <facet name="enumeration" value="3120003" annotation="q2h (every 2 hours)"/>
+    <facet name="enumeration" value="3120005" annotation="q3h (every 3 hours)"/>
+    <facet name="enumeration" value="3120007" annotation="q4h (every 4 hours)"/>
+    <facet name="enumeration" value="3120009" annotation="qid (four times a day)"/>
+    <facet name="enumeration" value="3120011" annotation="tid (three times a day)"/>
+    <facet name="enumeration" value="3120013" annotation="ac (before meals)"/>
+    <facet name="enumeration" value="3120015" annotation="pc (after meals)"/>
+    <facet name="enumeration" value="3120017" annotation="bid (twice a day)"/>
+    <facet name="enumeration" value="3120019" annotation="qd (every day)"/>
+    <facet name="enumeration" value="3120021" annotation="qd-am (every day in the morning)"/>
+    <facet name="enumeration" value="3120023" annotation="qd-pm (every day in the evening)"/>
+    <facet name="enumeration" value="3120025" annotation="hs (at bedtime)"/>
+    <facet name="enumeration" value="3120027" annotation="qod (every other day)"/>
+    <facet name="enumeration" value="3120029" annotation="prn (as needed)"/>
+  </CurrentMedicationFrequency>
+</restrictions>
+</element>

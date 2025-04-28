@@ -1,0 +1,31 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dAgency.04"  minOccurs="1"  maxOccurs="1"  dataTypeName="ANSIStateCode"  isNillable="No">
+<name>EMS Agency State</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The state/territory which assigned the EMS agency number.</definition>
+<v2Number>D01_03</v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>This has been clarified to reflect that it is the state associated with the EMS Agency number listed in dAgency.02 – EMS Agency Number.
+								<br/><br/>GNIS Codes Website: <a href="http://geonames.usgs.gov/domestic/download_data.htm" target="_blank">http://geonames.usgs.gov/domestic/download_data.htm</a></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ANSIStateCode baseType="string">
+    <facet name="pattern" value="[0-9]{2}"/>
+  </ANSIStateCode>
+</restrictions>
+<asserts>
+  <assert id="nemSch_d010" role="Warning">
+      There should be a configuration group where <elementRef elementNumber="dConfiguration.01">State Associated with this Configuration</elementRef> is the state recorded in <elementRef elementNumber="dAgency.04">EMS Agency State</elementRef>.
+      </assert>
+  <assert id="nemSch_d012" role="Warning">
+      <elementRef elementNumber="dConfiguration.06">EMS Certification Levels Permitted to Perform Each Procedure</elementRef>, within the configuration group for the state recorded in <elementRef elementNumber="dAgency.04">EMS Agency State</elementRef>, should include the level recorded in <elementRef elementNumber="dAgency.11">Level of Service</elementRef>.
+      </assert>
+  <assert id="nemSch_d013" role="Warning">
+      <elementRef elementNumber="dConfiguration.08">EMS Certification Levels Permitted to Administer Each Medication</elementRef>, within the configuration group for the state recorded in <elementRef elementNumber="dAgency.04">EMS Agency State</elementRef>, should include the level recorded in <elementRef elementNumber="dAgency.11">Level of Service</elementRef>.
+      </assert>
+</asserts>
+</element>

@@ -1,0 +1,43 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eExam.01"  minOccurs="0"  maxOccurs="1"  dataTypeName="EstimatedBodyWeight"  isNillable="Yes">
+<name>Estimated Body Weight in Kilograms</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The patient's body weight in kilograms either measured or estimated.</definition>
+<v2Number>E16_01</v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup><performanceMeasure>Pediatric</performanceMeasure></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EstimatedBodyWeight baseType="decimal">
+    <facet name="totalDigits" value="4"/>
+    <facet name="fractionDigits" value="1"/>
+    <facet name="minInclusive" value="0.1"/>
+    <facet name="maxInclusive" value="999.9"/>
+  </EstimatedBodyWeight>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+  <PN>
+    <PN.UnableToComplete><facet name="enumeration" value="8801023" annotation="Unable to Complete"/></PN.UnableToComplete>
+  </PN>
+</attributes>
+<asserts>
+  <assert id="nemSch_e008" role="Error">
+      When Estimated Body Weight in Kilograms has a Pertinent Negative, it should be empty and it should not have a Not Value (Not Applicable, Not Recorded, or Not Reporting).
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Estimated Body Weight in Kilograms has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Estimated Body Weight in Kilograms is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

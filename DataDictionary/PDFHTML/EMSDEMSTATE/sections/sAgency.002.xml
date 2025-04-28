@@ -1,0 +1,8 @@
+<?xml-stylesheet type="text/xsl" href="../xslt/grouping.xslt"?>
+<section name="sAgency">
+  <group number="sAgencyGroup" minOccurs="0" maxOccurs="M" CorrelationID="" UUID="" ProcedureGroupCorrelationID="" CustomElementID="" timeStamp="" isNillable="No">
+    <element number="sAgency.01" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="Yes" dataType="EMSAgencyStateID"><name>EMS Agency Unique State ID</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Recommended</usage><notValue>Yes</notValue><pertinentNegative></pertinentNegative></element>
+    <element number="sAgency.02" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="Yes" dataType="EMSAgencyNumber"><name>EMS Agency Number</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Recommended</usage><notValue>Yes</notValue><pertinentNegative></pertinentNegative></element>
+    <element number="sAgency.03" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="Yes" dataType="EMSAgencyName"><name>EMS Agency Name</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Recommended</usage><notValue>Yes</notValue><pertinentNegative></pertinentNegative></element>
+  </group>
+</section>

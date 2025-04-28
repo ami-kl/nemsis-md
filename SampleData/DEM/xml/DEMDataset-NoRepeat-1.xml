@@ -1,0 +1,171 @@
+
+<DEMDataSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.nemsis.org http://nemsis.org/media/nemsis_v3/release-3.5.0/XSDs/NEMSIS_XSDs/DEMDataSet_v3.xsd" xmlns="http://www.nemsis.org">
+    <DemographicReport timeStamp="2015-03-03T13:29:38+07:00">
+        <dAgency>
+            <dAgency.01>0</dAgency.01>
+            <dAgency.02>00</dAgency.02>
+            <dAgency.03>GO</dAgency.03>
+            <dAgency.04>49</dAgency.04>
+            <dAgency.AgencyServiceGroup UUID="d6ca9309-922d-4e44-b6a6-3bdfd1e222f0">
+                <dAgency.05>49</dAgency.05>
+                <dAgency.06>49049</dAgency.06>
+                <dAgency.07>42029318731</dAgency.07>
+                <dAgency.08>84062</dAgency.08></dAgency.AgencyServiceGroup>
+            <dAgency.09>9920019</dAgency.09>
+            <dAgency.10>9920019</dAgency.10>
+            <dAgency.11>9917031</dAgency.11>
+            <dAgency.12>1016005</dAgency.12>
+            <dAgency.13>9912009</dAgency.13>
+            <dAgency.14>1018005</dAgency.14>
+            <dAgency.AgencyYearGroup UUID="6cf63f7f-5530-4922-a5c4-6aa5c397b5d1">
+                <dAgency.15>1982</dAgency.15>
+                <dAgency.16>144146</dAgency.16>
+                <dAgency.17>1015087</dAgency.17>
+                <dAgency.18>1492968</dAgency.18>
+                <dAgency.19>520538</dAgency.19>
+                <dAgency.20>763377</dAgency.20>
+                <dAgency.21>3929679</dAgency.21>
+                <dAgency.22>3506049</dAgency.22></dAgency.AgencyYearGroup>
+            <dAgency.23>1027017</dAgency.23>
+            <dAgency.24>9923003</dAgency.24>
+            <dAgency.25>TKexHN64Mb</dAgency.25>
+            <dAgency.26>r</dAgency.26></dAgency>
+        <dContact>
+            <dContact.ContactInfoGroup UUID="4203dac4-7e3a-4a36-8739-73aeb35ddfb5">
+                <dContact.01>1101017</dContact.01>
+                <dContact.02>Rivera</dContact.02>
+                <dContact.03>Bonnie</dContact.03>
+                <dContact.04>Antonio</dContact.04>
+                <dContact.05 StreetAddress2="P">4135 Integer St.</dContact.05>
+                <dContact.06>1445910</dContact.06>
+                <dContact.07>49</dContact.07>
+                <dContact.08>84403</dContact.08>
+                <dContact.09>US</dContact.09>
+                <dContact.10 PhoneNumberType="9913009">983-641-5485</dContact.10>
+                <dContact.11 EmailAddressType="9904003">CHH9mZ2i@wu9R.com</dContact.11>
+                <dContact.12>o8u</dContact.12>
+                <dContact.EMSMedicalDirectorGroup>
+                    <dContact.13>1113003</dContact.13>
+                    <dContact.14>1114043</dContact.14>
+                    <dContact.15>1115003</dContact.15>
+                    <dContact.16>9923003</dContact.16></dContact.EMSMedicalDirectorGroup></dContact.ContactInfoGroup></dContact>
+        <dConfiguration>
+            <dConfiguration.ConfigurationGroup UUID="a96c87a5-0113-4ec3-b9df-31895c17c66e">
+                <dConfiguration.01>49</dConfiguration.01>
+                <dConfiguration.ProcedureGroup UUID="8f81bf98-fa1e-49d0-b40b-3c370a0994de">
+                    <dConfiguration.06>9917031</dConfiguration.06>
+                    <dConfiguration.07>243142003</dConfiguration.07></dConfiguration.ProcedureGroup>
+                <dConfiguration.MedicationGroup UUID="fe7da316-9f7d-42f9-b0c0-482be1095100">
+                    <dConfiguration.08>9917031</dConfiguration.08>
+                    <dConfiguration.09 CodeType="9924003">10391</dConfiguration.09></dConfiguration.MedicationGroup>
+                <dConfiguration.10>9914225</dConfiguration.10>
+                <dConfiguration.11>1211035</dConfiguration.11>
+                <dConfiguration.12>9923003</dConfiguration.12>
+                <dConfiguration.13>1213005</dConfiguration.13>
+                <dConfiguration.14>dr</dConfiguration.14>
+                <dConfiguration.15>1215019</dConfiguration.15>
+                <dConfiguration.16>X</dConfiguration.16>
+                <dConfiguration.17>Fn</dConfiguration.17></dConfiguration.ConfigurationGroup></dConfiguration>
+        <dLocation>
+            <dLocation.LocationGroup UUID="be2c731b-c583-4094-9040-de1e1f9422e1">
+                <dLocation.01>1301007</dLocation.01>
+                <dLocation.02>6n</dLocation.02>
+                <dLocation.03>V</dLocation.03>
+                <dLocation.04>40.714412,-111.334069</dLocation.04>
+                <dLocation.05>10RCQ93284419</dLocation.05>
+                <dLocation.06 StreetAddress2="F">P.O. Box 265, 4699 Eu Street</dLocation.06>
+                <dLocation.07>1444282</dLocation.07>
+                <dLocation.08>49</dLocation.08>
+                <dLocation.09>84061</dLocation.09>
+                <dLocation.10>49043</dLocation.10>
+                <dLocation.11>US</dLocation.11>
+                <dLocation.12 PhoneNumberType="9913009">562-520-8353</dLocation.12></dLocation.LocationGroup></dLocation>
+        <dVehicle>
+            <dVehicle.VehicleGroup UUID="aa0b6225-d71f-457f-bd8c-90151759991d">
+                <dVehicle.01>X</dVehicle.01>
+                <dVehicle.02>xSbq9U7w6S0cHmiek</dVehicle.02>
+                <dVehicle.03>e</dVehicle.03>
+                <dVehicle.04>1404025</dVehicle.04>
+                <dVehicle.VehicleCertificationLevelsGroup UUID="756fe8ab-e3eb-47c8-81c5-f95fe64a9de4">
+                    <dVehicle.05>9917031</dVehicle.05>
+                    <dVehicle.06>10</dVehicle.06>
+                    <dVehicle.07>3</dVehicle.07>
+                    <dVehicle.08>2</dVehicle.08></dVehicle.VehicleCertificationLevelsGroup>
+                <dVehicle.09>4682559</dVehicle.09>
+                <dVehicle.10>1990</dVehicle.10>
+                <dVehicle.YearGroup UUID="dd8969de-077f-483f-99e0-44fd6fb35e93">
+                    <dVehicle.11>2008</dVehicle.11>
+                    <dVehicle.12>5318</dVehicle.12>
+                    <dVehicle.13 DistanceUnit="9929003">871.0</dVehicle.13></dVehicle.YearGroup></dVehicle.VehicleGroup></dVehicle>
+        <dPersonnel>
+            <dPersonnel.PersonnelGroup UUID="3ad3dabb-b7c6-4b0e-8499-806921078677">
+                <dPersonnel.NameGroup>
+                    <dPersonnel.01>Ortega</dPersonnel.01>
+                    <dPersonnel.02>Don</dPersonnel.02>
+                    <dPersonnel.03>Adkins</dPersonnel.03></dPersonnel.NameGroup>
+                <dPersonnel.AddressGroup>
+                    <dPersonnel.04 StreetAddress2="g">P.O. Box 688, 6137 Eget Av.</dPersonnel.04>
+                    <dPersonnel.05>1454997</dPersonnel.05>
+                    <dPersonnel.06>49</dPersonnel.06>
+                    <dPersonnel.07>84132</dPersonnel.07>
+                    <dPersonnel.08>US</dPersonnel.08></dPersonnel.AddressGroup>
+                <dPersonnel.09 PhoneNumberType="9913009">754-354-9575</dPersonnel.09>
+                <dPersonnel.10 EmailAddressType="9904003">4caZirQD@cSza.com</dPersonnel.10>
+                <dPersonnel.11>1967-03-09</dPersonnel.11>
+                <dPersonnel.12>9906005</dPersonnel.12>
+                <dPersonnel.13>1513011</dPersonnel.13>
+                <dPersonnel.14>Ye</dPersonnel.14>
+                <dPersonnel.15>1515031</dPersonnel.15>
+                <dPersonnel.16>1516071</dPersonnel.16>
+                <dPersonnel.17>1517023</dPersonnel.17>
+                <dPersonnel.ImmunizationsGroup UUID="3dd57dbe-1c80-402e-a3ec-65b353a50ae7">
+                    <dPersonnel.18>9910051</dPersonnel.18>
+                    <dPersonnel.19>2026</dPersonnel.19></dPersonnel.ImmunizationsGroup>
+                <dPersonnel.20>yid</dPersonnel.20>
+                <dPersonnel.21>SA</dPersonnel.21>
+                <dPersonnel.LicensureGroup UUID="d4af7173-cd4c-4622-8c4f-0774bd858209">
+                    <dPersonnel.22>49</dPersonnel.22>
+                    <dPersonnel.23>CK</dPersonnel.23>
+                    <dPersonnel.24>9925043</dPersonnel.24>
+                    <dPersonnel.25>1979-11-04</dPersonnel.25>
+                    <dPersonnel.26>1999-02-23</dPersonnel.26>
+                    <dPersonnel.27>1981-06-10</dPersonnel.27></dPersonnel.LicensureGroup>
+                <dPersonnel.28>E8890739</dPersonnel.28>
+                <dPersonnel.29>1529005</dPersonnel.29>
+                <dPersonnel.30>1984-05-27</dPersonnel.30>
+                <dPersonnel.31>1531007</dPersonnel.31>
+                <dPersonnel.32>1952-03-07</dPersonnel.32>
+                <dPersonnel.33>1960-04-10</dPersonnel.33>
+                <dPersonnel.34>1534017</dPersonnel.34>
+                <dPersonnel.35>1534017</dPersonnel.35>
+                <dPersonnel.36>52</dPersonnel.36>
+                <dPersonnel.37>1964-04-01</dPersonnel.37>
+                <dPersonnel.CertificationLevelGroup UUID="1ba5e4a4-d027-47f4-84c2-a8ff0ba103b9">
+                    <dPersonnel.38>9925043</dPersonnel.38>
+                    <dPersonnel.39>1963-02-06</dPersonnel.39></dPersonnel.CertificationLevelGroup></dPersonnel.PersonnelGroup></dPersonnel>
+        <dDevice>
+            <dDevice.DeviceGroup UUID="55587c0e-9ff9-4a16-9707-0ce961b94478">
+                <dDevice.01>7p</dDevice.01>
+                <dDevice.02>b0</dDevice.02>
+                <dDevice.03>1603039</dDevice.03>
+                <dDevice.04>DJ</dDevice.04>
+                <dDevice.05>dk</dDevice.05>
+                <dDevice.06>1950-05-29</dDevice.06></dDevice.DeviceGroup></dDevice>
+        <dFacility>
+            <dFacilityGroup UUID="2aef1c3f-3373-44f3-b8be-9f3e8ed78892">
+                <dFacility.01>1701017</dFacility.01>
+                <dFacility.FacilityGroup UUID="29847d3a-1d56-47dd-8c5c-a638b8f68cad">
+                    <dFacility.02>ZZ</dFacility.02>
+                    <dFacility.03>cs</dFacility.03>
+                    <dFacility.04>9908035</dFacility.04>
+                    <dFacility.05>HfHWU3B1FJ</dFacility.05>
+                    <dFacility.06>b</dFacility.06>
+                    <dFacility.07 StreetAddress2="V">P.O. Box 100, 4600 Cum Rd.</dFacility.07>
+                    <dFacility.08>1425865</dFacility.08>
+                    <dFacility.09>49</dFacility.09>
+                    <dFacility.10>84008</dFacility.10>
+                    <dFacility.11>49047</dFacility.11>
+                    <dFacility.12>US</dFacility.12>
+                    <dFacility.13>40.019053,-109.175359</dFacility.13>
+                    <dFacility.14>18UME37684374</dFacility.14>
+                    <dFacility.15 PhoneNumberType="9913009">556-433-2239</dFacility.15></dFacility.FacilityGroup></dFacilityGroup></dFacility></DemographicReport></DEMDataSet>

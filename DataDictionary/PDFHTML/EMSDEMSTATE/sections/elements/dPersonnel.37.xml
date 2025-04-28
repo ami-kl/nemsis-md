@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dPersonnel.37"  minOccurs="0"  maxOccurs="1"  dataTypeName="DateType"  isNillable="No">
+<name>EMS Personnel's Date Length of Service Documented</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The date which the length of EMS service was documented.</definition>
+<v2Number>D08_20</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Associated with dPersonnel.37 (EMS Personnel's Total Length of Service in Years).</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <DateType baseType="date">
+    <facet name="minInclusive" value="1900-01-01"/>
+    <facet name="maxInclusive" value="2050-01-01"/>
+  </DateType>
+</restrictions>
+</element>

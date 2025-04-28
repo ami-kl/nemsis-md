@@ -1,0 +1,63 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eProcedures.07"  minOccurs="1"  maxOccurs="M"  dataTypeName="ProcedureComplication"  isNillable="Yes">
+<name>Procedure Complication</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Any complication (abnormal effect on the patient) associated with the performance of the procedure on the patient.</definition>
+<v2Number>E19_07</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ProcedureComplication baseType="string">
+    <facet name="enumeration" value="3907001" annotation="Altered Mental Status"/>
+    <facet name="enumeration" value="3907003" annotation="Apnea"/>
+    <facet name="enumeration" value="3907005" annotation="Bleeding"/>
+    <facet name="enumeration" value="3907007" annotation="Bradypnea"/>
+    <facet name="enumeration" value="3907009" annotation="Diarrhea"/>
+    <facet name="enumeration" value="3907011" annotation="Esophageal Intubation-immediately"/>
+    <facet name="enumeration" value="3907013" annotation="Esophageal Intubation-other"/>
+    <facet name="enumeration" value="3907015" annotation="Extravasation"/>
+    <facet name="enumeration" value="3907017" annotation="Hypertension"/>
+    <facet name="enumeration" value="3907019" annotation="Hyperthermia"/>
+    <facet name="enumeration" value="3907021" annotation="Hypotension"/>
+    <facet name="enumeration" value="3907023" annotation="Hypothermia"/>
+    <facet name="enumeration" value="3907025" annotation="Hypoxia"/>
+    <facet name="enumeration" value="3907027" annotation="Injury"/>
+    <facet name="enumeration" value="3907031" annotation="Nausea"/>
+    <facet name="enumeration" value="3907033" annotation="None"/>
+    <facet name="enumeration" value="3907035" annotation="Other"/>
+    <facet name="enumeration" value="3907039" annotation="Respiratory Distress"/>
+    <facet name="enumeration" value="3907041" annotation="Tachycardia"/>
+    <facet name="enumeration" value="3907043" annotation="Tachypnea"/>
+    <facet name="enumeration" value="3907045" annotation="Vomiting"/>
+    <facet name="enumeration" value="3907047" annotation="Bradycardia"/>
+    <facet name="enumeration" value="3907049" annotation="Itching"/>
+    <facet name="enumeration" value="3907051" annotation="Urticaria"/>
+  </ProcedureComplication>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_e158" role="Warning">
+      When <elementRef elementNumber="eProcedures.07">Procedure Complication</elementRef> is &quot;None&quot;, no other value should be recorded.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Procedure Complication has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Procedure Complication is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Procedure Complication has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

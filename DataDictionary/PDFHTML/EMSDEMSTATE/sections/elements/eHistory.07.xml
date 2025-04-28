@@ -1,0 +1,27 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eHistory.07"  minOccurs="0"  maxOccurs="M"  dataTypeName="snomed"  isNillable="No">
+<name>Environmental/Food Allergies</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The patient's known allergies to food or environmental agents.</definition>
+<v2Number>E12_09</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Data Element Comment Section:
+<br/>Code list is represented in SNOMEDCT. Reference the NEMSIS Suggested Lists at: <a href="https://nemsis.org/technical-resources/version-3/version-3-resource-repository/">https://nemsis.org/technical-resources/version-3/version-3-resource-repository/</a>
+<br/><br/>SNOMEDCT 
+<br/>Website: <a href="http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html">http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html</a> 
+<br/>Product: Product - UMLS Metathesaurus</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <snomed baseType="integer">
+    <facet name="maxInclusive" value="999999999999999999"/>
+    <facet name="minInclusive" value="100000"/>
+  </snomed>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

@@ -1,0 +1,26 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eExam.24"  minOccurs="0"  maxOccurs="1"  dataTypeName="ChestAssessmentLocation"  isNillable="No">
+<name>Chest Assessment Finding Location</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The location of the patient's chest assessment findings.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ChestAssessmentLocation baseType="string">
+    <facet name="enumeration" value="3524001" annotation="Left - Anterior"/>
+    <facet name="enumeration" value="3524003" annotation="Left - Posterior (DEPRECATED)"/>
+    <facet name="enumeration" value="3524005" annotation="Right - Anterior"/>
+    <facet name="enumeration" value="3524007" annotation="Right - Posterior (DEPRECATED)"/>
+    <facet name="enumeration" value="3524009" annotation="General - Anterior"/>
+    <facet name="enumeration" value="3524011" annotation="General - Posterior"/>
+    <facet name="enumeration" value="3524013" annotation="Left - Side"/>
+    <facet name="enumeration" value="3524015" annotation="Right - Side"/>
+  </ChestAssessmentLocation>
+</restrictions>
+</element>

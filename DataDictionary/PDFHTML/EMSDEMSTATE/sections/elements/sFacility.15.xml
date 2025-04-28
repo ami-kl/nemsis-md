@@ -1,0 +1,23 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="sFacility.15"  minOccurs="0"  maxOccurs="M"  dataTypeName="PhoneNumber"  isNillable="No">
+<name>Facility Phone Number</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The facility phone number(s).</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This element contains an attribute to define what type of phone number is being documented (e.g., Fax, Home, Mobile, Pager, and Work).
+																	<br/><br/>Used to populate dFacility.15 Facility Phone Number.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <PhoneNumber baseType="string">
+    <facet name="pattern" value="([2-9][0-9][0-9]-[2-9][0-9][0-9]-[0-9][0-9][0-9][0-9])|(\+([0-9] ?){6,14}[0-9])"/>
+  </PhoneNumber>
+</restrictions>
+<attributes>
+  <PhoneNumberType baseType="string"><facet name="enumeration" value="9913001" annotation="Fax"/><facet name="enumeration" value="9913003" annotation="Home"/><facet name="enumeration" value="9913005" annotation="Mobile"/><facet name="enumeration" value="9913007" annotation="Pager"/><facet name="enumeration" value="9913009" annotation="Work"/></PhoneNumberType>
+</attributes>
+</element>

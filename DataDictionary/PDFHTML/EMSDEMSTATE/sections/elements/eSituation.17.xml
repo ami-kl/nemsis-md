@@ -1,0 +1,41 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eSituation.17"  minOccurs="0"  maxOccurs="M"  dataTypeName="icd10Activity"  isNillable="Yes">
+<name>Patient Activity</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The activity the patient was involved in at the time the patient experienced the onset of symptoms or experienced an injury.</definition>
+<v2Number></v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Code list is represented in ICD-10-CM. Reference the NEMSIS Suggested Lists at: https://nemsis.org/technical-resources/version-3/version-3-resource-repository/	
+										<br/><br/>Code list is represented in ICD-10 Codes.
+<br/>Website - http://uts.nlm.nih.gov  
+<br/>Product - UMLS Metathesaurus</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <icd10Activity baseType="string">
+    <facet name="pattern" value="Y93\.[A-Za-z0-9]{1,4}"/>
+  </icd10Activity>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When Patient Activity has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Patient Activity is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Patient Activity has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

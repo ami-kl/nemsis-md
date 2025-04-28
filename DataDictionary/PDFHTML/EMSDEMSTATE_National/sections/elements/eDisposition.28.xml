@@ -1,0 +1,118 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDisposition.28"  minOccurs="1"  maxOccurs="1"  dataTypeName="PatientEvaluationCare"  isNillable="Yes">
+<name>Patient Evaluation/Care</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The patient disposition for an EMS event identifying whether a patient was evaluated and care or services were provided.</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Grouped with Incident and Transport Dispositions. Who provided care or services is defined in Incident Disposition.</v3Comment>
+<v3Changes>Element added with the release of v3.5.0</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <PatientEvaluationCare baseType="string">
+    <facet name="enumeration" value="4228001" annotation="Patient Evaluated and Care Provided"/>
+    <facet name="enumeration" value="4228003" annotation="Patient Evaluated and Refused Care"/>
+    <facet name="enumeration" value="4228005" annotation="Patient Evaluated, No Care Required"/>
+    <facet name="enumeration" value="4228007" annotation="Patient Refused Evaluation/Care"/>
+    <facet name="enumeration" value="4228009" annotation="Patient Support Services Provided"/>
+  </PatientEvaluationCare>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e057" role="Warning">
+      <elementRef elementNumber="ePatient.07">Patient's Home County</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e059" role="Warning">
+      <elementRef elementNumber="ePatient.08">Patient's Home State</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e060" role="Warning">
+      <elementRef elementNumber="ePatient.09">Patient's Home ZIP Code</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e062" role="Warning">
+      <elementRef elementNumber="ePatient.14">Race</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e063" role="Warning">
+      <elementRef elementNumber="ePatient.15">Age</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e064" role="Warning">
+      <elementRef elementNumber="ePatient.16">Age Units</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e193" role="Warning">
+      <elementRef elementNumber="ePatient.25">Sex</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e075" role="Warning">
+      <elementRef elementNumber="eSituation.01">Date/Time of Symptom Onset</elementRef> should be recorded when <elementRef elementNumber="eResponse.05">Type of Service Requested</elementRef> is &quot;Emergency Response (Primary Response Area)&quot; and <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e076" role="Warning">
+      <elementRef elementNumber="eSituation.02">Possible Injury</elementRef> should be recorded when <elementRef elementNumber="eResponse.05">Type of Service Requested</elementRef> is &quot;Emergency Response (Primary Response Area)&quot; and <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e080" role="Warning">
+      <elementRef elementNumber="eSituation.09">Primary Symptom</elementRef> should be recorded when <elementRef elementNumber="eResponse.05">Type of Service Requested</elementRef> is &quot;Emergency Response (Primary Response Area)&quot; and <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e082" role="Warning">
+      <elementRef elementNumber="eSituation.11">Provider's Primary Impression</elementRef> should be recorded when <elementRef elementNumber="eResponse.05">Type of Service Requested</elementRef> is &quot;Emergency Response (Primary Response Area)&quot; and <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e084" role="Warning">
+      <elementRef elementNumber="eSituation.13">Initial Patient Acuity</elementRef> should be recorded when <elementRef elementNumber="eResponse.05">Type of Service Requested</elementRef> is &quot;Emergency Response (Primary Response Area)&quot; and <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e085" role="Warning">
+      <elementRef elementNumber="eSituation.18">Date/Time Last Known Well</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e086" role="Warning">
+      <elementRef elementNumber="eSituation.18">Date/Time Last Known Well</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eVitals.29">Stroke Scale Result</elementRef> is &quot;Positive&quot;.
+      </assert>
+  <assert id="nemSch_e087" role="Warning">
+      <elementRef elementNumber="eSituation.18">Date/Time Last Known Well</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eVitals.03">Cardiac Rhythm / Electrocardiography (ECG)</elementRef> is &quot;STEMI...&quot;.
+      </assert>
+  <assert id="nemSch_e089" role="Warning">
+      <elementRef elementNumber="eInjury.01">Cause of Injury</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eSituation.02">Possible Injury</elementRef> is &quot;Yes&quot;.
+      </assert>
+  <assert id="nemSch_e093" role="Warning">
+      <elementRef elementNumber="eArrest.02">Cardiac Arrest Etiology</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e095" role="Warning">
+      <elementRef elementNumber="eArrest.03">Resuscitation Attempted By EMS</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e100" role="Warning">
+      <elementRef elementNumber="eArrest.04">Arrest Witnessed By</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e103" role="Warning">
+      <elementRef elementNumber="eArrest.07">AED Use Prior to EMS Arrival</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes, Prior to Any EMS Arrival (includes Transport EMS &amp; Medical First Responders)&quot;.
+      </assert>
+  <assert id="nemSch_e108" role="Warning">
+      <elementRef elementNumber="eArrest.12">Any Return of Spontaneous Circulation</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e115" role="Warning">
+      <elementRef elementNumber="eArrest.18">End of EMS Cardiac Arrest Event</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e168" role="Warning">
+      <elementRef elementNumber="eDisposition.19">Acuity Upon EMS Release of Patient</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e180" role="Warning">
+      <elementRef elementNumber="eDisposition.27">Unit Disposition</elementRef> should be &quot;Patient Contact Made&quot; when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated...&quot; or &quot;Patient Refused Evaluation/Care&quot;.
+      </assert>
+  <assert id="nemSch_e183" role="Warning">
+      <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> should be recorded when <elementRef elementNumber="eDisposition.27">Unit Disposition</elementRef> is &quot;Patient Contact Made&quot;.
+      </assert>
+  <assert id="nemSch_e184" role="Warning">
+      <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> should be &quot;Patient Evaluated and Care Provided&quot; when <elementRef elementNumber="eDisposition.29">Crew Disposition</elementRef> contains &quot;... Primary Care...&quot; or &quot;Provided Care Supporting Primary EMS Crew&quot;.
+      </assert>
+  <assert id="nemSch_e187" role="Warning">
+      <elementRef elementNumber="eDisposition.32">Level of Care Provided per Protocol</elementRef> should be recorded (with a value other than &quot;No Care Provided&quot;) when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Patient Evaluation/Care has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Patient Evaluation/Care is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

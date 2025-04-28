@@ -1,0 +1,116 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eArrest.01"  minOccurs="1"  maxOccurs="1"  dataTypeName="CardiacArrest"  isNillable="Yes">
+<name>Cardiac Arrest</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Indication of the presence of a cardiac arrest at any time during this EMS event.</definition>
+<v2Number>E11_01</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Cardiac Arrest</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>This element is a component of the Utstein Cardiac Arrest Criteria.
+								<br/><br/>
+								If this EMS event is for an interfacility transfer of a patient with a recent history of a cardiac arrest with ROSC, and who does not experience another cardiac arrest during transport, then do not document Cardiac Arrest (eArrest.01) with "Yes, Prior to Any EMS Arrival (includes Transport EMS &amp; Medical First Responders)".
+								<br/><br/>
+								EMS is defined as Emergency Medical Services personnel and Medical First Responder personnel who respond to a medical emergency in an official capacity as part of an organized medical response team. By this definition, physicians, nurses, or paramedics who witness a cardiac arrest and initiate CPR, but are not part of the organized medical response
+								team are characterized as bystanders and are not part of the EMS system.
+								<br/><br/>
+								Medical First Responders are defined as personnel who are dispatched through the 911 system, respond in an official capacity, have the capability and/or training to provide emergency medical care, but are not the designated transporter of the patient. Thus, law enforcement officers who respond in an official capacity to a cardiac arrest, have the
+								capability and/or training to provide emergency medical care (e.g., carry AEDs in their patrol vehicles, hold EMR licensure, are CPR certified, etc.) are considered Medical First Responders for the purposes of this data element.
+								<br/><br/>
+								Responders dispatched through the 911 system with no capability of providing emergency medical care are not considered Medical First Responders. For example, towing and wrecking responding to a vehicle crash, or law enforcement officers who do not provide any emergency medical care would not be considered Medical First Responders.
+								<br/><br/>
+								For States and Local agencies that participate in the Cardiac Arrest Registry for Enhanced Survival (CARES), “Any EMS Arrival” includes 911 Responders (First Responder or EMS) as defined by CARES in the CARES Data Dictionary: <a href="https://vendors.mycares.net/" target="_blank">https://vendors.mycares.net/</a>.
+								<br/><br/>
+								This NEMSIS data element is used to answer CARES data element #20 Arrest After Arrival of 911 Responder.
+								<br/><br/></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <CardiacArrest baseType="string">
+    <facet name="enumeration" value="3001001" annotation="No"/>
+    <facet name="enumeration" value="3001003" annotation="Yes, Prior to Any EMS Arrival (includes Transport EMS &amp; Medical First Responders)"/>
+    <facet name="enumeration" value="3001005" annotation="Yes, After Any EMS Arrival (includes Transport EMS &amp; Medical First Responders)"/>
+  </CardiacArrest>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e085" role="Warning">
+      <elementRef elementNumber="eSituation.18">Date/Time Last Known Well</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e093" role="Warning">
+      <elementRef elementNumber="eArrest.02">Cardiac Arrest Etiology</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e094" role="Warning">
+      <elementRef elementNumber="eArrest.02">Cardiac Arrest Etiology</elementRef> should only be recorded when <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e095" role="Warning">
+      <elementRef elementNumber="eArrest.03">Resuscitation Attempted By EMS</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e096" role="Warning">
+      <elementRef elementNumber="eArrest.03">Resuscitation Attempted By EMS</elementRef> should only be recorded when <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e100" role="Warning">
+      <elementRef elementNumber="eArrest.04">Arrest Witnessed By</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e101" role="Warning">
+      <elementRef elementNumber="eArrest.04">Arrest Witnessed By</elementRef> should only be recorded when <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e103" role="Warning">
+      <elementRef elementNumber="eArrest.07">AED Use Prior to EMS Arrival</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes, Prior to Any EMS Arrival (includes Transport EMS &amp; Medical First Responders)&quot;.
+      </assert>
+  <assert id="nemSch_e104" role="Warning">
+      <elementRef elementNumber="eArrest.07">AED Use Prior to EMS Arrival</elementRef> should only be recorded when <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e105" role="Warning">
+      <elementRef elementNumber="eArrest.09">Type of CPR Provided</elementRef> should only be recorded when <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e108" role="Warning">
+      <elementRef elementNumber="eArrest.12">Any Return of Spontaneous Circulation</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e109" role="Warning">
+      <elementRef elementNumber="eArrest.12">Any Return of Spontaneous Circulation</elementRef> should only be recorded when <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e111" role="Warning">
+      <elementRef elementNumber="eArrest.14">Date/Time of Cardiac Arrest</elementRef> should only be recorded when <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e112" role="Warning">
+      <elementRef elementNumber="eArrest.16">Reason CPR/Resuscitation Discontinued</elementRef> should only be recorded when <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e113" role="Warning">
+      <elementRef elementNumber="eArrest.17">Cardiac Rhythm on Arrival at Destination</elementRef> should be recorded when <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> is &quot;Transport by This EMS Unit...&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e114" role="Warning">
+      <elementRef elementNumber="eArrest.17">Cardiac Rhythm on Arrival at Destination</elementRef> should only be recorded when <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e115" role="Warning">
+      <elementRef elementNumber="eArrest.18">End of EMS Cardiac Arrest Event</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e116" role="Warning">
+      <elementRef elementNumber="eArrest.18">End of EMS Cardiac Arrest Event</elementRef> should only be recorded when <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e118" role="Warning">
+      <elementRef elementNumber="eArrest.20">Who First Initiated CPR</elementRef> should only be recorded when <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e120" role="Warning">
+      <elementRef elementNumber="eArrest.21">Who First Applied the AED</elementRef> should only be recorded when <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e123" role="Warning">
+      <elementRef elementNumber="eArrest.22">Who First Defibrillated the Patient</elementRef> should only be recorded when <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e171" role="Warning">
+      <elementRef elementNumber="eDisposition.23">Hospital Capability</elementRef> should be recorded when <elementRef elementNumber="eDisposition.21">Type of Destination</elementRef> is &quot;Hospital...&quot; or &quot;Freestanding Emergency Department&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Cardiac Arrest has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Cardiac Arrest is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

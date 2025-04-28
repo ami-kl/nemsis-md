@@ -1,0 +1,132 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dConfiguration.10"  minOccurs="1"  maxOccurs="M"  dataTypeName="ProtocolsUsed"  isNillable="No">
+<name>EMS Agency Protocols</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>A list of all of the EMS field protocols that the agency has in place and available for use.</definition>
+<v2Number>D04_08</v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>This is associated with the EMS Agency Number (dAgency.02) since each EMS Agency Number may have different capabilities. 
+										<br/><br/>State and local entities  can add additional protocols to the list but the additional protocols must map to these uniform codes. 
+										<br/><br/>The list is defined by the NASEMSO State Medical Directors.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ProtocolsUsed baseType="string">
+    <facet name="enumeration" value="9914001" annotation="Airway"/>
+    <facet name="enumeration" value="9914003" annotation="Airway-Failed"/>
+    <facet name="enumeration" value="9914005" annotation="Airway-Obstruction/Foreign Body"/>
+    <facet name="enumeration" value="9914007" annotation="Airway-Rapid Sequence Induction (RSI-Paralytic)"/>
+    <facet name="enumeration" value="9914009" annotation="Airway-Sedation Assisted (Non-Paralytic)"/>
+    <facet name="enumeration" value="9914011" annotation="Cardiac Arrest-Asystole"/>
+    <facet name="enumeration" value="9914013" annotation="Cardiac Arrest-Hypothermia-Therapeutic"/>
+    <facet name="enumeration" value="9914015" annotation="Cardiac Arrest-Pulseless Electrical Activity"/>
+    <facet name="enumeration" value="9914017" annotation="Cardiac Arrest-Ventricular Fibrillation/ Pulseless Ventricular Tachycardia"/>
+    <facet name="enumeration" value="9914019" annotation="Cardiac Arrest-Post Resuscitation Care"/>
+    <facet name="enumeration" value="9914021" annotation="Environmental-Altitude Sickness"/>
+    <facet name="enumeration" value="9914023" annotation="Environmental-Cold Exposure"/>
+    <facet name="enumeration" value="9914025" annotation="Environmental-Frostbite/Cold Injury"/>
+    <facet name="enumeration" value="9914027" annotation="Environmental-Heat Exposure/Exhaustion"/>
+    <facet name="enumeration" value="9914029" annotation="Environmental-Heat Stroke/Hyperthermia"/>
+    <facet name="enumeration" value="9914031" annotation="Environmental-Hypothermia"/>
+    <facet name="enumeration" value="9914033" annotation="Exposure-Airway/Inhalation Irritants"/>
+    <facet name="enumeration" value="9914035" annotation="Exposure-Biological/Infectious"/>
+    <facet name="enumeration" value="9914037" annotation="Exposure-Blistering Agents"/>
+    <facet name="enumeration" value="9914041" annotation="Exposure-Chemicals to Eye"/>
+    <facet name="enumeration" value="9914043" annotation="Exposure-Cyanide"/>
+    <facet name="enumeration" value="9914045" annotation="Exposure-Explosive/ Blast Injury"/>
+    <facet name="enumeration" value="9914047" annotation="Exposure-Nerve Agents"/>
+    <facet name="enumeration" value="9914049" annotation="Exposure-Radiologic Agents"/>
+    <facet name="enumeration" value="9914051" annotation="General-Back Pain"/>
+    <facet name="enumeration" value="9914053" annotation="General-Behavioral/Patient Restraint"/>
+    <facet name="enumeration" value="9914055" annotation="General-Cardiac Arrest"/>
+    <facet name="enumeration" value="9914057" annotation="General-Dental Problems"/>
+    <facet name="enumeration" value="9914059" annotation="General-Epistaxis"/>
+    <facet name="enumeration" value="9914061" annotation="General-Fever"/>
+    <facet name="enumeration" value="9914063" annotation="General-Individualized Patient Protocol"/>
+    <facet name="enumeration" value="9914065" annotation="General-Indwelling Medical Devices/Equipment"/>
+    <facet name="enumeration" value="9914067" annotation="General-IV Access"/>
+    <facet name="enumeration" value="9914069" annotation="General-Medical Device Malfunction"/>
+    <facet name="enumeration" value="9914071" annotation="General-Pain Control"/>
+    <facet name="enumeration" value="9914073" annotation="General-Spinal Immobilization/Clearance"/>
+    <facet name="enumeration" value="9914075" annotation="General-Universal Patient Care/ Initial Patient Contact"/>
+    <facet name="enumeration" value="9914077" annotation="Injury-Amputation"/>
+    <facet name="enumeration" value="9914079" annotation="Injury-Bites and Envenomations-Land"/>
+    <facet name="enumeration" value="9914081" annotation="Injury-Bites and Envenomations-Marine"/>
+    <facet name="enumeration" value="9914083" annotation="Injury-Bleeding/ Hemorrhage Control"/>
+    <facet name="enumeration" value="9914085" annotation="Injury-Burns-Thermal"/>
+    <facet name="enumeration" value="9914087" annotation="Injury-Cardiac Arrest"/>
+    <facet name="enumeration" value="9914089" annotation="Injury-Crush Syndrome"/>
+    <facet name="enumeration" value="9914091" annotation="Injury-Diving Emergencies"/>
+    <facet name="enumeration" value="9914093" annotation="Injury-Drowning/Near Drowning"/>
+    <facet name="enumeration" value="9914095" annotation="Injury-Electrical Injuries"/>
+    <facet name="enumeration" value="9914097" annotation="Injury-Extremity"/>
+    <facet name="enumeration" value="9914099" annotation="Injury-Eye"/>
+    <facet name="enumeration" value="9914101" annotation="Injury-Head"/>
+    <facet name="enumeration" value="9914103" annotation="Injury-Impaled Object"/>
+    <facet name="enumeration" value="9914105" annotation="Injury-Multisystem"/>
+    <facet name="enumeration" value="9914107" annotation="Injury-Spinal Cord"/>
+    <facet name="enumeration" value="9914109" annotation="Medical-Abdominal Pain"/>
+    <facet name="enumeration" value="9914111" annotation="Medical-Allergic Reaction/Anaphylaxis"/>
+    <facet name="enumeration" value="9914113" annotation="Medical-Altered Mental Status"/>
+    <facet name="enumeration" value="9914115" annotation="Medical-Bradycardia"/>
+    <facet name="enumeration" value="9914117" annotation="Medical-Cardiac Chest Pain"/>
+    <facet name="enumeration" value="9914119" annotation="Medical-Diarrhea"/>
+    <facet name="enumeration" value="9914121" annotation="Medical-Hyperglycemia"/>
+    <facet name="enumeration" value="9914123" annotation="Medical-Hypertension"/>
+    <facet name="enumeration" value="9914125" annotation="Medical-Hypoglycemia/Diabetic Emergency"/>
+    <facet name="enumeration" value="9914127" annotation="Medical-Hypotension/Shock (Non-Trauma)"/>
+    <facet name="enumeration" value="9914129" annotation="Medical-Influenza-Like Illness/ Upper Respiratory Infection"/>
+    <facet name="enumeration" value="9914131" annotation="Medical-Nausea/Vomiting"/>
+    <facet name="enumeration" value="9914133" annotation="Medical-Newborn/ Neonatal Resuscitation"/>
+    <facet name="enumeration" value="9914135" annotation="General-Overdose/Poisoning/Toxic Ingestion"/>
+    <facet name="enumeration" value="9914137" annotation="Medical-Pulmonary Edema/CHF"/>
+    <facet name="enumeration" value="9914139" annotation="Medical-Respiratory Distress/Asthma/COPD/Reactive Airway"/>
+    <facet name="enumeration" value="9914141" annotation="Medical-Seizure"/>
+    <facet name="enumeration" value="9914143" annotation="Medical-ST-Elevation Myocardial Infarction (STEMI)"/>
+    <facet name="enumeration" value="9914145" annotation="Medical-Stroke/TIA"/>
+    <facet name="enumeration" value="9914147" annotation="Medical-Supraventricular Tachycardia (Including Atrial Fibrillation)"/>
+    <facet name="enumeration" value="9914149" annotation="Medical-Syncope"/>
+    <facet name="enumeration" value="9914151" annotation="Medical-Ventricular Tachycardia (With Pulse)"/>
+    <facet name="enumeration" value="9914153" annotation="Not Done"/>
+    <facet name="enumeration" value="9914155" annotation="OB/GYN-Childbirth/Labor/Delivery"/>
+    <facet name="enumeration" value="9914157" annotation="OB/GYN-Eclampsia"/>
+    <facet name="enumeration" value="9914159" annotation="OB/GYN-Gynecologic Emergencies"/>
+    <facet name="enumeration" value="9914161" annotation="OB/GYN-Pregnancy Related Emergencies"/>
+    <facet name="enumeration" value="9914163" annotation="OB/GYN-Post-partum Hemorrhage"/>
+    <facet name="enumeration" value="9914165" annotation="Other"/>
+    <facet name="enumeration" value="9914167" annotation="Exposure-Carbon Monoxide"/>
+    <facet name="enumeration" value="9914169" annotation="Cardiac Arrest-Do Not Resuscitate"/>
+    <facet name="enumeration" value="9914171" annotation="Cardiac Arrest-Special Resuscitation Orders"/>
+    <facet name="enumeration" value="9914173" annotation="Exposure-Smoke Inhalation"/>
+    <facet name="enumeration" value="9914175" annotation="General-Community Paramedicine / Mobile Integrated Healthcare"/>
+    <facet name="enumeration" value="9914177" annotation="General-Exception Protocol"/>
+    <facet name="enumeration" value="9914179" annotation="General-Extended Care Guidelines"/>
+    <facet name="enumeration" value="9914181" annotation="General-Interfacility Transfers"/>
+    <facet name="enumeration" value="9914183" annotation="General-Law Enforcement - Blood for Legal Purposes"/>
+    <facet name="enumeration" value="9914185" annotation="General-Law Enforcement - Assist with Law Enforcement Activity"/>
+    <facet name="enumeration" value="9914187" annotation="General-Neglect or Abuse Suspected"/>
+    <facet name="enumeration" value="9914189" annotation="General-Refusal of Care"/>
+    <facet name="enumeration" value="9914191" annotation="Injury-Mass/Multiple Casualties"/>
+    <facet name="enumeration" value="9914193" annotation="Injury-Thoracic"/>
+    <facet name="enumeration" value="9914195" annotation="Medical-Adrenal Insufficiency"/>
+    <facet name="enumeration" value="9914197" annotation="Medical-Apparent Life Threatening Event (ALTE)"/>
+    <facet name="enumeration" value="9914199" annotation="Medical-Tachycardia"/>
+    <facet name="enumeration" value="9914201" annotation="Cardiac Arrest-Determination of Death / Withholding Resuscitative Efforts"/>
+    <facet name="enumeration" value="9914203" annotation="Injury-Conducted Electrical Weapon (e.g., Taser)"/>
+    <facet name="enumeration" value="9914205" annotation="Injury-Facial Trauma"/>
+    <facet name="enumeration" value="9914207" annotation="Injury-General Trauma Management"/>
+    <facet name="enumeration" value="9914209" annotation="Injury-Lightning/Lightning Strike"/>
+    <facet name="enumeration" value="9914211" annotation="Injury-SCUBA Injury/Accidents"/>
+    <facet name="enumeration" value="9914213" annotation="Injury-Topical Chemical Burn"/>
+    <facet name="enumeration" value="9914215" annotation="Medical-Beta Blocker Poisoning/Overdose"/>
+    <facet name="enumeration" value="9914217" annotation="Medical-Calcium Channel Blocker Poisoning/Overdose"/>
+    <facet name="enumeration" value="9914219" annotation="Medical-Opioid Poisoning/Overdose"/>
+    <facet name="enumeration" value="9914221" annotation="Medical-Respiratory Distress-Bronchiolitis"/>
+    <facet name="enumeration" value="9914223" annotation="Medical-Respiratory Distress-Croup"/>
+    <facet name="enumeration" value="9914225" annotation="Medical-Stimulant Poisoning/Overdose"/>
+  </ProtocolsUsed>
+</restrictions>
+</element>

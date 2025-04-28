@@ -1,0 +1,60 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eSituation.18"  minOccurs="1"  maxOccurs="1"  dataTypeName="DateTimeType"  isNillable="Yes">
+<name>Date/Time Last Known Well</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The estimated date and time the patient was last known to be well or in their usual state of health. This is described or estimated by the patient, family, and/or bystanders.</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>For stroke related events, this is the date and time the patient was last seen normal. For cardiac or respiratory arrest related events, this is the date and time the patient was last known to have a pulse or when interaction was had with the patient. For drowning related events, this is the date and time the patient was last seen. For injury or trauma related events, this is the date and time the patient was injured.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <DateTimeType baseType="dateTime">
+    <facet name="minInclusive" value="1950-01-01T00:00:00-00:00"/>
+    <facet name="maxInclusive" value="2050-01-01T00:00:00-00:00"/>
+    <facet name="pattern" value="[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.\d+)?(\+|-)[0-9]{2}:[0-9]{2}"/>
+  </DateTimeType>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+  <PN>
+    <PN.UnableToComplete><facet name="enumeration" value="8801023" annotation="Unable to Complete"/></PN.UnableToComplete>
+    <PN.Approximate><facet name="enumeration" value="8801029" annotation="Approximate"/></PN.Approximate>
+  </PN>
+</attributes>
+<asserts>
+  <assert id="nemSch_e188" role="Error">
+      When <elementRef elementNumber="eSituation.18">Date/Time Last Known Well</elementRef> has a Pertinent Negative of &quot;Unable to Complete&quot;, it should be empty and it should not have a Not Value (Not Applicable, Not Recorded, or Not Reporting).
+      </assert>
+  <assert id="nemSch_e191" role="Error">
+      When <elementRef elementNumber="eSituation.18">Date/Time Last Known Well</elementRef> has a Pertinent Negative of &quot;Approximate&quot;, it should have a value and it should not have a Not Value (Not Applicable, Not Recorded, or Not Reporting).
+      </assert>
+  <assert id="nemSch_e044" role="Warning">
+      <elementRef elementNumber="eTimes.12">Destination Patient Transfer of Care Date/Time</elementRef> should not be earlier than <elementRef elementNumber="eSituation.18">Date/Time Last Known Well</elementRef>.
+      </assert>
+  <assert id="nemSch_e054" role="Warning">
+      <elementRef elementNumber="eTimes.13">Unit Back in Service Date/Time</elementRef> should not be earlier than <elementRef elementNumber="eSituation.18">Date/Time Last Known Well</elementRef>.
+      </assert>
+  <assert id="nemSch_e085" role="Warning">
+      <elementRef elementNumber="eSituation.18">Date/Time Last Known Well</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e086" role="Warning">
+      <elementRef elementNumber="eSituation.18">Date/Time Last Known Well</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eVitals.29">Stroke Scale Result</elementRef> is &quot;Positive&quot;.
+      </assert>
+  <assert id="nemSch_e087" role="Warning">
+      <elementRef elementNumber="eSituation.18">Date/Time Last Known Well</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eVitals.03">Cardiac Rhythm / Electrocardiography (ECG)</elementRef> is &quot;STEMI...&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Date/Time Last Known Well has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Date/Time Last Known Well is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

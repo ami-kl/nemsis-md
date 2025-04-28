@@ -1,0 +1,771 @@
+<?xml-stylesheet type="text/xsl" href="https://nemsis.org/media/nemsis_v3/release-3.5.1/DefinedLists/DefinedListHtml.xsl"?><DefinedList xmlns="http://www.nemsis.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" date="2025-01-14" xsi:schemaLocation="http://www.nemsis.org https://nemsis.org/media/nemsis_v3/release-3.5.1/DefinedLists/DefinedLists.xsd">
+  <Header>
+    <SourceVocabularies>
+      <SourceVocabulary url="https://www.cdc.gov/nchs/icd/icd-10-cm/">ICD-10</SourceVocabulary>
+    </SourceVocabularies>
+    <NemsisTypes>
+      <NemsisType>icd10Activity</NemsisType>
+    </NemsisTypes>
+    <NemsisElements>
+      <NemsisElement>eSituation.17</NemsisElement>
+    </NemsisElements>
+  </Header>
+  <Codes>
+    <Code date="2021-05-06">
+      <Value>Y93.K</Value>
+      <Category>Animal Care</Category>
+      <SourceLabel>Activities involving animal care</SourceLabel>
+      <SuggestedLabel>Animal care activity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.K3</Value>
+      <Category>Animal Care</Category>
+      <SourceLabel>Activity, grooming and shearing an animal</SourceLabel>
+      <SuggestedLabel>Grooming or shearing an animal</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.K2</Value>
+      <Category>Animal Care</Category>
+      <SourceLabel>Activity, milking an animal</SourceLabel>
+      <SuggestedLabel>Milking an animal</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.K9</Value>
+      <Category>Animal Care</Category>
+      <SourceLabel>Activity, other involving animal care</SourceLabel>
+      <SuggestedLabel>Other activities involving animal care</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.K1</Value>
+      <Category>Animal Care</Category>
+      <SourceLabel>Activity, walking an animal</SourceLabel>
+      <SuggestedLabel>Walking an animal</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.D</Value>
+      <Category>Arts and Crafts</Category>
+      <SourceLabel>Activities involving arts and handcrafts</SourceLabel>
+      <SuggestedLabel>Arts or handcrafts activity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.D3</Value>
+      <Category>Arts and Crafts</Category>
+      <SourceLabel>Activity, furniture building and finishing</SourceLabel>
+      <SuggestedLabel>Furniture building or finishing</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.D1</Value>
+      <Category>Arts and Crafts</Category>
+      <SourceLabel>Activity, knitting and crocheting</SourceLabel>
+      <SuggestedLabel>Knitting or crocheting</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.D9</Value>
+      <Category>Arts and Crafts</Category>
+      <SourceLabel>Activity, other involving arts and handcrafts</SourceLabel>
+      <SuggestedLabel>Other activities involving arts or handcrafts</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.D2</Value>
+      <Category>Arts and Crafts</Category>
+      <SourceLabel>Activity, sewing</SourceLabel>
+      <SuggestedLabel>Sewing</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.A</Value>
+      <Category>Cardio Activities</Category>
+      <SourceLabel>Activities involving other cardiorespiratory exercise</SourceLabel>
+      <SuggestedLabel>Cardiorespiratory exercise activity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.A3</Value>
+      <Category>Cardio Activities</Category>
+      <SourceLabel>Activity, aerobic and step exercise</SourceLabel>
+      <SuggestedLabel>Aerobic or step exercise</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.A2</Value>
+      <Category>Cardio Activities</Category>
+      <SourceLabel>Activity, calisthenics</SourceLabel>
+      <SuggestedLabel>Calisthenics</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.A4</Value>
+      <Category>Cardio Activities</Category>
+      <SourceLabel>Activity, circuit training</SourceLabel>
+      <SuggestedLabel>Circuit training</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.A1</Value>
+      <Category>Cardio Activities</Category>
+      <SourceLabel>Activity, exercise machines primarily for cardiorespiratory conditioning</SourceLabel>
+      <SuggestedLabel>Exercise machines primarily for cardiorespiratory conditioning</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.A6</Value>
+      <Category>Cardio Activities</Category>
+      <SourceLabel>Activity, grass drills</SourceLabel>
+      <SuggestedLabel>Grass drills</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.A5</Value>
+      <Category>Cardio Activities</Category>
+      <SourceLabel>Activity, obstacle course</SourceLabel>
+      <SuggestedLabel>Obstacle course</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.A9</Value>
+      <Category>Cardio Activities</Category>
+      <SourceLabel>Activity, other involving cardiorespiratory exercise</SourceLabel>
+      <SuggestedLabel>Other activities involving cardiorespiratory exercise</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.F</Value>
+      <Category>Caregiving</Category>
+      <SourceLabel>Activities involving caregiving</SourceLabel>
+      <SuggestedLabel>Caregiving activity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.F1</Value>
+      <Category>Caregiving</Category>
+      <SourceLabel>Activity, caregiving, bathing</SourceLabel>
+      <SuggestedLabel>Caregiving, bathing</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.F2</Value>
+      <Category>Caregiving</Category>
+      <SourceLabel>Activity, caregiving, lifting</SourceLabel>
+      <SuggestedLabel>Caregiving, lifting</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.F9</Value>
+      <Category>Caregiving</Category>
+      <SourceLabel>Activity, other caregiving</SourceLabel>
+      <SuggestedLabel>Other caregiving activities</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.3</Value>
+      <Category>Climb/Jumping Activities</Category>
+      <SourceLabel>Activities involving climbing, rappelling and jumping off</SourceLabel>
+      <SuggestedLabel>Climbing or jumping activity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.33</Value>
+      <Category>Climb/Jumping Activities</Category>
+      <SourceLabel>Activity, BASE jumping</SourceLabel>
+      <SuggestedLabel>BASE jumping</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.34</Value>
+      <Category>Climb/Jumping Activities</Category>
+      <SourceLabel>Activity, bungee jumping</SourceLabel>
+      <SuggestedLabel>Bungee jumping</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.35</Value>
+      <Category>Climb/Jumping Activities</Category>
+      <SourceLabel>Activity, hang gliding</SourceLabel>
+      <SuggestedLabel>Hang gliding</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.31</Value>
+      <Category>Climb/Jumping Activities</Category>
+      <SourceLabel>Activity, mountain climbing, rock climbing and wall climbing</SourceLabel>
+      <SuggestedLabel>Mountain climbing, rock climbing, or wall climbing</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.39</Value>
+      <Category>Climb/Jumping Activities</Category>
+      <SourceLabel>Activity, other involving climbing, rappelling and jumping off</SourceLabel>
+      <SuggestedLabel>Other climbing, rappelling, or jumping off activities</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.32</Value>
+      <Category>Climb/Jumping Activities</Category>
+      <SourceLabel>Activity, rappelling</SourceLabel>
+      <SuggestedLabel>Rappelling</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.6</Value>
+      <Category>Contact Sports</Category>
+      <SourceLabel>Activities involving other sports and athletics played as a team or group</SourceLabel>
+      <SuggestedLabel>athletic team or group activity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.62</Value>
+      <Category>Contact Sports</Category>
+      <SourceLabel>Activity, american flag or touch football</SourceLabel>
+      <SuggestedLabel>American flag or touch football</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.61</Value>
+      <Category>Contact Sports</Category>
+      <SourceLabel>Activity, american tackle football</SourceLabel>
+      <SuggestedLabel>American tackle football</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.64</Value>
+      <Category>Contact Sports</Category>
+      <SourceLabel>Activity, baseball</SourceLabel>
+      <SuggestedLabel>Baseball</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.67</Value>
+      <Category>Contact Sports</Category>
+      <SourceLabel>Activity, basketball</SourceLabel>
+      <SuggestedLabel>Basketball</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.65</Value>
+      <Category>Contact Sports</Category>
+      <SourceLabel>Activity, lacrosse and field hockey</SourceLabel>
+      <SuggestedLabel>Lacrosse or field hockey</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.69</Value>
+      <Category>Contact Sports</Category>
+      <SourceLabel>Activity, other involving other sports and athletics played as a team or group</SourceLabel>
+      <SuggestedLabel>Other athletics played as a team or group activities</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.63</Value>
+      <Category>Contact Sports</Category>
+      <SourceLabel>Activity, rugby</SourceLabel>
+      <SuggestedLabel>Rugby</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.6A</Value>
+      <Category>Contact Sports</Category>
+      <SourceLabel>Activity, physical games generally associated with school recess, summer camp and children</SourceLabel>
+      <SuggestedLabel>School recess, summer camp or children activities</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.66</Value>
+      <Category>Contact Sports</Category>
+      <SourceLabel>Activity, soccer</SourceLabel>
+      <SuggestedLabel>Soccer</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.68</Value>
+      <Category>Contact Sports</Category>
+      <SourceLabel>Activity, volleyball (beach) (court)</SourceLabel>
+      <SuggestedLabel>Volleyball (beach or court)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.4</Value>
+      <Category>Dancing or Rhythmic Activities</Category>
+      <SourceLabel>Activities involving dancing and other rhythmic movement</SourceLabel>
+      <SuggestedLabel>Dancing or rhythmic activity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.45</Value>
+      <Category>Dancing or Rhythmic Activities</Category>
+      <SourceLabel>Activity, cheerleading</SourceLabel>
+      <SuggestedLabel>Cheerleading</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.41</Value>
+      <Category>Dancing or Rhythmic Activities</Category>
+      <SourceLabel>Activity, dancing</SourceLabel>
+      <SuggestedLabel>Dancing</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.43</Value>
+      <Category>Dancing or Rhythmic Activities</Category>
+      <SourceLabel>Activity, gymnastics</SourceLabel>
+      <SuggestedLabel>Gymnastic</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.49</Value>
+      <Category>Dancing or Rhythmic Activities</Category>
+      <SourceLabel>Activity, other involving dancing and other rhythmic movements</SourceLabel>
+      <SuggestedLabel>Other dancing or rhythmic movement activities</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.44</Value>
+      <Category>Dancing or Rhythmic Activities</Category>
+      <SourceLabel>Activity, trampolining</SourceLabel>
+      <SuggestedLabel>Trampolining</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.42</Value>
+      <Category>Dancing or Rhythmic Activities</Category>
+      <SourceLabel>Activity, yoga</SourceLabel>
+      <SuggestedLabel>Yoga</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.B</Value>
+      <Category>Exercise</Category>
+      <SourceLabel>Activities involving other muscle strengthening exercises</SourceLabel>
+      <SuggestedLabel>Muscle strengthening activity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.B1</Value>
+      <Category>Exercise</Category>
+      <SourceLabel>Activity, exercise machines primarily for muscle strengthening</SourceLabel>
+      <SuggestedLabel>Exercise machines primarily for muscle strengthening</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.B3</Value>
+      <Category>Exercise</Category>
+      <SourceLabel>Activity, free weights</SourceLabel>
+      <SuggestedLabel>Free weights</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.B9</Value>
+      <Category>Exercise</Category>
+      <SourceLabel>Activity, other involving muscle strengthening exercises</SourceLabel>
+      <SuggestedLabel>Other activities involving muscle strengthening exercises</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.B4</Value>
+      <Category>Exercise</Category>
+      <SourceLabel>Activity, pilates</SourceLabel>
+      <SuggestedLabel>Pilates</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.B2</Value>
+      <Category>Exercise</Category>
+      <SourceLabel>Activity, push-ups, pull-ups, sit-ups</SourceLabel>
+      <SuggestedLabel>Push-ups, pull-ups, sit-ups</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.G</Value>
+      <Category>Food Preparation</Category>
+      <SourceLabel>Activities involving food preparation, cooking and grilling</SourceLabel>
+      <SuggestedLabel>Food preparation activity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.G3</Value>
+      <Category>Food Preparation</Category>
+      <SourceLabel>Activity, cooking and baking</SourceLabel>
+      <SuggestedLabel>Cooking or baking</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.G1</Value>
+      <Category>Food Preparation</Category>
+      <SourceLabel>Activity, food preparation and clean up</SourceLabel>
+      <SuggestedLabel>Food preparation or clean up</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.G2</Value>
+      <Category>Food Preparation</Category>
+      <SourceLabel>Activity, grilling and smoking food</SourceLabel>
+      <SuggestedLabel>Grilling or smoking food</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.G9</Value>
+      <Category>Food Preparation</Category>
+      <SourceLabel>Activity, other involving cooking and grilling</SourceLabel>
+      <SuggestedLabel>Other activities involving cooking or grilling</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.7</Value>
+      <Category>Hand Sports</Category>
+      <SourceLabel>Activities involving other specified sports and athletics</SourceLabel>
+      <SuggestedLabel>Hand sport or athletic activity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.71</Value>
+      <Category>Hand Sports</Category>
+      <SourceLabel>Activity, boxing</SourceLabel>
+      <SuggestedLabel>Boxing</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.74</Value>
+      <Category>Hand Sports</Category>
+      <SourceLabel>Activity, frisbee</SourceLabel>
+      <SuggestedLabel>Frisbee</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.75</Value>
+      <Category>Hand Sports</Category>
+      <SourceLabel>Activity, martial arts</SourceLabel>
+      <SuggestedLabel>Martial arts</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.79</Value>
+      <Category>Hand Sports</Category>
+      <SourceLabel>Activity, other specified sports and athletics</SourceLabel>
+      <SuggestedLabel>Other specified sports or athletics activities</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.73</Value>
+      <Category>Hand Sports</Category>
+      <SourceLabel>Activity, racquet and hand sports</SourceLabel>
+      <SuggestedLabel>Racquet or hand sports</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.72</Value>
+      <Category>Hand Sports</Category>
+      <SourceLabel>Activity, wrestling</SourceLabel>
+      <SuggestedLabel>Wrestling</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.5</Value>
+      <Category>Individual Sport</Category>
+      <SourceLabel>Activities involving other sports and athletics played individually</SourceLabel>
+      <SuggestedLabel>individual athletic activity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.55</Value>
+      <Category>Individual Sport</Category>
+      <SourceLabel>Activity, bike riding</SourceLabel>
+      <SuggestedLabel>Bike riding</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.54</Value>
+      <Category>Individual Sport</Category>
+      <SourceLabel>Activity, bowling</SourceLabel>
+      <SuggestedLabel>Bowling</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.53</Value>
+      <Category>Individual Sport</Category>
+      <SourceLabel>Activity, golf</SourceLabel>
+      <SuggestedLabel>Golf</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.52</Value>
+      <Category>Individual Sport</Category>
+      <SourceLabel>Activity, horseback riding</SourceLabel>
+      <SuggestedLabel>Horseback riding</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.56</Value>
+      <Category>Individual Sport</Category>
+      <SourceLabel>Activity, jumping rope</SourceLabel>
+      <SuggestedLabel>Jumping rope</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.57</Value>
+      <Category>Individual Sport</Category>
+      <SourceLabel>Activity, non-running track and field events</SourceLabel>
+      <SuggestedLabel>Non-running track or field</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.59</Value>
+      <Category>Individual Sport</Category>
+      <SourceLabel>Activity, other involving other sports and athletics played individually</SourceLabel>
+      <SuggestedLabel>Other athletics played individually activities</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.51</Value>
+      <Category>Individual Sport</Category>
+      <SourceLabel>Activity, roller skating (inline) and skateboarding</SourceLabel>
+      <SuggestedLabel>Roller skating (inline) or skateboarding</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.J</Value>
+      <Category>Instruments</Category>
+      <SourceLabel>Activities involving playing musical instrument</SourceLabel>
+      <SuggestedLabel>Playing musical instrument activity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.J2</Value>
+      <Category>Instruments</Category>
+      <SourceLabel>Activity, drum and other percussion instrument playing</SourceLabel>
+      <SuggestedLabel>Drum or other percussion instrument playing</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.J1</Value>
+      <Category>Instruments</Category>
+      <SourceLabel>Activity, piano playing</SourceLabel>
+      <SuggestedLabel>Piano playing</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.J3</Value>
+      <Category>Instruments</Category>
+      <SourceLabel>Activity, string instrument playing</SourceLabel>
+      <SuggestedLabel>String instrument playing</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.J4</Value>
+      <Category>Instruments</Category>
+      <SourceLabel>Activity, winds and brass instrument playing</SourceLabel>
+      <SuggestedLabel>Winds or brass instrument playing</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.E</Value>
+      <Category>Personal Hygiene of Home Activity</Category>
+      <SourceLabel>Activities involving personal hygiene and interior property and clothing maintenance</SourceLabel>
+      <SuggestedLabel>Personal hygiene, laundry, or interior property activity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.E5</Value>
+      <Category>Personal Hygiene of Home Activity</Category>
+      <SourceLabel>Activity, floor mopping and cleaning</SourceLabel>
+      <SuggestedLabel>Floor mopping or cleaning</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.E4</Value>
+      <Category>Personal Hygiene of Home Activity</Category>
+      <SourceLabel>Activity, ironing</SourceLabel>
+      <SuggestedLabel>Ironing</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.E2</Value>
+      <Category>Personal Hygiene of Home Activity</Category>
+      <SourceLabel>Activity, laundry</SourceLabel>
+      <SuggestedLabel>Laundry</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.E9</Value>
+      <Category>Personal Hygiene of Home Activity</Category>
+      <SourceLabel>Activity, other interior property and clothing maintenance</SourceLabel>
+      <SuggestedLabel>Other activities involving interior property or clothing maintenance</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.E8</Value>
+      <Category>Personal Hygiene of Home Activity</Category>
+      <SourceLabel>Activity, other personal hygiene</SourceLabel>
+      <SuggestedLabel>Other personal hygiene</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.E1</Value>
+      <Category>Personal Hygiene of Home Activity</Category>
+      <SourceLabel>Activity, personal bathing and showering</SourceLabel>
+      <SuggestedLabel>Personal bathing or showering</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.E6</Value>
+      <Category>Personal Hygiene of Home Activity</Category>
+      <SourceLabel>Activity, residential relocation</SourceLabel>
+      <SuggestedLabel>Residential relocation</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.E3</Value>
+      <Category>Personal Hygiene of Home Activity</Category>
+      <SourceLabel>Activity, vacuuming</SourceLabel>
+      <SuggestedLabel>Vacuuming</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.H</Value>
+      <Category>Property Management</Category>
+      <SourceLabel>Activities involving exterior property and land maintenance, building and construction</SourceLabel>
+      <SuggestedLabel>Exterior property activity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.H3</Value>
+      <Category>Property Management</Category>
+      <SourceLabel>Activity, building and construction</SourceLabel>
+      <SuggestedLabel>Building or construction</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.H1</Value>
+      <Category>Property Management</Category>
+      <SourceLabel>Activity, digging, shoveling and raking</SourceLabel>
+      <SuggestedLabel>Digging, shoveling, or raking</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.H2</Value>
+      <Category>Property Management</Category>
+      <SourceLabel>Activity, gardening and landscaping</SourceLabel>
+      <SuggestedLabel>Gardening or landscaping</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.H9</Value>
+      <Category>Property Management</Category>
+      <SourceLabel>Activity, other involving exterior property and land maintenance, building and construction</SourceLabel>
+      <SuggestedLabel>Other activities involving exterior property or land maintenance, building or construction</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.I</Value>
+      <Category>Rollercoasters</Category>
+      <SourceLabel>Activities involving roller coasters and other types of external motion</SourceLabel>
+      <SuggestedLabel>Roller coaster type activity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.I1</Value>
+      <Category>Rollercoasters</Category>
+      <SourceLabel>Activity, roller coaster riding</SourceLabel>
+      <SuggestedLabel>Roller coaster riding</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.I9</Value>
+      <Category>Rollercoasters</Category>
+      <SourceLabel>Activity, other involving external motion</SourceLabel>
+      <SuggestedLabel>Other activities involving external motion</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.C</Value>
+      <Category>Technology</Category>
+      <SourceLabel>Activities involving computer technology and electronic devices</SourceLabel>
+      <SuggestedLabel>Computer or electronic device activity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.C1</Value>
+      <Category>Technology</Category>
+      <SourceLabel>Activity, computer keyboarding</SourceLabel>
+      <SuggestedLabel>Computer keyboarding</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.C2</Value>
+      <Category>Technology</Category>
+      <SourceLabel>Activity, hand held interactive electronic device</SourceLabel>
+      <SuggestedLabel>Hand held interactive electronic device</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.C9</Value>
+      <Category>Technology</Category>
+      <SourceLabel>Activity, other involving computer technology and electronic devices</SourceLabel>
+      <SuggestedLabel>Other activities involving computer technology or electronic devices</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.8</Value>
+      <Category>Unspecified Activity</Category>
+      <SourceLabel>Activities, other specified</SourceLabel>
+      <SuggestedLabel>Unspecified activity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.89</Value>
+      <Category>Unspecified Activity</Category>
+      <SourceLabel>Activity, other specified</SourceLabel>
+      <SuggestedLabel>Other specified</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.81</Value>
+      <Category>Unspecified Activity</Category>
+      <SourceLabel>Activity, refereeing a sports activity</SourceLabel>
+      <SuggestedLabel>Refereeing a sports activity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.83</Value>
+      <Category>Unspecified Activity</Category>
+      <SourceLabel>Activity, rough housing and horseplay</SourceLabel>
+      <SuggestedLabel>Rough housing or horseplay</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.84</Value>
+      <Category>Unspecified Activity</Category>
+      <SourceLabel>Activity, sleeping</SourceLabel>
+      <SuggestedLabel>Sleeping</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.82</Value>
+      <Category>Unspecified Activity</Category>
+      <SourceLabel>Activity, spectator at an event</SourceLabel>
+      <SuggestedLabel>Spectator at an event</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.9</Value>
+      <Category>Unspecified Activity</Category>
+      <SourceLabel>Activity, unspecified</SourceLabel>
+      <SuggestedLabel>Unspecified</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.0</Value>
+      <Category>Walking or Running</Category>
+      <SourceLabel>Activities involving walking and running</SourceLabel>
+      <SuggestedLabel>Walking or running activities</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.02</Value>
+      <Category>Walking or Running</Category>
+      <SourceLabel>Activity, running</SourceLabel>
+      <SuggestedLabel>Running</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.01</Value>
+      <Category>Walking or Running</Category>
+      <SourceLabel>Activity, walking, marching and hiking</SourceLabel>
+      <SuggestedLabel>Walking, marching, or hiking</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.1</Value>
+      <Category>Water Activities</Category>
+      <SourceLabel>Activities involving water and water craft</SourceLabel>
+      <SuggestedLabel>Water or water craft activity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.19</Value>
+      <Category>Water Activities</Category>
+      <SourceLabel>Activity, other involving water and watercraft</SourceLabel>
+      <SuggestedLabel>Other water or water craft activities</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.16</Value>
+      <Category>Water Activities</Category>
+      <SourceLabel>Activity, rowing, canoeing, kayaking, rafting and tubing</SourceLabel>
+      <SuggestedLabel>Rowing, canoeing, kayaking, rafting, or tubing</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.12</Value>
+      <Category>Water Activities</Category>
+      <SourceLabel>Activity, springboard and platform diving</SourceLabel>
+      <SuggestedLabel>Springboard or platform diving</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.18</Value>
+      <Category>Water Activities</Category>
+      <SourceLabel>Activity, surfing, windsurfing and boogie boarding</SourceLabel>
+      <SuggestedLabel>Surfing, windsurfing, or boogie boarding</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.11</Value>
+      <Category>Water Activities</Category>
+      <SourceLabel>Activity, swimming</SourceLabel>
+      <SuggestedLabel>Swimming</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.15</Value>
+      <Category>Water Activities</Category>
+      <SourceLabel>Activity, underwater diving and snorkeling</SourceLabel>
+      <SuggestedLabel>Underwater diving or snorkeling</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.14</Value>
+      <Category>Water Activities</Category>
+      <SourceLabel>Activity, water aerobics and water exercise</SourceLabel>
+      <SuggestedLabel>Water aerobics or water exercise</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.13</Value>
+      <Category>Water Activities</Category>
+      <SourceLabel>Activity, water polo</SourceLabel>
+      <SuggestedLabel>Water polo</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.17</Value>
+      <Category>Water Activities</Category>
+      <SourceLabel>Activity, water skiing and wake boarding</SourceLabel>
+      <SuggestedLabel>Water skiing or wake boarding</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.2</Value>
+      <Category>Winter Activities</Category>
+      <SourceLabel>Activities involving ice and snow</SourceLabel>
+      <SuggestedLabel>Ice or snow activity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.24</Value>
+      <Category>Winter Activities</Category>
+      <SourceLabel>Activity, cross country skiing</SourceLabel>
+      <SuggestedLabel>Cross country skiing</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.22</Value>
+      <Category>Winter Activities</Category>
+      <SourceLabel>Activity, ice hockey</SourceLabel>
+      <SuggestedLabel>Ice hockey</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.21</Value>
+      <Category>Winter Activities</Category>
+      <SourceLabel>Activity, ice skating</SourceLabel>
+      <SuggestedLabel>Ice skating</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.29</Value>
+      <Category>Winter Activities</Category>
+      <SourceLabel>Activity, other involving ice and snow</SourceLabel>
+      <SuggestedLabel>Other ice or snow activities</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Y93.23</Value>
+      <Category>Winter Activities</Category>
+      <SourceLabel>Activity, snow (alpine) (downhill) skiing, snowboarding, sledding, tobogganing and snow tubing</SourceLabel>
+      <SuggestedLabel>Snow (alpine or downhill) skiing, snowboarding, sledding, tobogganing, or snow Tubing</SuggestedLabel>
+    </Code>
+  </Codes>
+</DefinedList>

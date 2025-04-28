@@ -1,0 +1,57 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dPersonnel.16"  minOccurs="0"  maxOccurs="M"  dataTypeName="PersonnelDegreeFieldofStudy"  isNillable="No">
+<name>EMS Personnel's Degree Subject/Field of Study</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The area of the personnel's post high-school (post-secondary) degree.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <PersonnelDegreeFieldofStudy baseType="string">
+    <facet name="enumeration" value="1516001" annotation="Agriculture and Natural Resources"/>
+    <facet name="enumeration" value="1516003" annotation="Architecture and Related Services"/>
+    <facet name="enumeration" value="1516005" annotation="Area, Ethnic, Cultural, and Gender Studies"/>
+    <facet name="enumeration" value="1516007" annotation="Biological and Biomedical Sciences"/>
+    <facet name="enumeration" value="1516009" annotation="Business"/>
+    <facet name="enumeration" value="1516011" annotation="Communication, Journalism, and Related Programs"/>
+    <facet name="enumeration" value="1516013" annotation="Communications Technologies"/>
+    <facet name="enumeration" value="1516015" annotation="Computer and Information Sciences"/>
+    <facet name="enumeration" value="1516017" annotation="Education"/>
+    <facet name="enumeration" value="1516019" annotation="Emergency Medical Services"/>
+    <facet name="enumeration" value="1516021" annotation="Engineering"/>
+    <facet name="enumeration" value="1516023" annotation="Engineering Technologies"/>
+    <facet name="enumeration" value="1516025" annotation="English Language and Literature/Letters"/>
+    <facet name="enumeration" value="1516027" annotation="Family and Consumer Sciences/Human Sciences"/>
+    <facet name="enumeration" value="1516029" annotation="Fire Science"/>
+    <facet name="enumeration" value="1516031" annotation="Foreign Languages, Literatures, and Linguistics"/>
+    <facet name="enumeration" value="1516033" annotation="Health Professions and Related Clinical Sciences, Not Including Emergency Medical Services"/>
+    <facet name="enumeration" value="1516035" annotation="Legal Professions and Studies"/>
+    <facet name="enumeration" value="1516037" annotation="Liberal Arts and Sciences, General Studies, and Humanities"/>
+    <facet name="enumeration" value="1516039" annotation="Library Science"/>
+    <facet name="enumeration" value="1516041" annotation="Mathematics and Statistics"/>
+    <facet name="enumeration" value="1516043" annotation="Military Technologies"/>
+    <facet name="enumeration" value="1516045" annotation="Multi/Interdisciplinary Studies"/>
+    <facet name="enumeration" value="1516047" annotation="Not Classified by Field of Study"/>
+    <facet name="enumeration" value="1516049" annotation="None"/>
+    <facet name="enumeration" value="1516051" annotation="Parks, Recreation, Leisure and Fitness Studies"/>
+    <facet name="enumeration" value="1516053" annotation="Philosophy and Religious Studies"/>
+    <facet name="enumeration" value="1516055" annotation="Physical Sciences and Science Technologies"/>
+    <facet name="enumeration" value="1516057" annotation="Precision Production"/>
+    <facet name="enumeration" value="1516059" annotation="Psychology"/>
+    <facet name="enumeration" value="1516061" annotation="Public Administration and Social Services"/>
+    <facet name="enumeration" value="1516063" annotation="Security and Protective Services, Not Including Fire Science"/>
+    <facet name="enumeration" value="1516065" annotation="Social Sciences and History"/>
+    <facet name="enumeration" value="1516067" annotation="Theology and Religious Vocations"/>
+    <facet name="enumeration" value="1516069" annotation="Transportation and Materials Moving"/>
+    <facet name="enumeration" value="1516071" annotation="Visual and Performing Arts"/>
+  </PersonnelDegreeFieldofStudy>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

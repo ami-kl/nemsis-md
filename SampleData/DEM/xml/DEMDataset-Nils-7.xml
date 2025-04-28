@@ -1,0 +1,171 @@
+
+<DEMDataSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.nemsis.org http://nemsis.org/media/nemsis_v3/release-3.5.0/XSDs/NEMSIS_XSDs/DEMDataSet_v3.xsd" xmlns="http://www.nemsis.org">
+    <DemographicReport timeStamp="2015-03-03T13:29:41+07:00">
+        <dAgency>
+            <dAgency.01>6</dAgency.01>
+            <dAgency.02>66</dAgency.02>
+            <dAgency.03 xsi:nil="true" NV="7701001"></dAgency.03>
+            <dAgency.04>49</dAgency.04>
+            <dAgency.AgencyServiceGroup UUID="fb0becfe-8df7-4b44-9293-86da05d65b1e">
+                <dAgency.05>49</dAgency.05>
+                <dAgency.06>49019</dAgency.06>
+                <dAgency.07 xsi:nil="true" NV="7701003"></dAgency.07>
+                <dAgency.08 xsi:nil="true" NV="7701003"></dAgency.08></dAgency.AgencyServiceGroup>
+            <dAgency.09>9920019</dAgency.09>
+            <dAgency.10 xsi:nil="true" NV="7701005"></dAgency.10>
+            <dAgency.11>9917031</dAgency.11>
+            <dAgency.12>1016005</dAgency.12>
+            <dAgency.13>9912009</dAgency.13>
+            <dAgency.14>1018005</dAgency.14>
+            <dAgency.AgencyYearGroup UUID="4d1ff23d-7301-446c-b1a1-f2549a7461ff">
+                <dAgency.15>2024</dAgency.15>
+                <dAgency.16 xsi:nil="true" NV="7701003"></dAgency.16>
+                <dAgency.17 xsi:nil="true" NV="7701001"></dAgency.17>
+                <dAgency.18 xsi:nil="true" NV="7701003"></dAgency.18>
+                <dAgency.19 xsi:nil="true" NV="7701003"></dAgency.19>
+                <dAgency.20 xsi:nil="true" NV="7701001"></dAgency.20>
+                <dAgency.21 xsi:nil="true" NV="7701001"></dAgency.21>
+                <dAgency.22 xsi:nil="true" NV="7701001"></dAgency.22></dAgency.AgencyYearGroup>
+            <dAgency.23>1027017</dAgency.23>
+            <dAgency.24>9923003</dAgency.24>
+            <dAgency.25 xsi:nil="true" NV="7701001"></dAgency.25>
+            <dAgency.26 xsi:nil="true" NV="7701001"></dAgency.26></dAgency>
+        <dContact>
+            <dContact.ContactInfoGroup UUID="542287bf-9f01-4fe8-a167-b40fec80ac26">
+                <dContact.01 xsi:nil="true" NV="7701005"></dContact.01>
+                <dContact.02 xsi:nil="true" NV="7701001"></dContact.02>
+                <dContact.03 xsi:nil="true" NV="7701005"></dContact.03>
+                <dContact.04>Alderman</dContact.04>
+                <dContact.05 xsi:nil="true" NV="7701001"></dContact.05>
+                <dContact.06 xsi:nil="true" NV="7701005"></dContact.06>
+                <dContact.07 xsi:nil="true" NV="7701005"></dContact.07>
+                <dContact.08 xsi:nil="true" NV="7701001"></dContact.08>
+                <dContact.09>US</dContact.09>
+                <dContact.10 xsi:nil="true" NV="7701001"></dContact.10>
+                <dContact.11 xsi:nil="true" NV="7701003"></dContact.11>
+                <dContact.12 xsi:nil="true" NV="7701003"></dContact.12>
+                <dContact.EMSMedicalDirectorGroup>
+                    <dContact.13 xsi:nil="true" NV="7701005"></dContact.13>
+                    <dContact.14 xsi:nil="true" NV="7701005"></dContact.14>
+                    <dContact.15>1115003</dContact.15>
+                    <dContact.16>9923003</dContact.16></dContact.EMSMedicalDirectorGroup></dContact.ContactInfoGroup></dContact>
+        <dConfiguration>
+            <dConfiguration.ConfigurationGroup UUID="1d48faf1-776f-4dc6-8581-f9ee32e15799">
+                <dConfiguration.01>49</dConfiguration.01>
+                <dConfiguration.ProcedureGroup UUID="432e2178-5459-4087-8e52-f250672a7ac5">
+                    <dConfiguration.06>9917031</dConfiguration.06>
+                    <dConfiguration.07>173067007</dConfiguration.07></dConfiguration.ProcedureGroup>
+                <dConfiguration.MedicationGroup UUID="bb993015-29af-4697-ba7a-c3589e80c68d">
+                    <dConfiguration.08>9917031</dConfiguration.08>
+                    <dConfiguration.09 CodeType="9924003">1223</dConfiguration.09></dConfiguration.MedicationGroup>
+                <dConfiguration.10>9914225</dConfiguration.10>
+                <dConfiguration.11>1211035</dConfiguration.11>
+                <dConfiguration.12>9923003</dConfiguration.12>
+                <dConfiguration.13>1213005</dConfiguration.13>
+                <dConfiguration.14 xsi:nil="true" NV="7701003"></dConfiguration.14>
+                <dConfiguration.15>1215019</dConfiguration.15>
+                <dConfiguration.16>3</dConfiguration.16>
+                <dConfiguration.17>tc</dConfiguration.17></dConfiguration.ConfigurationGroup></dConfiguration>
+        <dLocation>
+            <dLocation.LocationGroup UUID="c5bf9c87-1767-4a32-aa58-4095fed923ac">
+                <dLocation.01>1301007</dLocation.01>
+                <dLocation.02>oi</dLocation.02>
+                <dLocation.03>9</dLocation.03>
+                <dLocation.04>41.020988,-111.501774</dLocation.04>
+                <dLocation.05>14SJU80294527</dLocation.05>
+                <dLocation.06 StreetAddress2="F">Ap #923-9418 Nunc Ave</dLocation.06>
+                <dLocation.07>1428658</dLocation.07>
+                <dLocation.08>49</dLocation.08>
+                <dLocation.09>84033</dLocation.09>
+                <dLocation.10>49043</dLocation.10>
+                <dLocation.11>US</dLocation.11>
+                <dLocation.12 PhoneNumberType="9913009">647-365-8127</dLocation.12></dLocation.LocationGroup></dLocation>
+        <dVehicle>
+            <dVehicle.VehicleGroup UUID="cbc546db-c06d-482f-b6c6-62da1b86c685">
+                <dVehicle.01 xsi:nil="true" NV="7701001"></dVehicle.01>
+                <dVehicle.02>AngoXzlqR2wrq8Mn5</dVehicle.02>
+                <dVehicle.03>b</dVehicle.03>
+                <dVehicle.04 xsi:nil="true" NV="7701003"></dVehicle.04>
+                <dVehicle.VehicleCertificationLevelsGroup UUID="1eab1efc-44ac-4cb9-8ed0-8de9580ee9e1">
+                    <dVehicle.05>9917031</dVehicle.05>
+                    <dVehicle.06>4</dVehicle.06>
+                    <dVehicle.07>2</dVehicle.07>
+                    <dVehicle.08>5</dVehicle.08></dVehicle.VehicleCertificationLevelsGroup>
+                <dVehicle.09>2820071</dVehicle.09>
+                <dVehicle.10 xsi:nil="true" NV="7701001"></dVehicle.10>
+                <dVehicle.YearGroup UUID="17d24ea5-5b96-41bb-855e-9fa94f148945">
+                    <dVehicle.11>1947</dVehicle.11>
+                    <dVehicle.12>3075</dVehicle.12>
+                    <dVehicle.13 DistanceUnit="9929003">177.0</dVehicle.13></dVehicle.YearGroup></dVehicle.VehicleGroup></dVehicle>
+        <dPersonnel>
+            <dPersonnel.PersonnelGroup UUID="a017ea66-524c-46ba-b05b-3250b8bb831c">
+                <dPersonnel.NameGroup>
+                    <dPersonnel.01 xsi:nil="true" NV="7701003"></dPersonnel.01>
+                    <dPersonnel.02 xsi:nil="true" NV="7701001"></dPersonnel.02>
+                    <dPersonnel.03 xsi:nil="true" NV="7701003"></dPersonnel.03></dPersonnel.NameGroup>
+                <dPersonnel.AddressGroup>
+                    <dPersonnel.04 StreetAddress2="N">511-5798 Dui. Rd.</dPersonnel.04>
+                    <dPersonnel.05>1867579</dPersonnel.05>
+                    <dPersonnel.06>49</dPersonnel.06>
+                    <dPersonnel.07>84109</dPersonnel.07>
+                    <dPersonnel.08>US</dPersonnel.08></dPersonnel.AddressGroup>
+                <dPersonnel.09 PhoneNumberType="9913009">883-733-1264</dPersonnel.09>
+                <dPersonnel.10 EmailAddressType="9904003">xqqTiz93@XeHn.com</dPersonnel.10>
+                <dPersonnel.11 xsi:nil="true" NV="7701001"></dPersonnel.11>
+                <dPersonnel.12 xsi:nil="true" NV="7701005"></dPersonnel.12>
+                <dPersonnel.13 xsi:nil="true" NV="7701005"></dPersonnel.13>
+                <dPersonnel.14>PV</dPersonnel.14>
+                <dPersonnel.15>1515031</dPersonnel.15>
+                <dPersonnel.16>1516071</dPersonnel.16>
+                <dPersonnel.17>1517023</dPersonnel.17>
+                <dPersonnel.ImmunizationsGroup UUID="15003ad7-fe68-4c03-ac67-8656884909cd">
+                    <dPersonnel.18>9910051</dPersonnel.18>
+                    <dPersonnel.19>1911</dPersonnel.19></dPersonnel.ImmunizationsGroup>
+                <dPersonnel.20>yid</dPersonnel.20>
+                <dPersonnel.21>IF</dPersonnel.21>
+                <dPersonnel.LicensureGroup UUID="3ffc8c7c-17ac-4687-a7ab-3f6064722623">
+                    <dPersonnel.22 xsi:nil="true" NV="7701005"></dPersonnel.22>
+                    <dPersonnel.23 xsi:nil="true" NV="7701001"></dPersonnel.23>
+                    <dPersonnel.24 xsi:nil="true" NV="7701005"></dPersonnel.24>
+                    <dPersonnel.25>1966-05-21</dPersonnel.25>
+                    <dPersonnel.26>1961-10-16</dPersonnel.26>
+                    <dPersonnel.27>1989-11-08</dPersonnel.27></dPersonnel.LicensureGroup>
+                <dPersonnel.28>P4607378</dPersonnel.28>
+                <dPersonnel.29>1529005</dPersonnel.29>
+                <dPersonnel.30>1997-10-14</dPersonnel.30>
+                <dPersonnel.31 xsi:nil="true" NV="7701005"></dPersonnel.31>
+                <dPersonnel.32 xsi:nil="true" NV="7701003"></dPersonnel.32>
+                <dPersonnel.33>1995-02-15</dPersonnel.33>
+                <dPersonnel.34 xsi:nil="true" NV="7701001"></dPersonnel.34>
+                <dPersonnel.35 xsi:nil="true" NV="7701005"></dPersonnel.35>
+                <dPersonnel.36>52</dPersonnel.36>
+                <dPersonnel.37>1995-05-25</dPersonnel.37>
+                <dPersonnel.CertificationLevelGroup UUID="7c505600-717b-4662-87ab-58b632f307b3">
+                    <dPersonnel.38>9925043</dPersonnel.38>
+                    <dPersonnel.39>1992-06-06</dPersonnel.39></dPersonnel.CertificationLevelGroup></dPersonnel.PersonnelGroup></dPersonnel>
+        <dDevice>
+            <dDevice.DeviceGroup UUID="b1584baa-520c-421f-a91e-b3383dfd03e8">
+                <dDevice.01>xC</dDevice.01>
+                <dDevice.02>vJ</dDevice.02>
+                <dDevice.03>1603039</dDevice.03>
+                <dDevice.04>C7</dDevice.04>
+                <dDevice.05>qM</dDevice.05>
+                <dDevice.06>1978-10-06</dDevice.06></dDevice.DeviceGroup></dDevice>
+        <dFacility>
+            <dFacilityGroup UUID="82abdf27-6db4-4395-b368-d714e89f675c">
+                <dFacility.01>1701017</dFacility.01>
+                <dFacility.FacilityGroup UUID="7ca9b5ca-c170-4c54-982a-fd5943144eb3">
+                    <dFacility.02>eb</dFacility.02>
+                    <dFacility.03>eo</dFacility.03>
+                    <dFacility.04>9908035</dFacility.04>
+                    <dFacility.05>ijdzte2jHL</dFacility.05>
+                    <dFacility.06>k</dFacility.06>
+                    <dFacility.07 StreetAddress2="0">628-1264 Euismod Rd.</dFacility.07>
+                    <dFacility.08>1442277</dFacility.08>
+                    <dFacility.09>49</dFacility.09>
+                    <dFacility.10>84637</dFacility.10>
+                    <dFacility.11>49027</dFacility.11>
+                    <dFacility.12>US</dFacility.12>
+                    <dFacility.13>38.804613,-112.437798</dFacility.13>
+                    <dFacility.14>14TYK81435152</dFacility.14>
+                    <dFacility.15 PhoneNumberType="9913009">342-260-1038</dFacility.15></dFacility.FacilityGroup></dFacilityGroup></dFacility></DemographicReport></DEMDataSet>

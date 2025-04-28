@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dLocation.03"  minOccurs="0"  maxOccurs="1"  dataTypeName="StationNumber"  isNillable="No">
+<name>EMS Location Number</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The ID number of the EMS Location.</definition>
+<v2Number>D05_02</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <StationNumber baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="50"/>
+  </StationNumber>
+</restrictions>
+</element>

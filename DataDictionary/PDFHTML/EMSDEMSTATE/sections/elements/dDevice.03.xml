@@ -1,0 +1,41 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dDevice.03"  minOccurs="0"  maxOccurs="M"  dataTypeName="MedicalDeviceType"  isNillable="No">
+<name>Medical Device Type</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The type of medical device.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This is multiple choice to allow documentation of various multifunction device configurations.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <MedicalDeviceType baseType="string">
+    <facet name="enumeration" value="1603001" annotation="Capnography-Numeric"/>
+    <facet name="enumeration" value="1603003" annotation="Capnography-Waveform"/>
+    <facet name="enumeration" value="1603005" annotation="Chemistry Measurement-Blood or Serum"/>
+    <facet name="enumeration" value="1603007" annotation="Chemistry Measurement-Glucometer"/>
+    <facet name="enumeration" value="1603009" annotation="Chemistry Measurement-Urine"/>
+    <facet name="enumeration" value="1603011" annotation="CPR-External Device"/>
+    <facet name="enumeration" value="1603013" annotation="Defibrillator-Automated"/>
+    <facet name="enumeration" value="1603015" annotation="Defibrillator-Manual"/>
+    <facet name="enumeration" value="1603017" annotation="ECG-12 Lead or Greater"/>
+    <facet name="enumeration" value="1603019" annotation="ECG-Less than 12 Lead (Cardiac Monitor)"/>
+    <facet name="enumeration" value="1603021" annotation="Medication Infusion Pump"/>
+    <facet name="enumeration" value="1603023" annotation="Other"/>
+    <facet name="enumeration" value="1603025" annotation="Oximetry-Carbon Monoxide"/>
+    <facet name="enumeration" value="1603027" annotation="Oximetry-Oxygen"/>
+    <facet name="enumeration" value="1603029" annotation="Pressure Monitors-Invasive"/>
+    <facet name="enumeration" value="1603031" annotation="Pressure Monitors-Non-Invasive"/>
+    <facet name="enumeration" value="1603033" annotation="Respirator (BLS)"/>
+    <facet name="enumeration" value="1603035" annotation="Ventilator (ALS)"/>
+    <facet name="enumeration" value="1603037" annotation="Ventilator Assistance-BiPAP"/>
+    <facet name="enumeration" value="1603039" annotation="Ventilator Assistance-CPAP"/>
+  </MedicalDeviceType>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

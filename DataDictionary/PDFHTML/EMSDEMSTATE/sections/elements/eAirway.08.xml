@@ -1,0 +1,58 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eAirway.08"  minOccurs="0"  maxOccurs="M"  dataTypeName="ComplicationsEncountered"  isNillable="Yes">
+<name>Airway Complications Encountered</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The airway management complications encountered during the patient care episode.</definition>
+<v2Number></v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes>Added to better document airway management.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ComplicationsEncountered baseType="string">
+    <facet name="enumeration" value="4008001" annotation="Adverse Event from Facilitating Drugs"/>
+    <facet name="enumeration" value="4008003" annotation="Bradycardia (&lt;50)"/>
+    <facet name="enumeration" value="4008005" annotation="Cardiac Arrest"/>
+    <facet name="enumeration" value="4008007" annotation="Esophageal Intubation-Delayed Detection (After Tube Secured)"/>
+    <facet name="enumeration" value="4008009" annotation="Esophageal Intubation-Detected in Emergency Department"/>
+    <facet name="enumeration" value="4008011" annotation="Failed Intubation Effort"/>
+    <facet name="enumeration" value="4008013" annotation="Injury or Trauma to Patient from Airway Management Effort"/>
+    <facet name="enumeration" value="4008015" annotation="Other"/>
+    <facet name="enumeration" value="4008017" annotation="Oxygen Desaturation (&lt;90%)"/>
+    <facet name="enumeration" value="4008019" annotation="Patient Vomiting/Aspiration"/>
+    <facet name="enumeration" value="4008021" annotation="Tube Dislodged During Transport/Patient Care"/>
+    <facet name="enumeration" value="4008023" annotation="Tube Was Not in Correct Position when EMS Crew/Team Assumed Care of the Patient"/>
+  </ComplicationsEncountered>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+  <PN>
+    <PN.NoneReported><facet name="enumeration" value="8801015" annotation="None Reported"/></PN.NoneReported>
+  </PN>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_e008" role="Error">
+      When Airway Complications Encountered has a Pertinent Negative, it should be empty and it should not have a Not Value (Not Applicable, Not Recorded, or Not Reporting).
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Airway Complications Encountered has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Airway Complications Encountered is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Airway Complications Encountered has a Not Value, no other value should be recorded.
+      </assert>
+  <assert id="nemSch_e010" role="Warning">
+      When Airway Complications Encountered has a Pertinent Negative, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

@@ -1,0 +1,79 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eArrest.17"  minOccurs="1"  maxOccurs="M"  dataTypeName="CardiacRhythm"  isNillable="Yes">
+<name>Cardiac Rhythm on Arrival at Destination</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The patient's cardiac rhythm upon delivery or transfer to the destination.</definition>
+<v2Number>E11_11</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Cardiac Arrest</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>This element needs to be documented when the patient has been in cardiac or respiratory arrest and transported to a healthcare facility to show the change in patient condition, if any. The cardiac rhythm list has been updated to be the same for eVitals.03 (Cardiac Rhythm Electrocardiography (ECG)). They are using the common type: CardiacRhythm. ST segment changes consistent (or not consistent) with STEMI criteria should be documented as Ischemia in the appropriate location</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <CardiacRhythm baseType="string">
+    <facet name="enumeration" value="9901001" annotation="Agonal/Idioventricular"/>
+    <facet name="enumeration" value="9901003" annotation="Asystole"/>
+    <facet name="enumeration" value="9901005" annotation="Artifact"/>
+    <facet name="enumeration" value="9901007" annotation="Atrial Fibrillation"/>
+    <facet name="enumeration" value="9901009" annotation="Atrial Flutter"/>
+    <facet name="enumeration" value="9901011" annotation="AV Block-1st Degree"/>
+    <facet name="enumeration" value="9901013" annotation="AV Block-2nd Degree-Type 1"/>
+    <facet name="enumeration" value="9901015" annotation="AV Block-2nd Degree-Type 2"/>
+    <facet name="enumeration" value="9901017" annotation="AV Block-3rd Degree"/>
+    <facet name="enumeration" value="9901019" annotation="Junctional"/>
+    <facet name="enumeration" value="9901021" annotation="Left Bundle Branch Block"/>
+    <facet name="enumeration" value="9901023" annotation="Non-STEMI Anterior Ischemia"/>
+    <facet name="enumeration" value="9901025" annotation="Non-STEMI Inferior Ischemia"/>
+    <facet name="enumeration" value="9901027" annotation="Non-STEMI Lateral Ischemia"/>
+    <facet name="enumeration" value="9901029" annotation="Non-STEMI Posterior Ischemia"/>
+    <facet name="enumeration" value="9901030" annotation="Non-STEMI Septal Ischemia"/>
+    <facet name="enumeration" value="9901031" annotation="Other"/>
+    <facet name="enumeration" value="9901033" annotation="Paced Rhythm"/>
+    <facet name="enumeration" value="9901035" annotation="PEA"/>
+    <facet name="enumeration" value="9901037" annotation="Premature Atrial Contractions"/>
+    <facet name="enumeration" value="9901039" annotation="Premature Ventricular Contractions"/>
+    <facet name="enumeration" value="9901041" annotation="Right Bundle Branch Block"/>
+    <facet name="enumeration" value="9901043" annotation="Sinus Arrhythmia"/>
+    <facet name="enumeration" value="9901045" annotation="Sinus Bradycardia"/>
+    <facet name="enumeration" value="9901047" annotation="Sinus Rhythm"/>
+    <facet name="enumeration" value="9901049" annotation="Sinus Tachycardia"/>
+    <facet name="enumeration" value="9901051" annotation="STEMI Anterior Ischemia"/>
+    <facet name="enumeration" value="9901053" annotation="STEMI Inferior Ischemia"/>
+    <facet name="enumeration" value="9901055" annotation="STEMI Lateral Ischemia"/>
+    <facet name="enumeration" value="9901057" annotation="STEMI Posterior Ischemia"/>
+    <facet name="enumeration" value="9901058" annotation="STEMI Septal Ischemia"/>
+    <facet name="enumeration" value="9901059" annotation="Supraventricular Tachycardia"/>
+    <facet name="enumeration" value="9901061" annotation="Torsades De Points"/>
+    <facet name="enumeration" value="9901063" annotation="Unknown AED Non-Shockable Rhythm"/>
+    <facet name="enumeration" value="9901065" annotation="Unknown AED Shockable Rhythm"/>
+    <facet name="enumeration" value="9901067" annotation="Ventricular Fibrillation"/>
+    <facet name="enumeration" value="9901069" annotation="Ventricular Tachycardia (With Pulse)"/>
+    <facet name="enumeration" value="9901071" annotation="Ventricular Tachycardia (Pulseless)"/>
+  </CardiacRhythm>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e113" role="Warning">
+      <elementRef elementNumber="eArrest.17">Cardiac Rhythm on Arrival at Destination</elementRef> should be recorded when <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> is &quot;Transport by This EMS Unit...&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e114" role="Warning">
+      <elementRef elementNumber="eArrest.17">Cardiac Rhythm on Arrival at Destination</elementRef> should only be recorded when <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Cardiac Rhythm on Arrival at Destination has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Cardiac Rhythm on Arrival at Destination is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Cardiac Rhythm on Arrival at Destination has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

@@ -1,0 +1,29 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="sFacility.08"  minOccurs="0"  maxOccurs="1"  dataTypeName="CityGnisCode"  isNillable="No">
+<name>Facility City</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The city where the facility is located (physical address).</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>City codes are based on GNIS Feature Class. The primary Feature Class to use is "Civil" with "Populated Place" and "Military" code as additional options.
+																		<br/><br/>
+																		Definitions for each GNIS City Feature Class can be found on the GNIS Codes website.
+																		<br/><br/>
+																		GNIS Codes Website: <a href="http://geonames.usgs.gov/domestic/download_data.htm">http://geonames.usgs.gov/domestic/download_data.htm</a>
+																		<br/><br/>
+																		Used to populate dFacility.08 Facility City.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <CityGnisCode baseType="positiveInteger">
+  </CityGnisCode>
+</restrictions>
+<asserts>
+  <assert id="nemSch_s028" role="Warning">
+      <elementRef elementNumber="sFacility.01">Type of Facility</elementRef>, <elementRef elementNumber="sFacility.03">Facility Location Code</elementRef>, <elementRef elementNumber="sFacility.07">Facility Street Address</elementRef>, <elementRef elementNumber="sFacility.08">Facility City</elementRef>, and <elementRef elementNumber="sFacility.09">Facility State</elementRef> should be a unique combination for each facility.
+      </assert>
+</asserts>
+</element>

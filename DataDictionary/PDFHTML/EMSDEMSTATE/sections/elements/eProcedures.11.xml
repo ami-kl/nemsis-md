@@ -1,0 +1,22 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eProcedures.11"  minOccurs="0"  maxOccurs="1"  dataTypeName="TxAuthorization"  isNillable="No">
+<name>Procedure Authorization</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The type of treatment authorization obtained.</definition>
+<v2Number>E19_10</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <TxAuthorization baseType="string">
+    <facet name="enumeration" value="9918001" annotation="On-Line (Remote Verbal Order)"/>
+    <facet name="enumeration" value="9918003" annotation="On-Scene"/>
+    <facet name="enumeration" value="9918005" annotation="Protocol (Standing Order)"/>
+    <facet name="enumeration" value="9918007" annotation="Written Orders (Patient Specific)"/>
+  </TxAuthorization>
+</restrictions>
+</element>

@@ -1,0 +1,21 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eExam.22"  minOccurs="0"  maxOccurs="1"  dataTypeName="LungAssessmentLocation"  isNillable="No">
+<name>Lung Assessment Finding Location</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The location of the patient's lung assessment findings.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <LungAssessmentLocation baseType="string">
+    <facet name="enumeration" value="3522001" annotation="Left"/>
+    <facet name="enumeration" value="3522003" annotation="Right"/>
+    <facet name="enumeration" value="3522005" annotation="Bilateral"/>
+  </LungAssessmentLocation>
+</restrictions>
+</element>

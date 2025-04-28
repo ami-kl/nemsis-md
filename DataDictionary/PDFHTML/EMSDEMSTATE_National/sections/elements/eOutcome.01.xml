@@ -1,0 +1,55 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eOutcome.01"  minOccurs="1"  maxOccurs="1"  dataTypeName="EmergencyDepartmentDisposition"  isNillable="Yes">
+<name>Emergency Department Disposition</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The known disposition of the patient from the Emergency Department (ED).</definition>
+<v2Number>E22_01</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>The list of values and codes is based on and in compliance with the Medicare Claims Processing Manual Chapter 25 Completing and Processing the Form CMS-1450 Data Set, referencing the Uniform Bill - Form CMS-1450 (UB-04) and FL 17 - Patient Discharge Status.
+								<br/><br/><a href="https://www.cms.gov/regulations-and-guidance/guidance/manuals/downloads/clm104c25.pdf" target="_blank">https://www.cms.gov/regulations-and-guidance/guidance/manuals/downloads/clm104c25.pdf</a> (see "FL 17 – Patient Discharge Status")
+								<br/><br/>Codes are available from Medicare contractors and the National Uniform Billing Committee (NUBC, <a href="http://www.nubc.org/" target="_blank">http://www.nubc.org/</a>) via the NUBC's Official UB-04 Data Specifications Manual.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EmergencyDepartmentDisposition baseType="string">
+    <facet name="enumeration" value="01" annotation="Discharged to home or self care (routine discharge)"/>
+    <facet name="enumeration" value="02" annotation="Discharged/transferred to another short term general hospital for inpatient care"/>
+    <facet name="enumeration" value="03" annotation="Discharged/transferred to a skilled nursing facility (SNF)"/>
+    <facet name="enumeration" value="04" annotation="Discharged/transferred to an intermediate care facility (ICF)"/>
+    <facet name="enumeration" value="05" annotation="Discharged/transferred to another type of institution not defined elsewhere in this code list"/>
+    <facet name="enumeration" value="06" annotation="Discharged/transferred to home under care of organized home health service organization in anticipation of covered skills care"/>
+    <facet name="enumeration" value="07" annotation="Left against medical advice or discontinued care"/>
+    <facet name="enumeration" value="09" annotation="Admitted as an inpatient to this hospital."/>
+    <facet name="enumeration" value="20" annotation="Deceased/Expired (or did not recover - Religious Non Medical Health Care Patient)"/>
+    <facet name="enumeration" value="21" annotation="Discharged/transferred to court/law enforcement"/>
+    <facet name="enumeration" value="30" annotation="Still a patient or expected to return for outpatient services."/>
+    <facet name="enumeration" value="43" annotation="Discharged/transferred to a Federal Health Care Facility (e.g., VA or federal health care facility)"/>
+    <facet name="enumeration" value="50" annotation="Discharged/transferred to Hospice - home."/>
+    <facet name="enumeration" value="51" annotation="Discharged/transferred to Hospice - medical facility"/>
+    <facet name="enumeration" value="61" annotation="Discharged/transferred within this institution to a hospital based Medicare approved swing bed."/>
+    <facet name="enumeration" value="62" annotation="Discharged/transferred to a inpatient rehabilitation facility including distinct part units of a hospital."/>
+    <facet name="enumeration" value="63" annotation="Discharged/transferred to long term care hospitals"/>
+    <facet name="enumeration" value="64" annotation="Discharged/transferred to a nursing facility certified under Medicaid but not certified under Medicare"/>
+    <facet name="enumeration" value="65" annotation="Discharged/transferred to a psychiatric hospital or psychiatric distinct part unit of a hospital."/>
+    <facet name="enumeration" value="66" annotation="Discharged/transferred to a Critical Access Hospital (CAH)."/>
+    <facet name="enumeration" value="70" annotation="Discharged/transferred to another type of health care institution not defined elsewhere in the code list."/>
+  </EmergencyDepartmentDisposition>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When Emergency Department Disposition has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Emergency Department Disposition is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

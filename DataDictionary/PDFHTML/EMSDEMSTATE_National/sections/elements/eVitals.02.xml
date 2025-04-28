@@ -1,0 +1,52 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eVitals.02"  minOccurs="1"  maxOccurs="1"  dataTypeName="YesNoValues"  isNillable="Yes">
+<name>Obtained Prior to this Unit's EMS Care</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Indicates that the information which is documented was obtained prior to the documenting EMS units care.</definition>
+<v2Number>E14_02</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>This is the NEMSIS Version 3 method to document prior aid.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <YesNoValues baseType="string">
+    <facet name="enumeration" value="9923001" annotation="No"/>
+    <facet name="enumeration" value="9923003" annotation="Yes"/>
+  </YesNoValues>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e125" role="Warning">
+      <elementRef elementNumber="eVitals.01">Date/Time Vital Signs Taken</elementRef> should be recorded, unless <elementRef elementNumber="eVitals.02">Obtained Prior to this Unit's EMS Care</elementRef> is &quot;Yes&quot;.
+      </assert>
+  <assert id="nemSch_e126" role="Warning">
+      <elementRef elementNumber="eVitals.01">Date/Time Vital Signs Taken</elementRef> should not be earlier than <elementRef elementNumber="eTimes.03">Unit Notified by Dispatch Date/Time</elementRef>, unless <elementRef elementNumber="eVitals.02">Obtained Prior to this Unit's EMS Care</elementRef> is &quot;Yes&quot;.
+      </assert>
+  <assert id="nemSch_e127" role="Warning">
+      <elementRef elementNumber="eVitals.01">Date/Time Vital Signs Taken</elementRef> should not be earlier than <elementRef elementNumber="eTimes.07">Arrived at Patient Date/Time</elementRef>, unless <elementRef elementNumber="eVitals.02">Obtained Prior to this Unit's EMS Care</elementRef> is &quot;Yes&quot;.
+      </assert>
+  <assert id="nemSch_e128" role="Warning">
+      <elementRef elementNumber="eVitals.01">Date/Time Vital Signs Taken</elementRef> should not be later than <elementRef elementNumber="eTimes.12">Destination Patient Transfer of Care Date/Time</elementRef>.
+      </assert>
+  <assert id="nemSch_e129" role="Warning">
+      <elementRef elementNumber="eVitals.01">Date/Time Vital Signs Taken</elementRef> should not be later than <elementRef elementNumber="eTimes.13">Unit Back in Service Date/Time</elementRef>.
+      </assert>
+  <assert id="nemSch_e130" role="Warning">
+      <elementRef elementNumber="eVitals.01">Date/Time Vital Signs Taken</elementRef> should not be later than <elementRef elementNumber="eTimes.07">Arrived at Patient Date/Time</elementRef> when <elementRef elementNumber="eVitals.02">Obtained Prior to this Unit's EMS Care</elementRef> is &quot;Yes&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Obtained Prior to this Unit's EMS Care has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Obtained Prior to this Unit's EMS Care is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

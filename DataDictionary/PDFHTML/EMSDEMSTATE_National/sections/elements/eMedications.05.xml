@@ -1,0 +1,37 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eMedications.05"  minOccurs="1"  maxOccurs="1"  dataTypeName="MedicationDosage"  isNillable="Yes">
+<name>Medication Dosage</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The dose or amount of the medication administered to the patient.</definition>
+<v2Number>E18_05</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <MedicationDosage baseType="decimal">
+    <facet name="totalDigits" value="9"/>
+    <facet name="fractionDigits" value="3"/>
+  </MedicationDosage>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e147" role="Warning">
+      <elementRef elementNumber="eMedications.05">Medication Dosage</elementRef> should be recorded, unless <elementRef elementNumber="eMedications.02">Medication Administered Prior to this Unit's EMS Care</elementRef> is &quot;Yes&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Medication Dosage has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Medication Dosage is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

@@ -1,0 +1,45 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eSituation.11"  minOccurs="1"  maxOccurs="1"  dataTypeName="ProvidersImpression"  isNillable="Yes">
+<name>Provider's Primary Impression</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The EMS personnel's impression of the patient's primary problem or most significant condition which led to the management given to the patient (treatments, medications, or procedures).</definition>
+<v2Number>E09_15</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Code list is represented in ICD-10-CM. Reference the NEMSIS Suggested Lists at: https://nemsis.org/technical-resources/version-3/version-3-resource-repository/											
+							<br/><br/>ICD-10-CM
+							<br/>Website - <a href="http://uts.nlm.nih.gov" target="_blank">http://uts.nlm.nih.gov</a>
+							<br/>Product - UMLS Metathesaurus</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ProvidersImpression baseType="string">
+    <facet name="pattern" value="(R[0-6][0-9](\.[0-9]{1,4})?|(R73\.9)|(R99))|([A-QSTUZ][0-9][0-9A-Z])((\.[0-9A-Z]{1,4})?)"/>
+  </ProvidersImpression>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e077" role="Warning">
+      <elementRef elementNumber="eSituation.02">Possible Injury</elementRef> should be &quot;Yes&quot; when a symptom or impression is injury-related.
+      </assert>
+  <assert id="nemSch_e082" role="Warning">
+      <elementRef elementNumber="eSituation.11">Provider's Primary Impression</elementRef> should be recorded when <elementRef elementNumber="eResponse.05">Type of Service Requested</elementRef> is &quot;Emergency Response (Primary Response Area)&quot; and <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e083" role="Warning">
+      <elementRef elementNumber="eSituation.12">Provider's Secondary Impressions</elementRef> should only be recorded when <elementRef elementNumber="eSituation.11">Provider's Primary Impression</elementRef> is recorded.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Provider's Primary Impression has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Provider's Primary Impression is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

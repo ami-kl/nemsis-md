@@ -1,0 +1,22 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eResponse.23"  minOccurs="1"  maxOccurs="1"  dataTypeName="EMSResponseMode"  isNillable="No">
+<name>Response Mode to Scene</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The indication whether the response was emergent or non-emergent. An emergent response is an immediate response.</definition>
+<v2Number>E02_20</v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Information now split between eResponse.23 (Response Mode to Scene) and eResponse.24 (Additional Response Mode Descriptors)</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EMSResponseMode baseType="string">
+    <facet name="enumeration" value="2223001" annotation="Emergent (Immediate Response)"/>
+    <facet name="enumeration" value="2223003" annotation="Emergent Downgraded to Non-Emergent"/>
+    <facet name="enumeration" value="2223005" annotation="Non-Emergent"/>
+    <facet name="enumeration" value="2223007" annotation="Non-Emergent Upgraded to Emergent"/>
+  </EMSResponseMode>
+</restrictions>
+</element>

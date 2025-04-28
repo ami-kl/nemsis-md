@@ -1,0 +1,28 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eInjury.10"  minOccurs="0"  maxOccurs="M"  dataTypeName="EquipmentUsed"  isNillable="No">
+<name>OSHA Personal Protective Equipment Used</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>Documentation of the use of OSHA required protective equipment used by the patient at the time of injury.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes>Added to better document personal protection equipment used by the patient associated with an injury.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EquipmentUsed baseType="string">
+    <facet name="enumeration" value="2910001" annotation="Eye and Face Protection"/>
+    <facet name="enumeration" value="2910003" annotation="Foot Protection"/>
+    <facet name="enumeration" value="2910005" annotation="Head Protection"/>
+    <facet name="enumeration" value="2910007" annotation="Hearing Protection"/>
+    <facet name="enumeration" value="2910009" annotation="Respiratory Protection"/>
+    <facet name="enumeration" value="2910011" annotation="Safety Belts, lifelines, and lanyards"/>
+    <facet name="enumeration" value="2910013" annotation="Safety Nets"/>
+  </EquipmentUsed>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

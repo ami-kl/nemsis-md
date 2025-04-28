@@ -1,0 +1,21 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dConfiguration.13"  minOccurs="1"  maxOccurs="1"  dataTypeName="EMDtoAgencyServiceArea"  isNillable="No">
+<name>Emergency Medical Dispatch (EMD) Provided to EMS Agency Service Area</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Indication as to whether Emergency Medical Dispatch is provided to the EMS Agency's service area.</definition>
+<v2Number></v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Added to better document the implementation of Emergency Medical Dispatch. Associated with each EMS Agency and the specific EMS Agency Number (dAgency.02).</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EMDtoAgencyServiceArea baseType="string">
+    <facet name="enumeration" value="1213001" annotation="No"/>
+    <facet name="enumeration" value="1213003" annotation="Yes, 100% of the EMS Agency's Service Area"/>
+    <facet name="enumeration" value="1213005" annotation="Yes, Less than 100% of the EMS Agency's Service Area"/>
+  </EMDtoAgencyServiceArea>
+</restrictions>
+</element>

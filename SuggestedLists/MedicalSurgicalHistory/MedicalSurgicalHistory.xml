@@ -1,0 +1,2223 @@
+<?xml-stylesheet type="text/xsl" href="https://nemsis.org/media/nemsis_v3/release-3.5.1/DefinedLists/DefinedListHtml.xsl"?><DefinedList xmlns="http://www.nemsis.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" date="2025-01-14" xsi:schemaLocation="http://www.nemsis.org https://nemsis.org/media/nemsis_v3/release-3.5.1/DefinedLists/DefinedLists.xsd">
+  <Header>
+    <SourceVocabularies>
+      <SourceVocabulary url="https://www.cdc.gov/nchs/icd/icd-10-cm/">ICD-10</SourceVocabulary>
+    </SourceVocabularies>
+    <NemsisTypes>
+      <NemsisType>icd10MedSurge</NemsisType>
+    </NemsisTypes>
+    <NemsisElements>
+      <NemsisElement>eHistory.08</NemsisElement>
+    </NemsisElements>
+  </Header>
+  <Codes>
+    <Code date="2021-05-06">
+      <Value>F90.9</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Attention-deficit hyperactivity disorder, unspecified type</SourceLabel>
+      <SuggestedLabel>ADHD</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F50.00</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Anorexia nervosa, unspecified</SourceLabel>
+      <SuggestedLabel>Anorexia Nervosa</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F60.2</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Antisocial personality disorder</SourceLabel>
+      <SuggestedLabel>Antisocial Personality</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F84.5</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Asperger's syndrome</SourceLabel>
+      <SuggestedLabel>Asperger's</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F84.0</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Autistic disorder</SourceLabel>
+      <SuggestedLabel>Autistic</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F60.6</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Avoidant personality disorder</SourceLabel>
+      <SuggestedLabel>Avoidant Personality</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F31.9</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Bipolar disorder, unspecified</SourceLabel>
+      <SuggestedLabel>Bipolar Disorder</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F60.3</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Borderline personality disorder</SourceLabel>
+      <SuggestedLabel>Borderline Personality</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F50.2</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Bulimia nervosa</SourceLabel>
+      <SuggestedLabel>Bulimia Nervosa</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F03.90</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Unspecified dementia without behavioral disturbance</SourceLabel>
+      <SuggestedLabel>Dementia (w/o behavioral disturbance)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F03.91</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Unspecified dementia with behavioral disturbance</SourceLabel>
+      <SuggestedLabel>Dementia (with behavioral disturbance)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F60.7</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Dependent personality disorder</SourceLabel>
+      <SuggestedLabel>Dependent Personality</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Z65.5</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Exposure to disaster, war and other hostilities</SourceLabel>
+      <SuggestedLabel>Exposure to War</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F60.4</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Histrionic personality disorder</SourceLabel>
+      <SuggestedLabel>Histrionic Personality</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Z59.0</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Homelessness</SourceLabel>
+      <SuggestedLabel>Homelessness</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F51.01</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Primary insomnia</SourceLabel>
+      <SuggestedLabel>Insomnia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F33.9</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Major depressive disorder, recurrent, unspecified</SourceLabel>
+      <SuggestedLabel>Major Depression</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F30.9</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Manic episode, unspecified</SourceLabel>
+      <SuggestedLabel>Manic Episodes</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F60.81</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Narcissistic personality disorder</SourceLabel>
+      <SuggestedLabel>Narcissistic Personality</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F60.5</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Obsessive-compulsive personality disorder</SourceLabel>
+      <SuggestedLabel>Obsessive-Compulsive</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F60.9</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Personality disorder, unspecified</SourceLabel>
+      <SuggestedLabel>Other Personality Dis.</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F60.0</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Paranoid personality disorder</SourceLabel>
+      <SuggestedLabel>Paranoid Personality</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F43.10</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Post-traumatic stress disorder, unspecified</SourceLabel>
+      <SuggestedLabel>PTSD</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F25.9</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Schizoaffective disorder, unspecified</SourceLabel>
+      <SuggestedLabel>Schizoaffective Disorder</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F60.1</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Schizoid personality disorder</SourceLabel>
+      <SuggestedLabel>Schizoid Personality</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Z73.3</Value>
+      <Category>Behavioral</Category>
+      <SourceLabel>Stress, not elsewhere classified</SourceLabel>
+      <SuggestedLabel>Stress</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>E85.9</Value>
+      <Category>Blood</Category>
+      <SourceLabel>Amyloidosis, unspecified</SourceLabel>
+      <SuggestedLabel>Amyloidosis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>D64.9</Value>
+      <Category>Blood</Category>
+      <SourceLabel>Anemia, unspecified</SourceLabel>
+      <SuggestedLabel>Anemia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>D67</Value>
+      <Category>Blood</Category>
+      <SourceLabel>Hereditary factor IX deficiency</SourceLabel>
+      <SuggestedLabel>Blood -Factor IX Deficiency</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>D66</Value>
+      <Category>Blood</Category>
+      <SourceLabel>Hereditary factor VIII deficiency</SourceLabel>
+      <SuggestedLabel>Blood -Factor VIII Deficiency</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>E87.70</Value>
+      <Category>Blood</Category>
+      <SourceLabel>Fluid overload, unspecified</SourceLabel>
+      <SuggestedLabel>Fluid Overload</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>E87.5</Value>
+      <Category>Blood</Category>
+      <SourceLabel>Hyperkalemia</SourceLabel>
+      <SuggestedLabel>Hyperkalemia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>E78.5</Value>
+      <Category>Blood</Category>
+      <SourceLabel>Hyperlipidemia, unspecified</SourceLabel>
+      <SuggestedLabel>Hyperlipidemia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>E87.6</Value>
+      <Category>Blood</Category>
+      <SourceLabel>Hypokalemia</SourceLabel>
+      <SuggestedLabel>Hypokalemia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>D70.9</Value>
+      <Category>Blood</Category>
+      <SourceLabel>Neutropenia, unspecified</SourceLabel>
+      <SuggestedLabel>Neutropenia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>D86.9</Value>
+      <Category>Blood</Category>
+      <SourceLabel>Sarcoidosis, unspecified</SourceLabel>
+      <SuggestedLabel>Sarcoidosis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>D57.00</Value>
+      <Category>Blood</Category>
+      <SourceLabel>Hb-SS disease with crisis, unspecified</SourceLabel>
+      <SuggestedLabel>Sickle Cell Disease</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>D57.3</Value>
+      <Category>Blood</Category>
+      <SourceLabel>Sickle-cell trait</SourceLabel>
+      <SuggestedLabel>Sickle Cell Trait</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>D73.9</Value>
+      <Category>Blood</Category>
+      <SourceLabel>Disease of spleen, unspecified</SourceLabel>
+      <SuggestedLabel>Splenic Disease</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>D69.6</Value>
+      <Category>Blood</Category>
+      <SourceLabel>Thrombocytopenia, unspecified</SourceLabel>
+      <SuggestedLabel>Thrombocytopenia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>E53.9</Value>
+      <Category>Blood</Category>
+      <SourceLabel>Vitamin B deficiency, unspecified</SourceLabel>
+      <SuggestedLabel>Vitamin B Deficiency</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>D51.9</Value>
+      <Category>Blood</Category>
+      <SourceLabel>Vitamin B12 deficiency anemia, unspecified</SourceLabel>
+      <SuggestedLabel>Vitamin B12 Deficiency</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>E55.9</Value>
+      <Category>Blood</Category>
+      <SourceLabel>Vitamin D deficiency, unspecified</SourceLabel>
+      <SuggestedLabel>Vitamin D Deficiency</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>E56.1</Value>
+      <Category>Blood</Category>
+      <SourceLabel>Deficiency of vitamin K</SourceLabel>
+      <SuggestedLabel>Vitamin K Deficiency</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C67.9</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of bladder, unspecified</SourceLabel>
+      <SuggestedLabel>Bladder</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C41.9</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of bone and articular cartilage, unspecified</SourceLabel>
+      <SuggestedLabel>Bone</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C71.9</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of brain, unspecified</SourceLabel>
+      <SuggestedLabel>Brain</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C50.919</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of unspecified site of unspecified female breast</SourceLabel>
+      <SuggestedLabel>Breast (Female)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C50.929</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of unspecified site of unspecified male breast</SourceLabel>
+      <SuggestedLabel>Breast (Male)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C53.9</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of cervix uteri, unspecified</SourceLabel>
+      <SuggestedLabel>Cervix</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C18.9</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of colon, unspecified</SourceLabel>
+      <SuggestedLabel>Colon</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C15.9</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of esophagus, unspecified</SourceLabel>
+      <SuggestedLabel>Esophagus</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C23</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of gallbladder</SourceLabel>
+      <SuggestedLabel>Gallbladder</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C81.70</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Other Hodgkin lymphoma, unspecified site</SourceLabel>
+      <SuggestedLabel>Hodgkin Lymphoma</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C26.0</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of intestinal tract, part unspecified</SourceLabel>
+      <SuggestedLabel>Intestinal Tract</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C46.9</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Kaposi's sarcoma, unspecified</SourceLabel>
+      <SuggestedLabel>Kaposi's Sarcoma</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C64.9</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of unspecified kidney, except renal pelvis</SourceLabel>
+      <SuggestedLabel>Kidney</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C32.9</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of larynx, unspecified</SourceLabel>
+      <SuggestedLabel>Larynx</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C95.90</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Leukemia, unspecified not having achieved remission</SourceLabel>
+      <SuggestedLabel>Leukemia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C95.91</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Leukemia, unspecified, in remission</SourceLabel>
+      <SuggestedLabel>Leukemia (In Remission)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C22.9</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of liver, not specified as primary or secondary</SourceLabel>
+      <SuggestedLabel>Liver</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C34.90</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of unspecified part of unspecified bronchus or lung</SourceLabel>
+      <SuggestedLabel>Lung or Bronchus</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C45.9</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Mesothelioma, unspecified</SourceLabel>
+      <SuggestedLabel>Mesothelioma</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C90.02</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Multiple myeloma in relapse</SourceLabel>
+      <SuggestedLabel>Multiple Myeloma (Relapse)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C90.01</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Multiple myeloma in remission</SourceLabel>
+      <SuggestedLabel>Multiple Myeloma (Remission)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C85.90</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Non-Hodgkin lymphoma, unspecified, unspecified site</SourceLabel>
+      <SuggestedLabel>Non-Hodgkin Lymphoma</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C10.9</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of oropharynx, unspecified</SourceLabel>
+      <SuggestedLabel>Oropharynx</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C56.9</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of unspecified ovary</SourceLabel>
+      <SuggestedLabel>Ovary</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C25.9</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of pancreas, unspecified</SourceLabel>
+      <SuggestedLabel>Pancreas</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C61</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of prostate</SourceLabel>
+      <SuggestedLabel>Prostate</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C20</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of rectum</SourceLabel>
+      <SuggestedLabel>Rectum</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C43.9</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant melanoma of skin, unspecified</SourceLabel>
+      <SuggestedLabel>Skin</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C17.9</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of small intestine, unspecified</SourceLabel>
+      <SuggestedLabel>Small Intestine</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C72.0</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of spinal cord</SourceLabel>
+      <SuggestedLabel>Spinal Cord</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C26.1</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of spleen</SourceLabel>
+      <SuggestedLabel>Spleen</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C16.9</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of stomach, unspecified</SourceLabel>
+      <SuggestedLabel>Stomach</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C62.90</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of unspecified testis, unspecified whether descended or undescended</SourceLabel>
+      <SuggestedLabel>Testis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C73</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of thyroid gland</SourceLabel>
+      <SuggestedLabel>Thyroid</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C55</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of uterus, part unspecified</SourceLabel>
+      <SuggestedLabel>Uterus</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>C52</Value>
+      <Category>Cancer</Category>
+      <SourceLabel>Malignant neoplasm of vagina</SourceLabel>
+      <SuggestedLabel>Vagina</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I20.9</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Angina pectoris, unspecified</SourceLabel>
+      <SuggestedLabel>Angina</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I23.7</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Postinfarction angina</SourceLabel>
+      <SuggestedLabel>Angina Post MI</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I20.0</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Unstable angina</SourceLabel>
+      <SuggestedLabel>Angina Unstable</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I25.119</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris</SourceLabel>
+      <SuggestedLabel>Atherosclerosis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I48.92</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Unspecified atrial flutter</SourceLabel>
+      <SuggestedLabel>Atrial Flutter</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I46.9</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Cardiac arrest, cause unspecified</SourceLabel>
+      <SuggestedLabel>Cardiac Arrest</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I31.4</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Cardiac tamponade</SourceLabel>
+      <SuggestedLabel>Cardiac Tamponade</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I51.7</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Cardiomegaly</SourceLabel>
+      <SuggestedLabel>Cardiomegaly</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I42.9</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Cardiomyopathy, unspecified</SourceLabel>
+      <SuggestedLabel>Cardiomyopathy</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I42.1</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Obstructive hypertrophic cardiomyopathy</SourceLabel>
+      <SuggestedLabel>Cardiomyopathy Hypertrophic</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I25.5</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Ischemic cardiomyopathy</SourceLabel>
+      <SuggestedLabel>Cardiomyopathy Ischemic</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I33.9</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Acute and subacute endocarditis, unspecified</SourceLabel>
+      <SuggestedLabel>Endocarditis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I38</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Endocarditis, valve unspecified</SourceLabel>
+      <SuggestedLabel>Endocarditis w/Valve Involved</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I51.9</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Heart disease, unspecified</SourceLabel>
+      <SuggestedLabel>Heart Disease Unspecified</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I50.9</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Heart failure, unspecified</SourceLabel>
+      <SuggestedLabel>Heart Failure</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I10</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Essential (primary) hypertension</SourceLabel>
+      <SuggestedLabel>Hypertension</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I95.9</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Hypotension, unspecified</SourceLabel>
+      <SuggestedLabel>Hypotension</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I34.1</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Nonrheumatic mitral (valve) prolapse</SourceLabel>
+      <SuggestedLabel>Mitral Valve Prolapse</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I34.2</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Nonrheumatic mitral (valve) stenosis</SourceLabel>
+      <SuggestedLabel>Mitral Valve Stenosis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I40.9</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Acute myocarditis, unspecified</SourceLabel>
+      <SuggestedLabel>Myocarditis Acute</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I27.0</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Primary pulmonary hypertension</SourceLabel>
+      <SuggestedLabel>Pulmonary Hypertension</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I37.9</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Nonrheumatic pulmonary valve disorder, unspecified</SourceLabel>
+      <SuggestedLabel>Pulmonary Valve Disorder</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I22.9</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Subsequent ST elevation (STEMI) myocardial infarction of unspecified site</SourceLabel>
+      <SuggestedLabel>STEMI</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I47.1</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Supraventricular tachycardia</SourceLabel>
+      <SuggestedLabel>Supraventricular Tachycardia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I36.9</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Nonrheumatic tricuspid valve disorder, unspecified</SourceLabel>
+      <SuggestedLabel>Tricuspid Valve Disorder</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I47.2</Value>
+      <Category>Cardiovascular</Category>
+      <SourceLabel>Ventricular tachycardia</SourceLabel>
+      <SuggestedLabel>Ventricular Tachycardia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Q27.39</Value>
+      <Category>Congenital</Category>
+      <SourceLabel>Arteriovenous malformation, other site</SourceLabel>
+      <SuggestedLabel>Arteriovenous Malformation</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Q21.1</Value>
+      <Category>Congenital</Category>
+      <SourceLabel>Atrial septal defect</SourceLabel>
+      <SuggestedLabel>Atrial Septal Defect</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Q21.2</Value>
+      <Category>Congenital</Category>
+      <SourceLabel>Atrioventricular septal defect</SourceLabel>
+      <SuggestedLabel>Atrioventricular Septal Defect</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>E84.9</Value>
+      <Category>Congenital</Category>
+      <SourceLabel>Cystic fibrosis, unspecified</SourceLabel>
+      <SuggestedLabel>Cystic Fibrosis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Q90</Value>
+      <Category>Congenital</Category>
+      <SourceLabel>Down syndrome</SourceLabel>
+      <SuggestedLabel>Down's Syndrome</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Q86.0</Value>
+      <Category>Congenital</Category>
+      <SourceLabel>Fetal alcohol syndrome (dysmorphic)</SourceLabel>
+      <SuggestedLabel>Fetal Alcohol Syndrome</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Q24</Value>
+      <Category>Congenital</Category>
+      <SourceLabel>Other congenital malformations of heart</SourceLabel>
+      <SuggestedLabel>Other Heart Congenital Malformations</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Q25.0</Value>
+      <Category>Congenital</Category>
+      <SourceLabel>Patent ductus arteriosus</SourceLabel>
+      <SuggestedLabel>Patent Ductus Arteriosus</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Q05.9</Value>
+      <Category>Congenital</Category>
+      <SourceLabel>Spina bifida, unspecified</SourceLabel>
+      <SuggestedLabel>Spina bifida</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Q21.3</Value>
+      <Category>Congenital</Category>
+      <SourceLabel>Tetralogy of Fallot</SourceLabel>
+      <SuggestedLabel>Tetralogy of Fallot</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Q21.0</Value>
+      <Category>Congenital</Category>
+      <SourceLabel>Ventricular septal defect</SourceLabel>
+      <SuggestedLabel>Ventricular Septal Defect</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K02.9</Value>
+      <Category>Dental</Category>
+      <SourceLabel>Dental caries, unspecified</SourceLabel>
+      <SuggestedLabel>Caries</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K03.81</Value>
+      <Category>Dental</Category>
+      <SourceLabel>Cracked tooth</SourceLabel>
+      <SuggestedLabel>Cracked Tooth</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K08.139</Value>
+      <Category>Dental</Category>
+      <SourceLabel>Complete loss of teeth due to caries, unspecified class</SourceLabel>
+      <SuggestedLabel>Loss of Tooth from Caries</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K08.119</Value>
+      <Category>Dental</Category>
+      <SourceLabel>Complete loss of teeth due to trauma, unspecified class</SourceLabel>
+      <SuggestedLabel>Loss of Tooth from Trauma</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>H54.0</Value>
+      <Category>EENT</Category>
+      <SourceLabel>Blindness, both eyes</SourceLabel>
+      <SuggestedLabel>Blind</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>H54.8</Value>
+      <Category>EENT</Category>
+      <SourceLabel>Legal blindness, as defined in USA</SourceLabel>
+      <SuggestedLabel>Blind Legally</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>H25.9</Value>
+      <Category>EENT</Category>
+      <SourceLabel>Unspecified age-related cataract</SourceLabel>
+      <SuggestedLabel>Cataract</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>H91.3</Value>
+      <Category>EENT</Category>
+      <SourceLabel>Deaf nonspeaking, not elsewhere classified</SourceLabel>
+      <SuggestedLabel>Deaf</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>H60.60</Value>
+      <Category>EENT</Category>
+      <SourceLabel>Unspecified chronic otitis externa, unspecified ear</SourceLabel>
+      <SuggestedLabel>Ear Infections</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>H40.9</Value>
+      <Category>EENT</Category>
+      <SourceLabel>Unspecified glaucoma</SourceLabel>
+      <SuggestedLabel>Glaucoma</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>H91.90</Value>
+      <Category>EENT</Category>
+      <SourceLabel>Unspecified hearing loss, unspecified ear</SourceLabel>
+      <SuggestedLabel>Hearing Loss</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>H93.19</Value>
+      <Category>EENT</Category>
+      <SourceLabel>Tinnitus, unspecified ear</SourceLabel>
+      <SuggestedLabel>Tinnitus</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>E10.8</Value>
+      <Category>Endocrine</Category>
+      <SourceLabel>Type 1 diabetes mellitus with unspecified complications</SourceLabel>
+      <SuggestedLabel>Diabetes Type I</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>E11.8</Value>
+      <Category>Endocrine</Category>
+      <SourceLabel>Type 2 diabetes mellitus with unspecified complications</SourceLabel>
+      <SuggestedLabel>Diabetes Type II</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>E03.9</Value>
+      <Category>Endocrine</Category>
+      <SourceLabel>Hypothyroidism, unspecified</SourceLabel>
+      <SuggestedLabel>Hypothyroidism</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>E13.40</Value>
+      <Category>Endocrine</Category>
+      <SourceLabel>Other specified diabetes mellitus with diabetic neuropathy, unspecified</SourceLabel>
+      <SuggestedLabel>Neuropathy w/Diabetes</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K29.2</Value>
+      <Category>GI</Category>
+      <SourceLabel>Alcoholic gastritis</SourceLabel>
+      <SuggestedLabel>Alcoholic Gastritis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K37</Value>
+      <Category>GI</Category>
+      <SourceLabel>Unspecified appendicitis</SourceLabel>
+      <SuggestedLabel>Appendicitis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K81.9</Value>
+      <Category>GI</Category>
+      <SourceLabel>Cholecystitis, unspecified</SourceLabel>
+      <SuggestedLabel>Cholecystitis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K59.00</Value>
+      <Category>GI</Category>
+      <SourceLabel>Constipation, unspecified</SourceLabel>
+      <SuggestedLabel>Constipation</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K50.019</Value>
+      <Category>GI</Category>
+      <SourceLabel>Crohn's disease of small intestine with unspecified complications</SourceLabel>
+      <SuggestedLabel>Crohn's Disease</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K57</Value>
+      <Category>GI</Category>
+      <SourceLabel>Diverticular disease of intestine</SourceLabel>
+      <SuggestedLabel>Diverticulosis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K30</Value>
+      <Category>GI</Category>
+      <SourceLabel>Functional dyspepsia</SourceLabel>
+      <SuggestedLabel>Dyspepsia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K22.2</Value>
+      <Category>GI</Category>
+      <SourceLabel>Esophageal obstruction</SourceLabel>
+      <SuggestedLabel>Esophageal Obstruction</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I85.01</Value>
+      <Category>GI</Category>
+      <SourceLabel>Esophageal varices with bleeding</SourceLabel>
+      <SuggestedLabel>Esophageal Varices w/Bleed</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I85.00</Value>
+      <Category>GI</Category>
+      <SourceLabel>Esophageal varices without bleeding</SourceLabel>
+      <SuggestedLabel>Esophageal Varices w/o Bleed</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K20.9</Value>
+      <Category>GI</Category>
+      <SourceLabel>Esophagitis, unspecified</SourceLabel>
+      <SuggestedLabel>Esophagitis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K56.41</Value>
+      <Category>GI</Category>
+      <SourceLabel>Fecal impaction</SourceLabel>
+      <SuggestedLabel>Fecal Impaction</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A05.9</Value>
+      <Category>GI</Category>
+      <SourceLabel>Bacterial foodborne intoxication, unspecified</SourceLabel>
+      <SuggestedLabel>Foodborne Illness</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K27.4</Value>
+      <Category>GI</Category>
+      <SourceLabel>Chronic or unspecified peptic ulcer, site unspecified, with hemorrhage</SourceLabel>
+      <SuggestedLabel>Gastric Ulcer w/Bleed</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K25.9</Value>
+      <Category>GI</Category>
+      <SourceLabel>Gastric ulcer, unspecified as acute or chronic, without hemorrhage or perforation</SourceLabel>
+      <SuggestedLabel>Gastric Ulcer w/o Bleed</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K29.50</Value>
+      <Category>GI</Category>
+      <SourceLabel>Unspecified chronic gastritis without bleeding</SourceLabel>
+      <SuggestedLabel>Gastritis Chronic</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K21.9</Value>
+      <Category>GI</Category>
+      <SourceLabel>Gastro-esophageal reflux disease without esophagitis</SourceLabel>
+      <SuggestedLabel>GERD/Reflux</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K92.2</Value>
+      <Category>GI</Category>
+      <SourceLabel>Gastrointestinal hemorrhage, unspecified</SourceLabel>
+      <SuggestedLabel>GI Bleed</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K92.0</Value>
+      <Category>GI</Category>
+      <SourceLabel>Hematemesis</SourceLabel>
+      <SuggestedLabel>Hematemesis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K64.9</Value>
+      <Category>GI</Category>
+      <SourceLabel>Unspecified hemorrhoids</SourceLabel>
+      <SuggestedLabel>Hemorrhoids</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K40</Value>
+      <Category>GI</Category>
+      <SourceLabel>Inguinal hernia</SourceLabel>
+      <SuggestedLabel>Hernia Inguinal</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K42</Value>
+      <Category>GI</Category>
+      <SourceLabel>Umbilical hernia</SourceLabel>
+      <SuggestedLabel>Hernia Umbilical</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K56.60</Value>
+      <Category>GI</Category>
+      <SourceLabel>Unspecified intestinal obstruction</SourceLabel>
+      <SuggestedLabel>Intestinal Obstruction</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K56.1</Value>
+      <Category>GI</Category>
+      <SourceLabel>Intussusception</SourceLabel>
+      <SuggestedLabel>Intussusception</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K58</Value>
+      <Category>GI</Category>
+      <SourceLabel>Irritable bowel syndrome</SourceLabel>
+      <SuggestedLabel>Irritable Bowel Syndrome</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>E73.9</Value>
+      <Category>GI</Category>
+      <SourceLabel>Lactose intolerance, unspecified</SourceLabel>
+      <SuggestedLabel>Lactose Intolerance</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K76.9</Value>
+      <Category>GI</Category>
+      <SourceLabel>Liver disease, unspecified</SourceLabel>
+      <SuggestedLabel>Liver Disease</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K92.1</Value>
+      <Category>GI</Category>
+      <SourceLabel>Melena</SourceLabel>
+      <SuggestedLabel>Melena</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>E66.9</Value>
+      <Category>GI</Category>
+      <SourceLabel>Obesity, unspecified</SourceLabel>
+      <SuggestedLabel>Obesity</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K85.8</Value>
+      <Category>GI</Category>
+      <SourceLabel>Other acute pancreatitis</SourceLabel>
+      <SuggestedLabel>Pancreatitis (Acute)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K86.1</Value>
+      <Category>GI</Category>
+      <SourceLabel>Other chronic pancreatitis</SourceLabel>
+      <SuggestedLabel>Pancreatitis (Chronic)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K65.9</Value>
+      <Category>GI</Category>
+      <SourceLabel>Peritonitis, unspecified</SourceLabel>
+      <SuggestedLabel>Peritonitis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>K51.919</Value>
+      <Category>GI</Category>
+      <SourceLabel>Ulcerative colitis, unspecified with unspecified complications</SourceLabel>
+      <SuggestedLabel>Ulcerative Colitis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>N32.9</Value>
+      <Category>GU</Category>
+      <SourceLabel>Bladder disorder, unspecified</SourceLabel>
+      <SuggestedLabel>Bladder Disorder</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>N32.81</Value>
+      <Category>GU</Category>
+      <SourceLabel>Overactive bladder</SourceLabel>
+      <SuggestedLabel>Overactive Bladder</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>N91.2</Value>
+      <Category>GYN</Category>
+      <SourceLabel>Amenorrhea, unspecified</SourceLabel>
+      <SuggestedLabel>Amenorrhea</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>N94.6</Value>
+      <Category>GYN</Category>
+      <SourceLabel>Dysmenorrhea, unspecified</SourceLabel>
+      <SuggestedLabel>Dysmenorrhea</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>N80.9</Value>
+      <Category>GYN</Category>
+      <SourceLabel>Endometriosis, unspecified</SourceLabel>
+      <SuggestedLabel>Endometriosis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>N92</Value>
+      <Category>GYN</Category>
+      <SourceLabel>Excessive, frequent and irregular menstruation</SourceLabel>
+      <SuggestedLabel>Menstruation Excessive/Irregular/Frequent</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J40</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Bronchitis, not specified as acute or chronic</SourceLabel>
+      <SuggestedLabel>Bronchitis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B37.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Candidiasis, unspecified</SourceLabel>
+      <SuggestedLabel>Candidia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B33.24</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Viral cardiomyopathy</SourceLabel>
+      <SuggestedLabel>Cardiomyopathy (Viral)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>L03.119</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Cellulitis of unspecified part of limb</SourceLabel>
+      <SuggestedLabel>Cellulitis (Extremity)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>L03.818</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Cellulitis of other sites</SourceLabel>
+      <SuggestedLabel>Cellulitis (Other site)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B01.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Varicella without complication</SourceLabel>
+      <SuggestedLabel>Chicken Pox</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A74.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Chlamydial infection, unspecified</SourceLabel>
+      <SuggestedLabel>Chlamydia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B30.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Viral conjunctivitis, unspecified</SourceLabel>
+      <SuggestedLabel>Conjunctivitis (Viral)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>H10.30</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Unspecified acute conjunctivitis, unspecified eye</SourceLabel>
+      <SuggestedLabel>Conjunctivitis, unspecified</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A98.4</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Ebola virus disease</SourceLabel>
+      <SuggestedLabel>Ebola</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A83.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Mosquito-borne viral encephalitis, unspecified</SourceLabel>
+      <SuggestedLabel>Encephalitis (Mosquito)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A86</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Unspecified viral encephalitis</SourceLabel>
+      <SuggestedLabel>Encephalitis (Viral)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B33.21</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Viral endocarditis</SourceLabel>
+      <SuggestedLabel>Endocarditis (Viral)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A54.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Gonococcal infection, unspecified</SourceLabel>
+      <SuggestedLabel>Gonococcal Infection</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B15.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Hepatitis A without hepatic coma</SourceLabel>
+      <SuggestedLabel>Hepatitis A</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B16.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Acute hepatitis B without delta-agent and without hepatic coma</SourceLabel>
+      <SuggestedLabel>Hepatitis B</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B19.10</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Unspecified viral hepatitis B without hepatic coma</SourceLabel>
+      <SuggestedLabel>Hepatitis B (Viral)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B17.10</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Acute hepatitis C without hepatic coma</SourceLabel>
+      <SuggestedLabel>Hepatitis C</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B19.20</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Unspecified viral hepatitis C without hepatic coma</SourceLabel>
+      <SuggestedLabel>Hepatitis C (Viral)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B17.2</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Acute hepatitis E</SourceLabel>
+      <SuggestedLabel>Hepatitis E</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A60.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Anogenital herpesviral infection, unspecified</SourceLabel>
+      <SuggestedLabel>Herpes (anogenital)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B39.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Histoplasmosis, unspecified</SourceLabel>
+      <SuggestedLabel>Histoplasmosis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B20</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Human immunodeficiency virus [HIV] disease</SourceLabel>
+      <SuggestedLabel>HIV</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>Z21</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Asymptomatic human immunodeficiency virus [HIV] infection status</SourceLabel>
+      <SuggestedLabel>HIV (Asymptomatic)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J10</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Influenza due to other identified influenza virus</SourceLabel>
+      <SuggestedLabel>Influenza</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A69.20</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Lyme disease, unspecified</SourceLabel>
+      <SuggestedLabel>Lyme Disease</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B54</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Unspecified malaria</SourceLabel>
+      <SuggestedLabel>Malaria</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B05.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Measles without complication</SourceLabel>
+      <SuggestedLabel>Measles</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G03.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Meningitis, unspecified</SourceLabel>
+      <SuggestedLabel>Meningitis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A87.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Viral meningitis, unspecified</SourceLabel>
+      <SuggestedLabel>Meningitis (Viral)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G00.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Bacterial meningitis, unspecified</SourceLabel>
+      <SuggestedLabel>Meningitis Bacterial</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A39.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Meningococcal infection, unspecified</SourceLabel>
+      <SuggestedLabel>Meningococcal</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B27.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Infectious mononucleosis, unspecified</SourceLabel>
+      <SuggestedLabel>Mononucleosis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B26.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Mumps without complication</SourceLabel>
+      <SuggestedLabel>Mumps</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B33.22</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Viral myocarditis</SourceLabel>
+      <SuggestedLabel>Myocarditis (Viral)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B33.23</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Viral pericarditis</SourceLabel>
+      <SuggestedLabel>Pericarditis (Viral)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J15.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Unspecified bacterial pneumonia</SourceLabel>
+      <SuggestedLabel>Pneumonia Bacterial</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J12.89</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Other viral pneumonia</SourceLabel>
+      <SuggestedLabel>Pneumonia Viral</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A80.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Acute poliomyelitis, unspecified</SourceLabel>
+      <SuggestedLabel>Polio</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B96.5</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Pseudomonas (aeruginosa) (mallei) (pseudomallei) as the cause of diseases classified elsewhere</SourceLabel>
+      <SuggestedLabel>Pseudomonas</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A82.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Rabies, unspecified</SourceLabel>
+      <SuggestedLabel>Rabies</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J30.1</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Allergic rhinitis due to pollen</SourceLabel>
+      <SuggestedLabel>Rhinitis Due to Pollen</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B06.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Rubella without complication</SourceLabel>
+      <SuggestedLabel>Rubella</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B86</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Scabies</SourceLabel>
+      <SuggestedLabel>Scabies</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A38.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Scarlet fever, uncomplicated</SourceLabel>
+      <SuggestedLabel>Scarlet Fever</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A41.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Sepsis, unspecified organism</SourceLabel>
+      <SuggestedLabel>Sepsis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J32.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Chronic sinusitis, unspecified</SourceLabel>
+      <SuggestedLabel>Sinusitis Chronic</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B03</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Smallpox</SourceLabel>
+      <SuggestedLabel>Small Pox</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A53.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Syphilis, unspecified</SourceLabel>
+      <SuggestedLabel>Syphilis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A35</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Other tetanus</SourceLabel>
+      <SuggestedLabel>Tetanus</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A48.3</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Toxic shock syndrome</SourceLabel>
+      <SuggestedLabel>Toxic Shock Syndrome</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B58.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Toxoplasmosis, unspecified</SourceLabel>
+      <SuggestedLabel>Toxoplasmosis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A71.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Trachoma, unspecified</SourceLabel>
+      <SuggestedLabel>Trachoma</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A59.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Trichomoniasis, unspecified</SourceLabel>
+      <SuggestedLabel>Trichomoniasis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A15.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Respiratory tuberculosis unspecified</SourceLabel>
+      <SuggestedLabel>Tuberculosis Lung</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A75.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Typhus fever, unspecified</SourceLabel>
+      <SuggestedLabel>Typhus Fever</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A92.39</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>West Nile virus infection with other complications</SourceLabel>
+      <SuggestedLabel>West Nile Virus</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A37.91</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Whooping cough, unspecified species with pneumonia</SourceLabel>
+      <SuggestedLabel>Whooping Cough w/o Pneumonia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>A37.90</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Whooping cough, unspecified species without pneumonia</SourceLabel>
+      <SuggestedLabel>Whooping Cough w/Pneumonia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B02.9</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Zoster without complications</SourceLabel>
+      <SuggestedLabel>Zoster</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>M54.9</Value>
+      <Category>Musculoskeletal</Category>
+      <SourceLabel>Dorsalgia, unspecified</SourceLabel>
+      <SuggestedLabel>Back Pain</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>M62.48</Value>
+      <Category>Musculoskeletal</Category>
+      <SourceLabel>Contracture of muscle, other site</SourceLabel>
+      <SuggestedLabel>Contractures</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>M1A..0</Value>
+      <Category>Musculoskeletal</Category>
+      <SourceLabel>#N/A</SourceLabel>
+      <SuggestedLabel>Gout</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>M62.58</Value>
+      <Category>Musculoskeletal</Category>
+      <SourceLabel>Muscle wasting and atrophy, not elsewhere classified, other site</SourceLabel>
+      <SuggestedLabel>Muscle Wasting</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>M19.90</Value>
+      <Category>Musculoskeletal</Category>
+      <SourceLabel>Unspecified osteoarthritis, unspecified site</SourceLabel>
+      <SuggestedLabel>Osteoarthritis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>M86.9</Value>
+      <Category>Musculoskeletal</Category>
+      <SourceLabel>Osteomyelitis, unspecified</SourceLabel>
+      <SuggestedLabel>Osteomyelitis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>M62.82</Value>
+      <Category>Musculoskeletal</Category>
+      <SourceLabel>Rhabdomyolysis</SourceLabel>
+      <SuggestedLabel>Rhabdomyolysis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>M75.10</Value>
+      <Category>Musculoskeletal</Category>
+      <SourceLabel>Unspecified rotator cuff tear or rupture, not specified as traumatic</SourceLabel>
+      <SuggestedLabel>Rotator Cuff Tear</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>M54.30</Value>
+      <Category>Musculoskeletal</Category>
+      <SourceLabel>Sciatica, unspecified side</SourceLabel>
+      <SuggestedLabel>Sciatica</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>M43.20</Value>
+      <Category>Musculoskeletal</Category>
+      <SourceLabel>Fusion of spine, site unspecified</SourceLabel>
+      <SuggestedLabel>Spinal Fusion</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>M43.22</Value>
+      <Category>Musculoskeletal</Category>
+      <SourceLabel>Fusion of spine, cervical region</SourceLabel>
+      <SuggestedLabel>Spinal Fusion (Cervical)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>M43.26</Value>
+      <Category>Musculoskeletal</Category>
+      <SourceLabel>Fusion of spine, lumbar region</SourceLabel>
+      <SuggestedLabel>Spinal Fusion (Lumbar)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>M43.24</Value>
+      <Category>Musculoskeletal</Category>
+      <SourceLabel>Fusion of spine, thoracic region</SourceLabel>
+      <SuggestedLabel>Spinal Fusion (Thoracic)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>M54.10</Value>
+      <Category>Musculoskeletal</Category>
+      <SourceLabel>Radiculopathy, site unspecified</SourceLabel>
+      <SuggestedLabel>Spinal Radiculopathy</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>M48.00</Value>
+      <Category>Musculoskeletal</Category>
+      <SourceLabel>Spinal stenosis, site unspecified</SourceLabel>
+      <SuggestedLabel>Spinal Stenosis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>M48.50</Value>
+      <Category>Musculoskeletal</Category>
+      <SourceLabel>Collapsed vertebra, not elsewhere classified, site unspecified</SourceLabel>
+      <SuggestedLabel>Spinal Vertebral Collapse</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>M84.38</Value>
+      <Category>Musculoskeletal</Category>
+      <SourceLabel>Stress fracture, other site</SourceLabel>
+      <SuggestedLabel>Stress Fracture</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G30.9</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Alzheimer's disease, unspecified</SourceLabel>
+      <SuggestedLabel>Alzheimer's Disease</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I69.120</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Aphasia following nontraumatic intracerebral hemorrhage</SourceLabel>
+      <SuggestedLabel>Aphasia Post CVA</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G56.00</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Carpal tunnel syndrome, unspecified upper limb</SourceLabel>
+      <SuggestedLabel>Carpal Tunnel Syndrome</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I63.9</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Cerebral infarction, unspecified</SourceLabel>
+      <SuggestedLabel>Cerebral Infarction</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I67.82</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Cerebral ischemia</SourceLabel>
+      <SuggestedLabel>Cerebral Ischemia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G80.9</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Cerebral palsy, unspecified</SourceLabel>
+      <SuggestedLabel>Cerebral Palsy</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I69.11</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Cognitive deficits following nontraumatic intracerebral hemorrhage</SourceLabel>
+      <SuggestedLabel>Deficits Post CVA</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I69.121</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Dysphasia following nontraumatic intracerebral hemorrhage</SourceLabel>
+      <SuggestedLabel>Difficulty Speaking Post CVA</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G24.9</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Dystonia, unspecified</SourceLabel>
+      <SuggestedLabel>Dystonia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G40.1</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Localization-related (focal) (partial) symptomatic epilepsy and epileptic syndromes with simple partial seizures</SourceLabel>
+      <SuggestedLabel>Epilepsy (Focal)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G40.319</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Generalized idiopathic epilepsy and epileptic syndromes, intractable, without status epilepticus</SourceLabel>
+      <SuggestedLabel>Epilepsy (Seizures)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G40.803</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Other epilepsy, intractable, with status epilepticus</SourceLabel>
+      <SuggestedLabel>Epilepsy (w/Status Epilepticus)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I62.1</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Nontraumatic extradural hemorrhage</SourceLabel>
+      <SuggestedLabel>Extradural Hemorrhage</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G61.0</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Guillain-Barre syndrome</SourceLabel>
+      <SuggestedLabel>Guillain-Barre Syndrome</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G44.89</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Other headache syndrome</SourceLabel>
+      <SuggestedLabel>Headache</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G81</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Hemiplegia and hemiparesis</SourceLabel>
+      <SuggestedLabel>Hemiplegia &amp; Hemiparesis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I69.159</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Hemiplegia and hemiparesis following nontraumatic intracerebral hemorrhage affecting unspecified side</SourceLabel>
+      <SuggestedLabel>Hemiplegia Post CVA</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G10</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Huntington's disease</SourceLabel>
+      <SuggestedLabel>Huntington's Disease</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I61.9</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Nontraumatic intracerebral hemorrhage, unspecified</SourceLabel>
+      <SuggestedLabel>Intracerebral Hemorrhage</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G43.919</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Migraine, unspecified, intractable, without status migrainosus</SourceLabel>
+      <SuggestedLabel>Migraines</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G35</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Multiple sclerosis</SourceLabel>
+      <SuggestedLabel>Multiple Sclerosis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G82.20</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Paraplegia, unspecified</SourceLabel>
+      <SuggestedLabel>Paraplegia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G20</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Parkinson's disease</SourceLabel>
+      <SuggestedLabel>Parkinson's Disease</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G82.50</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Quadriplegia, unspecified</SourceLabel>
+      <SuggestedLabel>Quadriplegia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>G47.30</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Sleep apnea, unspecified</SourceLabel>
+      <SuggestedLabel>Sleep Apnea</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I69.12</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Speech and language deficits following nontraumatic intracerebral hemorrhage</SourceLabel>
+      <SuggestedLabel>Speech Deficit Post CVA</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I60.7</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Nontraumatic subarachnoid hemorrhage from unspecified intracranial artery</SourceLabel>
+      <SuggestedLabel>Subarachnoid Hemorrhage</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I62.00</Value>
+      <Category>Neuro</Category>
+      <SourceLabel>Nontraumatic subdural hemorrhage, unspecified</SourceLabel>
+      <SuggestedLabel>Subdural Hemorrhage</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>P03.0</Value>
+      <Category>Newborn</Category>
+      <SourceLabel>Newborn affected by breech delivery and extraction</SourceLabel>
+      <SuggestedLabel>Breech Delivery</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>P29.81</Value>
+      <Category>Newborn</Category>
+      <SourceLabel>Cardiac arrest of newborn</SourceLabel>
+      <SuggestedLabel>Cardiac Arrest</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>P02.5</Value>
+      <Category>Newborn</Category>
+      <SourceLabel>Newborn affected by other compression of umbilical cord</SourceLabel>
+      <SuggestedLabel>Compressed Cord</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>P91.61</Value>
+      <Category>Newborn</Category>
+      <SourceLabel>Mild hypoxic ischemic encephalopathy [HIE]</SourceLabel>
+      <SuggestedLabel>Hypoxic Encephalopathy - Mild</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>P91.62</Value>
+      <Category>Newborn</Category>
+      <SourceLabel>Moderate hypoxic ischemic encephalopathy [HIE]</SourceLabel>
+      <SuggestedLabel>Hypoxic Encephalopathy - Moderate</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>P91.63</Value>
+      <Category>Newborn</Category>
+      <SourceLabel>Severe hypoxic ischemic encephalopathy [HIE]</SourceLabel>
+      <SuggestedLabel>Hypoxic Encephalopathy - Severe</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>P07.10</Value>
+      <Category>Newborn</Category>
+      <SourceLabel>Other low birth weight newborn, unspecified weight</SourceLabel>
+      <SuggestedLabel>Low Birth Weight</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>P04.3</Value>
+      <Category>Newborn</Category>
+      <SourceLabel>Newborn affected by maternal use of alcohol</SourceLabel>
+      <SuggestedLabel>Maternal Alcohol Use</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>P01.9</Value>
+      <Category>Newborn</Category>
+      <SourceLabel>Newborn affected by maternal complication of pregnancy, unspecified</SourceLabel>
+      <SuggestedLabel>Maternal Complications</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>P04.2</Value>
+      <Category>Newborn</Category>
+      <SourceLabel>Newborn affected by maternal use of tobacco</SourceLabel>
+      <SuggestedLabel>Maternal Smoking</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>P04.4</Value>
+      <Category>Newborn</Category>
+      <SourceLabel>Newborn affected by maternal use of drugs of addiction</SourceLabel>
+      <SuggestedLabel>Maternal Substance Use</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>P03.82</Value>
+      <Category>Newborn</Category>
+      <SourceLabel>Meconium passage during delivery</SourceLabel>
+      <SuggestedLabel>Meconium Aspiration</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>P24.01</Value>
+      <Category>Newborn</Category>
+      <SourceLabel>Meconium aspiration with respiratory symptoms</SourceLabel>
+      <SuggestedLabel>Meconium Aspiration w/Resp Distress</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>P59.9</Value>
+      <Category>Newborn</Category>
+      <SourceLabel>Neonatal jaundice, unspecified</SourceLabel>
+      <SuggestedLabel>Neonatal Jaundice</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>P02.3</Value>
+      <Category>Newborn</Category>
+      <SourceLabel>Newborn affected by placental transfusion syndromes</SourceLabel>
+      <SuggestedLabel>Placental Transfusion Syndrome</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>P08.21</Value>
+      <Category>Newborn</Category>
+      <SourceLabel>Post-term newborn</SourceLabel>
+      <SuggestedLabel>Post-term</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>P03.5</Value>
+      <Category>Newborn</Category>
+      <SourceLabel>Newborn affected by precipitate delivery</SourceLabel>
+      <SuggestedLabel>Precipitate Delivery</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>P01.1</Value>
+      <Category>Newborn</Category>
+      <SourceLabel>Newborn affected by premature rupture of membranes</SourceLabel>
+      <SuggestedLabel>Premature ROM</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>P07.30</Value>
+      <Category>Newborn</Category>
+      <SourceLabel>Preterm newborn, unspecified weeks of gestation</SourceLabel>
+      <SuggestedLabel>Pre-term</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>P02.4</Value>
+      <Category>Newborn</Category>
+      <SourceLabel>Newborn affected by prolapsed cord</SourceLabel>
+      <SuggestedLabel>Prolapsed Cord</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>P22.0</Value>
+      <Category>Newborn</Category>
+      <SourceLabel>Respiratory distress syndrome of newborn</SourceLabel>
+      <SuggestedLabel>Resp Distress Syndrome</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>P36.9</Value>
+      <Category>Newborn</Category>
+      <SourceLabel>Bacterial sepsis of newborn, unspecified</SourceLabel>
+      <SuggestedLabel>Sepsis Bacterial</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O99.810</Value>
+      <Category>OB</Category>
+      <SourceLabel>Abnormal glucose complicating pregnancy</SourceLabel>
+      <SuggestedLabel>Abnormal Glucose During Pregnancy</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O99.310</Value>
+      <Category>OB</Category>
+      <SourceLabel>Alcohol use complicating pregnancy, unspecified trimester</SourceLabel>
+      <SuggestedLabel>Alcohol Abuse During Pregnancy</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O64.1</Value>
+      <Category>OB</Category>
+      <SourceLabel>Obstructed labor due to breech presentation</SourceLabel>
+      <SuggestedLabel>Breech Presentation</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O90.3</Value>
+      <Category>OB</Category>
+      <SourceLabel>Peripartum cardiomyopathy</SourceLabel>
+      <SuggestedLabel>Cardiomyopathy Peripartum</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O24.419</Value>
+      <Category>OB</Category>
+      <SourceLabel>Gestational diabetes mellitus in pregnancy, unspecified control</SourceLabel>
+      <SuggestedLabel>Diabetes Gestational</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O99.324</Value>
+      <Category>OB</Category>
+      <SourceLabel>Drug use complicating childbirth</SourceLabel>
+      <SuggestedLabel>Drug Abuse During Pregnancy</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O15.00</Value>
+      <Category>OB</Category>
+      <SourceLabel>Eclampsia complicating pregnancy, unspecified trimester</SourceLabel>
+      <SuggestedLabel>Eclampsia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O00.9</Value>
+      <Category>OB</Category>
+      <SourceLabel>Ectopic pregnancy, unspecified</SourceLabel>
+      <SuggestedLabel>Ectopic Pregnancy</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O77.1</Value>
+      <Category>OB</Category>
+      <SourceLabel>Fetal stress in labor or delivery due to drug administration</SourceLabel>
+      <SuggestedLabel>Fetal Distress Due to Medications</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O16.9</Value>
+      <Category>OB</Category>
+      <SourceLabel>Unspecified maternal hypertension, unspecified trimester</SourceLabel>
+      <SuggestedLabel>Hypertension Maternal</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O63.9</Value>
+      <Category>OB</Category>
+      <SourceLabel>Long labor, unspecified</SourceLabel>
+      <SuggestedLabel>Labor Prolonged</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O25.10</Value>
+      <Category>OB</Category>
+      <SourceLabel>Malnutrition in pregnancy, unspecified trimester</SourceLabel>
+      <SuggestedLabel>Malnutrition Due to Pregnancy</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O03</Value>
+      <Category>OB</Category>
+      <SourceLabel>Spontaneous abortion</SourceLabel>
+      <SuggestedLabel>Miscarriage</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O9A.32</Value>
+      <Category>OB</Category>
+      <SourceLabel>Physical abuse complicating childbirth</SourceLabel>
+      <SuggestedLabel>Physical Abuse During Pregnancy</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O44.10</Value>
+      <Category>OB</Category>
+      <SourceLabel>Complete placenta previa with hemorrhage, unspecified trimester</SourceLabel>
+      <SuggestedLabel>Placenta Previa w/Hemorrhage</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O44.0</Value>
+      <Category>OB</Category>
+      <SourceLabel>Complete placenta previa NOS or without hemorrhage</SourceLabel>
+      <SuggestedLabel>Placenta Previa w/o Hemorrhage</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O48.0</Value>
+      <Category>OB</Category>
+      <SourceLabel>Post-term pregnancy</SourceLabel>
+      <SuggestedLabel>Post-term Pregnancy</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O14.00</Value>
+      <Category>OB</Category>
+      <SourceLabel>Mild to moderate pre-eclampsia, unspecified trimester</SourceLabel>
+      <SuggestedLabel>Pre-eclampsia mild-mod</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O14.10</Value>
+      <Category>OB</Category>
+      <SourceLabel>Severe pre-eclampsia, unspecified trimester</SourceLabel>
+      <SuggestedLabel>Pre-eclampsia Severe</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O60</Value>
+      <Category>OB</Category>
+      <SourceLabel>Preterm labor</SourceLabel>
+      <SuggestedLabel>Pre-term Labor</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O42.919</Value>
+      <Category>OB</Category>
+      <SourceLabel>Preterm premature rupture of membranes, unspecified as to length of time between rupture and onset of labor, unspecified trimester</SourceLabel>
+      <SuggestedLabel>Pre-term Rupture of Membranes (ROM)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O69.0</Value>
+      <Category>OB</Category>
+      <SourceLabel>Labor and delivery complicated by prolapse of cord</SourceLabel>
+      <SuggestedLabel>Prolapsed Cord</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O12.10</Value>
+      <Category>OB</Category>
+      <SourceLabel>Gestational proteinuria, unspecified trimester</SourceLabel>
+      <SuggestedLabel>Proteinuria Gestational</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O9A.42</Value>
+      <Category>OB</Category>
+      <SourceLabel>Sexual abuse complicating childbirth</SourceLabel>
+      <SuggestedLabel>Sexual Abuse During Pregnancy</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O99.334</Value>
+      <Category>OB</Category>
+      <SourceLabel>Smoking (tobacco) complicating childbirth</SourceLabel>
+      <SuggestedLabel>Smoking During Pregnancy</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O26.859</Value>
+      <Category>OB</Category>
+      <SourceLabel>Spotting complicating pregnancy, unspecified trimester</SourceLabel>
+      <SuggestedLabel>Spotting</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O20.0</Value>
+      <Category>OB</Category>
+      <SourceLabel>Threatened abortion</SourceLabel>
+      <SuggestedLabel>Threatened Miscarriage</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>O21.9</Value>
+      <Category>OB</Category>
+      <SourceLabel>Vomiting of pregnancy, unspecified</SourceLabel>
+      <SuggestedLabel>Vomiting Due to Pregnancy</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>N18.6</Value>
+      <Category>Renal</Category>
+      <SourceLabel>End stage renal disease</SourceLabel>
+      <SuggestedLabel>End Stage Renal Disease</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>N13.30</Value>
+      <Category>Renal</Category>
+      <SourceLabel>Unspecified hydronephrosis</SourceLabel>
+      <SuggestedLabel>Hydronephrosis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>N18.1</Value>
+      <Category>Renal</Category>
+      <SourceLabel>Chronic kidney disease, stage 1</SourceLabel>
+      <SuggestedLabel>Kidney Disease (Stage 1)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>N18.2</Value>
+      <Category>Renal</Category>
+      <SourceLabel>Chronic kidney disease, stage 2 (mild)</SourceLabel>
+      <SuggestedLabel>Kidney Disease (Stage 2 - mild)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>N18.3</Value>
+      <Category>Renal</Category>
+      <SourceLabel>Chronic kidney disease, stage 3 (moderate)</SourceLabel>
+      <SuggestedLabel>Kidney Disease (Stage 3 - Moderate)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>N18.4</Value>
+      <Category>Renal</Category>
+      <SourceLabel>Chronic kidney disease, stage 4 (severe)</SourceLabel>
+      <SuggestedLabel>Kidney Disease (Stage 4 - Severe)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>N18.5</Value>
+      <Category>Renal</Category>
+      <SourceLabel>Chronic kidney disease, stage 5</SourceLabel>
+      <SuggestedLabel>Kidney Disease (Stage 5)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>N17.9</Value>
+      <Category>Renal</Category>
+      <SourceLabel>Acute kidney failure, unspecified</SourceLabel>
+      <SuggestedLabel>Kidney Failure (Acute)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J80</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Acute respiratory distress syndrome</SourceLabel>
+      <SuggestedLabel>Acute Resp Distress Syndrome</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J45.30</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Mild persistent asthma, uncomplicated</SourceLabel>
+      <SuggestedLabel>Asthma (Mild)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J45.41</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Moderate persistent asthma with (acute) exacerbation</SourceLabel>
+      <SuggestedLabel>Asthma (Moderate)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J45.50</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Severe persistent asthma, uncomplicated</SourceLabel>
+      <SuggestedLabel>Asthma (Severe)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J45.52</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Severe persistent asthma with status asthmaticus</SourceLabel>
+      <SuggestedLabel>Asthma (Status Asthmaticus)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J44.9</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Chronic obstructive pulmonary disease, unspecified</SourceLabel>
+      <SuggestedLabel>COPD</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J94.2</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Hemothorax</SourceLabel>
+      <SuggestedLabel>Hemothorax</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J98.9</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Respiratory disorder, unspecified</SourceLabel>
+      <SuggestedLabel>Other Disorder</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J81.0</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Acute pulmonary edema</SourceLabel>
+      <SuggestedLabel>Pulmonary Edema (Acute)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J81.1</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Chronic pulmonary edema</SourceLabel>
+      <SuggestedLabel>Pulmonary Edema (Chronic)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B97.4</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Respiratory syncytial virus as the cause of diseases classified elsewhere</SourceLabel>
+      <SuggestedLabel>RSV</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J12.1</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Respiratory syncytial virus pneumonia</SourceLabel>
+      <SuggestedLabel>RSV Pneumonia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>B97.21</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>SARS-associated coronavirus as the cause of diseases classified elsewhere</SourceLabel>
+      <SuggestedLabel>SARS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J93.0</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Spontaneous tension pneumothorax</SourceLabel>
+      <SuggestedLabel>Spontaneous Pneumothorax</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>J95.851</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Ventilator associated pneumonia</SourceLabel>
+      <SuggestedLabel>Ventilator Related Pneumonia</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>L89.90</Value>
+      <Category>Skin</Category>
+      <SourceLabel>Pressure ulcer of unspecified site, unspecified stage</SourceLabel>
+      <SuggestedLabel>Skin - Pressure Ulcer</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F10.21</Value>
+      <Category>Substance Abuse</Category>
+      <SourceLabel>Alcohol dependence, in remission</SourceLabel>
+      <SuggestedLabel>Alcohol (In remission)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F10.20</Value>
+      <Category>Substance Abuse</Category>
+      <SourceLabel>Alcohol dependence, uncomplicated</SourceLabel>
+      <SuggestedLabel>Alcohol Dependence</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F10.229</Value>
+      <Category>Substance Abuse</Category>
+      <SourceLabel>Alcohol dependence with intoxication, unspecified</SourceLabel>
+      <SuggestedLabel>Alcohol Intoxication</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F14.99</Value>
+      <Category>Substance Abuse</Category>
+      <SourceLabel>Cocaine use, unspecified with unspecified cocaine-induced disorder</SourceLabel>
+      <SuggestedLabel>Cocaine</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F18.99</Value>
+      <Category>Substance Abuse</Category>
+      <SourceLabel>Inhalant use, unspecified with unspecified inhalant-induced disorder</SourceLabel>
+      <SuggestedLabel>Inhalant</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F17.299</Value>
+      <Category>Substance Abuse</Category>
+      <SourceLabel>Nicotine dependence, other tobacco product, with unspecified nicotine-induced disorders</SourceLabel>
+      <SuggestedLabel>Nicotine Dependence</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F11.19</Value>
+      <Category>Substance Abuse</Category>
+      <SourceLabel>Opioid abuse with unspecified opioid-induced disorder</SourceLabel>
+      <SuggestedLabel>Opioid Abuse</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F11.21</Value>
+      <Category>Substance Abuse</Category>
+      <SourceLabel>Opioid dependence, in remission</SourceLabel>
+      <SuggestedLabel>Opioid Dependence (In Remission)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F11.220</Value>
+      <Category>Substance Abuse</Category>
+      <SourceLabel>Opioid dependence with intoxication, uncomplicated</SourceLabel>
+      <SuggestedLabel>Opioid Dependence w/Intoxication</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>F13.99</Value>
+      <Category>Substance Abuse</Category>
+      <SourceLabel>Sedative, hypnotic or anxiolytic use, unspecified with unspecified sedative, hypnotic or anxiolytic-induced disorder</SourceLabel>
+      <SuggestedLabel>Sedative, Hypnotic, Anxiolytic</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I82.91</Value>
+      <Category>Vascular</Category>
+      <SourceLabel>Chronic embolism and thrombosis of unspecified vein</SourceLabel>
+      <SuggestedLabel>Embolism/Thrombosis Vein</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I80.9</Value>
+      <Category>Vascular</Category>
+      <SourceLabel>Phlebitis and thrombophlebitis of unspecified site</SourceLabel>
+      <SuggestedLabel>Phlebitis/Thrombophlebitis</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I83.819</Value>
+      <Category>Vascular</Category>
+      <SourceLabel>Varicose veins of unspecified lower extremity with pain</SourceLabel>
+      <SuggestedLabel>Varicose Vein(s)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>I87.9</Value>
+      <Category>Vascular</Category>
+      <SourceLabel>Disorder of vein, unspecified</SourceLabel>
+      <SuggestedLabel>Vein Disorder Other</SuggestedLabel>
+    </Code>
+    <Code date="2023-02-14">
+      <Value>B97.29</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Other coronavirus as the cause of disease classified elsewhere</SourceLabel>
+      <SuggestedLabel>Coronavirus</SuggestedLabel>
+    </Code>
+    <Code date="2023-02-14">
+      <Value>A49.2</Value>
+      <Category>Infectious</Category>
+      <SourceLabel>Hemophilus influenzae infection, unspecified site</SourceLabel>
+      <SuggestedLabel>Influenza</SuggestedLabel>
+    </Code>
+    <Code date="2023-02-14">
+      <Value>J12.82</Value>
+      <Category>Respiratory</Category>
+      <SourceLabel>Pneumonia due to coronavirus disease 2019</SourceLabel>
+      <SuggestedLabel>Pneumonia due to Coronavirus</SuggestedLabel>
+    </Code>
+  </Codes>
+</DefinedList>

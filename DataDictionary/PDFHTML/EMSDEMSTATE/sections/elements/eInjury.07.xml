@@ -1,0 +1,51 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eInjury.07"  minOccurs="0"  maxOccurs="M"  dataTypeName="UseOfOccupantSafetyEquipment"  isNillable="Yes">
+<name>Use of Occupant Safety Equipment</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Safety equipment in use by the patient at the time of the injury.</definition>
+<v2Number>E10_08</v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>MMUCC P7 data element used as baseline information.  Data element expanded for added definition in non-vehicular settings.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <UseOfOccupantSafetyEquipment baseType="string">
+    <facet name="enumeration" value="2907001" annotation="Child Booster Seat"/>
+    <facet name="enumeration" value="2907003" annotation="Eye Protection"/>
+    <facet name="enumeration" value="2907005" annotation="Helmet Worn"/>
+    <facet name="enumeration" value="2907007" annotation="Infant Car Seat Forward Facing"/>
+    <facet name="enumeration" value="2907009" annotation="Infant Car Seat Rear Facing"/>
+    <facet name="enumeration" value="2907015" annotation="None"/>
+    <facet name="enumeration" value="2907017" annotation="Other"/>
+    <facet name="enumeration" value="2907019" annotation="Personal Floatation Device"/>
+    <facet name="enumeration" value="2907021" annotation="Protective Clothing"/>
+    <facet name="enumeration" value="2907023" annotation="Protective Non-Clothing Gear"/>
+    <facet name="enumeration" value="2907027" annotation="Shoulder and Lap Belt Used"/>
+    <facet name="enumeration" value="2907029" annotation="Lap Belt Only Used"/>
+    <facet name="enumeration" value="2907031" annotation="Shoulder Belt Only Used"/>
+    <facet name="enumeration" value="2907033" annotation="Unable to Determine"/>
+  </UseOfOccupantSafetyEquipment>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When Use of Occupant Safety Equipment has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Use of Occupant Safety Equipment is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Use of Occupant Safety Equipment has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

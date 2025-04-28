@@ -1,0 +1,24 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.41"  minOccurs="0"  maxOccurs="M"  dataTypeName="TransportAssessment"  isNillable="No">
+<name>Patient Transport Assessment</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>Documentation of the patient's transport need based on mobility and/or physical capability.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Added to better justify the medical necessity of the transport. Based on CMS 42 CFR Ch IV (10-1-02 Edition) &amp; 410.40 (d) medical necessity requirement (1)</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <TransportAssessment baseType="string">
+    <facet name="enumeration" value="2641001" annotation="Unable to sit without assistance"/>
+    <facet name="enumeration" value="2641003" annotation="Unable to stand without assistance"/>
+    <facet name="enumeration" value="2641005" annotation="Unable to walk without assistance"/>
+  </TransportAssessment>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

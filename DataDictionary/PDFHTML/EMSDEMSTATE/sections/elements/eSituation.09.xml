@@ -1,0 +1,46 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eSituation.09"  minOccurs="1"  maxOccurs="1"  dataTypeName="AssociatedSymptoms"  isNillable="Yes">
+<name>Primary Symptom</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The primary sign and symptom present in the patient or observed by EMS personnel.</definition>
+<v2Number>E09_13</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>eSituation.02 (Possible Injury), eSituation.09 (Primary Symptom), eSituation.07 (Chief Complaint Anatomic Location), and eSituation.08 (Chief Complaint Organ System) are grouped together to form the EMS Reason for Encounter.
+								<br/><br/>Code list is represented in ICD-10-CM Diagnosis Codes. Reference the NEMSIS Suggested Lists at: https://nemsis.org/technical-resources/version-3/version-3-resource-repository/						
+							<br/><br/>ICD-10-CM
+							<br/>Website - <a href="http://uts.nlm.nih.gov" target="_blank">http://uts.nlm.nih.gov</a>
+							<br/>Product - UMLS Metathesaurus</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <AssociatedSymptoms baseType="string">
+    <facet name="pattern" value="(R[0-6][0-9](\.[0-9]{1,4})?|(R73\.9)|(R99))|([A-QSTUZ][0-9][0-9A-Z])((\.[0-9A-Z]{1,4})?)"/>
+  </AssociatedSymptoms>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e077" role="Warning">
+      <elementRef elementNumber="eSituation.02">Possible Injury</elementRef> should be &quot;Yes&quot; when a symptom or impression is injury-related.
+      </assert>
+  <assert id="nemSch_e080" role="Warning">
+      <elementRef elementNumber="eSituation.09">Primary Symptom</elementRef> should be recorded when <elementRef elementNumber="eResponse.05">Type of Service Requested</elementRef> is &quot;Emergency Response (Primary Response Area)&quot; and <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e081" role="Warning">
+      <elementRef elementNumber="eSituation.10">Other Associated Symptoms</elementRef> should only be recorded when <elementRef elementNumber="eSituation.09">Primary Symptom</elementRef> is recorded.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Primary Symptom has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Primary Symptom is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

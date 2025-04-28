@@ -1,0 +1,58 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eOther.06"  minOccurs="0"  maxOccurs="M"  dataTypeName="TypeOfInjuryDeathOrSuspectedExposure"  isNillable="Yes">
+<name>The Type of Work-Related Injury, Death or Suspected Exposure</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The type of EMS crew member work-related injury, death, or suspected exposure related to the EMS response.</definition>
+<v2Number>E23_06</v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Associated witheOther.04 (EMS Professional (Crew Member) ID).</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <TypeOfInjuryDeathOrSuspectedExposure baseType="string">
+    <facet name="enumeration" value="4506001" annotation="Death-Cardiac Arrest"/>
+    <facet name="enumeration" value="4506003" annotation="Death-Injury Related"/>
+    <facet name="enumeration" value="4506005" annotation="Death-Other"/>
+    <facet name="enumeration" value="4506007" annotation="Exposure-Airborne Respiratory/Biological/Aerosolized Secretions"/>
+    <facet name="enumeration" value="4506009" annotation="Exposure-Body Fluid Contact to Broken Skin"/>
+    <facet name="enumeration" value="4506011" annotation="Exposure-Body Fluid Contact with Eye"/>
+    <facet name="enumeration" value="4506013" annotation="Exposure-Body Fluid Contact with Intact Skin"/>
+    <facet name="enumeration" value="4506015" annotation="Exposure-Body Fluid Contact with Mucosal Surface"/>
+    <facet name="enumeration" value="4506017" annotation="Exposure-Needle Stick with Body Fluid Injection"/>
+    <facet name="enumeration" value="4506019" annotation="Exposure-Needle Stick without Body Fluid Injection"/>
+    <facet name="enumeration" value="4506021" annotation="Exposure-Toxin/Chemical/Hazmat"/>
+    <facet name="enumeration" value="4506023" annotation="Injury-Lifting/Back/Musculoskeletal"/>
+    <facet name="enumeration" value="4506025" annotation="Injury-Other"/>
+    <facet name="enumeration" value="4506027" annotation="None"/>
+    <facet name="enumeration" value="4506029" annotation="Other"/>
+    <facet name="enumeration" value="4506031" annotation="Violence-Offensive, Intimidating, or Hateful Language"/>
+    <facet name="enumeration" value="4506033" annotation="Violence-Physical Threat, or Threatening Behavior"/>
+    <facet name="enumeration" value="4506035" annotation="Violence-Physical Attack or Attempt to Attack"/>
+    <facet name="enumeration" value="4506037" annotation="Violence-Unwelcome Sexual Attention, Remarks, Jokes or Gestures"/>
+    <facet name="enumeration" value="4506039" annotation="Violence-Unwanted Touching of a Sexual Nature"/>
+    <facet name="enumeration" value="4506041" annotation="Struck by Vehicle Along Roadway"/>
+  </TypeOfInjuryDeathOrSuspectedExposure>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When The Type of Work-Related Injury, Death or Suspected Exposure has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When The Type of Work-Related Injury, Death or Suspected Exposure is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When The Type of Work-Related Injury, Death or Suspected Exposure has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

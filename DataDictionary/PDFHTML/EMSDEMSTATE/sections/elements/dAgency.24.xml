@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dAgency.24"  minOccurs="0"  maxOccurs="1"  dataTypeName="YesNoValues"  isNillable="No">
+<name>EMS Agency Daylight Savings Time Use</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>Indicate if the EMS Agency conforms to Daylight Savings Time.</definition>
+<v2Number>D01_20</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Associated with each of the EMS Agency Number (dAgency.02). If the EMS Agency service area contains areas with variations in Daylight Savings Time implementation, choose the response which best represents the majority of the EMS events.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <YesNoValues baseType="string">
+    <facet name="enumeration" value="9923001" annotation="No"/>
+    <facet name="enumeration" value="9923003" annotation="Yes"/>
+  </YesNoValues>
+</restrictions>
+</element>

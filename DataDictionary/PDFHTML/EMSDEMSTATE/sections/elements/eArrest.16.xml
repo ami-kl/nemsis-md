@@ -1,0 +1,41 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eArrest.16"  minOccurs="1"  maxOccurs="1"  dataTypeName="ReasonCPRDiscontinued"  isNillable="Yes">
+<name>Reason CPR/Resuscitation Discontinued</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The reason that CPR or the resuscitation efforts were discontinued.</definition>
+<v2Number>E11_10</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Cardiac Arrest</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Added Resuscitation to Title to allow better documentation of disposition.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ReasonCPRDiscontinued baseType="string">
+    <facet name="enumeration" value="3016001" annotation="DNR"/>
+    <facet name="enumeration" value="3016003" annotation="Medical Control Order"/>
+    <facet name="enumeration" value="3016005" annotation="Obvious Signs of Death"/>
+    <facet name="enumeration" value="3016007" annotation="Physically Unable to Perform"/>
+    <facet name="enumeration" value="3016009" annotation="Protocol/Policy Requirements Completed"/>
+    <facet name="enumeration" value="3016011" annotation="Return of Spontaneous Circulation (pulse or BP noted)"/>
+  </ReasonCPRDiscontinued>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e112" role="Warning">
+      <elementRef elementNumber="eArrest.16">Reason CPR/Resuscitation Discontinued</elementRef> should only be recorded when <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Reason CPR/Resuscitation Discontinued has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Reason CPR/Resuscitation Discontinued is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

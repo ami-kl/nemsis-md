@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dCustomConfiguration.09"  minOccurs="0"  maxOccurs="1"  dataTypeName="CorrelationID"  isNillable="No">
+<name>Custom Data Element Grouping ID</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>ID for custom element grouping.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <CorrelationID baseType="string">
+    <facet name="minLength" value="2"/>
+    <facet name="maxLength" value="255"/>
+  </CorrelationID>
+</restrictions>
+</element>

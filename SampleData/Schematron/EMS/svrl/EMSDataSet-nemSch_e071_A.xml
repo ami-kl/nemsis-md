@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svrl:schematron-output xmlns:iso="http://purl.oclc.org/dsdl/schematron"
+                        xmlns:nem="http://www.nemsis.org"
+                        xmlns:saxon="http://saxon.sf.net/"
+                        xmlns:schold="http://www.ascc.net/xml/schematron"
+                        xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        title="NEMSIS National ISO Schematron file for EMSDataSet"
+                        schemaVersion="3.5.1.250403CP1"><!--   
+		   
+		   
+		 -->
+   <svrl:ns-prefix-in-attribute-values uri="http://www.nemsis.org" prefix="nem"/>
+   <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/EMS/xml/EMSDataSet-nemSch_e071_A.xml"
+                        id="nemSch_eNilNvPn"
+                        name="EMSDataSet / Nil/Not Value/Pertinent Negative Attributes"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_eNilNvPn_rule_10"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_eNilNvPn_rule_10"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_eNilNvPn_rule_10"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_eNilNvPn_rule_10"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_eNilNvPn_rule_10"/>
+   <svrl:fired-rule context="nem:eHistory.10[@PN]" id="nemSch_eNilNvPn_rule_3"/>
+   <svrl:fired-rule context="*[@PN]" id="nemSch_eNilNvPn_rule_9"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_eNilNvPn_rule_10"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_eNilNvPn_rule_10"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_eNilNvPn_rule_10"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_eNilNvPn_rule_10"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_eNilNvPn_rule_10"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_eNilNvPn_rule_10"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_eNilNvPn_rule_10"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_eNilNvPn_rule_10"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_eNilNvPn_rule_10"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_eNilNvPn_rule_10"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_eNilNvPn_rule_10"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_eNilNvPn_rule_10"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_eNilNvPn_rule_10"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_eNilNvPn_rule_10"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_eNilNvPn_rule_10"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_eNilNvPn_rule_10"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_eNilNvPn_rule_10"/>
+   <svrl:fired-rule context="nem:eCustomResults.01" id="nemSch_eNilNvPn_rule_1"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/EMS/xml/EMSDataSet-nemSch_e071_A.xml"
+                        id="nemSch_eNvPn"
+                        name="EMSDataSet / Not Value/Pertinent Negative Uniqueness"/>
+   <svrl:fired-rule context="nem:eCustomResults.01" id="nemSch_eNvPn_rule_1"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/EMS/xml/EMSDataSet-nemSch_e071_A.xml"
+                        id="nemSch_eResponse"
+                        name="EMSDataSet / Unit Agency Information"/>
+   <svrl:fired-rule context="nem:eResponse.01" id="nemSch_eResponse_rule_1"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/EMS/xml/EMSDataSet-nemSch_e071_A.xml"
+                        id="nemSch_eTimes"
+                        name="EMSDataSet / Call Event Times Information"/>
+   <svrl:fired-rule context="nem:eTimes.03[. != '']" id="nemSch_eTimes_rule_1"/>
+   <svrl:fired-rule context="nem:eTimes.05[. != '']" id="nemSch_eTimes_rule_3"/>
+   <svrl:fired-rule context="nem:eTimes.06[. != '']" id="nemSch_eTimes_rule_5"/>
+   <svrl:fired-rule context="nem:eTimes.07[. != '']" id="nemSch_eTimes_rule_7"/>
+   <svrl:fired-rule context="nem:eTimes.09[. != '']" id="nemSch_eTimes_rule_9"/>
+   <svrl:fired-rule context="nem:eTimes.11[. != '']" id="nemSch_eTimes_rule_11"/>
+   <svrl:fired-rule context="nem:eTimes.12[. != '']" id="nemSch_eTimes_rule_13"/>
+   <svrl:fired-rule context="nem:eTimes.13[. != '']" id="nemSch_eTimes_rule_14"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/EMS/xml/EMSDataSet-nemSch_e071_A.xml"
+                        id="nemSch_ePatient"
+                        name="EMSDataSet / Patient Information"/>
+   <svrl:fired-rule context="nem:ePatient.07[. != '']" id="nemSch_ePatient_rule_2"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/EMS/xml/EMSDataSet-nemSch_e071_A.xml"
+                        id="nemSch_eScene"
+                        name="EMSDataSet / Incident Scene Information"/>
+   <svrl:fired-rule context="nem:eScene.06" id="nemSch_eScene_rule_1"/>
+   <svrl:fired-rule context="nem:eScene.18[. = '']" id="nemSch_eScene_rule_4"/>
+   <svrl:failed-assert test="ancestor::nem:PatientCareReport/nem:eDisposition/nem:eDisposition.IncidentDispositionGroup/nem:eDisposition.27 = '4227005'"
+                       id="nemSch_e071"
+                       role="[WARNING]"
+                       location="/*:EMSDataSet[namespace-uri()='http://www.nemsis.org'][1]/*:Header[namespace-uri()='http://www.nemsis.org'][1]/*:PatientCareReport[namespace-uri()='http://www.nemsis.org'][1]/*:eScene[namespace-uri()='http://www.nemsis.org'][1]/*:eScene.18[namespace-uri()='http://www.nemsis.org'][1]">
+      <svrl:text>Incident State should be recorded unless Unit Disposition is "Cancelled Prior to Arrival at Scene".
+    </svrl:text>
+      <svrl:diagnostic-reference diagnostic="nemsisDiagnostic">
+         <nemsisDiagnostic xmlns="http://www.nemsis.org" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+            <record>
+               <dAgency.01>0</dAgency.01>
+               <dAgency.02>A</dAgency.02>
+               <dAgency.04>49</dAgency.04>
+               <eRecord.01>g60</eRecord.01>
+               <UUID>05d7121a-d59d-445f-a0d8-c3e08ed83bb8</UUID>
+            </record>
+            <elements>
+               <element location="/*:EMSDataSet[namespace-uri()='http://www.nemsis.org'][1]/*:Header[namespace-uri()='http://www.nemsis.org'][1]/*:PatientCareReport[namespace-uri()='http://www.nemsis.org'][1]/*:eScene[namespace-uri()='http://www.nemsis.org'][1]/*:eScene.18[namespace-uri()='http://www.nemsis.org'][1]"
+                        xsi:nil="true"
+                        NV="7701003"/>
+            </elements>
+            <elementsMissing/>
+         </nemsisDiagnostic>
+      </svrl:diagnostic-reference>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="nem:eScene.21[. != '']" id="nemSch_eScene_rule_7"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/EMS/xml/EMSDataSet-nemSch_e071_A.xml"
+                        id="nemSch_eSituation"
+                        name="EMSDataSet / Situation Information"/>
+   <svrl:fired-rule context="nem:eSituation.02" id="nemSch_eSituation_rule_2"/>
+   <svrl:fired-rule context="nem:eSituation.10[. != ''][1]" id="nemSch_eSituation_rule_6"/>
+   <svrl:fired-rule context="nem:eSituation.12[. != ''][1]" id="nemSch_eSituation_rule_8"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/EMS/xml/EMSDataSet-nemSch_e071_A.xml"
+                        id="nemSch_eInjury"
+                        name="EMSDataSet / Injury Information"/>
+   <svrl:fired-rule context="nem:eInjury.01[. != ''][1]" id="nemSch_eInjury_rule_2"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/EMS/xml/EMSDataSet-nemSch_e071_A.xml"
+                        id="nemSch_eArrest"
+                        name="EMSDataSet / Cardiac Arrest Information"/>
+   <svrl:fired-rule context="nem:eArrest.02[. != '']" id="nemSch_eArrest_rule_2"/>
+   <svrl:fired-rule context="nem:eArrest.03[1]" id="nemSch_eArrest_rule_3"/>
+   <svrl:fired-rule context="nem:eArrest.04[. != ''][1]" id="nemSch_eArrest_rule_5"/>
+   <svrl:fired-rule context="nem:eArrest.07[. != '']" id="nemSch_eArrest_rule_7"/>
+   <svrl:fired-rule context="nem:eArrest.09[1]" id="nemSch_eArrest_rule_8"/>
+   <svrl:fired-rule context="nem:eArrest.12[. != ''][1]" id="nemSch_eArrest_rule_10"/>
+   <svrl:fired-rule context="nem:eArrest.14[. != '']" id="nemSch_eArrest_rule_11"/>
+   <svrl:fired-rule context="nem:eArrest.16[. != '']" id="nemSch_eArrest_rule_12"/>
+   <svrl:fired-rule context="nem:eArrest.17[. != ''][1]" id="nemSch_eArrest_rule_14"/>
+   <svrl:fired-rule context="nem:eArrest.18[. != '']" id="nemSch_eArrest_rule_16"/>
+   <svrl:fired-rule context="nem:eArrest.20[. != '']" id="nemSch_eArrest_rule_18"/>
+   <svrl:fired-rule context="nem:eArrest.21[. != '']" id="nemSch_eArrest_rule_20"/>
+   <svrl:fired-rule context="nem:eArrest.22[. != '']" id="nemSch_eArrest_rule_22"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/EMS/xml/EMSDataSet-nemSch_e071_A.xml"
+                        id="nemSch_eHistory"
+                        name="EMSDataSet / Patient History Information"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/EMS/xml/EMSDataSet-nemSch_e071_A.xml"
+                        id="nemSch_eVitals"
+                        name="EMSDataSet / Patient Vital Sign Information"/>
+   <svrl:fired-rule context="nem:eVitals.01[. != '']" id="nemSch_eVitals_rule_2"/>
+   <svrl:fired-rule context="nem:eVitals.16[. != '']" id="nemSch_eVitals_rule_3"/>
+   <svrl:fired-rule context="nem:eVitals.01[. != '']" id="nemSch_eVitals_rule_2"/>
+   <svrl:fired-rule context="nem:eVitals.16[. != '']" id="nemSch_eVitals_rule_3"/>
+   <svrl:fired-rule context="nem:eVitals.01[. != '']" id="nemSch_eVitals_rule_2"/>
+   <svrl:fired-rule context="nem:eVitals.16[. != '']" id="nemSch_eVitals_rule_3"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/EMS/xml/EMSDataSet-nemSch_e071_A.xml"
+                        id="nemSch_eMedications"
+                        name="EMSDataSet / Intervention Medications Information"/>
+   <svrl:fired-rule context="nem:eMedications.01[. != '']" id="nemSch_eMedications_rule_2"/>
+   <svrl:fired-rule context="nem:eMedications.03[. != '' and @CodeType]"
+                    id="nemSch_eMedications_rule_4"/>
+   <svrl:fired-rule context="nem:eMedications.01[. != '']" id="nemSch_eMedications_rule_2"/>
+   <svrl:fired-rule context="nem:eMedications.03[. != '' and @CodeType]"
+                    id="nemSch_eMedications_rule_4"/>
+   <svrl:fired-rule context="nem:eMedications.01[. != '']" id="nemSch_eMedications_rule_2"/>
+   <svrl:fired-rule context="nem:eMedications.03[. != '' and @CodeType]"
+                    id="nemSch_eMedications_rule_4"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/EMS/xml/EMSDataSet-nemSch_e071_A.xml"
+                        id="nemSch_eProcedures"
+                        name="EMSDataSet / Intervention Procedures Information"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/EMS/xml/EMSDataSet-nemSch_e071_A.xml"
+                        id="nemSch_eDisposition"
+                        name="EMSDataSet / Patient Disposition Information"/>
+   <svrl:fired-rule context="nem:eDisposition.06[. != '']" id="nemSch_eDisposition_rule_3"/>
+   <svrl:fired-rule context="nem:eDisposition.27" id="nemSch_eDisposition_rule_14"/>
+   <svrl:fired-rule context="nem:eDisposition.28" id="nemSch_eDisposition_rule_15"/>
+   <svrl:fired-rule context="nem:eDisposition.16" id="nemSch_eDisposition_rule_5"/>
+   <svrl:fired-rule context="nem:eDisposition.17" id="nemSch_eDisposition_rule_6"/>
+   <svrl:fired-rule context="nem:eDisposition.HospitalTeamActivationGroup[* != '']"
+                    id="nemSch_eDisposition_rule_12"/>
+   <svrl:fired-rule context="nem:eDisposition.25[. != '']" id="nemSch_eDisposition_rule_13"/>
+</svrl:schematron-output>

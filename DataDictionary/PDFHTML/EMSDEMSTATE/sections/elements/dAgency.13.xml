@@ -1,0 +1,31 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dAgency.13"  minOccurs="1"  maxOccurs="1"  dataTypeName="OrganizationalType"  isNillable="No">
+<name>Organizational Type</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The organizational structure from which EMS services are delivered (fire, hospital, county, etc).</definition>
+<v2Number>D01_08</v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Organizational Type is associated with the EMS Agency and the specific EMS Agency Number (dAgency.02).</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <OrganizationalType baseType="string">
+    <facet name="enumeration" value="9912001" annotation="Fire Department"/>
+    <facet name="enumeration" value="9912003" annotation="Governmental, Non-Fire"/>
+    <facet name="enumeration" value="9912005" annotation="Hospital"/>
+    <facet name="enumeration" value="9912007" annotation="Private, Nonhospital"/>
+    <facet name="enumeration" value="9912009" annotation="Tribal"/>
+  </OrganizationalType>
+</restrictions>
+<asserts>
+  <assert id="nemSch_d008" role="Warning">
+      <elementRef elementNumber="dAgency.26">Fire Department ID Number</elementRef> should be recorded when <elementRef elementNumber="dAgency.13">Organizational Type</elementRef> is &quot;Fire Department&quot;.
+      </assert>
+  <assert id="nemSch_d009" role="Warning">
+      <elementRef elementNumber="dAgency.26">Fire Department ID Number</elementRef> should only be recorded when <elementRef elementNumber="dAgency.13">Organizational Type</elementRef> is &quot;Fire Department&quot;.
+      </assert>
+</asserts>
+</element>

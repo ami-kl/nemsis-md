@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dPersonnel.25"  minOccurs="0"  maxOccurs="1"  dataTypeName="DateType"  isNillable="No">
+<name>EMS Personnel's State EMS Current Certification Date</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The date of the personnel's current EMS certification/licensure.</definition>
+<v2Number>D08_17</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Clarified as the current certification/licensure.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <DateType baseType="date">
+    <facet name="minInclusive" value="1900-01-01"/>
+    <facet name="maxInclusive" value="2050-01-01"/>
+  </DateType>
+</restrictions>
+</element>

@@ -1,0 +1,50 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eResponse.08"  minOccurs="1"  maxOccurs="M"  dataTypeName="EMSDispatchDelayReason"  isNillable="Yes">
+<name>Type of Dispatch Delay</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The dispatch delays, if any, associated with the dispatch of the EMS unit to the EMS event.</definition>
+<v2Number>E02_06</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>A dispatch delay is any time delay that occurs from the time of PSAP call (eTimes.01) to the time the unit is notified by dispatch (eTimes.03).</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EMSDispatchDelayReason baseType="string">
+    <facet name="enumeration" value="2208001" annotation="Caller (Uncooperative)"/>
+    <facet name="enumeration" value="2208003" annotation="Diversion/Failure (of previous unit)"/>
+    <facet name="enumeration" value="2208005" annotation="High Call Volume"/>
+    <facet name="enumeration" value="2208007" annotation="Language Barrier"/>
+    <facet name="enumeration" value="2208009" annotation="Incomplete Address Information Provided"/>
+    <facet name="enumeration" value="2208011" annotation="No EMS Vehicles (Units) Available"/>
+    <facet name="enumeration" value="2208013" annotation="None/No Delay"/>
+    <facet name="enumeration" value="2208015" annotation="Other"/>
+    <facet name="enumeration" value="2208017" annotation="Technical Failure (Computer, Phone etc.)"/>
+    <facet name="enumeration" value="2208019" annotation="Communication Specialist-Assignment Error"/>
+    <facet name="enumeration" value="2208021" annotation="No Receiving MD, Bed, Hospital"/>
+    <facet name="enumeration" value="2208023" annotation="Specialty Team Delay"/>
+  </EMSDispatchDelayReason>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e012" role="Warning">
+      When <elementRef elementNumber="eResponse.08">Type of Dispatch Delay</elementRef> is &quot;None/No Delay&quot;, no other value should be recorded.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Type of Dispatch Delay has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Type of Dispatch Delay is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Type of Dispatch Delay has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+
+Scenario: We want to extend eMedications.08 - Medication Complication with some new codes that map back to a NEMSIS code
+
+	eMedications.08 (Medication Complication) has the following options: 
+		3708001	Altered Mental Status
+		3708003	Apnea
+		3708005	Bleeding
+		3708007	Bradycardia
+		3708009	Bradypnea
+		3708011	Diarrhea
+		3708013	Extravasation
+		3708015	Hypertension
+		3708017	Hyperthermia
+		3708019	Hypotension
+		3708021	Hypothermia
+		3708023	Hypoxia
+		3708025	Injury
+		3708027	Itching/Urticaria
+		3708029	Nausea
+		3708031	None
+		3708033	Other (Not Listed)
+		3708035	Respiratory Distress
+		3708037	Tachycardia
+		3708039	Tachypnea
+		3708041	Vomiting       
+		
+	We want to extend the code 3708035 (Respiratory Distress) to include : 
+		A101 Breathing Rate Change
+		A103 Grunting
+		A105 Nose Flaring
+		A107 Wheezing
+
+	Additional Custom Element Information		
+		Data Type: 9902009 (Text/String)			
+		Multiplicity: 9923001 (No)
+		Usage: 9903003 (Required)
+
+-->
+				
+<EMSDataSet xsi:schemaLocation="http://www.nemsis.org 
+	http://nemsis.org/media/nemsis_v3/release-3.5.0/XSDs/NEMSIS_XSDs/EMSDataSet_v3.xsd" xmlns="http://www.nemsis.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Header>
+		<DemographicGroup>
+			<dAgency.01>a</dAgency.01>
+			<dAgency.02>a</dAgency.02>
+			<dAgency.04>12</dAgency.04>
+		</DemographicGroup>
+		<eCustomConfiguration>
+			<eCustomConfiguration.CustomGroup CustomElementID="config_303">
+				<eCustomConfiguration.01 nemsisElement="eVitals.26">custom eMedications.08</eCustomConfiguration.01>
+				<eCustomConfiguration.02>associated with eMedications.08</eCustomConfiguration.02>
+				<eCustomConfiguration.03>9902009</eCustomConfiguration.03>
+				<eCustomConfiguration.04>9923001</eCustomConfiguration.04>
+				<eCustomConfiguration.05>9903003</eCustomConfiguration.05>
+				<eCustomConfiguration.06 nemsisCode="3708035" customValueDescription="Breathing Rate Change">A101</eCustomConfiguration.06>
+				<eCustomConfiguration.06 nemsisCode="3708035" customValueDescription="Grunting">A103</eCustomConfiguration.06>
+				<eCustomConfiguration.06 nemsisCode="3708035" customValueDescription="Nose Flaring">A105</eCustomConfiguration.06>
+				<eCustomConfiguration.06 nemsisCode="3708035" customValueDescription="Wheezing">A107</eCustomConfiguration.06>
+			</eCustomConfiguration.CustomGroup>
+		</eCustomConfiguration>
+		<PatientCareReport UUID="8c07ecf9-5c57-404e-b199-555a79ed1c3f">
+			<eRecord>
+				<eRecord.01>aaa</eRecord.01>
+				<eRecord.SoftwareApplicationGroup>
+					<eRecord.02>Software 1</eRecord.02>
+					<eRecord.03>a</eRecord.03>
+					<eRecord.04>a</eRecord.04>
+				</eRecord.SoftwareApplicationGroup>
+			</eRecord>
+			<eResponse>
+				<eResponse.AgencyGroup>
+					<eResponse.01>a</eResponse.01>
+				</eResponse.AgencyGroup>
+				<eResponse.03>aaa</eResponse.03>
+				<eResponse.04>aaa</eResponse.04>
+				<eResponse.ServiceGroup>
+					<eResponse.05>2205001</eResponse.05>
+				</eResponse.ServiceGroup>
+				<eResponse.07>2207013</eResponse.07>
+				<eResponse.08>2208001</eResponse.08>
+				<eResponse.09>2209001</eResponse.09>
+				<eResponse.10>2210001</eResponse.10>
+				<eResponse.11>2211001</eResponse.11>
+				<eResponse.12>2212001</eResponse.12>
+				<eResponse.13>a</eResponse.13>
+				<eResponse.14>a</eResponse.14>
+				<eResponse.23>2223001</eResponse.23>
+				<eResponse.24>2224001</eResponse.24>
+			</eResponse>
+			<eDispatch>
+				<eDispatch.01>2301001</eDispatch.01>
+				<eDispatch.02>2302001</eDispatch.02>
+			</eDispatch>
+			<eTimes>
+				<eTimes.01>2011-01-01T00:00:00-00:00</eTimes.01>
+				<eTimes.03>2011-01-01T00:00:00-00:00</eTimes.03>
+				<eTimes.05>2011-01-01T00:00:00-00:00</eTimes.05>
+				<eTimes.06>2011-01-01T00:00:00-00:00</eTimes.06>
+				<eTimes.07>2011-01-01T00:00:00-00:00</eTimes.07>
+				<eTimes.09>2011-01-01T00:00:00-00:00</eTimes.09>
+				<eTimes.11>2011-01-01T00:00:00-00:00</eTimes.11>
+				<eTimes.12>2011-01-01T00:00:00-00:00</eTimes.12>
+				<eTimes.13>2011-01-01T00:00:00-00:00</eTimes.13>
+			</eTimes>
+			<ePatient>
+				<ePatient.07>12345</ePatient.07>
+				<ePatient.08>12</ePatient.08>
+				<ePatient.09>00000</ePatient.09>
+				<ePatient.13>9906001</ePatient.13>
+				<ePatient.14>2514001</ePatient.14>
+				<ePatient.AgeGroup>
+					<ePatient.15>1</ePatient.15>
+					<ePatient.16>2516001</ePatient.16>
+				</ePatient.AgeGroup>
+			</ePatient>
+			<ePayment>
+				<ePayment.01>2601001</ePayment.01>
+				<ePayment.50>2650001</ePayment.50>
+			</ePayment>
+			<eScene>
+				<eScene.01>9923001</eScene.01>
+				<eScene.06>2707001</eScene.06>
+				<eScene.07>9923003</eScene.07>
+				<eScene.08>2708001</eScene.08>
+				<eScene.09>Y92.0</eScene.09>
+				<eScene.18>12</eScene.18>
+				<eScene.19>00000</eScene.19>
+				<eScene.21>12345</eScene.21>
+			</eScene>
+			<eSituation>
+				<eSituation.01>2011-01-01T00:00:00-00:00</eSituation.01>
+				<eSituation.02>9922001</eSituation.02>
+				<eSituation.07>2807001</eSituation.07>
+				<eSituation.08>2808001</eSituation.08>
+				<eSituation.09>R00</eSituation.09>
+				<eSituation.10>R00</eSituation.10>
+				<eSituation.11>T73</eSituation.11>
+				<eSituation.12>T73</eSituation.12>
+				<eSituation.13>2813001</eSituation.13>
+				<eSituation.17>Y93.a</eSituation.17>
+				<eSituation.18>2011-01-01T00:00:00-00:00</eSituation.18>
+				<eSituation.20>2820005</eSituation.20>
+			</eSituation>
+			<eInjury>
+				<eInjury.01>T65.9</eInjury.01>
+				<eInjury.03>2903001</eInjury.03>
+				<eInjury.04>2904001</eInjury.04>
+			</eInjury>
+			<eArrest>
+				<eArrest.01>3001001</eArrest.01>
+				<eArrest.02>3002001</eArrest.02>
+				<eArrest.03>3003001</eArrest.03>
+				<eArrest.04>3004001</eArrest.04>
+				<eArrest.07>3007001</eArrest.07>
+				<eArrest.09>3009001</eArrest.09>
+				<eArrest.11>3011001</eArrest.11>
+				<eArrest.12>3012001</eArrest.12>
+				<eArrest.14>2011-01-01T00:00:00-00:00</eArrest.14>
+				<eArrest.16>3016001</eArrest.16>
+				<eArrest.17>9901001</eArrest.17>
+				<eArrest.18>3018001</eArrest.18>
+				<eArrest.20>3020009</eArrest.20>
+				<eArrest.21>3021011</eArrest.21>
+				<eArrest.22>3022005</eArrest.22>
+			</eArrest>
+			<eHistory>
+				<eHistory.01>3101001</eHistory.01>
+				<eHistory.17>3117001</eHistory.17>
+			</eHistory>
+			<eVitals>
+				<eVitals.VitalGroup>
+					<eVitals.01>2011-01-01T10:12:00-07:00</eVitals.01>
+					<eVitals.02>9923001</eVitals.02>
+					<eVitals.CardiacRhythmGroup>
+						<eVitals.03>9901003</eVitals.03>
+						<eVitals.04>3304001</eVitals.04>
+						<eVitals.05>3305001</eVitals.05>
+					</eVitals.CardiacRhythmGroup>
+					<eVitals.BloodPressureGroup>
+						<eVitals.06>0</eVitals.06>
+						<eVitals.08>3308001</eVitals.08>
+					</eVitals.BloodPressureGroup>
+					<eVitals.HeartRateGroup>
+						<eVitals.10>0</eVitals.10>
+					</eVitals.HeartRateGroup>
+					<eVitals.12>0</eVitals.12>
+					<eVitals.14>0</eVitals.14>
+					<eVitals.16>0</eVitals.16>
+					<eVitals.18>0</eVitals.18>
+					<eVitals.GlasgowScoreGroup>
+						<eVitals.19>1</eVitals.19>
+						<eVitals.20>1</eVitals.20>
+						<eVitals.21>1</eVitals.21>
+						<eVitals.22>3322001</eVitals.22>
+					</eVitals.GlasgowScoreGroup>
+					<eVitals.26>3326001</eVitals.26>
+					<eVitals.PainScaleGroup>
+						<eVitals.27>0</eVitals.27>
+					</eVitals.PainScaleGroup>
+					<eVitals.StrokeScaleGroup>
+						<eVitals.29>3329001</eVitals.29>
+						<eVitals.30>3330001</eVitals.30>
+					</eVitals.StrokeScaleGroup>
+					<eVitals.31>3331001</eVitals.31>
+				</eVitals.VitalGroup>
+				<eVitals.VitalGroup>
+					<eVitals.01>2011-01-01T10:14:00-07:00</eVitals.01>
+					<eVitals.02>9923001</eVitals.02>
+					<eVitals.CardiacRhythmGroup>
+						<eVitals.03>9901003</eVitals.03>
+						<eVitals.04>3304001</eVitals.04>
+						<eVitals.05>3305001</eVitals.05>
+					</eVitals.CardiacRhythmGroup>
+					<eVitals.BloodPressureGroup>
+						<eVitals.06>0</eVitals.06>
+						<eVitals.08>3308001</eVitals.08>
+					</eVitals.BloodPressureGroup>
+					<eVitals.HeartRateGroup>
+						<eVitals.10>0</eVitals.10>
+					</eVitals.HeartRateGroup>
+					<eVitals.12>0</eVitals.12>
+					<eVitals.14>0</eVitals.14>
+					<eVitals.16>0</eVitals.16>
+					<eVitals.18>0</eVitals.18>
+					<eVitals.GlasgowScoreGroup>
+						<eVitals.19>1</eVitals.19>
+						<eVitals.20>1</eVitals.20>
+						<eVitals.21>1</eVitals.21>
+						<eVitals.22>3322001</eVitals.22>
+					</eVitals.GlasgowScoreGroup>
+					<eVitals.26>3326001</eVitals.26>
+					<eVitals.PainScaleGroup>
+						<eVitals.27>0</eVitals.27>
+					</eVitals.PainScaleGroup>
+					<eVitals.StrokeScaleGroup>
+						<eVitals.29>3329001</eVitals.29>
+						<eVitals.30>3330001</eVitals.30>
+					</eVitals.StrokeScaleGroup>
+					<eVitals.31>3331001</eVitals.31>
+				</eVitals.VitalGroup>
+			</eVitals>
+			<eProtocols>
+				<eProtocols.ProtocolGroup>
+					<eProtocols.01>9914001</eProtocols.01>
+					<eProtocols.02>3602001</eProtocols.02>
+				</eProtocols.ProtocolGroup>
+			</eProtocols>
+			<eMedications>
+				<eMedications.MedicationGroup>
+					<eMedications.01>2011-01-01T00:00:00-00:00</eMedications.01>
+					<eMedications.02>9923003</eMedications.02>
+					<eMedications.03 CodeType="9924003">23</eMedications.03>
+					<eMedications.04>9927011</eMedications.04>
+					<eMedications.DosageGroup>
+						<eMedications.05>123456.12</eMedications.05>
+						<eMedications.06>3706001</eMedications.06>
+					</eMedications.DosageGroup>
+					<eMedications.07>9916001</eMedications.07>
+					<eMedications.08>3708001</eMedications.08>
+					<eMedications.08 CorrelationID="refid_1">3708035</eMedications.08>
+					<eMedications.10>9905001</eMedications.10>
+				</eMedications.MedicationGroup>
+			</eMedications>
+			<eProcedures>
+				<eProcedures.ProcedureGroup>
+					<eProcedures.01>2011-01-01T00:00:00-00:00</eProcedures.01>
+					<eProcedures.02>9923001</eProcedures.02>
+					<eProcedures.03>100000</eProcedures.03>
+					<eProcedures.05>1</eProcedures.05>
+					<eProcedures.06>9923003</eProcedures.06>
+					<eProcedures.07>3907001</eProcedures.07>
+					<eProcedures.08>9916003</eProcedures.08>
+					<eProcedures.10>9905003</eProcedures.10>
+				</eProcedures.ProcedureGroup>
+			</eProcedures>
+			<eDisposition>
+				<eDisposition.DestinationGroup>
+					<eDisposition.05>12</eDisposition.05>
+					<eDisposition.06>12345</eDisposition.06>
+					<eDisposition.07>00000</eDisposition.07>
+				</eDisposition.DestinationGroup>
+				<eDisposition.IncidentDispositionGroup>
+					<eDisposition.27>4227003</eDisposition.27>
+					<eDisposition.28>4228005</eDisposition.28>
+					<eDisposition.29>4229011</eDisposition.29>
+					<eDisposition.30>4230013</eDisposition.30>
+				</eDisposition.IncidentDispositionGroup>
+				<eDisposition.16>4216001</eDisposition.16>
+				<eDisposition.17>4217001</eDisposition.17>
+				<eDisposition.18>4218001</eDisposition.18>
+				<eDisposition.19>4219001</eDisposition.19>
+				<eDisposition.20>4220001</eDisposition.20>
+				<eDisposition.21>4221001</eDisposition.21>
+				<eDisposition.22>4222001</eDisposition.22>
+				<eDisposition.23>9908001</eDisposition.23>
+				<eDisposition.HospitalTeamActivationGroup>
+					<eDisposition.24>4224001</eDisposition.24>
+					<eDisposition.25>2011-01-01T00:00:00-00:00</eDisposition.25>
+				</eDisposition.HospitalTeamActivationGroup>
+				<eDisposition.32>4232007</eDisposition.32>
+			</eDisposition>
+			<eOutcome>
+				<eOutcome.01>01</eOutcome.01>
+				<eOutcome.02>01</eOutcome.02>
+				<eOutcome.EmergencyDepartmentProceduresGroup>
+					<eOutcome.09>ABCD</eOutcome.09>
+					<eOutcome.19>2011-01-01T00:00:00-00:00</eOutcome.19>
+				</eOutcome.EmergencyDepartmentProceduresGroup>
+				<eOutcome.10>A01</eOutcome.10>
+				<eOutcome.11>2011-01-01T00:00:00-00:00</eOutcome.11>
+				<eOutcome.HospitalProceduresGroup>
+					<eOutcome.12>A01</eOutcome.12>
+					<eOutcome.20>2011-01-01T00:00:00-00:00</eOutcome.20>
+				</eOutcome.HospitalProceduresGroup>
+				<eOutcome.13>A01</eOutcome.13>
+				<eOutcome.16>2011-01-01T00:00:00-00:00</eOutcome.16>
+				<eOutcome.18>2011-01-01T00:00:00-00:00</eOutcome.18>
+			</eOutcome>
+			<eCustomResults>
+				<eCustomResults.ResultsGroup>
+					<eCustomResults.01>A107</eCustomResults.01>
+					<eCustomResults.02>config_303</eCustomResults.02>
+					<eCustomResults.03>refid_1</eCustomResults.03>
+				</eCustomResults.ResultsGroup>
+			</eCustomResults>
+			<eOther>
+				<eOther.EMSCrewMemberGroup>
+					<eOther.05>9923001</eOther.05>
+				</eOther.EMSCrewMemberGroup>
+			</eOther>
+		</PatientCareReport>
+	</Header>
+</EMSDataSet>

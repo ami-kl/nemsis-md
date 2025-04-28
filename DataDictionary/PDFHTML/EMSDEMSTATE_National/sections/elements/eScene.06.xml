@@ -1,0 +1,41 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eScene.06"  minOccurs="1"  maxOccurs="1"  dataTypeName="NumberOfPatientsAtScene"  isNillable="Yes">
+<name>Number of Patients at Scene</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Indicator of how many total patients were at the scene.</definition>
+<v2Number>E08_05</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <NumberOfPatientsAtScene baseType="string">
+    <facet name="enumeration" value="2707001" annotation="Multiple"/>
+    <facet name="enumeration" value="2707003" annotation="None"/>
+    <facet name="enumeration" value="2707005" annotation="Single"/>
+  </NumberOfPatientsAtScene>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e067" role="Warning">
+      <elementRef elementNumber="eScene.06">Number of Patients at Scene</elementRef> should be &quot;Multiple&quot; or &quot;Single&quot; when <elementRef elementNumber="eDisposition.27">Unit Disposition</elementRef> is &quot;Patient Contact Made&quot;.
+      </assert>
+  <assert id="nemSch_e068" role="Warning">
+      <elementRef elementNumber="eScene.06">Number of Patients at Scene</elementRef> should be &quot;Multiple&quot; when <elementRef elementNumber="eScene.07">Mass Casualty Incident</elementRef> is &quot;Yes&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Number of Patients at Scene has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Number of Patients at Scene is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

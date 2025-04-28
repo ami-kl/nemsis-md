@@ -1,0 +1,23 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dVehicle.13"  minOccurs="0"  maxOccurs="1"  dataTypeName="AnnualOdometerReading"  isNillable="No">
+<name>Annual Vehicle Miles/Kilometers</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The number of miles/kilometers the vehicle accumulated in service for the agency for the defined year (Odometer Reading).</definition>
+<v2Number>D06_10</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Associated with each year of (dVehicle.11) Year Miles/Kilometers Hours Accrued.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <AnnualOdometerReading baseType="decimal">
+    <facet name="totalDigits" value="7"/>
+    <facet name="fractionDigits" value="1"/>
+  </AnnualOdometerReading>
+</restrictions>
+<attributes>
+  <DistanceUnit baseType="string"><facet name="enumeration" value="9929001" annotation="Kilometers"/><facet name="enumeration" value="9929003" annotation="Miles"/></DistanceUnit>
+</attributes>
+</element>

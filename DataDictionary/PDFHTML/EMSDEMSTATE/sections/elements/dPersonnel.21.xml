@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dPersonnel.21"  minOccurs="0"  maxOccurs="1"  dataTypeName="PersonnelAgencyIDNumber"  isNillable="No">
+<name>EMS Personnel's Agency ID Number</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The local agency ID number for the personnel.</definition>
+<v2Number>D07_01</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This is a local ID and not the ID associated with the state credential. This may be the same as the state credential ID depending on the state and local implementation. This should be a unique number and not reused.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <PersonnelAgencyIDNumber baseType="string">
+    <facet name="minLength" value="2"/>
+    <facet name="maxLength" value="50"/>
+  </PersonnelAgencyIDNumber>
+</restrictions>
+</element>

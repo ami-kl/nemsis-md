@@ -1,0 +1,25 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eResponse.01"  minOccurs="1"  maxOccurs="1"  dataTypeName="EMSAgencyNumber"  isNillable="No">
+<name>EMS Agency Number</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The state-assigned provider number of the responding agency.</definition>
+<v2Number>E02_01</v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>The EMS Agency Number in eResponse.01 can auto-populate from dAgency.02 EMS Agency Number in the demographic section.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EMSAgencyNumber baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="15"/>
+  </EMSAgencyNumber>
+</restrictions>
+<asserts>
+  <assert id="nemSch_e011" role="Warning">
+      <elementRef elementNumber="eResponse.01">EMS Agency Number</elementRef> in the patient care report should match <elementRef elementNumber="dAgency.02">EMS Agency Number</elementRef> in the agency demographic information.
+      </assert>
+</asserts>
+</element>

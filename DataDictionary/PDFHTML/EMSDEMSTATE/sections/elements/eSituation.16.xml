@@ -1,0 +1,41 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eSituation.16"  minOccurs="0"  maxOccurs="1"  dataTypeName="PatientsOccupation"  isNillable="No">
+<name>Patient's Occupation</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The occupation of the patient.</definition>
+<v2Number>E07_17</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Based on the Standard Occupational Classification of the US Bureau of Labor Statistics <br/>(https://www.bls.gov/soc/2018/soc_structure_2018.pdf)</v3Comment>
+<v3Changes>Added to better describe work related injury.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <PatientsOccupation baseType="string">
+    <facet name="enumeration" value="2816001" annotation="Architecture and Engineering Occupations"/>
+    <facet name="enumeration" value="2816003" annotation="Arts, Design, Entertainment, Sports, and Media Occupations"/>
+    <facet name="enumeration" value="2816005" annotation="Building and Grounds Cleaning and Maintenance Occupations"/>
+    <facet name="enumeration" value="2816007" annotation="Business and Financial Operations Occupations"/>
+    <facet name="enumeration" value="2816009" annotation="Community and Social Services Occupations"/>
+    <facet name="enumeration" value="2816011" annotation="Computer and Mathematical Occupations"/>
+    <facet name="enumeration" value="2816013" annotation="Construction and Extraction Occupations"/>
+    <facet name="enumeration" value="2816015" annotation="Educational Instruction and Library Occupations"/>
+    <facet name="enumeration" value="2816017" annotation="Farming, Fishing and Forestry Occupations"/>
+    <facet name="enumeration" value="2816019" annotation="Food Preparation and Serving Related Occupations"/>
+    <facet name="enumeration" value="2816021" annotation="Healthcare Practitioners and Technical Occupations"/>
+    <facet name="enumeration" value="2816023" annotation="Healthcare Support Occupations"/>
+    <facet name="enumeration" value="2816025" annotation="Installation, Maintenance, and Repair Occupations"/>
+    <facet name="enumeration" value="2816027" annotation="Legal Occupations"/>
+    <facet name="enumeration" value="2816029" annotation="Life, Physical, and Social Science Occupations"/>
+    <facet name="enumeration" value="2816031" annotation="Management Occupations"/>
+    <facet name="enumeration" value="2816033" annotation="Military Specific Occupations"/>
+    <facet name="enumeration" value="2816035" annotation="Office and Administrative Support Occupations"/>
+    <facet name="enumeration" value="2816037" annotation="Personal Care and Service Occupations"/>
+    <facet name="enumeration" value="2816039" annotation="Production Occupations"/>
+    <facet name="enumeration" value="2816041" annotation="Protective Service Occupations"/>
+    <facet name="enumeration" value="2816043" annotation="Sales and Related Occupations"/>
+    <facet name="enumeration" value="2816045" annotation="Transportation and Material Moving Occupations"/>
+  </PatientsOccupation>
+</restrictions>
+</element>

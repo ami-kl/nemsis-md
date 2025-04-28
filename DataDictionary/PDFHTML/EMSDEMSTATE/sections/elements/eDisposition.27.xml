@@ -1,0 +1,71 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDisposition.27"  minOccurs="1"  maxOccurs="1"  dataTypeName="UnitDisposition"  isNillable="No">
+<name>Unit Disposition</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The unit disposition for an EMS event identifying whether patient contact was made by this EMS unit/crew.</definition>
+<v2Number></v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Grouped with Incident and Transport dispositions. Who provided care or services is defined in Incident Dispostion.</v3Comment>
+<v3Changes>Element added with the release of v3.5.0</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <UnitDisposition baseType="string">
+    <facet name="enumeration" value="4227001" annotation="Patient Contact Made"/>
+    <facet name="enumeration" value="4227003" annotation="Cancelled on Scene"/>
+    <facet name="enumeration" value="4227005" annotation="Cancelled Prior to Arrival at Scene"/>
+    <facet name="enumeration" value="4227007" annotation="No Patient Contact"/>
+    <facet name="enumeration" value="4227009" annotation="No Patient Found"/>
+    <facet name="enumeration" value="4227011" annotation="Non-Patient Incident (Not Otherwise Listed)"/>
+  </UnitDisposition>
+</restrictions>
+<asserts>
+  <assert id="nemSch_e018" role="Warning">
+      <elementRef elementNumber="eTimes.05">Unit En Route Date/Time</elementRef> should be recorded unless <elementRef elementNumber="eDisposition.27">Unit Disposition</elementRef> is &quot;Cancelled Prior to Arrival at Scene&quot;.
+      </assert>
+  <assert id="nemSch_e020" role="Warning">
+      <elementRef elementNumber="eTimes.06">Unit Arrived on Scene Date/Time</elementRef> should be recorded unless <elementRef elementNumber="eDisposition.27">Unit Disposition</elementRef> is &quot;Cancelled Prior to Arrival at Scene&quot;.
+      </assert>
+  <assert id="nemSch_e023" role="Warning">
+      <elementRef elementNumber="eTimes.07">Arrived at Patient Date/Time</elementRef> should be recorded when <elementRef elementNumber="eDisposition.27">Unit Disposition</elementRef> is &quot;Patient Contact Made&quot;.
+      </assert>
+  <assert id="nemSch_e025" role="Warning">
+      <elementRef elementNumber="eTimes.09">Unit Left Scene Date/Time</elementRef> should be recorded unless <elementRef elementNumber="eDisposition.27">Unit Disposition</elementRef> is &quot;Cancelled Prior to Arrival at Scene&quot;.
+      </assert>
+  <assert id="nemSch_e067" role="Warning">
+      <elementRef elementNumber="eScene.06">Number of Patients at Scene</elementRef> should be &quot;Multiple&quot; or &quot;Single&quot; when <elementRef elementNumber="eDisposition.27">Unit Disposition</elementRef> is &quot;Patient Contact Made&quot;.
+      </assert>
+  <assert id="nemSch_e070" role="Warning">
+      <elementRef elementNumber="eScene.09">Incident Location Type</elementRef> should be recorded unless <elementRef elementNumber="eDisposition.27">Unit Disposition</elementRef> is &quot;Cancelled Prior to Arrival at Scene&quot;.
+      </assert>
+  <assert id="nemSch_e071" role="Warning">
+      <elementRef elementNumber="eScene.18">Incident State</elementRef> should be recorded unless <elementRef elementNumber="eDisposition.27">Unit Disposition</elementRef> is &quot;Cancelled Prior to Arrival at Scene&quot;.
+      </assert>
+  <assert id="nemSch_e072" role="Warning">
+      <elementRef elementNumber="eScene.19">Incident ZIP Code</elementRef> should be recorded unless <elementRef elementNumber="eDisposition.27">Unit Disposition</elementRef> is &quot;Cancelled Prior to Arrival at Scene&quot;.
+      </assert>
+  <assert id="nemSch_e073" role="Warning">
+      <elementRef elementNumber="eScene.21">Incident County</elementRef> should be recorded unless <elementRef elementNumber="eDisposition.27">Unit Disposition</elementRef> is &quot;Cancelled Prior to Arrival at Scene&quot;.
+      </assert>
+  <assert id="nemSch_e180" role="Warning">
+      <elementRef elementNumber="eDisposition.27">Unit Disposition</elementRef> should be &quot;Patient Contact Made&quot; when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated...&quot; or &quot;Patient Refused Evaluation/Care&quot;.
+      </assert>
+  <assert id="nemSch_e181" role="Warning">
+      <elementRef elementNumber="eDisposition.27">Unit Disposition</elementRef> should be &quot;Patient Contact Made&quot; when <elementRef elementNumber="eDisposition.29">Crew Disposition</elementRef> contains &quot;... Primary Care...&quot; or &quot;Provided Care Supporting Primary EMS Crew&quot;.
+      </assert>
+  <assert id="nemSch_e182" role="Warning">
+      <elementRef elementNumber="eDisposition.27">Unit Disposition</elementRef> should be &quot;Patient Contact Made&quot; when <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> is a value other than &quot;Non-Patient Transport (Not Otherwise Listed)&quot; or &quot;No Transport&quot;.
+      </assert>
+  <assert id="nemSch_e183" role="Warning">
+      <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> should be recorded when <elementRef elementNumber="eDisposition.27">Unit Disposition</elementRef> is &quot;Patient Contact Made&quot;.
+      </assert>
+  <assert id="nemSch_e185" role="Warning">
+      <elementRef elementNumber="eDisposition.29">Crew Disposition</elementRef> should be recorded when <elementRef elementNumber="eDisposition.27">Unit Disposition</elementRef> is &quot;Patient Contact Made&quot;.
+      </assert>
+  <assert id="nemSch_e186" role="Warning">
+      <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> should be recorded when <elementRef elementNumber="eDisposition.27">Unit Disposition</elementRef> is &quot;Patient Contact Made&quot;.
+      </assert>
+</asserts>
+</element>

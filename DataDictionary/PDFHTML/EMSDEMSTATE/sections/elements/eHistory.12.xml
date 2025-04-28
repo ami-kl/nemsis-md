@@ -1,0 +1,50 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eHistory.12"  minOccurs="0"  maxOccurs="1"  dataTypeName="Medication"  isNillable="Yes">
+<name>Current Medications</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The medications the patient currently takes.</definition>
+<v2Number>E12_14</v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>List of medications based on RxNorm (RXCUI) code. 
+<br/><br/>Reference the NEMSIS Suggested Lists at: <a href="https://nemsis.org/technical-resources/version-3/version-3-resource-repository/">https://nemsis.org/technical-resources/version-3/version-3-resource-repository/</a> 
+<br/><br/>RxNorm 
+<br/>Website - <a href="http://uts.nlm.nih.gov">http://uts.nlm.nih.gov</a> 
+<br/><br/>Product - UMLS Metathesaurus 
+<br/>Website - <a href="http://www.nlm.nih.gov/research/umls/rxnorm/docs/rxnormfiles.html">http://www.nlm.nih.gov/research/umls/rxnorm/docs/rxnormfiles.html</a>
+<br/>Product - RxNorm Full Monthly Release</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <Medication baseType="string">
+    <facet name="minLength" value="2"/>
+    <facet name="maxLength" value="9"/>
+  </Medication>
+</restrictions>
+<attributes>
+  <PN>
+    <PN.NoneReported><facet name="enumeration" value="8801015" annotation="None Reported"/></PN.NoneReported>
+    <PN.Refused><facet name="enumeration" value="8801019" annotation="Refused"/></PN.Refused>
+    <PN.Unresponsive><facet name="enumeration" value="8801021" annotation="Unresponsive"/></PN.Unresponsive>
+    <PN.UnableToComplete><facet name="enumeration" value="8801023" annotation="Unable to Complete"/></PN.UnableToComplete>
+  </PN>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e008" role="Error">
+      When Current Medications has a Pertinent Negative, it should be empty and it should not have a Not Value (Not Applicable, Not Recorded, or Not Reporting).
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Current Medications has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Current Medications is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

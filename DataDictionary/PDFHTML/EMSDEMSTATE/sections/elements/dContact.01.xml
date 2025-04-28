@@ -1,0 +1,42 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dContact.01"  minOccurs="0"  maxOccurs="1"  dataTypeName="AgencyContactType"  isNillable="Yes">
+<name>Agency Contact Type</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The contact type within the EMS agency.</definition>
+<v2Number></v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <AgencyContactType baseType="string">
+    <facet name="enumeration" value="1101001" annotation="Administrative Assistant"/>
+    <facet name="enumeration" value="1101003" annotation="EMS Agency Director/Chief/Lead Administrator/CEO"/>
+    <facet name="enumeration" value="1101005" annotation="EMS Assistant Agency Director/Chief/Administrator/CEO"/>
+    <facet name="enumeration" value="1101007" annotation="EMS Assistant Medical Director"/>
+    <facet name="enumeration" value="1101009" annotation="EMS IT/Data Specialist"/>
+    <facet name="enumeration" value="1101011" annotation="EMS Medical Director"/>
+    <facet name="enumeration" value="1101013" annotation="EMS Quality/Performance Improvement Specialist"/>
+    <facet name="enumeration" value="1101015" annotation="EMS Training/Education Specialist"/>
+    <facet name="enumeration" value="1101017" annotation="Other"/>
+  </AgencyContactType>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_d002" role="Error">
+      When Agency Contact Type has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_d001" role="Error">
+      When Agency Contact Type is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

@@ -1,0 +1,41 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.50"  minOccurs="1"  maxOccurs="1"  dataTypeName="CMSServiceLevel"  isNillable="Yes">
+<name>CMS Service Level</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The CMS service level for this EMS encounter.</definition>
+<v2Number>E07_34</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <CMSServiceLevel baseType="string">
+    <facet name="enumeration" value="2650001" annotation="ALS, Level 1"/>
+    <facet name="enumeration" value="2650003" annotation="ALS, Level 1 Emergency"/>
+    <facet name="enumeration" value="2650005" annotation="ALS, Level 2"/>
+    <facet name="enumeration" value="2650007" annotation="BLS"/>
+    <facet name="enumeration" value="2650009" annotation="BLS, Emergency"/>
+    <facet name="enumeration" value="2650011" annotation="Fixed Wing (Airplane)"/>
+    <facet name="enumeration" value="2650013" annotation="Paramedic Intercept"/>
+    <facet name="enumeration" value="2650015" annotation="Specialty Care Transport"/>
+    <facet name="enumeration" value="2650017" annotation="Rotary Wing (Helicopter)"/>
+  </CMSServiceLevel>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When CMS Service Level has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When CMS Service Level is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

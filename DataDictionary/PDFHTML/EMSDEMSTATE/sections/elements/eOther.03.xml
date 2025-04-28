@@ -1,0 +1,33 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eOther.03"  minOccurs="0"  maxOccurs="M"  dataTypeName="PersonalProtectiveEquipmentUsed"  isNillable="No">
+<name>Personal Protective Equipment Used</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The personal protective equipment which was used by EMS personnel during this EMS patient contact.</definition>
+<v2Number>E23_03</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <PersonalProtectiveEquipmentUsed baseType="string">
+    <facet name="enumeration" value="4503001" annotation="Eye Protection"/>
+    <facet name="enumeration" value="4503003" annotation="Gloves"/>
+    <facet name="enumeration" value="4503005" annotation="Helmet"/>
+    <facet name="enumeration" value="4503007" annotation="Level A Suit"/>
+    <facet name="enumeration" value="4503009" annotation="Level B Suit"/>
+    <facet name="enumeration" value="4503011" annotation="Level C Suit"/>
+    <facet name="enumeration" value="4503013" annotation="Level D Suit (Turn out gear)"/>
+    <facet name="enumeration" value="4503015" annotation="Mask-N95"/>
+    <facet name="enumeration" value="4503017" annotation="Mask-Surgical (Non-Fitted)"/>
+    <facet name="enumeration" value="4503019" annotation="Other"/>
+    <facet name="enumeration" value="4503021" annotation="PAPR"/>
+    <facet name="enumeration" value="4503023" annotation="Reflective Vest"/>
+  </PersonalProtectiveEquipmentUsed>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

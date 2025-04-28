@@ -1,0 +1,50 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDisposition.20"  minOccurs="1"  maxOccurs="M"  dataTypeName="ReasonForChoosingDestination"  isNillable="Yes">
+<name>Reason for Choosing Destination</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The reason(s) this EMS unit delivered or transferred the patient to the destination.</definition>
+<v2Number>E20_16</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Required if the patient was transported.  This NEMSIS data element has no relationship to the 5010 CMS claim file data element.  Please refer to ePayment.44 Ambulance Transport Reason Code for billing purposes.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ReasonForChoosingDestination baseType="string">
+    <facet name="enumeration" value="4220001" annotation="Closest Facility"/>
+    <facet name="enumeration" value="4220003" annotation="Diversion"/>
+    <facet name="enumeration" value="4220005" annotation="Family Choice"/>
+    <facet name="enumeration" value="4220007" annotation="Insurance Status/Requirement"/>
+    <facet name="enumeration" value="4220009" annotation="Law Enforcement Choice"/>
+    <facet name="enumeration" value="4220011" annotation="On-Line/On-Scene Medical Direction"/>
+    <facet name="enumeration" value="4220013" annotation="Other"/>
+    <facet name="enumeration" value="4220015" annotation="Patient's Choice"/>
+    <facet name="enumeration" value="4220017" annotation="Patient's Physician's Choice"/>
+    <facet name="enumeration" value="4220019" annotation="Protocol"/>
+    <facet name="enumeration" value="4220021" annotation="Regional Specialty Center"/>
+  </ReasonForChoosingDestination>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_e169" role="Warning">
+      <elementRef elementNumber="eDisposition.20">Reason for Choosing Destination</elementRef> should be recorded when <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> is &quot;Transport by This EMS Unit...&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Reason for Choosing Destination has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Reason for Choosing Destination is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Reason for Choosing Destination has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

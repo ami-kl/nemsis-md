@@ -1,0 +1,62 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eMedications.06"  minOccurs="1"  maxOccurs="1"  dataTypeName="MedicationDosageUnits"  isNillable="Yes">
+<name>Medication Dosage Units</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The unit of medication dosage administered to patient.</definition>
+<v2Number>E18_06</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <MedicationDosageUnits baseType="string">
+    <facet name="enumeration" value="3706001" annotation="Grams (gms)"/>
+    <facet name="enumeration" value="3706003" annotation="Inches (in)"/>
+    <facet name="enumeration" value="3706005" annotation="International Units (IU)"/>
+    <facet name="enumeration" value="3706007" annotation="Keep Vein Open (kvo)"/>
+    <facet name="enumeration" value="3706009" annotation="Liters (l)"/>
+    <facet name="enumeration" value="3706013" annotation="Metered Dose (MDI)"/>
+    <facet name="enumeration" value="3706015" annotation="Micrograms (mcg)"/>
+    <facet name="enumeration" value="3706017" annotation="Micrograms per Kilogram per Minute (mcg/kg/min)"/>
+    <facet name="enumeration" value="3706019" annotation="Milliequivalents (mEq)"/>
+    <facet name="enumeration" value="3706021" annotation="Milligrams (mg)"/>
+    <facet name="enumeration" value="3706023" annotation="Milligrams per Kilogram Per Minute (mg/kg/min)"/>
+    <facet name="enumeration" value="3706025" annotation="Milliliters (ml)"/>
+    <facet name="enumeration" value="3706027" annotation="Milliliters per Hour (ml/hr)"/>
+    <facet name="enumeration" value="3706029" annotation="Other"/>
+    <facet name="enumeration" value="3706031" annotation="Centimeters (cm)"/>
+    <facet name="enumeration" value="3706033" annotation="Drops (gtts)"/>
+    <facet name="enumeration" value="3706035" annotation="Liters Per Minute (LPM [gas])"/>
+    <facet name="enumeration" value="3706037" annotation="Micrograms per Minute (mcg/min)"/>
+    <facet name="enumeration" value="3706039" annotation="Milligrams per Kilogram (mg/kg)"/>
+    <facet name="enumeration" value="3706041" annotation="Milligrams per Minute (mg/min)"/>
+    <facet name="enumeration" value="3706043" annotation="Puffs"/>
+    <facet name="enumeration" value="3706045" annotation="Units per Hour (units/hr)"/>
+    <facet name="enumeration" value="3706047" annotation="Micrograms per Kilogram (mcg/kg)"/>
+    <facet name="enumeration" value="3706049" annotation="Units"/>
+    <facet name="enumeration" value="3706051" annotation="Units per Kilogram per Hour (units/kg/hr)"/>
+    <facet name="enumeration" value="3706053" annotation="Units per Kilogram (units/kg)"/>
+    <facet name="enumeration" value="3706055" annotation="Milligrams per Hour (mg/hr)"/>
+  </MedicationDosageUnits>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e148" role="Warning">
+      <elementRef elementNumber="eMedications.06">Medication Dosage Units</elementRef> should be recorded, unless <elementRef elementNumber="eMedications.02">Medication Administered Prior to this Unit's EMS Care</elementRef> is &quot;Yes&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Medication Dosage Units has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Medication Dosage Units is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

@@ -1,0 +1,37 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eOther.15"  minOccurs="0"  maxOccurs="1"  dataTypeName="SignatureStatus"  isNillable="No">
+<name>Signature Status</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>Indication that the signature for the Type of Person Signing and Signature Reason has been collected or attempted to be collected.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes>Added to better document disposition and billing.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <SignatureStatus baseType="string">
+    <facet name="enumeration" value="4515001" annotation="Not Signed - Crew Called out to another call"/>
+    <facet name="enumeration" value="4515003" annotation="Not Signed - Deceased"/>
+    <facet name="enumeration" value="4515005" annotation="Not Signed - Due to Distress Level"/>
+    <facet name="enumeration" value="4515007" annotation="Not Signed - Equipment Failure"/>
+    <facet name="enumeration" value="4515009" annotation="Not Signed - In Law Enforcement Custody"/>
+    <facet name="enumeration" value="4515011" annotation="Not Signed - Language Barrier"/>
+    <facet name="enumeration" value="4515013" annotation="Not Signed - Mental Status/Impaired"/>
+    <facet name="enumeration" value="4515015" annotation="Not Signed - Minor/Child"/>
+    <facet name="enumeration" value="4515017" annotation="Not Signed - Physical Impairment of Extremities"/>
+    <facet name="enumeration" value="4515019" annotation="Not Signed - Refused"/>
+    <facet name="enumeration" value="4515021" annotation="Not Signed - Transferred Care/No Access to Obtain Signature"/>
+    <facet name="enumeration" value="4515023" annotation="Not Signed - Unconscious"/>
+    <facet name="enumeration" value="4515025" annotation="Not Signed -Visually Impaired"/>
+    <facet name="enumeration" value="4515027" annotation="Physical Signature/Paper Copy Obtained"/>
+    <facet name="enumeration" value="4515031" annotation="Signed"/>
+    <facet name="enumeration" value="4515033" annotation="Signed-Not Patient"/>
+    <facet name="enumeration" value="4515035" annotation="Not Signed-Illiterate (Unable to Read)"/>
+    <facet name="enumeration" value="4515037" annotation="Not Signed-Restrained"/>
+    <facet name="enumeration" value="4515039" annotation="Not Signed-Combative or Uncooperative"/>
+  </SignatureStatus>
+</restrictions>
+</element>

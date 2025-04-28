@@ -1,0 +1,39 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dConfiguration.08"  minOccurs="1"  maxOccurs="1"  dataTypeName="StateCertificationLicensureLevels"  isNillable="No">
+<name>EMS Certification Levels Permitted to Administer Each Medication</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>All EMS certification levels which are permitted to administer the medications listed in dConfiguration.09 (EMS Agency Medications).</definition>
+<v2Number>D04_07</v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Using each certification level within the agency, indicate the approved medications allowed utilizing dConfiguration.09 (EMS Agency Medications).
+													<br/><br/>The category EMT-Intermediate includes EMS professionals with an "85" or "99" certification level.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <StateCertificationLicensureLevels baseType="string">
+    <facet name="enumeration" value="9917001" annotation="Advanced Emergency Medical Technician (AEMT)"/>
+    <facet name="enumeration" value="9917002" annotation="Emergency Medical Technician - Intermediate"/>
+    <facet name="enumeration" value="9917003" annotation="Emergency Medical Responder (EMR)"/>
+    <facet name="enumeration" value="9917005" annotation="Emergency Medical Technician (EMT)"/>
+    <facet name="enumeration" value="9917007" annotation="Paramedic"/>
+    <facet name="enumeration" value="9917019" annotation="Physician"/>
+    <facet name="enumeration" value="9917021" annotation="Critical Care Paramedic"/>
+    <facet name="enumeration" value="9917023" annotation="Community Paramedicine"/>
+    <facet name="enumeration" value="9917025" annotation="Nurse Practitioner"/>
+    <facet name="enumeration" value="9917027" annotation="Physician Assistant"/>
+    <facet name="enumeration" value="9917029" annotation="Licensed Practical Nurse (LPN)"/>
+    <facet name="enumeration" value="9917031" annotation="Registered Nurse"/>
+  </StateCertificationLicensureLevels>
+</restrictions>
+<asserts>
+  <assert id="nemSch_d012" role="Warning">
+      <elementRef elementNumber="dConfiguration.06">EMS Certification Levels Permitted to Perform Each Procedure</elementRef>, within the configuration group for the state recorded in <elementRef elementNumber="dAgency.04">EMS Agency State</elementRef>, should include the level recorded in <elementRef elementNumber="dAgency.11">Level of Service</elementRef>.
+      </assert>
+  <assert id="nemSch_d013" role="Warning">
+      <elementRef elementNumber="dConfiguration.08">EMS Certification Levels Permitted to Administer Each Medication</elementRef>, within the configuration group for the state recorded in <elementRef elementNumber="dAgency.04">EMS Agency State</elementRef>, should include the level recorded in <elementRef elementNumber="dAgency.11">Level of Service</elementRef>.
+      </assert>
+</asserts>
+</element>

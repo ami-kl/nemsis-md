@@ -1,0 +1,56 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eExam.18"  minOccurs="0"  maxOccurs="M"  dataTypeName="EyesAssessment"  isNillable="No">
+<name>Eye Assessment</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The assessment findings of the patient's eye examination.</definition>
+<v2Number>E16_21</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Element eExam.18 - Eye Assessment represents Version 2.2.1 elements E16_21 Eyes-Left Assessment and E16_22 Eyes-Right Assessment. The eye assessment value choices have been combined and expanded.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EyesAssessment baseType="string">
+    <facet name="enumeration" value="3518001" annotation="1-mm"/>
+    <facet name="enumeration" value="3518003" annotation="2-mm"/>
+    <facet name="enumeration" value="3518005" annotation="3-mm"/>
+    <facet name="enumeration" value="3518007" annotation="4-mm"/>
+    <facet name="enumeration" value="3518009" annotation="5-mm"/>
+    <facet name="enumeration" value="3518011" annotation="6-mm"/>
+    <facet name="enumeration" value="3518013" annotation="7-mm"/>
+    <facet name="enumeration" value="3518015" annotation="8-mm or &gt;"/>
+    <facet name="enumeration" value="3518017" annotation="Blind"/>
+    <facet name="enumeration" value="3518019" annotation="Cataract Present"/>
+    <facet name="enumeration" value="3518021" annotation="Clouded"/>
+    <facet name="enumeration" value="3518023" annotation="Deformity"/>
+    <facet name="enumeration" value="3518025" annotation="Dysconjugate Gaze"/>
+    <facet name="enumeration" value="3518027" annotation="Foreign Body"/>
+    <facet name="enumeration" value="3518029" annotation="Glaucoma Present"/>
+    <facet name="enumeration" value="3518031" annotation="Hyphema"/>
+    <facet name="enumeration" value="3518033" annotation="Jaundiced Sclera"/>
+    <facet name="enumeration" value="3518035" annotation="Missing"/>
+    <facet name="enumeration" value="3518037" annotation="Non-Reactive"/>
+    <facet name="enumeration" value="3518039" annotation="Not Done"/>
+    <facet name="enumeration" value="3518041" annotation="Non-Reactive Prosthetic"/>
+    <facet name="enumeration" value="3518043" annotation="Nystagmus Noted"/>
+    <facet name="enumeration" value="3518045" annotation="Open Globe"/>
+    <facet name="enumeration" value="3518047" annotation="PERRL"/>
+    <facet name="enumeration" value="3518049" annotation="Pupil-Irregular/Teardrop"/>
+    <facet name="enumeration" value="3518051" annotation="Reactive"/>
+    <facet name="enumeration" value="3518053" annotation="Sluggish"/>
+    <facet name="enumeration" value="3518055" annotation="Swelling"/>
+    <facet name="enumeration" value="3518057" annotation="Contusion"/>
+    <facet name="enumeration" value="3518059" annotation="Puncture/Stab Wound"/>
+    <facet name="enumeration" value="3518061" annotation="Dilated"/>
+    <facet name="enumeration" value="3518063" annotation="Pin Point"/>
+  </EyesAssessment>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+  <PN>
+    <PN.ExamFindingNotPresent><facet name="enumeration" value="8801005" annotation="Exam Finding Not Present"/></PN.ExamFindingNotPresent>
+  </PN>
+</attributes>
+</element>

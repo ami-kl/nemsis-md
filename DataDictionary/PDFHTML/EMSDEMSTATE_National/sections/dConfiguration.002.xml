@@ -1,0 +1,22 @@
+<?xml-stylesheet type="text/xsl" href="../xslt/grouping.xslt"?>
+<section name="dConfiguration">
+  <group number="dConfiguration.ConfigurationGroup" minOccurs="1" maxOccurs="M" CorrelationID="" UUID="Yes" ProcedureGroupCorrelationID="" CustomElementID="" timeStamp="" isNillable="No">
+    <element number="dConfiguration.01" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="ANSIStateCode"><name>State Associated with this Configuration</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Mandatory</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <group number="dConfiguration.ProcedureGroup" minOccurs="1" maxOccurs="M" CorrelationID="" UUID="Yes" ProcedureGroupCorrelationID="" CustomElementID="" timeStamp="" isNillable="No">
+      <element number="dConfiguration.06" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="StateCertificationLicensureLevels"><name>EMS Certification Levels Permitted to Perform Each Procedure</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Mandatory</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+      <element number="dConfiguration.07" minOccurs="1" maxOccurs="M" CorrelationID="" UUID="" isNillable="No" dataType="snomed"><name>EMS Agency Procedures</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Mandatory</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    </group>
+    <group number="dConfiguration.MedicationGroup" minOccurs="1" maxOccurs="M" CorrelationID="" UUID="Yes" ProcedureGroupCorrelationID="" CustomElementID="" timeStamp="" isNillable="No">
+      <element number="dConfiguration.08" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="StateCertificationLicensureLevels"><name>EMS Certification Levels Permitted to Administer Each Medication</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Mandatory</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+      <element number="dConfiguration.09" minOccurs="1" maxOccurs="M" CorrelationID="" UUID="" isNillable="No" dataType="Medication"><name>EMS Agency Medications</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Mandatory</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    </group>
+    <element number="dConfiguration.10" minOccurs="1" maxOccurs="M" CorrelationID="" UUID="" isNillable="No" dataType="ProtocolsUsed"><name>EMS Agency Protocols</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Mandatory</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <element number="dConfiguration.13" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="EMDtoAgencyServiceArea"><name>Emergency Medical Dispatch (EMD) Provided to EMS Agency Service Area</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Mandatory</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <element number="dConfiguration.16" minOccurs="1" maxOccurs="M" CorrelationID="" UUID="" isNillable="No" dataType="AgencyCallSign"><name>Crew Call Sign</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Mandatory</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+  </group>
+<asserts>
+  <assert id="nemSch_d005" role="Error">
+      UUID must be universally unique.
+      </assert>
+</asserts>
+</section>

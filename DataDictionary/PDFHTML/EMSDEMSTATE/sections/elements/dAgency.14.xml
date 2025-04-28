@@ -1,0 +1,21 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dAgency.14"  minOccurs="1"  maxOccurs="1"  dataTypeName="AgencyOrganizationalTaxStatus"  isNillable="No">
+<name>EMS Agency Organizational Tax Status</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The EMS Agencies business/corporate organizational tax status.</definition>
+<v2Number></v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Associated with the EMS Agency for the specific EMS Agency Number (dAgency.02).</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <AgencyOrganizationalTaxStatus baseType="string">
+    <facet name="enumeration" value="1018001" annotation="For Profit"/>
+    <facet name="enumeration" value="1018003" annotation="Other (e.g., Government)"/>
+    <facet name="enumeration" value="1018005" annotation="Not For Profit"/>
+  </AgencyOrganizationalTaxStatus>
+</restrictions>
+</element>

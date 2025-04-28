@@ -1,0 +1,25 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePatient.19"  minOccurs="0"  maxOccurs="M"  dataTypeName="EmailAddress"  isNillable="No">
+<name>Patient's Email Address</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The email address of the patient.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Added to improve follow-up and billing communication.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EmailAddress baseType="string">
+    <facet name="minLength" value="3"/>
+    <facet name="maxLength" value="100"/>
+    <facet name="pattern" value=".+@.+"/>
+  </EmailAddress>
+</restrictions>
+<attributes>
+  <EmailAddressType baseType="string"><facet name="enumeration" value="9904001" annotation="Personal"/><facet name="enumeration" value="9904003" annotation="Work"/></EmailAddressType>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

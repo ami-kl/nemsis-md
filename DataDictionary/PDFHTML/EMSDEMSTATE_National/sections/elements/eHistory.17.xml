@@ -1,0 +1,53 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eHistory.17"  minOccurs="1"  maxOccurs="M"  dataTypeName="AlcoholDrugUseIndicators"  isNillable="Yes">
+<name>Alcohol/Drug Use Indicators</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Indicators for the potential use of alcohol or drugs by the patient related to the patient's current illness or injury.</definition>
+<v2Number>E12_19</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <AlcoholDrugUseIndicators baseType="string">
+    <facet name="enumeration" value="3117001" annotation="Alcohol Containers/Paraphernalia at Scene"/>
+    <facet name="enumeration" value="3117003" annotation="Drug Paraphernalia at Scene"/>
+    <facet name="enumeration" value="3117005" annotation="Patient Admits to Alcohol Use"/>
+    <facet name="enumeration" value="3117007" annotation="Patient Admits to Drug Use"/>
+    <facet name="enumeration" value="3117009" annotation="Positive Level known from Law Enforcement or Hospital Record"/>
+    <facet name="enumeration" value="3117013" annotation="Physical Exam Indicates Suspected Alcohol or Drug Use"/>
+    <facet name="enumeration" value="3117015" annotation="Bystander/Family Reports Drug Use"/>
+    <facet name="enumeration" value="3117017" annotation="Bystander/Family Reports Alcohol Use"/>
+  </AlcoholDrugUseIndicators>
+</restrictions>
+<attributes>
+  <PN>
+    <PN.NoneReported><facet name="enumeration" value="8801015" annotation="None Reported"/></PN.NoneReported>
+    <PN.UnableToComplete><facet name="enumeration" value="8801023" annotation="Unable to Complete"/></PN.UnableToComplete>
+  </PN>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e008" role="Error">
+      When Alcohol/Drug Use Indicators has a Pertinent Negative, it should be empty and it should not have a Not Value (Not Applicable, Not Recorded, or Not Reporting).
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Alcohol/Drug Use Indicators has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Alcohol/Drug Use Indicators is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Alcohol/Drug Use Indicators has a Not Value, no other value should be recorded.
+      </assert>
+  <assert id="nemSch_e010" role="Warning">
+      When Alcohol/Drug Use Indicators has a Pertinent Negative, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

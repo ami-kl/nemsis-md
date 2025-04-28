@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eOther.04"  minOccurs="0"  maxOccurs="1"  dataTypeName="CrewMemberID"  isNillable="No">
+<name>EMS Professional (Crew Member) ID</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The ID number of the EMS Crew Member associated with eOther.03, eOther.05, eOther.06.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Added to allow documentation of PPE and work related health and safety down to the individual level within each EMS crew.</v3Comment>
+<v3Changes>Added to better document EMS workplace health and safety issues.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <CrewMemberID baseType="string">
+    <facet name="minLength" value="2"/>
+    <facet name="maxLength" value="50"/>
+  </CrewMemberID>
+</restrictions>
+</element>

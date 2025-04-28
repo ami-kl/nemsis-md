@@ -1,0 +1,51 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eSituation.10"  minOccurs="1"  maxOccurs="M"  dataTypeName="AssociatedSymptoms"  isNillable="Yes">
+<name>Other Associated Symptoms</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Other symptoms identified by the patient or observed by EMS personnel.</definition>
+<v2Number>E09_14</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Code list is represented in ICD-10-CM.  Reference the NEMSIS Suggested Lists at: https://nemsis.org/technical-resources/version-3/version-3-resource-repository/	
+							<br/><br/>ICD-10-CM
+							<br/>Website - <a href="http://uts.nlm.nih.gov" target="_blank">http://uts.nlm.nih.gov</a>
+							<br/>Product - UMLS Metathesaurus</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <AssociatedSymptoms baseType="string">
+    <facet name="pattern" value="(R[0-6][0-9](\.[0-9]{1,4})?|(R73\.9)|(R99))|([A-QSTUZ][0-9][0-9A-Z])((\.[0-9A-Z]{1,4})?)"/>
+  </AssociatedSymptoms>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+  <PN>
+    <PN.SymptomNotPresent><facet name="enumeration" value="8801031" annotation="Symptom Not Present"/></PN.SymptomNotPresent>
+  </PN>
+</attributes>
+<asserts>
+  <assert id="nemSch_e005" role="Error">
+      When <elementRef elementNumber="eSituation.10">Other Associated Symptoms</elementRef> has a Pertinent Negative, it should have a value and it should not have a Not Value (Not Applicable, Not Recorded, or Not Reporting).
+      </assert>
+  <assert id="nemSch_e077" role="Warning">
+      <elementRef elementNumber="eSituation.02">Possible Injury</elementRef> should be &quot;Yes&quot; when a symptom or impression is injury-related.
+      </assert>
+  <assert id="nemSch_e081" role="Warning">
+      <elementRef elementNumber="eSituation.10">Other Associated Symptoms</elementRef> should only be recorded when <elementRef elementNumber="eSituation.09">Primary Symptom</elementRef> is recorded.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Other Associated Symptoms has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Other Associated Symptoms is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Other Associated Symptoms has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

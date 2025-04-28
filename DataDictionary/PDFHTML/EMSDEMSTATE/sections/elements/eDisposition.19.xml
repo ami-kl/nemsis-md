@@ -1,0 +1,44 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDisposition.19"  minOccurs="1"  maxOccurs="1"  dataTypeName="AcuityUponEMSReleaseOfPatient"  isNillable="Yes">
+<name>Acuity Upon EMS Release of Patient</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The acuity of the patient's condition after this EMS unit's release of the patient.</definition>
+<v2Number>E20_15</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Definitions related to "Critical, Emergent, and Lower Acuity" can be found in the National EMS Core Content document from NHTSA EMS (DOT HS 809-898 July 2005) at 
+								<br/><a href="https://www.ems.gov/assets/National_EMS_Core_Content.pdf" target="_blank">https://www.ems.gov/assets/National_EMS_Core_Content.pdf</a>
+							<br/><br/>Dead without Resuscitation Efforts would be appropriate if resuscitation was initiated by non-EMS personnel but discontinued immediately upon evaluation by first arriving EMS personnel.
+							<br/><br/>"Non-Acute/Routine" added for use with patients with no clinical issues-such as a refusal for a lift assist-or for routine transfers. "Dead with Resuscitation Efforts (Black)" added for EMS units that arrived and provided resuscitation to a critical patient, but who was deceased at the end of the event (such as in a cardiac arrest).</v3Comment>
+<v3Changes>With the release of v3.5.0 additional values were added to meet the needs of EMS.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <AcuityUponEMSReleaseOfPatient baseType="string">
+    <facet name="enumeration" value="4219001" annotation="Critical (Red)"/>
+    <facet name="enumeration" value="4219003" annotation="Emergent (Yellow)"/>
+    <facet name="enumeration" value="4219005" annotation="Lower Acuity (Green)"/>
+    <facet name="enumeration" value="4219007" annotation="Dead without Resuscitation Efforts (Black)"/>
+    <facet name="enumeration" value="4219009" annotation="Dead with Resuscitation Efforts (Black)"/>
+    <facet name="enumeration" value="4219011" annotation="Non-Acute/Routine"/>
+  </AcuityUponEMSReleaseOfPatient>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e168" role="Warning">
+      <elementRef elementNumber="eDisposition.19">Acuity Upon EMS Release of Patient</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Acuity Upon EMS Release of Patient has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Acuity Upon EMS Release of Patient is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

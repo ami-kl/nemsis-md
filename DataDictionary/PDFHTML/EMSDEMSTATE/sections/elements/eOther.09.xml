@@ -1,0 +1,32 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eOther.09"  minOccurs="0"  maxOccurs="1"  dataTypeName="ExternalElectronicDocuments"  isNillable="No">
+<name>External Electronic Document Type</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>Document type which has been electronically stored with PCR.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Added to allow an improved implementation of electronic healthcare records.</v3Comment>
+<v3Changes>Added to allow an improved implementation of electronic healthcare records.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ExternalElectronicDocuments baseType="string">
+    <facet name="enumeration" value="4509001" annotation="Other Audio Recording"/>
+    <facet name="enumeration" value="4509003" annotation="Billing Information"/>
+    <facet name="enumeration" value="4509005" annotation="Diagnostic Image (CT, X-ray, US, etc.)"/>
+    <facet name="enumeration" value="4509006" annotation="DNR"/>
+    <facet name="enumeration" value="4509008" annotation="Living Will"/>
+    <facet name="enumeration" value="4509009" annotation="ECG/Lab Results"/>
+    <facet name="enumeration" value="4509011" annotation="Guardianship/Power of Attorney"/>
+    <facet name="enumeration" value="4509013" annotation="Other Healthcare Record"/>
+    <facet name="enumeration" value="4509015" annotation="Other"/>
+    <facet name="enumeration" value="4509017" annotation="Patient Identification"/>
+    <facet name="enumeration" value="4509019" annotation="Patient Refusal Sheet"/>
+    <facet name="enumeration" value="4509021" annotation="Other Picture/Graphic"/>
+    <facet name="enumeration" value="4509025" annotation="Other Video/Movie"/>
+    <facet name="enumeration" value="4509027" annotation="ePCR"/>
+  </ExternalElectronicDocuments>
+</restrictions>
+</element>

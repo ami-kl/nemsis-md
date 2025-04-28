@@ -1,0 +1,35 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDisposition.11"  minOccurs="0"  maxOccurs="1"  dataTypeName="NumberOfPatients"  isNillable="Yes">
+<name>Number of Patients Transported in this EMS Unit</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The number of patients transported by this EMS crew and unit.</definition>
+<v2Number></v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Added to document multiple patients being transported with the same vehicle and crew.</v3Comment>
+<v3Changes>Added to document multiple patients being transported with the same vehicle and crew.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <NumberOfPatients baseType="positiveInteger">
+    <facet name="minInclusive" value="1"/>
+    <facet name="maxInclusive" value="100"/>
+  </NumberOfPatients>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When Number of Patients Transported in this EMS Unit has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Number of Patients Transported in this EMS Unit is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

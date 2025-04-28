@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eResponse.19"  minOccurs="0"  maxOccurs="1"  dataTypeName="EMSMileageOdometer"  isNillable="No">
+<name>Beginning Odometer Reading of Responding Vehicle</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The mileage (counter or odometer reading) of the vehicle at the beginning of the call (when the wheels begin moving). If EMS vehicle/unit is via water or air travel document the number in "hours" as it relates to the documentation of Boat, Fixed Wing, or Rotor Craft in eDisposition.16 (EMS Transport Method).</definition>
+<v2Number>E02_16</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>If a mileage counter is being used instead of an odometer, this value would be 0.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EMSMileageOdometer baseType="decimal">
+    <facet name="fractionDigits" value="2"/>
+    <facet name="totalDigits" value="8"/>
+  </EMSMileageOdometer>
+</restrictions>
+</element>

@@ -1,0 +1,49 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eExam.25"  minOccurs="0"  maxOccurs="M"  dataTypeName="ChestAssessment"  isNillable="No">
+<name>Chest Assessment</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The assessment findings associated with the patient's chest.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ChestAssessment baseType="string">
+    <facet name="enumeration" value="3525001" annotation="Abrasion"/>
+    <facet name="enumeration" value="3525003" annotation="Avulsion"/>
+    <facet name="enumeration" value="3525005" annotation="Accessory Muscles Used with Breathing"/>
+    <facet name="enumeration" value="3525007" annotation="Bleeding Controlled"/>
+    <facet name="enumeration" value="3525009" annotation="Bleeding Uncontrolled"/>
+    <facet name="enumeration" value="3525011" annotation="Burn-Blistering"/>
+    <facet name="enumeration" value="3525013" annotation="Burn-Charring"/>
+    <facet name="enumeration" value="3525015" annotation="Burn-Redness"/>
+    <facet name="enumeration" value="3525017" annotation="Burn-White/Waxy"/>
+    <facet name="enumeration" value="3525019" annotation="Crush Injury"/>
+    <facet name="enumeration" value="3525021" annotation="Deformity"/>
+    <facet name="enumeration" value="3525023" annotation="Flail Segment"/>
+    <facet name="enumeration" value="3525025" annotation="Implanted Device"/>
+    <facet name="enumeration" value="3525027" annotation="Laceration"/>
+    <facet name="enumeration" value="3525029" annotation="Normal"/>
+    <facet name="enumeration" value="3525031" annotation="Not Done"/>
+    <facet name="enumeration" value="3525033" annotation="Pain"/>
+    <facet name="enumeration" value="3525035" annotation="Pain with Inspiration/Expiration"/>
+    <facet name="enumeration" value="3525037" annotation="Puncture/Stab Wound"/>
+    <facet name="enumeration" value="3525039" annotation="Retraction"/>
+    <facet name="enumeration" value="3525041" annotation="Tenderness"/>
+    <facet name="enumeration" value="3525043" annotation="Gunshot Wound"/>
+    <facet name="enumeration" value="3525045" annotation="Swelling"/>
+    <facet name="enumeration" value="3525047" annotation="Contusion"/>
+    <facet name="enumeration" value="3525049" annotation="Tenderness-General (DEPRECATED)"/>
+  </ChestAssessment>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+  <PN>
+    <PN.ExamFindingNotPresent><facet name="enumeration" value="8801005" annotation="Exam Finding Not Present"/></PN.ExamFindingNotPresent>
+  </PN>
+</attributes>
+</element>

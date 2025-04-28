@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eScene.13"  minOccurs="0"  maxOccurs="1"  dataTypeName="IncidentFacilityName"  isNillable="No">
+<name>Incident Facility or Location Name</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The name of the facility, business, building, etc. associated with the scene of the EMS event.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This element may be populated from a list created within dFacility.02 (Facility Name).</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <IncidentFacilityName baseType="string">
+    <facet name="minLength" value="2"/>
+    <facet name="maxLength" value="100"/>
+  </IncidentFacilityName>
+</restrictions>
+</element>

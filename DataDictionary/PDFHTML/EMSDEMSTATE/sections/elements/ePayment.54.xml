@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.54"  minOccurs="0"  maxOccurs="1"  dataTypeName="PersonName"  isNillable="No">
+<name>Prior Authorization Code Payer</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The Payer who has provided the Prior Authorization Code.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Added to document Prior Authorization Codes for an EMS Transport.</v3Comment>
+<v3Changes>Added to improve billing documentation.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <PersonName baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="255"/>
+  </PersonName>
+</restrictions>
+</element>

@@ -1,0 +1,22 @@
+<?xml-stylesheet type="text/xsl" href="../xslt/grouping.xslt"?>
+<section name="dLocation">
+  <group number="dLocation.LocationGroup" minOccurs="0" maxOccurs="M" CorrelationID="Yes" UUID="Yes" ProcedureGroupCorrelationID="" CustomElementID="" timeStamp="" isNillable="No">
+    <element number="dLocation.01" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="LocationType"><name>EMS Location Type</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <element number="dLocation.02" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="StationName"><name>EMS Location Name</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <element number="dLocation.03" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="StationNumber"><name>EMS Location Number</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <element number="dLocation.04" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="GPSLocation"><name>EMS Location GPS</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <element number="dLocation.05" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="USNG"><name>EMS Location US National Grid Coordinates</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <element number="dLocation.06" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="StreetAddress"><name>EMS Location Address</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <element number="dLocation.07" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="CityGnisCode"><name>EMS Location City</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <element number="dLocation.08" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="ANSIStateCode"><name>EMS Location State</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <element number="dLocation.09" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="ZIP"><name>EMS Station or Location ZIP Code</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <element number="dLocation.10" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="ANSICountyCode"><name>EMS Location County</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <element number="dLocation.11" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="ANSICountryCodesCAMXUS"><name>EMS Location Country</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <element number="dLocation.12" minOccurs="0" maxOccurs="M" CorrelationID="Yes" UUID="" isNillable="No" dataType="PhoneNumber"><name>EMS Location Phone Number</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Optional</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+  </group>
+<asserts>
+  <assert id="nemSch_d005" role="Error">
+      UUID must be universally unique.
+      </assert>
+</asserts>
+</section>

@@ -1,0 +1,568 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.nemsis.org" targetNamespace="http://www.nemsis.org" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="commonTypes_v3.xsd"></xs:include>
+	<xs:complexType name="eHistory" id="eHistory.MedicalHistory">
+		<xs:sequence>
+			<xs:element name="eHistory.01" nillable="true" id="eHistory.BarrierstoPatientCare" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>
+						<nemsisTacDoc>
+							<number>eHistory.01</number>
+							<name>Barriers to Patient Care</name>
+							<national>Yes</national>
+							<state>Yes</state>
+							<definition>Indication of whether or not there were any patient specific barriers to serving the patient.</definition>
+							<v2Number>E12_01</v2Number>
+							<usage>Required</usage>
+							<comment></comment>
+						</nemsisTacDoc>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="BarriersToPatientCare">
+							<xs:attribute name="NV" use="optional">
+								<xs:simpleType>
+									<xs:union memberTypes="NV.NotApplicable NV.NotRecorded"></xs:union>
+								</xs:simpleType>
+							</xs:attribute>
+							
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<xs:element name="eHistory.17" nillable="true" id="eHistory.AlcoholDrugUseIndicators" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>
+						<nemsisTacDoc>
+							<number>eHistory.17</number>
+							<name>Alcohol/Drug Use Indicators</name>
+							<national>Yes</national>
+							<state>Yes</state>
+							<definition>Indicators for the potential use of alcohol or drugs by the patient related to the patient's current illness or injury.</definition>
+							<v2Number>E12_19</v2Number>
+							<usage>Required</usage>
+							<performanceMeasuresGroup>
+								<performanceMeasure>Trauma</performanceMeasure>
+							</performanceMeasuresGroup>
+							<PNNil>Yes</PNNil>
+						</nemsisTacDoc>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="AlcoholDrugUseIndicators">
+							<xs:attribute name="PN" use="optional">
+								<xs:simpleType>
+									<xs:union memberTypes="PN.NoneReported PN.UnableToComplete"></xs:union>
+								</xs:simpleType>
+							</xs:attribute>
+							<xs:attribute name="NV" use="optional">
+								<xs:simpleType>
+									<xs:union memberTypes="NV.NotApplicable NV.NotRecorded"></xs:union>
+								</xs:simpleType>
+							</xs:attribute>
+							
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			
+			
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="AdvanceDirectives">
+		<xs:annotation>
+			<xs:documentation>The presence of a valid for of living will of document directing end of life or healthcare treatment decisions</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="3105001">
+				<xs:annotation>
+					<xs:documentation>Family/Guardian request DNR (but no documentation)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3105003">
+				<xs:annotation>
+					<xs:documentation>Living Will</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3105005">
+				<xs:annotation>
+					<xs:documentation>None</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3105007">
+				<xs:annotation>
+					<xs:documentation>Other</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3105009">
+				<xs:annotation>
+					<xs:documentation>Other Healthcare Advanced Directive Form</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3105011">
+				<xs:annotation>
+					<xs:documentation>State EMS DNR or Medical Order Form</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="AlcoholDrugUseIndicators">
+		<xs:annotation>
+			<xs:documentation>Indicators for the potential use of Alcohol or Drugs by the patient.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="3117001">
+				<xs:annotation>
+					<xs:documentation>Alcohol Containers/Paraphernalia at Scene</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3117003">
+				<xs:annotation>
+					<xs:documentation>Drug Paraphernalia at Scene</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3117005">
+				<xs:annotation>
+					<xs:documentation>Patient Admits to Alcohol Use</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3117007">
+				<xs:annotation>
+					<xs:documentation>Patient Admits to Drug Use</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3117009">
+				<xs:annotation>
+					<xs:documentation>Positive Level known from Law Enforcement or Hospital Record</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3117013">
+				<xs:annotation>
+					<xs:documentation>Physical Exam Indicates Suspected Alcohol or Drug Use</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3117015">
+				<xs:annotation>
+					<xs:documentation>Bystander/Family Reports Drug Use</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3117017">
+				<xs:annotation>
+					<xs:documentation>Bystander/Family Reports Alcohol Use</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="BarriersToPatientCare">
+		<xs:annotation>
+			<xs:documentation>Indication of whether or not there were any patient specific barriers to serving the patient at the scene</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="3101001">
+				<xs:annotation>
+					<xs:documentation>Cultural, Custom, Religious</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3101003">
+				<xs:annotation>
+					<xs:documentation>Developmentally Impaired</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3101005">
+				<xs:annotation>
+					<xs:documentation>Hearing Impaired</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3101007">
+				<xs:annotation>
+					<xs:documentation>Language</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3101009">
+				<xs:annotation>
+					<xs:documentation>None Noted</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3101011">
+				<xs:annotation>
+					<xs:documentation>Obesity</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3101013">
+				<xs:annotation>
+					<xs:documentation>Physical Barrier (Unable to Access Patient)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3101015">
+				<xs:annotation>
+					<xs:documentation>Physically Impaired</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3101017">
+				<xs:annotation>
+					<xs:documentation>Physically Restrained</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3101019">
+				<xs:annotation>
+					<xs:documentation>Psychologically Impaired</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3101021">
+				<xs:annotation>
+					<xs:documentation>Sight Impaired</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3101023">
+				<xs:annotation>
+					<xs:documentation>Speech Impaired</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3101025">
+				<xs:annotation>
+					<xs:documentation>Unattended or Unsupervised (including minors)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3101027">
+				<xs:annotation>
+					<xs:documentation>Unconscious</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3101029">
+				<xs:annotation>
+					<xs:documentation>Uncooperative</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3101031">
+				<xs:annotation>
+					<xs:documentation>State of Emotional Distress</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3101033">
+				<xs:annotation>
+					<xs:documentation>Alcohol Use, Suspected</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3101035">
+				<xs:annotation>
+					<xs:documentation>Drug Use, Suspected</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CurrentMedicationDosageUnit">
+		<xs:annotation>
+			<xs:documentation>The dosage unit of the patient's current medication</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="3114001">
+				<xs:annotation>
+					<xs:documentation>Centimeters (cm)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114003">
+				<xs:annotation>
+					<xs:documentation>Grams (gms)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114005">
+				<xs:annotation>
+					<xs:documentation>Drops (gtts)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114007">
+				<xs:annotation>
+					<xs:documentation>Inches (in)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114009">
+				<xs:annotation>
+					<xs:documentation>International Units (IU)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114011">
+				<xs:annotation>
+					<xs:documentation>Keep Vein Open (kvo)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114013">
+				<xs:annotation>
+					<xs:documentation>Liters Per Minute (l/min [fluid])</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114015">
+				<xs:annotation>
+					<xs:documentation>Liters (l)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114017">
+				<xs:annotation>
+					<xs:documentation>Liters Per Minute (LPM [gas])</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114019">
+				<xs:annotation>
+					<xs:documentation>Micrograms (mcg)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114021">
+				<xs:annotation>
+					<xs:documentation>Micrograms per Kilogram per Minute (mcg/kg/min)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114023">
+				<xs:annotation>
+					<xs:documentation>Micrograms per Minute (mcg/min)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114025">
+				<xs:annotation>
+					<xs:documentation>Milliequivalents (mEq)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114027">
+				<xs:annotation>
+					<xs:documentation>Metered Dose (MDI)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114029">
+				<xs:annotation>
+					<xs:documentation>Milligrams (mg)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114031">
+				<xs:annotation>
+					<xs:documentation>Milligrams per Kilogram (mg/kg)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114033">
+				<xs:annotation>
+					<xs:documentation>Milligrams per Kilogram Per Minute (mg/kg/min)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114035">
+				<xs:annotation>
+					<xs:documentation>Milligrams per Minute (mg/min)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114037">
+				<xs:annotation>
+					<xs:documentation>Milliliters (ml)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114039">
+				<xs:annotation>
+					<xs:documentation>Milliliters per Hour (ml/hr)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114041">
+				<xs:annotation>
+					<xs:documentation>Other</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114043">
+				<xs:annotation>
+					<xs:documentation>Puffs</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114045">
+				<xs:annotation>
+					<xs:documentation>Units per Hour (units/hr)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114047">
+				<xs:annotation>
+					<xs:documentation>Micrograms per Kilogram (mcg/kg)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114049">
+				<xs:annotation>
+					<xs:documentation>Units</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114051">
+				<xs:annotation>
+					<xs:documentation>Units per Kilogram per Hour (units/kg/hr)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3114053">
+				<xs:annotation>
+					<xs:documentation>Units per Kilogram (units/kg)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CurrentMedicationDose">
+		<xs:annotation>
+			<xs:documentation>The numeric dose or amount of the patient's current medication</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="9"></xs:totalDigits>
+			<xs:fractionDigits value="3"></xs:fractionDigits>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CurrentMedicationFrequency">
+		<xs:annotation>
+			<xs:documentation>The frequency of the patient's current medication</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="3120001">
+				<xs:annotation>
+					<xs:documentation>q1h (every hour)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3120003">
+				<xs:annotation>
+					<xs:documentation>q2h (every 2 hours)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3120005">
+				<xs:annotation>
+					<xs:documentation>q3h (every 3 hours)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3120007">
+				<xs:annotation>
+					<xs:documentation>q4h (every 4 hours)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3120009">
+				<xs:annotation>
+					<xs:documentation>qid (four times a day)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3120011">
+				<xs:annotation>
+					<xs:documentation>tid (three times a day)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3120013">
+				<xs:annotation>
+					<xs:documentation>ac (before meals)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3120015">
+				<xs:annotation>
+					<xs:documentation>pc (after meals)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3120017">
+				<xs:annotation>
+					<xs:documentation>bid (twice a day)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3120019">
+				<xs:annotation>
+					<xs:documentation>qd (every day)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3120021">
+				<xs:annotation>
+					<xs:documentation>qd-am (every day in the morning)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3120023">
+				<xs:annotation>
+					<xs:documentation>qd-pm (every day in the evening)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3120025">
+				<xs:annotation>
+					<xs:documentation>hs (at bedtime)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3120027">
+				<xs:annotation>
+					<xs:documentation>qod (every other day)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3120029">
+				<xs:annotation>
+					<xs:documentation>prn (as needed)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="MedicationAllergies">
+		<xs:annotation>
+			<xs:documentation>MedicationAllergies</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(Z88\.[0-9])|([a-zA-Z0-9]{2,7})"></xs:pattern>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="MedicalHistoryObtainedFrom">
+		<xs:annotation>
+			<xs:documentation>Type of person medical history obtained from</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="3109001">
+				<xs:annotation>
+					<xs:documentation>Bystander/Other</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3109003">
+				<xs:annotation>
+					<xs:documentation>Family</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3109005">
+				<xs:annotation>
+					<xs:documentation>Health Care Personnel</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3109007">
+				<xs:annotation>
+					<xs:documentation>Patient</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Pregnancy">
+		<xs:annotation>
+			<xs:documentation>Indication of the possibility by the patient's history of a current pregnancy.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="3118001">
+				<xs:annotation>
+					<xs:documentation>No</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3118003">
+				<xs:annotation>
+					<xs:documentation>Possible, Unconfirmed</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3118005">
+				<xs:annotation>
+					<xs:documentation>Yes, Confirmed 12 to 20 Weeks</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3118007">
+				<xs:annotation>
+					<xs:documentation>Yes, Confirmed Greater Than 20 Weeks</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3118009">
+				<xs:annotation>
+					<xs:documentation>Yes, Confirmed Less Than 12 Weeks</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="3118011">
+				<xs:annotation>
+					<xs:documentation>Yes, Weeks Unknown</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

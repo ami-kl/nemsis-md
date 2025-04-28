@@ -1,0 +1,101 @@
+NEMSIS V3 Schematron Test Cases for DEMDataSet
+
+File:             DEMDataSet--Base.xml
+ID:               DEMDataSet--Base
+Description:      This test case should pass validation while firing as many rules as possible.
+Expected Result:  [PASS]
+      
+File:             DEMDataSet-nemSch_d001_A.xml
+ID:               nemSch_d001_A
+Description:      When EMS Agency Name is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element), or it should be omitted (if the element is optional).
+Expected Result:  [ERROR]
+
+File:             DEMDataSet-nemSch_d002_A.xml
+ID:               nemSch_d002_A
+Description:      When Total Primary Service Area Size has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+Expected Result:  [ERROR]
+
+File:             DEMDataSet-nemSch_d003_A.xml
+ID:               nemSch_d003_A
+Description:      When National Provider Identifier has a Not Value, no other value should be recorded.
+Expected Result:  [WARNING]
+
+File:             DEMDataSet-nemSch_d004_A.xml
+ID:               nemSch_d004_A
+Description:      The timestamp of the DemographicReport should not be in the future (the current time according to this system is (current dateTime)). * This test should generate an error until January 1, 2050.
+Expected Result:  [ERROR]
+
+File:             DEMDataSet-nemSch_d005_A.xml
+ID:               nemSch_d005_A
+Description:      UUID must be universally unique. * This test is expected to fail twice (once for each instance of the duplicate UUID attribute).
+Expected Result:  [ERROR]
+
+File:             DEMDataSet-nemSch_d006_A.xml
+ID:               nemSch_d006_A
+Description:      EMS Agency Service Area County(ies) should belong to the state with which it is grouped.
+Expected Result:  [ERROR]
+
+File:             DEMDataSet-nemSch_d007_A.xml
+ID:               nemSch_d007_A
+Description:      EMS Agency Census Tracts should belong to a county recorded in EMS Agency Service Area County(ies) in the state with which it is grouped.
+Expected Result:  [WARNING]
+
+File:             DEMDataSet-nemSch_d007_B.xml
+ID:               nemSch_d007_B
+Description:      EMS Agency Census Tracts should belong to a county recorded in EMS Agency Service Area County(ies) in the state with which it is grouped. * Blank Census Tract should be allowed.
+Expected Result:  [PASS]
+
+File:             DEMDataSet-nemSch_d008_A.xml
+ID:               nemSch_d008_A
+Description:      Fire Department ID Number should be recorded when Organizational Type is "Fire Department".
+Expected Result:  [WARNING]
+
+File:             DEMDataSet-nemSch_d009_A.xml
+ID:               nemSch_d009_A
+Description:      Fire Department ID Number should only be recorded when Organizational Type is "Fire Department".
+Expected Result:  [WARNING]
+
+File:             DEMDataSet-nemSch_d010_A.xml
+ID:               nemSch_d010_A
+Description:      There should be a configuration group where State Associated with this Configuration is the state recorded in EMS Agency State.
+Expected Result:  [WARNING]
+
+File:             DEMDataSet-nemSch_d011_A.xml
+ID:               nemSch_d011_A
+Description:      State Associated with this Configuration should be unique (the same state should not be listed more than once).
+Expected Result:  [WARNING]
+
+File:             DEMDataSet-nemSch_d012_A.xml
+ID:               nemSch_d012_A
+Description:      EMS Certification Levels Permitted to Perform Each Procedure, within the configuration group for the state recorded in EMS Agency State, should include the level recorded in Level of Service.
+Expected Result:  [WARNING]
+
+File:             DEMDataSet-nemSch_d013_A.xml
+ID:               nemSch_d013_A
+Description:      EMS Certification Levels Permitted to Administer Each Medication, within the configuration group for the state recorded in EMS Agency State, should include the level recorded in Level of Service.
+Expected Result:  [WARNING]
+
+File:             DEMDataSet-nemSch_d014_A.xml
+ID:               nemSch_d014_A
+Description:      EMS Agency Medications should be a code of between 2 and 7 digits when Code Type is "RxNorm".
+Expected Result:  [ERROR]
+
+File:             DEMDataSet-nemSch_d015_A.xml
+ID:               nemSch_d015_A
+Description:      EMS Agency Medications should be a SNOMED code specifically allowed in the data dictionary when Code Type is "SNOMED".
+Expected Result:  [ERROR]
+
+File:             DEMDataSet-nemSch_d016_A.xml
+ID:               nemSch_d016_A
+Description:      EMS Agency Medications should be an RxNorm code of between 2 and 7 digits or a SNOMED code specifically allowed in the data dictionary.
+Expected Result:  [ERROR]
+
+File:             DEMDataSet-nemSch_d017_A.xml
+ID:               nemSch_d017_A
+Description:      Crew Call Sign should be unique (the same call sign should not be listed more than once).
+Expected Result:  [WARNING]
+
+File:             DEMDataSet-nemSch_dNilNvPn_dNvPn_A.xml
+ID:               nemSch_dNilNvPn_dNvPn_A
+Description:      DEMDataSet / Nil/Not Value Attributes and DEMDataSet / Not Value/Pertinent Negative Uniqueness * Not checked on dCustomResults.01.
+Expected Result:  [PASS]

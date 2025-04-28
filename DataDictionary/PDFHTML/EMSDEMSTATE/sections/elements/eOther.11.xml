@@ -1,0 +1,18 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eOther.11"  minOccurs="0"  maxOccurs="1"  dataTypeName="FileImage"  isNillable="No">
+<name>File Attachment Image</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The file that is attached electronically to the patient care report.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Associated with eOther.09 (External Electronic Documents) and eOther.10 (File Attachment Type).</v3Comment>
+<v3Changes>Added to allow an improved implementation of electronic healthcare records.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <FileImage baseType="base64Binary">
+  </FileImage>
+</restrictions>
+</element>

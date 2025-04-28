@@ -1,0 +1,21 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.48"  minOccurs="0"  maxOccurs="1"  dataTypeName="Mileage"  isNillable="No">
+<name>Mileage to Closest Hospital Facility</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The mileage to the closest hospital facility from the scene. Documented only if the patient was transported to a facility farther away than the closest hospital.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Added to clarify billing mileage when the patient is not taken to the closest facility.</v3Comment>
+<v3Changes>Added for improved billing documentation.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <Mileage baseType="decimal">
+    <facet name="fractionDigits" value="2"/>
+    <facet name="minInclusive" value="1"/>
+    <facet name="maxInclusive" value="1000"/>
+  </Mileage>
+</restrictions>
+</element>

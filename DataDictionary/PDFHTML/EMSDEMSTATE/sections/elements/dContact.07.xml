@@ -1,0 +1,35 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dContact.07"  minOccurs="0"  maxOccurs="1"  dataTypeName="ANSIStateCode"  isNillable="Yes">
+<name>Agency Contact State</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The state of the Agency contact's mailing address.</definition>
+<v2Number>D02_06</v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>The address for the director/chief/lead administrator/CEO/ should be the main address for the EMS agency. Based on the state ANSI Code. For individuals living outside the USA full address to be entered in the address line.
+											<br/><br/>GNIS Codes Website: <a href="http://geonames.usgs.gov/domestic/download_data.htm" target="_blank">http://geonames.usgs.gov/domestic/download_data.htm</a></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ANSIStateCode baseType="string">
+    <facet name="pattern" value="[0-9]{2}"/>
+  </ANSIStateCode>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_d002" role="Error">
+      When Agency Contact State has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_d001" role="Error">
+      When Agency Contact State is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

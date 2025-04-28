@@ -1,0 +1,43 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eHistory.05"  minOccurs="0"  maxOccurs="M"  dataTypeName="AdvanceDirectives"  isNillable="Yes">
+<name>Advance Directives</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The presence of a valid DNR form, living will, or document directing end of life or healthcare treatment decisions.</definition>
+<v2Number>E12_07</v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Advanced Directive and Do Not Resuscitate are both included in this data element.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <AdvanceDirectives baseType="string">
+    <facet name="enumeration" value="3105001" annotation="Family/Guardian request DNR (but no documentation)"/>
+    <facet name="enumeration" value="3105003" annotation="Living Will"/>
+    <facet name="enumeration" value="3105005" annotation="None"/>
+    <facet name="enumeration" value="3105007" annotation="Other"/>
+    <facet name="enumeration" value="3105009" annotation="Other Healthcare Advanced Directive Form"/>
+    <facet name="enumeration" value="3105011" annotation="State EMS DNR or Medical Order Form"/>
+  </AdvanceDirectives>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When Advance Directives has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Advance Directives is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Advance Directives has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

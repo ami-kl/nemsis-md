@@ -1,0 +1,45 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eHistory.14"  minOccurs="0"  maxOccurs="1"  dataTypeName="CurrentMedicationDosageUnit"  isNillable="No">
+<name>Current Medication Dosage Unit</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The dosage unit of the patient's current medication.</definition>
+<v2Number>E12_16</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <CurrentMedicationDosageUnit baseType="string">
+    <facet name="enumeration" value="3114001" annotation="Centimeters (cm)"/>
+    <facet name="enumeration" value="3114003" annotation="Grams (gms)"/>
+    <facet name="enumeration" value="3114005" annotation="Drops (gtts)"/>
+    <facet name="enumeration" value="3114007" annotation="Inches (in)"/>
+    <facet name="enumeration" value="3114009" annotation="International Units (IU)"/>
+    <facet name="enumeration" value="3114011" annotation="Keep Vein Open (kvo)"/>
+    <facet name="enumeration" value="3114013" annotation="Liters Per Minute (l/min [fluid])"/>
+    <facet name="enumeration" value="3114015" annotation="Liters (l)"/>
+    <facet name="enumeration" value="3114017" annotation="Liters Per Minute (LPM [gas])"/>
+    <facet name="enumeration" value="3114019" annotation="Micrograms (mcg)"/>
+    <facet name="enumeration" value="3114021" annotation="Micrograms per Kilogram per Minute (mcg/kg/min)"/>
+    <facet name="enumeration" value="3114023" annotation="Micrograms per Minute (mcg/min)"/>
+    <facet name="enumeration" value="3114025" annotation="Milliequivalents (mEq)"/>
+    <facet name="enumeration" value="3114027" annotation="Metered Dose (MDI)"/>
+    <facet name="enumeration" value="3114029" annotation="Milligrams (mg)"/>
+    <facet name="enumeration" value="3114031" annotation="Milligrams per Kilogram (mg/kg)"/>
+    <facet name="enumeration" value="3114033" annotation="Milligrams per Kilogram Per Minute (mg/kg/min)"/>
+    <facet name="enumeration" value="3114035" annotation="Milligrams per Minute (mg/min)"/>
+    <facet name="enumeration" value="3114037" annotation="Milliliters (ml)"/>
+    <facet name="enumeration" value="3114039" annotation="Milliliters per Hour (ml/hr)"/>
+    <facet name="enumeration" value="3114041" annotation="Other"/>
+    <facet name="enumeration" value="3114043" annotation="Puffs"/>
+    <facet name="enumeration" value="3114045" annotation="Units per Hour (units/hr)"/>
+    <facet name="enumeration" value="3114047" annotation="Micrograms per Kilogram (mcg/kg)"/>
+    <facet name="enumeration" value="3114049" annotation="Units"/>
+    <facet name="enumeration" value="3114051" annotation="Units per Kilogram per Hour (units/kg/hr)"/>
+    <facet name="enumeration" value="3114053" annotation="Units per Kilogram (units/kg)"/>
+  </CurrentMedicationDosageUnit>
+</restrictions>
+</element>

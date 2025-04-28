@@ -1,0 +1,35 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDisposition.14"  minOccurs="0"  maxOccurs="M"  dataTypeName="PositionOfPatientDuringTransport"  isNillable="No">
+<name>Position of Patient During Transport</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The position of the patient during transport from the scene.</definition>
+<v2Number>E20_12</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <PositionOfPatientDuringTransport baseType="string">
+    <facet name="enumeration" value="4214001" annotation="Car Seat"/>
+    <facet name="enumeration" value="4214003" annotation="Fowlers (Semi-Upright Sitting)"/>
+    <facet name="enumeration" value="4214005" annotation="Lateral Left"/>
+    <facet name="enumeration" value="4214007" annotation="Lateral Right"/>
+    <facet name="enumeration" value="4214009" annotation="Other"/>
+    <facet name="enumeration" value="4214011" annotation="Prone"/>
+    <facet name="enumeration" value="4214013" annotation="Semi-Fowlers"/>
+    <facet name="enumeration" value="4214015" annotation="Sitting"/>
+    <facet name="enumeration" value="4214017" annotation="Supine"/>
+    <facet name="enumeration" value="4214019" annotation="Trendelenburg"/>
+    <facet name="enumeration" value="4214021" annotation="Pediatric Ambulance Restraint Device"/>
+    <facet name="enumeration" value="4214023" annotation="Neonatal Ambulance Restraint Device"/>
+    <facet name="enumeration" value="4214025" annotation="Patient's Car Seat"/>
+    <facet name="enumeration" value="4214027" annotation="Ambulance Integrated Car Seat"/>
+  </PositionOfPatientDuringTransport>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

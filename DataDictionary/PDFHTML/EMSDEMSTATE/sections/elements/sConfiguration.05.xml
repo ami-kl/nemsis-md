@@ -1,0 +1,71 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="sConfiguration.05"  minOccurs="1"  maxOccurs="M"  dataTypeName="Medication"  isNillable="Yes">
+<name>Medications Permitted by the State</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Medications permitted by the state for the certification/licensure level listed in sConfiguration.04.</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Used to populate dConfiguration.09 EMS Agency Medications 
+                                                <br/><br/>List of medications based on RxNorm (RXCUI) code and SNOMED-CT codes for blood products..
+                                                List of medications based on RxNorm (RXCUI) code. 
+                                                <br/><br/>Reference the NEMSIS Suggested Lists at: <a href="https://nemsis.org/technical-resources/version-3/version-3-resources/">https://nemsis.org/technical-resources/version-3/version-3-resources/</a>
+                                                <br/><br/>RxNorm 
+                                                <br/>Website - <a href="http://www.nlm.nih.gov/research/umls/rxnorm/docs/rxnormfiles.html">http://www.nlm.nih.gov/research/umls/rxnorm/docs/rxnormfiles.html</a>
+                                                <br/>Product - RxNorm Full Monthly Release
+                                                <br/><br/>SNOMED-CT 
+                                                <br/>Website: <a href="http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html">http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html</a>
+                                                <br/>Product: Product - UMLS Metathesaurus.
+                                                
+                                                <br/><br/>Allowable SNOMED-CT codes are:
+                                                <br/>116762002 Administration of blood product
+                                                <br/>116795008 Transfusion of cryoprecipitate
+                                                <br/>116861002 Transfusion of fresh frozen plasma
+                                                <br/>116865006 Administration of albumin
+                                                <br/>180208003 Intravenous blood transfusion of platelets
+                                                <br/>33389009 Transfusion of whole blood
+                                                <br/>71493000 Transfusion of packed red blood cells</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <Medication baseType="string">
+    <facet name="minLength" value="2"/>
+    <facet name="maxLength" value="9"/>
+  </Medication>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+  <CodeType>
+    <CodeType.RxNorm><facet name="enumeration" value="9924003" annotation="RxNorm"/></CodeType.RxNorm>
+    <CodeType.SNOMED><facet name="enumeration" value="9924005" annotation="SNOMED-CT"/></CodeType.SNOMED>
+  </CodeType>
+</attributes>
+<asserts>
+  <assert id="nemSch_s022" role="Warning">
+      <elementRef elementNumber="sConfiguration.05">Medications Permitted by the State</elementRef> should be unique (the same medication should not be listed more than once for a particular level).
+      </assert>
+  <assert id="nemSch_s023" role="Error">
+      <elementRef elementNumber="sConfiguration.05">Medications Permitted by the State</elementRef> should be a code of between 2 and 7 digits when Code Type is &quot;RxNorm&quot;.
+      </assert>
+  <assert id="nemSch_s024" role="Error">
+      <elementRef elementNumber="sConfiguration.05">Medications Permitted by the State</elementRef> should be a SNOMED code specifically allowed in the data dictionary when Code Type is &quot;SNOMED&quot;.
+      </assert>
+  <assert id="nemSch_s025" role="Error">
+      <elementRef elementNumber="sConfiguration.05">Medications Permitted by the State</elementRef> should be an RxNorm code of between 2 and 7 digits or a SNOMED code specifically allowed in the data dictionary.
+      </assert>
+  <assert id="nemSch_s002" role="Error">
+      When Medications Permitted by the State has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_s001" role="Error">
+      When Medications Permitted by the State is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_s003" role="Warning">
+      When Medications Permitted by the State has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

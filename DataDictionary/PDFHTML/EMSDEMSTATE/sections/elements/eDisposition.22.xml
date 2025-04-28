@@ -1,0 +1,59 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDisposition.22"  minOccurs="1"  maxOccurs="1"  dataTypeName="HospitalInPatientDestination"  isNillable="Yes">
+<name>Hospital In-Patient Destination</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The location within the hospital that the patient was taken directly by EMS (e.g., Cath Lab, ICU, etc.).</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>To be documented when in eDisposition.21 "Hospital-Non-Emergency Department Bed" is selected.</v3Comment>
+<v3Changes>Added to identify the location within the hospital that the patient was directly taken to by EMS.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <HospitalInPatientDestination baseType="string">
+    <facet name="enumeration" value="4222001" annotation="Hospital-Burn"/>
+    <facet name="enumeration" value="4222003" annotation="Hospital-Cath Lab"/>
+    <facet name="enumeration" value="4222005" annotation="Hospital-CCU"/>
+    <facet name="enumeration" value="4222007" annotation="Hospital-Endoscopy"/>
+    <facet name="enumeration" value="4222009" annotation="Hospital-Hospice"/>
+    <facet name="enumeration" value="4222011" annotation="Hospital-Hyperbaric Oxygen Treatment"/>
+    <facet name="enumeration" value="4222013" annotation="Hospital-ICU"/>
+    <facet name="enumeration" value="4222015" annotation="Hospital-Labor and Delivery"/>
+    <facet name="enumeration" value="4222017" annotation="Hospital-Med/Surg"/>
+    <facet name="enumeration" value="4222019" annotation="Hospital-Mental Health"/>
+    <facet name="enumeration" value="4222021" annotation="Hospital-MICU"/>
+    <facet name="enumeration" value="4222023" annotation="Hospital-NICU"/>
+    <facet name="enumeration" value="4222025" annotation="Hospital-Nursery"/>
+    <facet name="enumeration" value="4222027" annotation="Hospital-Peds (General)"/>
+    <facet name="enumeration" value="4222029" annotation="Hospital-Peds ICU"/>
+    <facet name="enumeration" value="4222031" annotation="Hospital-OR"/>
+    <facet name="enumeration" value="4222033" annotation="Hospital-Orthopedic"/>
+    <facet name="enumeration" value="4222035" annotation="Hospital-Other"/>
+    <facet name="enumeration" value="4222037" annotation="Hospital-Out-Patient Bed"/>
+    <facet name="enumeration" value="4222039" annotation="Hospital-Radiology Services - MRI"/>
+    <facet name="enumeration" value="4222041" annotation="Hospital-Radiology Services - CT/PET"/>
+    <facet name="enumeration" value="4222043" annotation="Hospital-Radiology Services - X-Ray"/>
+    <facet name="enumeration" value="4222045" annotation="Hospital-Radiation"/>
+    <facet name="enumeration" value="4222047" annotation="Hospital-Rehab"/>
+    <facet name="enumeration" value="4222049" annotation="Hospital-SICU"/>
+    <facet name="enumeration" value="4222051" annotation="Hospital-Oncology"/>
+    <facet name="enumeration" value="4222053" annotation="Hospital-Outpatient Surgery"/>
+  </HospitalInPatientDestination>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When Hospital In-Patient Destination has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Hospital In-Patient Destination is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

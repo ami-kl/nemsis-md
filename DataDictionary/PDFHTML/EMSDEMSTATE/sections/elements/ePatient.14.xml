@@ -1,0 +1,57 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePatient.14"  minOccurs="1"  maxOccurs="M"  dataTypeName="Race"  isNillable="Yes">
+<name>Race</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The patient's race as defined by the OMB (US Office of Management and Budget).</definition>
+<v2Number>E06_12</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>OMB requirements are provided at: <a href="https://www.federalregister.gov/d/2024-06469" target="_blank">https://www.federalregister.gov/d/2024-06469</a>. Using single multiple choice question methodology to improve the completion of ethnicity information.<br/><br/>Ethnicity (Version 2.2.1: E06_13) has been merged with this data element and retired.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <Race baseType="string">
+    <facet name="enumeration" value="2514001" annotation="American Indian or Alaska Native"/>
+    <facet name="enumeration" value="2514003" annotation="Asian"/>
+    <facet name="enumeration" value="2514005" annotation="Black or African American"/>
+    <facet name="enumeration" value="2514007" annotation="Hispanic or Latino"/>
+    <facet name="enumeration" value="2514009" annotation="Native Hawaiian or Other Pacific Islander"/>
+    <facet name="enumeration" value="2514011" annotation="White"/>
+    <facet name="enumeration" value="2514013" annotation="Middle Eastern or North African"/>
+  </Race>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+  <PN>
+    <PN.Refused><facet name="enumeration" value="8801019" annotation="Refused"/></PN.Refused>
+    <PN.Unresponsive><facet name="enumeration" value="8801021" annotation="Unresponsive"/></PN.Unresponsive>
+    <PN.UnableToComplete><facet name="enumeration" value="8801023" annotation="Unable to Complete"/></PN.UnableToComplete>
+  </PN>
+</attributes>
+<asserts>
+  <assert id="nemSch_e062" role="Warning">
+      <elementRef elementNumber="ePatient.14">Race</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot;.
+      </assert>
+  <assert id="nemSch_e008" role="Error">
+      When Race has a Pertinent Negative, it should be empty and it should not have a Not Value (Not Applicable, Not Recorded, or Not Reporting).
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Race has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Race is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Race has a Not Value, no other value should be recorded.
+      </assert>
+  <assert id="nemSch_e010" role="Warning">
+      When Race has a Pertinent Negative, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

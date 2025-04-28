@@ -1,0 +1,39 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eOutcome.13"  minOccurs="1"  maxOccurs="M"  dataTypeName="icd10Code"  isNillable="Yes">
+<name>Hospital Diagnosis</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The hospital diagnosis of the patient associated with the hospital admission.</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Code list is represented in ICD-10-CM: Diagnosis Codes.
+								<br/>Website - <a href="http://uts.nlm.nih.gov">http://uts.nlm.nih.gov</a>
+								<br/>Product - UMLS Metathesaurus</v3Comment>
+<v3Changes>Added to better evaluate EMS care.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <icd10Code baseType="string">
+    <facet name="pattern" value="[A-Z][0-9][0-9A-Z]((\.[0-9A-Z]{1,4})?)"/>
+  </icd10Code>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When Hospital Diagnosis has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Hospital Diagnosis is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Hospital Diagnosis has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

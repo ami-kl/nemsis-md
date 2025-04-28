@@ -1,0 +1,74 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eProcedures.13"  minOccurs="0"  maxOccurs="1"  dataTypeName="VascularAccessLocation"  isNillable="Yes">
+<name>Vascular Access Location</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The location of the vascular access site attempt on the patient, if applicable.</definition>
+<v2Number>E19_12</v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This is now associated with the Date/Time of the procedure and therefore changed to single choice. This allows the location to be documented with each procedure and attempt. If the vascular access has been established prior to EMS, this should be documented as such.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <VascularAccessLocation baseType="string">
+    <facet name="enumeration" value="3913001" annotation="Antecubital-Left"/>
+    <facet name="enumeration" value="3913003" annotation="Antecubital-Right"/>
+    <facet name="enumeration" value="3913005" annotation="External Jugular-Left"/>
+    <facet name="enumeration" value="3913007" annotation="External Jugular-Right"/>
+    <facet name="enumeration" value="3913009" annotation="Femoral-Left IV"/>
+    <facet name="enumeration" value="3913011" annotation="Femoral-Right IV"/>
+    <facet name="enumeration" value="3913013" annotation="Foot-Right"/>
+    <facet name="enumeration" value="3913015" annotation="Foot-Left"/>
+    <facet name="enumeration" value="3913017" annotation="Forearm-Left"/>
+    <facet name="enumeration" value="3913019" annotation="Forearm-Right"/>
+    <facet name="enumeration" value="3913021" annotation="Hand-Left"/>
+    <facet name="enumeration" value="3913023" annotation="Hand-Right"/>
+    <facet name="enumeration" value="3913025" annotation="Internal Jugular-Left"/>
+    <facet name="enumeration" value="3913027" annotation="Internal Jugular-Right"/>
+    <facet name="enumeration" value="3913029" annotation="IO-Iliac Crest-Left"/>
+    <facet name="enumeration" value="3913031" annotation="IO-Iliac Crest-Right"/>
+    <facet name="enumeration" value="3913033" annotation="IO-Femoral-Left Distal"/>
+    <facet name="enumeration" value="3913035" annotation="IO-Femoral-Right Distal"/>
+    <facet name="enumeration" value="3913037" annotation="IO-Humeral-Left"/>
+    <facet name="enumeration" value="3913039" annotation="IO-Humeral-Right"/>
+    <facet name="enumeration" value="3913041" annotation="IO-Tibia-Left Distal"/>
+    <facet name="enumeration" value="3913043" annotation="IO-Sternum"/>
+    <facet name="enumeration" value="3913045" annotation="IO-Tibia-Right Distal"/>
+    <facet name="enumeration" value="3913047" annotation="IO-Tibia-Left Proximal"/>
+    <facet name="enumeration" value="3913049" annotation="IO-Tibia-Right Proximal"/>
+    <facet name="enumeration" value="3913051" annotation="Lower Extremity-Left"/>
+    <facet name="enumeration" value="3913053" annotation="Lower Extremity-Right"/>
+    <facet name="enumeration" value="3913055" annotation="Other Peripheral"/>
+    <facet name="enumeration" value="3913057" annotation="Other Central (PICC, Portacath, etc.)"/>
+    <facet name="enumeration" value="3913059" annotation="Scalp"/>
+    <facet name="enumeration" value="3913061" annotation="Subclavian-Left"/>
+    <facet name="enumeration" value="3913063" annotation="Subclavian-Right"/>
+    <facet name="enumeration" value="3913065" annotation="Umbilical"/>
+    <facet name="enumeration" value="3913067" annotation="Venous Cutdown-Left Lower Extremity"/>
+    <facet name="enumeration" value="3913069" annotation="Venous Cutdown-Right Lower Extremity"/>
+    <facet name="enumeration" value="3913071" annotation="Upper Arm-Left"/>
+    <facet name="enumeration" value="3913073" annotation="Upper Arm-Right"/>
+    <facet name="enumeration" value="3913075" annotation="Radial-Left"/>
+    <facet name="enumeration" value="3913077" annotation="Radial-Right"/>
+    <facet name="enumeration" value="3913079" annotation="Wrist-Left"/>
+    <facet name="enumeration" value="3913081" annotation="Wrist-Right"/>
+  </VascularAccessLocation>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When Vascular Access Location has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Vascular Access Location is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

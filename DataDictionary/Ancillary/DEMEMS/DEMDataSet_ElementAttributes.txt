@@ -1,0 +1,133 @@
+'Dataset'|'DatasetType'|'ElementNumber'|'ElementName'|'Attribute'|
+'DEMDataSet'|'group'|'dCustomConfiguration.CustomGroup'|''|'CustomElementID'|
+'DEMDataSet'|'element'|'dCustomConfiguration.01'|'Custom Data Element Title'|'nemsisElement'|
+'DEMDataSet'|'element'|'dCustomConfiguration.06'|'Custom Data Element Potential Values'|'nemsisCode'|
+'DEMDataSet'|'element'|'dCustomConfiguration.06'|'Custom Data Element Potential Values'|'customValueDescription'|
+'DEMDataSet'|'group'|'DemographicReport'|''|'timeStamp'|
+'DEMDataSet'|'element'|'dRecord.01'|'Software Creator'|'NV'|
+'DEMDataSet'|'element'|'dRecord.02'|'Software Name'|'NV'|
+'DEMDataSet'|'element'|'dRecord.03'|'Software Version'|'NV'|
+'DEMDataSet'|'element'|'dAgency.03'|'EMS Agency Name'|'NV'|
+'DEMDataSet'|'group'|'dAgency.AgencyServiceGroup'|''|'UUID'|
+'DEMDataSet'|'group'|'dAgency.AgencyServiceGroup'|''|'CorrelationID'|
+'DEMDataSet'|'element'|'dAgency.06'|'EMS Agency Service Area County(ies)'|'CorrelationID'|
+'DEMDataSet'|'element'|'dAgency.07'|'EMS Agency Census Tracts'|'NV'|
+'DEMDataSet'|'element'|'dAgency.07'|'EMS Agency Census Tracts'|'CorrelationID'|
+'DEMDataSet'|'element'|'dAgency.08'|'EMS Agency Service Area ZIP Codes'|'CorrelationID'|
+'DEMDataSet'|'element'|'dAgency.08'|'EMS Agency Service Area ZIP Codes'|'NV'|
+'DEMDataSet'|'element'|'dAgency.10'|'Other Types of Service'|'CorrelationID'|
+'DEMDataSet'|'element'|'dAgency.10'|'Other Types of Service'|'NV'|
+'DEMDataSet'|'group'|'dAgency.AgencyYearGroup'|''|'UUID'|
+'DEMDataSet'|'group'|'dAgency.AgencyYearGroup'|''|'CorrelationID'|
+'DEMDataSet'|'element'|'dAgency.15'|'Statistical Calendar Year'|'NV'|
+'DEMDataSet'|'element'|'dAgency.16'|'Total Primary Service Area Size'|'NV'|
+'DEMDataSet'|'element'|'dAgency.17'|'Total Service Area Population'|'NV'|
+'DEMDataSet'|'element'|'dAgency.18'|'911 EMS Call Center Volume per Year'|'NV'|
+'DEMDataSet'|'element'|'dAgency.19'|'EMS Dispatch Volume per Year'|'NV'|
+'DEMDataSet'|'element'|'dAgency.20'|'EMS Patient Transport Volume per Year'|'NV'|
+'DEMDataSet'|'element'|'dAgency.21'|'EMS Patient Contact Volume per Year'|'NV'|
+'DEMDataSet'|'element'|'dAgency.22'|'EMS Billable Calls per Year'|'NV'|
+'DEMDataSet'|'element'|'dAgency.25'|'National Provider Identifier'|'NV'|
+'DEMDataSet'|'element'|'dAgency.25'|'National Provider Identifier'|'CorrelationID'|
+'DEMDataSet'|'element'|'dAgency.26'|'Fire Department ID Number'|'NV'|
+'DEMDataSet'|'element'|'dAgency.26'|'Fire Department ID Number'|'CorrelationID'|
+'DEMDataSet'|'group'|'dContact.ContactInfoGroup'|''|'UUID'|
+'DEMDataSet'|'group'|'dContact.ContactInfoGroup'|''|'CorrelationID'|
+'DEMDataSet'|'element'|'dContact.01'|'Agency Contact Type'|'NV'|
+'DEMDataSet'|'element'|'dContact.02'|'Agency Contact Last Name'|'NV'|
+'DEMDataSet'|'element'|'dContact.03'|'Agency Contact First Name'|'NV'|
+'DEMDataSet'|'element'|'dContact.05'|'Agency Contact Address'|'NV'|
+'DEMDataSet'|'element'|'dContact.05'|'Agency Contact Address'|'StreetAddress2'|
+'DEMDataSet'|'element'|'dContact.06'|'Agency Contact City'|'NV'|
+'DEMDataSet'|'element'|'dContact.07'|'Agency Contact State'|'NV'|
+'DEMDataSet'|'element'|'dContact.08'|'Agency Contact ZIP Code'|'NV'|
+'DEMDataSet'|'element'|'dContact.10'|'Agency Contact Phone Number'|'PhoneNumberType'|
+'DEMDataSet'|'element'|'dContact.10'|'Agency Contact Phone Number'|'CorrelationID'|
+'DEMDataSet'|'element'|'dContact.10'|'Agency Contact Phone Number'|'NV'|
+'DEMDataSet'|'element'|'dContact.11'|'Agency Contact Email Address'|'NV'|
+'DEMDataSet'|'element'|'dContact.11'|'Agency Contact Email Address'|'EmailAddressType'|
+'DEMDataSet'|'element'|'dContact.11'|'Agency Contact Email Address'|'CorrelationID'|
+'DEMDataSet'|'element'|'dContact.12'|'EMS Agency Contact Web Address'|'NV'|
+'DEMDataSet'|'element'|'dContact.13'|'Agency Medical Director Degree'|'NV'|
+'DEMDataSet'|'element'|'dContact.14'|'Agency Medical Director Board Certification Type'|'NV'|
+'DEMDataSet'|'element'|'dContact.14'|'Agency Medical Director Board Certification Type'|'CorrelationID'|
+'DEMDataSet'|'group'|'dConfiguration.ConfigurationGroup'|''|'UUID'|
+'DEMDataSet'|'group'|'dConfiguration.ConfigurationGroup'|''|'CorrelationID'|
+'DEMDataSet'|'group'|'dConfiguration.ProcedureGroup'|''|'UUID'|
+'DEMDataSet'|'group'|'dConfiguration.ProcedureGroup'|''|'CorrelationID'|
+'DEMDataSet'|'element'|'dConfiguration.07'|'EMS Agency Procedures'|'CorrelationID'|
+'DEMDataSet'|'group'|'dConfiguration.MedicationGroup'|''|'UUID'|
+'DEMDataSet'|'group'|'dConfiguration.MedicationGroup'|''|'CorrelationID'|
+'DEMDataSet'|'element'|'dConfiguration.09'|'EMS Agency Medications'|'CodeType'|
+'DEMDataSet'|'element'|'dConfiguration.09'|'EMS Agency Medications'|'CorrelationID'|
+'DEMDataSet'|'element'|'dConfiguration.10'|'EMS Agency Protocols'|'CorrelationID'|
+'DEMDataSet'|'element'|'dConfiguration.11'|'EMS Agency Specialty Service Capability'|'NV'|
+'DEMDataSet'|'element'|'dConfiguration.11'|'EMS Agency Specialty Service Capability'|'CorrelationID'|
+'DEMDataSet'|'element'|'dConfiguration.14'|'EMD Vendor'|'NV'|
+'DEMDataSet'|'element'|'dConfiguration.14'|'EMD Vendor'|'CorrelationID'|
+'DEMDataSet'|'element'|'dConfiguration.15'|'Patient Monitoring Capability(ies)'|'NV'|
+'DEMDataSet'|'element'|'dConfiguration.15'|'Patient Monitoring Capability(ies)'|'CorrelationID'|
+'DEMDataSet'|'element'|'dConfiguration.16'|'Crew Call Sign'|'CorrelationID'|
+'DEMDataSet'|'element'|'dConfiguration.17'|'Dispatch Center (CAD) Name or ID'|'CorrelationID'|
+'DEMDataSet'|'group'|'dLocation.LocationGroup'|''|'UUID'|
+'DEMDataSet'|'group'|'dLocation.LocationGroup'|''|'CorrelationID'|
+'DEMDataSet'|'element'|'dLocation.06'|'EMS Location Address'|'StreetAddress2'|
+'DEMDataSet'|'element'|'dLocation.12'|'EMS Location Phone Number'|'PhoneNumberType'|
+'DEMDataSet'|'element'|'dLocation.12'|'EMS Location Phone Number'|'CorrelationID'|
+'DEMDataSet'|'group'|'dVehicle.VehicleGroup'|''|'UUID'|
+'DEMDataSet'|'group'|'dVehicle.VehicleGroup'|''|'CorrelationID'|
+'DEMDataSet'|'element'|'dVehicle.01'|'Unit/Vehicle Number'|'NV'|
+'DEMDataSet'|'element'|'dVehicle.04'|'Vehicle Type'|'NV'|
+'DEMDataSet'|'group'|'dVehicle.VehicleCertificationLevelsGroup'|''|'UUID'|
+'DEMDataSet'|'group'|'dVehicle.VehicleCertificationLevelsGroup'|''|'CorrelationID'|
+'DEMDataSet'|'element'|'dVehicle.10'|'Vehicle Model Year'|'NV'|
+'DEMDataSet'|'group'|'dVehicle.YearGroup'|''|'UUID'|
+'DEMDataSet'|'group'|'dVehicle.YearGroup'|''|'CorrelationID'|
+'DEMDataSet'|'element'|'dVehicle.13'|'Annual Vehicle Miles/Kilometers'|'DistanceUnit'|
+'DEMDataSet'|'group'|'dPersonnel.PersonnelGroup'|''|'UUID'|
+'DEMDataSet'|'group'|'dPersonnel.PersonnelGroup'|''|'CorrelationID'|
+'DEMDataSet'|'element'|'dPersonnel.01'|'EMS Personnel's Last Name'|'NV'|
+'DEMDataSet'|'element'|'dPersonnel.02'|'EMS Personnel's First Name'|'NV'|
+'DEMDataSet'|'element'|'dPersonnel.03'|'EMS Personnel's Middle Name/Initial'|'NV'|
+'DEMDataSet'|'element'|'dPersonnel.04'|'EMS Personnel's Mailing Address'|'StreetAddress2'|
+'DEMDataSet'|'element'|'dPersonnel.09'|'EMS Personnel's Phone Number'|'PhoneNumberType'|
+'DEMDataSet'|'element'|'dPersonnel.09'|'EMS Personnel's Phone Number'|'CorrelationID'|
+'DEMDataSet'|'element'|'dPersonnel.10'|'EMS Personnel's Email Address'|'EmailAddressType'|
+'DEMDataSet'|'element'|'dPersonnel.10'|'EMS Personnel's Email Address'|'CorrelationID'|
+'DEMDataSet'|'element'|'dPersonnel.11'|'EMS Personnel's Date of Birth'|'NV'|
+'DEMDataSet'|'element'|'dPersonnel.12'|'EMS Personnel's Gender (DEPRECATED)'|'NV'|
+'DEMDataSet'|'element'|'dPersonnel.13'|'EMS Personnel's Race'|'NV'|
+'DEMDataSet'|'element'|'dPersonnel.13'|'EMS Personnel's Race'|'CorrelationID'|
+'DEMDataSet'|'element'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'CorrelationID'|
+'DEMDataSet'|'element'|'dPersonnel.17'|'EMS Personnel's Motor Vehicle License Type'|'CorrelationID'|
+'DEMDataSet'|'group'|'dPersonnel.ImmunizationsGroup'|''|'UUID'|
+'DEMDataSet'|'group'|'dPersonnel.ImmunizationsGroup'|''|'CorrelationID'|
+'DEMDataSet'|'element'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'CorrelationID'|
+'DEMDataSet'|'group'|'dPersonnel.LicensureGroup'|''|'UUID'|
+'DEMDataSet'|'group'|'dPersonnel.LicensureGroup'|''|'CorrelationID'|
+'DEMDataSet'|'element'|'dPersonnel.22'|'EMS Personnel's State of Licensure'|'NV'|
+'DEMDataSet'|'element'|'dPersonnel.23'|'EMS Personnel's State's Licensure ID Number'|'NV'|
+'DEMDataSet'|'element'|'dPersonnel.24'|'EMS Personnel's State EMS Certification Licensure Level'|'NV'|
+'DEMDataSet'|'element'|'dPersonnel.31'|'EMS Personnel's Employment Status'|'NV'|
+'DEMDataSet'|'element'|'dPersonnel.32'|'EMS Personnel's Employment Status Date'|'NV'|
+'DEMDataSet'|'element'|'dPersonnel.34'|'EMS Personnel's Primary EMS Job Role'|'NV'|
+'DEMDataSet'|'element'|'dPersonnel.35'|'EMS Personnel's Other Job Responsibilities'|'NV'|
+'DEMDataSet'|'element'|'dPersonnel.35'|'EMS Personnel's Other Job Responsibilities'|'CorrelationID'|
+'DEMDataSet'|'group'|'dPersonnel.CertificationLevelGroup'|''|'UUID'|
+'DEMDataSet'|'group'|'dPersonnel.CertificationLevelGroup'|''|'CorrelationID'|
+'DEMDataSet'|'element'|'dPersonnel.40'|'EMS Personnel's Sex'|'NV'|
+'DEMDataSet'|'group'|'dDevice.DeviceGroup'|''|'UUID'|
+'DEMDataSet'|'group'|'dDevice.DeviceGroup'|''|'CorrelationID'|
+'DEMDataSet'|'element'|'dDevice.03'|'Medical Device Type'|'CorrelationID'|
+'DEMDataSet'|'group'|'dFacilityGroup'|''|'UUID'|
+'DEMDataSet'|'group'|'dFacilityGroup'|''|'CorrelationID'|
+'DEMDataSet'|'group'|'dFacility.FacilityGroup'|''|'UUID'|
+'DEMDataSet'|'group'|'dFacility.FacilityGroup'|''|'CorrelationID'|
+'DEMDataSet'|'element'|'dFacility.04'|'Hospital Designations'|'CorrelationID'|
+'DEMDataSet'|'element'|'dFacility.05'|'Facility National Provider Identifier'|'CorrelationID'|
+'DEMDataSet'|'element'|'dFacility.07'|'Facility Street Address'|'StreetAddress2'|
+'DEMDataSet'|'element'|'dFacility.15'|'Facility Phone Number'|'PhoneNumberType'|
+'DEMDataSet'|'element'|'dFacility.15'|'Facility Phone Number'|'CorrelationID'|
+'DEMDataSet'|'group'|'dCustomResults.ResultsGroup'|''|'CorrelationID'|
+'DEMDataSet'|'element'|'dCustomResults.01'|'Custom Data Element Result'|'NV'|
+'DEMDataSet'|'element'|'dCustomResults.01'|'Custom Data Element Result'|'PN'|

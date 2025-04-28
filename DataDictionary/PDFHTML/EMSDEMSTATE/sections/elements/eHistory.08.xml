@@ -1,0 +1,61 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eHistory.08"  minOccurs="0"  maxOccurs="M"  dataTypeName="icd10MedSurge"  isNillable="Yes">
+<name>Medical/Surgical History</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The patient's pre-existing medical and surgery history of the patient.</definition>
+<v2Number>E12_10</v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>The Medical/Surgical History pattern has been extended to include ICD-10-CM: Diagnosis Codes and ICD-10-PCS: Procedural Health Intervention Codes. 
+<br/>
+<br/>ICD-10-CM: Diagnosis Codes. 
+<br/>Website - <a href="http://uts.nlm.nih.gov" target="_blank">http://uts.nlm.nih.gov</a> 
+<br/>Product - UMLS Metathesaurus 
+<br/>Please reference the NEMSIS Suggested Lists at: <a href="https://nemsis.org/technical-resources/version-3/version-3-resource-repository/" target="_blank">https://nemsis.org/technical-resources/version-3/version-3-resource-repository/</a> 
+<br/>
+<br/>ICD-10-PCS has a seven character alphanumeric code structure. Each character contains up to 34 possible values. Each value represents a specific option for the general character definition (e.g., stomach is one of the values for the body part character). 
+
+<br/>The ten digits 0-9 and the 24 letters A-H,J-N and P-Z may be used in each character. The letters O and I are not used in order to avoid confusion with the digits 0 and 1. There are no decimals in ICD-10-PCS.
+<br/>Website - <a href="http://uts.nlm.nih.gov " target="_blank">http://uts.nlm.nih.gov</a> 
+<br/>Product - UMLS Metathesaurus</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <icd10MedSurge baseType="string">
+    <facet name="pattern" value="([A-QRSTUZ][0-9][0-9A-Z])((\.[0-9A-Z]{1,3})?)|[0-9A-HJ-NP-Z]{3,7}"/>
+  </icd10MedSurge>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+  <PN>
+    <PN.NoneReported><facet name="enumeration" value="8801015" annotation="None Reported"/></PN.NoneReported>
+    <PN.Refused><facet name="enumeration" value="8801019" annotation="Refused"/></PN.Refused>
+    <PN.UnableToComplete><facet name="enumeration" value="8801023" annotation="Unable to Complete"/></PN.UnableToComplete>
+    <PN.Unresponsive><facet name="enumeration" value="8801021" annotation="Unresponsive"/></PN.Unresponsive>
+  </PN>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_e008" role="Error">
+      When Medical/Surgical History has a Pertinent Negative, it should be empty and it should not have a Not Value (Not Applicable, Not Recorded, or Not Reporting).
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Medical/Surgical History has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Medical/Surgical History is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Medical/Surgical History has a Not Value, no other value should be recorded.
+      </assert>
+  <assert id="nemSch_e010" role="Warning">
+      When Medical/Surgical History has a Pertinent Negative, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

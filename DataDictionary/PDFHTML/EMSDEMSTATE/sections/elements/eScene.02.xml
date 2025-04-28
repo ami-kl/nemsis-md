@@ -1,0 +1,21 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eScene.02"  minOccurs="0"  maxOccurs="1"  dataTypeName="OtherEMSAgenciesAtScene"  isNillable="No">
+<name>Other EMS or Public Safety Agencies at Scene</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The name(s) of other EMS or public safety agencies at the scene.</definition>
+<v2Number>E08_01</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>For states and local agencies that participate in the Cardiac Arrest Registry for Enhanced Survival (CARES), eScene.02 and eScene.03 are used to populate CARES data element
+											#16 Fire/First Responder as defined by CARES in the CARES Data Dictionary: <a href="https://vendors.mycares.net/" target="_blank">https://vendors.mycares.net/</a>.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <OtherEMSAgenciesAtScene baseType="string">
+    <facet name="minLength" value="2"/>
+    <facet name="maxLength" value="100"/>
+  </OtherEMSAgenciesAtScene>
+</restrictions>
+</element>

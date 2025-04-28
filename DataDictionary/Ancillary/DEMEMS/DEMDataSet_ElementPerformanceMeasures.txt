@@ -1,0 +1,158 @@
+'Dataset'|'DatasetType'|'ElementNumber'|'ElementName'|'National'|'State'|'Airway'|'CardiacArrest'|'Pediatric'|'Response'|'STEMI'|'Stroke'|'Trauma'|
+'DEMDataSet'|'element'|'dCustomConfiguration.01'|'Custom Data Element Title'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dCustomConfiguration.02'|'Custom Definition'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dCustomConfiguration.03'|'Custom Data Type'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dCustomConfiguration.04'|'Custom Data Element Recurrence'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dCustomConfiguration.05'|'Custom Data Element Usage'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dCustomConfiguration.06'|'Custom Data Element Potential Values'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dCustomConfiguration.07'|'Custom Data Element Potential NOT Values (NV)'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dCustomConfiguration.08'|'Custom Data Element Potential Pertinent Negative Values (PN)'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dCustomConfiguration.09'|'Custom Data Element Grouping ID'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dRecord.01'|'Software Creator'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dRecord.02'|'Software Name'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dRecord.03'|'Software Version'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dAgency.01'|'EMS Agency Unique State ID'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dAgency.02'|'EMS Agency Number'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dAgency.03'|'EMS Agency Name'|''|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dAgency.04'|'EMS Agency State'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dAgency.05'|'EMS Agency Service Area States'|'National'|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dAgency.06'|'EMS Agency Service Area County(ies)'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dAgency.07'|'EMS Agency Census Tracts'|'National'|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dAgency.08'|'EMS Agency Service Area ZIP Codes'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dAgency.09'|'Primary Type of Service'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dAgency.10'|'Other Types of Service'|''|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dAgency.11'|'Level of Service'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dAgency.12'|'Organization Status'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dAgency.13'|'Organizational Type'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dAgency.14'|'EMS Agency Organizational Tax Status'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dAgency.15'|'Statistical Calendar Year'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dAgency.16'|'Total Primary Service Area Size'|''|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dAgency.17'|'Total Service Area Population'|''|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dAgency.18'|'911 EMS Call Center Volume per Year'|''|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dAgency.19'|'EMS Dispatch Volume per Year'|''|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dAgency.20'|'EMS Patient Transport Volume per Year'|''|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dAgency.21'|'EMS Patient Contact Volume per Year'|''|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dAgency.22'|'EMS Billable Calls per Year'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dAgency.23'|'EMS Agency Time Zone'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dAgency.24'|'EMS Agency Daylight Savings Time Use'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dAgency.25'|'National Provider Identifier'|'National'|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dAgency.26'|'Fire Department ID Number'|'National'|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dAgency.27'|'Licensed Agency'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dContact.01'|'Agency Contact Type'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dContact.02'|'Agency Contact Last Name'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dContact.03'|'Agency Contact First Name'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dContact.04'|'Agency Contact Middle Name/Initial'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dContact.05'|'Agency Contact Address'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dContact.06'|'Agency Contact City'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dContact.07'|'Agency Contact State'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dContact.08'|'Agency Contact ZIP Code'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dContact.09'|'Agency Contact Country'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dContact.10'|'Agency Contact Phone Number'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dContact.11'|'Agency Contact Email Address'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dContact.12'|'EMS Agency Contact Web Address'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dContact.13'|'Agency Medical Director Degree'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dContact.14'|'Agency Medical Director Board Certification Type'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dContact.15'|'Medical Director Compensation'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dContact.16'|'EMS Medical Director Board Certified/Eligible'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dConfiguration.01'|'State Associated with this Configuration'|'National'|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dConfiguration.06'|'EMS Certification Levels Permitted to Perform Each Procedure'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dConfiguration.07'|'EMS Agency Procedures'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dConfiguration.08'|'EMS Certification Levels Permitted to Administer Each Medication'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dConfiguration.09'|'EMS Agency Medications'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dConfiguration.10'|'EMS Agency Protocols'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dConfiguration.11'|'EMS Agency Specialty Service Capability'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dConfiguration.12'|'Billing Status'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dConfiguration.13'|'Emergency Medical Dispatch (EMD) Provided to EMS Agency Service Area'|'National'|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dConfiguration.14'|'EMD Vendor'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dConfiguration.15'|'Patient Monitoring Capability(ies)'|''|'State'|'X'|'X'|'X'|'X'|'X'|'X'|'X'|
+'DEMDataSet'|'element'|'dConfiguration.16'|'Crew Call Sign'|'National'|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dConfiguration.17'|'Dispatch Center (CAD) Name or ID'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dLocation.01'|'EMS Location Type'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dLocation.02'|'EMS Location Name'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dLocation.03'|'EMS Location Number'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dLocation.04'|'EMS Location GPS'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dLocation.05'|'EMS Location US National Grid Coordinates'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dLocation.06'|'EMS Location Address'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dLocation.07'|'EMS Location City'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dLocation.08'|'EMS Location State'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dLocation.09'|'EMS Station or Location ZIP Code'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dLocation.10'|'EMS Location County'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dLocation.11'|'EMS Location Country'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dLocation.12'|'EMS Location Phone Number'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dVehicle.01'|'Unit/Vehicle Number'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dVehicle.02'|'Vehicle Identification Number'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dVehicle.03'|'EMS Unit Call Sign'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dVehicle.04'|'Vehicle Type'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dVehicle.05'|'Crew State Certification/Licensure Levels'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dVehicle.06'|'Number of Each EMS Personnel Level on Normal 911 Ambulance Response'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dVehicle.07'|'Number of Each EMS Personnel Level on Normal 911 Response (Non-Transport) Vehicle'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dVehicle.08'|'Number of Each EMS Personnel Level on Normal Medical (Non-911) Transport Ambulance'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dVehicle.09'|'Vehicle Initial Cost'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dVehicle.10'|'Vehicle Model Year'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dVehicle.11'|'Year Miles/Kilometers Hours Accrued'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dVehicle.12'|'Annual Vehicle Hours'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dVehicle.13'|'Annual Vehicle Miles/Kilometers'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.01'|'EMS Personnel's Last Name'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.02'|'EMS Personnel's First Name'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.03'|'EMS Personnel's Middle Name/Initial'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.04'|'EMS Personnel's Mailing Address'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.05'|'EMS Personnel's City of Residence'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.06'|'EMS Personnel's State'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.07'|'EMS Personnel's ZIP Code'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.08'|'EMS Personnel's Country'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.09'|'EMS Personnel's Phone Number'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.10'|'EMS Personnel's Email Address'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.11'|'EMS Personnel's Date of Birth'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.12'|'EMS Personnel's Gender (DEPRECATED)'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.13'|'EMS Personnel's Race'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.14'|'EMS Personnel's Citizenship'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.15'|'EMS Personnel's Highest Educational Degree'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.17'|'EMS Personnel's Motor Vehicle License Type'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.19'|'EMS Personnel's Immunization Year'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.21'|'EMS Personnel's Agency ID Number'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.22'|'EMS Personnel's State of Licensure'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.23'|'EMS Personnel's State's Licensure ID Number'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.24'|'EMS Personnel's State EMS Certification Licensure Level'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.25'|'EMS Personnel's State EMS Current Certification Date'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.26'|'EMS Personnel's Initial State's Licensure Issue Date'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.27'|'EMS Personnel's Current State's Licensure Expiration Date'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.28'|'EMS Personnel's National Registry Number'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.29'|'EMS Personnel's National Registry Certification Level'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.30'|'EMS Personnel's Current National Registry Expiration Date'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.31'|'EMS Personnel's Employment Status'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.32'|'EMS Personnel's Employment Status Date'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.33'|'EMS Personnel's Hire Date'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.34'|'EMS Personnel's Primary EMS Job Role'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.35'|'EMS Personnel's Other Job Responsibilities'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.36'|'EMS Personnel's Total Length of Service in Years'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.37'|'EMS Personnel's Date Length of Service Documented'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.38'|'EMS Personnel's Practice Level'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.39'|'Date of Personnel's Certification or Licensure for Agency'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dPersonnel.40'|'EMS Personnel's Sex'|''|'State'|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dDevice.01'|'Medical Device Serial Number'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dDevice.02'|'Medical Device Name or ID'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dDevice.03'|'Medical Device Type'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dDevice.04'|'Medical Device Manufacturer'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dDevice.05'|'Medical Device Model Number'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dDevice.06'|'Medical Device Purchase Date'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dFacility.01'|'Type of Facility'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dFacility.02'|'Facility Name'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dFacility.03'|'Facility Location Code'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dFacility.04'|'Hospital Designations'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dFacility.05'|'Facility National Provider Identifier'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dFacility.06'|'Facility Room, Suite, or Apartment'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dFacility.07'|'Facility Street Address'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dFacility.08'|'Facility City'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dFacility.09'|'Facility State'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dFacility.10'|'Facility ZIP Code'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dFacility.11'|'Facility County'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dFacility.12'|'Facility Country'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dFacility.13'|'Facility GPS Location'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dFacility.14'|'Facility US National Grid Coordinates'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dFacility.15'|'Facility Phone Number'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dCustomResults.01'|'Custom Data Element Result'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dCustomResults.02'|'Custom Element ID Referenced'|''|''|''|''|''|''|''|''|''|
+'DEMDataSet'|'element'|'dCustomResults.03'|'CorrelationID of DemographicReport Element or Group'|''|''|''|''|''|''|''|''|''|

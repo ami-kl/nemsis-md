@@ -1,0 +1,41 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eOther.07"  minOccurs="0"  maxOccurs="M"  dataTypeName="SuspectedIntentionalOrUnintentionalDisaster"  isNillable="No">
+<name>Natural, Suspected, Intentional, or Unintentional Disaster</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>Event caused by natural forces or Suspected and Intentional/Unintentional Disasters (terrorism).</definition>
+<v2Number>E23_04</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Based on FEMA website</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <SuspectedIntentionalOrUnintentionalDisaster baseType="string">
+    <facet name="enumeration" value="4507001" annotation="Biologic Agent"/>
+    <facet name="enumeration" value="4507003" annotation="Building Failure"/>
+    <facet name="enumeration" value="4507005" annotation="Chemical Agent"/>
+    <facet name="enumeration" value="4507007" annotation="Explosive Device"/>
+    <facet name="enumeration" value="4507009" annotation="Fire"/>
+    <facet name="enumeration" value="4507011" annotation="Hostage Event"/>
+    <facet name="enumeration" value="4507013" annotation="Mass Gathering"/>
+    <facet name="enumeration" value="4507015" annotation="Mass Illness"/>
+    <facet name="enumeration" value="4507017" annotation="Nuclear Agent"/>
+    <facet name="enumeration" value="4507019" annotation="Radioactive Device"/>
+    <facet name="enumeration" value="4507021" annotation="Secondary Destructive Device"/>
+    <facet name="enumeration" value="4507023" annotation="Shooting/Sniper"/>
+    <facet name="enumeration" value="4507025" annotation="Vehicular"/>
+    <facet name="enumeration" value="4507027" annotation="Weather (Other)"/>
+    <facet name="enumeration" value="4507029" annotation="Earthquake"/>
+    <facet name="enumeration" value="4507031" annotation="Flood"/>
+    <facet name="enumeration" value="4507033" annotation="Land Slide"/>
+    <facet name="enumeration" value="4507035" annotation="Winter Storm"/>
+    <facet name="enumeration" value="4507037" annotation="Tornado"/>
+    <facet name="enumeration" value="4507039" annotation="Hurricane"/>
+  </SuspectedIntentionalOrUnintentionalDisaster>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

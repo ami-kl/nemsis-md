@@ -1,0 +1,5 @@
+<?xml-stylesheet type="text/xsl" href="../xslt/grouping.xslt"?>
+<section name="eDispatch">
+  <element number="eDispatch.01" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="DispatchReason"><name>Dispatch Reason</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Mandatory</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+  <element number="eDispatch.02" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="Yes" dataType="EMDPerformed"><name>EMD Performed</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Required</usage><notValue>Yes</notValue><pertinentNegative></pertinentNegative></element>
+</section>

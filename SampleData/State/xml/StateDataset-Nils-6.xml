@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StateDataSet xmlns="http://www.nemsis.org"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.nemsis.org http://nemsis.org/media/nemsis_v3/release-3.5.0/XSDs/NEMSIS_XSDs/StateDataSet_v3.xsd" timestamp="2019-07-04T14:23:04+07:00">
+    <sState>
+        <sState.01>22</sState.01>
+    </sState>
+    <seCustomConfiguration>
+        <seCustomConfiguration.CustomGroup CustomElementID="BD">
+            <seCustomConfiguration.01 nemsisElement="Ivydla4">r3.I8looggtL8t9iD2Adr6MfKXcdu40hyQKJOZOnV1DcvqEn</seCustomConfiguration.01>
+            <seCustomConfiguration.02>Z-GA2ZsZwoLdwTTIvuR.mOygkivGIpnAn46P1ODqljjIOIoomLT6_v_1BInEhzEMNK0B0RNQuPaVjSY1YqMgfWWtqu1sliPX65nl03lbQD2aOiLn1t4BUZsyPk-wSbBD5U6dWx3JkVCGmLGkkKSga</seCustomConfiguration.02>
+            <seCustomConfiguration.03>9902009</seCustomConfiguration.03>
+            <seCustomConfiguration.04>9923001</seCustomConfiguration.04>
+            <seCustomConfiguration.05>9903005</seCustomConfiguration.05>
+            <seCustomConfiguration.06 nemsisCode="uwR." customValueDescription="vXQU">cyHR.qRAzSoo_iOQLwjjN</seCustomConfiguration.06>
+            <seCustomConfiguration.07>7701003</seCustomConfiguration.07>
+            <seCustomConfiguration.08>8801001</seCustomConfiguration.08>
+            <seCustomConfiguration.09>rYjoQe-.7u-Ekc2OIqyYLY98j</seCustomConfiguration.09>
+        </seCustomConfiguration.CustomGroup>
+    </seCustomConfiguration>
+    <sdCustomConfiguration>
+        <sdCustomConfiguration.CustomGroup CustomElementID="Zn.lwsr3TXrnf.q.SiozY2s1BZjUVwteP9B1aNajZ0KQcRKA82_mCngOA9aQihtYQwmH.k5ofHqQjb5mX7iXDEHw-nVT5cBkGty6VrnPaVMVBR7AQjtTd6Jv6oSqhgsi8G5bP-JBnH18onn86dUSdofbXJNWhYqOTkweQP">
+            <sdCustomConfiguration.01 nemsisElement="g4">knPGkK-4XDlAy0B5tb0E0Fy8KC3oov6jQum4y7erJdvA6eroYLrnqLH5ePM3W9Zb</sdCustomConfiguration.01>
+            <sdCustomConfiguration.02>zmhuARymUUPtSZtpZvYM_NPUos7Z_J8aKcK-c6afVkxjVa.IW2XdDnfpTSWstnSqnxMFcmvkJPz-fMG-DTfbWS_n98zyyE9-R5wuiX6CjkJ_fKTjtqIEzmK1-6WQLyRAESi_l-rOqgE1YOdngeUzs0cZTUpxTt1dG6BB9Ubjle7sgJ64n7tlKBUG7AQuP1qq0hL9EkBkRHnOtRt3uSPvra</sdCustomConfiguration.02>
+            <sdCustomConfiguration.03>9902007</sdCustomConfiguration.03>
+            <sdCustomConfiguration.04>9923001</sdCustomConfiguration.04>
+            <sdCustomConfiguration.05>9903003</sdCustomConfiguration.05>
+            <sdCustomConfiguration.06 nemsisCode="vEHWb" customValueDescription="bmy_3">UY2UQ8A7fU41CG8EwV</sdCustomConfiguration.06>
+            <sdCustomConfiguration.07>7701001</sdCustomConfiguration.07>
+            <sdCustomConfiguration.08>8801013</sdCustomConfiguration.08>
+            <sdCustomConfiguration.09>syovSUhKK8w</sdCustomConfiguration.09>
+        </sdCustomConfiguration.CustomGroup>
+    </sdCustomConfiguration>
+    <sSoftware>
+        <sSoftware.SoftwareGroup>
+            <sSoftware.01 xsi:nil="true" NV="7701001"></sSoftware.01>
+            <sSoftware.02 xsi:nil="true" NV="7701005"></sSoftware.02>
+            <sSoftware.03 xsi:nil="true" NV="7701001"></sSoftware.03>
+        </sSoftware.SoftwareGroup>
+    </sSoftware>
+    <sElement>
+        <sElement.01 xsi:nil="true" NV="7701001"></sElement.01>
+    </sElement>
+    <sConfiguration>
+        <sConfiguration.01 xsi:nil="true" NV="7701001"></sConfiguration.01>
+        <sConfiguration.ProcedureGroup>
+            <sConfiguration.02 xsi:nil="true" NV="7701003"></sConfiguration.02>
+            <sConfiguration.03 xsi:nil="true" NV="7701003"></sConfiguration.03>
+        </sConfiguration.ProcedureGroup>
+        <sConfiguration.MedicationGroup>
+            <sConfiguration.04 xsi:nil="true" NV="7701003"></sConfiguration.04>
+            <sConfiguration.05 xsi:nil="true" NV="7701001"></sConfiguration.05>
+        </sConfiguration.MedicationGroup>
+        <sConfiguration.06 xsi:nil="true" NV="7701003"></sConfiguration.06>
+    </sConfiguration>
+    <sAgency>
+        <sAgencyGroup>
+            <sAgency.01 xsi:nil="true" NV="7701001"></sAgency.01>
+            <sAgency.02 xsi:nil="true" NV="7701003"></sAgency.02>
+            <sAgency.03 xsi:nil="true" NV="7701001"></sAgency.03>
+        </sAgencyGroup>
+    </sAgency>
+    <sFacility>
+        <sFacilityGroup>
+            <sFacility.01 xsi:nil="true" NV="7701001"></sFacility.01>
+            <sFacility.FacilityGroup>
+                <sFacility.02 xsi:nil="true" NV="7701001"></sFacility.02>
+                <sFacility.03 xsi:nil="true" NV="7701001"></sFacility.03>
+                <sFacility.04 xsi:nil="true" NV="7701001"></sFacility.04>
+                <sFacility.05>KHpjQt28bX</sFacility.05>
+                <sFacility.06>d9ce</sFacility.06>
+                <sFacility.07 StreetAddress2="rUGNvcDMuJivFz.qQ7UWwT1PvhF5N3fiCN3QF4hDGng9ykj">dWABMz24Upwm50n.NTc5_as-XWY-JnAGDVwxlu6JbKQh4Jg1hgMESnw8Ru1bGwHSHWFD5uB45FWadajIPAFbCeT3CHMHXefN_vaQqt9aabEMCQlA2PswuL2i7Itgyk5PKxp2LJfMvczIH9esRNrvSgiiureu_xdWO2OFnfLQYeoPCAb</sFacility.07>
+                <sFacility.08>2052201134</sFacility.08>
+                <sFacility.09 xsi:nil="true" NV="7701001"></sFacility.09>
+                <sFacility.10 xsi:nil="true" NV="7701001"></sFacility.10>
+                <sFacility.11 xsi:nil="true" NV="7701005"></sFacility.11>
+                <sFacility.12>US</sFacility.12>
+                <sFacility.13>90,37</sFacility.13>
+                <sFacility.14>35UDK76763783</sFacility.14>
+                <sFacility.15 PhoneNumberType="9913003">620-846-7594</sFacility.15>
+            </sFacility.FacilityGroup>
+        </sFacilityGroup>
+    </sFacility>
+</StateDataSet>

@@ -1,0 +1,28 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.44"  minOccurs="0"  maxOccurs="M"  dataTypeName="AmbulanceReasonCode"  isNillable="No">
+<name>Ambulance Transport Reason Code</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The CMS Ambulance Transport Reason Code for the transport.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Added to improve billing with electronic claims using the ASC X12 Standard. 
+								The Ambulance Transport Code values are those determined by US Dept of HHS for the "Code indicating the type of ambulance transport". The Accredited Standards Committee X12 organization maintains the standard. See the X12 website http://www.x12.org or United States Health Information Knowledgebase website for more information:<br/>
+<a href="https://ushik.ahrq.gov/ViewItemDetails?system=sdo&amp;itemKey=133080000" target="_blank">https://ushik.ahrq.gov/ViewItemDetails?system=sdo&amp;itemKey=133080000</a></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <AmbulanceReasonCode baseType="string">
+    <facet name="enumeration" value="A" annotation="Patient was transported to the nearest facility for care of symptoms, complaints, or both"/>
+    <facet name="enumeration" value="B" annotation="Patient was transported for the benefit of a preferred physician"/>
+    <facet name="enumeration" value="C" annotation="Patient was transported for the nearness of family members"/>
+    <facet name="enumeration" value="D" annotation="Patient was transported for the care of a specialist or for availability of equipment"/>
+    <facet name="enumeration" value="E" annotation="Patient was transferred to a Rehabilitation Facility"/>
+  </AmbulanceReasonCode>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

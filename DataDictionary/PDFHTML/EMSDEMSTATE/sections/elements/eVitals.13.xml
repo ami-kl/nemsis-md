@@ -1,0 +1,21 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eVitals.13"  minOccurs="0"  maxOccurs="1"  dataTypeName="PulseRhythm"  isNillable="No">
+<name>Pulse Rhythm</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The clinical rhythm of the patient's pulse.</definition>
+<v2Number>E14_10</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <PulseRhythm baseType="string">
+    <facet name="enumeration" value="3313001" annotation="Irregularly Irregular"/>
+    <facet name="enumeration" value="3313003" annotation="Regular"/>
+    <facet name="enumeration" value="3313005" annotation="Regularly Irregular"/>
+  </PulseRhythm>
+</restrictions>
+</element>

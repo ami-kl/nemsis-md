@@ -1,0 +1,38 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.42"  minOccurs="0"  maxOccurs="M"  dataTypeName="TransportCareProvider"  isNillable="No">
+<name>Specialty Care Transport Care Provider</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>Documentation to show the patient care provided to the patient met the Specialty Care Transport Base Rate requirements.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Added to improve Specialty Care Transport billing justification. In accordance with CMS requirements Specialty Care Transport (SCT): ""Additional training" means the specific additional training that a State requires a paramedic to complete in order to qualify to furnish specialty care to a critically ill or injured patient during an SCT."</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <TransportCareProvider baseType="string">
+    <facet name="enumeration" value="2642001" annotation="Advanced EMT-Paramedic"/>
+    <facet name="enumeration" value="2642003" annotation="Nurse"/>
+    <facet name="enumeration" value="2642005" annotation="Nurse Practitioner"/>
+    <facet name="enumeration" value="2642007" annotation="Physician (MD, DO)"/>
+    <facet name="enumeration" value="2642009" annotation="Physician Assistant"/>
+    <facet name="enumeration" value="2642011" annotation="Emergency Medical Responder (EMR)"/>
+    <facet name="enumeration" value="2642013" annotation="Emergency Medical Technician (EMT)"/>
+    <facet name="enumeration" value="2643014" annotation="Emergency Medical Technician - Intermediate"/>
+    <facet name="enumeration" value="2642015" annotation="Advanced Emergency Medical Technician (AEMT)"/>
+    <facet name="enumeration" value="2642017" annotation="Paramedic"/>
+    <facet name="enumeration" value="2642027" annotation="Other Healthcare Professional"/>
+    <facet name="enumeration" value="2642029" annotation="Other Non-Healthcare Professional"/>
+    <facet name="enumeration" value="2642031" annotation="Respiratory Therapist"/>
+    <facet name="enumeration" value="2642033" annotation="Student"/>
+    <facet name="enumeration" value="2642035" annotation="Critical Care Paramedic"/>
+    <facet name="enumeration" value="2642037" annotation="Community Paramedicine"/>
+    <facet name="enumeration" value="2642039" annotation="Registered Nurse"/>
+  </TransportCareProvider>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

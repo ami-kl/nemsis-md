@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eOutcome.04"  minOccurs="0"  maxOccurs="1"  dataTypeName="ExternalReportID"  isNillable="No">
+<name>External Report ID/Number</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The ID or Number of the external report or record in eOutcome.03.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This data element is a merge based on the following Version 2.2.1 elements:  E22_03, E22_04, E22_05, and E22_06</v3Comment>
+<v3Changes>Added to allow documentation of external record and identification numbers.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ExternalReportID baseType="string">
+    <facet name="minLength" value="2"/>
+    <facet name="maxLength" value="100"/>
+  </ExternalReportID>
+</restrictions>
+</element>

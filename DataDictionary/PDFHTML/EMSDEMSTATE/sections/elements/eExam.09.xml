@@ -1,0 +1,35 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eExam.09"  minOccurs="0"  maxOccurs="M"  dataTypeName="HeartAssessment"  isNillable="No">
+<name>Heart Assessment</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The assessment findings associated with the patient's heart.</definition>
+<v2Number>E16_08</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Element eExam.09 - Heart Assessment represents Version 2.2.1 element E16_08 Heart Assessment. The element value choices have been expanded.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <HeartAssessment baseType="string">
+    <facet name="enumeration" value="3509001" annotation="Clicks"/>
+    <facet name="enumeration" value="3509003" annotation="Heart Sounds Decreased"/>
+    <facet name="enumeration" value="3509005" annotation="Murmur-Diastolic"/>
+    <facet name="enumeration" value="3509007" annotation="Murmur-Systolic"/>
+    <facet name="enumeration" value="3509009" annotation="Normal"/>
+    <facet name="enumeration" value="3509011" annotation="Not Done"/>
+    <facet name="enumeration" value="3509013" annotation="Rubs"/>
+    <facet name="enumeration" value="3509015" annotation="S1"/>
+    <facet name="enumeration" value="3509017" annotation="S2"/>
+    <facet name="enumeration" value="3509019" annotation="S3"/>
+    <facet name="enumeration" value="3509021" annotation="S4"/>
+  </HeartAssessment>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+  <PN>
+    <PN.ExamFindingNotPresent><facet name="enumeration" value="8801005" annotation="Exam Finding Not Present"/></PN.ExamFindingNotPresent>
+  </PN>
+</attributes>
+</element>

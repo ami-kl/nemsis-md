@@ -1,0 +1,72 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dPersonnel.20"  minOccurs="0"  maxOccurs="M"  dataTypeName="PersonnelForeignLanguageAbility"  isNillable="No">
+<name>EMS Personnel's Foreign Language Ability</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The languages spoken (other than English) by the personnel with at least an elementary level of proficiency.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes>Added to better describe the EMS workforce.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <PersonnelForeignLanguageAbility baseType="string">
+    <facet name="enumeration" value="amh" annotation="Amharic"/>
+    <facet name="enumeration" value="ara" annotation="Arabic"/>
+    <facet name="enumeration" value="arm" annotation="Armenian"/>
+    <facet name="enumeration" value="ben" annotation="Bengali"/>
+    <facet name="enumeration" value="crp" annotation="Cajun (Creole and Pidgins)"/>
+    <facet name="enumeration" value="chi" annotation="Chinese"/>
+    <facet name="enumeration" value="hrv" annotation="Croatian"/>
+    <facet name="enumeration" value="cze" annotation="Czech"/>
+    <facet name="enumeration" value="dan" annotation="Danish"/>
+    <facet name="enumeration" value="dut" annotation="Dutch"/>
+    <facet name="enumeration" value="fin" annotation="Finnish"/>
+    <facet name="enumeration" value="tai" annotation="Formosan"/>
+    <facet name="enumeration" value="fre" annotation="French"/>
+    <facet name="enumeration" value="cpf" annotation="French Creole"/>
+    <facet name="enumeration" value="ger" annotation="German"/>
+    <facet name="enumeration" value="gre" annotation="Greek"/>
+    <facet name="enumeration" value="guj" annotation="Gujarati"/>
+    <facet name="enumeration" value="heb" annotation="Hebrew"/>
+    <facet name="enumeration" value="hin" annotation="Hindi (Urdu)"/>
+    <facet name="enumeration" value="hun" annotation="Hungarian"/>
+    <facet name="enumeration" value="ilo" annotation="Ilocano"/>
+    <facet name="enumeration" value="itl" annotation="Italian"/>
+    <facet name="enumeration" value="jpn" annotation="Japanese"/>
+    <facet name="enumeration" value="kor" annotation="Korean"/>
+    <facet name="enumeration" value="kro" annotation="Kru"/>
+    <facet name="enumeration" value="lit" annotation="Lithuanian"/>
+    <facet name="enumeration" value="mal" annotation="Malayalam"/>
+    <facet name="enumeration" value="hmn" annotation="Miao (Hmong)"/>
+    <facet name="enumeration" value="mkh" annotation="Mon-Khmer (Cambodian)"/>
+    <facet name="enumeration" value="nav" annotation="Navaho"/>
+    <facet name="enumeration" value="nno" annotation="Norwegian"/>
+    <facet name="enumeration" value="pan" annotation="Panjabi"/>
+    <facet name="enumeration" value="gem" annotation="Pennsylvania Dutch (Germanic Other)"/>
+    <facet name="enumeration" value="per" annotation="Persian"/>
+    <facet name="enumeration" value="pol" annotation="Polish"/>
+    <facet name="enumeration" value="por" annotation="Portuguese"/>
+    <facet name="enumeration" value="rum" annotation="Romanian"/>
+    <facet name="enumeration" value="rus" annotation="Russian"/>
+    <facet name="enumeration" value="sgn" annotation="Sign Languages"/>
+    <facet name="enumeration" value="smo" annotation="Samoan"/>
+    <facet name="enumeration" value="srp" annotation="Serbo-Croatian"/>
+    <facet name="enumeration" value="slo" annotation="Slovak"/>
+    <facet name="enumeration" value="spa" annotation="Spanish"/>
+    <facet name="enumeration" value="swe" annotation="Swedish"/>
+    <facet name="enumeration" value="syr" annotation="Syriac"/>
+    <facet name="enumeration" value="tgl" annotation="Tagalog"/>
+    <facet name="enumeration" value="tha" annotation="Thai (Laotian)"/>
+    <facet name="enumeration" value="tur" annotation="Turkish"/>
+    <facet name="enumeration" value="ukr" annotation="Ukrainian"/>
+    <facet name="enumeration" value="vie" annotation="Vietnamese"/>
+    <facet name="enumeration" value="yid" annotation="Yiddish"/>
+  </PersonnelForeignLanguageAbility>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

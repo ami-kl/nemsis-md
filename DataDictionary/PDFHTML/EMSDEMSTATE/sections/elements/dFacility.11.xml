@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dFacility.11"  minOccurs="0"  maxOccurs="1"  dataTypeName="ANSICountyCode"  isNillable="No">
+<name>Facility County</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The county where the facility is located.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Based on the ANSI Code.  The information contained within this element could be used to populate the address information within eScene.21 (Incident County) and/or eDisposition.06 (Destination County) as appropriate.
+														<br/><br/>GNIS Codes Website: <a href="http://geonames.usgs.gov/domestic/download_data.htm" target="_blank">http://geonames.usgs.gov/domestic/download_data.htm</a></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ANSICountyCode baseType="string">
+    <facet name="pattern" value="[0-9]{5}"/>
+  </ANSICountyCode>
+</restrictions>
+</element>

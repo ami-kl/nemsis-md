@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.nemsis.org" targetNamespace="http://www.nemsis.org" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:include schemaLocation="commonTypes_v3.xsd" />
+    <xs:complexType name="dRecord" id="dSoftwareInformation">
+        <xs:sequence>
+            <xs:element name="dRecord.SoftwareApplicationGroup" id="dRecord.SoftwareApplicationGroup" minOccurs="0">
+           <xs:annotation>
+               <xs:documentation>Group tag to hold information about the software used to generate the Demographic XML file. This is not the last software which sent the demographic file from another software.</xs:documentation>
+           </xs:annotation>
+           <xs:complexType>
+               <xs:sequence>
+                   <xs:element name="dRecord.01" nillable="true" id="dAgency.SoftwareCreator" minOccurs="0">
+                       <xs:annotation>
+                           <xs:documentation>
+                               <nemsisTacDoc>
+                                   <number>dRecord.01</number>
+                                   <name>Software Creator</name>
+                                   <national>No</national>
+                                   <state>No</state>
+                                   <definition>The name of the vendor who designed the application that created the record for the agency listed in dAgency02.</definition>
+                                   <usage>Recommended</usage>
+                                   <comment>This was added to document the software used to generate the Demographic XML file. This is not the last software which sent the demographic file from another software.</comment>
+                               </nemsisTacDoc>
+                           </xs:documentation>
+                       </xs:annotation>
+                       <xs:complexType>
+                           <xs:simpleContent>
+                               <xs:extension base="SoftwareCreator">
+                                   <xs:attribute name="NV" use="optional">
+                                       <xs:simpleType>
+                                           <xs:union memberTypes="NV.NotApplicable NV.NotRecorded"/>
+                                       </xs:simpleType>
+                                   </xs:attribute>
+                               </xs:extension>
+                           </xs:simpleContent>
+                       </xs:complexType>
+                   </xs:element>
+                   <xs:element name="dRecord.02" nillable="true" id="dAgency.SoftwareName" minOccurs="0">
+                       <xs:annotation>
+                           <xs:documentation>
+                               <nemsisTacDoc>
+                                   <number>dRecord.02</number>
+                                   <name>Software Name</name>
+                                   <national>No</national>
+                                   <state>No</state>
+                                   <definition>The name of the application used to create the record for the agency listed in dAgency.02.</definition>
+                                   <usage>Recommended</usage>
+                                   <comment>This was added to document the software used to generate the Demographic XML file. This is not the last software which sent the demographic file from another software.</comment>
+                               </nemsisTacDoc>
+                           </xs:documentation>
+                       </xs:annotation>
+                       <xs:complexType>
+                           <xs:simpleContent>
+                               <xs:extension base="SoftwareName">
+                                   <xs:attribute name="NV" use="optional">
+                                       <xs:simpleType>
+                                           <xs:union memberTypes="NV.NotApplicable NV.NotRecorded"/>
+                                       </xs:simpleType>
+                                   </xs:attribute>
+                               </xs:extension>
+                           </xs:simpleContent>
+                       </xs:complexType>
+                   </xs:element>
+                   <xs:element name="dRecord.03" nillable="true" id="dAgency.SoftwareVersion" minOccurs="0">
+                       <xs:annotation>
+                           <xs:documentation>
+                               <nemsisTacDoc>
+                                   <number>dRecord.03</number>
+                                   <name>Software Version</name>
+                                   <national>No</national>
+                                   <state>No</state>
+                                   <definition>The version of the application used to create the record for the agency listed in dAgency.02.</definition>
+                                   <usage>Recommended</usage>
+                                   <comment>This was added to document the software version used to generate the Demographic XML file. This is not the last software which sent the demographic file from another software.</comment>
+                               </nemsisTacDoc>
+                           </xs:documentation>
+                       </xs:annotation>
+                       <xs:complexType>
+                           <xs:simpleContent>
+                               <xs:extension base="SoftwareVersion">
+                                   <xs:attribute name="NV" use="optional">
+                                       <xs:simpleType>
+                                           <xs:union memberTypes="NV.NotApplicable NV.NotRecorded"/>
+                                       </xs:simpleType>
+                                   </xs:attribute>
+                               </xs:extension>
+                           </xs:simpleContent>
+                       </xs:complexType>
+                   </xs:element>
+               </xs:sequence>
+           </xs:complexType>
+       </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

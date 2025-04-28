@@ -1,0 +1,9 @@
+<?xml-stylesheet type="text/xsl" href="../xslt/grouping.xslt"?>
+<section name="eRecord">
+  <element number="eRecord.01" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="PatientCareReportNumber"><name>Patient Care Report Number</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Mandatory</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+  <group number="eRecord.SoftwareApplicationGroup" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" ProcedureGroupCorrelationID="" CustomElementID="" timeStamp="" isNillable="No">
+    <element number="eRecord.02" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="SoftwareCreator"><name>Software Creator</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Mandatory</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <element number="eRecord.03" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="SoftwareName"><name>Software Name</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Mandatory</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+    <element number="eRecord.04" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="SoftwareVersion"><name>Software Version</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Mandatory</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+  </group>
+</section>

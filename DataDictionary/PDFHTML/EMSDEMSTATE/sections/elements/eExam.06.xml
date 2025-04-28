@@ -1,0 +1,47 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eExam.06"  minOccurs="0"  maxOccurs="M"  dataTypeName="FaceAssessment"  isNillable="No">
+<name>Face Assessment</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The assessment findings associated with the patient's face.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Element eExam.06 - Face Assessment represents Version 2.2.1 element E15_03 NHTSA Injury Matrix Face  The element value choices have been expanded.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <FaceAssessment baseType="string">
+    <facet name="enumeration" value="3506001" annotation="Abrasion"/>
+    <facet name="enumeration" value="3506003" annotation="Asymmetric Smile or Droop"/>
+    <facet name="enumeration" value="3506005" annotation="Avulsion"/>
+    <facet name="enumeration" value="3506007" annotation="Bleeding Controlled"/>
+    <facet name="enumeration" value="3506009" annotation="Bleeding Uncontrolled"/>
+    <facet name="enumeration" value="3506011" annotation="Burn-Blistering"/>
+    <facet name="enumeration" value="3506013" annotation="Burn-Charring"/>
+    <facet name="enumeration" value="3506015" annotation="Burn-Redness"/>
+    <facet name="enumeration" value="3506017" annotation="Burn-White/Waxy"/>
+    <facet name="enumeration" value="3506021" annotation="Deformity"/>
+    <facet name="enumeration" value="3506023" annotation="Drainage"/>
+    <facet name="enumeration" value="3506025" annotation="Foreign Body"/>
+    <facet name="enumeration" value="3506031" annotation="Laceration"/>
+    <facet name="enumeration" value="3506033" annotation="Mass/Lesion"/>
+    <facet name="enumeration" value="3506035" annotation="Normal"/>
+    <facet name="enumeration" value="3506037" annotation="Not Done"/>
+    <facet name="enumeration" value="3506039" annotation="Pain"/>
+    <facet name="enumeration" value="3506041" annotation="Puncture/Stab Wound"/>
+    <facet name="enumeration" value="3506047" annotation="Gunshot Wound"/>
+    <facet name="enumeration" value="3506049" annotation="Crush Injury"/>
+    <facet name="enumeration" value="3506051" annotation="Tenderness"/>
+    <facet name="enumeration" value="3506053" annotation="Swelling"/>
+    <facet name="enumeration" value="3506055" annotation="Contusion"/>
+  </FaceAssessment>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+  <PN>
+    <PN.ExamFindingNotPresent><facet name="enumeration" value="8801005" annotation="Exam Finding Not Present"/></PN.ExamFindingNotPresent>
+  </PN>
+</attributes>
+</element>

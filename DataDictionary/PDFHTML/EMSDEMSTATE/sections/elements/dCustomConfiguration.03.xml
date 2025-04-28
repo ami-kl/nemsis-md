@@ -1,0 +1,24 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dCustomConfiguration.03"  minOccurs="1"  maxOccurs="1"  dataTypeName="CustomDataType"  isNillable="No">
+<name>Custom Data Type</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The data type of the custom element.</definition>
+<v2Number></v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <CustomDataType baseType="string">
+    <facet name="enumeration" value="9902001" annotation="Binary"/>
+    <facet name="enumeration" value="9902003" annotation="Date/Time"/>
+    <facet name="enumeration" value="9902005" annotation="Integer/Number"/>
+    <facet name="enumeration" value="9902007" annotation="Other"/>
+    <facet name="enumeration" value="9902009" annotation="Text/String"/>
+    <facet name="enumeration" value="9902011" annotation="Boolean"/>
+  </CustomDataType>
+</restrictions>
+</element>

@@ -1,0 +1,22 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dLocation.01"  minOccurs="0"  maxOccurs="1"  dataTypeName="LocationType"  isNillable="No">
+<name>EMS Location Type</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The type of EMS Location which could be a fixed station or a pre-determined staging area.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This is associated with the EMS Agency associated with the EMS Agency Number (dAgency.02).</v3Comment>
+<v3Changes>Added to allow multiple locations to be documented for an EMS Agency.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <LocationType baseType="string">
+    <facet name="enumeration" value="1301001" annotation="EMS Agency Headquarters"/>
+    <facet name="enumeration" value="1301003" annotation="EMS Staging Area"/>
+    <facet name="enumeration" value="1301005" annotation="EMS Station"/>
+    <facet name="enumeration" value="1301007" annotation="Other"/>
+  </LocationType>
+</restrictions>
+</element>

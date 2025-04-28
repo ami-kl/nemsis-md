@@ -1,0 +1,21 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eScene.11"  minOccurs="0"  maxOccurs="1"  dataTypeName="GPSLocation"  isNillable="No">
+<name>Scene GPS Location</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The GPS coordinates associated with the Scene.</definition>
+<v2Number>E08_10</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>The pattern for GPS location is in the format "<span style="font-style:italic">latitude</span>,<span style="font-style:italic">longitude</span>" where:
+										  <br/>- <span style="font-style:italic">latitude</span> has a minimum of -90 and a maximum of 90 with up to 6 decimal places
+										  <br/>- <span style="font-style:italic">longitude</span> has a minimum of -180 and a maximum of 180 with up to 6 decimal places</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <GPSLocation baseType="string">
+    <facet name="pattern" value="(\+|-)?(90(\.[0]{1,6})?|([1-8][0-9]|[0-9])(\.[0-9]{1,6})?),(\+|-)?(180(\.[0]{1,6})?|(1[0-7][0-9]|[1-9][0-9]|[0-9])(\.[0-9]{1,6})?)"/>
+  </GPSLocation>
+</restrictions>
+</element>

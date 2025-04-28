@@ -1,0 +1,27 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.22"  minOccurs="0"  maxOccurs="1"  dataTypeName="RelationshipToInsured"  isNillable="No">
+<name>Relationship to the Insured</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The relationship of the patient to the primary insured person.</definition>
+<v2Number>E07_14</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Descriptors are consistent with X12 Loop 2000C PAT01, Specifies the patient's relationship to the person insured.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <RelationshipToInsured baseType="string">
+    <facet name="enumeration" value="2622001" annotation="Self"/>
+    <facet name="enumeration" value="2622003" annotation="Spouse"/>
+    <facet name="enumeration" value="2622005" annotation="Child/Dependent"/>
+    <facet name="enumeration" value="2622009" annotation="Cadaver Donor"/>
+    <facet name="enumeration" value="2622011" annotation="Employee"/>
+    <facet name="enumeration" value="2622013" annotation="Life/Domestic Partner"/>
+    <facet name="enumeration" value="2622015" annotation="Organ Donor"/>
+    <facet name="enumeration" value="2622017" annotation="Unknown"/>
+    <facet name="enumeration" value="2622019" annotation="Other Relationship"/>
+  </RelationshipToInsured>
+</restrictions>
+</element>

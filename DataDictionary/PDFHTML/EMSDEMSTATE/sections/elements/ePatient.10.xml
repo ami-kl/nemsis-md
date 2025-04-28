@@ -1,0 +1,19 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePatient.10"  minOccurs="0"  maxOccurs="1"  dataTypeName="ANSICountryCode"  isNillable="No">
+<name>Patient's Country of Residence</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The country of residence of the patient.</definition>
+<v2Number>E06_09</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Based on the ISO Country Code.<br/><br/>ANSI Country Codes (ISO 3166) Website: <a>http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm</a></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ANSICountryCode baseType="string">
+    <facet name="length" value="2"/>
+  </ANSICountryCode>
+</restrictions>
+</element>

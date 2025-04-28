@@ -1,0 +1,44 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dPersonnel.13"  minOccurs="0"  maxOccurs="M"  dataTypeName="DemographicRace"  isNillable="Yes">
+<name>EMS Personnel's Race</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The personnel's race as defined by the OMB (US Office of Management and Budget).</definition>
+<v2Number>D08_13</v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>OMB requirements are provided at: <a href="https://www.federalregister.gov/d/2024-06469" target="_blank">https://www.federalregister.gov/d/2024-06469</a>. A single multiple choice question methodology is being implemented to improve the completion of ethnicity information. Ethnicity (Version 2.1.1:  D08_14) has been merged with this data element and retired.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <DemographicRace baseType="string">
+    <facet name="enumeration" value="1513001" annotation="American Indian or Alaska Native"/>
+    <facet name="enumeration" value="1513003" annotation="Asian"/>
+    <facet name="enumeration" value="1513005" annotation="Black or African American"/>
+    <facet name="enumeration" value="1513007" annotation="Hispanic or Latino"/>
+    <facet name="enumeration" value="1513009" annotation="Native Hawaiian or Other Pacific Islander"/>
+    <facet name="enumeration" value="1513011" annotation="White"/>
+    <facet name="enumeration" value="1513013" annotation="Middle Eastern or North African"/>
+  </DemographicRace>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_d002" role="Error">
+      When EMS Personnel's Race has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_d001" role="Error">
+      When EMS Personnel's Race is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_d003" role="Warning">
+      When EMS Personnel's Race has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

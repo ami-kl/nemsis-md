@@ -1,0 +1,27 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eInjury.26"  minOccurs="0"  maxOccurs="1"  dataTypeName="SeatLocation"  isNillable="No">
+<name>ACN Vehicle Seat Location</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The Automated Collision Notification Indication of the Occupant(s) Seat Location(s) within the vehicle.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Based on Vehicular Emergency Data Set:  Seat - Multiple entry for each seats data. Indicates seatbelt and seat sensor data for individual seat position in the vehicle. These elements come from passenger vehicle. Vehicular Emergency Data Set (VEDS) Recommendations. Version 3.0 Prepared: (February 2011) by the Advanced Automatic Crash Notification (AACN)Joint APCO/NENA Data Standardization Working Group.</v3Comment>
+<v3Changes>Added to better incorporate advanced automated collision notification information.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <SeatLocation baseType="string">
+    <facet name="enumeration" value="2926001" annotation="Driver Front Seat"/>
+    <facet name="enumeration" value="2926003" annotation="Front Row Middle Seat"/>
+    <facet name="enumeration" value="2926005" annotation="Passenger Front Seat"/>
+    <facet name="enumeration" value="2926007" annotation="Second Row Left Seat"/>
+    <facet name="enumeration" value="2926009" annotation="Second Row Middle Seat"/>
+    <facet name="enumeration" value="2926011" annotation="Second Row Right Seat"/>
+    <facet name="enumeration" value="2926013" annotation="Third Row Left Seat"/>
+    <facet name="enumeration" value="2926015" annotation="Third Row Middle Seat"/>
+    <facet name="enumeration" value="2926017" annotation="Third Row Right Seat"/>
+  </SeatLocation>
+</restrictions>
+</element>

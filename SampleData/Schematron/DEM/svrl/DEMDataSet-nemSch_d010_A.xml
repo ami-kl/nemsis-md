@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svrl:schematron-output xmlns:iso="http://purl.oclc.org/dsdl/schematron"
+                        xmlns:nem="http://www.nemsis.org"
+                        xmlns:saxon="http://saxon.sf.net/"
+                        xmlns:schold="http://www.ascc.net/xml/schematron"
+                        xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        title="NEMSIS National ISO Schematron file for DEMDataSet"
+                        schemaVersion="3.5.1.250403CP1"><!--   
+		   
+		   
+		 -->
+   <svrl:ns-prefix-in-attribute-values uri="http://www.nemsis.org" prefix="nem"/>
+   <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/DEM/xml/DEMDataSet-nemSch_d010_A.xml"
+                        id="nemSch_dNilNvPn"
+                        name="DEMDataSet / Nil/Not Value Attributes"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_dNilNvPn_rule_2"/>
+   <svrl:fired-rule context="*[@xsi:nil = 'true']" id="nemSch_dNilNvPn_rule_2"/>
+   <svrl:fired-rule context="nem:dCustomResults.01" id="nemSch_dNilNvPn_rule_1"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/DEM/xml/DEMDataSet-nemSch_d010_A.xml"
+                        id="nemSch_dNvPn"
+                        name="DEMDataSet / Not Value/Pertinent Negative Uniqueness"/>
+   <svrl:fired-rule context="nem:dCustomResults.01" id="nemSch_dNvPn_rule_1"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/DEM/xml/DEMDataSet-nemSch_d010_A.xml"
+                        id="nemSch_uuid"
+                        name="DEMDataSet / UUIDs"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:fired-rule context="*[@UUID]" id="nemSch_uuid_rule_1"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/DEM/xml/DEMDataSet-nemSch_d010_A.xml"
+                        id="nemSch_DemographicReport"
+                        name="DEMDataSet / Demographic Report"/>
+   <svrl:fired-rule context="nem:DemographicReport" id="nemSch_DemographicReport_rule_1"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/DEM/xml/DEMDataSet-nemSch_d010_A.xml"
+                        id="nemSch_dAgency"
+                        name="DEMDataSet / Agency Information"/>
+   <svrl:fired-rule context="nem:dAgency.06" id="nemSch_dAgency_rule_1"/>
+   <svrl:fired-rule context="nem:dAgency.07[. != '']" id="nemSch_dAgency_rule_2"/>
+   <svrl:fired-rule context="nem:dAgency.07[. != '']" id="nemSch_dAgency_rule_2"/>
+   <svrl:fired-rule context="nem:dAgency.06" id="nemSch_dAgency_rule_1"/>
+   <svrl:fired-rule context="nem:dAgency.07[. != '']" id="nemSch_dAgency_rule_2"/>
+   <svrl:fired-rule context="nem:dAgency.06" id="nemSch_dAgency_rule_1"/>
+   <svrl:fired-rule context="nem:dAgency.07[. != '']" id="nemSch_dAgency_rule_2"/>
+   <svrl:fired-rule context="nem:dAgency.07[. != '']" id="nemSch_dAgency_rule_2"/>
+   <svrl:fired-rule context="nem:dAgency.13" id="nemSch_dAgency_rule_3"/>
+   <svrl:active-pattern document="file:/C:/Users/Josh/Documents/NEMSIS%20TAC/Repository/nemsis/Schematron/utilities/../dist/SampleData/Schematron/DEM/xml/DEMDataSet-nemSch_d010_A.xml"
+                        id="nemSch_dConfiguration"
+                        name="DEMDataSet / Configuration Information"/>
+   <svrl:fired-rule context="nem:dAgency.04" id="nemSch_dConfiguration_rule_1"/>
+   <svrl:failed-assert test=". = ancestor-or-self::nem:DemographicReport/nem:dConfiguration/nem:dConfiguration.ConfigurationGroup/nem:dConfiguration.01"
+                       id="nemSch_d010"
+                       role="[WARNING]"
+                       location="/*:DEMDataSet[namespace-uri()='http://www.nemsis.org'][1]/*:DemographicReport[namespace-uri()='http://www.nemsis.org'][1]/*:dAgency[namespace-uri()='http://www.nemsis.org'][1]/*:dAgency.04[namespace-uri()='http://www.nemsis.org'][1]">
+      <svrl:text>
+      There should be a configuration group where State Associated with this Configuration is the state recorded in EMS Agency State.
+    </svrl:text>
+      <svrl:diagnostic-reference diagnostic="nemsisDiagnostic">
+         <nemsisDiagnostic xmlns="http://www.nemsis.org" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+            <record>
+               <dAgency.01>0</dAgency.01>
+               <dAgency.02>A</dAgency.02>
+               <dAgency.04>49</dAgency.04>
+            </record>
+            <elements>
+               <element location="/*:DEMDataSet[namespace-uri()='http://www.nemsis.org'][1]/*:DemographicReport[namespace-uri()='http://www.nemsis.org'][1]/*:dAgency[namespace-uri()='http://www.nemsis.org'][1]/*:dAgency.04[namespace-uri()='http://www.nemsis.org'][1]">49</element>
+               <element location="/*:DEMDataSet[namespace-uri()='http://www.nemsis.org'][1]/*:DemographicReport[namespace-uri()='http://www.nemsis.org'][1]/*:dConfiguration[namespace-uri()='http://www.nemsis.org'][1]/*:dConfiguration.ConfigurationGroup[namespace-uri()='http://www.nemsis.org'][1]/*:dConfiguration.01[namespace-uri()='http://www.nemsis.org'][1]">16</element>
+               <element location="/*:DEMDataSet[namespace-uri()='http://www.nemsis.org'][1]/*:DemographicReport[namespace-uri()='http://www.nemsis.org'][1]/*:dConfiguration[namespace-uri()='http://www.nemsis.org'][1]/*:dConfiguration.ConfigurationGroup[namespace-uri()='http://www.nemsis.org'][2]/*:dConfiguration.01[namespace-uri()='http://www.nemsis.org'][1]">08</element>
+               <element location="/*:DEMDataSet[namespace-uri()='http://www.nemsis.org'][1]/*:DemographicReport[namespace-uri()='http://www.nemsis.org'][1]/*:dConfiguration[namespace-uri()='http://www.nemsis.org'][1]/*:dConfiguration.ConfigurationGroup[namespace-uri()='http://www.nemsis.org'][3]/*:dConfiguration.01[namespace-uri()='http://www.nemsis.org'][1]">56</element>
+            </elements>
+            <elementsMissing/>
+         </nemsisDiagnostic>
+      </svrl:diagnostic-reference>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="nem:dConfiguration.01" id="nemSch_dConfiguration_rule_2"/>
+   <svrl:fired-rule context="nem:dConfiguration.09[. != '']"
+                    id="nemSch_dConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:dConfiguration.09[. != '']"
+                    id="nemSch_dConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:dConfiguration.09[. != '']"
+                    id="nemSch_dConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:dConfiguration.09[. != '']"
+                    id="nemSch_dConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:dConfiguration.16" id="nemSch_dConfiguration_rule_6"/>
+   <svrl:fired-rule context="nem:dConfiguration.16" id="nemSch_dConfiguration_rule_6"/>
+   <svrl:fired-rule context="nem:dConfiguration.01" id="nemSch_dConfiguration_rule_2"/>
+   <svrl:fired-rule context="nem:dConfiguration.09[. != '']"
+                    id="nemSch_dConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:dConfiguration.09[. != '']"
+                    id="nemSch_dConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:dConfiguration.09[. != '']"
+                    id="nemSch_dConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:dConfiguration.09[. != '']"
+                    id="nemSch_dConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:dConfiguration.09[. != '']"
+                    id="nemSch_dConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:dConfiguration.09[. != '']"
+                    id="nemSch_dConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:dConfiguration.09[. != '']"
+                    id="nemSch_dConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:dConfiguration.09[. != '']"
+                    id="nemSch_dConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:dConfiguration.09[. != '' and @CodeType]"
+                    id="nemSch_dConfiguration_rule_4"/>
+   <svrl:fired-rule context="nem:dConfiguration.09[. != '' and @CodeType]"
+                    id="nemSch_dConfiguration_rule_4"/>
+   <svrl:fired-rule context="nem:dConfiguration.16" id="nemSch_dConfiguration_rule_6"/>
+   <svrl:fired-rule context="nem:dConfiguration.16" id="nemSch_dConfiguration_rule_6"/>
+   <svrl:fired-rule context="nem:dConfiguration.01" id="nemSch_dConfiguration_rule_2"/>
+   <svrl:fired-rule context="nem:dConfiguration.09[. != '']"
+                    id="nemSch_dConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:dConfiguration.09[. != '']"
+                    id="nemSch_dConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:dConfiguration.09[. != '']"
+                    id="nemSch_dConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:dConfiguration.09[. != '']"
+                    id="nemSch_dConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:dConfiguration.09[. != '']"
+                    id="nemSch_dConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:dConfiguration.09[. != '']"
+                    id="nemSch_dConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:dConfiguration.09[. != '']"
+                    id="nemSch_dConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:dConfiguration.09[. != '']"
+                    id="nemSch_dConfiguration_rule_5"/>
+   <svrl:fired-rule context="nem:dConfiguration.16" id="nemSch_dConfiguration_rule_6"/>
+   <svrl:fired-rule context="nem:dConfiguration.16" id="nemSch_dConfiguration_rule_6"/>
+   <svrl:fired-rule context="nem:dConfiguration.16" id="nemSch_dConfiguration_rule_6"/>
+</svrl:schematron-output>

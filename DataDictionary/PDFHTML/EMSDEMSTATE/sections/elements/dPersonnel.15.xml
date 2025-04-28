@@ -1,0 +1,34 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dPersonnel.15"  minOccurs="0"  maxOccurs="1"  dataTypeName="PersonnelHighestEducationalDegree"  isNillable="No">
+<name>EMS Personnel's Highest Educational Degree</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The highest educational degree completed by the personnel.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Based on Census 2000 Educational Attainment Question.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <PersonnelHighestEducationalDegree baseType="string">
+    <facet name="enumeration" value="1515001" annotation="No Schooling Completed"/>
+    <facet name="enumeration" value="1515003" annotation="Nursery School to 4th Grade"/>
+    <facet name="enumeration" value="1515005" annotation="5th Grade or 6th Grade"/>
+    <facet name="enumeration" value="1515007" annotation="7th Grade or 8th Grade"/>
+    <facet name="enumeration" value="1515009" annotation="9th Grade"/>
+    <facet name="enumeration" value="1515011" annotation="10th Grade"/>
+    <facet name="enumeration" value="1515013" annotation="11th Grade"/>
+    <facet name="enumeration" value="1515015" annotation="12th Grade, No Diploma"/>
+    <facet name="enumeration" value="1515017" annotation="High School Graduate-Diploma or the Equivalent (GED)"/>
+    <facet name="enumeration" value="1515019" annotation="Some College Credit, but Less than 1 Year"/>
+    <facet name="enumeration" value="1515021" annotation="1 or More Years of College, No Degree"/>
+    <facet name="enumeration" value="1515023" annotation="Associate Degree"/>
+    <facet name="enumeration" value="1515025" annotation="Bachelor's Degree"/>
+    <facet name="enumeration" value="1515027" annotation="Master's Degree"/>
+    <facet name="enumeration" value="1515029" annotation="Professional Degree (i.e. MD, DDS, DVM, LLB, JD)"/>
+    <facet name="enumeration" value="1515031" annotation="Doctorate Degree (i.e. PhD, EdD)"/>
+  </PersonnelHighestEducationalDegree>
+</restrictions>
+</element>

@@ -1,0 +1,49 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eScene.08"  minOccurs="1"  maxOccurs="1"  dataTypeName="TriageClassification"  isNillable="Yes">
+<name>Triage Classification for MCI Patient</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The color associated with the initial triage assessment/classification of the MCI patient.</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>This element is documented when eScene.07 (Mass Casualty Incident) = Yes.
+<br/><br/>
+Examples of triage systems include START and SALT.  
+<br/><br/>
+<div style="font-size:11px">Adapted from: SALT mass casualty triage: concept endorsed by the American College of Emergency Physicians, American College of Surgeons Committee on Trauma, American Trauma Society, National Association of EMS Physicians, National Disaster Life Support Education Consortium, and State and Territorial Injury Prevention Directors Association. Disaster Med Public Health Prep. 2008 Dec;2(4):245-6.
+</div>
+<br/><br/>
+<div style="font-size:11px">
+START reference:  Benson M, Koenig KL, Schultz CH. Disaster triage: START, then SAVE-a new method of dynamic triage for victims of a catastrophic earthquake. Prehospital Disaster Med. 1996; Apr-Jun; 11(2): 117-24							
+</div></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <TriageClassification baseType="string">
+    <facet name="enumeration" value="2708001" annotation="Red - Immediate"/>
+    <facet name="enumeration" value="2708003" annotation="Yellow - Delayed"/>
+    <facet name="enumeration" value="2708005" annotation="Green - Minimal (Minor)"/>
+    <facet name="enumeration" value="2708007" annotation="Gray - Expectant"/>
+    <facet name="enumeration" value="2708009" annotation="Black - Deceased"/>
+  </TriageClassification>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e069" role="Warning">
+      <elementRef elementNumber="eScene.08">Triage Classification for MCI Patient</elementRef> should be recorded when <elementRef elementNumber="eScene.07">Mass Casualty Incident</elementRef> is &quot;Yes&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Triage Classification for MCI Patient has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Triage Classification for MCI Patient is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

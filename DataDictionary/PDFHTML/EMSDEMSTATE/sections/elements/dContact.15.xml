@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dContact.15"  minOccurs="0"  maxOccurs="1"  dataTypeName="MedicalDirectorCompensation"  isNillable="No">
+<name>Medical Director Compensation</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>Indication of Medical Director's Compensation.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This element applies to the Medical Director(s) for an EMS agency (EMS Medical Director and EMS Assistant Medical Director).</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <MedicalDirectorCompensation baseType="string">
+    <facet name="enumeration" value="1115001" annotation="Compensated"/>
+    <facet name="enumeration" value="1115003" annotation="Non-Compensated"/>
+  </MedicalDirectorCompensation>
+</restrictions>
+</element>

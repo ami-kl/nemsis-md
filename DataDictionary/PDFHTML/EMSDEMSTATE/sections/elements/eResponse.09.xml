@@ -1,0 +1,58 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eResponse.09"  minOccurs="1"  maxOccurs="M"  dataTypeName="EMSUnitDelayReason"  isNillable="Yes">
+<name>Type of Response Delay</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The response delays, if any, of the EMS unit associated with the EMS event.</definition>
+<v2Number>E02_07</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Rendezvous Transport Unavailable added for situations where there is a wait for an EMS Transport Unit, a Ferry, Air Medical, etc. to return to service.
+							<br/><br/>A response delay is any time delay that occurs from the time the unit is notified by dispatch (eTimes.03) to the time the unit arrived on scene (eTimes.06).</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EMSUnitDelayReason baseType="string">
+    <facet name="enumeration" value="2209001" annotation="Crowd"/>
+    <facet name="enumeration" value="2209003" annotation="Directions/Unable to Locate"/>
+    <facet name="enumeration" value="2209005" annotation="Distance"/>
+    <facet name="enumeration" value="2209007" annotation="Diversion (Different Incident)"/>
+    <facet name="enumeration" value="2209009" annotation="HazMat"/>
+    <facet name="enumeration" value="2209011" annotation="None/No Delay"/>
+    <facet name="enumeration" value="2209013" annotation="Other"/>
+    <facet name="enumeration" value="2209015" annotation="Rendezvous Transport Unavailable"/>
+    <facet name="enumeration" value="2209017" annotation="Route Obstruction (e.g., Train)"/>
+    <facet name="enumeration" value="2209019" annotation="Scene Safety (Not Secure for EMS)"/>
+    <facet name="enumeration" value="2209021" annotation="Staff Delay"/>
+    <facet name="enumeration" value="2209023" annotation="Traffic"/>
+    <facet name="enumeration" value="2209025" annotation="Vehicle Crash Involving this Unit"/>
+    <facet name="enumeration" value="2209027" annotation="Vehicle Failure of this Unit"/>
+    <facet name="enumeration" value="2209029" annotation="Weather"/>
+    <facet name="enumeration" value="2209031" annotation="Mechanical Issue-Unit, Equipment, etc."/>
+    <facet name="enumeration" value="2209033" annotation="Flight Planning"/>
+    <facet name="enumeration" value="2209035" annotation="Out of Service Area Response"/>
+  </EMSUnitDelayReason>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_e013" role="Warning">
+      When <elementRef elementNumber="eResponse.09">Type of Response Delay</elementRef> is &quot;None/No Delay&quot;, no other value should be recorded.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Type of Response Delay has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Type of Response Delay is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Type of Response Delay has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

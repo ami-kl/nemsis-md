@@ -1,0 +1,28 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eOther.12"  minOccurs="0"  maxOccurs="1"  dataTypeName="SignatureType"  isNillable="No">
+<name>Type of Person Signing</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The individual's signature associated with eOther.15 (Signature Status).</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes>Added to better document disposition and billing information.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <SignatureType baseType="string">
+    <facet name="enumeration" value="4512001" annotation="EMS Crew Member (Other)"/>
+    <facet name="enumeration" value="4512003" annotation="EMS Primary Care Provider (for this event)"/>
+    <facet name="enumeration" value="4512005" annotation="Healthcare Provider"/>
+    <facet name="enumeration" value="4512007" annotation="Medical Director"/>
+    <facet name="enumeration" value="4512009" annotation="Non-Healthcare Provider"/>
+    <facet name="enumeration" value="4512011" annotation="Online Medical Control Healthcare Practitioner"/>
+    <facet name="enumeration" value="4512013" annotation="Other"/>
+    <facet name="enumeration" value="4512015" annotation="Patient"/>
+    <facet name="enumeration" value="4512017" annotation="Patient Representative"/>
+    <facet name="enumeration" value="4512019" annotation="Witness"/>
+  </SignatureType>
+</restrictions>
+</element>

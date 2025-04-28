@@ -1,0 +1,41 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eAirway.03"  minOccurs="0"  maxOccurs="1"  dataTypeName="DeviceBeingConfirmed"  isNillable="Yes">
+<name>Airway Device Being Confirmed</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The airway device in which placement is being confirmed.</definition>
+<v2Number></v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes>Added to better document airway management. SAD means Supraglottic Airway  Device.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <DeviceBeingConfirmed baseType="string">
+    <facet name="enumeration" value="4003001" annotation="Cricothyrotomy Tube"/>
+    <facet name="enumeration" value="4003003" annotation="Endotracheal Tube"/>
+    <facet name="enumeration" value="4003005" annotation="Other-Invasive Airway"/>
+    <facet name="enumeration" value="4003007" annotation="SAD-Combitube"/>
+    <facet name="enumeration" value="4003009" annotation="SAD-King"/>
+    <facet name="enumeration" value="4003011" annotation="SAD-LMA"/>
+    <facet name="enumeration" value="4003013" annotation="SAD-Other"/>
+    <facet name="enumeration" value="4003015" annotation="Tracheostomy Tube"/>
+  </DeviceBeingConfirmed>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When Airway Device Being Confirmed has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Airway Device Being Confirmed is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

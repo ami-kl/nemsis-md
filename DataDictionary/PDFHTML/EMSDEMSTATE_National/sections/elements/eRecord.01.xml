@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eRecord.01"  minOccurs="1"  maxOccurs="1"  dataTypeName="PatientCareReportNumber"  isNillable="No">
+<name>Patient Care Report Number</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The unique number automatically assigned by the EMS agency for each Patient Care Report (PCR). This should be a unique number for the EMS agency for all of time.</definition>
+<v2Number>E01_01</v2Number>
+<usage>Mandatory</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <PatientCareReportNumber baseType="string">
+    <facet name="minLength" value="3"/>
+    <facet name="maxLength" value="50"/>
+  </PatientCareReportNumber>
+</restrictions>
+</element>

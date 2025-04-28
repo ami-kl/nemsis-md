@@ -1,0 +1,81 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDisposition.30"  minOccurs="1"  maxOccurs="1"  dataTypeName="TransportDisposition"  isNillable="Yes">
+<name>Transport Disposition</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The transport disposition for an EMS event identifying whether a transport occurred and by which unit.</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Grouped with Patient and Incident Dispositions. Provides a rapid filter for transport or no transport for incident evaluation, business entry rules and Schematron rules.</v3Comment>
+<v3Changes>Element added with the release of v3.5.0</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <TransportDisposition baseType="string">
+    <facet name="enumeration" value="4230001" annotation="Transport by This EMS Unit (This Crew Only)"/>
+    <facet name="enumeration" value="4230003" annotation="Transport by This EMS Unit, with a Member of Another Crew"/>
+    <facet name="enumeration" value="4230005" annotation="Transport by Another EMS Unit/Agency"/>
+    <facet name="enumeration" value="4230007" annotation="Transport by Another EMS Unit/Agency, with a Member of This Crew"/>
+    <facet name="enumeration" value="4230009" annotation="Patient Refused Transport"/>
+    <facet name="enumeration" value="4230011" annotation="Non-Patient Transport (Not Otherwise Listed)"/>
+    <facet name="enumeration" value="4230013" annotation="No Transport"/>
+  </TransportDisposition>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e030" role="Warning">
+      <elementRef elementNumber="eTimes.11">Patient Arrived at Destination Date/Time</elementRef> should be recorded when <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> is &quot;Transport by This EMS Unit...&quot;.
+      </assert>
+  <assert id="nemSch_e036" role="Warning">
+      <elementRef elementNumber="eTimes.12">Destination Patient Transfer of Care Date/Time</elementRef> should be recorded when <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> is &quot;Transport by This EMS Unit...&quot;.
+      </assert>
+  <assert id="nemSch_e113" role="Warning">
+      <elementRef elementNumber="eArrest.17">Cardiac Rhythm on Arrival at Destination</elementRef> should be recorded when <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> is &quot;Transport by This EMS Unit...&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e160" role="Warning">
+      <elementRef elementNumber="eDisposition.05">Destination State</elementRef> should be recorded when <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> is &quot;Transport by This EMS Unit...&quot;.
+      </assert>
+  <assert id="nemSch_e161" role="Warning">
+      <elementRef elementNumber="eDisposition.06">Destination County</elementRef> should be recorded when <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> is &quot;Transport by This EMS Unit...&quot;.
+      </assert>
+  <assert id="nemSch_e163" role="Warning">
+      <elementRef elementNumber="eDisposition.07">Destination ZIP Code</elementRef> should be recorded when <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> is &quot;Transport by This EMS Unit...&quot;.
+      </assert>
+  <assert id="nemSch_e164" role="Warning">
+      <elementRef elementNumber="eDisposition.16">EMS Transport Method</elementRef> should be recorded when <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> is &quot;Transport by This EMS Unit...&quot;.
+      </assert>
+  <assert id="nemSch_e165" role="Warning">
+      <elementRef elementNumber="eDisposition.16">EMS Transport Method</elementRef> should not be recorded when <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> is &quot;Patient Refused Transport&quot; or &quot;No Transport&quot;.
+      </assert>
+  <assert id="nemSch_e166" role="Warning">
+      <elementRef elementNumber="eDisposition.17">Transport Mode from Scene</elementRef> should be recorded when <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> is &quot;Transport by This EMS Unit...&quot;.
+      </assert>
+  <assert id="nemSch_e167" role="Warning">
+      <elementRef elementNumber="eDisposition.17">Transport Mode from Scene</elementRef> should not be recorded when <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> is &quot;Patient Refused Transport&quot; or &quot;No Transport&quot;.
+      </assert>
+  <assert id="nemSch_e169" role="Warning">
+      <elementRef elementNumber="eDisposition.20">Reason for Choosing Destination</elementRef> should be recorded when <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> is &quot;Transport by This EMS Unit...&quot;.
+      </assert>
+  <assert id="nemSch_e170" role="Warning">
+      <elementRef elementNumber="eDisposition.21">Type of Destination</elementRef> should be recorded when <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> is &quot;Transport by This EMS Unit...&quot;.
+      </assert>
+  <assert id="nemSch_e182" role="Warning">
+      <elementRef elementNumber="eDisposition.27">Unit Disposition</elementRef> should be &quot;Patient Contact Made&quot; when <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> is a value other than &quot;Non-Patient Transport (Not Otherwise Listed)&quot; or &quot;No Transport&quot;.
+      </assert>
+  <assert id="nemSch_e186" role="Warning">
+      <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> should be recorded when <elementRef elementNumber="eDisposition.27">Unit Disposition</elementRef> is &quot;Patient Contact Made&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Transport Disposition has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Transport Disposition is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

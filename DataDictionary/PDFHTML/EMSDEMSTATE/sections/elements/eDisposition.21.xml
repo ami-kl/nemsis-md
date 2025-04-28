@@ -1,0 +1,64 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDisposition.21"  minOccurs="1"  maxOccurs="1"  dataTypeName="TypeOfDestination"  isNillable="Yes">
+<name>Type of Destination</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The type of destination the patient was delivered or transferred to.</definition>
+<v2Number>E20_17</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Required if Patient Transported by EMS.</v3Comment>
+<v3Changes>With the release of v3.5.0 additional values were added to meet the needs of EMS.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <TypeOfDestination baseType="string">
+    <facet name="enumeration" value="4221001" annotation="Home"/>
+    <facet name="enumeration" value="4221003" annotation="Hospital-Emergency Department"/>
+    <facet name="enumeration" value="4221005" annotation="Hospital-Non-Emergency Department Bed"/>
+    <facet name="enumeration" value="4221007" annotation="Clinic"/>
+    <facet name="enumeration" value="4221009" annotation="Morgue/Mortuary"/>
+    <facet name="enumeration" value="4221013" annotation="Other"/>
+    <facet name="enumeration" value="4221015" annotation="Other EMS Responder (air)"/>
+    <facet name="enumeration" value="4221017" annotation="Other EMS Responder (ground)"/>
+    <facet name="enumeration" value="4221019" annotation="Police/Jail"/>
+    <facet name="enumeration" value="4221021" annotation="Urgent Care"/>
+    <facet name="enumeration" value="4221023" annotation="Freestanding Emergency Department"/>
+    <facet name="enumeration" value="4221025" annotation="Dialysis Center"/>
+    <facet name="enumeration" value="4221027" annotation="Diagnostic Services"/>
+    <facet name="enumeration" value="4221029" annotation="Assisted Living Facility"/>
+    <facet name="enumeration" value="4221031" annotation="Mental Health Facility"/>
+    <facet name="enumeration" value="4221033" annotation="Nursing Home"/>
+    <facet name="enumeration" value="4221035" annotation="Other Recurring Care Center"/>
+    <facet name="enumeration" value="4221037" annotation="Physical Rehabilitation Facility"/>
+    <facet name="enumeration" value="4221039" annotation="Drug and/or Alcohol Rehabilitation Facility"/>
+    <facet name="enumeration" value="4221041" annotation="Skilled Nursing Facility"/>
+  </TypeOfDestination>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e170" role="Warning">
+      <elementRef elementNumber="eDisposition.21">Type of Destination</elementRef> should be recorded when <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> is &quot;Transport by This EMS Unit...&quot;.
+      </assert>
+  <assert id="nemSch_e171" role="Warning">
+      <elementRef elementNumber="eDisposition.23">Hospital Capability</elementRef> should be recorded when <elementRef elementNumber="eDisposition.21">Type of Destination</elementRef> is &quot;Hospital...&quot; or &quot;Freestanding Emergency Department&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e172" role="Warning">
+      <elementRef elementNumber="eDisposition.23">Hospital Capability</elementRef> should be recorded when <elementRef elementNumber="eDisposition.21">Type of Destination</elementRef> is &quot;Hospital...&quot; or &quot;Freestanding Emergency Department&quot; and <elementRef elementNumber="eVitals.29">Stroke Scale Result</elementRef> is &quot;Positive&quot;.
+      </assert>
+  <assert id="nemSch_e173" role="Warning">
+      <elementRef elementNumber="eDisposition.23">Hospital Capability</elementRef> should be recorded when <elementRef elementNumber="eDisposition.21">Type of Destination</elementRef> is &quot;Hospital...&quot; or &quot;Freestanding Emergency Department&quot; and <elementRef elementNumber="eVitals.03">Cardiac Rhythm / Electrocardiography (ECG)</elementRef> is &quot;STEMI...&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Type of Destination has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Type of Destination is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

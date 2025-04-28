@@ -1,0 +1,4 @@
+<?xml-stylesheet type="text/xsl" href="../xslt/grouping.xslt"?>
+<section name="eNarrative">
+  <element number="eNarrative.01" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="Yes" dataType="PCRNarrative"><name>Patient Care Report Narrative</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>Yes</state><usage>Recommended</usage><notValue>Yes</notValue><pertinentNegative></pertinentNegative></element>
+</section>

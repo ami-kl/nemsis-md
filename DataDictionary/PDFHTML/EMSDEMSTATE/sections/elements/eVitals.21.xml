@@ -1,0 +1,45 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eVitals.21"  minOccurs="1"  maxOccurs="1"  dataTypeName="GlasgowComaScoreMotor"  isNillable="Yes">
+<name>Glasgow Coma Score-Motor</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The patient's Glasgow Coma Score Motor response.</definition>
+<v2Number>E14_17</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Definitions now based on the National Trauma Data Standard (NTDS).</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <GlasgowComaScoreMotor baseType="string">
+    <facet name="enumeration" value="1" annotation="No Motor Response (All Age Groups)"/>
+    <facet name="enumeration" value="2" annotation="Extension to pain (All Age Groups)"/>
+    <facet name="enumeration" value="3" annotation="Flexion to pain (All Age Groups)"/>
+    <facet name="enumeration" value="4" annotation="Withdrawal from pain (All Age Groups)"/>
+    <facet name="enumeration" value="5" annotation="Localizing pain (All Age Groups)"/>
+    <facet name="enumeration" value="6" annotation="Obeys commands (&gt;2Years); Appropriate response to stimulation"/>
+  </GlasgowComaScoreMotor>
+</restrictions>
+<attributes>
+  <PN>
+    <PN.Refused><facet name="enumeration" value="8801019" annotation="Refused"/></PN.Refused>
+    <PN.UnableToComplete><facet name="enumeration" value="8801023" annotation="Unable to Complete"/></PN.UnableToComplete>
+  </PN>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e008" role="Error">
+      When Glasgow Coma Score-Motor has a Pertinent Negative, it should be empty and it should not have a Not Value (Not Applicable, Not Recorded, or Not Reporting).
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Glasgow Coma Score-Motor has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Glasgow Coma Score-Motor is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

@@ -1,0 +1,34 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dPersonnel.38"  minOccurs="0"  maxOccurs="1"  dataTypeName="MemberLevel"  isNillable="No">
+<name>EMS Personnel's Practice Level</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The EMS certification level at which the individual is providing patient care services for the EMS agency.</definition>
+<v2Number>D07_05</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>The category EMT-Intermediate includes EMS professionals with an "85" or "99" certification level.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <MemberLevel baseType="string">
+    <facet name="enumeration" value="9925001" annotation="Advanced Emergency Medical Technician (AEMT)"/>
+    <facet name="enumeration" value="9925002" annotation="Emergency Medical Technician - Intermediate"/>
+    <facet name="enumeration" value="9925003" annotation="Emergency Medical Responder (EMR)"/>
+    <facet name="enumeration" value="9925005" annotation="Emergency Medical Technician (EMT)"/>
+    <facet name="enumeration" value="9925007" annotation="Paramedic"/>
+    <facet name="enumeration" value="9925023" annotation="Other Healthcare Professional"/>
+    <facet name="enumeration" value="9925025" annotation="Other Non-Healthcare Professional"/>
+    <facet name="enumeration" value="9925027" annotation="Physician"/>
+    <facet name="enumeration" value="9925029" annotation="Respiratory Therapist"/>
+    <facet name="enumeration" value="9925031" annotation="Student"/>
+    <facet name="enumeration" value="9925033" annotation="Critical Care Paramedic"/>
+    <facet name="enumeration" value="9925035" annotation="Community Paramedicine"/>
+    <facet name="enumeration" value="9925037" annotation="Nurse Practitioner"/>
+    <facet name="enumeration" value="9925039" annotation="Physician Assistant"/>
+    <facet name="enumeration" value="9925041" annotation="Licensed Practical Nurse (LPN)"/>
+    <facet name="enumeration" value="9925043" annotation="Registered Nurse"/>
+  </MemberLevel>
+</restrictions>
+</element>

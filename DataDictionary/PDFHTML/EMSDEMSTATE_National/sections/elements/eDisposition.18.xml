@@ -1,0 +1,45 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDisposition.18"  minOccurs="1"  maxOccurs="M"  dataTypeName="AdditionalTransportModeDescriptors"  isNillable="Yes">
+<name>Additional Transport Mode Descriptors</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The documentation of transport mode techniques for this EMS response.</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Information now split between eDisposition.17 (Transport Mode from Scene) and eDisposition.18 (Additional Transport Mode Descriptors). Element eDisposition.18  (Additional Transport Mode Descriptors) has been added to document the use of lights and sirens or other descriptive information.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <AdditionalTransportModeDescriptors baseType="string">
+    <facet name="enumeration" value="4218001" annotation="Intersection Navigation-Against Normal Light Patterns"/>
+    <facet name="enumeration" value="4218003" annotation="Intersection Navigation-With Automated Light Changing Technology"/>
+    <facet name="enumeration" value="4218005" annotation="Intersection Navigation-With Normal Light Patterns"/>
+    <facet name="enumeration" value="4218007" annotation="Speed-Enhanced per Local Policy"/>
+    <facet name="enumeration" value="4218009" annotation="Speed-Normal Traffic"/>
+    <facet name="enumeration" value="4218011" annotation="Lights and Sirens"/>
+    <facet name="enumeration" value="4218013" annotation="Lights and No Sirens"/>
+    <facet name="enumeration" value="4218015" annotation="No Lights or Sirens"/>
+    <facet name="enumeration" value="4218017" annotation="Initial No Lights or Sirens, Upgraded to Lights and Sirens"/>
+    <facet name="enumeration" value="4218019" annotation="Initial Lights and Sirens, Downgraded to No Lights or Sirens"/>
+  </AdditionalTransportModeDescriptors>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When Additional Transport Mode Descriptors has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Additional Transport Mode Descriptors is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Additional Transport Mode Descriptors has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

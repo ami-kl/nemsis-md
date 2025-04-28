@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePatient.21"  minOccurs="0"  maxOccurs="1"  dataTypeName="DriversLicenseNumber"  isNillable="No">
+<name>Driver's License Number</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The patient's drivers license number.</definition>
+<v2Number>E06_19</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <DriversLicenseNumber baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="30"/>
+  </DriversLicenseNumber>
+</restrictions>
+</element>

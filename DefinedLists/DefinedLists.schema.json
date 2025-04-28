@@ -1,0 +1,211 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema#",
+    "$id": "https://nemsis.org/media/nemsis_v3/release-3.5.1/DefinedLists/DefinedLists.schema.json#",
+    "definitions": {
+        "DefinedList.Header.SourceVocabularies.SourceVocabulary": {
+            "type": "object",
+            "required": ["url"],
+            "properties": {
+                "Value": {"$ref": "#/definitions/SourceVocabularyType"},
+                "url": {
+                    "type": "string",
+                    "format": "uri"
+                },
+                "CodeType": {
+                    "allOf": [
+                        {"type": "string"},
+                        {
+                            "enum": [
+                                "9924001",
+                                "9924003",
+                                "9924005"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "additionalProperties": false
+        },
+        "DefinedList.Header.SourceVocabularies": {
+            "type": "object",
+            "required": ["SourceVocabulary"],
+            "properties": {
+                "SourceVocabulary": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/DefinedList.Header.SourceVocabularies.SourceVocabulary"},
+                    "minItems": 1
+                }
+            },
+            "additionalProperties": false
+        },
+        "DefinedList.Header.NemsisTypes": {
+            "type": "object",
+            "required": ["NemsisType"],
+            "properties": {
+                "NemsisType": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/NemsisXSDType"},
+                    "minItems": 1
+                }
+            },
+            "additionalProperties": false
+        },
+        "DefinedList.Header.NemsisElements": {
+            "type": "object",
+            "required": ["NemsisElement"],
+            "properties": {
+                "NemsisElement": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "pattern": "^(e|d|s)\\w*\\.\\d\\d$"
+                        },
+                    "minItems": 1
+                }
+            },
+            "additionalProperties": false
+        },
+        "DefinedList.Header": {
+            "type": "object",
+            "required": [
+                "SourceVocabularies",
+                "NemsisTypes",
+                "NemsisElements"
+            ],
+            "properties": {
+                "SourceVocabularies": {"$ref": "#/definitions/DefinedList.Header.SourceVocabularies"},
+                "NemsisTypes": {"$ref": "#/definitions/DefinedList.Header.NemsisTypes"},
+                "NemsisElements": {"$ref": "#/definitions/DefinedList.Header.NemsisElements"}
+            },
+            "additionalProperties": false
+        },
+        "DefinedList.Codes.Code.Value": {
+            "type": "object",
+            "properties": {
+                "Value": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 18
+                    },
+                "CodeType": {
+                    "allOf": [
+                        {"type": "string"},
+                        {
+                            "enum": [
+                                "9924001",
+                                "9924003",
+                                "9924005"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "additionalProperties": false
+        },
+        "DefinedList.Codes.Code": {
+            "type": "object",
+            "required": [
+                "date",
+                "Value",
+                "SourceLabel",
+                "SuggestedLabel"
+            ],
+            "properties": {
+                "Value": {"$ref": "#/definitions/DefinedList.Codes.Code.Value"},
+                "Category": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 255
+                    },
+                "SourceLabel": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 3000
+                    },
+                "SuggestedLabel": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 255
+                    },
+                "Note": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 3000
+                    },
+                "date": {
+                    "type": "string",
+                    "format": "date"
+                }
+            },
+            "additionalProperties": false
+        },
+        "DefinedList.Codes": {
+            "type": "object",
+            "required": ["Code"],
+            "properties": {
+                "Code": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/DefinedList.Codes.Code"},
+                    "minItems": 1
+                }
+            },
+            "additionalProperties": false
+        },
+        "DefinedList": {
+            "type": "object",
+            "required": [
+                "date",
+                "Header",
+                "Codes"
+            ],
+            "properties": {
+                "Header": {"$ref": "#/definitions/DefinedList.Header"},
+                "Codes": {"$ref": "#/definitions/DefinedList.Codes"},
+                "date": {
+                    "type": "string",
+                    "format": "date"
+                }
+            },
+            "additionalProperties": false
+        },
+        "SourceVocabularyType": {
+            "allOf": [
+                {"type": "string"},
+                {
+                    "enum": [
+                        "ICD-10",
+                        "SNOMED-CT",
+                        "RxNorm"
+                    ]
+                }
+            ]
+        },
+        "NemsisXSDType": {
+            "allOf": [
+                {"type": "string"},
+                {
+                    "enum": [
+                        "icd10Code",
+                        "icd10Activity",
+                        "icd10CodeInjury",
+                        "icd10MedSurge",
+                        "snomed",
+                        "MedicationAllergies",
+                        "Medication",
+                        "IncidentLocationType",
+                        "ProvidersImpression",
+                        "AssociatedSymptoms"
+                    ]
+                }
+            ]
+        }
+    },
+    "anyOf": [
+        {
+            "type": "object",
+            "properties": {
+                "DefinedList": {"$ref": "#/definitions/DefinedList"}
+            }
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dConfiguration.11"  minOccurs="0"  maxOccurs="M"  dataTypeName="AgencySpecialtyServiceCapability"  isNillable="Yes">
+<name>EMS Agency Specialty Service Capability</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Special training or services provided by the EMS Agency and available to the EMS service area/community.</definition>
+<v2Number></v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <AgencySpecialtyServiceCapability baseType="string">
+    <facet name="enumeration" value="1211001" annotation="Air Rescue"/>
+    <facet name="enumeration" value="1211003" annotation="CBRNE"/>
+    <facet name="enumeration" value="1211005" annotation="Community Health Medicine"/>
+    <facet name="enumeration" value="1211007" annotation="Disaster Medical Assistance Team (DMAT)"/>
+    <facet name="enumeration" value="1211009" annotation="Disaster Mortuary (DMORT)"/>
+    <facet name="enumeration" value="1211011" annotation="Dive Rescue"/>
+    <facet name="enumeration" value="1211013" annotation="Farm Rescue"/>
+    <facet name="enumeration" value="1211015" annotation="High Angle Rescue"/>
+    <facet name="enumeration" value="1211017" annotation="Machinery Disentanglement"/>
+    <facet name="enumeration" value="1211019" annotation="None"/>
+    <facet name="enumeration" value="1211021" annotation="Ski / Snow Rescue"/>
+    <facet name="enumeration" value="1211023" annotation="Tactical EMS"/>
+    <facet name="enumeration" value="1211025" annotation="Trench / Confined Space Rescue"/>
+    <facet name="enumeration" value="1211027" annotation="Urban Search and Rescue (USAR)"/>
+    <facet name="enumeration" value="1211029" annotation="Vehicle Extrication"/>
+    <facet name="enumeration" value="1211031" annotation="Veterinary Medical Assistance Team (VMAT)"/>
+    <facet name="enumeration" value="1211033" annotation="Water or Ice Related Rescue (Incl Swift Water)"/>
+    <facet name="enumeration" value="1211035" annotation="Wilderness Search and Rescue"/>
+  </AgencySpecialtyServiceCapability>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_d002" role="Error">
+      When EMS Agency Specialty Service Capability has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_d001" role="Error">
+      When EMS Agency Specialty Service Capability is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_d003" role="Warning">
+      When EMS Agency Specialty Service Capability has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

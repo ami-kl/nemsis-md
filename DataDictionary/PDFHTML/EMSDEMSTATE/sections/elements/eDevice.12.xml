@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDevice.12"  minOccurs="0"  maxOccurs="1"  dataTypeName="PacingRate"  isNillable="No">
+<name>Pacing Rate</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The rate the device was calibrated to pace during the event, if appropriate.</definition>
+<v2Number>E21_11</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <PacingRate baseType="integer">
+    <facet name="minInclusive" value="1"/>
+    <facet name="maxInclusive" value="1000"/>
+  </PacingRate>
+</restrictions>
+</element>

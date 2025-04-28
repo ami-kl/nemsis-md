@@ -1,0 +1,58 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eResponse.12"  minOccurs="1"  maxOccurs="M"  dataTypeName="EMSTurnaroundUnitDelayReason"  isNillable="Yes">
+<name>Type of Turn-Around Delay</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The turn-around delays, if any, of EMS unit associated with the EMS event.</definition>
+<v2Number>E02_10</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Response</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Rendezvous Transport Unavailable added for situations where there is a wait for an EMS Transport Unit, a Ferry, Air Medical, etc. to return to service. 
+<br/><br/>If a patient is being transported by the unit, turn-around delay is any time delay that occurs from the time the patient arrived at the destination 		(eTimes.11) until the time the unit is back in service (eTimes.13) or unit back at the home location (eTimes.15) [whichever is the greater of the two times]. 
+<br/><br/>If no patient is being transported by the unit, turn-around delay is any time delay that occurs from the time the unit arrived on scene (eTimes.06) until the unit is back in service (eTimes.13) or the unit back at the home location (eTimes.15) [whichever is the greater of the two times].</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EMSTurnaroundUnitDelayReason baseType="string">
+    <facet name="enumeration" value="2212001" annotation="Clean-up"/>
+    <facet name="enumeration" value="2212003" annotation="Decontamination"/>
+    <facet name="enumeration" value="2212005" annotation="Distance"/>
+    <facet name="enumeration" value="2212007" annotation="Documentation"/>
+    <facet name="enumeration" value="2212009" annotation="ED Overcrowding / Transfer of Care"/>
+    <facet name="enumeration" value="2212011" annotation="Equipment Failure"/>
+    <facet name="enumeration" value="2212013" annotation="Equipment/Supply Replenishment"/>
+    <facet name="enumeration" value="2212015" annotation="None/No Delay"/>
+    <facet name="enumeration" value="2212017" annotation="Other"/>
+    <facet name="enumeration" value="2212019" annotation="Rendezvous Transport Unavailable"/>
+    <facet name="enumeration" value="2212021" annotation="Route Obstruction (e.g., Train)"/>
+    <facet name="enumeration" value="2212023" annotation="Staff Delay"/>
+    <facet name="enumeration" value="2212025" annotation="Traffic"/>
+    <facet name="enumeration" value="2212027" annotation="Vehicle Crash of this Unit"/>
+    <facet name="enumeration" value="2212029" annotation="Vehicle Failure of this Unit"/>
+    <facet name="enumeration" value="2212031" annotation="Weather"/>
+    <facet name="enumeration" value="2212033" annotation="EMS Crew Accompanies Patient for Facility Procedure"/>
+  </EMSTurnaroundUnitDelayReason>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_e016" role="Warning">
+      When <elementRef elementNumber="eResponse.12">Type of Turn-Around Delay</elementRef> is &quot;None/No Delay&quot;, no other value should be recorded.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Type of Turn-Around Delay has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Type of Turn-Around Delay is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Type of Turn-Around Delay has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

@@ -1,0 +1,42 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eProcedures.14"  minOccurs="0"  maxOccurs="M"  dataTypeName="AirwayPlacementTechnique"  isNillable="Yes">
+<name>Airway Placement Technique</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The manner/equipment used during the placement of the advanced airway.</definition>
+<v2Number></v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes>Added to better document airway management.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <AirwayPlacementTechnique baseType="string">
+    <facet name="enumeration" value="3914001" annotation="Blind Digital Technique"/>
+    <facet name="enumeration" value="3914003" annotation="Cross Finger Technique"/>
+    <facet name="enumeration" value="3914005" annotation="Direct Laryngoscopy"/>
+    <facet name="enumeration" value="3914007" annotation="Fiberoptic Laryngoscopy"/>
+    <facet name="enumeration" value="3914009" annotation="Indirect Laryngoscopy"/>
+    <facet name="enumeration" value="3914011" annotation="Video Laryngoscopy"/>
+  </AirwayPlacementTechnique>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When Airway Placement Technique has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Airway Placement Technique is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Airway Placement Technique has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

@@ -1,0 +1,48 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eVitals.29"  minOccurs="1"  maxOccurs="1"  dataTypeName="StrokeScale"  isNillable="Yes">
+<name>Stroke Scale Result</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The findings or results of the Stroke Scale Type (eVitals.30) used to assess the patient exhibiting stroke-like symptoms.</definition>
+<v2Number>E14_24</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Stroke</performanceMeasure></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <StrokeScale baseType="string">
+    <facet name="enumeration" value="3329001" annotation="Negative"/>
+    <facet name="enumeration" value="3329003" annotation="Non-Conclusive"/>
+    <facet name="enumeration" value="3329005" annotation="Positive"/>
+  </StrokeScale>
+</restrictions>
+<attributes>
+  <PN>
+    <PN.Refused><facet name="enumeration" value="8801019" annotation="Refused"/></PN.Refused>
+    <PN.UnableToComplete><facet name="enumeration" value="8801023" annotation="Unable to Complete"/></PN.UnableToComplete>
+  </PN>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e086" role="Warning">
+      <elementRef elementNumber="eSituation.18">Date/Time Last Known Well</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eVitals.29">Stroke Scale Result</elementRef> is &quot;Positive&quot;.
+      </assert>
+  <assert id="nemSch_e172" role="Warning">
+      <elementRef elementNumber="eDisposition.23">Hospital Capability</elementRef> should be recorded when <elementRef elementNumber="eDisposition.21">Type of Destination</elementRef> is &quot;Hospital...&quot; or &quot;Freestanding Emergency Department&quot; and <elementRef elementNumber="eVitals.29">Stroke Scale Result</elementRef> is &quot;Positive&quot;.
+      </assert>
+  <assert id="nemSch_e008" role="Error">
+      When Stroke Scale Result has a Pertinent Negative, it should be empty and it should not have a Not Value (Not Applicable, Not Recorded, or Not Reporting).
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Stroke Scale Result has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Stroke Scale Result is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

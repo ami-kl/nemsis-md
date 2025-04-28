@@ -1,0 +1,63 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="sConfiguration.01"  minOccurs="1"  maxOccurs="M"  dataTypeName="StateCertificationLicensureLevels"  isNillable="Yes">
+<name>State Certification/Licensure Levels</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The levels of certification/licensure for EMS personnel recognized by the state.</definition>
+<v2Number>D04_01</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Used to populate EMS-related values in the following data elements (some data elements contain additional non-EMS-related values, such as "Student" or "Patient" that should be allowed unless specifically instructed otherwise by the state):
+                                    <br/>dAgency.11 Level of Service
+                                    <br/>dConfiguration.06 EMS Certification Levels Permitted to Perform Each Procedure
+                                    <br/>dConfiguration.08 EMS Certification Levels Permitted to Administer Each Medication
+                                    <br/>dVehicle.05 Crew State Certification/Licensure Levels
+                                    <br/>dPersonnel.24 EMS Personnel's State EMS Certification Licensure Level
+                                    <br/>dPersonnel.38 EMS Personnel's Practice Level
+                                    <br/>ePayment.42 Specialty Care Transport Care Provider</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <StateCertificationLicensureLevels baseType="string">
+    <facet name="enumeration" value="9917001" annotation="Advanced Emergency Medical Technician (AEMT)"/>
+    <facet name="enumeration" value="9917002" annotation="Emergency Medical Technician - Intermediate"/>
+    <facet name="enumeration" value="9917003" annotation="Emergency Medical Responder (EMR)"/>
+    <facet name="enumeration" value="9917005" annotation="Emergency Medical Technician (EMT)"/>
+    <facet name="enumeration" value="9917007" annotation="Paramedic"/>
+    <facet name="enumeration" value="9917019" annotation="Physician"/>
+    <facet name="enumeration" value="9917021" annotation="Critical Care Paramedic"/>
+    <facet name="enumeration" value="9917023" annotation="Community Paramedicine"/>
+    <facet name="enumeration" value="9917025" annotation="Nurse Practitioner"/>
+    <facet name="enumeration" value="9917027" annotation="Physician Assistant"/>
+    <facet name="enumeration" value="9917029" annotation="Licensed Practical Nurse (LPN)"/>
+    <facet name="enumeration" value="9917031" annotation="Registered Nurse"/>
+  </StateCertificationLicensureLevels>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_s016" role="Warning">
+      <elementRef elementNumber="sConfiguration.01">State Certification/Licensure Levels</elementRef> should be unique (the same level should not be listed more than once).
+      </assert>
+  <assert id="nemSch_s017" role="Warning">
+      <elementRef elementNumber="sConfiguration.02">EMS Certification Levels Permitted to Perform Each Procedure</elementRef> should be on the list of <elementRef elementNumber="sConfiguration.01">State Certification/Licensure Levels</elementRef>.
+      </assert>
+  <assert id="nemSch_s020" role="Warning">
+      <elementRef elementNumber="sConfiguration.04">EMS Certification Levels Permitted to Administer Each Medication</elementRef> should be on the list of <elementRef elementNumber="sConfiguration.01">State Certification/Licensure Levels</elementRef>.
+      </assert>
+  <assert id="nemSch_s002" role="Error">
+      When State Certification/Licensure Levels has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_s001" role="Error">
+      When State Certification/Licensure Levels is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_s003" role="Warning">
+      When State Certification/Licensure Levels has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

@@ -1,0 +1,36 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dFacility.01"  minOccurs="0"  maxOccurs="1"  dataTypeName="TypeOfFacility"  isNillable="No">
+<name>Type of Facility</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The type of facility (healthcare or other) that the EMS agency transports patients to or from.</definition>
+<v2Number>D04_15</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes>With the release of v3.5.0 additional values were added to meet the needs of EMS. Reconciled the health care facility descriptions to match those in eDisposition.21 - Type of Destination.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <TypeOfFacility baseType="string">
+    <facet name="enumeration" value="1701001" annotation="Assisted Living Facility"/>
+    <facet name="enumeration" value="1701003" annotation="Clinic"/>
+    <facet name="enumeration" value="1701005" annotation="Hospital"/>
+    <facet name="enumeration" value="1701007" annotation="Nursing Home"/>
+    <facet name="enumeration" value="1701009" annotation="Other"/>
+    <facet name="enumeration" value="1701011" annotation="Urgent Care"/>
+    <facet name="enumeration" value="1701013" annotation="Physical Rehabilitation Facility"/>
+    <facet name="enumeration" value="1701015" annotation="Mental Health Facility"/>
+    <facet name="enumeration" value="1701017" annotation="Dialysis Center"/>
+    <facet name="enumeration" value="1701019" annotation="Diagnostic Services"/>
+    <facet name="enumeration" value="1701021" annotation="Freestanding Emergency Department"/>
+    <facet name="enumeration" value="1701023" annotation="Morgue/Mortuary"/>
+    <facet name="enumeration" value="1701025" annotation="Police/Jail"/>
+    <facet name="enumeration" value="1701027" annotation="Other EMS Responder (air)"/>
+    <facet name="enumeration" value="1701029" annotation="Other EMS Responder (ground)"/>
+    <facet name="enumeration" value="1701031" annotation="Other Recurring Care Center"/>
+    <facet name="enumeration" value="1701033" annotation="Drug and/or Alcohol Rehabilitation Facility"/>
+    <facet name="enumeration" value="1701035" annotation="Skilled Nursing Facility"/>
+  </TypeOfFacility>
+</restrictions>
+</element>

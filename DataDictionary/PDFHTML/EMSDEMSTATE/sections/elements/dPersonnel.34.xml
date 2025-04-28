@@ -1,0 +1,42 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dPersonnel.34"  minOccurs="0"  maxOccurs="1"  dataTypeName="JobResponsibilities"  isNillable="Yes">
+<name>EMS Personnel's Primary EMS Job Role</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The individuals primary/main EMS role at the EMS agency. This is the function which is performed the majority of the time for the EMS personnel.</definition>
+<v2Number></v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This is a single choice data element which should reflect the EMS Personnel's primary/main job role for which he/she functions. It is understood that most EMS personnel perform more than one role as a part of their position. Other roles should be documented in dPersonnel.35 (EMS Personnel's Other Job Responsibilities).</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <JobResponsibilities baseType="string">
+    <facet name="enumeration" value="1534001" annotation="Administrator/Manager"/>
+    <facet name="enumeration" value="1534003" annotation="Driver/Pilot"/>
+    <facet name="enumeration" value="1534005" annotation="Educator/Preceptor"/>
+    <facet name="enumeration" value="1534007" annotation="Fire Suppression"/>
+    <facet name="enumeration" value="1534009" annotation="First-Line Supervisor"/>
+    <facet name="enumeration" value="1534011" annotation="Law Enforcement"/>
+    <facet name="enumeration" value="1534013" annotation="Other"/>
+    <facet name="enumeration" value="1534015" annotation="Patient Care Provider"/>
+    <facet name="enumeration" value="1534017" annotation="Rescue"/>
+  </JobResponsibilities>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_d002" role="Error">
+      When EMS Personnel's Primary EMS Job Role has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_d001" role="Error">
+      When EMS Personnel's Primary EMS Job Role is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

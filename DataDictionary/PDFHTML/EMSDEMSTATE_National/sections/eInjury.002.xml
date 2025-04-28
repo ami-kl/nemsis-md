@@ -1,0 +1,6 @@
+<?xml-stylesheet type="text/xsl" href="../xslt/grouping.xslt"?>
+<section name="eInjury">
+  <element number="eInjury.01" minOccurs="1" maxOccurs="M" CorrelationID="" UUID="" isNillable="Yes" dataType="icd10CodeInjury"><name>Cause of Injury</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Required</usage><notValue>Yes</notValue><pertinentNegative></pertinentNegative></element>
+  <element number="eInjury.03" minOccurs="1" maxOccurs="M" CorrelationID="" UUID="" isNillable="Yes" dataType="TraumaTriageCriteriaSteps1and2"><name>Trauma Triage Criteria (High Risk for Serious Injury)</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Required</usage><notValue>Yes</notValue><pertinentNegative>Yes</pertinentNegative></element>
+  <element number="eInjury.04" minOccurs="1" maxOccurs="M" CorrelationID="" UUID="" isNillable="Yes" dataType="TraumaTriageCriteriaSteps3and4"><name>Trauma Triage Criteria (Moderate Risk for Serious Injury)</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Required</usage><notValue>Yes</notValue><pertinentNegative>Yes</pertinentNegative></element>
+</section>

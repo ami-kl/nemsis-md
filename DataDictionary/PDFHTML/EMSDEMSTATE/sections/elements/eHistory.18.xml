@@ -1,0 +1,38 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eHistory.18"  minOccurs="0"  maxOccurs="1"  dataTypeName="Pregnancy"  isNillable="Yes">
+<name>Pregnancy</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>Indication of the possibility by the patient's history of current pregnancy.</definition>
+<v2Number>E12_20</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <Pregnancy baseType="string">
+    <facet name="enumeration" value="3118001" annotation="No"/>
+    <facet name="enumeration" value="3118003" annotation="Possible, Unconfirmed"/>
+    <facet name="enumeration" value="3118005" annotation="Yes, Confirmed 12 to 20 Weeks"/>
+    <facet name="enumeration" value="3118007" annotation="Yes, Confirmed Greater Than 20 Weeks"/>
+    <facet name="enumeration" value="3118009" annotation="Yes, Confirmed Less Than 12 Weeks"/>
+    <facet name="enumeration" value="3118011" annotation="Yes, Weeks Unknown"/>
+  </Pregnancy>
+</restrictions>
+<attributes>
+  <PN>
+    <PN.Refused><facet name="enumeration" value="8801019" annotation="Refused"/></PN.Refused>
+    <PN.UnableToComplete><facet name="enumeration" value="8801023" annotation="Unable to Complete"/></PN.UnableToComplete>
+  </PN>
+</attributes>
+<asserts>
+  <assert id="nemSch_e008" role="Error">
+      When Pregnancy has a Pertinent Negative, it should be empty and it should not have a Not Value (Not Applicable, Not Recorded, or Not Reporting).
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Pregnancy is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

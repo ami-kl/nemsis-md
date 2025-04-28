@@ -1,0 +1,27 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eVitals.25"  minOccurs="0"  maxOccurs="1"  dataTypeName="MethodBodyTemp"  isNillable="No">
+<name>Temperature Method</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The method used to obtain the patient's body temperature.</definition>
+<v2Number>E14_21</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <MethodBodyTemp baseType="string">
+    <facet name="enumeration" value="3325001" annotation="Axillary"/>
+    <facet name="enumeration" value="3325003" annotation="Central (Venous or Arterial)"/>
+    <facet name="enumeration" value="3325005" annotation="Esophageal"/>
+    <facet name="enumeration" value="3325007" annotation="Oral"/>
+    <facet name="enumeration" value="3325009" annotation="Rectal"/>
+    <facet name="enumeration" value="3325011" annotation="Temporal Artery"/>
+    <facet name="enumeration" value="3325013" annotation="Tympanic"/>
+    <facet name="enumeration" value="3325015" annotation="Urinary Catheter"/>
+    <facet name="enumeration" value="3325017" annotation="Skin Probe"/>
+  </MethodBodyTemp>
+</restrictions>
+</element>

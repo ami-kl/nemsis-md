@@ -1,0 +1,4 @@
+<?xml-stylesheet type="text/xsl" href="../xslt/grouping.xslt"?>
+<section name="sState">
+  <element number="sState.01" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No" dataType="ANSIStateCode"><name>State</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Mandatory</usage><notValue></notValue><pertinentNegative></pertinentNegative></element>
+</section>

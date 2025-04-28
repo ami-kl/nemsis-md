@@ -1,0 +1,35 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eScene.25"  minOccurs="0"  maxOccurs="1"  dataTypeName="TransferOfPatientCare"  isNillable="Yes">
+<name>Transferred Patient/Care To/From Agency</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Whether primary responsibility for the care of the patient was transferred in the field to or from the EMS agency listed in eScene.02.</definition>
+<v2Number></v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <TransferOfPatientCare baseType="string">
+    <facet name="enumeration" value="2725001" annotation="Transferred Patient to Agency"/>
+    <facet name="enumeration" value="2725003" annotation="Received Patient from Agency"/>
+    <facet name="enumeration" value="2725005" annotation="No Transfer of Patient/Care To/From Agency"/>
+  </TransferOfPatientCare>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When Transferred Patient/Care To/From Agency has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Transferred Patient/Care To/From Agency is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

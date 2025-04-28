@@ -1,0 +1,34 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eSituation.19"  minOccurs="0"  maxOccurs="1"  dataTypeName="JustificationforTransferorEncounter"  isNillable="Yes">
+<name>Justification for Transfer or Encounter</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The ordering physician or medical provider diagnosis or stated reason for a hospital-to-hospital transfer, other medical transport, or Mobile Integrated Healthcare encounter.</definition>
+<v2Number></v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This is the diagnosis or reason for transfer, or medical transport or Integrated Healthcare Encounter provided by the ordering physician or medical provider. Hospital-to-hospital transfers and medical transports are based on the ordering medical provider, and not the EMS provider's impression. The text of the reason or diagnosis would be entered here rather than using the patient complaint field (as the patient may still have complaints to document), eSituation.11 Provider's Primary Impression or eSituation.12 Provider's Secondary Impressions.<br/><br/>This element should only be documented when eResponse.05 Type of Service Requested is a transfer, Other Routine Medical Transport, or Mobile Integrated Health Care Encounter.</v3Comment>
+<v3Changes>This element is being added with the release of v3.5.0</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <JustificationforTransferorEncounter baseType="string">
+    <facet name="minLength" value="1"/>
+    <facet name="maxLength" value="255"/>
+  </JustificationforTransferorEncounter>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When Justification for Transfer or Encounter has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Justification for Transfer or Encounter is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

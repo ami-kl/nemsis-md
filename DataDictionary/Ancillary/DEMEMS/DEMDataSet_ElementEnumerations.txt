@@ -1,0 +1,608 @@
+'DatasetName'|'ElementNumber'|'ElementName'|'Code'|'CodeDescription'|
+'DEMDataSet'|'dCustomConfiguration.03'|'Custom Data Type'|'9902001'|'Binary'|
+'DEMDataSet'|'dCustomConfiguration.03'|'Custom Data Type'|'9902003'|'Date/Time'|
+'DEMDataSet'|'dCustomConfiguration.03'|'Custom Data Type'|'9902005'|'Integer/Number'|
+'DEMDataSet'|'dCustomConfiguration.03'|'Custom Data Type'|'9902007'|'Other'|
+'DEMDataSet'|'dCustomConfiguration.03'|'Custom Data Type'|'9902009'|'Text/String'|
+'DEMDataSet'|'dCustomConfiguration.03'|'Custom Data Type'|'9902011'|'Boolean'|
+'DEMDataSet'|'dCustomConfiguration.04'|'Custom Data Element Recurrence'|'9923001'|'No'|
+'DEMDataSet'|'dCustomConfiguration.04'|'Custom Data Element Recurrence'|'9923003'|'Yes'|
+'DEMDataSet'|'dCustomConfiguration.05'|'Custom Data Element Usage'|'9903001'|'Mandatory'|
+'DEMDataSet'|'dCustomConfiguration.05'|'Custom Data Element Usage'|'9903003'|'Required'|
+'DEMDataSet'|'dCustomConfiguration.05'|'Custom Data Element Usage'|'9903005'|'Recommended'|
+'DEMDataSet'|'dCustomConfiguration.05'|'Custom Data Element Usage'|'9903007'|'Optional'|
+'DEMDataSet'|'dCustomConfiguration.07'|'Custom Data Element Potential NOT Values (NV)'|'7701001'|'Not Applicable'|
+'DEMDataSet'|'dCustomConfiguration.07'|'Custom Data Element Potential NOT Values (NV)'|'7701003'|'Not Recorded'|
+'DEMDataSet'|'dCustomConfiguration.07'|'Custom Data Element Potential NOT Values (NV)'|'7701005'|'Not Reporting'|
+'DEMDataSet'|'dCustomConfiguration.08'|'Custom Data Element Potential Pertinent Negative Values (PN)'|'8801001'|'Contraindication Noted'|
+'DEMDataSet'|'dCustomConfiguration.08'|'Custom Data Element Potential Pertinent Negative Values (PN)'|'8801003'|'Denied By Order'|
+'DEMDataSet'|'dCustomConfiguration.08'|'Custom Data Element Potential Pertinent Negative Values (PN)'|'8801005'|'Exam Finding Not Present'|
+'DEMDataSet'|'dCustomConfiguration.08'|'Custom Data Element Potential Pertinent Negative Values (PN)'|'8801007'|'Medication Allergy'|
+'DEMDataSet'|'dCustomConfiguration.08'|'Custom Data Element Potential Pertinent Negative Values (PN)'|'8801009'|'Medication Already Taken'|
+'DEMDataSet'|'dCustomConfiguration.08'|'Custom Data Element Potential Pertinent Negative Values (PN)'|'8801013'|'No Known Drug Allergy'|
+'DEMDataSet'|'dCustomConfiguration.08'|'Custom Data Element Potential Pertinent Negative Values (PN)'|'8801015'|'None Reported'|
+'DEMDataSet'|'dCustomConfiguration.08'|'Custom Data Element Potential Pertinent Negative Values (PN)'|'8801017'|'Not Performed by EMS'|
+'DEMDataSet'|'dCustomConfiguration.08'|'Custom Data Element Potential Pertinent Negative Values (PN)'|'8801019'|'Refused'|
+'DEMDataSet'|'dCustomConfiguration.08'|'Custom Data Element Potential Pertinent Negative Values (PN)'|'8801021'|'Unresponsive'|
+'DEMDataSet'|'dCustomConfiguration.08'|'Custom Data Element Potential Pertinent Negative Values (PN)'|'8801023'|'Unable to Complete'|
+'DEMDataSet'|'dCustomConfiguration.08'|'Custom Data Element Potential Pertinent Negative Values (PN)'|'8801025'|'Not Immunized'|
+'DEMDataSet'|'dCustomConfiguration.08'|'Custom Data Element Potential Pertinent Negative Values (PN)'|'8801027'|'Order Criteria Not Met'|
+'DEMDataSet'|'dCustomConfiguration.08'|'Custom Data Element Potential Pertinent Negative Values (PN)'|'8801029'|'Approximate'|
+'DEMDataSet'|'dCustomConfiguration.08'|'Custom Data Element Potential Pertinent Negative Values (PN)'|'8801031'|'Symptom Not Present'|
+'DEMDataSet'|'dAgency.09'|'Primary Type of Service'|'9920001'|'911 Response (Scene) with Transport Capability'|
+'DEMDataSet'|'dAgency.09'|'Primary Type of Service'|'9920003'|'911 Response (Scene) without Transport Capability'|
+'DEMDataSet'|'dAgency.09'|'Primary Type of Service'|'9920005'|'Air Medical'|
+'DEMDataSet'|'dAgency.09'|'Primary Type of Service'|'9920007'|'ALS Intercept'|
+'DEMDataSet'|'dAgency.09'|'Primary Type of Service'|'9920011'|'Hazmat'|
+'DEMDataSet'|'dAgency.09'|'Primary Type of Service'|'9920013'|'Medical Transport (Convalescent, Interfacility Transfer Hospital and Nursing Home)'|
+'DEMDataSet'|'dAgency.09'|'Primary Type of Service'|'9920015'|'Rescue'|
+'DEMDataSet'|'dAgency.09'|'Primary Type of Service'|'9920017'|'Community Paramedicine'|
+'DEMDataSet'|'dAgency.09'|'Primary Type of Service'|'9920019'|'Critical Care (Ground)'|
+'DEMDataSet'|'dAgency.10'|'Other Types of Service'|'9920001'|'911 Response (Scene) with Transport Capability'|
+'DEMDataSet'|'dAgency.10'|'Other Types of Service'|'9920003'|'911 Response (Scene) without Transport Capability'|
+'DEMDataSet'|'dAgency.10'|'Other Types of Service'|'9920005'|'Air Medical'|
+'DEMDataSet'|'dAgency.10'|'Other Types of Service'|'9920007'|'ALS Intercept'|
+'DEMDataSet'|'dAgency.10'|'Other Types of Service'|'9920011'|'Hazmat'|
+'DEMDataSet'|'dAgency.10'|'Other Types of Service'|'9920013'|'Medical Transport (Convalescent, Interfacility Transfer Hospital and Nursing Home)'|
+'DEMDataSet'|'dAgency.10'|'Other Types of Service'|'9920015'|'Rescue'|
+'DEMDataSet'|'dAgency.10'|'Other Types of Service'|'9920017'|'Community Paramedicine'|
+'DEMDataSet'|'dAgency.10'|'Other Types of Service'|'9920019'|'Critical Care (Ground)'|
+'DEMDataSet'|'dAgency.11'|'Level of Service'|'9917001'|'Advanced Emergency Medical Technician (AEMT)'|
+'DEMDataSet'|'dAgency.11'|'Level of Service'|'9917002'|'Emergency Medical Technician - Intermediate'|
+'DEMDataSet'|'dAgency.11'|'Level of Service'|'9917003'|'Emergency Medical Responder (EMR)'|
+'DEMDataSet'|'dAgency.11'|'Level of Service'|'9917005'|'Emergency Medical Technician (EMT)'|
+'DEMDataSet'|'dAgency.11'|'Level of Service'|'9917007'|'Paramedic'|
+'DEMDataSet'|'dAgency.11'|'Level of Service'|'9917019'|'Physician'|
+'DEMDataSet'|'dAgency.11'|'Level of Service'|'9917021'|'Critical Care Paramedic'|
+'DEMDataSet'|'dAgency.11'|'Level of Service'|'9917023'|'Community Paramedicine'|
+'DEMDataSet'|'dAgency.11'|'Level of Service'|'9917025'|'Nurse Practitioner'|
+'DEMDataSet'|'dAgency.11'|'Level of Service'|'9917027'|'Physician Assistant'|
+'DEMDataSet'|'dAgency.11'|'Level of Service'|'9917029'|'Licensed Practical Nurse (LPN)'|
+'DEMDataSet'|'dAgency.11'|'Level of Service'|'9917031'|'Registered Nurse'|
+'DEMDataSet'|'dAgency.12'|'Organization Status'|'1016001'|'Mixed'|
+'DEMDataSet'|'dAgency.12'|'Organization Status'|'1016003'|'Non-Volunteer'|
+'DEMDataSet'|'dAgency.12'|'Organization Status'|'1016005'|'Volunteer'|
+'DEMDataSet'|'dAgency.13'|'Organizational Type'|'9912001'|'Fire Department'|
+'DEMDataSet'|'dAgency.13'|'Organizational Type'|'9912003'|'Governmental, Non-Fire'|
+'DEMDataSet'|'dAgency.13'|'Organizational Type'|'9912005'|'Hospital'|
+'DEMDataSet'|'dAgency.13'|'Organizational Type'|'9912007'|'Private, Nonhospital'|
+'DEMDataSet'|'dAgency.13'|'Organizational Type'|'9912009'|'Tribal'|
+'DEMDataSet'|'dAgency.14'|'EMS Agency Organizational Tax Status'|'1018001'|'For Profit'|
+'DEMDataSet'|'dAgency.14'|'EMS Agency Organizational Tax Status'|'1018003'|'Other (e.g., Government)'|
+'DEMDataSet'|'dAgency.14'|'EMS Agency Organizational Tax Status'|'1018005'|'Not For Profit'|
+'DEMDataSet'|'dAgency.23'|'EMS Agency Time Zone'|'1027001'|'All other time zones'|
+'DEMDataSet'|'dAgency.23'|'EMS Agency Time Zone'|'1027003'|'GMT-04:00 Atlantic Time'|
+'DEMDataSet'|'dAgency.23'|'EMS Agency Time Zone'|'1027005'|'GMT-05:00 Eastern Time'|
+'DEMDataSet'|'dAgency.23'|'EMS Agency Time Zone'|'1027007'|'GMT-06:00 Central Time'|
+'DEMDataSet'|'dAgency.23'|'EMS Agency Time Zone'|'1027009'|'GMT-07:00 Mountain Time'|
+'DEMDataSet'|'dAgency.23'|'EMS Agency Time Zone'|'1027011'|'GMT-08:00 Pacific Time'|
+'DEMDataSet'|'dAgency.23'|'EMS Agency Time Zone'|'1027013'|'GMT-09:00 Alaska'|
+'DEMDataSet'|'dAgency.23'|'EMS Agency Time Zone'|'1027015'|'GMT-10:00 Hawaii'|
+'DEMDataSet'|'dAgency.23'|'EMS Agency Time Zone'|'1027017'|'GMT-11:00 Midway Island, Samoa'|
+'DEMDataSet'|'dAgency.24'|'EMS Agency Daylight Savings Time Use'|'9923001'|'No'|
+'DEMDataSet'|'dAgency.24'|'EMS Agency Daylight Savings Time Use'|'9923003'|'Yes'|
+'DEMDataSet'|'dAgency.27'|'Licensed Agency'|'9923001'|'No'|
+'DEMDataSet'|'dAgency.27'|'Licensed Agency'|'9923003'|'Yes'|
+'DEMDataSet'|'dContact.01'|'Agency Contact Type'|'1101001'|'Administrative Assistant'|
+'DEMDataSet'|'dContact.01'|'Agency Contact Type'|'1101003'|'EMS Agency Director/Chief/Lead Administrator/CEO'|
+'DEMDataSet'|'dContact.01'|'Agency Contact Type'|'1101005'|'EMS Assistant Agency Director/Chief/Administrator/CEO'|
+'DEMDataSet'|'dContact.01'|'Agency Contact Type'|'1101007'|'EMS Assistant Medical Director'|
+'DEMDataSet'|'dContact.01'|'Agency Contact Type'|'1101009'|'EMS IT/Data Specialist'|
+'DEMDataSet'|'dContact.01'|'Agency Contact Type'|'1101011'|'EMS Medical Director'|
+'DEMDataSet'|'dContact.01'|'Agency Contact Type'|'1101013'|'EMS Quality/Performance Improvement Specialist'|
+'DEMDataSet'|'dContact.01'|'Agency Contact Type'|'1101015'|'EMS Training/Education Specialist'|
+'DEMDataSet'|'dContact.01'|'Agency Contact Type'|'1101017'|'Other'|
+'DEMDataSet'|'dContact.09'|'Agency Contact Country'|'CA'|'Canada'|
+'DEMDataSet'|'dContact.09'|'Agency Contact Country'|'MX'|'Mexico'|
+'DEMDataSet'|'dContact.09'|'Agency Contact Country'|'US'|'United States'|
+'DEMDataSet'|'dContact.13'|'Agency Medical Director Degree'|'1113001'|'Doctor of Medicine'|
+'DEMDataSet'|'dContact.13'|'Agency Medical Director Degree'|'1113003'|'Doctor of Osteopathy'|
+'DEMDataSet'|'dContact.14'|'Agency Medical Director Board Certification Type'|'1114001'|'Allergy and Immunology'|
+'DEMDataSet'|'dContact.14'|'Agency Medical Director Board Certification Type'|'1114003'|'Anesthesiology'|
+'DEMDataSet'|'dContact.14'|'Agency Medical Director Board Certification Type'|'1114005'|'Colon and Rectal Surgery'|
+'DEMDataSet'|'dContact.14'|'Agency Medical Director Board Certification Type'|'1114007'|'Dermatology'|
+'DEMDataSet'|'dContact.14'|'Agency Medical Director Board Certification Type'|'1114009'|'Emergency Medicine'|
+'DEMDataSet'|'dContact.14'|'Agency Medical Director Board Certification Type'|'1114011'|'Family Medicine'|
+'DEMDataSet'|'dContact.14'|'Agency Medical Director Board Certification Type'|'1114013'|'Internal Medicine'|
+'DEMDataSet'|'dContact.14'|'Agency Medical Director Board Certification Type'|'1114015'|'Neurological Surgery'|
+'DEMDataSet'|'dContact.14'|'Agency Medical Director Board Certification Type'|'1114017'|'Neurology'|
+'DEMDataSet'|'dContact.14'|'Agency Medical Director Board Certification Type'|'1114019'|'None (Not Board Certified)'|
+'DEMDataSet'|'dContact.14'|'Agency Medical Director Board Certification Type'|'1114021'|'Obstetrics and Gynecology'|
+'DEMDataSet'|'dContact.14'|'Agency Medical Director Board Certification Type'|'1114023'|'Ophthalmology'|
+'DEMDataSet'|'dContact.14'|'Agency Medical Director Board Certification Type'|'1114025'|'Orthopedic Surgery'|
+'DEMDataSet'|'dContact.14'|'Agency Medical Director Board Certification Type'|'1114027'|'Otolaryngology'|
+'DEMDataSet'|'dContact.14'|'Agency Medical Director Board Certification Type'|'1114029'|'Pediatrics'|
+'DEMDataSet'|'dContact.14'|'Agency Medical Director Board Certification Type'|'1114031'|'Physical Medicine and Rehabilitation'|
+'DEMDataSet'|'dContact.14'|'Agency Medical Director Board Certification Type'|'1114033'|'Plastic Surgery'|
+'DEMDataSet'|'dContact.14'|'Agency Medical Director Board Certification Type'|'1114035'|'Psychiatry'|
+'DEMDataSet'|'dContact.14'|'Agency Medical Director Board Certification Type'|'1114037'|'Surgery'|
+'DEMDataSet'|'dContact.14'|'Agency Medical Director Board Certification Type'|'1114039'|'Thoracic Surgery'|
+'DEMDataSet'|'dContact.14'|'Agency Medical Director Board Certification Type'|'1114041'|'Urology'|
+'DEMDataSet'|'dContact.14'|'Agency Medical Director Board Certification Type'|'1114043'|'Vascular Surgery'|
+'DEMDataSet'|'dContact.15'|'Medical Director Compensation'|'1115001'|'Compensated'|
+'DEMDataSet'|'dContact.15'|'Medical Director Compensation'|'1115003'|'Non-Compensated'|
+'DEMDataSet'|'dContact.16'|'EMS Medical Director Board Certified/Eligible'|'9923001'|'No'|
+'DEMDataSet'|'dContact.16'|'EMS Medical Director Board Certified/Eligible'|'9923003'|'Yes'|
+'DEMDataSet'|'dConfiguration.06'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917001'|'Advanced Emergency Medical Technician (AEMT)'|
+'DEMDataSet'|'dConfiguration.06'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917002'|'Emergency Medical Technician - Intermediate'|
+'DEMDataSet'|'dConfiguration.06'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917003'|'Emergency Medical Responder (EMR)'|
+'DEMDataSet'|'dConfiguration.06'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917005'|'Emergency Medical Technician (EMT)'|
+'DEMDataSet'|'dConfiguration.06'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917007'|'Paramedic'|
+'DEMDataSet'|'dConfiguration.06'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917019'|'Physician'|
+'DEMDataSet'|'dConfiguration.06'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917021'|'Critical Care Paramedic'|
+'DEMDataSet'|'dConfiguration.06'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917023'|'Community Paramedicine'|
+'DEMDataSet'|'dConfiguration.06'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917025'|'Nurse Practitioner'|
+'DEMDataSet'|'dConfiguration.06'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917027'|'Physician Assistant'|
+'DEMDataSet'|'dConfiguration.06'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917029'|'Licensed Practical Nurse (LPN)'|
+'DEMDataSet'|'dConfiguration.06'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917031'|'Registered Nurse'|
+'DEMDataSet'|'dConfiguration.08'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917001'|'Advanced Emergency Medical Technician (AEMT)'|
+'DEMDataSet'|'dConfiguration.08'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917002'|'Emergency Medical Technician - Intermediate'|
+'DEMDataSet'|'dConfiguration.08'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917003'|'Emergency Medical Responder (EMR)'|
+'DEMDataSet'|'dConfiguration.08'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917005'|'Emergency Medical Technician (EMT)'|
+'DEMDataSet'|'dConfiguration.08'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917007'|'Paramedic'|
+'DEMDataSet'|'dConfiguration.08'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917019'|'Physician'|
+'DEMDataSet'|'dConfiguration.08'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917021'|'Critical Care Paramedic'|
+'DEMDataSet'|'dConfiguration.08'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917023'|'Community Paramedicine'|
+'DEMDataSet'|'dConfiguration.08'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917025'|'Nurse Practitioner'|
+'DEMDataSet'|'dConfiguration.08'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917027'|'Physician Assistant'|
+'DEMDataSet'|'dConfiguration.08'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917029'|'Licensed Practical Nurse (LPN)'|
+'DEMDataSet'|'dConfiguration.08'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917031'|'Registered Nurse'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914001'|'Airway'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914003'|'Airway-Failed'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914005'|'Airway-Obstruction/Foreign Body'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914007'|'Airway-Rapid Sequence Induction (RSI-Paralytic)'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914009'|'Airway-Sedation Assisted (Non-Paralytic)'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914011'|'Cardiac Arrest-Asystole'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914013'|'Cardiac Arrest-Hypothermia-Therapeutic'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914015'|'Cardiac Arrest-Pulseless Electrical Activity'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914017'|'Cardiac Arrest-Ventricular Fibrillation/ Pulseless Ventricular Tachycardia'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914019'|'Cardiac Arrest-Post Resuscitation Care'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914021'|'Environmental-Altitude Sickness'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914023'|'Environmental-Cold Exposure'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914025'|'Environmental-Frostbite/Cold Injury'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914027'|'Environmental-Heat Exposure/Exhaustion'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914029'|'Environmental-Heat Stroke/Hyperthermia'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914031'|'Environmental-Hypothermia'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914033'|'Exposure-Airway/Inhalation Irritants'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914035'|'Exposure-Biological/Infectious'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914037'|'Exposure-Blistering Agents'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914041'|'Exposure-Chemicals to Eye'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914043'|'Exposure-Cyanide'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914045'|'Exposure-Explosive/ Blast Injury'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914047'|'Exposure-Nerve Agents'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914049'|'Exposure-Radiologic Agents'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914051'|'General-Back Pain'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914053'|'General-Behavioral/Patient Restraint'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914055'|'General-Cardiac Arrest'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914057'|'General-Dental Problems'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914059'|'General-Epistaxis'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914061'|'General-Fever'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914063'|'General-Individualized Patient Protocol'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914065'|'General-Indwelling Medical Devices/Equipment'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914067'|'General-IV Access'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914069'|'General-Medical Device Malfunction'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914071'|'General-Pain Control'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914073'|'General-Spinal Immobilization/Clearance'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914075'|'General-Universal Patient Care/ Initial Patient Contact'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914077'|'Injury-Amputation'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914079'|'Injury-Bites and Envenomations-Land'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914081'|'Injury-Bites and Envenomations-Marine'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914083'|'Injury-Bleeding/ Hemorrhage Control'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914085'|'Injury-Burns-Thermal'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914087'|'Injury-Cardiac Arrest'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914089'|'Injury-Crush Syndrome'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914091'|'Injury-Diving Emergencies'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914093'|'Injury-Drowning/Near Drowning'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914095'|'Injury-Electrical Injuries'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914097'|'Injury-Extremity'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914099'|'Injury-Eye'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914101'|'Injury-Head'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914103'|'Injury-Impaled Object'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914105'|'Injury-Multisystem'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914107'|'Injury-Spinal Cord'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914109'|'Medical-Abdominal Pain'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914111'|'Medical-Allergic Reaction/Anaphylaxis'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914113'|'Medical-Altered Mental Status'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914115'|'Medical-Bradycardia'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914117'|'Medical-Cardiac Chest Pain'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914119'|'Medical-Diarrhea'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914121'|'Medical-Hyperglycemia'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914123'|'Medical-Hypertension'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914125'|'Medical-Hypoglycemia/Diabetic Emergency'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914127'|'Medical-Hypotension/Shock (Non-Trauma)'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914129'|'Medical-Influenza-Like Illness/ Upper Respiratory Infection'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914131'|'Medical-Nausea/Vomiting'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914133'|'Medical-Newborn/ Neonatal Resuscitation'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914135'|'General-Overdose/Poisoning/Toxic Ingestion'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914137'|'Medical-Pulmonary Edema/CHF'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914139'|'Medical-Respiratory Distress/Asthma/COPD/Reactive Airway'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914141'|'Medical-Seizure'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914143'|'Medical-ST-Elevation Myocardial Infarction (STEMI)'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914145'|'Medical-Stroke/TIA'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914147'|'Medical-Supraventricular Tachycardia (Including Atrial Fibrillation)'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914149'|'Medical-Syncope'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914151'|'Medical-Ventricular Tachycardia (With Pulse)'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914153'|'Not Done'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914155'|'OB/GYN-Childbirth/Labor/Delivery'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914157'|'OB/GYN-Eclampsia'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914159'|'OB/GYN-Gynecologic Emergencies'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914161'|'OB/GYN-Pregnancy Related Emergencies'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914163'|'OB/GYN-Post-partum Hemorrhage'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914165'|'Other'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914167'|'Exposure-Carbon Monoxide'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914169'|'Cardiac Arrest-Do Not Resuscitate'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914171'|'Cardiac Arrest-Special Resuscitation Orders'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914173'|'Exposure-Smoke Inhalation'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914175'|'General-Community Paramedicine / Mobile Integrated Healthcare'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914177'|'General-Exception Protocol'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914179'|'General-Extended Care Guidelines'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914181'|'General-Interfacility Transfers'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914183'|'General-Law Enforcement - Blood for Legal Purposes'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914185'|'General-Law Enforcement - Assist with Law Enforcement Activity'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914187'|'General-Neglect or Abuse Suspected'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914189'|'General-Refusal of Care'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914191'|'Injury-Mass/Multiple Casualties'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914193'|'Injury-Thoracic'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914195'|'Medical-Adrenal Insufficiency'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914197'|'Medical-Apparent Life Threatening Event (ALTE)'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914199'|'Medical-Tachycardia'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914201'|'Cardiac Arrest-Determination of Death / Withholding Resuscitative Efforts'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914203'|'Injury-Conducted Electrical Weapon (e.g., Taser)'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914205'|'Injury-Facial Trauma'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914207'|'Injury-General Trauma Management'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914209'|'Injury-Lightning/Lightning Strike'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914211'|'Injury-SCUBA Injury/Accidents'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914213'|'Injury-Topical Chemical Burn'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914215'|'Medical-Beta Blocker Poisoning/Overdose'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914217'|'Medical-Calcium Channel Blocker Poisoning/Overdose'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914219'|'Medical-Opioid Poisoning/Overdose'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914221'|'Medical-Respiratory Distress-Bronchiolitis'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914223'|'Medical-Respiratory Distress-Croup'|
+'DEMDataSet'|'dConfiguration.10'|'EMS Agency Protocols'|'9914225'|'Medical-Stimulant Poisoning/Overdose'|
+'DEMDataSet'|'dConfiguration.11'|'EMS Agency Specialty Service Capability'|'1211001'|'Air Rescue'|
+'DEMDataSet'|'dConfiguration.11'|'EMS Agency Specialty Service Capability'|'1211003'|'CBRNE'|
+'DEMDataSet'|'dConfiguration.11'|'EMS Agency Specialty Service Capability'|'1211005'|'Community Health Medicine'|
+'DEMDataSet'|'dConfiguration.11'|'EMS Agency Specialty Service Capability'|'1211007'|'Disaster Medical Assistance Team (DMAT)'|
+'DEMDataSet'|'dConfiguration.11'|'EMS Agency Specialty Service Capability'|'1211009'|'Disaster Mortuary (DMORT)'|
+'DEMDataSet'|'dConfiguration.11'|'EMS Agency Specialty Service Capability'|'1211011'|'Dive Rescue'|
+'DEMDataSet'|'dConfiguration.11'|'EMS Agency Specialty Service Capability'|'1211013'|'Farm Rescue'|
+'DEMDataSet'|'dConfiguration.11'|'EMS Agency Specialty Service Capability'|'1211015'|'High Angle Rescue'|
+'DEMDataSet'|'dConfiguration.11'|'EMS Agency Specialty Service Capability'|'1211017'|'Machinery Disentanglement'|
+'DEMDataSet'|'dConfiguration.11'|'EMS Agency Specialty Service Capability'|'1211019'|'None'|
+'DEMDataSet'|'dConfiguration.11'|'EMS Agency Specialty Service Capability'|'1211021'|'Ski / Snow Rescue'|
+'DEMDataSet'|'dConfiguration.11'|'EMS Agency Specialty Service Capability'|'1211023'|'Tactical EMS'|
+'DEMDataSet'|'dConfiguration.11'|'EMS Agency Specialty Service Capability'|'1211025'|'Trench / Confined Space Rescue'|
+'DEMDataSet'|'dConfiguration.11'|'EMS Agency Specialty Service Capability'|'1211027'|'Urban Search and Rescue (USAR)'|
+'DEMDataSet'|'dConfiguration.11'|'EMS Agency Specialty Service Capability'|'1211029'|'Vehicle Extrication'|
+'DEMDataSet'|'dConfiguration.11'|'EMS Agency Specialty Service Capability'|'1211031'|'Veterinary Medical Assistance Team (VMAT)'|
+'DEMDataSet'|'dConfiguration.11'|'EMS Agency Specialty Service Capability'|'1211033'|'Water or Ice Related Rescue (Incl Swift Water)'|
+'DEMDataSet'|'dConfiguration.11'|'EMS Agency Specialty Service Capability'|'1211035'|'Wilderness Search and Rescue'|
+'DEMDataSet'|'dConfiguration.12'|'Billing Status'|'9923001'|'No'|
+'DEMDataSet'|'dConfiguration.12'|'Billing Status'|'9923003'|'Yes'|
+'DEMDataSet'|'dConfiguration.13'|'Emergency Medical Dispatch (EMD) Provided to EMS Agency Service Area'|'1213001'|'No'|
+'DEMDataSet'|'dConfiguration.13'|'Emergency Medical Dispatch (EMD) Provided to EMS Agency Service Area'|'1213003'|'Yes, 100% of the EMS Agency's Service Area'|
+'DEMDataSet'|'dConfiguration.13'|'Emergency Medical Dispatch (EMD) Provided to EMS Agency Service Area'|'1213005'|'Yes, Less than 100% of the EMS Agency's Service Area'|
+'DEMDataSet'|'dConfiguration.15'|'Patient Monitoring Capability(ies)'|'1215001'|'Capnography-Numeric'|
+'DEMDataSet'|'dConfiguration.15'|'Patient Monitoring Capability(ies)'|'1215003'|'Capnography-Waveform'|
+'DEMDataSet'|'dConfiguration.15'|'Patient Monitoring Capability(ies)'|'1215005'|'ECG-12 Lead or Greater'|
+'DEMDataSet'|'dConfiguration.15'|'Patient Monitoring Capability(ies)'|'1215007'|'ECG-Less than 12 Lead (Cardiac Monitor)'|
+'DEMDataSet'|'dConfiguration.15'|'Patient Monitoring Capability(ies)'|'1215009'|'Oximetry-Carbon Monoxide'|
+'DEMDataSet'|'dConfiguration.15'|'Patient Monitoring Capability(ies)'|'1215011'|'Oximetry-Oxygen'|
+'DEMDataSet'|'dConfiguration.15'|'Patient Monitoring Capability(ies)'|'1215013'|'Pressure Measurement-Invasive (Arterial, CVP, Swan, etc.)'|
+'DEMDataSet'|'dConfiguration.15'|'Patient Monitoring Capability(ies)'|'1215015'|'Pressure Measurement-Non-Invasive (Blood Pressure, etc.)'|
+'DEMDataSet'|'dConfiguration.15'|'Patient Monitoring Capability(ies)'|'1215017'|'Ventilator-Transport'|
+'DEMDataSet'|'dConfiguration.15'|'Patient Monitoring Capability(ies)'|'1215019'|'Vital Sign Monitoring'|
+'DEMDataSet'|'dLocation.01'|'EMS Location Type'|'1301001'|'EMS Agency Headquarters'|
+'DEMDataSet'|'dLocation.01'|'EMS Location Type'|'1301003'|'EMS Staging Area'|
+'DEMDataSet'|'dLocation.01'|'EMS Location Type'|'1301005'|'EMS Station'|
+'DEMDataSet'|'dLocation.01'|'EMS Location Type'|'1301007'|'Other'|
+'DEMDataSet'|'dLocation.11'|'EMS Location Country'|'CA'|'Canada'|
+'DEMDataSet'|'dLocation.11'|'EMS Location Country'|'MX'|'Mexico'|
+'DEMDataSet'|'dLocation.11'|'EMS Location Country'|'US'|'United States'|
+'DEMDataSet'|'dVehicle.04'|'Vehicle Type'|'1404001'|'Ambulance'|
+'DEMDataSet'|'dVehicle.04'|'Vehicle Type'|'1404003'|'ATV'|
+'DEMDataSet'|'dVehicle.04'|'Vehicle Type'|'1404005'|'Bicycle'|
+'DEMDataSet'|'dVehicle.04'|'Vehicle Type'|'1404007'|'Fire Apparatus'|
+'DEMDataSet'|'dVehicle.04'|'Vehicle Type'|'1404009'|'Fixed Wing'|
+'DEMDataSet'|'dVehicle.04'|'Vehicle Type'|'1404011'|'Motorcycle'|
+'DEMDataSet'|'dVehicle.04'|'Vehicle Type'|'1404013'|'Other'|
+'DEMDataSet'|'dVehicle.04'|'Vehicle Type'|'1404015'|'Personal Vehicle'|
+'DEMDataSet'|'dVehicle.04'|'Vehicle Type'|'1404017'|'Quick Response Vehicle (Non-Transport Vehicle other than Fire Apparatus)'|
+'DEMDataSet'|'dVehicle.04'|'Vehicle Type'|'1404019'|'Rescue'|
+'DEMDataSet'|'dVehicle.04'|'Vehicle Type'|'1404021'|'Rotor Craft'|
+'DEMDataSet'|'dVehicle.04'|'Vehicle Type'|'1404023'|'Snow Vehicle'|
+'DEMDataSet'|'dVehicle.04'|'Vehicle Type'|'1404025'|'Watercraft'|
+'DEMDataSet'|'dVehicle.05'|'Crew State Certification/Licensure Levels'|'9917001'|'Advanced Emergency Medical Technician (AEMT)'|
+'DEMDataSet'|'dVehicle.05'|'Crew State Certification/Licensure Levels'|'9917002'|'Emergency Medical Technician - Intermediate'|
+'DEMDataSet'|'dVehicle.05'|'Crew State Certification/Licensure Levels'|'9917003'|'Emergency Medical Responder (EMR)'|
+'DEMDataSet'|'dVehicle.05'|'Crew State Certification/Licensure Levels'|'9917005'|'Emergency Medical Technician (EMT)'|
+'DEMDataSet'|'dVehicle.05'|'Crew State Certification/Licensure Levels'|'9917007'|'Paramedic'|
+'DEMDataSet'|'dVehicle.05'|'Crew State Certification/Licensure Levels'|'9917019'|'Physician'|
+'DEMDataSet'|'dVehicle.05'|'Crew State Certification/Licensure Levels'|'9917021'|'Critical Care Paramedic'|
+'DEMDataSet'|'dVehicle.05'|'Crew State Certification/Licensure Levels'|'9917023'|'Community Paramedicine'|
+'DEMDataSet'|'dVehicle.05'|'Crew State Certification/Licensure Levels'|'9917025'|'Nurse Practitioner'|
+'DEMDataSet'|'dVehicle.05'|'Crew State Certification/Licensure Levels'|'9917027'|'Physician Assistant'|
+'DEMDataSet'|'dVehicle.05'|'Crew State Certification/Licensure Levels'|'9917029'|'Licensed Practical Nurse (LPN)'|
+'DEMDataSet'|'dVehicle.05'|'Crew State Certification/Licensure Levels'|'9917031'|'Registered Nurse'|
+'DEMDataSet'|'dPersonnel.08'|'EMS Personnel's Country'|'CA'|'Canada'|
+'DEMDataSet'|'dPersonnel.08'|'EMS Personnel's Country'|'MX'|'Mexico'|
+'DEMDataSet'|'dPersonnel.08'|'EMS Personnel's Country'|'US'|'United States'|
+'DEMDataSet'|'dPersonnel.12'|'EMS Personnel's Gender (DEPRECATED)'|'9906001'|'Female (DEPRECATED)'|
+'DEMDataSet'|'dPersonnel.12'|'EMS Personnel's Gender (DEPRECATED)'|'9906003'|'Male (DEPRECATED)'|
+'DEMDataSet'|'dPersonnel.12'|'EMS Personnel's Gender (DEPRECATED)'|'9906007'|'Female-to-Male, Transgender Male (DEPRECATED)'|
+'DEMDataSet'|'dPersonnel.12'|'EMS Personnel's Gender (DEPRECATED)'|'9906009'|'Male-to-Female, Transgender Female (DEPRECATED)'|
+'DEMDataSet'|'dPersonnel.12'|'EMS Personnel's Gender (DEPRECATED)'|'9906011'|'Other, neither exclusively male or female (DEPRECATED)'|
+'DEMDataSet'|'dPersonnel.12'|'EMS Personnel's Gender (DEPRECATED)'|'9906005'|'Unknown (Unable to Determine) (DEPRECATED)'|
+'DEMDataSet'|'dPersonnel.13'|'EMS Personnel's Race'|'1513001'|'American Indian or Alaska Native'|
+'DEMDataSet'|'dPersonnel.13'|'EMS Personnel's Race'|'1513003'|'Asian'|
+'DEMDataSet'|'dPersonnel.13'|'EMS Personnel's Race'|'1513005'|'Black or African American'|
+'DEMDataSet'|'dPersonnel.13'|'EMS Personnel's Race'|'1513007'|'Hispanic or Latino'|
+'DEMDataSet'|'dPersonnel.13'|'EMS Personnel's Race'|'1513009'|'Native Hawaiian or Other Pacific Islander'|
+'DEMDataSet'|'dPersonnel.13'|'EMS Personnel's Race'|'1513011'|'White'|
+'DEMDataSet'|'dPersonnel.13'|'EMS Personnel's Race'|'1513013'|'Middle Eastern or North African'|
+'DEMDataSet'|'dPersonnel.15'|'EMS Personnel's Highest Educational Degree'|'1515001'|'No Schooling Completed'|
+'DEMDataSet'|'dPersonnel.15'|'EMS Personnel's Highest Educational Degree'|'1515003'|'Nursery School to 4th Grade'|
+'DEMDataSet'|'dPersonnel.15'|'EMS Personnel's Highest Educational Degree'|'1515005'|'5th Grade or 6th Grade'|
+'DEMDataSet'|'dPersonnel.15'|'EMS Personnel's Highest Educational Degree'|'1515007'|'7th Grade or 8th Grade'|
+'DEMDataSet'|'dPersonnel.15'|'EMS Personnel's Highest Educational Degree'|'1515009'|'9th Grade'|
+'DEMDataSet'|'dPersonnel.15'|'EMS Personnel's Highest Educational Degree'|'1515011'|'10th Grade'|
+'DEMDataSet'|'dPersonnel.15'|'EMS Personnel's Highest Educational Degree'|'1515013'|'11th Grade'|
+'DEMDataSet'|'dPersonnel.15'|'EMS Personnel's Highest Educational Degree'|'1515015'|'12th Grade, No Diploma'|
+'DEMDataSet'|'dPersonnel.15'|'EMS Personnel's Highest Educational Degree'|'1515017'|'High School Graduate-Diploma or the Equivalent (GED)'|
+'DEMDataSet'|'dPersonnel.15'|'EMS Personnel's Highest Educational Degree'|'1515019'|'Some College Credit, but Less than 1 Year'|
+'DEMDataSet'|'dPersonnel.15'|'EMS Personnel's Highest Educational Degree'|'1515021'|'1 or More Years of College, No Degree'|
+'DEMDataSet'|'dPersonnel.15'|'EMS Personnel's Highest Educational Degree'|'1515023'|'Associate Degree'|
+'DEMDataSet'|'dPersonnel.15'|'EMS Personnel's Highest Educational Degree'|'1515025'|'Bachelor's Degree'|
+'DEMDataSet'|'dPersonnel.15'|'EMS Personnel's Highest Educational Degree'|'1515027'|'Master's Degree'|
+'DEMDataSet'|'dPersonnel.15'|'EMS Personnel's Highest Educational Degree'|'1515029'|'Professional Degree (i.e. MD, DDS, DVM, LLB, JD)'|
+'DEMDataSet'|'dPersonnel.15'|'EMS Personnel's Highest Educational Degree'|'1515031'|'Doctorate Degree (i.e. PhD, EdD)'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516001'|'Agriculture and Natural Resources'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516003'|'Architecture and Related Services'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516005'|'Area, Ethnic, Cultural, and Gender Studies'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516007'|'Biological and Biomedical Sciences'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516009'|'Business'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516011'|'Communication, Journalism, and Related Programs'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516013'|'Communications Technologies'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516015'|'Computer and Information Sciences'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516017'|'Education'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516019'|'Emergency Medical Services'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516021'|'Engineering'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516023'|'Engineering Technologies'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516025'|'English Language and Literature/Letters'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516027'|'Family and Consumer Sciences/Human Sciences'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516029'|'Fire Science'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516031'|'Foreign Languages, Literatures, and Linguistics'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516033'|'Health Professions and Related Clinical Sciences, Not Including Emergency Medical Services'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516035'|'Legal Professions and Studies'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516037'|'Liberal Arts and Sciences, General Studies, and Humanities'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516039'|'Library Science'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516041'|'Mathematics and Statistics'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516043'|'Military Technologies'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516045'|'Multi/Interdisciplinary Studies'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516047'|'Not Classified by Field of Study'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516049'|'None'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516051'|'Parks, Recreation, Leisure and Fitness Studies'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516053'|'Philosophy and Religious Studies'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516055'|'Physical Sciences and Science Technologies'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516057'|'Precision Production'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516059'|'Psychology'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516061'|'Public Administration and Social Services'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516063'|'Security and Protective Services, Not Including Fire Science'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516065'|'Social Sciences and History'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516067'|'Theology and Religious Vocations'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516069'|'Transportation and Materials Moving'|
+'DEMDataSet'|'dPersonnel.16'|'EMS Personnel's Degree Subject/Field of Study'|'1516071'|'Visual and Performing Arts'|
+'DEMDataSet'|'dPersonnel.17'|'EMS Personnel's Motor Vehicle License Type'|'1517001'|'All-Terrain Vehicle (ATV)'|
+'DEMDataSet'|'dPersonnel.17'|'EMS Personnel's Motor Vehicle License Type'|'1517003'|'Commercial Class A'|
+'DEMDataSet'|'dPersonnel.17'|'EMS Personnel's Motor Vehicle License Type'|'1517005'|'Commercial Class B'|
+'DEMDataSet'|'dPersonnel.17'|'EMS Personnel's Motor Vehicle License Type'|'1517007'|'Commercial Class C'|
+'DEMDataSet'|'dPersonnel.17'|'EMS Personnel's Motor Vehicle License Type'|'1517009'|'Motorcycle-Class M'|
+'DEMDataSet'|'dPersonnel.17'|'EMS Personnel's Motor Vehicle License Type'|'1517011'|'None'|
+'DEMDataSet'|'dPersonnel.17'|'EMS Personnel's Motor Vehicle License Type'|'1517013'|'Operator Class D (Normal)'|
+'DEMDataSet'|'dPersonnel.17'|'EMS Personnel's Motor Vehicle License Type'|'1517015'|'Other'|
+'DEMDataSet'|'dPersonnel.17'|'EMS Personnel's Motor Vehicle License Type'|'1517017'|'Pilot-Rotor Wing Air'|
+'DEMDataSet'|'dPersonnel.17'|'EMS Personnel's Motor Vehicle License Type'|'1517019'|'Pilot-Fixed Wing Air'|
+'DEMDataSet'|'dPersonnel.17'|'EMS Personnel's Motor Vehicle License Type'|'1517021'|'Snowmobile'|
+'DEMDataSet'|'dPersonnel.17'|'EMS Personnel's Motor Vehicle License Type'|'1517023'|'Taxi and Livery Class E'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910001'|'Anthrax'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910003'|'Cholera'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910005'|'DPT / TDaP (Diphtheria, Pertussis, Tetanus)'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910007'|'Hemophilus Influenza B'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910009'|'Hepatitis A'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910011'|'Hepatitis B'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910013'|'Human Papilloma Virus (HPV)'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910015'|'Influenza-H1N1'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910017'|'Influenza-Other'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910019'|'Influenza-Seasonal (In past 12 months)'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910021'|'Lyme Disease'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910023'|'Meningococcus'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910025'|'MMR (Measles, Mumps, Rubella)'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910027'|'Other-Not Listed'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910029'|'Plague'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910031'|'Pneumococcal (Pneumonia)'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910033'|'Polio'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910035'|'Rabies'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910037'|'Rotavirus'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910039'|'Shingles'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910041'|'Small Pox'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910043'|'Tetanus'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910045'|'Tuberculosis'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910047'|'Typhoid'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910049'|'Varicella (Chickenpox)'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910051'|'Yellow Fever'|
+'DEMDataSet'|'dPersonnel.18'|'EMS Personnel's Immunization Status'|'9910053'|'None'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'amh'|'Amharic'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'ara'|'Arabic'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'arm'|'Armenian'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'ben'|'Bengali'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'crp'|'Cajun (Creole and Pidgins)'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'chi'|'Chinese'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'hrv'|'Croatian'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'cze'|'Czech'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'dan'|'Danish'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'dut'|'Dutch'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'fin'|'Finnish'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'tai'|'Formosan'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'fre'|'French'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'cpf'|'French Creole'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'ger'|'German'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'gre'|'Greek'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'guj'|'Gujarati'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'heb'|'Hebrew'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'hin'|'Hindi (Urdu)'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'hun'|'Hungarian'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'ilo'|'Ilocano'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'itl'|'Italian'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'jpn'|'Japanese'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'kor'|'Korean'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'kro'|'Kru'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'lit'|'Lithuanian'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'mal'|'Malayalam'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'hmn'|'Miao (Hmong)'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'mkh'|'Mon-Khmer (Cambodian)'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'nav'|'Navaho'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'nno'|'Norwegian'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'pan'|'Panjabi'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'gem'|'Pennsylvania Dutch (Germanic Other)'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'per'|'Persian'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'pol'|'Polish'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'por'|'Portuguese'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'rum'|'Romanian'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'rus'|'Russian'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'sgn'|'Sign Languages'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'smo'|'Samoan'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'srp'|'Serbo-Croatian'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'slo'|'Slovak'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'spa'|'Spanish'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'swe'|'Swedish'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'syr'|'Syriac'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'tgl'|'Tagalog'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'tha'|'Thai (Laotian)'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'tur'|'Turkish'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'ukr'|'Ukrainian'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'vie'|'Vietnamese'|
+'DEMDataSet'|'dPersonnel.20'|'EMS Personnel's Foreign Language Ability'|'yid'|'Yiddish'|
+'DEMDataSet'|'dPersonnel.24'|'EMS Personnel's State EMS Certification Licensure Level'|'9925001'|'Advanced Emergency Medical Technician (AEMT)'|
+'DEMDataSet'|'dPersonnel.24'|'EMS Personnel's State EMS Certification Licensure Level'|'9925002'|'Emergency Medical Technician - Intermediate'|
+'DEMDataSet'|'dPersonnel.24'|'EMS Personnel's State EMS Certification Licensure Level'|'9925003'|'Emergency Medical Responder (EMR)'|
+'DEMDataSet'|'dPersonnel.24'|'EMS Personnel's State EMS Certification Licensure Level'|'9925005'|'Emergency Medical Technician (EMT)'|
+'DEMDataSet'|'dPersonnel.24'|'EMS Personnel's State EMS Certification Licensure Level'|'9925007'|'Paramedic'|
+'DEMDataSet'|'dPersonnel.24'|'EMS Personnel's State EMS Certification Licensure Level'|'9925023'|'Other Healthcare Professional'|
+'DEMDataSet'|'dPersonnel.24'|'EMS Personnel's State EMS Certification Licensure Level'|'9925025'|'Other Non-Healthcare Professional'|
+'DEMDataSet'|'dPersonnel.24'|'EMS Personnel's State EMS Certification Licensure Level'|'9925027'|'Physician'|
+'DEMDataSet'|'dPersonnel.24'|'EMS Personnel's State EMS Certification Licensure Level'|'9925029'|'Respiratory Therapist'|
+'DEMDataSet'|'dPersonnel.24'|'EMS Personnel's State EMS Certification Licensure Level'|'9925031'|'Student'|
+'DEMDataSet'|'dPersonnel.24'|'EMS Personnel's State EMS Certification Licensure Level'|'9925033'|'Critical Care Paramedic'|
+'DEMDataSet'|'dPersonnel.24'|'EMS Personnel's State EMS Certification Licensure Level'|'9925035'|'Community Paramedicine'|
+'DEMDataSet'|'dPersonnel.24'|'EMS Personnel's State EMS Certification Licensure Level'|'9925037'|'Nurse Practitioner'|
+'DEMDataSet'|'dPersonnel.24'|'EMS Personnel's State EMS Certification Licensure Level'|'9925039'|'Physician Assistant'|
+'DEMDataSet'|'dPersonnel.24'|'EMS Personnel's State EMS Certification Licensure Level'|'9925041'|'Licensed Practical Nurse (LPN)'|
+'DEMDataSet'|'dPersonnel.24'|'EMS Personnel's State EMS Certification Licensure Level'|'9925043'|'Registered Nurse'|
+'DEMDataSet'|'dPersonnel.29'|'EMS Personnel's National Registry Certification Level'|'1529001'|'Advanced Emergency Medical Technician (AEMT)'|
+'DEMDataSet'|'dPersonnel.29'|'EMS Personnel's National Registry Certification Level'|'1529002'|'Emergency Medical Technician - Intermediate'|
+'DEMDataSet'|'dPersonnel.29'|'EMS Personnel's National Registry Certification Level'|'1529003'|'Emergency Medical Responder (EMR)'|
+'DEMDataSet'|'dPersonnel.29'|'EMS Personnel's National Registry Certification Level'|'1529005'|'Emergency Medical Technician (EMT)'|
+'DEMDataSet'|'dPersonnel.29'|'EMS Personnel's National Registry Certification Level'|'1529007'|'Paramedic'|
+'DEMDataSet'|'dPersonnel.31'|'EMS Personnel's Employment Status'|'1531001'|'Full Time Paid Employee'|
+'DEMDataSet'|'dPersonnel.31'|'EMS Personnel's Employment Status'|'1531003'|'Part Time Paid Employee'|
+'DEMDataSet'|'dPersonnel.31'|'EMS Personnel's Employment Status'|'1531005'|'Volunteer'|
+'DEMDataSet'|'dPersonnel.31'|'EMS Personnel's Employment Status'|'1531007'|'Neither an Employee Nor a Volunteer'|
+'DEMDataSet'|'dPersonnel.34'|'EMS Personnel's Primary EMS Job Role'|'1534001'|'Administrator/Manager'|
+'DEMDataSet'|'dPersonnel.34'|'EMS Personnel's Primary EMS Job Role'|'1534003'|'Driver/Pilot'|
+'DEMDataSet'|'dPersonnel.34'|'EMS Personnel's Primary EMS Job Role'|'1534005'|'Educator/Preceptor'|
+'DEMDataSet'|'dPersonnel.34'|'EMS Personnel's Primary EMS Job Role'|'1534007'|'Fire Suppression'|
+'DEMDataSet'|'dPersonnel.34'|'EMS Personnel's Primary EMS Job Role'|'1534009'|'First-Line Supervisor'|
+'DEMDataSet'|'dPersonnel.34'|'EMS Personnel's Primary EMS Job Role'|'1534011'|'Law Enforcement'|
+'DEMDataSet'|'dPersonnel.34'|'EMS Personnel's Primary EMS Job Role'|'1534013'|'Other'|
+'DEMDataSet'|'dPersonnel.34'|'EMS Personnel's Primary EMS Job Role'|'1534015'|'Patient Care Provider'|
+'DEMDataSet'|'dPersonnel.34'|'EMS Personnel's Primary EMS Job Role'|'1534017'|'Rescue'|
+'DEMDataSet'|'dPersonnel.35'|'EMS Personnel's Other Job Responsibilities'|'1534001'|'Administrator/Manager'|
+'DEMDataSet'|'dPersonnel.35'|'EMS Personnel's Other Job Responsibilities'|'1534003'|'Driver/Pilot'|
+'DEMDataSet'|'dPersonnel.35'|'EMS Personnel's Other Job Responsibilities'|'1534005'|'Educator/Preceptor'|
+'DEMDataSet'|'dPersonnel.35'|'EMS Personnel's Other Job Responsibilities'|'1534007'|'Fire Suppression'|
+'DEMDataSet'|'dPersonnel.35'|'EMS Personnel's Other Job Responsibilities'|'1534009'|'First-Line Supervisor'|
+'DEMDataSet'|'dPersonnel.35'|'EMS Personnel's Other Job Responsibilities'|'1534011'|'Law Enforcement'|
+'DEMDataSet'|'dPersonnel.35'|'EMS Personnel's Other Job Responsibilities'|'1534013'|'Other'|
+'DEMDataSet'|'dPersonnel.35'|'EMS Personnel's Other Job Responsibilities'|'1534015'|'Patient Care Provider'|
+'DEMDataSet'|'dPersonnel.35'|'EMS Personnel's Other Job Responsibilities'|'1534017'|'Rescue'|
+'DEMDataSet'|'dPersonnel.38'|'EMS Personnel's Practice Level'|'9925001'|'Advanced Emergency Medical Technician (AEMT)'|
+'DEMDataSet'|'dPersonnel.38'|'EMS Personnel's Practice Level'|'9925002'|'Emergency Medical Technician - Intermediate'|
+'DEMDataSet'|'dPersonnel.38'|'EMS Personnel's Practice Level'|'9925003'|'Emergency Medical Responder (EMR)'|
+'DEMDataSet'|'dPersonnel.38'|'EMS Personnel's Practice Level'|'9925005'|'Emergency Medical Technician (EMT)'|
+'DEMDataSet'|'dPersonnel.38'|'EMS Personnel's Practice Level'|'9925007'|'Paramedic'|
+'DEMDataSet'|'dPersonnel.38'|'EMS Personnel's Practice Level'|'9925023'|'Other Healthcare Professional'|
+'DEMDataSet'|'dPersonnel.38'|'EMS Personnel's Practice Level'|'9925025'|'Other Non-Healthcare Professional'|
+'DEMDataSet'|'dPersonnel.38'|'EMS Personnel's Practice Level'|'9925027'|'Physician'|
+'DEMDataSet'|'dPersonnel.38'|'EMS Personnel's Practice Level'|'9925029'|'Respiratory Therapist'|
+'DEMDataSet'|'dPersonnel.38'|'EMS Personnel's Practice Level'|'9925031'|'Student'|
+'DEMDataSet'|'dPersonnel.38'|'EMS Personnel's Practice Level'|'9925033'|'Critical Care Paramedic'|
+'DEMDataSet'|'dPersonnel.38'|'EMS Personnel's Practice Level'|'9925035'|'Community Paramedicine'|
+'DEMDataSet'|'dPersonnel.38'|'EMS Personnel's Practice Level'|'9925037'|'Nurse Practitioner'|
+'DEMDataSet'|'dPersonnel.38'|'EMS Personnel's Practice Level'|'9925039'|'Physician Assistant'|
+'DEMDataSet'|'dPersonnel.38'|'EMS Personnel's Practice Level'|'9925041'|'Licensed Practical Nurse (LPN)'|
+'DEMDataSet'|'dPersonnel.38'|'EMS Personnel's Practice Level'|'9925043'|'Registered Nurse'|
+'DEMDataSet'|'dPersonnel.40'|'EMS Personnel's Sex'|'9919001'|'Female'|
+'DEMDataSet'|'dPersonnel.40'|'EMS Personnel's Sex'|'9919003'|'Male'|
+'DEMDataSet'|'dPersonnel.40'|'EMS Personnel's Sex'|'9919005'|'Unknown'|
+'DEMDataSet'|'dDevice.03'|'Medical Device Type'|'1603001'|'Capnography-Numeric'|
+'DEMDataSet'|'dDevice.03'|'Medical Device Type'|'1603003'|'Capnography-Waveform'|
+'DEMDataSet'|'dDevice.03'|'Medical Device Type'|'1603005'|'Chemistry Measurement-Blood or Serum'|
+'DEMDataSet'|'dDevice.03'|'Medical Device Type'|'1603007'|'Chemistry Measurement-Glucometer'|
+'DEMDataSet'|'dDevice.03'|'Medical Device Type'|'1603009'|'Chemistry Measurement-Urine'|
+'DEMDataSet'|'dDevice.03'|'Medical Device Type'|'1603011'|'CPR-External Device'|
+'DEMDataSet'|'dDevice.03'|'Medical Device Type'|'1603013'|'Defibrillator-Automated'|
+'DEMDataSet'|'dDevice.03'|'Medical Device Type'|'1603015'|'Defibrillator-Manual'|
+'DEMDataSet'|'dDevice.03'|'Medical Device Type'|'1603017'|'ECG-12 Lead or Greater'|
+'DEMDataSet'|'dDevice.03'|'Medical Device Type'|'1603019'|'ECG-Less than 12 Lead (Cardiac Monitor)'|
+'DEMDataSet'|'dDevice.03'|'Medical Device Type'|'1603021'|'Medication Infusion Pump'|
+'DEMDataSet'|'dDevice.03'|'Medical Device Type'|'1603023'|'Other'|
+'DEMDataSet'|'dDevice.03'|'Medical Device Type'|'1603025'|'Oximetry-Carbon Monoxide'|
+'DEMDataSet'|'dDevice.03'|'Medical Device Type'|'1603027'|'Oximetry-Oxygen'|
+'DEMDataSet'|'dDevice.03'|'Medical Device Type'|'1603029'|'Pressure Monitors-Invasive'|
+'DEMDataSet'|'dDevice.03'|'Medical Device Type'|'1603031'|'Pressure Monitors-Non-Invasive'|
+'DEMDataSet'|'dDevice.03'|'Medical Device Type'|'1603033'|'Respirator (BLS)'|
+'DEMDataSet'|'dDevice.03'|'Medical Device Type'|'1603035'|'Ventilator (ALS)'|
+'DEMDataSet'|'dDevice.03'|'Medical Device Type'|'1603037'|'Ventilator Assistance-BiPAP'|
+'DEMDataSet'|'dDevice.03'|'Medical Device Type'|'1603039'|'Ventilator Assistance-CPAP'|
+'DEMDataSet'|'dFacility.01'|'Type of Facility'|'1701001'|'Assisted Living Facility'|
+'DEMDataSet'|'dFacility.01'|'Type of Facility'|'1701003'|'Clinic'|
+'DEMDataSet'|'dFacility.01'|'Type of Facility'|'1701005'|'Hospital'|
+'DEMDataSet'|'dFacility.01'|'Type of Facility'|'1701007'|'Nursing Home'|
+'DEMDataSet'|'dFacility.01'|'Type of Facility'|'1701009'|'Other'|
+'DEMDataSet'|'dFacility.01'|'Type of Facility'|'1701011'|'Urgent Care'|
+'DEMDataSet'|'dFacility.01'|'Type of Facility'|'1701013'|'Physical Rehabilitation Facility'|
+'DEMDataSet'|'dFacility.01'|'Type of Facility'|'1701015'|'Mental Health Facility'|
+'DEMDataSet'|'dFacility.01'|'Type of Facility'|'1701017'|'Dialysis Center'|
+'DEMDataSet'|'dFacility.01'|'Type of Facility'|'1701019'|'Diagnostic Services'|
+'DEMDataSet'|'dFacility.01'|'Type of Facility'|'1701021'|'Freestanding Emergency Department'|
+'DEMDataSet'|'dFacility.01'|'Type of Facility'|'1701023'|'Morgue/Mortuary'|
+'DEMDataSet'|'dFacility.01'|'Type of Facility'|'1701025'|'Police/Jail'|
+'DEMDataSet'|'dFacility.01'|'Type of Facility'|'1701027'|'Other EMS Responder (air)'|
+'DEMDataSet'|'dFacility.01'|'Type of Facility'|'1701029'|'Other EMS Responder (ground)'|
+'DEMDataSet'|'dFacility.01'|'Type of Facility'|'1701031'|'Other Recurring Care Center'|
+'DEMDataSet'|'dFacility.01'|'Type of Facility'|'1701033'|'Drug and/or Alcohol Rehabilitation Facility'|
+'DEMDataSet'|'dFacility.01'|'Type of Facility'|'1701035'|'Skilled Nursing Facility'|
+'DEMDataSet'|'dFacility.04'|'Hospital Designations'|'9908001'|'Behavioral Health'|
+'DEMDataSet'|'dFacility.04'|'Hospital Designations'|'9908003'|'Burn Center'|
+'DEMDataSet'|'dFacility.04'|'Hospital Designations'|'9908005'|'Critical Access Hospital'|
+'DEMDataSet'|'dFacility.04'|'Hospital Designations'|'9908007'|'Hospital (General)'|
+'DEMDataSet'|'dFacility.04'|'Hospital Designations'|'9908009'|'Neonatal Center'|
+'DEMDataSet'|'dFacility.04'|'Hospital Designations'|'9908011'|'Pediatric Center'|
+'DEMDataSet'|'dFacility.04'|'Hospital Designations'|'9908019'|'Rehab Center'|
+'DEMDataSet'|'dFacility.04'|'Hospital Designations'|'9908021'|'Trauma Center Level 1'|
+'DEMDataSet'|'dFacility.04'|'Hospital Designations'|'9908023'|'Trauma Center Level 2'|
+'DEMDataSet'|'dFacility.04'|'Hospital Designations'|'9908025'|'Trauma Center Level 3'|
+'DEMDataSet'|'dFacility.04'|'Hospital Designations'|'9908027'|'Trauma Center Level 4'|
+'DEMDataSet'|'dFacility.04'|'Hospital Designations'|'9908029'|'Trauma Center Level 5'|
+'DEMDataSet'|'dFacility.04'|'Hospital Designations'|'9908031'|'Cardiac-STEMI/PCI Capable'|
+'DEMDataSet'|'dFacility.04'|'Hospital Designations'|'9908033'|'Cardiac-STEMI/PCI Capable (24/7)'|
+'DEMDataSet'|'dFacility.04'|'Hospital Designations'|'9908035'|'Cardiac-STEMI/Non-PCI Capable'|
+'DEMDataSet'|'dFacility.04'|'Hospital Designations'|'9908037'|'Stroke-Acute Stroke Ready Hospital (ASRH)'|
+'DEMDataSet'|'dFacility.04'|'Hospital Designations'|'9908039'|'Stroke-Primary Stroke Center (PSC)'|
+'DEMDataSet'|'dFacility.04'|'Hospital Designations'|'9908041'|'Stroke-Thrombectomy-Capable Stroke Center (TSC)'|
+'DEMDataSet'|'dFacility.04'|'Hospital Designations'|'9908043'|'Stroke-Comprehensive Stroke Center (CSC)'|
+'DEMDataSet'|'dFacility.04'|'Hospital Designations'|'9908045'|'Cancer Center'|
+'DEMDataSet'|'dFacility.04'|'Hospital Designations'|'9908047'|'Labor and Delivery'|
+'DEMDataSet'|'dFacility.12'|'Facility Country'|'CA'|'Canada'|
+'DEMDataSet'|'dFacility.12'|'Facility Country'|'MX'|'Mexico'|
+'DEMDataSet'|'dFacility.12'|'Facility Country'|'US'|'United States'|

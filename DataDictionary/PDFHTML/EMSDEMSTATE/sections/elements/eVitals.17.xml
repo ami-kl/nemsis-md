@@ -1,0 +1,44 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eVitals.17"  minOccurs="0"  maxOccurs="1"  dataTypeName="CarbonMonoxideLevel"  isNillable="Yes">
+<name>Carbon Monoxide (CO)</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The numeric value of the patient's carbon monoxide level measured as a percentage (%) of carboxyhemoglobin (COHb).</definition>
+<v2Number></v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes>Added to allow use of new patient monitoring devices.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <CarbonMonoxideLevel baseType="decimal">
+    <facet name="minInclusive" value="0"/>
+    <facet name="maxInclusive" value="100"/>
+    <facet name="totalDigits" value="3"/>
+    <facet name="fractionDigits" value="1"/>
+  </CarbonMonoxideLevel>
+</restrictions>
+<attributes>
+  <PN>
+    <PN.Refused><facet name="enumeration" value="8801019" annotation="Refused"/></PN.Refused>
+    <PN.UnableToComplete><facet name="enumeration" value="8801023" annotation="Unable to Complete"/></PN.UnableToComplete>
+  </PN>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e008" role="Error">
+      When Carbon Monoxide (CO) has a Pertinent Negative, it should be empty and it should not have a Not Value (Not Applicable, Not Recorded, or Not Reporting).
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Carbon Monoxide (CO) has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Carbon Monoxide (CO) is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

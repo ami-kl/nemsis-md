@@ -1,0 +1,5 @@
+<?xml-stylesheet type="text/xsl" href="../xslt/grouping.xslt"?>
+<section name="eHistory">
+  <element number="eHistory.01" minOccurs="1" maxOccurs="M" CorrelationID="" UUID="" isNillable="Yes" dataType="BarriersToPatientCare"><name>Barriers to Patient Care</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Required</usage><notValue>Yes</notValue><pertinentNegative></pertinentNegative></element>
+  <element number="eHistory.17" minOccurs="1" maxOccurs="M" CorrelationID="" UUID="" isNillable="Yes" dataType="AlcoholDrugUseIndicators"><name>Alcohol/Drug Use Indicators</name><refNumber></refNumber><national>Yes</national><deprecated></deprecated><state>Yes</state><usage>Required</usage><notValue>Yes</notValue><pertinentNegative>Yes</pertinentNegative></element>
+</section>

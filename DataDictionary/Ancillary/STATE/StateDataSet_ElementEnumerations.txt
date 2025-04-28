@@ -1,0 +1,251 @@
+'DatasetName'|'ElementNumber'|'ElementName'|'Code'|'CodeDescription'|
+'StateDataSet'|'seCustomConfiguration.03'|'Patient Care Report Custom Data Type'|'9902001'|'Binary'|
+'StateDataSet'|'seCustomConfiguration.03'|'Patient Care Report Custom Data Type'|'9902003'|'Date/Time'|
+'StateDataSet'|'seCustomConfiguration.03'|'Patient Care Report Custom Data Type'|'9902005'|'Integer/Number'|
+'StateDataSet'|'seCustomConfiguration.03'|'Patient Care Report Custom Data Type'|'9902007'|'Other'|
+'StateDataSet'|'seCustomConfiguration.03'|'Patient Care Report Custom Data Type'|'9902009'|'Text/String'|
+'StateDataSet'|'seCustomConfiguration.03'|'Patient Care Report Custom Data Type'|'9902011'|'Boolean'|
+'StateDataSet'|'seCustomConfiguration.04'|'Patient Care Report Custom Data Element Recurrence'|'9923001'|'No'|
+'StateDataSet'|'seCustomConfiguration.04'|'Patient Care Report Custom Data Element Recurrence'|'9923003'|'Yes'|
+'StateDataSet'|'seCustomConfiguration.05'|'Patient Care Report Custom Data Element Usage'|'9903001'|'Mandatory'|
+'StateDataSet'|'seCustomConfiguration.05'|'Patient Care Report Custom Data Element Usage'|'9903003'|'Required'|
+'StateDataSet'|'seCustomConfiguration.05'|'Patient Care Report Custom Data Element Usage'|'9903005'|'Recommended'|
+'StateDataSet'|'seCustomConfiguration.05'|'Patient Care Report Custom Data Element Usage'|'9903007'|'Optional'|
+'StateDataSet'|'seCustomConfiguration.07'|'Patient Care Report Custom Data Element Potential NOT Values (NV)'|'7701001'|'Not Applicable'|
+'StateDataSet'|'seCustomConfiguration.07'|'Patient Care Report Custom Data Element Potential NOT Values (NV)'|'7701003'|'Not Recorded'|
+'StateDataSet'|'seCustomConfiguration.07'|'Patient Care Report Custom Data Element Potential NOT Values (NV)'|'7701005'|'Not Reporting'|
+'StateDataSet'|'seCustomConfiguration.08'|'Patient Care Report Custom Data Element Potential Pertinent Negative Values (PN)'|'8801001'|'Contraindication Noted'|
+'StateDataSet'|'seCustomConfiguration.08'|'Patient Care Report Custom Data Element Potential Pertinent Negative Values (PN)'|'8801003'|'Denied By Order'|
+'StateDataSet'|'seCustomConfiguration.08'|'Patient Care Report Custom Data Element Potential Pertinent Negative Values (PN)'|'8801005'|'Exam Finding Not Present'|
+'StateDataSet'|'seCustomConfiguration.08'|'Patient Care Report Custom Data Element Potential Pertinent Negative Values (PN)'|'8801007'|'Medication Allergy'|
+'StateDataSet'|'seCustomConfiguration.08'|'Patient Care Report Custom Data Element Potential Pertinent Negative Values (PN)'|'8801009'|'Medication Already Taken'|
+'StateDataSet'|'seCustomConfiguration.08'|'Patient Care Report Custom Data Element Potential Pertinent Negative Values (PN)'|'8801013'|'No Known Drug Allergy'|
+'StateDataSet'|'seCustomConfiguration.08'|'Patient Care Report Custom Data Element Potential Pertinent Negative Values (PN)'|'8801015'|'None Reported'|
+'StateDataSet'|'seCustomConfiguration.08'|'Patient Care Report Custom Data Element Potential Pertinent Negative Values (PN)'|'8801017'|'Not Performed by EMS'|
+'StateDataSet'|'seCustomConfiguration.08'|'Patient Care Report Custom Data Element Potential Pertinent Negative Values (PN)'|'8801019'|'Refused'|
+'StateDataSet'|'seCustomConfiguration.08'|'Patient Care Report Custom Data Element Potential Pertinent Negative Values (PN)'|'8801021'|'Unresponsive'|
+'StateDataSet'|'seCustomConfiguration.08'|'Patient Care Report Custom Data Element Potential Pertinent Negative Values (PN)'|'8801023'|'Unable to Complete'|
+'StateDataSet'|'seCustomConfiguration.08'|'Patient Care Report Custom Data Element Potential Pertinent Negative Values (PN)'|'8801025'|'Not Immunized'|
+'StateDataSet'|'seCustomConfiguration.08'|'Patient Care Report Custom Data Element Potential Pertinent Negative Values (PN)'|'8801027'|'Order Criteria Not Met'|
+'StateDataSet'|'seCustomConfiguration.08'|'Patient Care Report Custom Data Element Potential Pertinent Negative Values (PN)'|'8801029'|'Approximate'|
+'StateDataSet'|'seCustomConfiguration.08'|'Patient Care Report Custom Data Element Potential Pertinent Negative Values (PN)'|'8801031'|'Symptom Not Present'|
+'StateDataSet'|'sdCustomConfiguration.03'|'Agency Demographic Custom Data Type'|'9902001'|'Binary'|
+'StateDataSet'|'sdCustomConfiguration.03'|'Agency Demographic Custom Data Type'|'9902003'|'Date/Time'|
+'StateDataSet'|'sdCustomConfiguration.03'|'Agency Demographic Custom Data Type'|'9902005'|'Integer/Number'|
+'StateDataSet'|'sdCustomConfiguration.03'|'Agency Demographic Custom Data Type'|'9902007'|'Other'|
+'StateDataSet'|'sdCustomConfiguration.03'|'Agency Demographic Custom Data Type'|'9902009'|'Text/String'|
+'StateDataSet'|'sdCustomConfiguration.03'|'Agency Demographic Custom Data Type'|'9902011'|'Boolean'|
+'StateDataSet'|'sdCustomConfiguration.04'|'Agency Demographic Custom Data Element Recurrence'|'9923001'|'No'|
+'StateDataSet'|'sdCustomConfiguration.04'|'Agency Demographic Custom Data Element Recurrence'|'9923003'|'Yes'|
+'StateDataSet'|'sdCustomConfiguration.05'|'Agency Demographic Custom Data Element Usage'|'9903001'|'Mandatory'|
+'StateDataSet'|'sdCustomConfiguration.05'|'Agency Demographic Custom Data Element Usage'|'9903003'|'Required'|
+'StateDataSet'|'sdCustomConfiguration.05'|'Agency Demographic Custom Data Element Usage'|'9903005'|'Recommended'|
+'StateDataSet'|'sdCustomConfiguration.05'|'Agency Demographic Custom Data Element Usage'|'9903007'|'Optional'|
+'StateDataSet'|'sdCustomConfiguration.07'|'Agency Demographic Custom Data Element Potential NOT Values (NV)'|'7701001'|'Not Applicable'|
+'StateDataSet'|'sdCustomConfiguration.07'|'Agency Demographic Custom Data Element Potential NOT Values (NV)'|'7701003'|'Not Recorded'|
+'StateDataSet'|'sdCustomConfiguration.07'|'Agency Demographic Custom Data Element Potential NOT Values (NV)'|'7701005'|'Not Reporting'|
+'StateDataSet'|'sdCustomConfiguration.08'|'Agency Demographic Custom Data Element Potential Pertinent Negative Values (PN)'|'8801001'|'Contraindication Noted'|
+'StateDataSet'|'sdCustomConfiguration.08'|'Agency Demographic Custom Data Element Potential Pertinent Negative Values (PN)'|'8801003'|'Denied By Order'|
+'StateDataSet'|'sdCustomConfiguration.08'|'Agency Demographic Custom Data Element Potential Pertinent Negative Values (PN)'|'8801005'|'Exam Finding Not Present'|
+'StateDataSet'|'sdCustomConfiguration.08'|'Agency Demographic Custom Data Element Potential Pertinent Negative Values (PN)'|'8801007'|'Medication Allergy'|
+'StateDataSet'|'sdCustomConfiguration.08'|'Agency Demographic Custom Data Element Potential Pertinent Negative Values (PN)'|'8801009'|'Medication Already Taken'|
+'StateDataSet'|'sdCustomConfiguration.08'|'Agency Demographic Custom Data Element Potential Pertinent Negative Values (PN)'|'8801013'|'No Known Drug Allergy'|
+'StateDataSet'|'sdCustomConfiguration.08'|'Agency Demographic Custom Data Element Potential Pertinent Negative Values (PN)'|'8801015'|'None Reported'|
+'StateDataSet'|'sdCustomConfiguration.08'|'Agency Demographic Custom Data Element Potential Pertinent Negative Values (PN)'|'8801017'|'Not Performed by EMS'|
+'StateDataSet'|'sdCustomConfiguration.08'|'Agency Demographic Custom Data Element Potential Pertinent Negative Values (PN)'|'8801019'|'Refused'|
+'StateDataSet'|'sdCustomConfiguration.08'|'Agency Demographic Custom Data Element Potential Pertinent Negative Values (PN)'|'8801021'|'Unresponsive'|
+'StateDataSet'|'sdCustomConfiguration.08'|'Agency Demographic Custom Data Element Potential Pertinent Negative Values (PN)'|'8801023'|'Unable to Complete'|
+'StateDataSet'|'sdCustomConfiguration.08'|'Agency Demographic Custom Data Element Potential Pertinent Negative Values (PN)'|'8801025'|'Not Immunized'|
+'StateDataSet'|'sdCustomConfiguration.08'|'Agency Demographic Custom Data Element Potential Pertinent Negative Values (PN)'|'8801027'|'Order Criteria Not Met'|
+'StateDataSet'|'sdCustomConfiguration.08'|'Agency Demographic Custom Data Element Potential Pertinent Negative Values (PN)'|'8801029'|'Approximate'|
+'StateDataSet'|'sdCustomConfiguration.08'|'Agency Demographic Custom Data Element Potential Pertinent Negative Values (PN)'|'8801031'|'Symptom Not Present'|
+'StateDataSet'|'sConfiguration.01'|'State Certification/Licensure Levels'|'9917001'|'Advanced Emergency Medical Technician (AEMT)'|
+'StateDataSet'|'sConfiguration.01'|'State Certification/Licensure Levels'|'9917002'|'Emergency Medical Technician - Intermediate'|
+'StateDataSet'|'sConfiguration.01'|'State Certification/Licensure Levels'|'9917003'|'Emergency Medical Responder (EMR)'|
+'StateDataSet'|'sConfiguration.01'|'State Certification/Licensure Levels'|'9917005'|'Emergency Medical Technician (EMT)'|
+'StateDataSet'|'sConfiguration.01'|'State Certification/Licensure Levels'|'9917007'|'Paramedic'|
+'StateDataSet'|'sConfiguration.01'|'State Certification/Licensure Levels'|'9917019'|'Physician'|
+'StateDataSet'|'sConfiguration.01'|'State Certification/Licensure Levels'|'9917021'|'Critical Care Paramedic'|
+'StateDataSet'|'sConfiguration.01'|'State Certification/Licensure Levels'|'9917023'|'Community Paramedicine'|
+'StateDataSet'|'sConfiguration.01'|'State Certification/Licensure Levels'|'9917025'|'Nurse Practitioner'|
+'StateDataSet'|'sConfiguration.01'|'State Certification/Licensure Levels'|'9917027'|'Physician Assistant'|
+'StateDataSet'|'sConfiguration.01'|'State Certification/Licensure Levels'|'9917029'|'Licensed Practical Nurse (LPN)'|
+'StateDataSet'|'sConfiguration.01'|'State Certification/Licensure Levels'|'9917031'|'Registered Nurse'|
+'StateDataSet'|'sConfiguration.02'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917001'|'Advanced Emergency Medical Technician (AEMT)'|
+'StateDataSet'|'sConfiguration.02'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917002'|'Emergency Medical Technician - Intermediate'|
+'StateDataSet'|'sConfiguration.02'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917003'|'Emergency Medical Responder (EMR)'|
+'StateDataSet'|'sConfiguration.02'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917005'|'Emergency Medical Technician (EMT)'|
+'StateDataSet'|'sConfiguration.02'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917007'|'Paramedic'|
+'StateDataSet'|'sConfiguration.02'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917019'|'Physician'|
+'StateDataSet'|'sConfiguration.02'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917021'|'Critical Care Paramedic'|
+'StateDataSet'|'sConfiguration.02'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917023'|'Community Paramedicine'|
+'StateDataSet'|'sConfiguration.02'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917025'|'Nurse Practitioner'|
+'StateDataSet'|'sConfiguration.02'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917027'|'Physician Assistant'|
+'StateDataSet'|'sConfiguration.02'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917029'|'Licensed Practical Nurse (LPN)'|
+'StateDataSet'|'sConfiguration.02'|'EMS Certification Levels Permitted to Perform Each Procedure'|'9917031'|'Registered Nurse'|
+'StateDataSet'|'sConfiguration.04'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917001'|'Advanced Emergency Medical Technician (AEMT)'|
+'StateDataSet'|'sConfiguration.04'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917002'|'Emergency Medical Technician - Intermediate'|
+'StateDataSet'|'sConfiguration.04'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917003'|'Emergency Medical Responder (EMR)'|
+'StateDataSet'|'sConfiguration.04'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917005'|'Emergency Medical Technician (EMT)'|
+'StateDataSet'|'sConfiguration.04'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917007'|'Paramedic'|
+'StateDataSet'|'sConfiguration.04'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917019'|'Physician'|
+'StateDataSet'|'sConfiguration.04'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917021'|'Critical Care Paramedic'|
+'StateDataSet'|'sConfiguration.04'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917023'|'Community Paramedicine'|
+'StateDataSet'|'sConfiguration.04'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917025'|'Nurse Practitioner'|
+'StateDataSet'|'sConfiguration.04'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917027'|'Physician Assistant'|
+'StateDataSet'|'sConfiguration.04'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917029'|'Licensed Practical Nurse (LPN)'|
+'StateDataSet'|'sConfiguration.04'|'EMS Certification Levels Permitted to Administer Each Medication'|'9917031'|'Registered Nurse'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914001'|'Airway'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914003'|'Airway-Failed'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914005'|'Airway-Obstruction/Foreign Body'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914007'|'Airway-Rapid Sequence Induction (RSI-Paralytic)'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914009'|'Airway-Sedation Assisted (Non-Paralytic)'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914011'|'Cardiac Arrest-Asystole'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914013'|'Cardiac Arrest-Hypothermia-Therapeutic'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914015'|'Cardiac Arrest-Pulseless Electrical Activity'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914017'|'Cardiac Arrest-Ventricular Fibrillation/ Pulseless Ventricular Tachycardia'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914019'|'Cardiac Arrest-Post Resuscitation Care'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914021'|'Environmental-Altitude Sickness'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914023'|'Environmental-Cold Exposure'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914025'|'Environmental-Frostbite/Cold Injury'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914027'|'Environmental-Heat Exposure/Exhaustion'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914029'|'Environmental-Heat Stroke/Hyperthermia'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914031'|'Environmental-Hypothermia'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914033'|'Exposure-Airway/Inhalation Irritants'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914035'|'Exposure-Biological/Infectious'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914037'|'Exposure-Blistering Agents'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914041'|'Exposure-Chemicals to Eye'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914043'|'Exposure-Cyanide'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914045'|'Exposure-Explosive/ Blast Injury'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914047'|'Exposure-Nerve Agents'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914049'|'Exposure-Radiologic Agents'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914051'|'General-Back Pain'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914053'|'General-Behavioral/Patient Restraint'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914055'|'General-Cardiac Arrest'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914057'|'General-Dental Problems'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914059'|'General-Epistaxis'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914061'|'General-Fever'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914063'|'General-Individualized Patient Protocol'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914065'|'General-Indwelling Medical Devices/Equipment'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914067'|'General-IV Access'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914069'|'General-Medical Device Malfunction'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914071'|'General-Pain Control'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914073'|'General-Spinal Immobilization/Clearance'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914075'|'General-Universal Patient Care/ Initial Patient Contact'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914077'|'Injury-Amputation'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914079'|'Injury-Bites and Envenomations-Land'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914081'|'Injury-Bites and Envenomations-Marine'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914083'|'Injury-Bleeding/ Hemorrhage Control'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914085'|'Injury-Burns-Thermal'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914087'|'Injury-Cardiac Arrest'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914089'|'Injury-Crush Syndrome'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914091'|'Injury-Diving Emergencies'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914093'|'Injury-Drowning/Near Drowning'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914095'|'Injury-Electrical Injuries'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914097'|'Injury-Extremity'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914099'|'Injury-Eye'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914101'|'Injury-Head'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914103'|'Injury-Impaled Object'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914105'|'Injury-Multisystem'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914107'|'Injury-Spinal Cord'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914109'|'Medical-Abdominal Pain'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914111'|'Medical-Allergic Reaction/Anaphylaxis'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914113'|'Medical-Altered Mental Status'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914115'|'Medical-Bradycardia'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914117'|'Medical-Cardiac Chest Pain'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914119'|'Medical-Diarrhea'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914121'|'Medical-Hyperglycemia'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914123'|'Medical-Hypertension'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914125'|'Medical-Hypoglycemia/Diabetic Emergency'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914127'|'Medical-Hypotension/Shock (Non-Trauma)'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914129'|'Medical-Influenza-Like Illness/ Upper Respiratory Infection'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914131'|'Medical-Nausea/Vomiting'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914133'|'Medical-Newborn/ Neonatal Resuscitation'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914135'|'General-Overdose/Poisoning/Toxic Ingestion'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914137'|'Medical-Pulmonary Edema/CHF'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914139'|'Medical-Respiratory Distress/Asthma/COPD/Reactive Airway'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914141'|'Medical-Seizure'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914143'|'Medical-ST-Elevation Myocardial Infarction (STEMI)'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914145'|'Medical-Stroke/TIA'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914147'|'Medical-Supraventricular Tachycardia (Including Atrial Fibrillation)'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914149'|'Medical-Syncope'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914151'|'Medical-Ventricular Tachycardia (With Pulse)'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914153'|'Not Done'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914155'|'OB/GYN-Childbirth/Labor/Delivery'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914157'|'OB/GYN-Eclampsia'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914159'|'OB/GYN-Gynecologic Emergencies'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914161'|'OB/GYN-Pregnancy Related Emergencies'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914163'|'OB/GYN-Post-partum Hemorrhage'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914165'|'Other'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914167'|'Exposure-Carbon Monoxide'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914169'|'Cardiac Arrest-Do Not Resuscitate'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914171'|'Cardiac Arrest-Special Resuscitation Orders'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914173'|'Exposure-Smoke Inhalation'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914175'|'General-Community Paramedicine / Mobile Integrated Healthcare'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914177'|'General-Exception Protocol'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914179'|'General-Extended Care Guidelines'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914181'|'General-Interfacility Transfers'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914183'|'General-Law Enforcement - Blood for Legal Purposes'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914185'|'General-Law Enforcement - Assist with Law Enforcement Activity'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914187'|'General-Neglect or Abuse Suspected'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914189'|'General-Refusal of Care'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914191'|'Injury-Mass/Multiple Casualties'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914193'|'Injury-Thoracic'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914195'|'Medical-Adrenal Insufficiency'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914197'|'Medical-Apparent Life Threatening Event (ALTE)'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914199'|'Medical-Tachycardia'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914201'|'Cardiac Arrest-Determination of Death / Withholding Resuscitative Efforts'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914203'|'Injury-Conducted Electrical Weapon (e.g., Taser)'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914205'|'Injury-Facial Trauma'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914207'|'Injury-General Trauma Management'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914209'|'Injury-Lightning/Lightning Strike'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914211'|'Injury-SCUBA Injury/Accidents'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914213'|'Injury-Topical Chemical Burn'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914215'|'Medical-Beta Blocker Poisoning/Overdose'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914217'|'Medical-Calcium Channel Blocker Poisoning/Overdose'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914219'|'Medical-Opioid Poisoning/Overdose'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914221'|'Medical-Respiratory Distress-Bronchiolitis'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914223'|'Medical-Respiratory Distress-Croup'|
+'StateDataSet'|'sConfiguration.06'|'Protocols Permitted by the State'|'9914225'|'Medical-Stimulant Poisoning/Overdose'|
+'StateDataSet'|'sFacility.01'|'Type of Facility'|'1701001'|'Assisted Living Facility'|
+'StateDataSet'|'sFacility.01'|'Type of Facility'|'1701003'|'Clinic'|
+'StateDataSet'|'sFacility.01'|'Type of Facility'|'1701005'|'Hospital'|
+'StateDataSet'|'sFacility.01'|'Type of Facility'|'1701007'|'Nursing Home'|
+'StateDataSet'|'sFacility.01'|'Type of Facility'|'1701009'|'Other'|
+'StateDataSet'|'sFacility.01'|'Type of Facility'|'1701011'|'Urgent Care'|
+'StateDataSet'|'sFacility.01'|'Type of Facility'|'1701013'|'Physical Rehabilitation Facility'|
+'StateDataSet'|'sFacility.01'|'Type of Facility'|'1701015'|'Mental Health Facility'|
+'StateDataSet'|'sFacility.01'|'Type of Facility'|'1701017'|'Dialysis Center'|
+'StateDataSet'|'sFacility.01'|'Type of Facility'|'1701019'|'Diagnostic Services'|
+'StateDataSet'|'sFacility.01'|'Type of Facility'|'1701021'|'Freestanding Emergency Department'|
+'StateDataSet'|'sFacility.01'|'Type of Facility'|'1701023'|'Morgue/Mortuary'|
+'StateDataSet'|'sFacility.01'|'Type of Facility'|'1701025'|'Police/Jail'|
+'StateDataSet'|'sFacility.01'|'Type of Facility'|'1701027'|'Other EMS Responder (air)'|
+'StateDataSet'|'sFacility.01'|'Type of Facility'|'1701029'|'Other EMS Responder (ground)'|
+'StateDataSet'|'sFacility.01'|'Type of Facility'|'1701031'|'Other Recurring Care Center'|
+'StateDataSet'|'sFacility.01'|'Type of Facility'|'1701033'|'Drug and/or Alcohol Rehabilitation Facility'|
+'StateDataSet'|'sFacility.01'|'Type of Facility'|'1701035'|'Skilled Nursing Facility'|
+'StateDataSet'|'sFacility.04'|'Hospital Designations'|'9908001'|'Behavioral Health'|
+'StateDataSet'|'sFacility.04'|'Hospital Designations'|'9908003'|'Burn Center'|
+'StateDataSet'|'sFacility.04'|'Hospital Designations'|'9908005'|'Critical Access Hospital'|
+'StateDataSet'|'sFacility.04'|'Hospital Designations'|'9908007'|'Hospital (General)'|
+'StateDataSet'|'sFacility.04'|'Hospital Designations'|'9908009'|'Neonatal Center'|
+'StateDataSet'|'sFacility.04'|'Hospital Designations'|'9908011'|'Pediatric Center'|
+'StateDataSet'|'sFacility.04'|'Hospital Designations'|'9908019'|'Rehab Center'|
+'StateDataSet'|'sFacility.04'|'Hospital Designations'|'9908021'|'Trauma Center Level 1'|
+'StateDataSet'|'sFacility.04'|'Hospital Designations'|'9908023'|'Trauma Center Level 2'|
+'StateDataSet'|'sFacility.04'|'Hospital Designations'|'9908025'|'Trauma Center Level 3'|
+'StateDataSet'|'sFacility.04'|'Hospital Designations'|'9908027'|'Trauma Center Level 4'|
+'StateDataSet'|'sFacility.04'|'Hospital Designations'|'9908029'|'Trauma Center Level 5'|
+'StateDataSet'|'sFacility.04'|'Hospital Designations'|'9908031'|'Cardiac-STEMI/PCI Capable'|
+'StateDataSet'|'sFacility.04'|'Hospital Designations'|'9908033'|'Cardiac-STEMI/PCI Capable (24/7)'|
+'StateDataSet'|'sFacility.04'|'Hospital Designations'|'9908035'|'Cardiac-STEMI/Non-PCI Capable'|
+'StateDataSet'|'sFacility.04'|'Hospital Designations'|'9908037'|'Stroke-Acute Stroke Ready Hospital (ASRH)'|
+'StateDataSet'|'sFacility.04'|'Hospital Designations'|'9908039'|'Stroke-Primary Stroke Center (PSC)'|
+'StateDataSet'|'sFacility.04'|'Hospital Designations'|'9908041'|'Stroke-Thrombectomy-Capable Stroke Center (TSC)'|
+'StateDataSet'|'sFacility.04'|'Hospital Designations'|'9908043'|'Stroke-Comprehensive Stroke Center (CSC)'|
+'StateDataSet'|'sFacility.04'|'Hospital Designations'|'9908045'|'Cancer Center'|
+'StateDataSet'|'sFacility.04'|'Hospital Designations'|'9908047'|'Labor and Delivery'|
+'StateDataSet'|'sFacility.12'|'Facility Country'|'CA'|'Canada'|
+'StateDataSet'|'sFacility.12'|'Facility Country'|'MX'|'Mexico'|
+'StateDataSet'|'sFacility.12'|'Facility Country'|'US'|'United States'|

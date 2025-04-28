@@ -1,0 +1,69 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eInjury.04"  minOccurs="1"  maxOccurs="M"  dataTypeName="TraumaTriageCriteriaSteps3and4"  isNillable="Yes">
+<name>Trauma Triage Criteria (Moderate Risk for Serious Injury)</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Trauma triage criteria for the yellow boxes (Mechanism of Injury and EMS Judgment) in the 2021 ACS National Guideline for the Field Triage of Injured Patients.</definition>
+<v2Number>E10_04</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>2021 National Guidelines for the Field Triage of Injured Patients - Yellow Criteria (i.e., Mechanism of Injury and EMS Judgment)</v3Comment>
+<v3Changes>Revised to represent the 2021 National Guidelines for the Field Triage of Injured Patients - Yellow Criteria.  Website: 
+								<a href="https://www.facs.org/quality-programs/trauma/systems/field-triage-guidelines/" target="_blank">https://www.facs.org/quality-programs/trauma/systems/field-triage-guidelines</a></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <TraumaTriageCriteriaSteps3and4 baseType="string">
+    <facet name="enumeration" value="2904001" annotation="Pedestrian/bicycle rider thrown, run over, or with significant impact"/>
+    <facet name="enumeration" value="2904003" annotation="Fall Adults: &gt; 20 ft. (one story is equal to 10 ft.) (DEPRECATED)"/>
+    <facet name="enumeration" value="2904005" annotation="Fall Children: &gt; 10 ft. or 2-3 times the height of the child (DEPRECATED)"/>
+    <facet name="enumeration" value="2904007" annotation="Auto Crash: Death in passenger compartment"/>
+    <facet name="enumeration" value="2904009" annotation="Auto Crash: Partial or complete ejection"/>
+    <facet name="enumeration" value="2904011" annotation="Auto Crash: Significant intrusion (including roof): &gt;12 inches occupant site; &gt;18 inches any site; need for extrication"/>
+    <facet name="enumeration" value="2904013" annotation="Auto Crash: Vehicle telemetry data consistent with severe injury"/>
+    <facet name="enumeration" value="2904015" annotation="Motorcycle Crash &gt; 20 MPH (DEPRECATED)"/>
+    <facet name="enumeration" value="2904017" annotation="SBP &lt; 110 for age &gt; 65 (DEPRECATED)"/>
+    <facet name="enumeration" value="2904019" annotation="Anticoagulant use"/>
+    <facet name="enumeration" value="2904021" annotation="Pregnancy &gt; 20 weeks"/>
+    <facet name="enumeration" value="2904023" annotation="Other EMS judgment"/>
+    <facet name="enumeration" value="2904025" annotation="Burn, without other trauma (DEPRECATED)"/>
+    <facet name="enumeration" value="2904027" annotation="Burns in conjunction with trauma"/>
+    <facet name="enumeration" value="2904029" annotation="Auto Crash: Child (age 0-9 years) unrestrained or in unsecured child safety seat"/>
+    <facet name="enumeration" value="2904031" annotation="Fall from height &gt; 10 feet (all ages)"/>
+    <facet name="enumeration" value="2904033" annotation="Low-level falls in young children (age &lt;= 5 years) or older adults (age &gt;= 65 years) with significant head impact"/>
+    <facet name="enumeration" value="2904035" annotation="Rider separated from transport vehicle with significant impact (eg, motorcycle, ATV, horse, etc.)"/>
+    <facet name="enumeration" value="2904037" annotation="Special, high-resource healthcare needs"/>
+    <facet name="enumeration" value="2904039" annotation="Suspicion of child abuse"/>
+  </TraumaTriageCriteriaSteps3and4>
+</restrictions>
+<attributes>
+  <PN>
+    <PN.NoneReported><facet name="enumeration" value="8801015" annotation="None Reported"/></PN.NoneReported>
+  </PN>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_e092" role="Warning">
+      <elementRef elementNumber="eInjury.04">Trauma Triage Criteria (Moderate Risk for Serious Injury)</elementRef> should only be recorded when <elementRef elementNumber="eSituation.02">Possible Injury</elementRef> is &quot;Yes&quot;.
+      </assert>
+  <assert id="nemSch_e008" role="Error">
+      When Trauma Triage Criteria (Moderate Risk for Serious Injury) has a Pertinent Negative, it should be empty and it should not have a Not Value (Not Applicable, Not Recorded, or Not Reporting).
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Trauma Triage Criteria (Moderate Risk for Serious Injury) has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Trauma Triage Criteria (Moderate Risk for Serious Injury) is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Trauma Triage Criteria (Moderate Risk for Serious Injury) has a Not Value, no other value should be recorded.
+      </assert>
+  <assert id="nemSch_e010" role="Warning">
+      When Trauma Triage Criteria (Moderate Risk for Serious Injury) has a Pertinent Negative, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

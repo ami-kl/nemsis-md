@@ -1,0 +1,74 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eExam.15"  minOccurs="0"  maxOccurs="1"  dataTypeName="ExtremityAssessmentLocation"  isNillable="No">
+<name>Extremity Assessment Finding Location</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The location of the patient's extremity assessment findings.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Element eExam.16 - Extremities Assessment represents Version 2.2.1 NHTSA Injury Matrix elements E15_08 Upper Extremities and E15_10 Lower Extremities AND E16_17 Extremities-Right Upper Assessment, E16_18 Extremities-Right Lower Assessment, E16_19 Extremities-Left Upper Assessment, and E16_20 Extremities-Left Lower Assessment. The element value choices have been combined and expanded.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ExtremityAssessmentLocation baseType="string">
+    <facet name="enumeration" value="3515001" annotation="Ankle-Left"/>
+    <facet name="enumeration" value="3515003" annotation="Ankle-Right"/>
+    <facet name="enumeration" value="3515005" annotation="Arm-Upper-Left"/>
+    <facet name="enumeration" value="3515007" annotation="Arm-Upper-Right"/>
+    <facet name="enumeration" value="3515009" annotation="Elbow-Left"/>
+    <facet name="enumeration" value="3515011" annotation="Elbow-Right"/>
+    <facet name="enumeration" value="3515013" annotation="Finger-2nd (Index)-Left"/>
+    <facet name="enumeration" value="3515015" annotation="Finger-2nd (Index)-Right"/>
+    <facet name="enumeration" value="3515017" annotation="Finger-3rd (Middle)-Left"/>
+    <facet name="enumeration" value="3515019" annotation="Finger-3rd (Middle)-Right"/>
+    <facet name="enumeration" value="3515021" annotation="Finger-4th (Ring)-Left"/>
+    <facet name="enumeration" value="3515023" annotation="Finger-4th (Ring)-Right"/>
+    <facet name="enumeration" value="3515025" annotation="Finger-5th (Smallest)-Left"/>
+    <facet name="enumeration" value="3515027" annotation="Finger-5th (Smallest)-Right"/>
+    <facet name="enumeration" value="3515029" annotation="Foot-Dorsal-Left"/>
+    <facet name="enumeration" value="3515031" annotation="Foot-Dorsal-Right"/>
+    <facet name="enumeration" value="3515033" annotation="Foot-Plantar-Left"/>
+    <facet name="enumeration" value="3515035" annotation="Foot-Plantar-Right"/>
+    <facet name="enumeration" value="3515037" annotation="Arm-Lower-Left"/>
+    <facet name="enumeration" value="3515039" annotation="Arm-Lower-Right"/>
+    <facet name="enumeration" value="3515041" annotation="Hand-Dorsal-Left"/>
+    <facet name="enumeration" value="3515043" annotation="Hand-Dorsal-Right"/>
+    <facet name="enumeration" value="3515045" annotation="Hand-Palm-Left"/>
+    <facet name="enumeration" value="3515047" annotation="Hand-Palm-Right"/>
+    <facet name="enumeration" value="3515049" annotation="Hip-Left"/>
+    <facet name="enumeration" value="3515051" annotation="Hip-Right"/>
+    <facet name="enumeration" value="3515053" annotation="Knee-Left"/>
+    <facet name="enumeration" value="3515055" annotation="Knee-Right"/>
+    <facet name="enumeration" value="3515057" annotation="Leg-Lower-Left"/>
+    <facet name="enumeration" value="3515059" annotation="Leg-Lower-Right"/>
+    <facet name="enumeration" value="3515061" annotation="Leg-Upper-Left"/>
+    <facet name="enumeration" value="3515063" annotation="Leg-Upper-Right"/>
+    <facet name="enumeration" value="3515065" annotation="Shoulder-Left"/>
+    <facet name="enumeration" value="3515067" annotation="Shoulder-Right"/>
+    <facet name="enumeration" value="3515069" annotation="Thumb-Left"/>
+    <facet name="enumeration" value="3515071" annotation="Thumb-Right"/>
+    <facet name="enumeration" value="3515073" annotation="Toe-1st (Big)-Left"/>
+    <facet name="enumeration" value="3515075" annotation="Toe-1st (Big)-Right"/>
+    <facet name="enumeration" value="3515077" annotation="Toe-2nd-Left"/>
+    <facet name="enumeration" value="3515079" annotation="Toe-2nd-Right"/>
+    <facet name="enumeration" value="3515081" annotation="Toe-3rd-Left"/>
+    <facet name="enumeration" value="3515083" annotation="Toe-3rd-Right"/>
+    <facet name="enumeration" value="3515085" annotation="Toe-4th-Left"/>
+    <facet name="enumeration" value="3515087" annotation="Toe-4th-Right"/>
+    <facet name="enumeration" value="3515089" annotation="Toe-5th (Smallest)-Left"/>
+    <facet name="enumeration" value="3515091" annotation="Toe-5th (Smallest)-Right"/>
+    <facet name="enumeration" value="3515093" annotation="Wrist-Left"/>
+    <facet name="enumeration" value="3515095" annotation="Wrist-Right"/>
+    <facet name="enumeration" value="3515097" annotation="Arm-Whole Arm and Hand-Left"/>
+    <facet name="enumeration" value="3515099" annotation="Arm-Whole Arm and Hand-Right"/>
+    <facet name="enumeration" value="3515101" annotation="Hand-Whole Hand-Left"/>
+    <facet name="enumeration" value="3515103" annotation="Hand-Whole Hand-Right"/>
+    <facet name="enumeration" value="3515105" annotation="Leg-Whole Leg-Left"/>
+    <facet name="enumeration" value="3515107" annotation="Leg-Whole Leg-Right"/>
+    <facet name="enumeration" value="3515109" annotation="Foot-Whole Foot-Left"/>
+    <facet name="enumeration" value="3515111" annotation="Foot-Whole Foot-Right"/>
+  </ExtremityAssessmentLocation>
+</restrictions>
+</element>

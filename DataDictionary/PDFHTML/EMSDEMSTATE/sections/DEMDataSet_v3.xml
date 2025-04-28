@@ -1,0 +1,21 @@
+<?xml-stylesheet type="text/xsl" href="../xslt/grouping.xslt"?>
+<section name="DEMDataSet">
+  <group number="dCustomConfiguration" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+  <group number="DemographicReport" minOccurs="1" maxOccurs="M" CorrelationID="" UUID="" ProcedureGroupCorrelationID="" CustomElementID="" timeStamp="Yes" isNillable="No">
+    <group number="dRecord" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+    <group number="dAgency" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+    <group number="dContact" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+    <group number="dConfiguration" minOccurs="1" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+    <group number="dLocation" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+    <group number="dVehicle" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+    <group number="dPersonnel" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+    <group number="dDevice" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+    <group number="dFacility" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+    <group number="dCustomResults" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="No"/>
+  </group>
+<asserts>
+  <assert id="nemSch_d004" role="Error">
+      The timestamp of the DemographicReport should not be in the future (the current time according to this system is (value)).
+      </assert>
+</asserts>
+</section>

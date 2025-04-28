@@ -1,0 +1,45 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eInjury.01"  minOccurs="1"  maxOccurs="M"  dataTypeName="icd10CodeInjury"  isNillable="Yes">
+<name>Cause of Injury</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The category of the reported/suspected external cause of the injury.</definition>
+<v2Number>E10_01</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Suggested code list is represented in ICD-10-CM. Reference the NEMSIS Suggested Lists at: https://nemsis.org/technical-resources/version-3/version-3-resource-repository/															
+							<br/><br/>Code list is represented in ICD-10 Codes.
+							<br/>Website - http://uts.nlm.nih.gov  
+							<br/>Product - UMLS Metathesaurus</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <icd10CodeInjury baseType="string">
+    <facet name="pattern" value="([TV-Y][0-9]{2})((\.[0-9A-Z]{1,4})?)"/>
+  </icd10CodeInjury>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e089" role="Warning">
+      <elementRef elementNumber="eInjury.01">Cause of Injury</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eSituation.02">Possible Injury</elementRef> is &quot;Yes&quot;.
+      </assert>
+  <assert id="nemSch_e090" role="Warning">
+      <elementRef elementNumber="eInjury.01">Cause of Injury</elementRef> should only be recorded when <elementRef elementNumber="eSituation.02">Possible Injury</elementRef> is &quot;Yes&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Cause of Injury has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Cause of Injury is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Cause of Injury has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

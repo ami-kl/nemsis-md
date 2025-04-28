@@ -1,0 +1,48 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eExam.19"  minOccurs="0"  maxOccurs="M"  dataTypeName="MentalStatusAssessment"  isNillable="No">
+<name>Mental Status Assessment</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The assessment findings of the patient's mental status examination.</definition>
+<v2Number>E16_23</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Stroke</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Element eExam.19 - Mental Status Assessment represents Version 2.2.1 element E16_23 Mental Status Assessment. The element value choices have been expanded.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <MentalStatusAssessment baseType="string">
+    <facet name="enumeration" value="3519001" annotation="Combative"/>
+    <facet name="enumeration" value="3519003" annotation="Confused"/>
+    <facet name="enumeration" value="3519005" annotation="Hallucinations"/>
+    <facet name="enumeration" value="3519007" annotation="Normal Baseline for Patient"/>
+    <facet name="enumeration" value="3519009" annotation="Not Done"/>
+    <facet name="enumeration" value="3519011" annotation="Oriented-Person"/>
+    <facet name="enumeration" value="3519013" annotation="Oriented-Place"/>
+    <facet name="enumeration" value="3519015" annotation="Oriented-Event"/>
+    <facet name="enumeration" value="3519017" annotation="Oriented-Time"/>
+    <facet name="enumeration" value="3519021" annotation="Unresponsive"/>
+    <facet name="enumeration" value="3519023" annotation="Agitation"/>
+    <facet name="enumeration" value="3519025" annotation="Somnolent"/>
+    <facet name="enumeration" value="3519027" annotation="Stupor"/>
+    <facet name="enumeration" value="3519029" annotation="Altered mental status, unspecified"/>
+    <facet name="enumeration" value="3519031" annotation="Developmentally Impaired"/>
+    <facet name="enumeration" value="3519033" annotation="Disorientation, unspecified"/>
+    <facet name="enumeration" value="3519035" annotation="Pharmacologically Paralyzed"/>
+    <facet name="enumeration" value="3519037" annotation="Pharmacologically Sedated"/>
+    <facet name="enumeration" value="3519039" annotation="Psychologically Impaired"/>
+    <facet name="enumeration" value="3519041" annotation="Slowness and poor responsiveness"/>
+    <facet name="enumeration" value="3519043" annotation="State of emotional shock and stress, unspecified"/>
+    <facet name="enumeration" value="3519045" annotation="Strange and inexplicable behavior"/>
+    <facet name="enumeration" value="3519047" annotation="Uncooperative"/>
+    <facet name="enumeration" value="3519049" annotation="Unspecified coma"/>
+  </MentalStatusAssessment>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+  <PN>
+    <PN.ExamFindingNotPresent><facet name="enumeration" value="8801005" annotation="Exam Finding Not Present"/></PN.ExamFindingNotPresent>
+  </PN>
+</attributes>
+</element>

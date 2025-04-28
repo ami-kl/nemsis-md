@@ -1,0 +1,18 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eOther.18"  minOccurs="0"  maxOccurs="1"  dataTypeName="Graphic"  isNillable="No">
+<name>Signature Graphic</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The graphic file for the signature.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes>Added to better document disposition and billing.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <Graphic baseType="base64Binary">
+  </Graphic>
+</restrictions>
+</element>

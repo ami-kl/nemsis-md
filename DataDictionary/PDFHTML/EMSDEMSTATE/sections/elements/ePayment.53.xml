@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.53"  minOccurs="0"  maxOccurs="1"  dataTypeName="AuthorizationCode"  isNillable="No">
+<name>Transport Authorization Code</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>Prior authorization code provided by the insurance carrier/payer.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes>Added to improve billing documentation.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <AuthorizationCode baseType="string">
+    <facet name="minLength" value="2"/>
+    <facet name="maxLength" value="50"/>
+  </AuthorizationCode>
+</restrictions>
+</element>

@@ -1,0 +1,22 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDisposition.09"  minOccurs="0"  maxOccurs="1"  dataTypeName="GPSLocation"  isNillable="No">
+<name>Destination GPS Location</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The destination GPS Coordinates to which  the patient was delivered or transferred to.</definition>
+<v2Number>E20_08</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>May be auto-populated if list created in dFacility.13 (Facility GPS Location).
+										  <br/><br/>The pattern for GPS location is in the format "<span style="font-style:italic">latitude</span>,<span style="font-style:italic">longitude</span>" where:
+										  <br/>- <span style="font-style:italic">latitude</span> has a minimum of -90 and a maximum of 90 with up to 6 decimal places
+										  <br/>- <span style="font-style:italic">longitude</span> has a minimum of -180 and a maximum of 180 with up to 6 decimal places</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <GPSLocation baseType="string">
+    <facet name="pattern" value="(\+|-)?(90(\.[0]{1,6})?|([1-8][0-9]|[0-9])(\.[0-9]{1,6})?),(\+|-)?(180(\.[0]{1,6})?|(1[0-7][0-9]|[1-9][0-9]|[0-9])(\.[0-9]{1,6})?)"/>
+  </GPSLocation>
+</restrictions>
+</element>

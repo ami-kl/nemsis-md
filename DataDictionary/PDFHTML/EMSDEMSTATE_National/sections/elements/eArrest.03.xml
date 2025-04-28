@@ -1,0 +1,65 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eArrest.03"  minOccurs="1"  maxOccurs="M"  dataTypeName="ResuscitationAttempted"  isNillable="Yes">
+<name>Resuscitation Attempted By EMS</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Indication of an attempt to resuscitate the patient who is in cardiac arrest (attempted, not attempted due to DNR, etc.) by any EMS.</definition>
+<v2Number>E11_03</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Cardiac Arrest</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>This element is a component of the Utstein Cardiac Arrest Criteria.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ResuscitationAttempted baseType="string">
+    <facet name="enumeration" value="3003001" annotation="Attempted Defibrillation"/>
+    <facet name="enumeration" value="3003003" annotation="Attempted Ventilation"/>
+    <facet name="enumeration" value="3003005" annotation="Initiated Chest Compressions"/>
+    <facet name="enumeration" value="3003007" annotation="Not Attempted-Considered Futile"/>
+    <facet name="enumeration" value="3003009" annotation="Not Attempted-DNR Orders"/>
+    <facet name="enumeration" value="3003011" annotation="Not Attempted-Signs of Circulation"/>
+  </ResuscitationAttempted>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e095" role="Warning">
+      <elementRef elementNumber="eArrest.03">Resuscitation Attempted By EMS</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e096" role="Warning">
+      <elementRef elementNumber="eArrest.03">Resuscitation Attempted By EMS</elementRef> should only be recorded when <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e097" role="Warning">
+      <elementRef elementNumber="eArrest.03">Resuscitation Attempted By EMS</elementRef> should not contain both &quot;Attempted/Initiated...&quot; and &quot;Not Attempted...&quot;.
+      </assert>
+  <assert id="nemSch_e098" role="Warning">
+      <elementRef elementNumber="eArrest.03">Resuscitation Attempted By EMS</elementRef> should contain &quot;Initiated Chest Compressions&quot; when <elementRef elementNumber="eArrest.09">Type of CPR Provided</elementRef> contains &quot;Compressions...&quot;.
+      </assert>
+  <assert id="nemSch_e099" role="Warning">
+      <elementRef elementNumber="eArrest.03">Resuscitation Attempted By EMS</elementRef> should contain &quot;Attempted Ventilation&quot; when <elementRef elementNumber="eArrest.09">Type of CPR Provided</elementRef> contains &quot;Ventilation...&quot; or &quot;Compressions-Intermittent with Ventilation&quot;.
+      </assert>
+  <assert id="nemSch_e106" role="Warning">
+      <elementRef elementNumber="eArrest.09">Type of CPR Provided</elementRef> should contain &quot;Compressions...&quot; when <elementRef elementNumber="eArrest.03">Resuscitation Attempted By EMS</elementRef> contains &quot;Initiated Chest Compressions&quot;.
+      </assert>
+  <assert id="nemSch_e107" role="Warning">
+      <elementRef elementNumber="eArrest.09">Type of CPR Provided</elementRef> should contain &quot;Ventilation...&quot; or &quot;Compressions-Intermittent with Ventilation&quot; when <elementRef elementNumber="eArrest.03">Resuscitation Attempted By EMS</elementRef> contains &quot;Attempted Ventilation&quot;.
+      </assert>
+  <assert id="nemSch_e117" role="Warning">
+      <elementRef elementNumber="eArrest.20">Who First Initiated CPR</elementRef> should be recorded when <elementRef elementNumber="eArrest.03">Resuscitation Attempted By EMS</elementRef> is &quot;Attempted...&quot; or &quot;Initiated...&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Resuscitation Attempted By EMS has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Resuscitation Attempted By EMS is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Resuscitation Attempted By EMS has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

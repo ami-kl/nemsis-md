@@ -1,0 +1,49 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eArrest.04"  minOccurs="1"  maxOccurs="M"  dataTypeName="ArrestWitnessedBy"  isNillable="Yes">
+<name>Arrest Witnessed By</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Indication of who the cardiac arrest was witnessed by.</definition>
+<v2Number>E11_04</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Cardiac Arrest</performanceMeasure></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ArrestWitnessedBy baseType="string">
+    <facet name="enumeration" value="3004001" annotation="Not Witnessed"/>
+    <facet name="enumeration" value="3004003" annotation="Witnessed by Family Member"/>
+    <facet name="enumeration" value="3004005" annotation="Witnessed by Healthcare Provider"/>
+    <facet name="enumeration" value="3004007" annotation="Witnessed by Bystander"/>
+  </ArrestWitnessedBy>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_e100" role="Warning">
+      <elementRef elementNumber="eArrest.04">Arrest Witnessed By</elementRef> should be recorded when <elementRef elementNumber="eDisposition.28">Patient Evaluation/Care</elementRef> is &quot;Patient Evaluated and Care Provided&quot; and <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e101" role="Warning">
+      <elementRef elementNumber="eArrest.04">Arrest Witnessed By</elementRef> should only be recorded when <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e102" role="Warning">
+      When <elementRef elementNumber="eArrest.04">Arrest Witnessed By</elementRef> is &quot;Not Witnessed&quot;, no other value should be recorded.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Arrest Witnessed By has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Arrest Witnessed By is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Arrest Witnessed By has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

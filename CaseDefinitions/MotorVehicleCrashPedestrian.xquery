@@ -1,0 +1,14 @@
+xquery version '1.0';
+declare default element namespace 'http://www.nemsis.org';
+(: NEMSIS Case Definition :)
+(: Motor Vehicle Crash - Pedestrian :)
+(: August 26, 2021 :)
+for
+  $dataset in doc('/path/to/EMSDataSetDocument.xml')
+let
+  $records := $dataset/EMSDataSet/Header/PatientCareReport
+  [
+    eInjury/eInjury.01[matches(., '^(V02)|(V02\.1)|(V02\.10.*)|(V02\.11.*)|(V02\.12.*)|(V02\.13)|(V02\.131.*)|(V02\.138.*)|(V02\.19.*)|(V02\.9)|(V02\.90.*)|(V02\.91.*)|(V02\.92.*)|(V02\.93)|(V02\.931.*)|(V02\.938.*)|(V02\.99.*)|(V03)|(V03\.1)|(V03\.10.*)|(V03\.11.*)|(V03\.12.*)|(V03\.13)|(V03\.131.*)|(V03\.138.*)|(V03\.19.*)|(V03\.9)|(V03\.90.*)|(V03\.91.*)|(V03\.92.*)|(V03\.93)|(V03\.931.*)|(V03\.938.*)|(V03\.99.*)|(V04)|(V04\.1)|(V04\.10.*)|(V04\.11.*)|(V04\.12.*)|(V04\.13)|(V04\.131.*)|(V04\.138.*)|(V04\.19.*)|(V04\.9)|(V04\.90.*)|(V04\.91.*)|(V04\.92.*)|(V04\.93)|(V04\.931.*)|(V04\.938.*)|(V04\.99.*)|(V09\.2)|(V09\.20.*)|(V09\.21.*)|(V09\.29.*)|(V09\.3.*)$')]
+  ]
+return
+  count($records)

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.nemsis.org" targetNamespace="http://www.nemsis.org" elementFormDefault="qualified">
+    <xs:include schemaLocation="../XSDs/NEMSIS_XSDs/commonTypes_v3.xsd" />
+    <xs:element name="DefinedList">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Header">
+                    <xs:annotation>
+                        <xs:documentation>Header for metadata about the defined list</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="SourceVocabularies">
+                                <xs:annotation>
+                                    <xs:documentation>Group for source vocabularies</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="SourceVocabulary" maxOccurs="unbounded">
+                                            <xs:annotation>
+                                                <xs:documentation>Source vocabulary from which the list is derived</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="SourceVocabularyType">
+                                                        <xs:attribute name="url" type="xs:anyURI">
+                                                            <xs:annotation>
+                                                                <xs:documentation>URL of the source vocabulary</xs:documentation>
+                                                            </xs:annotation>
+                                                        </xs:attribute>
+                                                        <xs:attribute name="CodeType" type="CodeType">
+                                                            <xs:annotation>
+                                                                <xs:documentation>NEMSIS CodeType for the source vocabulary</xs:documentation>
+                                                            </xs:annotation>
+                                                        </xs:attribute>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="NemsisTypes">
+                                <xs:annotation>
+                                    <xs:documentation>Group for NEMSIS Types</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="NemsisType" type="NemsisXSDType" maxOccurs="unbounded">
+                                            <xs:annotation>
+                                                <xs:documentation>NEMSIS XSD type to which the list applies</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="NemsisElements">
+                                <xs:annotation>
+                                    <xs:documentation>Group for NEMSIS Elements</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="NemsisElement" type="NemsisElementType" maxOccurs="unbounded">
+                                            <xs:annotation>
+                                                <xs:documentation>NEMSIS element to which the list applies</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Codes">
+                    <xs:annotation>
+                        <xs:documentation>Group for code entries</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Code" maxOccurs="unbounded">
+                                <xs:annotation>
+                                    <xs:documentation>Code entry</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Value">
+                                            <xs:annotation>
+                                                <xs:documentation>Code value</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="ValueType">
+                                                        <xs:attribute name="CodeType" type="CodeType" use="optional">
+                                                            <xs:annotation>
+                                                                <xs:documentation>NEMSIS CodeType for the source vocabulary for the code, if the list contains codes from multiple source vocabularies</xs:documentation>
+                                                            </xs:annotation>
+                                                        </xs:attribute>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Category" type="CategoryType"  minOccurs="0">
+                                            <xs:annotation>
+                                                <xs:documentation>NEMSIS-assigned hierarchical category; not all lists have category information</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="SourceLabel" type="SourceLabelType">
+                                            <xs:annotation>
+                                                <xs:documentation>Preferred term label assigned for the code by the source vocabulary</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="SuggestedLabel" type="SuggestedLabelType">
+                                            <xs:annotation>
+                                                <xs:documentation>NEMSIS-suggested label for the code</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="Note" type="NoteType" minOccurs="0">
+                                            <xs:annotation>
+                                                <xs:documentation>Notes about the code entry</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="date" type="DateType">
+                                        <xs:annotation>
+                                            <xs:documentation>Date on which the code entry was last modified on the NEMSIS defined list</xs:documentation>
+                                        </xs:annotation>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="date" type="DateType">
+                <xs:annotation>
+                    <xs:documentation>Date on which the list was last modified</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="SourceVocabularyType">
+        <xs:annotation>
+            <xs:documentation>Available source vocabularies for NEMSIS Defined Lists</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ICD-10" />
+            <xs:enumeration value="SNOMED-CT" />
+            <xs:enumeration value="RxNorm" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="NemsisXSDType">
+        <xs:annotation>
+            <xs:documentation>NEMSIS XSD Type to which the list applies</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="icd10Code" />
+            <xs:enumeration value="icd10Activity" />
+            <xs:enumeration value="icd10CodeInjury" />
+            <xs:enumeration value="icd10MedSurge" />
+            <xs:enumeration value="snomed" />
+            <xs:enumeration value="MedicationAllergies" />
+            <xs:enumeration value="Medication" />
+            <xs:enumeration value="IncidentLocationType" />
+            <xs:enumeration value="ProvidersImpression" />
+            <xs:enumeration value="AssociatedSymptoms" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="NemsisElementType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(e|d|s)\w*\.\d\d" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="CategoryType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="255" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="SuggestedLabelType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="255" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="SourceLabelType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="3000" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="NoteType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="3000" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ValueType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="18" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

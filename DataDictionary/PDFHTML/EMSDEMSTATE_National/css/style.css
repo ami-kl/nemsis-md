@@ -1,0 +1,284 @@
+/**
+ *   
+ * Cascading Style Sheet (CSS) to style NEMSIS v3 Data Dictionaries that have been transformed into HTML 
+ * for documentation purposes
+ * 
+ * Version: 3.5.0
+ * Revision Date: March 14, 2019
+ * 
+ * This product is provided by the NEMIS TAC, without charge, to facilitate browsing NEMSIS 3 
+ * Data Dictionary files via a user-friendly web-based interface.
+ * 
+ */
+
+
+/* Body */
+
+body
+{
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Import from Old XSLT Style */
+      .pageHeadingElement {font-size:20px;}
+  
+      
+      .deprecated {width:80px;font-size:14px;text-align:center;color:white;background: PURPLE no-repeat;}
+      .national {width:80px;font-size:14px;text-align:center;color:white;background: url(../images/roundedNational.gif) no-repeat;}
+      .state    {width:80px;font-size:14px;text-align:center;color:white;background: url(../images/roundedState.gif) no-repeat;}
+      
+      
+      .numberName {font-size:16px;color:white;padding-left:5px; background: url(../images/roundedNumberName.gif) no-repeat;}
+         
+      .definitionTitle {font-size:14px;background:#F0F0F0;color:#283e56;}    
+      .definitionValue {font-size:14px;}
+
+      .summaryTitle         {font-size:14px;background:#F0F0F0;color:#283e56;}
+      .summaryValue         {font-size:14px;}
+            
+      .attributeTitle         {font-size:14px;background:#F0F0F0;color:#283e56;}
+      .attributeName          {font-size:12px;font-weight:bold;color:#283e56;}
+      .attributeValue         {font-size:12px;}
+            
+      .sectionCommentTitle    {font-size:14px;background:#F0F0F0;color:#283e56;}
+      .sectionCommentValue    {font-size:12px;}
+      
+      .sectionV3ChangesTitle  {font-size:14px;background:#F0F0F0;color:#283e56;}
+      .sectionV3ChangesValue  {font-size:12px;}
+      
+      .sectionDeprecatedCommentTitle  {font-size:14px;background:#F0F0F0;color:#283e56;}
+      .sectionDeprecatedCommentValue  {font-size:12px;}
+      
+      .sectionRestrictionsEnumerationCodeTitle        {width:60px;  font-size:12px;font-weight:bold;}
+      .sectionRestrictionsEnumerationDescriptionTitle {width:560px; font-size:12px;font-weight:bold;}
+      .sectionRestrictionsEnumerationCodeValue        {width:60px;  font-size:12px;}
+      .sectionRestrictionsEnumerationDescriptionValue {width:560px; font-size:12px;}     
+             
+      .sectionAssociatedMeasuresTitle     {font-size:14px;background:#F0F0F0;color:#283e56;}
+      .sectionAssociatedMeasuresValue     {font-size:12px;padding-right:30px;}      
+      
+      .sectionRestrictionsTitle   {font-size:14px;background:#F0F0F0;color:#283e56;}
+      .sectionRestrictionsPattern {width:600px;font-size:12px;}
+      
+      .sectionRestrictionsDataTypeTitle   {width:120px;font-size:12px;font-weight:bold;}
+      .sectionRestrictionsDataTypeValue   {width:120px;font-size:12px;}     
+      .sectionRestrictionsConstraintTitle {width:155px;font-size:12px;font-weight:bold;}
+      .sectionRestrictionsConstraintValue {width:155px;font-size:12px;}
+      
+      .sectionConstraintsHeaderDataType   {width:100px;font-size:12px;font-weight:bold;}
+      .sectionConstraintsValueDataType    {width:100px;font-size:12px;}      
+      .sectionConstraintsHeaderDateTime   {width:200px;font-size:12px;font-weight:bold;}
+      .sectionConstraintsValueDateTime    {width:200px;font-size:12px;}
+      td { font-size: 12; }    
+
+.header         {font-size:22px; color:#004080; font-weight:bold; text-align:center;}                                         
+.subHeader      {font-size:18px; color:#004080; text-align:center;}                                                           
+.section        {font-size:18px; color:#004080;}                                                                              
+.subSection     {font-size:16px;}                                                                                             
+.note           {font-size:12px;}                                                                                             
+.listItem       {font-size:16px;}                                                                                             
+.paragraph      {font-size:14px;}                                                                                             
+.reference      {font-size:x-small;  font-weight:bold; vertical-align:top; background-color:limegreen; border-radius:5px;}                                        
+.listItemOrgBg2  {font-size:16px; font-weight:bold; list-style-image:url('images/orange-8.gif');}                             
+.listItemOrgBg  {font-size:16px; font-weight:bold;list-style:none; }                                                          
+.listItemOrgSm  {font-size:16px; list-style-image:url('images/orange-5.gif');}                                                
+.listItemBlu    {font-size:16px; font-weight:normal;list-style-image:url('images/blue-5.gif');}                               
+.f1   { font-size: 12px; }                                                                                                    
+.f2   { font-size: 12px; }                                                                                                    
+.f3   { font-size: 14px; }                                                                                                    
+.p1   { font-size: 12px; white-space:nowrap; }                                                                                
+.p2   { font-size: 12px; white-space:nowrap; }                                                                                
+.p3   { font-size: 14px; white-space:nowrap; } 
+
+/* Page */
+
+div.page
+{
+  background-color: #ffffff;
+  bottom: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  overflow: auto;
+  padding: 1ex;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 75%;
+}
+
+/* General Items */
+
+/* Anchor */
+a
+{
+  color: #00456b;
+  text-decoration: none;
+}
+
+a:hover, a:focus
+{
+  color: #BB7A2A;
+}
+
+.cols 
+{
+ float : left;
+ padding-right: 5ex;
+ margin-bottom: 1ex;
+}
+
+.cols label {
+  display: block;
+}
+
+label.unavailable {
+  color: #cccccc;
+}
+
+h1
+{
+  background-color: #00456b;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-weight: normal;
+  margin: 0;
+  padding-bottom: 0.5ex;
+  padding-left: 1ex;
+  padding-right: 1ex;
+  padding-top: 0.5ex;
+}
+
+input[type=checkbox]
+{
+  width: 3ex;
+  height: 3ex;
+}
+
+table.filtered tbody tr 
+{
+  display: none;
+}
+
+th 
+{
+  text-align: left;
+  padding-right: 1ex;
+}
+
+th.sortable 
+{
+  cursor: pointer;
+}
+
+th.sortable::after {
+  color: #ccc;
+  content: '\25BE';
+}
+
+/* Title page elements */
+
+.blueRect
+{
+  background: #00456b;
+  height: 15px;
+}
+.titleMain
+{
+  font-size: 80px;
+  color: #00456b;
+  text-align: center;
+  font-weight: bold;
+}
+.titleSub
+{
+  font-size: 50px;
+  color: #00456b;
+  text-align: center;
+  font-weight: bold;
+}
+.nhtsa
+{
+  font-size: 65px;
+  color: #c1272d;
+  text-align: center;
+  font-weight: bold;
+}
+.nhtsa2
+{
+  font-size: 40px;
+  color: #c1272d;
+  text-align: center;
+  font-weight: bold;
+}
+.standard
+{
+  font-size: 60px;
+  color: #00456b;
+  text-align: center;
+  font-weight: bold;
+}
+.version
+{
+  font-size: 25px;
+  color: #00456b;
+  text-align: center;
+  font-weight: bold;
+}
+.funded
+{
+  font-size: 20px;
+  color: #00456b;
+  text-align: center;
+}
+.fundedby
+{
+  font-size: 20px;
+  color: #00456b;
+  text-align: center;
+  font-weight: bold;
+}
+.url
+{
+  font-size: 20px;
+  color: #00456b;
+  text-align: center;
+  font-weight: bold;
+}
+.blueRectBtm
+{
+  background: #00456b;
+  height: 15px;
+}
+.spacer
+{
+  height: 20px;
+}
+.spacer50
+{
+  height: 50px;
+}
+.spacer40
+{
+  height: 40px;
+}
+.spacer30
+{
+  height: 30px;
+}
+.spacer20
+{
+  height: 20px;
+}
+.spacer15
+{
+  height: 15px;
+}
+.spacer10
+{
+  height: 10px;
+}
+.spacer5
+{
+  height: 5px;
+}

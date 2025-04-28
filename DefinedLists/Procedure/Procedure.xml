@@ -1,0 +1,734 @@
+<?xml-stylesheet type="text/xsl" href="https://nemsis.org/media/nemsis_v3/release-3.5.1/DefinedLists/DefinedListHtml.xsl"?><DefinedList xmlns="http://www.nemsis.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" date="2025-01-14" xsi:schemaLocation="http://www.nemsis.org https://nemsis.org/media/nemsis_v3/release-3.5.1/DefinedLists/DefinedLists.xsd">
+  <Header>
+    <SourceVocabularies>
+      <SourceVocabulary url="https://www.nlm.nih.gov/healthit/snomedct/index.html">SNOMED-CT</SourceVocabulary>
+    </SourceVocabularies>
+    <NemsisTypes>
+      <NemsisType>snomed</NemsisType>
+    </NemsisTypes>
+    <NemsisElements>
+      <NemsisElement>eProcedures.03</NemsisElement>
+      <NemsisElement>dConfiguration.07</NemsisElement>
+      <NemsisElement>sConfiguration.03</NemsisElement>
+    </NemsisElements>
+  </Header>
+  <Codes>
+    <Code date="2021-05-06">
+      <Value>18629005</Value>
+      <Category>Administration (Drug, fluid, gas)</Category>
+      <SourceLabel>Administration of drug or medicament</SourceLabel>
+      <SuggestedLabel>Drug administration</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>386358000</Value>
+      <Category>Administration (Drug, fluid, gas)</Category>
+      <SourceLabel>Administration of drug or medicament via intravenous route</SourceLabel>
+      <SuggestedLabel>Drug administration via IV</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>431393006</Value>
+      <Category>Administration (Drug, fluid, gas)</Category>
+      <SourceLabel>Administration of intravenous fluid bolus</SourceLabel>
+      <SuggestedLabel>IV fluid bolus</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>103744005</Value>
+      <Category>Administration (Drug, fluid, gas)</Category>
+      <SourceLabel>Administration of intravenous fluids</SourceLabel>
+      <SuggestedLabel>IV fluids</SuggestedLabel>
+      <Note>includes 297751002 Infusion of saline</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>56251003</Value>
+      <Category>Administration (Drug, fluid, gas)</Category>
+      <SourceLabel>Nebulizer therapy</SourceLabel>
+      <SuggestedLabel>Nebulizer therapy</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>57485005</Value>
+      <Category>Administration (Drug, fluid, gas)</Category>
+      <SourceLabel>Oxygen therapy</SourceLabel>
+      <SuggestedLabel>Oxygen therapy, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>371907003</Value>
+      <Category>Administration (Drug, fluid, gas)</Category>
+      <SourceLabel>Oxygen administration by nasal cannula</SourceLabel>
+      <SuggestedLabel>Oxygen via cannula</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>371908008</Value>
+      <Category>Administration (Drug, fluid, gas)</Category>
+      <SourceLabel>Oxygen administration by mask</SourceLabel>
+      <SuggestedLabel>Oxygen via mask</SuggestedLabel>
+    </Code>
+    <Code date="2025-01-14">
+      <Value>116859006</Value>
+      <Category>Administration (Drug, fluid, gas)</Category>
+      <SourceLabel>Transfusion of blood product</SourceLabel>
+      <SuggestedLabel>Transfusion of blood</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>230040009</Value>
+      <Category>Airway, Basic</Category>
+      <SourceLabel>Airway suction technique</SourceLabel>
+      <SuggestedLabel>Airway suction</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>425447009</Value>
+      <Category>Airway, Basic</Category>
+      <SourceLabel>Bag valve mask ventilation</SourceLabel>
+      <SuggestedLabel>Assist ventilations via BVM</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>243140006</Value>
+      <Category>Airway, Basic</Category>
+      <SourceLabel>Lung inflation by intermittent compression of reservoir bag</SourceLabel>
+      <SuggestedLabel>Assist ventilations, intubated</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>284029005</Value>
+      <Category>Airway, Basic</Category>
+      <SourceLabel>Respired carbon dioxide monitoring</SourceLabel>
+      <SuggestedLabel>ETCO2 monitoring</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>23690002</Value>
+      <Category>Airway, Basic</Category>
+      <SourceLabel>Abdominal thrust</SourceLabel>
+      <SuggestedLabel>Heimlich maneuver</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>182692007</Value>
+      <Category>Airway, Basic</Category>
+      <SourceLabel>Nasopharyngeal airway insertion</SourceLabel>
+      <SuggestedLabel>Nasal airway insertion (NPA)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>7443007</Value>
+      <Category>Airway, Basic</Category>
+      <SourceLabel>Insertion of oropharyngeal airway</SourceLabel>
+      <SuggestedLabel>Oral airway insertion (OPA)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>232664002</Value>
+      <Category>Airway, Basic</Category>
+      <SourceLabel>Manual establishment of airway</SourceLabel>
+      <SuggestedLabel>Open airway manually</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>243142003</Value>
+      <Category>Airway, Advanced</Category>
+      <SourceLabel>Dual pressure spontaneous ventilation support</SourceLabel>
+      <SuggestedLabel>BiPAP</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>47545007</Value>
+      <Category>Airway, Advanced</Category>
+      <SourceLabel>Continuous positive airway pressure ventilation treatment</SourceLabel>
+      <SuggestedLabel>CPAP</SuggestedLabel>
+      <Note>Includes 423574009 CPAP weaning</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>225718003</Value>
+      <Category>Airway, Advanced</Category>
+      <SourceLabel>Checking position of endotracheal tube</SourceLabel>
+      <SuggestedLabel>ET tube, check placement</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>425543005</Value>
+      <Category>Airway, Advanced</Category>
+      <SourceLabel>Digital respired carbon dioxide monitoring</SourceLabel>
+      <SuggestedLabel>ETCO2 digital capnography</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>429705000</Value>
+      <Category>Airway, Advanced</Category>
+      <SourceLabel>Insertion of esophageal tracheal combitube</SourceLabel>
+      <SuggestedLabel>Intubation, combitube</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>427753009</Value>
+      <Category>Airway, Advanced</Category>
+      <SourceLabel>Insertion of esophageal tracheal double lumen supraglottic airway</SourceLabel>
+      <SuggestedLabel>Intubation, double lumen supraglottic</SuggestedLabel>
+      <Note>11/11/20 "Double lumen" added to EMS Description.</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>424979004</Value>
+      <Category>Airway, Advanced</Category>
+      <SourceLabel>Laryngeal mask airway insertion</SourceLabel>
+      <SuggestedLabel>Intubation, laryngeal mask airway (LMA)</SuggestedLabel>
+      <Note>Includes 418613003 Tracheal intubation through LMA</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>232674004</Value>
+      <Category>Airway, Advanced</Category>
+      <SourceLabel>Orotracheal intubation</SourceLabel>
+      <SuggestedLabel>Intubation, NOS</SuggestedLabel>
+      <Note>Includes 16883004 Endotracheal intubation, 52765003 Intubation</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>450601000124103</Value>
+      <Category>Airway, Advanced</Category>
+      <SourceLabel>Orotracheal intubation using bougie device</SourceLabel>
+      <SuggestedLabel>Intubation, orotracheal</SuggestedLabel>
+      <Note>11/11/20 Added to list.</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>241689008</Value>
+      <Category>Airway, Advanced</Category>
+      <SourceLabel>Rapid sequence induction</SourceLabel>
+      <SuggestedLabel>Intubation, rapid sequence intubation (RSI)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>450611000124100</Value>
+      <Category>Airway, Advanced</Category>
+      <SourceLabel>Insertion of Single Lumen Supraglottic Airway Device</SourceLabel>
+      <SuggestedLabel>Intubation, single lumen supraglottic</SuggestedLabel>
+      <Note>11/11/20 Added to list.</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>45851008</Value>
+      <Category>Airway, Advanced</Category>
+      <SourceLabel>Positive end expiratory pressure ventilation therapy, initiation and management</SourceLabel>
+      <SuggestedLabel>PEEP</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>385857005</Value>
+      <Category>Airway, Advanced</Category>
+      <SourceLabel>Ventilator care and adjustment</SourceLabel>
+      <SuggestedLabel>Ventilator care/adjustment</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>408994004</Value>
+      <Category>Assessment</Category>
+      <SourceLabel>Adult care assessment</SourceLabel>
+      <SuggestedLabel>Assessment, adult</SuggestedLabel>
+      <Note>Includes 422440002 Adult continuous assessment, 423895006 Adult admission assessment</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>422618004</Value>
+      <Category>Assessment</Category>
+      <SourceLabel>Continuous physical assessment</SourceLabel>
+      <SuggestedLabel>Assessment, continuous</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>315639002</Value>
+      <Category>Assessment</Category>
+      <SourceLabel>Initial patient assessment</SourceLabel>
+      <SuggestedLabel>Assessment, initial</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>225398001</Value>
+      <Category>Assessment</Category>
+      <SourceLabel>Neurological assessment</SourceLabel>
+      <SuggestedLabel>Assessment, neurological</SuggestedLabel>
+      <Note>Includes 444714004 Assessment of consciousness level</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>423850004</Value>
+      <Category>Assessment</Category>
+      <SourceLabel>Pediatric continuous physical assessment</SourceLabel>
+      <SuggestedLabel>Assessment, pediatric</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>386053000</Value>
+      <Category>Assessment</Category>
+      <SourceLabel>Evaluation procedure</SourceLabel>
+      <SuggestedLabel>Evaluation/observation</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>270352002</Value>
+      <Category>Assessment</Category>
+      <SourceLabel>Medical examinations/reports</SourceLabel>
+      <SuggestedLabel>Exam, medical</SuggestedLabel>
+      <Note>Includes 225886003 Medical assessment</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>171397002</Value>
+      <Category>Assessment</Category>
+      <SourceLabel>Medical examination for suspected condition</SourceLabel>
+      <SuggestedLabel>Exam, medical, suspected condition</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>182777000</Value>
+      <Category>Assessment</Category>
+      <SourceLabel>Monitoring of patient</SourceLabel>
+      <SuggestedLabel>Patient monitoring</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>23852006</Value>
+      <Category>Assessment, Cardiac</Category>
+      <SourceLabel>Cardiac monitoring</SourceLabel>
+      <SuggestedLabel>Cardiac monitoring</SuggestedLabel>
+      <Note>Includes 88140007 Cardiac monitor surveillance</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>268400002</Value>
+      <Category>Assessment, Cardiac</Category>
+      <SourceLabel>12 lead electrocardiogram</SourceLabel>
+      <SuggestedLabel>ECG, 12 lead</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>428803005</Value>
+      <Category>Assessment, Cardiac</Category>
+      <SourceLabel>3 lead electrocardiographic monitoring</SourceLabel>
+      <SuggestedLabel>ECG, 3 lead</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>29303009</Value>
+      <Category>Assessment, Cardiac</Category>
+      <SourceLabel>Electrocardiographic procedure</SourceLabel>
+      <SuggestedLabel>ECG, NOS</SuggestedLabel>
+      <Note>Includes 164847006 Standard electrocardiogram, 429163003 15 lead ECG</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>46825001</Value>
+      <Category>Assessment, Cardiac</Category>
+      <SourceLabel>Electrocardiographic monitoring</SourceLabel>
+      <SuggestedLabel>ECG, monitoring</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>250980009</Value>
+      <Category>Cardiac</Category>
+      <SourceLabel>Cardioversion</SourceLabel>
+      <SuggestedLabel>Cardioversion</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>429283006</Value>
+      <Category>Cardiac</Category>
+      <SourceLabel>Mechanically assisted chest compression</SourceLabel>
+      <SuggestedLabel>Chest compressions, mechanical</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>89666000</Value>
+      <Category>Cardiac</Category>
+      <SourceLabel>Cardiopulmonary resuscitation</SourceLabel>
+      <SuggestedLabel>CPR, manual</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>450661000124102</Value>
+      <Category>Cardiac</Category>
+      <SourceLabel>Defibrillation using automated external cardiac defibrillator</SourceLabel>
+      <SuggestedLabel>Defibrillation, AED</SuggestedLabel>
+      <Note>11/11/20 Replaces 233169004 Automatic defibrillator procedure.</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>426220008</Value>
+      <Category>Cardiac</Category>
+      <SourceLabel>External ventricular defibrillation</SourceLabel>
+      <SuggestedLabel>Defibrillation, manual</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>386237008</Value>
+      <Category>Cardiac</Category>
+      <SourceLabel>Circulatory care: mechanical assist device</SourceLabel>
+      <SuggestedLabel>LVAD monitoring</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>18590009</Value>
+      <Category>Cardiac</Category>
+      <SourceLabel>Cardiac pacing</SourceLabel>
+      <SuggestedLabel>Pacing</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>128968000</Value>
+      <Category>Cardiac</Category>
+      <SourceLabel>Vagal stimulation physiologic challenge</SourceLabel>
+      <SuggestedLabel>Vagal maneuver</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>228621007</Value>
+      <Category>Environmental</Category>
+      <SourceLabel>Provision of environmental control system</SourceLabel>
+      <SuggestedLabel>Environmental control</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>431774007</Value>
+      <Category>Environmental</Category>
+      <SourceLabel>Active external cooling of subject</SourceLabel>
+      <SuggestedLabel>Patient cooling</SuggestedLabel>
+      <Note>Includes 229585002 Cold pack treatment, 229583009 Chemically activated ice pack</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>431949004</Value>
+      <Category>Environmental</Category>
+      <SourceLabel>Active external warming of subject</SourceLabel>
+      <SuggestedLabel>Patient warming</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>87750000</Value>
+      <Category>Gastrointestinal</Category>
+      <SourceLabel>Insertion of nasogastric tube</SourceLabel>
+      <SuggestedLabel>Nasogastric tube insertion (NG)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>235425002</Value>
+      <Category>Gastrointestinal</Category>
+      <SourceLabel>Insertion of orogastric tube</SourceLabel>
+      <SuggestedLabel>Orogastric tube insertion (OG)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>33747003</Value>
+      <Category>Glycemic Management</Category>
+      <SourceLabel>Glucose measurement, blood</SourceLabel>
+      <SuggestedLabel>Blood glucose measurement</SuggestedLabel>
+      <Note>Includes 302789003 Capillary blood glucose, 166888009 Blood glucose method, 166900001 Glucometer</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>386328006</Value>
+      <Category>Glycemic Management</Category>
+      <SourceLabel>Hypoglycemia management</SourceLabel>
+      <SuggestedLabel>Hypoglycemia management</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>49689007</Value>
+      <Category>Immobilization</Category>
+      <SourceLabel>Application of cervical collar</SourceLabel>
+      <SuggestedLabel>Cervical collar</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>707794004</Value>
+      <Category>Immobilization</Category>
+      <SourceLabel>Immobilization using extrication splint</SourceLabel>
+      <SuggestedLabel>Extrication splint</SuggestedLabel>
+      <Note>11/11/20 Added to list.</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>450591000124106</Value>
+      <Category>Immobilization</Category>
+      <SourceLabel>Immobilization using long board</SourceLabel>
+      <SuggestedLabel>Long board</SuggestedLabel>
+      <Note>11/11/20 Added to list.</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>182556001</Value>
+      <Category>Immobilization</Category>
+      <SourceLabel>Pelvic sling</SourceLabel>
+      <SuggestedLabel>Pelvic sling</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>79321009</Value>
+      <Category>Immobilization</Category>
+      <SourceLabel>Application of splint</SourceLabel>
+      <SuggestedLabel>Splinting, general</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>302488007</Value>
+      <Category>Immobilization</Category>
+      <SourceLabel>Application of traction using a traction device</SourceLabel>
+      <SuggestedLabel>Splinting, traction</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>78086002</Value>
+      <Category>Other</Category>
+      <SourceLabel>Holding patient</SourceLabel>
+      <SuggestedLabel>Holding patient</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>409582008</Value>
+      <Category>Other</Category>
+      <SourceLabel>Isolation precautions</SourceLabel>
+      <SuggestedLabel>Isolation precautions</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>182705007</Value>
+      <Category>Other</Category>
+      <SourceLabel>Tension pneumothorax relief</SourceLabel>
+      <SuggestedLabel>Needle decompression</SuggestedLabel>
+      <Note>Not sure where to put this</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>22633006</Value>
+      <Category>Other</Category>
+      <SourceLabel>Vaginal delivery, medical personnel present</SourceLabel>
+      <SuggestedLabel>Vaginal delivery</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>423184003</Value>
+      <Category>Pain</Category>
+      <SourceLabel>Adult pain assessment</SourceLabel>
+      <SuggestedLabel>Pain assessment, adult</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>423401003</Value>
+      <Category>Pain</Category>
+      <SourceLabel>Pediatric pain assessment</SourceLabel>
+      <SuggestedLabel>Pain assessment, pediatric</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>225399009</Value>
+      <Category>Pain</Category>
+      <SourceLabel>Pain assessment</SourceLabel>
+      <SuggestedLabel>Pain assessment, NOS</SuggestedLabel>
+      <Note>Includes 445719003 Assessment using visual analog scale</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>278414003</Value>
+      <Category>Pain</Category>
+      <SourceLabel>Pain management</SourceLabel>
+      <SuggestedLabel>Pain management</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>58715004</Value>
+      <Category>Patient Positioning</Category>
+      <SourceLabel>Moving a patient to a stretcher</SourceLabel>
+      <SuggestedLabel>Moving patient to stretcher</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>56469005</Value>
+      <Category>Patient Positioning</Category>
+      <SourceLabel>Moving a patient</SourceLabel>
+      <SuggestedLabel>Moving patient, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>225287004</Value>
+      <Category>Patient Positioning</Category>
+      <SourceLabel>Procedures relating to positioning and support</SourceLabel>
+      <SuggestedLabel>Patient positioning, support</SuggestedLabel>
+      <Note>Includes 423212001 Trendelenburg position, 225994009 Placing patient in position of comfort</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>386423001</Value>
+      <Category>Patient Positioning</Category>
+      <SourceLabel>Physical restraint</SourceLabel>
+      <SuggestedLabel>Physical restraint</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>398041008</Value>
+      <Category>Spinal Procedures</Category>
+      <SourceLabel>Cervical spine immobilization</SourceLabel>
+      <SuggestedLabel>Spinal stabilization, c-spine</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>449199004</Value>
+      <Category>Spinal Procedures</Category>
+      <SourceLabel>Manual inline stabilization of cervical spine</SourceLabel>
+      <SuggestedLabel>Spinal stabilization, manual</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>426498007</Value>
+      <Category>Spinal Procedures</Category>
+      <SourceLabel>Stabilization of spine</SourceLabel>
+      <SuggestedLabel>Spinal stabilization, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>445828009</Value>
+      <Category>Spinal Procedures</Category>
+      <SourceLabel>Assessment using functional capacity evaluation</SourceLabel>
+      <SuggestedLabel>Spinal, advanced assessment (spinal clearance)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>284405008</Value>
+      <Category>Spinal Procedures</Category>
+      <SourceLabel>Examination of cervical spine</SourceLabel>
+      <SuggestedLabel>Spinal, c-spine exam</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>284394000</Value>
+      <Category>Spinal Procedures</Category>
+      <SourceLabel>Examination of spine</SourceLabel>
+      <SuggestedLabel>Spinal, exam</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>304562007</Value>
+      <Category>Transfer of Care</Category>
+      <SourceLabel>Informing doctor</SourceLabel>
+      <SuggestedLabel>Contact Medical Control</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>429202003</Value>
+      <Category>Transfer of Care</Category>
+      <SourceLabel>Transfer of care to hospital</SourceLabel>
+      <SuggestedLabel>Transfer of care to hospital</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>308292007</Value>
+      <Category>Transfer of Care</Category>
+      <SourceLabel>Transfer of care</SourceLabel>
+      <SuggestedLabel>Transfer of care, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>392247006</Value>
+      <Category>Vascular Access</Category>
+      <SourceLabel>Insertion of catheter into artery</SourceLabel>
+      <SuggestedLabel>Arterial cannulation</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>226005007</Value>
+      <Category>Vascular Access</Category>
+      <SourceLabel>Care of central line</SourceLabel>
+      <SuggestedLabel>Central line care</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>425074000</Value>
+      <Category>Vascular Access</Category>
+      <SourceLabel>Conversion of intravenous infusion to saline lock</SourceLabel>
+      <SuggestedLabel>Convert IV to saline lock</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>430824005</Value>
+      <Category>Vascular Access</Category>
+      <SourceLabel>Intraosseous cannulation</SourceLabel>
+      <SuggestedLabel>IO cannulation</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>392230005</Value>
+      <Category>Vascular Access</Category>
+      <SourceLabel>Catheterization of vein</SourceLabel>
+      <SuggestedLabel>IV, insertion</SuggestedLabel>
+      <Note>Includes 392231009 Intravenous cannulation, 386339009 IV insertion</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>353008</Value>
+      <Category>Vascular Access</Category>
+      <SourceLabel>Intravenous/irrigation monitoring</SourceLabel>
+      <SuggestedLabel>IV, monitoring</SuggestedLabel>
+      <Note>Includes 385756009 IV care management, 386493006 IV device maintenance</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>424287005</Value>
+      <Category>Vascular Access</Category>
+      <SourceLabel>Removal of peripheral intravenous catheter</SourceLabel>
+      <SuggestedLabel>IV, removal</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>396540005</Value>
+      <Category>Vascular Access</Category>
+      <SourceLabel>Phlebotomy</SourceLabel>
+      <SuggestedLabel>Vein, blood draw</SuggestedLabel>
+      <Note>Includes 28520004 Venipuncture for blood test</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>405427009</Value>
+      <Category>Vascular Access</Category>
+      <SourceLabel>Catheterization of external jugular vein</SourceLabel>
+      <SuggestedLabel>Vein, external jugular access</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>46973005</Value>
+      <Category>Vital Signs</Category>
+      <SourceLabel>Blood pressure taking</SourceLabel>
+      <SuggestedLabel>Blood pressure</SuggestedLabel>
+      <Note>Includes 135840009 Blood pressure monitoring</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>248753002</Value>
+      <Category>Vital Signs</Category>
+      <SourceLabel>Capillary refill</SourceLabel>
+      <SuggestedLabel>Capillary refill</SuggestedLabel>
+      <Note>New (I think the capillary blood glucose has been misused as this)</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>68664003</Value>
+      <Category>Vital Signs</Category>
+      <SourceLabel>Glasgow coma testing and evaluation</SourceLabel>
+      <SuggestedLabel>Glascow Coma Scale (GCS)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>65653002</Value>
+      <Category>Vital Signs</Category>
+      <SourceLabel>Pulse taking</SourceLabel>
+      <SuggestedLabel>Pulse</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>252465000</Value>
+      <Category>Vital Signs</Category>
+      <SourceLabel>Pulse oximetry</SourceLabel>
+      <SuggestedLabel>Pulse oximetry</SuggestedLabel>
+      <Note>Includes 284034009 Pulse oximetry monitoring, 104847001 Oxygen saturation</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>408867002</Value>
+      <Category>Vital Signs</Category>
+      <SourceLabel>Taking respiratory rate</SourceLabel>
+      <SuggestedLabel>Respiratory rate</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>56342008</Value>
+      <Category>Vital Signs</Category>
+      <SourceLabel>Temperature taking</SourceLabel>
+      <SuggestedLabel>Temperature</SuggestedLabel>
+      <Note>Includes 89003005 Oral temperature</Note>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>61746007</Value>
+      <Category>Vital Signs</Category>
+      <SourceLabel>Taking patient vital signs</SourceLabel>
+      <SuggestedLabel>Vital signs, NOS</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>425058005</Value>
+      <Category>Vital Signs</Category>
+      <SourceLabel>Taking orthostatic vital signs</SourceLabel>
+      <SuggestedLabel>Vital signs, orthostatic</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>447686008</Value>
+      <Category>Wound Care</Category>
+      <SourceLabel>Application of pressure to wound</SourceLabel>
+      <SuggestedLabel>Apply pressure to wound</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>182555002</Value>
+      <Category>Wound Care</Category>
+      <SourceLabel>Application of bandage</SourceLabel>
+      <SuggestedLabel>Bandage</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>373675000</Value>
+      <Category>Wound Care</Category>
+      <SourceLabel>Application of pressure bandage</SourceLabel>
+      <SuggestedLabel>Bandage, pressure</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>133901003</Value>
+      <Category>Wound Care</Category>
+      <SourceLabel>Burn care</SourceLabel>
+      <SuggestedLabel>Burn care</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>182531007</Value>
+      <Category>Wound Care</Category>
+      <SourceLabel>Dressing of wound</SourceLabel>
+      <SuggestedLabel>Dressing</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>22206003</Value>
+      <Category>Wound Care</Category>
+      <SourceLabel>Application of dressing, occlusive plastic</SourceLabel>
+      <SuggestedLabel>Dressing, occlusive</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>26906007</Value>
+      <Category>Wound Care</Category>
+      <SourceLabel>Application of dressing, pressure</SourceLabel>
+      <SuggestedLabel>Dressing, pressure</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>372045002</Value>
+      <Category>Wound Care</Category>
+      <SourceLabel>Application of chemical hemostatic agents</SourceLabel>
+      <SuggestedLabel>Hemostatic agent (i.e. QuikClot)</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>225116006</Value>
+      <Category>Wound Care</Category>
+      <SourceLabel>Irrigation of wound</SourceLabel>
+      <SuggestedLabel>Irrigation</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>20655006</Value>
+      <Category>Wound Care</Category>
+      <SourceLabel>Application of tourniquet</SourceLabel>
+      <SuggestedLabel>Tourniquet</SuggestedLabel>
+    </Code>
+    <Code date="2021-05-06">
+      <Value>225358003</Value>
+      <Category>Wound Care</Category>
+      <SourceLabel>Wound care</SourceLabel>
+      <SuggestedLabel>Wound care, NOS</SuggestedLabel>
+    </Code>
+  </Codes>
+</DefinedList>

@@ -1,0 +1,41 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dContact.11"  minOccurs="0"  maxOccurs="M"  dataTypeName="EmailAddress"  isNillable="Yes">
+<name>Agency Contact Email Address</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The primary email address of the Agency contact.</definition>
+<v2Number>D02_10</v2Number>
+<usage>Recommended</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>The address for the director/chief/lead administrator/CEO/ should be the main address for the EMS agency.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EmailAddress baseType="string">
+    <facet name="minLength" value="3"/>
+    <facet name="maxLength" value="100"/>
+    <facet name="pattern" value=".+@.+"/>
+  </EmailAddress>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+    <NV.NotReporting><facet name="enumeration" value="7701005" annotation="Not Reporting"/></NV.NotReporting>
+  </NV>
+  <EmailAddressType baseType="string"><facet name="enumeration" value="9904001" annotation="Personal"/><facet name="enumeration" value="9904003" annotation="Work"/></EmailAddressType>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_d002" role="Error">
+      When Agency Contact Email Address has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_d001" role="Error">
+      When Agency Contact Email Address is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_d003" role="Warning">
+      When Agency Contact Email Address has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

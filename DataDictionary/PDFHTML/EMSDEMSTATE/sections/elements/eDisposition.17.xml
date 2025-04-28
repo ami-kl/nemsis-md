@@ -1,0 +1,42 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDisposition.17"  minOccurs="1"  maxOccurs="1"  dataTypeName="TransportModeFromScene"  isNillable="Yes">
+<name>Transport Mode from Scene</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Indication whether the transport was emergent or non-emergent.</definition>
+<v2Number>E20_14</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Information now split between eDisposition.17 (Transport Mode from Scene) and eDisposition.18 (Additional Transport Mode Descriptors). Element eDisposition.18  (Additional Transport Mode Descriptors) has been added to document the use of lights and sirens or other descriptive information.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <TransportModeFromScene baseType="string">
+    <facet name="enumeration" value="4217001" annotation="Emergent (Immediate Response)"/>
+    <facet name="enumeration" value="4217003" annotation="Emergent Downgraded to Non-Emergent"/>
+    <facet name="enumeration" value="4217005" annotation="Non-Emergent"/>
+    <facet name="enumeration" value="4217007" annotation="Non-Emergent Upgraded to Emergent"/>
+  </TransportModeFromScene>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+</attributes>
+<asserts>
+  <assert id="nemSch_e166" role="Warning">
+      <elementRef elementNumber="eDisposition.17">Transport Mode from Scene</elementRef> should be recorded when <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> is &quot;Transport by This EMS Unit...&quot;.
+      </assert>
+  <assert id="nemSch_e167" role="Warning">
+      <elementRef elementNumber="eDisposition.17">Transport Mode from Scene</elementRef> should not be recorded when <elementRef elementNumber="eDisposition.30">Transport Disposition</elementRef> is &quot;Patient Refused Transport&quot; or &quot;No Transport&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Transport Mode from Scene has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Transport Mode from Scene is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+</asserts>
+</element>

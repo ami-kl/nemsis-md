@@ -1,0 +1,27 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dAgency.23"  minOccurs="0"  maxOccurs="1"  dataTypeName="EMSAgencyTimeZone"  isNillable="No">
+<name>EMS Agency Time Zone</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The time zone for the EMS Agency.</definition>
+<v2Number>D01_19</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Associated with each of the EMS Agency Number (dAgency.02). If more than one Time Zone is located within the EMS Agency service area, please chose the time zone covering the greatest volume of EMS events.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EMSAgencyTimeZone baseType="string">
+    <facet name="enumeration" value="1027001" annotation="All other time zones"/>
+    <facet name="enumeration" value="1027003" annotation="GMT-04:00 Atlantic Time"/>
+    <facet name="enumeration" value="1027005" annotation="GMT-05:00 Eastern Time"/>
+    <facet name="enumeration" value="1027007" annotation="GMT-06:00 Central Time"/>
+    <facet name="enumeration" value="1027009" annotation="GMT-07:00 Mountain Time"/>
+    <facet name="enumeration" value="1027011" annotation="GMT-08:00 Pacific Time"/>
+    <facet name="enumeration" value="1027013" annotation="GMT-09:00 Alaska"/>
+    <facet name="enumeration" value="1027015" annotation="GMT-10:00 Hawaii"/>
+    <facet name="enumeration" value="1027017" annotation="GMT-11:00 Midway Island, Samoa"/>
+  </EMSAgencyTimeZone>
+</restrictions>
+</element>

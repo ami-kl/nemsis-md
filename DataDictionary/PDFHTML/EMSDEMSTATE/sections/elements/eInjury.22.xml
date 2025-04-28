@@ -1,0 +1,25 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eInjury.22"  minOccurs="0"  maxOccurs="M"  dataTypeName="DeltaVelocity"  isNillable="No">
+<name>ACN Incident Delta Velocity</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The Automated Collision Notification Delta Velocity (Delta V) force associated with the crash.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Based on Vehicular Emergency Data Set:  Delta Velocity. The force of impact based on the change in velocity over the duration of the crash pulse. Vehicular Emergency Data Set (VEDS) Recommendations. Version 3.0 Prepared: (February 2011) by the Advanced Automatic Crash Notification (AACN)Joint APCO/NENA Data Standardization Working Group.</v3Comment>
+<v3Changes>Added to better incorporate advanced automated collision notification information.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <DeltaVelocity baseType="integer">
+    <facet name="minInclusive" value="0"/>
+    <facet name="maxInclusive" value="999"/>
+  </DeltaVelocity>
+</restrictions>
+<attributes>
+  <DeltaVelocityOrdinal baseType="integer"><facet name="minInclusive" value="1"/></DeltaVelocityOrdinal>
+  <VelocityUnit baseType="string"><facet name="enumeration" value="9921001" annotation="Kilometers per Hour"/><facet name="enumeration" value="9921003" annotation="Miles per Hour"/></VelocityUnit>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

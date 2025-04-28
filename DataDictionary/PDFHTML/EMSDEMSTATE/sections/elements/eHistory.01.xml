@@ -1,0 +1,57 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eHistory.01"  minOccurs="1"  maxOccurs="M"  dataTypeName="BarriersToPatientCare"  isNillable="Yes">
+<name>Barriers to Patient Care</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Indication of whether or not there were any patient specific barriers to serving the patient.</definition>
+<v2Number>E12_01</v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <BarriersToPatientCare baseType="string">
+    <facet name="enumeration" value="3101001" annotation="Cultural, Custom, Religious"/>
+    <facet name="enumeration" value="3101003" annotation="Developmentally Impaired"/>
+    <facet name="enumeration" value="3101005" annotation="Hearing Impaired"/>
+    <facet name="enumeration" value="3101007" annotation="Language"/>
+    <facet name="enumeration" value="3101009" annotation="None Noted"/>
+    <facet name="enumeration" value="3101011" annotation="Obesity"/>
+    <facet name="enumeration" value="3101013" annotation="Physical Barrier (Unable to Access Patient)"/>
+    <facet name="enumeration" value="3101015" annotation="Physically Impaired"/>
+    <facet name="enumeration" value="3101017" annotation="Physically Restrained"/>
+    <facet name="enumeration" value="3101019" annotation="Psychologically Impaired"/>
+    <facet name="enumeration" value="3101021" annotation="Sight Impaired"/>
+    <facet name="enumeration" value="3101023" annotation="Speech Impaired"/>
+    <facet name="enumeration" value="3101025" annotation="Unattended or Unsupervised (including minors)"/>
+    <facet name="enumeration" value="3101027" annotation="Unconscious"/>
+    <facet name="enumeration" value="3101029" annotation="Uncooperative"/>
+    <facet name="enumeration" value="3101031" annotation="State of Emotional Distress"/>
+    <facet name="enumeration" value="3101033" annotation="Alcohol Use, Suspected"/>
+    <facet name="enumeration" value="3101035" annotation="Drug Use, Suspected"/>
+  </BarriersToPatientCare>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_e124" role="Warning">
+      When <elementRef elementNumber="eHistory.01">Barriers to Patient Care</elementRef> is &quot;None Noted&quot;, no other value should be recorded.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Barriers to Patient Care has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Barriers to Patient Care is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Barriers to Patient Care has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

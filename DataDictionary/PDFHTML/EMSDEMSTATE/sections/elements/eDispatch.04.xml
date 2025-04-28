@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDispatch.04"  minOccurs="0"  maxOccurs="1"  dataTypeName="ComputerAidedDispatchCADNameorID"  isNillable="No">
+<name>Dispatch Center Name or ID</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The name or ID of the dispatch center providing electronic data to the PCR for the EMS agency, if applicable.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This element can be used to identify the dispatch center (Primary or Secondary Public Safety Answering Point - PSAP) that dispatches the EMS agency.  If the EMS agency is able to populate the Patient Care Report (PCR) with CAD specific details (times, incident address information, crew information, EMD, etc.) the name or ID of the dispatch center should be documented.</v3Comment>
+<v3Changes>Added to the dataset to assist in identifying the CAD / dispatch center providing information to the EMS agency and ePCR when there are multiple dispatch centers sending resources to the same EMS incident.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ComputerAidedDispatchCADNameorID baseType="string">
+    <facet name="minLength" value="2"/>
+    <facet name="maxLength" value="100"/>
+  </ComputerAidedDispatchCADNameorID>
+</restrictions>
+</element>

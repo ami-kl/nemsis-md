@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.33"  minOccurs="0"  maxOccurs="1"  dataTypeName="EmployerName"  isNillable="No">
+<name>Patient's Employer</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The patient's employer's name.</definition>
+<v2Number>E07_27</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EmployerName baseType="string">
+    <facet name="minLength" value="2"/>
+    <facet name="maxLength" value="60"/>
+  </EmployerName>
+</restrictions>
+</element>

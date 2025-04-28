@@ -1,0 +1,33 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dPersonnel.17"  minOccurs="0"  maxOccurs="M"  dataTypeName="PersonnelVehicleLicenseType"  isNillable="No">
+<name>EMS Personnel's Motor Vehicle License Type</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The type of motor vehicle license (i.e. Class A, B, Pilot, etc.) of the EMS personnel.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <PersonnelVehicleLicenseType baseType="string">
+    <facet name="enumeration" value="1517001" annotation="All-Terrain Vehicle (ATV)"/>
+    <facet name="enumeration" value="1517003" annotation="Commercial Class A"/>
+    <facet name="enumeration" value="1517005" annotation="Commercial Class B"/>
+    <facet name="enumeration" value="1517007" annotation="Commercial Class C"/>
+    <facet name="enumeration" value="1517009" annotation="Motorcycle-Class M"/>
+    <facet name="enumeration" value="1517011" annotation="None"/>
+    <facet name="enumeration" value="1517013" annotation="Operator Class D (Normal)"/>
+    <facet name="enumeration" value="1517015" annotation="Other"/>
+    <facet name="enumeration" value="1517017" annotation="Pilot-Rotor Wing Air"/>
+    <facet name="enumeration" value="1517019" annotation="Pilot-Fixed Wing Air"/>
+    <facet name="enumeration" value="1517021" annotation="Snowmobile"/>
+    <facet name="enumeration" value="1517023" annotation="Taxi and Livery Class E"/>
+  </PersonnelVehicleLicenseType>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

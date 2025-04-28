@@ -1,0 +1,21 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="dFacility.10"  minOccurs="0"  maxOccurs="1"  dataTypeName="ZIP"  isNillable="No">
+<name>Facility ZIP Code</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The zip code where the facility is located.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>The information contained within this element could be used to populate the address information within eScene.19 (Incident ZIP Code) and/or eDisposition.07 (Destination ZIP Code) as appropriate.
+											<br/><br/>ZIP Codes Product Website: <a href="https://www.zipcodedownload.com/Products/Product/Z5Commercial/Standard/Overview/" target="_blank">https://www.zipcodedownload.com/Products/Product/Z5Commercial/Standard/Overview/</a>
+<br/>Product: USA - 5-digit ZIP Code Database, Commercial Edition</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ZIP baseType="string">
+    <facet name="pattern" value="[0-9]{5}|[0-9]{5}-[0-9]{4}|[0-9]{5}-[0-9]{5}|[A-Z][0-9][A-Z] [0-9][A-Z][0-9]"/>
+  </ZIP>
+</restrictions>
+</element>

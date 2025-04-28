@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eOther.01"  minOccurs="0"  maxOccurs="1"  dataTypeName="YesNoValues"  isNillable="No">
+<name>Review Requested</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>Indication of whether the PCR needs review by anyone.</definition>
+<v2Number>E23_01</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <YesNoValues baseType="string">
+    <facet name="enumeration" value="9923001" annotation="No"/>
+    <facet name="enumeration" value="9923003" annotation="Yes"/>
+  </YesNoValues>
+</restrictions>
+</element>

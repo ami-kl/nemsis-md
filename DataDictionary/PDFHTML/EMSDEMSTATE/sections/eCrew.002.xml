@@ -1,0 +1,8 @@
+<?xml-stylesheet type="text/xsl" href="../xslt/grouping.xslt"?>
+<section name="eCrew">
+  <group number="eCrew.CrewGroup" minOccurs="0" maxOccurs="M" CorrelationID="Yes" UUID="" ProcedureGroupCorrelationID="" CustomElementID="" timeStamp="" isNillable="No">
+    <element number="eCrew.01" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="Yes" dataType="CrewMemberID"><name>Crew Member ID</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>Yes</state><usage>Recommended</usage><notValue>Yes</notValue><pertinentNegative></pertinentNegative></element>
+    <element number="eCrew.02" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="Yes" dataType="MemberLevel"><name>Crew Member Level</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>Yes</state><usage>Recommended</usage><notValue>Yes</notValue><pertinentNegative></pertinentNegative></element>
+    <element number="eCrew.03" minOccurs="0" maxOccurs="M" CorrelationID="Yes" UUID="" isNillable="Yes" dataType="CrewMemberRoles"><name>Crew Member Response Role</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>Yes</state><usage>Recommended</usage><notValue>Yes</notValue><pertinentNegative></pertinentNegative></element>
+  </group>
+</section>

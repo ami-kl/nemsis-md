@@ -1,0 +1,65 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eArrest.09"  minOccurs="1"  maxOccurs="M"  dataTypeName="CPRType"  isNillable="Yes">
+<name>Type of CPR Provided</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>Documentation of the type/technique of CPR used by EMS.</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Cardiac Arrest</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Added to capture special CPR techniques.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <CPRType baseType="string">
+    <facet name="enumeration" value="3009001" annotation="Compressions-Manual"/>
+    <facet name="enumeration" value="3009003" annotation="Compressions-External Band Type Device"/>
+    <facet name="enumeration" value="3009005" annotation="Compressions-External Plunger Type Device"/>
+    <facet name="enumeration" value="3009007" annotation="Compressions-External Thumper Type Device"/>
+    <facet name="enumeration" value="3009009" annotation="Compressions-Intermittent with Ventilation"/>
+    <facet name="enumeration" value="3009011" annotation="Compressions-Other Device"/>
+    <facet name="enumeration" value="3009021" annotation="Compressions-Hands Only CPR (DEPRECATED)"/>
+    <facet name="enumeration" value="3009013" annotation="Ventilation-Bag Valve Mask"/>
+    <facet name="enumeration" value="3009015" annotation="Ventilation-Impedance Threshold Device"/>
+    <facet name="enumeration" value="3009017" annotation="Ventilation-Mouth to Mouth"/>
+    <facet name="enumeration" value="3009019" annotation="Ventilation-Pocket Mask"/>
+    <facet name="enumeration" value="3009023" annotation="Ventilation-with OPA/NPA"/>
+    <facet name="enumeration" value="3009025" annotation="Ventilation-Advanced Airway Device"/>
+    <facet name="enumeration" value="3009027" annotation="Ventilation-Passive Ventilation with Oxygen"/>
+  </CPRType>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_e098" role="Warning">
+      <elementRef elementNumber="eArrest.03">Resuscitation Attempted By EMS</elementRef> should contain &quot;Initiated Chest Compressions&quot; when <elementRef elementNumber="eArrest.09">Type of CPR Provided</elementRef> contains &quot;Compressions...&quot;.
+      </assert>
+  <assert id="nemSch_e099" role="Warning">
+      <elementRef elementNumber="eArrest.03">Resuscitation Attempted By EMS</elementRef> should contain &quot;Attempted Ventilation&quot; when <elementRef elementNumber="eArrest.09">Type of CPR Provided</elementRef> contains &quot;Ventilation...&quot; or &quot;Compressions-Intermittent with Ventilation&quot;.
+      </assert>
+  <assert id="nemSch_e105" role="Warning">
+      <elementRef elementNumber="eArrest.09">Type of CPR Provided</elementRef> should only be recorded when <elementRef elementNumber="eArrest.01">Cardiac Arrest</elementRef> is &quot;Yes...&quot;.
+      </assert>
+  <assert id="nemSch_e106" role="Warning">
+      <elementRef elementNumber="eArrest.09">Type of CPR Provided</elementRef> should contain &quot;Compressions...&quot; when <elementRef elementNumber="eArrest.03">Resuscitation Attempted By EMS</elementRef> contains &quot;Initiated Chest Compressions&quot;.
+      </assert>
+  <assert id="nemSch_e107" role="Warning">
+      <elementRef elementNumber="eArrest.09">Type of CPR Provided</elementRef> should contain &quot;Ventilation...&quot; or &quot;Compressions-Intermittent with Ventilation&quot; when <elementRef elementNumber="eArrest.03">Resuscitation Attempted By EMS</elementRef> contains &quot;Attempted Ventilation&quot;.
+      </assert>
+  <assert id="nemSch_e002" role="Error">
+      When Type of CPR Provided has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Type of CPR Provided is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Type of CPR Provided has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

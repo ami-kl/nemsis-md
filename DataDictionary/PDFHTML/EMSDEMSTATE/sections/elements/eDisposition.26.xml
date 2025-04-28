@@ -1,0 +1,29 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eDisposition.26"  minOccurs="0"  maxOccurs="M"  dataTypeName="DispositionInstruction"  isNillable="No">
+<name>Disposition Instructions Provided</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>Information provided to patient during disposition for patients not transported or treated.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes>Added to better document instructions given to patients not transported by EMS.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <DispositionInstruction baseType="string">
+    <facet name="enumeration" value="4226001" annotation="Contact 911 or see your Doctor if problem returns"/>
+    <facet name="enumeration" value="4226003" annotation="Contact 911 or see your Doctor if problem worsens"/>
+    <facet name="enumeration" value="4226005" annotation="Other Not Listed (Described in Narrative)"/>
+    <facet name="enumeration" value="4226007" annotation="Problem Specific Instructions Provided"/>
+    <facet name="enumeration" value="4226009" annotation="See Your Doctor or the Emergency Department immediately"/>
+    <facet name="enumeration" value="4226011" annotation="See Your Doctor or the Emergency Department in the next 24 hours"/>
+    <facet name="enumeration" value="4226013" annotation="See Your Doctor or the Emergency Department in the next 4 hours"/>
+    <facet name="enumeration" value="4226015" annotation="See Your Doctor within the next one week"/>
+  </DispositionInstruction>
+</restrictions>
+<attributes>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+</element>

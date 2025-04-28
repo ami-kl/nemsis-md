@@ -1,0 +1,46 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eInjury.14"  minOccurs="0"  maxOccurs="1"  dataTypeName="DateTimeType"  isNillable="No">
+<name>Date/Time of ACN Incident</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The Automated Collision Notification Incident Date and Time.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Based on Vehicular Emergency Data Set:  Incident Date and Time. Vehicular Emergency Data Set (VEDS) Recommendations. Version 3.0 Prepared: (February 2011) by the Advanced Automatic Crash Notification (AACN)Joint APCO/NENA Data Standardization Working Group. 
+										  	<br/><br/>DateTime consists of finite-length characters of the form: yyyy '-' mm '-' dd 'T' hh ':' mm ':' ss ('.' s+)? (zzzzzz)
+									<table  cellspacing="2"><tr><td>							
+									<table border="1px" cellpadding="3px" cellspacing="0">
+									  <tr><td align="center">yyyy</td><td>a four-digit numeral that represents the year</td></tr>
+									  <tr><td align="center">'-'</td><td>separators between parts of the date portion</td></tr>
+									  <tr><td align="center">mm</td><td>a two-digit numeral that represents the month</td></tr>
+									  <tr><td align="center">dd</td><td>a two-digit numeral that represents the day</td></tr>
+									  <tr><td align="center">T</td><td>separator that indicates time-of-day follows</td></tr>
+									  <tr><td align="center">hh</td><td>a two-digit numeral that represents the hour</td></tr>
+									  <tr><td align="center">':'</td><td>a separator between parts of the time-of-day portion</td></tr>
+									  <tr><td align="center">mm</td><td>a two-digit numeral that represents the minute</td></tr>
+									  <tr><td align="center">ss</td><td>a two-integer-digit numeral that represents the whole seconds</td></tr>
+									  <tr><td align="center">'.' s+</td><td>(not required) represents the fractional seconds</td></tr>
+									  <tr><td align="center">zzzzzz</td><td>(required) represents the timezone (as described below)</td></tr>
+									</table> 
+									</td></tr></table>
+									<br/>Timezones, required, are durations with (integer-valued) hour and minute properties in the form: ('+' | '-') hh ':' mm   
+									<table cellspacing="2"><tr><td>	
+									<table border="1px" cellpadding="3px" cellspacing="0">
+									  <tr><td align="center">hh</td><td>a two-digit numeral (with leading zeros as required) that represents the hours</td></tr>
+									  <tr><td align="center">mm</td><td>a two-digit numeral that represents the minutes</td></tr>
+									  <tr><td align="center">'+'</td><td>a nonnegative duration</td></tr>
+									  <tr><td align="center">'-'</td><td>a nonpositive duration</td></tr>
+									</table>
+									</td></tr></table></v3Comment>
+<v3Changes>Added to better incorporate advanced automated collision notification information.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <DateTimeType baseType="dateTime">
+    <facet name="minInclusive" value="1950-01-01T00:00:00-00:00"/>
+    <facet name="maxInclusive" value="2050-01-01T00:00:00-00:00"/>
+    <facet name="pattern" value="[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.\d+)?(\+|-)[0-9]{2}:[0-9]{2}"/>
+  </DateTimeType>
+</restrictions>
+</element>

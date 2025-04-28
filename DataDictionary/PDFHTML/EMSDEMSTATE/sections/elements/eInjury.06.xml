@@ -1,0 +1,33 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eInjury.06"  minOccurs="0"  maxOccurs="1"  dataTypeName="SeatRowLocation"  isNillable="No">
+<name>Location of Patient in Vehicle</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The seat row location of the vehicle at the time of the crash with the front seat numbered as 1.</definition>
+<v2Number>E10_06</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>MMUCC P6 data element</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <SeatRowLocation baseType="string">
+    <facet name="enumeration" value="2906001" annotation="Front Seat-Left Side (or motorcycle driver)"/>
+    <facet name="enumeration" value="2906003" annotation="Front Seat-Middle"/>
+    <facet name="enumeration" value="2906005" annotation="Front Seat-Right Side"/>
+    <facet name="enumeration" value="2906007" annotation="Passenger in other enclosed passenger or cargo area (non-trailing unit such as a bus, etc.)"/>
+    <facet name="enumeration" value="2906009" annotation="Passenger in unenclosed passenger or cargo area (non-trailing unit such as a pickup, etc.)"/>
+    <facet name="enumeration" value="2906011" annotation="Riding on Vehicle Exterior (non-trailing unit)"/>
+    <facet name="enumeration" value="2906013" annotation="Second Seat-Left Side (or motorcycle passenger)"/>
+    <facet name="enumeration" value="2906015" annotation="Second Seat-Middle"/>
+    <facet name="enumeration" value="2906017" annotation="Second Seat-Right Side"/>
+    <facet name="enumeration" value="2906019" annotation="Sleeper Section of Cab (truck)"/>
+    <facet name="enumeration" value="2906021" annotation="Third Row-Left Side (or motorcycle passenger)"/>
+    <facet name="enumeration" value="2906023" annotation="Third Row-Middle"/>
+    <facet name="enumeration" value="2906025" annotation="Third Row-Right Side"/>
+    <facet name="enumeration" value="2906027" annotation="Trailing Unit"/>
+    <facet name="enumeration" value="2906029" annotation="Unknown"/>
+  </SeatRowLocation>
+</restrictions>
+</element>

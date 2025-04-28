@@ -1,0 +1,724 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.nemsis.org" targetNamespace="http://www.nemsis.org" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="commonTypes_v3.xsd"></xs:include>
+	<xs:complexType name="ePatient" id="ePatient.Patient">
+		<xs:sequence>
+			
+			
+			
+			
+			<xs:element name="ePatient.07" nillable="true" id="ePatient.PatientsHomeCounty">
+				<xs:annotation>
+					<xs:documentation>
+						<nemsisTacDoc>
+							<number>ePatient.07</number>
+							<name>Patient's Home County</name>
+							<national>Yes</national>
+							<state>Yes</state>
+							<definition>The patient's home county or parish of residence.</definition>
+							<v2Number>E06_06</v2Number>
+							<usage>Required</usage>
+							<performanceMeasuresGroup>
+								<performanceMeasure>Airway</performanceMeasure>
+								<performanceMeasure>Cardiac Arrest</performanceMeasure>
+								<performanceMeasure>Pediatric</performanceMeasure>
+								<performanceMeasure>Response</performanceMeasure>
+								<performanceMeasure>STEMI</performanceMeasure>
+								<performanceMeasure>Stroke</performanceMeasure>
+								<performanceMeasure>Trauma</performanceMeasure>
+							</performanceMeasuresGroup>
+							<comment>Based on the ANSI Code Single Choice based on the County Name but stored as the ANSI code (combined 5 digit State and County codes) Should be required if there is a patient associated with the event.
+							&lt;br/>&lt;br/>GNIS Codes Website: &lt;a>http://geonames.usgs.gov/domestic/download_data.htm&lt;/a></comment>
+						</nemsisTacDoc>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="ANSICountyCode">
+							<xs:attribute name="NV" use="optional">
+								<xs:simpleType>
+									<xs:union memberTypes="NV.NotApplicable NV.NotRecorded"></xs:union>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ePatient.08" nillable="true" id="ePatient.PatientsHomeState">
+				<xs:annotation>
+					<xs:documentation>
+						<nemsisTacDoc>
+							<number>ePatient.08</number>
+							<name>Patient's Home State</name>
+							<national>Yes</national>
+							<state>Yes</state>
+							<definition>The state, territory, or province where the patient resides.</definition>
+							<v2Number>E06_07</v2Number>
+							<usage>Required</usage>
+							<performanceMeasuresGroup>
+								<performanceMeasure>Airway</performanceMeasure>
+								<performanceMeasure>Cardiac Arrest</performanceMeasure>
+								<performanceMeasure>Pediatric</performanceMeasure>
+								<performanceMeasure>Response</performanceMeasure>
+								<performanceMeasure>STEMI</performanceMeasure>
+								<performanceMeasure>Stroke</performanceMeasure>
+								<performanceMeasure>Trauma</performanceMeasure>
+							</performanceMeasuresGroup>
+							<comment>The ANSI Code Selection by text but stored as ANSI code.&lt;br/>&lt;br/>GNIS Codes Website: &lt;a>http://geonames.usgs.gov/domestic/download_data.htm&lt;/a></comment>
+						</nemsisTacDoc>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="ANSIStateCode">
+							<xs:attribute name="NV" use="optional">
+								<xs:simpleType>
+									<xs:union memberTypes="NV.NotApplicable NV.NotRecorded"></xs:union>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ePatient.09" nillable="true" id="ePatient.PatientsHomeZIPCode">
+				<xs:annotation>
+					<xs:documentation>
+						<nemsisTacDoc>
+							<number>ePatient.09</number>
+							<name>Patient's Home ZIP Code</name>
+							<national>Yes</national>
+							<state>Yes</state>
+							<definition>The patient's ZIP code of residence.</definition>
+							<v2Number>E06_08</v2Number>
+							<usage>Required</usage>
+							<performanceMeasuresGroup>
+								<performanceMeasure>Airway</performanceMeasure>
+								<performanceMeasure>Cardiac Arrest</performanceMeasure>
+								<performanceMeasure>Pediatric</performanceMeasure>
+								<performanceMeasure>Response</performanceMeasure>
+								<performanceMeasure>STEMI</performanceMeasure>
+								<performanceMeasure>Stroke</performanceMeasure>
+								<performanceMeasure>Trauma</performanceMeasure>
+							</performanceMeasuresGroup>
+							<comment>ZIP Codes Product Website: &lt;a>https://www.zipcodedownload.com/Products/Product/Z5Commercial/Standard/Overview/&lt;/a>
+&lt;br/>Product: USA - 5-digit ZIP Code Database, Commercial Edition</comment>
+						</nemsisTacDoc>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="ZIP">
+							<xs:attribute name="NV" use="optional">
+								<xs:simpleType>
+									<xs:union memberTypes="NV.NotApplicable NV.NotRecorded"></xs:union>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			
+			
+			
+			<xs:element name="ePatient.13" nillable="true" id="ePatient.Gender" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<nemsisTacDoc>
+							<deprecated>Yes</deprecated>
+							<number>ePatient.13 (DEPRECATED)</number>
+							<name>Gender (DEPRECATED)</name>
+							<national>Yes</national>
+							<state>Yes</state>
+							<definition>The patient's gender. (DEPRECATED)</definition>
+							<v2Number>DEPRECATED</v2Number>
+							<usage>Required</usage>
+							<performanceMeasuresGroup>
+								<performanceMeasure>Airway</performanceMeasure>
+								<performanceMeasure>Cardiac Arrest</performanceMeasure>
+								<performanceMeasure>Pediatric</performanceMeasure>
+								<performanceMeasure>Response</performanceMeasure>
+								<performanceMeasure>STEMI</performanceMeasure>
+								<performanceMeasure>Stroke</performanceMeasure>
+								<performanceMeasure>Trauma</performanceMeasure>
+							</performanceMeasuresGroup>
+							<deprecatedComment>The NEMSIS Program is funded by the National Highway Traffic Safety Administration and this element was modified to comply with President Trump’s Executive Orders.</deprecatedComment>
+						</nemsisTacDoc>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="Gender">
+							<xs:attribute name="NV" use="optional">
+								<xs:simpleType>
+									<xs:union memberTypes="NV.NotApplicable NV.NotRecorded"></xs:union>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ePatient.14" nillable="true" id="ePatient.Race" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>
+						<nemsisTacDoc>
+							<number>ePatient.14</number>
+							<name>Race</name>
+							<national>Yes</national>
+							<state>Yes</state>
+							<definition>The patient's race as defined by the OMB (US Office of Management and Budget).</definition>
+							<v2Number>E06_12</v2Number>
+							<usage>Required</usage>
+							<performanceMeasuresGroup>
+								<performanceMeasure>Airway</performanceMeasure>
+								<performanceMeasure>Cardiac Arrest</performanceMeasure>
+								<performanceMeasure>Pediatric</performanceMeasure>
+								<performanceMeasure>Response</performanceMeasure>
+								<performanceMeasure>STEMI</performanceMeasure>
+								<performanceMeasure>Stroke</performanceMeasure>
+								<performanceMeasure>Trauma</performanceMeasure>
+							</performanceMeasuresGroup>
+							<comment>OMB requirements are provided at: &lt;a href="https://www.federalregister.gov/d/2024-06469" target="_blank">https://www.federalregister.gov/d/2024-06469&lt;/a>. Using single multiple choice question methodology to improve the completion of ethnicity information.&lt;br/>&lt;br/>Ethnicity (Version 2.2.1: E06_13) has been merged with this data element and retired.</comment>
+							<PNNil>Yes</PNNil>
+						</nemsisTacDoc>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="Race">
+							<xs:attribute name="NV" use="optional">
+								<xs:simpleType>
+									<xs:union memberTypes="NV.NotApplicable NV.NotRecorded"></xs:union>
+								</xs:simpleType>
+							</xs:attribute>
+							
+							<xs:attribute name="PN" use="optional">
+								<xs:simpleType>
+									<xs:union memberTypes="PN.Refused PN.Unresponsive PN.UnableToComplete"></xs:union>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ePatient.AgeGroup" id="ePatient.AgeGroup">
+				<xs:annotation>
+					<xs:documentation>Group Tag to hold patient's age information</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ePatient.15" nillable="true" id="ePatient.Age">
+							<xs:annotation>
+								<xs:documentation>
+									<nemsisTacDoc>
+										<number>ePatient.15</number>
+										<name>Age</name>
+										<national>Yes</national>
+										<state>Yes</state>
+										<definition>The patient's age (either calculated from date of birth or best approximation) at the time of the incident.</definition>
+										<v2Number>E06_14</v2Number>
+										<usage>Required</usage>
+										<performanceMeasuresGroup>
+											<performanceMeasure>Airway</performanceMeasure>
+											<performanceMeasure>Cardiac Arrest</performanceMeasure>
+											<performanceMeasure>Pediatric</performanceMeasure>
+											<performanceMeasure>Response</performanceMeasure>
+											<performanceMeasure>STEMI</performanceMeasure>
+											<performanceMeasure>Stroke</performanceMeasure>
+											<performanceMeasure>Trauma</performanceMeasure>
+										</performanceMeasuresGroup>
+									</nemsisTacDoc>
+								</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="Age">
+										<xs:attribute name="NV" use="optional">
+											<xs:simpleType>
+												<xs:union memberTypes="NV.NotApplicable NV.NotRecorded"></xs:union>
+											</xs:simpleType>
+										</xs:attribute>
+										<xs:attribute name="PN" use="optional">
+											<xs:simpleType>
+												<xs:union memberTypes="PN.Approximate"></xs:union>
+											</xs:simpleType>
+										</xs:attribute>
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="ePatient.16" nillable="true" id="ePatient.AgeUnits">
+							<xs:annotation>
+								<xs:documentation>
+									<nemsisTacDoc>
+										<number>ePatient.16</number>
+										<name>Age Units</name>
+										<national>Yes</national>
+										<state>Yes</state>
+										<definition>The unit used to define the patient's age.</definition>
+										<v2Number>E06_15</v2Number>
+										<usage>Required</usage>
+										<performanceMeasuresGroup>
+											<performanceMeasure>Airway</performanceMeasure>
+											<performanceMeasure>Cardiac Arrest</performanceMeasure>
+											<performanceMeasure>Pediatric</performanceMeasure>
+											<performanceMeasure>Response</performanceMeasure>
+											<performanceMeasure>STEMI</performanceMeasure>
+											<performanceMeasure>Stroke</performanceMeasure>
+											<performanceMeasure>Trauma</performanceMeasure>
+										</performanceMeasuresGroup>
+									</nemsisTacDoc>
+								</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="AgeUnits">
+										<xs:attribute name="NV" use="optional">
+											<xs:simpleType>
+												<xs:union memberTypes="NV.NotApplicable NV.NotRecorded"></xs:union>
+											</xs:simpleType>
+										</xs:attribute>
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			
+			
+			
+			
+			
+			
+			<xs:element name="ePatient.25" nillable="true" id="ePatient.Sex" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<nemsisTacDoc>
+							<number>ePatient.25</number>
+							<name>Sex</name>
+							<national>Yes</national>
+							<state>Yes</state>
+							<definition>The patient's sex.</definition>
+							<usage>Required</usage>
+							<performanceMeasuresGroup>
+								<performanceMeasure>Airway</performanceMeasure>
+								<performanceMeasure>Cardiac Arrest</performanceMeasure>
+								<performanceMeasure>Pediatric</performanceMeasure>
+								<performanceMeasure>Response</performanceMeasure>
+								<performanceMeasure>STEMI</performanceMeasure>
+								<performanceMeasure>Stroke</performanceMeasure>
+								<performanceMeasure>Trauma</performanceMeasure>
+							</performanceMeasuresGroup>
+							<comment></comment>
+						</nemsisTacDoc>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="Sex">
+							<xs:attribute name="NV" use="optional">
+								<xs:simpleType>
+									<xs:union memberTypes="NV.NotApplicable NV.NotRecorded NV.NotReporting"></xs:union>
+								</xs:simpleType>
+							</xs:attribute>
+							<xs:attribute name="PN" use="optional">
+								<xs:simpleType>
+									<xs:union memberTypes="PN.Refused PN.UnableToComplete"/>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="Age">
+		<xs:annotation>
+			<xs:documentation>The patient's age (either calculated from date of birth or best approximation) at the time of the incident.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1"></xs:minInclusive>
+			<xs:maxInclusive value="120"></xs:maxInclusive>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="AgeUnits">
+		<xs:annotation>
+			<xs:documentation>The units which the age is documented in (Hours, Days, Months, Years)</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="2516001">
+				<xs:annotation>
+					<xs:documentation>Days</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2516003">
+				<xs:annotation>
+					<xs:documentation>Hours</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2516005">
+				<xs:annotation>
+					<xs:documentation>Minutes</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2516007">
+				<xs:annotation>
+					<xs:documentation>Months</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2516009">
+				<xs:annotation>
+					<xs:documentation>Years</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="DriversLicenseNumber">
+		<xs:annotation>
+			<xs:documentation>The patient's drivers license number</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"></xs:minLength>
+			<xs:maxLength value="30"></xs:maxLength>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="PatientID">
+		<xs:annotation>
+			<xs:documentation>The unique ID for the patient within the Agency</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="2"></xs:minLength>
+			<xs:maxLength value="100"></xs:maxLength>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Race">
+		<xs:annotation>
+			<xs:documentation>The patient's race as defined by the OMB (US Office of Management and Budget)</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="2514001">
+				<xs:annotation>
+					<xs:documentation>American Indian or Alaska Native</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2514003">
+				<xs:annotation>
+					<xs:documentation>Asian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2514005">
+				<xs:annotation>
+					<xs:documentation>Black or African American</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2514007">
+				<xs:annotation>
+					<xs:documentation>Hispanic or Latino</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2514009">
+				<xs:annotation>
+					<xs:documentation>Native Hawaiian or Other Pacific Islander</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2514011">
+				<xs:annotation>
+					<xs:documentation>White</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2514013">
+				<xs:annotation>
+					<xs:documentation>Middle Eastern or North African</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="AlternateHomeResidence">
+		<xs:annotation>
+			<xs:documentation>Type of patient without a home ZIP/Postal code.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="2522001">
+				<xs:annotation>
+					<xs:documentation>Homeless</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2522003">
+				<xs:annotation>
+					<xs:documentation>Migrant Worker</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2522005">
+				<xs:annotation>
+					<xs:documentation>Foreign Visitor</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="PatientPreferredLanguage">
+		<xs:annotation>
+			<xs:documentation>The patient's preferred language</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="amh">
+				<xs:annotation>
+					<xs:documentation>Amharic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ara">
+				<xs:annotation>
+					<xs:documentation>Arabic</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="arm">
+				<xs:annotation>
+					<xs:documentation>Armenian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ben">
+				<xs:annotation>
+					<xs:documentation>Bengali</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="crp">
+				<xs:annotation>
+					<xs:documentation>Cajun (Creole and Pidgins)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="chi">
+				<xs:annotation>
+					<xs:documentation>Chinese</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="hrv">
+				<xs:annotation>
+					<xs:documentation>Croatian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="cze">
+				<xs:annotation>
+					<xs:documentation>Czech</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="dan">
+				<xs:annotation>
+					<xs:documentation>Danish</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="dut">
+				<xs:annotation>
+					<xs:documentation>Dutch</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="eng">
+				<xs:annotation>
+					<xs:documentation>English</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="fin">
+				<xs:annotation>
+					<xs:documentation>Finnish</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="tai">
+				<xs:annotation>
+					<xs:documentation>Formosan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="fre">
+				<xs:annotation>
+					<xs:documentation>French</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="cpf">
+				<xs:annotation>
+					<xs:documentation>French Creole</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ger">
+				<xs:annotation>
+					<xs:documentation>German</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="gre">
+				<xs:annotation>
+					<xs:documentation>Greek</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="guj">
+				<xs:annotation>
+					<xs:documentation>Gujarati</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="heb">
+				<xs:annotation>
+					<xs:documentation>Hebrew</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="hin">
+				<xs:annotation>
+					<xs:documentation>Hindi (Urdu)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="hun">
+				<xs:annotation>
+					<xs:documentation>Hungarian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ilo">
+				<xs:annotation>
+					<xs:documentation>Ilocano</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="itl">
+				<xs:annotation>
+					<xs:documentation>Italian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="jpn">
+				<xs:annotation>
+					<xs:documentation>Japanese</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="kor">
+				<xs:annotation>
+					<xs:documentation>Korean</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="kro">
+				<xs:annotation>
+					<xs:documentation>Kru</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="lit">
+				<xs:annotation>
+					<xs:documentation>Lithuanian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="mal">
+				<xs:annotation>
+					<xs:documentation>Malayalam</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="hmn">
+				<xs:annotation>
+					<xs:documentation>Miao (Hmong)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="mkh">
+				<xs:annotation>
+					<xs:documentation>Mon-Khmer (Cambodian)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="nav">
+				<xs:annotation>
+					<xs:documentation>Navaho</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="nno">
+				<xs:annotation>
+					<xs:documentation>Norwegian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="pan">
+				<xs:annotation>
+					<xs:documentation>Panjabi</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="gem">
+				<xs:annotation>
+					<xs:documentation>Pennsylvania Dutch (Germanic Other)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="per">
+				<xs:annotation>
+					<xs:documentation>Persian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="pol">
+				<xs:annotation>
+					<xs:documentation>Polish</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="por">
+				<xs:annotation>
+					<xs:documentation>Portuguese</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="rum">
+				<xs:annotation>
+					<xs:documentation>Romanian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="rus">
+				<xs:annotation>
+					<xs:documentation>Russian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="sgn">
+				<xs:annotation>
+					<xs:documentation>Sign Languages</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="smo">
+				<xs:annotation>
+					<xs:documentation>Samoan</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="srp">
+				<xs:annotation>
+					<xs:documentation>Serbo-Croatian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="slo">
+				<xs:annotation>
+					<xs:documentation>Slovak</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="spa">
+				<xs:annotation>
+					<xs:documentation>Spanish</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="swe">
+				<xs:annotation>
+					<xs:documentation>Swedish</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="syr">
+				<xs:annotation>
+					<xs:documentation>Syriac</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="tgl">
+				<xs:annotation>
+					<xs:documentation>Tagalog</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="tha">
+				<xs:annotation>
+					<xs:documentation>Thai (Laotian)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="tur">
+				<xs:annotation>
+					<xs:documentation>Turkish</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ukr">
+				<xs:annotation>
+					<xs:documentation>Ukrainian</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="vie">
+				<xs:annotation>
+					<xs:documentation>Vietnamese</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="yid">
+				<xs:annotation>
+					<xs:documentation>Yiddish</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>						 
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

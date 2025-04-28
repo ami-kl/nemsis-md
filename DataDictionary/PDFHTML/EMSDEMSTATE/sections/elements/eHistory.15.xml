@@ -1,0 +1,56 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eHistory.15"  minOccurs="0"  maxOccurs="1"  dataTypeName="CurrentMedicationAdministrationRoute"  isNillable="No">
+<name>Current Medication Administration Route</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The administration route (po, SQ, etc.) of the patient's current medication.</definition>
+<v2Number>E12_17</v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment></v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <CurrentMedicationAdministrationRoute baseType="string">
+    <facet name="enumeration" value="9927001" annotation="Blow-By"/>
+    <facet name="enumeration" value="9927003" annotation="Buccal"/>
+    <facet name="enumeration" value="9927005" annotation="Endotracheal Tube (ET)"/>
+    <facet name="enumeration" value="9927007" annotation="Gastrostomy Tube"/>
+    <facet name="enumeration" value="9927009" annotation="Inhalation"/>
+    <facet name="enumeration" value="9927011" annotation="Intraarterial"/>
+    <facet name="enumeration" value="9927013" annotation="Intradermal"/>
+    <facet name="enumeration" value="9927015" annotation="Intramuscular (IM)"/>
+    <facet name="enumeration" value="9927017" annotation="Intranasal"/>
+    <facet name="enumeration" value="9927019" annotation="Intraocular"/>
+    <facet name="enumeration" value="9927021" annotation="Intraosseous (IO)"/>
+    <facet name="enumeration" value="9927023" annotation="Intravenous (IV)"/>
+    <facet name="enumeration" value="9927025" annotation="Nasal Cannula"/>
+    <facet name="enumeration" value="9927027" annotation="Nasogastric"/>
+    <facet name="enumeration" value="9927029" annotation="Nasotracheal Tube"/>
+    <facet name="enumeration" value="9927031" annotation="Non-Rebreather Mask"/>
+    <facet name="enumeration" value="9927033" annotation="Ophthalmic"/>
+    <facet name="enumeration" value="9927035" annotation="Oral"/>
+    <facet name="enumeration" value="9927037" annotation="Other/miscellaneous"/>
+    <facet name="enumeration" value="9927039" annotation="Otic"/>
+    <facet name="enumeration" value="9927041" annotation="Re-breather mask"/>
+    <facet name="enumeration" value="9927043" annotation="Rectal"/>
+    <facet name="enumeration" value="9927045" annotation="Subcutaneous"/>
+    <facet name="enumeration" value="9927047" annotation="Sublingual"/>
+    <facet name="enumeration" value="9927049" annotation="Topical"/>
+    <facet name="enumeration" value="9927051" annotation="Tracheostomy"/>
+    <facet name="enumeration" value="9927053" annotation="Transdermal"/>
+    <facet name="enumeration" value="9927055" annotation="Urethral"/>
+    <facet name="enumeration" value="9927057" annotation="Ventimask"/>
+    <facet name="enumeration" value="9927059" annotation="Wound"/>
+    <facet name="enumeration" value="9927061" annotation="Portacath"/>
+    <facet name="enumeration" value="9927063" annotation="Auto Injector"/>
+    <facet name="enumeration" value="9927065" annotation="BVM"/>
+    <facet name="enumeration" value="9927067" annotation="CPAP"/>
+    <facet name="enumeration" value="9927069" annotation="IV Pump"/>
+    <facet name="enumeration" value="9927071" annotation="Nebulizer"/>
+    <facet name="enumeration" value="9927073" annotation="Umbilical Artery Catheter"/>
+    <facet name="enumeration" value="9927075" annotation="Umbilical Venous Catheter"/>
+  </CurrentMedicationAdministrationRoute>
+</restrictions>
+</element>

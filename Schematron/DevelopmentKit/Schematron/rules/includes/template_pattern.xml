@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sch:pattern id="template_pattern" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+
+  <!--  -->
+
+  <sch:title></sch:title>
+
+  <sch:rule id="template_pattern_rule_1" context="">
+
+    <!--  -->
+
+    <sch:let name="nemsisElements" value="."/>
+
+    <sch:assert id="template_pattern_assert_1" role="" diagnostics="nemsisDiagnostic" test="">
+      
+    </sch:assert>
+
+  </sch:rule>
+
+</sch:pattern>

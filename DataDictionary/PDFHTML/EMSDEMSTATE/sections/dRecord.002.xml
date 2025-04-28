@@ -1,0 +1,8 @@
+<?xml-stylesheet type="text/xsl" href="../xslt/grouping.xslt"?>
+<section name="dRecord">
+  <group number="dRecord.SoftwareApplicationGroup" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" ProcedureGroupCorrelationID="" CustomElementID="" timeStamp="" isNillable="No">
+    <element number="dRecord.01" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="Yes" dataType="SoftwareCreator"><name>Software Creator</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Recommended</usage><notValue>Yes</notValue><pertinentNegative></pertinentNegative></element>
+    <element number="dRecord.02" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="Yes" dataType="SoftwareName"><name>Software Name</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Recommended</usage><notValue>Yes</notValue><pertinentNegative></pertinentNegative></element>
+    <element number="dRecord.03" minOccurs="0" maxOccurs="1" CorrelationID="" UUID="" isNillable="Yes" dataType="SoftwareVersion"><name>Software Version</name><refNumber></refNumber><national>No</national><deprecated></deprecated><state>No</state><usage>Recommended</usage><notValue>Yes</notValue><pertinentNegative></pertinentNegative></element>
+  </group>
+</section>

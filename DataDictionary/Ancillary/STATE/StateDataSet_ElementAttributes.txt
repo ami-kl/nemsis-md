@@ -1,0 +1,32 @@
+'Dataset'|'DatasetType'|'ElementNumber'|'ElementName'|'Attribute'|
+'StateDataSet'|'group'|'seCustomConfiguration.CustomGroup'|''|'CustomElementID'|
+'StateDataSet'|'element'|'seCustomConfiguration.01'|'Patient Care Report Custom Data Element Title'|'nemsisElement'|
+'StateDataSet'|'element'|'seCustomConfiguration.06'|'Patient Care Report Custom Data Element Potential Values'|'nemsisCode'|
+'StateDataSet'|'element'|'seCustomConfiguration.06'|'Patient Care Report Custom Data Element Potential Values'|'customValueDescription'|
+'StateDataSet'|'group'|'sdCustomConfiguration.CustomGroup'|''|'CustomElementID'|
+'StateDataSet'|'element'|'sdCustomConfiguration.01'|'Agency Demographic Custom Data Element Title'|'nemsisElement'|
+'StateDataSet'|'element'|'sdCustomConfiguration.06'|'Agency Demographic Custom Data Element Potential Values'|'nemsisCode'|
+'StateDataSet'|'element'|'sdCustomConfiguration.06'|'Agency Demographic Custom Data Element Potential Values'|'customValueDescription'|
+'StateDataSet'|'element'|'sSoftware.01'|'Software Creator'|'NV'|
+'StateDataSet'|'element'|'sSoftware.02'|'Software Name'|'NV'|
+'StateDataSet'|'element'|'sSoftware.03'|'Software Version'|'NV'|
+'StateDataSet'|'element'|'sElement.01'|'State Collected Element'|'NV'|
+'StateDataSet'|'element'|'sConfiguration.01'|'State Certification/Licensure Levels'|'NV'|
+'StateDataSet'|'element'|'sConfiguration.02'|'EMS Certification Levels Permitted to Perform Each Procedure'|'NV'|
+'StateDataSet'|'element'|'sConfiguration.03'|'Procedures Permitted by the State'|'NV'|
+'StateDataSet'|'element'|'sConfiguration.04'|'EMS Certification Levels Permitted to Administer Each Medication'|'NV'|
+'StateDataSet'|'element'|'sConfiguration.05'|'Medications Permitted by the State'|'NV'|
+'StateDataSet'|'element'|'sConfiguration.05'|'Medications Permitted by the State'|'CodeType'|
+'StateDataSet'|'element'|'sConfiguration.06'|'Protocols Permitted by the State'|'NV'|
+'StateDataSet'|'element'|'sAgency.01'|'EMS Agency Unique State ID'|'NV'|
+'StateDataSet'|'element'|'sAgency.02'|'EMS Agency Number'|'NV'|
+'StateDataSet'|'element'|'sAgency.03'|'EMS Agency Name'|'NV'|
+'StateDataSet'|'element'|'sFacility.01'|'Type of Facility'|'NV'|
+'StateDataSet'|'element'|'sFacility.02'|'Facility Name'|'NV'|
+'StateDataSet'|'element'|'sFacility.03'|'Facility Location Code'|'NV'|
+'StateDataSet'|'element'|'sFacility.04'|'Hospital Designations'|'NV'|
+'StateDataSet'|'element'|'sFacility.07'|'Facility Street Address'|'StreetAddress2'|
+'StateDataSet'|'element'|'sFacility.09'|'Facility State'|'NV'|
+'StateDataSet'|'element'|'sFacility.10'|'Facility ZIP Code'|'NV'|
+'StateDataSet'|'element'|'sFacility.11'|'Facility County'|'NV'|
+'StateDataSet'|'element'|'sFacility.15'|'Facility Phone Number'|'PhoneNumberType'|

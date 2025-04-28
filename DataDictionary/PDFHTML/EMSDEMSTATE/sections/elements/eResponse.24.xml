@@ -1,0 +1,48 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eResponse.24"  minOccurs="1"  maxOccurs="M"  dataTypeName="EMSAdditionalResponseMode"  isNillable="Yes">
+<name>Additional Response Mode Descriptors</name>
+<national>Yes</national>
+<deprecated></deprecated>
+<state>Yes</state>
+<definition>The documentation of response mode techniques used for this EMS response.</definition>
+<v2Number></v2Number>
+<usage>Required</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure><performanceMeasure>Cardiac Arrest</performanceMeasure><performanceMeasure>Pediatric</performanceMeasure><performanceMeasure>Response</performanceMeasure><performanceMeasure>STEMI</performanceMeasure><performanceMeasure>Stroke</performanceMeasure><performanceMeasure>Trauma</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Descriptors have been added to better describe the EMS Response.  This includes information on whether the EMS event was schedule or unscheduled.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <EMSAdditionalResponseMode baseType="string">
+    <facet name="enumeration" value="2224001" annotation="Intersection Navigation-Against Normal Light  Patterns"/>
+    <facet name="enumeration" value="2224003" annotation="Intersection Navigation-With Automated Light Changing Technology"/>
+    <facet name="enumeration" value="2224005" annotation="Intersection Navigation-With Normal Light Patterns"/>
+    <facet name="enumeration" value="2224007" annotation="Scheduled"/>
+    <facet name="enumeration" value="2224009" annotation="Speed-Enhanced per Local Policy"/>
+    <facet name="enumeration" value="2224011" annotation="Speed-Normal Traffic"/>
+    <facet name="enumeration" value="2224013" annotation="Unscheduled"/>
+    <facet name="enumeration" value="2224015" annotation="Lights and Sirens"/>
+    <facet name="enumeration" value="2224017" annotation="Lights and No Sirens"/>
+    <facet name="enumeration" value="2224019" annotation="No Lights or Sirens"/>
+    <facet name="enumeration" value="2224021" annotation="Initial No Lights or Sirens, Upgraded to Lights and Sirens"/>
+    <facet name="enumeration" value="2224023" annotation="Initial Lights and Sirens, Downgraded to No Lights or Sirens"/>
+  </EMSAdditionalResponseMode>
+</restrictions>
+<attributes>
+  <NV>
+    <NV.NotApplicable><facet name="enumeration" value="7701001" annotation="Not Applicable"/></NV.NotApplicable>
+    <NV.NotRecorded><facet name="enumeration" value="7701003" annotation="Not Recorded"/></NV.NotRecorded>
+  </NV>
+  <CorrelationID baseType="string"><facet name="minLength" value="2"/><facet name="maxLength" value="255"/></CorrelationID>
+</attributes>
+<asserts>
+  <assert id="nemSch_e002" role="Error">
+      When Additional Response Mode Descriptors has a Not Value (Not Applicable, Not Recorded, or Not Reporting), it should be empty.
+      </assert>
+  <assert id="nemSch_e001" role="Error">
+      When Additional Response Mode Descriptors is empty, it should have a Not Value (Not Applicable, Not Recorded, or Not Reporting, if allowed for the element) or a Pertinent Negative (if allowed for the element), or it should be omitted (if the element is optional).
+      </assert>
+  <assert id="nemSch_e009" role="Warning">
+      When Additional Response Mode Descriptors has a Not Value, no other value should be recorded.
+      </assert>
+</asserts>
+</element>

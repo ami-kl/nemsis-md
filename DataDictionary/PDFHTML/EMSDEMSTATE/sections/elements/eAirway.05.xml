@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eAirway.05"  minOccurs="0"  maxOccurs="1"  dataTypeName="TubeDepth"  isNillable="No">
+<name>Tube Depth</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The measurement at the patient's teeth/lip of the tube depth in centimeters (cm) of the invasive airway placed.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup><performanceMeasure>Airway</performanceMeasure></performanceMeasuresGroup>
+<v3Comment>Tube Depth added to better document the initial placement of the airway device and subsequent assessments.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <TubeDepth baseType="integer">
+    <facet name="minInclusive" value="4"/>
+    <facet name="maxInclusive" value="32"/>
+  </TubeDepth>
+</restrictions>
+</element>

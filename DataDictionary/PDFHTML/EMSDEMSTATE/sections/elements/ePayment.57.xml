@@ -1,0 +1,41 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.57"  minOccurs="0"  maxOccurs="1"  dataTypeName="PayerType"  isNillable="No">
+<name>Payer Type</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>Payer type according to X12 standard.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>This element should only be used if Insurance, Medicare, Medicaid, Workers Compensation, or Other Government are selected in ePayment.01 - Primary Method of Payment.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <PayerType baseType="string">
+    <facet name="enumeration" value="11" annotation="Other Non-Federal Programs"/>
+    <facet name="enumeration" value="12" annotation="Preferred Provider Organization (PPO)"/>
+    <facet name="enumeration" value="13" annotation="Point of Service (POS)"/>
+    <facet name="enumeration" value="14" annotation="Exclusive Provider Organization (EPO)"/>
+    <facet name="enumeration" value="15" annotation="Indemnity Insurance"/>
+    <facet name="enumeration" value="16" annotation="Health Maintenance Organization (HMO) Medicare Risk"/>
+    <facet name="enumeration" value="17" annotation="Dental Maintenance Organization"/>
+    <facet name="enumeration" value="AM" annotation="Automobile Medical"/>
+    <facet name="enumeration" value="BL" annotation="Blue Cross/Blue Shield"/>
+    <facet name="enumeration" value="CH" annotation="Champus"/>
+    <facet name="enumeration" value="CI" annotation="Commercial Insurance Co."/>
+    <facet name="enumeration" value="DS" annotation="Disability"/>
+    <facet name="enumeration" value="FI" annotation="Federal Employees Program"/>
+    <facet name="enumeration" value="HM" annotation="Health Maintenance Organization"/>
+    <facet name="enumeration" value="LM" annotation="Liability Medical"/>
+    <facet name="enumeration" value="MA" annotation="Medicare Part A"/>
+    <facet name="enumeration" value="MB" annotation="Medicare Part B"/>
+    <facet name="enumeration" value="MC" annotation="Medicaid"/>
+    <facet name="enumeration" value="OF" annotation="Other Federal Program"/>
+    <facet name="enumeration" value="TV" annotation="Title V"/>
+    <facet name="enumeration" value="VA" annotation="Veteran Affairs Plan"/>
+    <facet name="enumeration" value="WC" annotation="Workers' Compensation Health Claim"/>
+    <facet name="enumeration" value="ZZ" annotation="Mutually Defined"/>
+  </PayerType>
+</restrictions>
+</element>

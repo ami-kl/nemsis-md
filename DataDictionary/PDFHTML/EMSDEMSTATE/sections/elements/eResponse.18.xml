@@ -1,0 +1,19 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="eResponse.18"  minOccurs="0"  maxOccurs="1"  dataTypeName="USNG"  isNillable="No">
+<name>Vehicle Dispatch Location US National Grid Coordinates</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The US National Grid Coordinates for the EMS Vehicle's Dispatch Location.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Standard found at www.fgdc.gov/usng. Used by the EMS components of US Governmental entities such as national parks and military agencies.</v3Comment>
+<v3Changes></v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <USNG baseType="string">
+    <facet name="pattern" value="([1-9]|[1-5][0-9]|60)[C-HJ-NP-X][A-HJ-NP-Z][A-HJ-NP-V]([0-9][0-9]){4,5}"/>
+  </USNG>
+</restrictions>
+</element>

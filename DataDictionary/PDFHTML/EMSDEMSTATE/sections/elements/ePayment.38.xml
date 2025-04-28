@@ -1,0 +1,19 @@
+<?xml-stylesheet type="text/xsl" href="../../xslt/element.xslt"?>
+<element number="ePayment.38"  minOccurs="0"  maxOccurs="1"  dataTypeName="ANSICountryCode"  isNillable="No">
+<name>Patient's Employer's Country</name>
+<national>No</national>
+<deprecated></deprecated>
+<state>No</state>
+<definition>The country of the patient's employer.</definition>
+<v2Number></v2Number>
+<usage>Optional</usage>
+<performanceMeasuresGroup></performanceMeasuresGroup>
+<v3Comment>Based on the ISO Country Code.<br/><br/>ANSI Country Codes (ISO 3166) Website: <a href="https://www.iso.org/iso-3166-country-codes.html" target="_blank">https://www.iso.org/iso-3166-country-codes.html</a></v3Comment>
+<v3Changes>Added to improve international compatibility.</v3Changes>
+<deprecatedComment></deprecatedComment>
+<restrictions>
+  <ANSICountryCode baseType="string">
+    <facet name="length" value="2"/>
+  </ANSICountryCode>
+</restrictions>
+</element>
